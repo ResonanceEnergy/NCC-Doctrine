@@ -1,0 +1,131 @@
+﻿{
+  "meta": {
+    "schemaVersion": "1.0",
+    "refreshSeconds": 300
+  },
+  "projects": [
+    {
+      "name": "Resonance Energy",
+      "slug": "resonance-energy",
+      "category": "Energy",
+      "path": "C:/Users/gripa/Documents/NCC-Doctrine/Projects/resonance-energy",
+      "github": "",
+      "status": "Active",
+      "progress": 35,
+      "azParticipates": true,
+      "cSuiteParticipates": true,
+      "children": [
+        {
+          "name": "MicroHydro Project",
+          "slug": "microhydro-project",
+          "category": "Energy",
+          "path": "C:/Users/gripa/Documents/NCC-Doctrine/Projects/resonance-energy/microhydro-project",
+          "github": "",
+          "status": "Active",
+          "progress": 20,
+          "azParticipates": true,
+          "cSuiteParticipates": true
+        }
+      ]
+    },
+    {
+      "name": "Big Brain Intelligence",
+      "slug": "big-brain-intelligence",
+      "category": "R&D",
+      "path": "C:/Users/gripa/Documents/NCC-Doctrine/Projects/big-brain-intelligence",
+      "github": "",
+      "status": "Planning",
+      "progress": 10,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Future Financial",
+      "slug": "future-financial",
+      "category": "Finance",
+      "path": "C:/Users/gripa/Documents/NCC-Doctrine/Projects/future-financial",
+      "github": "",
+      "status": "Active",
+      "progress": 15,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Future Fibre Optics",
+      "slug": "future-fibre-optics",
+      "category": "Infrastructure",
+      "path": "C:/Users/gripa/Documents/NCC-Doctrine/Projects/future-fibre-optics",
+      "github": "",
+      "status": "Active",
+      "progress": 25,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Mammoth Media",
+      "slug": "mammoth-media",
+      "category": "Media",
+      "path": "C:/Users/gripa/Documents/NCC-Doctrine/Projects/mammoth-media",
+      "github": "",
+      "status": "Active",
+      "progress": 40,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Off Grid Technologies",
+      "slug": "off-grid-technologies",
+      "category": "Energy",
+      "path": "C:/Users/gripa/Documents/NCC-Doctrine/Projects/off-grid-technologies",
+      "github": "",
+      "status": "Active",
+      "progress": 30,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Grip And Ripp HDD",
+      "slug": "grip-and-ripp-hdd",
+      "category": "Construction",
+      "path": "C:/Users/gripa/Documents/NCC-Doctrine/Projects/grip-and-ripp-hdd",
+      "github": "",
+      "status": "Active",
+      "progress": 35,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Butterfield Acres",
+      "slug": "butterfield-acres",
+      "category": "Agri/Community",
+      "path": "C:/Users/gripa/Documents/NCC-Doctrine/Projects/butterfield-acres",
+      "github": "",
+      "status": "Planning",
+      "progress": 5,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Phone App Builder",
+      "slug": "phone-app-builder",
+      "category": "Software",
+      "path": "C:/Users/gripa/Documents/NCC-Doctrine/Projects/phone-app-builder",
+      "github": "",
+      "status": "Active",
+      "progress": 20,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Uruguay and Paraguay — Dream to Reality",
+      "slug": "uruguay-paraguay-dream",
+      "category": "International",
+      "path": "C:/Users/gripa/Documents/NCC-Doctrine/Projects/uruguay-paraguay-dream",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    }
+  ]
+}
