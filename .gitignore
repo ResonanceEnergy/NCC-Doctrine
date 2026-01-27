@@ -1,15 +1,19 @@
-﻿# OS & IDE
+﻿# OS / Editor
 .DS_Store
 Thumbs.db
 .vscode/
-.vs/
-*.tmp
-*.log
+*.code-workspace
 
-# Office temps
-~$*.docx
-~$*.pptx
-
-# Python/node cache (if any future tools)
+# Python/Build/Temp
 __pycache__/
-node_modules/
+*.pyc
+dist/
+build/
+*.zip
+
+# Local runtime
+console/Legacy/
+archives/*.zip
+
+# Office temp
+~$*.docx
