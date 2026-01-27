@@ -1,0 +1,15 @@
+﻿# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.vs/
+*.tmp
+*.log
+
+# Office temps
+~$*.docx
+~$*.pptx
+
+# Python/node cache (if any future tools)
+__pycache__/
+node_modules/
