@@ -148,5 +148,129 @@
       "progress": 0,
       "azParticipates": true,
       "cSuiteParticipates": true
+    },
+    {
+      "name": "Quantum Computing Division",
+      "slug": "quantum-computing-division",
+      "category": "Technology",
+      "path": "QuantumComputingDivision",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Biotech Corporation",
+      "slug": "biotech-corporation",
+      "category": "Biotechnology",
+      "path": "BiotechCorporation",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Space Operations Division",
+      "slug": "space-operations-division",
+      "category": "Aerospace",
+      "path": "SpaceOperationsDivision",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Robotics & Automation Division",
+      "slug": "robotics-automation-division",
+      "category": "Robotics",
+      "path": "RoboticsAutomationDivision",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "AI Governance Council",
+      "slug": "ai-governance-council",
+      "category": "Governance",
+      "path": "AIGovernanceCouncil",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Global Talent Acquisition Division",
+      "slug": "global-talent-acquisition",
+      "category": "HR",
+      "path": "GlobalTalentAcquisition",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Innovation Labs Division",
+      "slug": "innovation-labs-division",
+      "category": "R&D",
+      "path": "InnovationLabsDivision",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "International Operations Division",
+      "slug": "international-operations-division",
+      "category": "Operations",
+      "path": "InternationalOperationsDivision",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Cybersecurity Command Center",
+      "slug": "cybersecurity-command-center",
+      "category": "Security",
+      "path": "CybersecurityCommandCenter",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Fusion Energy Division",
+      "slug": "fusion-energy-division",
+      "category": "Energy",
+      "path": "FusionEnergyDivision",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true,
+      "parent": "resonance-energy"
+    },
+    {
+      "name": "Space-Based Solar Division",
+      "slug": "space-based-solar-division",
+      "category": "Energy",
+      "path": "SpaceBasedSolarDivision",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true,
+      "parent": "resonance-energy"
     }
+  ]
 }
