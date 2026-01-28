@@ -12,6 +12,9 @@ import ChatPanel from './components/ChatPanel';
 import CSuiteAgents from './components/CSuiteAgents';
 import CSuiteFramework from './components/CSuiteFramework';
 import ITDepartment from './components/ITDepartment';import Login from './components/Login';
+import TaskManagement from './components/TaskManagement';
+import Security10Dashboard from './components/Security10Dashboard';
+import CSuiteOversight from './components/CSuiteOversight';
 function App() {
   // State for authentication
   const [loggedIn, setLoggedIn] = useState(false);
@@ -254,6 +257,27 @@ function App() {
       <div className="w-full flex justify-center mt-8">
         <div className="max-w-4xl w-full">
           <ITDepartment />
+        </div>
+      </div>
+
+      {/* Task Management System */}
+      <div className="w-full flex justify-center mt-8">
+        <div className="max-w-6xl w-full">
+          <TaskManagement />
+        </div>
+      </div>
+
+      {/* Security 10 Dashboard */}
+      <div className="w-full flex justify-center mt-8">
+        <div className="max-w-6xl w-full">
+          <Security10Dashboard />
+        </div>
+      </div>
+
+      {/* C-Suite Executive Oversight */}
+      <div className="w-full flex justify-center mt-8">
+        <div className="max-w-6xl w-full">
+          <CSuiteOversight />
         </div>
       </div>
 
