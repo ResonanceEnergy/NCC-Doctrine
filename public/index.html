@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Edge compatibility polyfills -->
+    <script>
+      // Polyfill for CSS aspect-ratio (Edge)
+      document.addEventListener('DOMContentLoaded', function() {
+        var cards = document.querySelectorAll('.hud-card');
+        cards.forEach(function(card) {
+          card.style.minHeight = card.offsetWidth * 0.9 + 'px';
+          window.addEventListener('resize', function() {
+            card.style.minHeight = card.offsetWidth * 0.9 + 'px';
+          });
+        });
+      });
+    </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NCC Command Console Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+      font-family: 'Orbitron', 'Fira Mono', monospace;
+      background: #0a1018;
       color: #00ffe7;
       margin: 0;
       min-height: 100vh;
@@ -17,8 +31,8 @@
     }
     .sidebar {
       width: 220px;
-      background: #181a20;
-      border-right: 2px solid #00ffe733;
+      background: #10131a;
+      border-right: 2px solid #00ffe7aa;
       min-height: 100vh;
       padding: 32px 0 0 0;
       display: flex;
@@ -28,12 +42,14 @@
       left: 0;
       top: 0;
       z-index: 10;
+      box-shadow: 0 0 32px #00ffe722;
     }
     .sidebar h2 {
       color: #00ffe7;
       margin-bottom: 32px;
       font-size: 1.3em;
       letter-spacing: 1px;
+      text-shadow: 0 0 8px #00ffe7cc;
     }
     .nav {
       display: flex;
@@ -43,29 +59,154 @@
       align-items: center;
     }
     .nav button {
-      background: none;
+      background: linear-gradient(90deg, #00ffe7 0%, #00bfae 100%);
       border: none;
-      color: #00ffe7;
+      color: #181a20;
       font-size: 1.08em;
-      padding: 10px 0;
+      padding: 12px 0;
       width: 90%;
       border-radius: 8px;
       cursor: pointer;
-      transition: background 0.2s, color 0.2s;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      letter-spacing: 1.5px;
+      font-family: 'Orbitron', monospace;
+      text-shadow: 0 0 6px #00ffe7cc;
+      margin-bottom: 2px;
+      box-shadow: 0 0 8px #00ffe7cc;
     }
     .nav button.active, .nav button:hover {
-      background: #00ffe722;
+      background: linear-gradient(90deg, #00bfae 0%, #00ffe7 100%);
       color: #fff;
+      box-shadow: 0 0 16px #00ffe7cc;
     }
     .main {
       margin-left: 220px;
       flex: 1;
       padding: 40px 36px 32px 36px;
-      background: rgba(34,36,42,0.7);
+      background: #10131a;
       border-radius: 18px;
-      box-shadow: 0 8px 32px 0 #00ffe755, 0 1.5px 8px #00ffe733;
       min-height: 100vh;
       position: relative;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 32px;
+      box-shadow: 0 0 64px #00ffe733, 0 1.5px 8px #00ffe733;
+    }
+    .hud-card {
+      background: linear-gradient(135deg, #10131a 60%, #181a20 100%);
+      border-radius: 18px;
+      box-shadow: 0 0 32px #00ffe755, 0 1.5px 8px #00ffe733;
+      border: 2px solid #00ffe7aa;
+      padding: 32px 28px 24px 28px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: box-shadow 0.2s, border 0.2s;
+      aspect-ratio: 1.1/1;
+      min-width: 0;
+    }
+    .hud-card:before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 18px;
+      pointer-events: none;
+      box-shadow: 0 0 32px 8px #00ffe733, 0 0 0 2px #00ffe7aa inset;
+      opacity: 0.18;
+    }
+    .hud-title {
+      font-size: 1.3em;
+      color: #00ffe7;
+      margin-bottom: 18px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 8px #00ffe7cc;
+      font-family: 'Orbitron', monospace;
+      z-index: 2;
+    }
+    .hud-circle {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.8em;
+      color: #fff;
+      font-family: 'Orbitron', monospace;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+    .hud-svg-ring {
+      position: absolute;
+      top: 0; left: 0;
+      width: 140px; height: 140px;
+      z-index: 0;
+    }
+    .hud-circle .hud-value {
+      font-size: 2.2em;
+      color: #fff;
+      text-shadow: 0 0 12px #00ffe7cc;
+      z-index: 2;
+    }
+    .hud-analytics {
+      width: 100%;
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: center;
+    }
+    .hud-analytics .hud-analytic {
+      background: #181a20;
+      border-radius: 10px;
+      padding: 12px 18px;
+      color: #00ffe7;
+      font-size: 1.08em;
+      min-width: 120px;
+      box-shadow: 0 1.5px 8px #00ffe733;
+      border: 1.5px solid #00ffe722;
+      font-family: 'Fira Mono', monospace;
+      text-align: center;
+    }
+    .hud-chart {
+      width: 100%;
+      height: 80px;
+      margin-top: 18px;
+      background: #181a20;
+      border-radius: 8px;
+      box-shadow: 0 1.5px 8px #00ffe733;
+      border: 1.5px solid #00ffe722;
+      font-family: 'Fira Mono', monospace;
+      color: #00ffe7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.7;
+    }
+    .hud-btn {
+      background: linear-gradient(90deg, #00ffe7 0%, #00bfae 100%);
+      color: #181a20;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1.08em;
+      box-shadow: 0 0 12px #00ffe7cc;
+      margin-left: 8px;
+      margin-top: 8px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      font-family: 'Orbitron', monospace;
+      letter-spacing: 1.2px;
+    }
+    .hud-btn:hover {
+      background: linear-gradient(90deg, #00bfae 0%, #00ffe7 100%);
+      color: #fff;
+      box-shadow: 0 0 24px #00ffe7cc;
     }
     .alerts {
       position: absolute;
@@ -80,36 +221,33 @@
       display: none;
       z-index: 100;
     }
-    .timeline {
-      margin-top: 32px;
-      background: #23252c;
-      border-radius: 10px;
-      padding: 18px;
-      color: #fff;
-      font-size: 1.08em;
-      min-height: 80px;
-      box-shadow: 0 1.5px 8px #00ffe733;
-      border: 1.5px solid #00ffe722;
+    @media (max-width: 1200px) {
+      .main {
+        grid-template-columns: 1fr 1fr;
+      }
     }
-    @media (max-width: 900px) {
+    @media (max-width: 800px) {
+      .main {
+        grid-template-columns: 1fr;
+        padding: 18px 2vw 18px 2vw;
+      }
       .sidebar { width: 60px; }
       .sidebar h2 { display: none; }
       .nav button { font-size: 0.9em; padding: 8px 0; }
-      .main { margin-left: 60px; padding: 18px 6vw 18px 6vw; }
     }
   </style>
   <script>
     // Cache-busting version string
-    const NCC_VERSION = Date.now();
+    window.NCC_VERSION = window.NCC_VERSION || Date.now();
     window.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('img[src], source[src], video[src], audio[src]').forEach(el => {
-        if (!el.src.includes('?v=')) el.src += (el.src.includes('?') ? '&' : '?') + 'v=' + NCC_VERSION;
+        if (!el.src.includes('?v=')) el.src += (el.src.includes('?') ? '&' : '?') + 'v=' + window.NCC_VERSION;
       });
       document.querySelectorAll('link[rel="stylesheet"][href]').forEach(el => {
-        if (!el.href.includes('?v=')) el.href += (el.href.includes('?') ? '&' : '?') + 'v=' + NCC_VERSION;
+        if (!el.href.includes('?v=')) el.href += (el.href.includes('?') ? '&' : '?') + 'v=' + window.NCC_VERSION;
       });
       document.querySelectorAll('script[src]').forEach(el => {
-        if (!el.src.includes('?v=') && !el.src.includes('NCC_VERSION')) el.src += (el.src.includes('?') ? '&' : '?') + 'v=' + NCC_VERSION;
+        if (!el.src.includes('?v=') && !el.src.includes('NCC_VERSION')) el.src += (el.src.includes('?') ? '&' : '?') + 'v=' + window.NCC_VERSION;
       });
     });
   </script>
@@ -118,25 +256,11 @@
   <div class="sidebar">
     <h2>NCC Console</h2>
     <div style="margin-bottom:32px;width:100%;display:flex;flex-direction:column;align-items:center;">
-      <div id="avatar-status" style="position:relative;width:80px;height:110px;">
-        <svg id="az-svg-avatar" width="80" height="110" viewBox="0 0 80 110">
-          <ellipse cx="40" cy="100" rx="32" ry="14" fill="#1a2a3a" />
-          <ellipse cx="40" cy="54" rx="28" ry="34" fill="#00ffe7" stroke="#00bfae" stroke-width="2" />
-          <ellipse cx="30" cy="54" rx="4" ry="6" fill="#222" />
-          <ellipse cx="50" cy="54" rx="4" ry="6" fill="#222" />
-          <ellipse id="az-svg-mouth" cx="40" cy="74" rx="8" ry="3" fill="#181a20" />
-        </svg>
-        <div id="avatar-indicator" style="position:absolute;top:6px;right:6px;width:16px;height:16px;border-radius:50%;background:#00ffe7;box-shadow:0 0 8px #00ffe7cc;"></div>
+      <div id="avatar-status" style="position:relative;width:120px;height:120px;">
+        <img src="avatar-hud.png" alt="AZ PRIME HUD Avatar" style="width:120px;height:120px;border-radius:50%;box-shadow:0 0 32px #00ffe7cc,0 0 0 8px #10131a inset;border:4px solid #00ffe7;object-fit:cover;" />
+        <div id="avatar-indicator" style="position:absolute;top:10px;right:10px;width:18px;height:18px;border-radius:50%;background:#00ffe7;box-shadow:0 0 12px #00ffe7cc;"></div>
       </div>
-      <div style="margin-top:12px;width:100%;">
-        <label for="persona-select" style="font-size:1em;color:#00ffe7;">Persona:</label>
-        <select id="persona-select" style="width:90%;margin-top:4px;padding:4px 8px;border-radius:6px;">
-          <option value="azprime">AZ PRIME</option>
-          <option value="emp">EMP (Media)</option>
-          <option value="copilot">Copilot</option>
-          <option value="chatgpt">ChatGPT</option>
-        </select>
-      </div>
+      <!-- Persona selector removed: AZ PRIME is the only persona. -->
     </div>
     <div class="nav">
       <button class="active">Dashboard</button>
@@ -146,6 +270,321 @@
     </div>
   </div>
   <div class="main">
+                                <!-- Adaptive Intelligence Panel -->
+                                <div class="hud-card">
+                                  <div class="hud-title">AZ PRIME Suggestions</div>
+                                  <div class="hud-circle">
+                                    <svg class="hud-svg-ring" viewBox="0 0 100 100">
+                                      <circle cx="50" cy="50" r="44" stroke="#222" stroke-width="8" fill="none"/>
+                                      <circle id="suggest-ring" cx="50" cy="50" r="44" stroke="#00bfae" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="276.46" stroke-dashoffset="0"/>
+                                    </svg>
+                                    <span class="hud-value" id="suggest-count">3</span>
+                                  </div>
+                                  <ul id="suggest-list" style="list-style:none;padding:0;margin-bottom:12px;width:100%;"></ul>
+                                </div>
+                                <!-- Immersive Interaction Panel -->
+                                <div class="hud-card">
+                                  <div class="hud-title">Voice & Gesture Control</div>
+                                  <div class="hud-circle">
+                                    <svg class="hud-svg-ring" viewBox="0 0 100 100">
+                                      <circle cx="50" cy="50" r="44" stroke="#222" stroke-width="8" fill="none"/>
+                                      <circle id="voice-ring" cx="50" cy="50" r="44" stroke="#00ffe7" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="276.46" stroke-dashoffset="0"/>
+                                    </svg>
+                                    <span class="hud-value" id="voice-status">Ready</span>
+                                  </div>
+                                  <button class="hud-btn" onclick="toggleVoice()">🎤 Activate Voice</button>
+                                  <div style="margin-top:12px;color:#fff;opacity:0.7;font-size:0.98em;">Gesture support coming soon</div>
+                                </div>
+                                <!-- Hyper-Personalization Panel -->
+                                <div class="hud-card">
+                                  <div class="hud-title">Your Dashboard</div>
+                                  <div class="hud-circle">
+                                    <svg class="hud-svg-ring" viewBox="0 0 100 100">
+                                      <circle cx="50" cy="50" r="44" stroke="#222" stroke-width="8" fill="none"/>
+                                      <circle id="personal-ring" cx="50" cy="50" r="44" stroke="#ffb300" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="276.46" stroke-dashoffset="0"/>
+                                    </svg>
+                                    <span class="hud-value" id="personal-main">CDR</span>
+                                  </div>
+                                  <div class="hud-analytics">
+                                    <div class="hud-analytic">Role: <span id="user-role">Commander</span></div>
+                                    <div class="hud-analytic">Projects: <span id="user-projects">3</span></div>
+                                    <div class="hud-analytic">Alerts: <span id="user-alerts">0</span></div>
+                                  </div>
+                                </div>
+                                  // --- Adaptive Intelligence Demo ---
+                                  function renderSuggestions() {
+                                    const suggestions = [
+                                      "Review EMP readiness status",
+                                      "Approve new project: Avatar Center",
+                                      "Check comms redundancy"
+                                    ];
+                                    const ul = document.getElementById('suggest-list');
+                                    ul.innerHTML = '';
+                                    suggestions.forEach((s, i) => {
+                                      const li = document.createElement('li');
+                                      li.innerHTML = `<span style='color:#00bfae;font-weight:700;margin-right:8px;'>${i+1}.</span> <span style='color:#fff;'>${s}</span>`;
+                                      ul.appendChild(li);
+                                    });
+                                    document.getElementById('suggest-count').textContent = suggestions.length;
+                                    animateRing('suggest-ring', Math.min(suggestions.length/5,1), '#00bfae');
+                                  }
+                                  renderSuggestions();
+
+                                  // --- Voice & Gesture Demo ---
+                                  function toggleVoice() {
+                                    const status = document.getElementById('voice-status');
+                                    if (status.textContent === 'Ready') {
+                                      status.textContent = 'Listening...';
+                                      animateRing('voice-ring', 1, '#00ffe7');
+                                    } else {
+                                      status.textContent = 'Ready';
+                                      animateRing('voice-ring', 0.2, '#00ffe7');
+                                    }
+                                  }
+                                  animateRing('voice-ring', 0.2, '#00ffe7');
+
+                                  // --- Hyper-Personalization Demo ---
+                                  function updatePersonalPanel() {
+                                    document.getElementById('personal-main').textContent = 'CDR';
+                                    animateRing('personal-ring', 0.7, '#ffb300');
+                                    document.getElementById('user-role').textContent = 'Commander';
+                                    document.getElementById('user-projects').textContent = 3;
+                                    document.getElementById('user-alerts').textContent = 0;
+                                  }
+                                  updatePersonalPanel();
+                            <div class="hud-card">
+                              <div class="hud-title">NCC Priority List</div>
+                              <div class="hud-circle">
+                                <svg class="hud-svg-ring" viewBox="0 0 100 100">
+                                  <circle cx="50" cy="50" r="44" stroke="#222" stroke-width="8" fill="none"/>
+                                  <circle id="priority-ring" cx="50" cy="50" r="44" stroke="#00ffe7" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="276.46" stroke-dashoffset="0"/>
+                                </svg>
+                                <span class="hud-value" id="priority-count">0</span>
+                              </div>
+                              <ul id="priority-list" style="list-style:none;padding:0;margin-bottom:12px;width:100%;"></ul>
+                              <div style="display:flex;gap:8px;align-items:center;width:100%;margin-top:8px;">
+                                <input id="priority-input" type="text" placeholder="Add or update a priority..." style="flex:1;padding:8px;border-radius:6px;border:1.5px solid #00ffe7;background:#181a20;color:#00ffe7;" />
+                                <button class="hud-btn" onclick="proposePriority()">Propose</button>
+                              </div>
+                              <div id="priority-status" style="margin-top:8px;font-size:0.98em;color:#00ffe7;"></div>
+                            </div>
+                            <div class="hud-card">
+                              <div class="hud-title">System Analytics</div>
+                              <div class="hud-circle">
+                                <svg class="hud-svg-ring" viewBox="0 0 100 100">
+                                  <circle cx="50" cy="50" r="44" stroke="#222" stroke-width="8" fill="none"/>
+                                  <circle id="analytics-ring" cx="50" cy="50" r="44" stroke="#ffb300" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="276.46" stroke-dashoffset="0"/>
+                                </svg>
+                                <span class="hud-value" id="analytics-main">54</span>
+                              </div>
+                              <div class="hud-analytics">
+                                <div class="hud-analytic">Active Projects: <span id="analytics-projects">3</span></div>
+                                <div class="hud-analytic">Alerts: <span id="analytics-alerts">0</span></div>
+                                <div class="hud-analytic">Ops Packets: <span id="analytics-ops">7</span></div>
+                              </div>
+                              <div class="hud-chart">[Chart Placeholder]</div>
+                            </div>
+                            <div class="hud-card">
+                              <div class="hud-title">Timeline / History</div>
+                              <div class="hud-circle">
+                                <svg class="hud-svg-ring" viewBox="0 0 100 100">
+                                  <circle cx="50" cy="50" r="44" stroke="#222" stroke-width="8" fill="none"/>
+                                  <circle id="timeline-ring" cx="50" cy="50" r="44" stroke="#ff3b3b" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="276.46" stroke-dashoffset="0"/>
+                                </svg>
+                                <span class="hud-value" id="timeline-main">XT1</span>
+                              </div>
+                              <div class="hud-chart" id="timeline-area">No recent events.</div>
+                            </div>
+                              // --- NCC Priority List with CDR Approval, Backend Connected ---
+                              // --- HUD Animated Radial Widgets & Priority List ---
+                              function animateRing(id, percent, color) {
+                                var ring = document.getElementById(id);
+                                if (!ring) return;
+                                var CIRC = 2 * Math.PI * 44; // r=44
+                                var offset = CIRC * (1 - percent);
+                                ring.setAttribute('stroke-dasharray', CIRC);
+                                ring.setAttribute('stroke-dashoffset', offset);
+                                ring.style.transition = 'stroke-dashoffset 1s cubic-bezier(.77,0,.18,1)';
+                                if (color) ring.setAttribute('stroke', color);
+                              }
+
+                              async function fetchPriorities() {
+                                const res = await fetch('/api/priorities');
+                                const data = await res.json();
+                                renderPriorities(data.priorities || []);
+                              }
+                              function renderPriorities(priorities) {
+                                const ul = document.getElementById('priority-list');
+                                ul.innerHTML = '';
+                                priorities.forEach((p, i) => {
+                                  const li = document.createElement('li');
+                                  li.innerHTML = `<span style="color:#00ffe7;font-weight:700;margin-right:8px;">${i+1}.</span> <span style="color:#fff;">${p}</span>`;
+                                  ul.appendChild(li);
+                                });
+                                // Animate radial count
+                                document.getElementById('priority-count').textContent = priorities.length;
+                                animateRing('priority-ring', Math.min(priorities.length/10,1), '#00ffe7');
+                              }
+                              fetchPriorities();
+
+                              function proposePriority() {
+                                const input = document.getElementById('priority-input');
+                                const status = document.getElementById('priority-status');
+                                const proposal = input.value.trim();
+                                if (!proposal) { status.textContent = 'Enter a priority.'; return; }
+                                requestCDRApproval(`Approve new/updated priority: "${proposal}"?`, async () => {
+                                  status.textContent = 'Submitting...';
+                                  const res = await fetch('/api/priorities', {
+                                    method: 'POST',
+                                    headers: { 'Content-Type': 'application/json' },
+                                    body: JSON.stringify({ priority: proposal, user: document.getElementById('user-name')?.textContent || 'unknown' })
+                                  });
+                                  if (res.ok) {
+                                    await fetchPriorities();
+                                    status.textContent = 'Priority added and approved.';
+                                    input.value = '';
+                                    fetchAuditLog();
+                                  } else {
+                                    status.textContent = 'Error adding priority.';
+                                  }
+                                });
+                                status.textContent = 'Awaiting CDR approval...';
+                              }
+
+                              // --- Analytics & Timeline Demo Data ---
+                              function updateAnalytics() {
+                                // Example: animate analytics ring to 54% (demo)
+                                document.getElementById('analytics-main').textContent = 54;
+                                animateRing('analytics-ring', 0.54, '#ffb300');
+                                document.getElementById('analytics-projects').textContent = 3;
+                                document.getElementById('analytics-alerts').textContent = 0;
+                                document.getElementById('analytics-ops').textContent = 7;
+                              }
+                              function updateTimeline() {
+                                // Example: animate timeline ring to 84% (demo)
+                                document.getElementById('timeline-main').textContent = 'XT1';
+                                animateRing('timeline-ring', 0.84, '#ff3b3b');
+                              }
+                              updateAnalytics();
+                              updateTimeline();
+
+                              // --- Audit Log Fetch (optional, for future expansion) ---
+                              async function fetchAuditLog() {
+                                const res = await fetch('/api/audit');
+                                const data = await res.json();
+                                // Optionally render audit log somewhere
+                              }
+                              fetchAuditLog();
+                        <!-- CDR Approval Modal -->
+                        <div id="cdr-approval-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.6);z-index:9999;align-items:center;justify-content:center;">
+                          <div style="background:#23252c;padding:32px 28px;border-radius:14px;box-shadow:0 4px 32px #00ffe799;max-width:400px;width:90%;text-align:center;">
+                            <h2 style="color:#00ffe7;margin-bottom:18px;">Commander Approval Required</h2>
+                            <div id="cdr-approval-message" style="margin-bottom:18px;color:#fff;"></div>
+                            <button onclick="approveCDRAction()" style="background:#00ffe7;color:#181a20;font-weight:600;padding:10px 24px;border-radius:8px;border:none;margin-right:12px;">Approve</button>
+                            <button onclick="denyCDRAction()" style="background:#ff3b3b;color:#fff;font-weight:600;padding:10px 24px;border-radius:8px;border:none;">Deny</button>
+                          </div>
+                        </div>
+                          // --- CDR Approval Workflow ---
+                          let pendingCDRAction = null;
+                          function requestCDRApproval(actionDesc, onApprove) {
+                            pendingCDRAction = onApprove;
+                            document.getElementById('cdr-approval-message').textContent = actionDesc;
+                            document.getElementById('cdr-approval-modal').style.display = 'flex';
+                          }
+                          function approveCDRAction() {
+                            document.getElementById('cdr-approval-modal').style.display = 'none';
+                            if (pendingCDRAction) {
+                              pendingCDRAction();
+                              logCDRApproval('Approved');
+                            }
+                            pendingCDRAction = null;
+                          }
+                          function denyCDRAction() {
+                            document.getElementById('cdr-approval-modal').style.display = 'none';
+                            logCDRApproval('Denied');
+                            pendingCDRAction = null;
+                          }
+                          function logCDRApproval(status) {
+                            const timeline = document.getElementById('timeline-area');
+                            const now = new Date().toLocaleString();
+                            timeline.textContent = `[${now}] CDR Approval: ${status}`;
+                          }
+                          // Example usage: requestCDRApproval('Authorize system reboot?', () => { /* action */ });
+                    <div class="card" style="margin-top:24px;">
+                      <h2 style="margin-bottom:8px;">Settings & Configuration</h2>
+                      <div id="settings-area">(Settings panel coming soon)</div>
+                    </div>
+                    <div class="card" style="margin-top:24px;">
+                      <h2 style="margin-bottom:8px;">System Health & Status</h2>
+                      <div id="system-health-area">All systems operational.</div>
+                    </div>
+                    <div class="card" style="margin-top:24px;">
+                      <h2 style="margin-bottom:8px;">Backup & Restore</h2>
+                      <div id="backup-area">
+                        <button style="background:#00ffe7;color:#181a20;">Backup Now</button>
+                        <button style="background:#00bfae;color:#181a20;">Restore</button>
+                        <span style="font-size:0.98em;opacity:0.7;">(Backup/restore coming soon)</span>
+                      </div>
+                    </div>
+                    <div class="card" style="margin-top:24px;">
+                      <h2 style="margin-bottom:8px;">Theming & Customization</h2>
+                      <div id="theming-area">(Custom CSS and themes coming soon)</div>
+                    </div>
+                    <div class="card" style="margin-top:24px;">
+                      <h2 style="margin-bottom:8px;">Help & Support</h2>
+                      <div id="help-area">
+                        <button style="background:#00ffe7;color:#181a20;">Help Center</button>
+                        <button style="background:#00bfae;color:#181a20;">Feedback</button>
+                        <span style="font-size:0.98em;opacity:0.7;">(Support tools coming soon)</span>
+                      </div>
+                    </div>
+                    <div class="card" style="margin-top:24px;">
+                      <h2 style="margin-bottom:8px;">Changelog & Version Info</h2>
+                      <div id="changelog-area">v1.0.0 (Changelog coming soon)</div>
+                    </div>
+                <div class="card" style="margin-top:24px;">
+                  <h2 style="margin-bottom:8px;">Project & Department Management</h2>
+                  <div id="project-dept-area" style="display:flex;gap:18px;flex-wrap:wrap;align-items:center;">
+                    <button style="background:#00ffe7;color:#181a20;">New Project</button>
+                    <button style="background:#00bfae;color:#181a20;">New Department</button>
+                    <span style="font-size:0.98em;opacity:0.7;">(Project/department dashboards coming soon)</span>
+                  </div>
+                </div>
+                <div class="card" style="margin-top:24px;">
+                  <h2 style="margin-bottom:8px;">Alerts & Triggers</h2>
+                  <div id="alerts-area-advanced">No current alerts.</div>
+                </div>
+                <div class="card" style="margin-top:24px;">
+                  <h2 style="margin-bottom:8px;">Timeline / History</h2>
+                  <div id="timeline-area-advanced">No recent events.</div>
+                </div>
+            <div class="card" style="margin-top:24px;">
+              <h2 style="margin-bottom:8px;">User Management</h2>
+              <div id="user-area" style="display:flex;gap:18px;align-items:center;">
+                <span><b>User:</b> <span id="user-name">Commander</span></span>
+                <button style="background:#00bfae;color:#181a20;">Login</button>
+                <button style="background:#ff3b3b;color:#fff;">Logout</button>
+                <span style="font-size:0.98em;opacity:0.7;">(User roles coming soon)</span>
+              </div>
+            </div>
+            <div class="card" style="margin-top:24px;">
+              <h2 style="margin-bottom:8px;">Plugins & Extensions</h2>
+              <div id="plugin-area" style="display:flex;gap:18px;align-items:center;">
+                <button style="background:#b58900;color:#181a20;">Manage Plugins</button>
+                <span style="font-size:0.98em;opacity:0.7;">(Plugin system coming soon)</span>
+              </div>
+            </div>
+        <div class="card" style="margin-top:24px;">
+          <h2 style="margin-bottom:8px;">Integrations</h2>
+          <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:center;">
+            <button title="Connect Midjourney" style="background:#222;color:#fff;">Midjourney</button>
+            <button title="Connect Discord" style="background:#5865F2;color:#fff;">Discord</button>
+            <button title="Connect Slack" style="background:#4A154B;color:#fff;">Slack</button>
+            <button title="Connect Teams" style="background:#464EB8;color:#fff;">Teams</button>
+            <button title="Connect GitHub" style="background:#24292F;color:#fff;">GitHub</button>
+            <span style="font-size:0.98em;opacity:0.7;">(Integrations coming soon)</span>
+          </div>
+        </div>
     <div class="alerts" id="alerts-area">No current alerts.</div>
     <h1>NCC Command Console Dashboard</h1>
     <div id="onboarding-tip" style="background:#00ffe7; color:#181a20; border-radius:10px; padding:12px 18px; margin-bottom:18px; font-size:1.08em; font-weight:500; box-shadow:0 2px 12px #00ffe733;max-width:600px;">
@@ -158,6 +597,61 @@
       <button id="voice-btn" onclick="toggleVoice()" style="font-size:1.1em;padding:8px 18px;border-radius:8px;background:#181a20;color:#00ffe7;font-weight:600;border:2px solid #00ffe7;margin-left:8px;" title="Start/Stop Voice Input">🎤 Start Listening</button>
     </div>
     <div class="timeline" id="timeline-area">No recent events.</div>
+    <div class="card" style="margin-top:32px;">
+      <h2 style="margin-bottom:8px;">Analytics & Trends</h2>
+      <div id="analytics-area" style="display:flex;gap:24px;flex-wrap:wrap;align-items:center;">
+        <div><b>Active Projects:</b> <span id="analytics-projects">3</span></div>
+        <div><b>Issues Resolved (30d):</b> <span id="analytics-issues">12</span></div>
+        <div><b>Avg. Response Time:</b> <span id="analytics-response">2.1h</span></div>
+        <div><b>Trend:</b> <span id="analytics-trend">↑</span></div>
+        <span style="font-size:0.98em;opacity:0.7;">(Analytics coming soon)</span>
+      </div>
+    </div>
+    <div class="card" style="margin-top:24px;">
+      <h2 style="margin-bottom:8px;">Project Progress</h2>
+      <div id="project-progress">
+        <div style="margin-bottom:10px;">
+          <b>Avatar Center:</b>
+          <div style="background:#23252c;border-radius:6px;height:18px;width:100%;margin:4px 0;">
+            <div style="background:#00ffe7;height:100%;width:70%;border-radius:6px;"></div>
+          </div>
+        </div>
+        <div style="margin-bottom:10px;">
+          <b>EMP Playbook:</b>
+          <div style="background:#23252c;border-radius:6px;height:18px;width:100%;margin:4px 0;">
+            <div style="background:#00bfae;height:100%;width:45%;border-radius:6px;"></div>
+          </div>
+        </div>
+        <div style="margin-bottom:10px;">
+          <b>Ops Packet:</b>
+          <div style="background:#23252c;border-radius:6px;height:18px;width:100%;margin:4px 0;">
+            <div style="background:#ffb300;height:100%;width:80%;border-radius:6px;"></div>
+          </div>
+        </div>
+      </div>
+      <button onclick="toggleDepartments()" style="margin-top:10px;font-size:0.98em;padding:6px 14px;border-radius:7px;background:#00ffe7;color:#181a20;font-weight:600;border:none;">Show Department Progress</button>
+      <div id="department-progress" style="display:none;margin-top:10px;"></div>
+    </div>
+    <div class="card" style="margin-top:24px;">
+      <h2 style="margin-bottom:8px;">User Activity</h2>
+      <div id="user-activity">
+        <div><b>Active Users:</b> <span id="active-users">5</span></div>
+        <div><b>Recent Logins:</b> <span id="recent-logins">Commander, AZ PRIME, EMP</span></div>
+        <div><b>Most Active Department:</b> <span id="active-dept">C-Suite</span></div>
+        <span style="font-size:0.98em;opacity:0.7;">(User analytics coming soon)</span>
+      </div>
+    </div>
+    <script>
+      function toggleDepartments() {
+        const el = document.getElementById('department-progress');
+        el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        if (el.style.display === 'block') {
+          el.innerHTML = '<b>AZ:</b> 60%<br><b>C-Suite:</b> 80%<br><b>Ops:</b> 50%';
+        } else {
+          el.innerHTML = '';
+        }
+      }
+    </script>
     <!-- More advanced features will be added here in next steps -->
     <script>
       // Simple avatar animation (blink)
@@ -183,8 +677,8 @@
       setAvatarStatus('active');
 
       // --- Always-listening voice assistant with hotword detection ---
-      let recognizing = false;
-      let recognition;
+      window.recognizing = window.recognizing || false;
+      window.recognition = window.recognition || undefined;
       let lastTranscript = '';
       let hotwordActive = false;
       if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
@@ -247,7 +741,7 @@
       // Conversational memory (simple)
       let conversationHistory = [];
       function sendToAZ() {
-        const persona = document.getElementById('persona-select').value;
+        const persona = 'azprime';
         const input = document.getElementById('az-input').value;
         const display = document.getElementById('timeline-area');
         conversationHistory.push({ role: persona, text: input });
@@ -276,7 +770,7 @@
   <title>NCC Command Console Dashboard</title>
   <script>
     // Cache-busting version string
-    const NCC_VERSION = Date.now();
+    // (removed duplicate NCC_VERSION)
     // Replace all static asset URLs with ?v=timestamp
     window.addEventListener('DOMContentLoaded', () => {
       // Images
@@ -391,40 +885,6 @@
     input, button {
       font-size: 1em;
       padding: 8px;
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NCC Command Console Dashboard</title>
-        <style>
-          body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
-            color: #00ffe7;
-            margin: 0;
-            min-height: 100vh;
-            overflow-x: hidden;
-          }
-          .container {
-            max-width: 1100px;
-            margin: 48px auto;
-            background: rgba(34,36,42,0.7);
-            border-radius: 18px;
-            padding: 40px 36px 32px 36px;
-            box-shadow: 0 8px 32px 0 #00ffe755, 0 1.5px 8px #00ffe733;
-            backdrop-filter: blur(12px);
-            border: 1.5px solid #00ffe733;
-          }
-          h1 {
-            color: #00ffe7;
-            font-size: 2.6em;
-            letter-spacing: 2px;
-            text-shadow: 0 0 12px #00ffe7cc, 0 2px 8px #000a;
-            margin-bottom: 18px;
-            text-align: center;
-          }
-          .card {
             background: rgba(24,26,32,0.85);
             border-radius: 14px;
             padding: 28px 24px 20px 24px;
@@ -538,7 +998,7 @@
         </style>
         <script>
           // Cache-busting version string
-          const NCC_VERSION = Date.now();
+          // (removed duplicate NCC_VERSION)
           // Replace all static asset URLs with ?v=timestamp
           window.addEventListener('DOMContentLoaded', () => {
             // Images
@@ -614,8 +1074,7 @@
         </div>
         <script>
           // --- Voice Recognition (Speech-to-Text) ---
-          let recognizing = false;
-          let recognition;
+          // (removed duplicate recognizing/recognition)
           if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
             const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
             recognition = new SpeechRecognition();

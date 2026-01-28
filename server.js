@@ -30,6 +30,38 @@ try {
 }
 
 // API endpoints for all actions (mocked)
+// --- NCC Priority List and Audit Log (in-memory for now) ---
+let priorities = [
+  "Maintain comms redundancy",
+  "EMP readiness",
+  "Critical project: Avatar Center"
+];
+let auditLog = [];
+
+// Get priorities
+app.get('/api/priorities', (req, res) => {
+  res.json({ priorities });
+});
+
+// Add a new priority (requires CDR approval on frontend)
+app.post('/api/priorities', express.json(), (req, res) => {
+  const { priority, user } = req.body;
+  if (!priority) return res.status(400).json({ error: 'Missing priority' });
+  priorities.unshift(priority);
+  auditLog.unshift({
+    type: 'priority',
+    action: 'add',
+    priority,
+    user: user || 'unknown',
+    timestamp: new Date().toISOString()
+  });
+  res.json({ success: true, priorities });
+});
+
+// Get audit log
+app.get('/api/audit', (req, res) => {
+  res.json({ auditLog });
+});
 app.get('/api/:action', (req, res) => {
   const action = req.params.action;
   res.json({ output: `Action '${action}' received.` });
