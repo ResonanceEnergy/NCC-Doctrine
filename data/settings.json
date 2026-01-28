@@ -1,0 +1,11 @@
+{
+  "Bank": {
+    "Source": "random",
+    "RunwayDays": 71,
+    "Balance": 160068.74,
+    "DeltaPct": -14.9,
+    "LastRefreshed": "2026-01-28 05:11",
+    "Currency": "USD"
+  },
+  "Posture": "NORMAL"
+}

@@ -12,8 +12,14 @@
     "dev:all": "concurrently \"npm run start:backend\" \"npm run dev\""
   },
   "dependencies": {
+    "@chakra-ui/react": "^3.31.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.7",
+    "antd": "^6.2.2",
     "cors": "^2.8.6",
     "express": "^5.2.1",
+    "framer-motion": "^12.29.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },

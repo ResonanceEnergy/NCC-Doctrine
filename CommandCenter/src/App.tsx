@@ -5,6 +5,8 @@ import Header from './components/Header';
 import AnimatedCircularMetric from './components/AnimatedCircularMetric';
 import AzPrimeSVGAvatar from './components/AzPrimeSVGAvatar';
 import FuturisticHUDBackground from './components/FuturisticHUDBackground';
+import ManualReviewChecklist from './components/ManualReviewChecklist';
+import ExportChecklistTracker from './components/ExportChecklistTracker';
 
 function App() {
   // State for live data
@@ -135,6 +137,18 @@ function App() {
           </div>
         </div>
       </main>
+
+
+      {/* Manual Review Checklist UI */}
+      <div className="w-full flex justify-center mt-8">
+        <ManualReviewChecklist />
+      </div>
+
+      {/* Export/Deployment Review Tracker */}
+      <div className="w-full flex justify-center mt-8 mb-12">
+        <ExportChecklistTracker />
+      </div>
+
       {/* Neon Glow Button Effect */}
       <style>{`
         .neon-glow {
