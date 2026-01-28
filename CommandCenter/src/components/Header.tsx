@@ -5,9 +5,10 @@ interface HeaderProps {
   avatarUrl: string;
   corpName?: string;
   personaName?: string;
+  user?: { username: string; role: string };
 }
 
-const Header: React.FC<HeaderProps> = ({ bankAccount, avatarUrl, corpName = 'NCC CORP.', personaName = 'AZ PRIME' }) => {
+const Header: React.FC<HeaderProps> = ({ bankAccount, avatarUrl, corpName = 'NCC CORP.', personaName = 'AZ PRIME', user }) => {
   return (
     <header className="w-full flex items-center justify-between bg-[#10131a]/80 px-8 py-4 border-b border-cyan-400/30 shadow-lg relative z-10">
       {/* Bank Account */}
@@ -26,6 +27,12 @@ const Header: React.FC<HeaderProps> = ({ bankAccount, avatarUrl, corpName = 'NCC
           <img src={avatarUrl} alt={personaName} className="object-cover w-full h-full" />
         </div>
         <span className="text-xs text-cyan-400 mt-1 font-orbitron tracking-widest">{personaName}</span>
+        {user && (
+          <div className="text-xs text-cyan-500 mt-1 text-center">
+            <div>{user.username}</div>
+            <div className="uppercase font-bold">{user.role}</div>
+          </div>
+        )}
       </div>
     </header>
   );

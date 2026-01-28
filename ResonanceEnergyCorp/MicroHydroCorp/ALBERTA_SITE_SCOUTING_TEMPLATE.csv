@@ -1,0 +1,51 @@
+Site_ID,Site_Name,Latitude,Longitude,Water_Body,Infrastructure_Type,Head_Est_m,Flow_Est_L_s,Power_Est_kW,Grid_Distance_km,Land_Status,Access_Road,Fish_Presence,Permit_Complexity,Priority,Notes
+AB-001,,,,,Canal Drop,,,,,Crown,Y,Low,Medium,High,Example: irrigation district control structure
+AB-002,,,,,Weir/Low Dam,,,,,Private,Y,Medium,High,Medium,Example: existing weir on stream
+AB-003,,,,,WWTP Outfall,,,,,Municipal,Y,Low,Low,High,Example: treatment plant discharge
+AB-004,,,,,Culvert Drop,,,,,Provincial,Y,Medium,Medium,Medium,Example: highway culvert with consistent drop
+AB-005,,,,,Canal Gate,,,,,Irrigation District,Y,Low,Low,High,Example: controlled canal section
+AB-006,,,,,Mill Race,,,,,Private,N,Medium,High,Low,Example: historic mill site
+AB-007,,,,,Natural Falls,,,,,Crown,N,High,High,Low,Example: small waterfall in stream
+AB-008,,,,,Spillway,,,,,Municipal,Y,Low,Medium,Medium,Example: reservoir spillway
+AB-009,,,,,Intake Works,,,,,Water Utility,Y,Low,Low,High,Example: municipal water intake
+AB-010,,,,,Irrigation Return,,,,,Irrigation District,Y,Low,Low,Medium,Example: return flow channel
+AB-011,,,,,,,,,,,,,,
+AB-012,,,,,,,,,,,,,,
+AB-013,,,,,,,,,,,,,,
+AB-014,,,,,,,,,,,,,,
+AB-015,,,,,,,,,,,,,,
+AB-016,,,,,,,,,,,,,,
+AB-017,,,,,,,,,,,,,,
+AB-018,,,,,,,,,,,,,,
+AB-019,,,,,,,,,,,,,,
+AB-020,,,,,,,,,,,,,,
+AB-021,,,,,,,,,,,,,,
+AB-022,,,,,,,,,,,,,,
+AB-023,,,,,,,,,,,,,,
+AB-024,,,,,,,,,,,,,,
+AB-025,,,,,,,,,,,,,,
+AB-026,,,,,,,,,,,,,,
+AB-027,,,,,,,,,,,,,,
+AB-028,,,,,,,,,,,,,,
+AB-029,,,,,,,,,,,,,,
+AB-030,,,,,,,,,,,,,,
+AB-031,,,,,,,,,,,,,,
+AB-032,,,,,,,,,,,,,,
+AB-033,,,,,,,,,,,,,,
+AB-034,,,,,,,,,,,,,,
+AB-035,,,,,,,,,,,,,,
+AB-036,,,,,,,,,,,,,,
+AB-037,,,,,,,,,,,,,,
+AB-038,,,,,,,,,,,,,,
+AB-039,,,,,,,,,,,,,,
+AB-040,,,,,,,,,,,,,,
+AB-041,,,,,,,,,,,,,,
+AB-042,,,,,,,,,,,,,,
+AB-043,,,,,,,,,,,,,,
+AB-044,,,,,,,,,,,,,,
+AB-045,,,,,,,,,,,,,,
+AB-046,,,,,,,,,,,,,,
+AB-047,,,,,,,,,,,,,,
+AB-048,,,,,,,,,,,,,,
+AB-049,,,,,,,,,,,,,,
+AB-050,,,,,,,,,,,,,,

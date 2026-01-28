@@ -2,6 +2,12 @@
 **Classification:** [ Public | Internal | Restricted | TS ]  
 **Author:** [Name] | **Date:** 2026-01-27 | **Version:** 0.1.0
 
+## Organizational Structure Update
+- **AZ PRIME (AI Command Interface):** Overall Command Authority
+  - **Safety Captain:** Oversees Operational Safety and Readiness
+    - **Security 10 Division:** Handles Cyber, Physical, and EMP Security
+      - Sub-teams: Threat Assessment, Access Control, COMSEC
+
 ## 1. Executive Summary
 [One paragraph: key risks, posture, required decisions.]
 
