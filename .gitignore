@@ -1,0 +1,19 @@
+﻿# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.code-workspace
+
+# Python/Build/Temp
+__pycache__/
+*.pyc
+dist/
+build/
+*.zip
+
+# Local runtime
+console/Legacy/
+archives/*.zip
+
+# Office temp
+~$*.docx
