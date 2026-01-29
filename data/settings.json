@@ -17,25 +17,25 @@
     }
   },
   "bbic_intelligence": {
-    "last_update": "2026-01-29T09:39:00.582731",
-    "bulletin_id": "BBIC-DATA-TECH-20260129-093900",
+    "last_update": "2026-01-29T09:39:28.905047",
+    "bulletin_id": "BBIC-DATA-TECH-20260129-093928",
     "categories_discovered": 3,
     "total_insights": 15,
     "departments_notified": [
+      "CSuite",
+      "BigBrainIntelligence",
       "AIGovernanceCouncil",
       "EliteTraderDesk",
       "QuantumComputingDivision",
-      "BigBrainIntelligence",
-      "InnovationLabsDivision",
-      "CSuite"
+      "InnovationLabsDivision"
     ]
   },
   "bbic_trends": {
-    "last_trends_update": "2026-01-29T09:39:00.632014",
+    "last_trends_update": "2026-01-29T09:39:28.982098",
     "total_companies_analyzed": 27,
     "total_trends_generated": 108,
     "total_insights_discovered": 3,
     "bulletins_created": 27,
-    "report_timestamp": "2026-01-29_09-39-00"
+    "report_timestamp": "2026-01-29_09-39-28"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-01-29T09:39:00.648757",
+  "last_update": "2026-01-29T09:39:28.987219",
   "trends_summary": {
     "total_companies": 27,
     "total_trends": 108,
@@ -25,17 +25,17 @@
     },
     {
       "type": "innovation_leaders",
-      "insight": "Innovation leaders: BiotechCorporation, GlobalTalentAcquisition, Templates showing highest innovation indices",
+      "insight": "Innovation leaders: EliteTraderDesk, InnovationLabsDivision, OpsPackets showing highest innovation indices",
       "companies_affected": [
-        "BiotechCorporation",
-        "GlobalTalentAcquisition",
-        "Templates"
+        "EliteTraderDesk",
+        "InnovationLabsDivision",
+        "OpsPackets"
       ],
       "recommendation": "Accelerate knowledge transfer from innovation leaders to other divisions"
     },
     {
       "type": "risk_monitoring",
-      "insight": "Risk indicators detected in 2 companies requiring attention",
+      "insight": "Risk indicators detected in 1 companies requiring attention",
       "companies_affected": [
         "BigBrainIntelligence"
       ],
