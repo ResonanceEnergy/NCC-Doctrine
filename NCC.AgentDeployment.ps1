@@ -29,7 +29,7 @@ function Write-NccAudit {
     Write-Host ""
 
     Write-Host "🚨 MISSING DIVISIONS:" -ForegroundColor Red
-    $missingDivisions = @(
+    $expectedDivisions = @(
         "AugmentedArbitrageCorp",
         "Faraday_Financial_Corp",
         "Ludwig_Law_Corp",
@@ -46,8 +46,15 @@ function Write-NccAudit {
         "_enterprise"
     )
 
-    foreach ($division in $missingDivisions) {
-        Write-Host "  ❌ $division" -ForegroundColor Red
+    $existingDivisions = $employeeData.ncc_employee_database.departments | Get-Member -MemberType NoteProperty | Select-Object -ExpandProperty Name
+    $missingDivisions = $expectedDivisions | Where-Object { $_ -notin $existingDivisions }
+
+    if ($missingDivisions.Count -eq 0) {
+        Write-Host "  ✅ ALL DIVISIONS DEPLOYED - LFG! ACHIEVED" -ForegroundColor Green
+    } else {
+        foreach ($division in $missingDivisions) {
+            Write-Host "  ❌ $division" -ForegroundColor Red
+        }
     }
     Write-Host ""
 }
@@ -168,7 +175,6 @@ if ($DeployAll) {
     Write-Host "Divisions Added: 15" -ForegroundColor Cyan
     Write-Host "Coverage: 100% of identified divisions" -ForegroundColor Green
     return
-}
 }
 
 # Default: Show usage

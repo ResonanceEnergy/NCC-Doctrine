@@ -1,10 +1,10 @@
 {
-  "last_update": "2026-01-29T09:39:28.987219",
+  "last_update": "2026-01-29T09:57:18.160045",
   "trends_summary": {
-    "total_companies": 27,
-    "total_trends": 108,
+    "total_companies": 41,
+    "total_trends": 150,
     "total_insights": 3,
-    "bulletins_generated": 27
+    "bulletins_generated": 41
   },
   "top_insights": [
     {
@@ -19,25 +19,31 @@
         "CommandCenter",
         "CSuite",
         "OffshoreOperationsDivision",
-        "EliteTraderDesk"
+        "EliteTraderDesk",
+        "AugmentedArbitrageCorp",
+        "Faraday_Financial_Corp",
+        "Elite_Trader_Desk",
+        "Ludwig_Law_Corp",
+        "governance"
       ],
       "recommendation": "Study best practices from high-performers for cross-company optimization"
     },
     {
       "type": "innovation_leaders",
-      "insight": "Innovation leaders: EliteTraderDesk, InnovationLabsDivision, OpsPackets showing highest innovation indices",
+      "insight": "Innovation leaders: QuantumComputingDivision, Playbooks, CommandCenter showing highest innovation indices",
       "companies_affected": [
-        "EliteTraderDesk",
-        "InnovationLabsDivision",
-        "OpsPackets"
+        "QuantumComputingDivision",
+        "Playbooks",
+        "CommandCenter"
       ],
       "recommendation": "Accelerate knowledge transfer from innovation leaders to other divisions"
     },
     {
       "type": "risk_monitoring",
-      "insight": "Risk indicators detected in 1 companies requiring attention",
+      "insight": "Risk indicators detected in 4 companies requiring attention",
       "companies_affected": [
-        "BigBrainIntelligence"
+        "BigBrainIntelligence",
+        "Faraday_Financial_Corp"
       ],
       "recommendation": "Implement proactive risk mitigation strategies across identified companies"
     }
@@ -69,7 +75,21 @@
     "Collab",
     "Dashboard",
     "OffshoreOperationsDivision",
-    "EliteTraderDesk"
+    "EliteTraderDesk",
+    "AugmentedArbitrageCorp",
+    "Faraday_Financial_Corp",
+    "Elite_Trader_Desk",
+    "Hedge_Fund",
+    "Ludwig_Law_Corp",
+    "intelligence",
+    "operations",
+    "governance",
+    "database",
+    "config",
+    "companies",
+    "logs",
+    "Versions",
+    "_enterprise"
   ],
   "intelligence_status": "ACTIVE - CONTINUOUS MONITORING"
 }

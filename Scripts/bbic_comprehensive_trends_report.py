@@ -12,6 +12,7 @@ BBIC Comprehensive Trends Report Compiler:
 import os
 import json
 import datetime as dt
+from datetime import timezone
 from typing import Dict, List, Any, Tuple
 from collections import defaultdict
 import random
@@ -93,7 +94,7 @@ class BBICTrendsReportCompiler:
 
         # Add timestamp to all trends
         for trend in base_trends:
-            trend['timestamp'] = dt.datetime.utcnow().isoformat()
+            trend['timestamp'] = dt.datetime.now(timezone.utc).isoformat()
             trend['company'] = company_name
 
         return base_trends
@@ -157,7 +158,7 @@ class BBICTrendsReportCompiler:
             # Create bulletin
             bulletin = {
                 'company': company,
-                'timestamp': dt.datetime.utcnow().isoformat(),
+                'timestamp': dt.datetime.now(timezone.utc).isoformat(),
                 'cycle': 'current',
                 'trends_summary': {
                     'total_trends': len(trends),
@@ -270,7 +271,7 @@ class BBICTrendsReportCompiler:
         output_dir = os.path.join(ROOT, "data", "bbic_trends_reports")
         os.makedirs(output_dir, exist_ok=True)
 
-        timestamp = dt.datetime.utcnow().strftime("%Y-%m-%d_%H-%M-%S")
+        timestamp = dt.datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
         output_file = os.path.join(output_dir, f"comprehensive_trends_report_{timestamp}.json")
 
         with open(output_file, 'w', encoding='utf-8') as f:
@@ -790,18 +791,6 @@ def main():
             print(f"  Trends: {bbi_bulletin['trends_summary']['total_trends']}")
             print(f"  Key Insights: {len(bbi_bulletin['key_insights'])}")
             print(f"  Action Items: {len(bbi_bulletin['action_items'])}")
-    print(f"  Company Bulletins Created: {report['summary']['bulletins_generated']}")
-
-    print("\nTop Cross-Company Insights:")
-    for insight in report['cross_company_insights'][:3]:
-        print(f"  • {insight['insight']}")
-
-    print("\nSample Company Bulletin (BigBrainIntelligence):")
-    if 'BigBrainIntelligence' in report['company_bulletins']:
-        bbi_bulletin = report['company_bulletins']['BigBrainIntelligence']
-        print(f"  Trends: {bbi_bulletin['trends_summary']['total_trends']}")
-        print(f"  Key Insights: {len(bbi_bulletin['key_insights'])}")
-        print(f"  Action Items: {len(bbi_bulletin['action_items'])}")
 
 if __name__ == "__main__":
     main()

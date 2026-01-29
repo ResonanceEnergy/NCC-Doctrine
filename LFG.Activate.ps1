@@ -75,7 +75,7 @@ $systems = @(
 )
 
 foreach ($system in $systems) {
-    Write-Host "  • $system: LFG! SYNCED" -ForegroundColor Green
+    Write-Host "  • $($system): LFG! SYNCED" -ForegroundColor Green
     Start-Sleep -Milliseconds 150
 }
 

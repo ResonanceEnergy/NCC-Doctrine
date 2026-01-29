@@ -17,3 +17,4 @@ archives/*.zip
 
 # Office temp
 ~$*.docx
+node_modules
