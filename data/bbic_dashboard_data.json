@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-01-29T09:57:18.160045",
+  "last_update": "2026-01-29T09:57:32.972727",
   "trends_summary": {
     "total_companies": 41,
     "total_trends": 150,
@@ -30,17 +30,17 @@
     },
     {
       "type": "innovation_leaders",
-      "insight": "Innovation leaders: QuantumComputingDivision, Playbooks, CommandCenter showing highest innovation indices",
+      "insight": "Innovation leaders: governance, OpsPackets, Projects showing highest innovation indices",
       "companies_affected": [
-        "QuantumComputingDivision",
-        "Playbooks",
-        "CommandCenter"
+        "governance",
+        "OpsPackets",
+        "Projects"
       ],
       "recommendation": "Accelerate knowledge transfer from innovation leaders to other divisions"
     },
     {
       "type": "risk_monitoring",
-      "insight": "Risk indicators detected in 4 companies requiring attention",
+      "insight": "Risk indicators detected in 3 companies requiring attention",
       "companies_affected": [
         "BigBrainIntelligence",
         "Faraday_Financial_Corp"

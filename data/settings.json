@@ -3,10 +3,10 @@
   "last_updated": "2026-01-29T01:13:25.2901857-07:00",
   "last_cycle": 0,
   "ncc_operations": {
-    "security_score": 98,
-    "last_updated": "2026-01-29T02:57:14Z",
+    "security_score": 99,
+    "last_updated": "2026-01-29T02:57:50Z",
     "market_position": "DOMINANT",
-    "compliance_level": 98,
+    "compliance_level": 97,
     "ai_performance": 97,
     "operational_efficiency": 96,
     "lfg_protocol": {
@@ -17,25 +17,25 @@
     }
   },
   "bbic_intelligence": {
-    "last_update": "2026-01-29T09:57:18.122783",
-    "bulletin_id": "BBIC-DATA-TECH-20260129-095718",
+    "last_update": "2026-01-29T09:57:32.919693",
+    "bulletin_id": "BBIC-DATA-TECH-20260129-095732",
     "categories_discovered": 3,
     "total_insights": 15,
     "departments_notified": [
-      "EliteTraderDesk",
       "BigBrainIntelligence",
       "InnovationLabsDivision",
       "CSuite",
-      "AIGovernanceCouncil",
-      "QuantumComputingDivision"
+      "EliteTraderDesk",
+      "QuantumComputingDivision",
+      "AIGovernanceCouncil"
     ]
   },
   "bbic_trends": {
-    "last_trends_update": "2026-01-29T09:57:18.157143",
+    "last_trends_update": "2026-01-29T09:57:32.967842",
     "total_companies_analyzed": 41,
     "total_trends_generated": 150,
     "total_insights_discovered": 3,
     "bulletins_created": 41,
-    "report_timestamp": "2026-01-29_09-57-18"
+    "report_timestamp": "2026-01-29_09-57-32"
   }
 }

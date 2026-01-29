@@ -1,12 +1,12 @@
 {
-  "DeploymentsActive": 14,
-  "AvatarRealismScore": 99.8,
-  "InnovationOutput": 88.0,
-  "TotalAgents": 1691,
-  "VoiceSynthesisUptime": 99.9,
-  "StrategicImpact": 93.0,
-  "SecurityCompliance": 100.0,
-  "ResponseLatency": 69,
+  "StrategicImpact": 95.0,
+  "AvatarRealismScore": 99.2,
+  "VoiceSynthesisUptime": 99.6,
   "MediaCorpAgents": 75,
-  "ActiveAvatars": 13
+  "TotalAgents": 1691,
+  "ActiveAvatars": 13,
+  "InnovationOutput": 93.0,
+  "DeploymentsActive": 8,
+  "ResponseLatency": 57,
+  "SecurityCompliance": 100.0
 }
