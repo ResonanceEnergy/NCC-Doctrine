@@ -1,0 +1,20 @@
+# BBIC YouTube Configuration
+# Channels: add channel_id values (not @handles). You can mix both channels and keyword queries.
+sources:
+  channels:
+    - id: "UCX6OQ3DkcsbYNE6H8uQQuVA"   # MrBeast (example) – replace with energy/policy/finance channels
+    # - id: "<YOUR_CHANNEL_ID>"
+  keywords:
+    - "energy policy latin america"
+    - "grid outage analysis"
+    - "hydropower micro hydro"
+limits:
+  per_channel_recent: 25      # last N from uploads playlist (cheap)
+  per_keyword_results: 5      # conservative due to search.list = 100 units/call
+features:
+  fetch_transcripts: true
+  fetch_stats: true
+storage:
+  root: "data/bbic/youtube"
+  curated_dir: "data/bbic/curated"
+  state_file: "data/bbic/youtube/state.json"

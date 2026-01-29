@@ -1,0 +1,15 @@
+# BBIC Reddit Configuration
+auth:
+  client_id: "REDDIT_CLIENT_ID"
+  client_secret: "REDDIT_CLIENT_SECRET"
+  user_agent: "bbic-intake/1.0 by ResonanceEnergy"
+intake:
+  subreddits:
+    - "energy"
+    - "oil"
+    - "technology"
+    - "uruguay"
+  limit_per_subreddit: 20
+  time_filter: "day"    # hour|day|week|month|year|all
+storage:
+  root: "data/bbic/reddit"

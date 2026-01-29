@@ -1,0 +1,54 @@
+name: BBIC Intake (YouTube + Reddit)
+
+on:
+  schedule:
+    - cron: "12 02 * * *"   # 02:12 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-intake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install --upgrade pip
+          pip install google-api-python-client youtube-transcript-api pyyaml pandas requests tenacity praw
+      - name: YouTube ingest
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: |
+          source .venv/bin/activate
+          python scripts/bbic_youtube_ingest.py
+      - name: Reddit ingest
+        env:
+          PRAW_CLIENT_ID: ${{ secrets.PRAW_CLIENT_ID }}
+          PRAW_CLIENT_SECRET: ${{ secrets.PRAW_CLIENT_SECRET }}
+        run: |
+          source .venv/bin/activate
+          # write a small credentials bridge so config file stays static
+          python - <<'PY'
+import os,yaml,sys
+p="config/bbic.reddit.yaml"
+conf=yaml.safe_load(open(p))
+conf["auth"]["client_id"]=os.environ.get("PRAW_CLIENT_ID")
+conf["auth"]["client_secret"]=os.environ.get("PRAW_CLIENT_SECRET")
+yaml.safe_dump(conf,open(p,"w"))
+PY
+          python scripts/bbic_reddit_ingest.py
+      - name: Commit data
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "github-actions"
+          git add data/bbic/** || true
+          git commit -m "chore(bbic): fresh intake" || echo "nothing to commit"
+          git push

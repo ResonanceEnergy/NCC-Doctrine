@@ -1,0 +1,29 @@
+name: BBIC Content Agent
+
+on:
+  schedule:
+    - cron: "20 02 * * *"   # after intake
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  bbic-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Install deps
+        run: |
+          python -m venv .venv && source .venv/bin/activate
+          pip install requests pyyaml
+      - name: Run content agent
+        env:
+          GITHUB_REPO: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          source .venv/bin/activate
+          python agents/departments/agent_bbic_content.py
