@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-01-29T10:48:45.352571",
+  "last_update": "2026-01-29T10:49:42.208288",
   "trends_summary": {
     "total_companies": 41,
     "total_trends": 150,
@@ -30,19 +30,20 @@
     },
     {
       "type": "innovation_leaders",
-      "insight": "Innovation leaders: QuantumComputingDivision, Scripts, Faraday_Financial_Corp showing highest innovation indices",
+      "insight": "Innovation leaders: Dashboard, Console, CSuite showing highest innovation indices",
       "companies_affected": [
-        "QuantumComputingDivision",
-        "Scripts",
-        "Faraday_Financial_Corp"
+        "Dashboard",
+        "Console",
+        "CSuite"
       ],
       "recommendation": "Accelerate knowledge transfer from innovation leaders to other divisions"
     },
     {
       "type": "risk_monitoring",
-      "insight": "Risk indicators detected in 3 companies requiring attention",
+      "insight": "Risk indicators detected in 5 companies requiring attention",
       "companies_affected": [
         "BigBrainIntelligence",
+        "EliteTraderDesk",
         "Faraday_Financial_Corp"
       ],
       "recommendation": "Implement proactive risk mitigation strategies across identified companies"
