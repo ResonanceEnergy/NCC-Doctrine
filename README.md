@@ -1,9 +1,9 @@
 ﻿# NATHAN COMMAND CORP — Unified Master Plan
 
-**Version:** 1.2.0 | **Classification:** NATHAN COMMAND CORP TOP SECRET | **Date:** 2026-01-28
+**Version:** 1.3.0 | **Classification:** NATHAN COMMAND CORP TOP SECRET | **Date:** 2026-01-28
 
 ## Company Overview
-NATHAN COMMAND CORP (NCC) is a fully digital, AI-orchestrated enterprise designed for seamless integration with the real world. We operate at the intersection of advanced technology, strategic intelligence, and tangible business outcomes.
+NATHAN COMMAND CORP (NCC) is a fully digital, AI-orchestrated enterprise designed for seamless integration with the real world. As the parent holding company, NCC owns and operates five subsidiary corporations, each specializing in distinct business domains while operating under unified AI command and control.
 
 ## Leadership Hierarchy
 - **Real World Nate:** Supreme Commander and Visionary Leader
@@ -14,40 +14,119 @@ NATHAN COMMAND CORP (NCC) is a fully digital, AI-orchestrated enterprise designe
   - **C33 Council of 33 Wizards:** Strategic Council of 33 Advisors
 
 ## Core Mission
-To build and operate a resilient, technology-driven command structure that delivers measurable real-world results through AI orchestration, digital excellence, and strategic execution.
+To build and operate a resilient, technology-driven command structure that delivers measurable real-world results through AI orchestration, digital excellence, and strategic execution across all subsidiary corporations.
 
 ## Key Principles
 - **Real-World Integration:** All operations connect to tangible assets, finances, and outcomes
-- **AI-First Operations:** 1,277 vetted AI agents across 20+ departments
+- **AI-First Operations:** 1,277+ vetted AI agents across 24 departments
 - **24/7 Orchestration:** Continuous monitoring and optimization through AZ PRIME
-- **Hierarchical Excellence:** Clear command structure with decentralized execution
+- **Corporate Ownership:** NCC wholly owns all subsidiary corporations
+- **Unified Command:** All entities operate under AZ PRIME's strategic oversight
 - **Tangible Results:** No fictional numbers or hypothetical scenarios
 
-## Department Structure
-NATHAN COMMAND CORP operates through the original 10 core projects and their integrated subsidiaries:
+## Corporate Structure
+NATHAN COMMAND CORP operates as the parent holding company with five wholly-owned subsidiary corporations:
 
-### Core Projects (Original 10)
-1. **Resonance Energy** - Energy systems and micro-generation
-   - **ResonanceEnergyCorp** subsidiary
-   - **Micro Hydro Company** (RWN/DWN priority project)
+### NCC Core Divisions
+- **CSuite Division:** Executive leadership, corporate governance, Financial Sniper Division (FSD)
+- **ADMIN Division:** Corporate administration, HR, accounting, global talent acquisition
 
-2. **Big Brain Intelligence** - Strategic intelligence and analysis
-   - **BigBrainIntelligence** subsidiary
-   - **AIGovernanceCouncil** subsidiary
-   - **BiotechCorporation** subsidiary
-   - **InnovationLabsDivision** subsidiary
+### Subsidiary Corporations (Wholly Owned by NCC)
 
-3. **Quantum Computing Division** - Advanced computing solutions
-   - **Assigned to Advanced Research Company**
+#### 1. **Augmented Arbitrage Corp (AAC)**
+- **Focus:** AI-augmented systematic arbitrage operations
+- **AUM Target:** $50B+ within 5 years
+- **Divisions:** Command Center (digital command-and-control operations)
+- **Leadership:** CEO, COO, CIO, CRO, CTO
 
-4. **Biotech Corporation** - Biotechnology research and development
-   - Merged with Big Brain Intelligence subsidiary
+#### 2. **Big Brain Intelligence Corp (BBIC)**
+- **Focus:** Advanced AI research and intelligence operations
+- **Divisions:**
+  - Big Brain Intelligence (intelligence analysis, threat assessment)
+  - Innovation Labs Division (R&D, technology development)
+  - Data Centers & Agent University Division (data infrastructure, AI training)
+  - Data Brokers Division (data acquisition, aggregation, monetization)
+- **Leadership:** AI Research Director
 
-5. **Faraday Financial Corporation** - Financial services and investment
-   - **AugmentedArbitrageCorp** subsidiary (Algorithmic trading)
-   - **GlobalTalentAcquisition** subsidiary (HR focus)
+#### 3. **Ludwig Law Corp (LLC)**
+- **Focus:** Exclusive legal counsel and compliance authority
+- **Divisions:** Ludwig Law Corp (legal operations, compliance management)
+- **Global Presence:** US Operations LLP, UK LLP, EU GmbH/SARL, SG Pte Ltd
+- **Special Purpose:** IPCo, DataCo, TechOpsCo, AdvisoryCo
+- **Leadership:** General Counsel
 
-6. **Space Operations Division** - Space systems and operations
+#### 4. **Resonance Energy Corp (REC)**
+- **Focus:** Energy innovation and micro-hydro initiatives
+- **Divisions:**
+  - Robotics Automation Division
+  - Space Operations Division
+  - Biotech Corporation
+  - Resonance Energy Corp (clean energy, sustainable power)
+- **Special Projects:** Micro Hydro Project (Flow Cube, Uruguay, Paraguay)
+- **Leadership:** Energy Operations Director
+
+#### 5. **Faraday Financial Corp (FFC)**
+- **Focus:** Financial operations and quantitative strategies
+- **Divisions:**
+  - Quantum Computing Division (advanced algorithms, computational supremacy)
+  - Hedge Fund Division (alternative investment strategies)
+  - Elite Trader Desk (Top Secret - 20 elite math/physics geniuses under AZ PRIME FSD command)
+- **Leadership:** CFO/Financial Operations Director
+
+### Operational Support Divisions
+These divisions provide cross-corporate support services:
+- **OpsPackets:** Process standardization, quality assurance, ADMIN, HR, Sales, Marketing
+- **Playbooks:** Strategic contingency planning and crisis management
+- **Projects:** Project management and delivery optimization
+- **International Operations Division:** Global coordination and cross-border management
+- **Global Talent Acquisition:** Human capital and workforce optimization
+- **Cybersecurity Command Center:** Threat defense and information security
+- **AI Governance Council:** Ethical AI and governance oversight
+- **Collab:** Collaboration platforms and team coordination
+- **Templates:** Documentation standardization and knowledge management
+- **Console:** System administration and technical operations
+
+## Operational Framework
+- **AZ PRIME 24/7 Framework:** Continuous AI orchestration and monitoring across all corporations
+- **C33 Doctrine:** Command, control, and communication structure
+- **Real-World Integration Doctrine:** Prohibition of fictional data
+- **Security 10 Directive:** Comprehensive security protocols
+- **NCL Integration:** 2,800+ insights distributed across 24 departments
+
+## Key Achievements
+- **24 Departments:** Complete organizational structure across 5 corporations
+- **2,800+ NCL Insights:** Distributed and integrated across all entities
+- **Elite Trader Desk:** Top Secret financial warfare unit under AZ PRIME command
+- **Ludwig Law Corp:** AI-driven legal enterprise with global practice capabilities
+- **Real-World Integration:** Live financial and asset connections
+- **24/7 Operations:** Continuous monitoring and optimization
+- **$5B+ Value Generation:** Through AI-driven efficiencies and strategic operations
+
+## Technology Stack
+- **AI Orchestration:** AZ PRIME autonomous intelligence across all corporations
+- **Data Management:** Real-time analytics and reporting through BBIC Data Brokers
+- **Security:** Enterprise-grade protection via Cybersecurity Command Center
+- **Integration:** API connections to real-world systems
+- **Automation:** End-to-end process optimization through NCL frameworks
+- **Quantum Computing:** Advanced computational capabilities via FFC Quantum Division
+
+## Strategic Objectives
+1. **Complete Corporate Integration:** All subsidiaries operating under unified NCC command
+2. **AI Excellence:** Maintain industry-leading AI orchestration and decision-making
+3. **Financial Supremacy:** Elite Trader Desk achieving 10-steps-ahead market positioning
+4. **Operational Perfection:** Achieve 99.9% uptime and efficiency across all functions
+5. **Market Leadership:** Drive innovation and capture market opportunities through integrated corporations
+6. **Sustainable Growth:** Generate compounding returns through technological and strategic advantage
+
+## Contact & Access
+- **Command Center:** Real-time operational dashboard across all corporations
+- **AZ PRIME:** 24/7 autonomous coordination and strategic oversight
+- **CSuite Division:** Executive leadership and corporate governance
+- **Elite Trader Desk (FSD):** Top Secret financial operations under AZ PRIME command
+- **Department Heads:** Functional expertise and execution within each corporation
+
+---
+**NATHAN COMMAND CORP | Real World. Real Results. Real Command.** 🚀
    - **Assigned to Advanced Research Company**
 
 7. **AI Ethics Council** - AI governance and ethics
