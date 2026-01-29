@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-01-29T09:27:35.617927",
+  "last_update": "2026-01-29T09:33:08.662244",
   "trends_summary": {
     "total_companies": 27,
     "total_trends": 108,
@@ -25,11 +25,11 @@
     },
     {
       "type": "innovation_leaders",
-      "insight": "Innovation leaders: Collab, Playbooks, ResonanceEnergyCorp showing highest innovation indices",
+      "insight": "Innovation leaders: Collab, RoboticsAutomationDivision, CybersecurityCommandCenter showing highest innovation indices",
       "companies_affected": [
         "Collab",
-        "Playbooks",
-        "ResonanceEnergyCorp"
+        "RoboticsAutomationDivision",
+        "CybersecurityCommandCenter"
       ],
       "recommendation": "Accelerate knowledge transfer from innovation leaders to other divisions"
     },
