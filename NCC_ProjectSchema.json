@@ -1,4 +1,4 @@
-﻿{
+{
   "meta": {
     "schemaVersion": "1.0",
     "refreshSeconds": 300
@@ -13,20 +13,7 @@
       "status": "Active",
       "progress": 35,
       "azParticipates": true,
-      "cSuiteParticipates": true,
-      "children": [
-        {
-          "name": "Micro Hydro Corp",
-          "slug": "micro-hydro-corp",
-          "category": "Energy",
-          "path": "ResonanceEnergyCorp/MicroHydroCorp",
-          "github": "",
-          "status": "Active",
-          "progress": 20,
-          "azParticipates": true,
-          "cSuiteParticipates": true
-        }
-      ]
+      "cSuiteParticipates": true
     },
     {
       "name": "Big Brain Intelligence",
@@ -36,116 +23,6 @@
       "github": "",
       "status": "Planning",
       "progress": 10,
-      "azParticipates": true,
-      "cSuiteParticipates": true
-    },
-    {
-      "name": "Augmented Arbitrage Corp",
-      "slug": "augmented-arbitrage-corp",
-      "category": "Finance",
-      "path": "AugmentedArbitrageCorp",
-      "github": "",
-      "status": "Planning",
-      "progress": 5,
-      "azParticipates": true,
-      "cSuiteParticipates": true
-    },
-    {
-      "name": "Faraday Financial Corp",
-      "slug": "faraday-financial-corp",
-      "category": "Finance",
-      "path": "FaradayFinancial",
-      "github": "",
-      "status": "Active",
-      "progress": 15,
-      "azParticipates": true,
-      "cSuiteParticipates": true
-    },
-    {
-      "name": "Future Financial",
-      "slug": "future-financial",
-      "category": "Finance",
-      "path": "Projects/future-financial",
-      "github": "",
-      "status": "Active",
-      "progress": 15,
-      "azParticipates": true,
-      "cSuiteParticipates": true
-    },
-    {
-      "name": "Future Fibre Optics",
-      "slug": "future-fibre-optics",
-      "category": "Infrastructure",
-      "path": "Projects/future-fibre-optics",
-      "github": "",
-      "status": "Active",
-      "progress": 25,
-      "azParticipates": true,
-      "cSuiteParticipates": true
-    },
-    {
-      "name": "Mammoth Media",
-      "slug": "mammoth-media",
-      "category": "Media",
-      "path": "Projects/mammoth-media",
-      "github": "",
-      "status": "Active",
-      "progress": 40,
-      "azParticipates": true,
-      "cSuiteParticipates": true
-    },
-    {
-      "name": "Off Grid Technologies",
-      "slug": "off-grid-technologies",
-      "category": "Energy",
-      "path": "Projects/off-grid-technologies",
-      "github": "",
-      "status": "Active",
-      "progress": 30,
-      "azParticipates": true,
-      "cSuiteParticipates": true
-    },
-    {
-      "name": "Grip And Ripp HDD",
-      "slug": "grip-and-ripp-hdd",
-      "category": "Construction",
-      "path": "Projects/grip-and-ripp-hdd",
-      "github": "",
-      "status": "Active",
-      "progress": 35,
-      "azParticipates": true,
-      "cSuiteParticipates": true
-    },
-    {
-      "name": "Butterfield Acres",
-      "slug": "butterfield-acres",
-      "category": "Agri/Community",
-      "path": "Projects/butterfield-acres",
-      "github": "",
-      "status": "Planning",
-      "progress": 5,
-      "azParticipates": true,
-      "cSuiteParticipates": true
-    },
-    {
-      "name": "Phone App Builder",
-      "slug": "phone-app-builder",
-      "category": "Software",
-      "path": "Projects/phone-app-builder",
-      "github": "",
-      "status": "Active",
-      "progress": 20,
-      "azParticipates": true,
-      "cSuiteParticipates": true
-    },
-    {
-      "name": "Uruguay and Paraguay — Dream to Reality",
-      "slug": "uruguay-paraguay-dream",
-      "category": "International",
-      "path": "Projects/uruguay-paraguay-dream",
-      "github": "",
-      "status": "Planning",
-      "progress": 0,
       "azParticipates": true,
       "cSuiteParticipates": true
     },
@@ -172,9 +49,20 @@
       "cSuiteParticipates": true
     },
     {
+      "name": "Faraday Financial Corporation",
+      "slug": "faraday-financial-corporation",
+      "category": "Finance",
+      "path": "FaradayFinancial",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
       "name": "Space Operations Division",
       "slug": "space-operations-division",
-      "category": "Aerospace",
+      "category": "Space",
       "path": "SpaceOperationsDivision",
       "github": "",
       "status": "Planning",
@@ -183,10 +71,10 @@
       "cSuiteParticipates": true
     },
     {
-      "name": "Robotics & Automation Division",
-      "slug": "robotics-automation-division",
-      "category": "Robotics",
-      "path": "RoboticsAutomationDivision",
+      "name": "AI Ethics Council",
+      "slug": "ai-ethics-council",
+      "category": "Ethics",
+      "path": "AIEthicsCouncil",
       "github": "",
       "status": "Planning",
       "progress": 0,
@@ -194,10 +82,10 @@
       "cSuiteParticipates": true
     },
     {
-      "name": "AI Governance Council",
-      "slug": "ai-governance-council",
-      "category": "Governance",
-      "path": "AIGovernanceCouncil",
+      "name": "Global Logistics Network",
+      "slug": "global-logistics-network",
+      "category": "Logistics",
+      "path": "GlobalLogisticsNetwork",
       "github": "",
       "status": "Planning",
       "progress": 0,
@@ -205,10 +93,10 @@
       "cSuiteParticipates": true
     },
     {
-      "name": "Global Talent Acquisition Division",
-      "slug": "global-talent-acquisition",
-      "category": "HR",
-      "path": "GlobalTalentAcquisition",
+      "name": "Advanced Materials Corp",
+      "slug": "advanced-materials-corp",
+      "category": "Materials",
+      "path": "AdvancedMaterialsCorp",
       "github": "",
       "status": "Planning",
       "progress": 0,
@@ -216,10 +104,10 @@
       "cSuiteParticipates": true
     },
     {
-      "name": "Innovation Labs Division",
-      "slug": "innovation-labs-division",
-      "category": "R&D",
-      "path": "InnovationLabsDivision",
+      "name": "Renewable Energy Alliance",
+      "slug": "renewable-energy-alliance",
+      "category": "Energy",
+      "path": "RenewableEnergyAlliance",
       "github": "",
       "status": "Planning",
       "progress": 0,
@@ -227,21 +115,10 @@
       "cSuiteParticipates": true
     },
     {
-      "name": "International Operations Division",
-      "slug": "international-operations-division",
-      "category": "Operations",
-      "path": "InternationalOperationsDivision",
-      "github": "",
-      "status": "Planning",
-      "progress": 0,
-      "azParticipates": true,
-      "cSuiteParticipates": true
-    },
-    {
-      "name": "Cybersecurity Command Center",
-      "slug": "cybersecurity-command-center",
+      "name": "Cybersecurity Division",
+      "slug": "cybersecurity-division",
       "category": "Security",
-      "path": "CybersecurityCommandCenter",
+      "path": "CybersecurityDivision",
       "github": "",
       "status": "Planning",
       "progress": 0,
@@ -249,28 +126,147 @@
       "cSuiteParticipates": true
     },
     {
-      "name": "Fusion Energy Division",
-      "slug": "fusion-energy-division",
-      "category": "Energy",
-      "path": "FusionEnergyDivision",
+      "name": "Human Enhancement Labs",
+      "slug": "human-enhancement-labs",
+      "category": "Biotechnology",
+      "path": "HumanEnhancementLabs",
       "github": "",
       "status": "Planning",
       "progress": 0,
       "azParticipates": true,
-      "cSuiteParticipates": true,
-      "parent": "resonance-energy"
+      "cSuiteParticipates": true
     },
     {
-      "name": "Space-Based Solar Division",
-      "slug": "space-based-solar-division",
-      "category": "Energy",
-      "path": "SpaceBasedSolarDivision",
+      "name": "Orbital Infrastructure Corp",
+      "slug": "orbital-infrastructure-corp",
+      "category": "Space",
+      "path": "OrbitalInfrastructureCorp",
       "github": "",
       "status": "Planning",
       "progress": 0,
       "azParticipates": true,
-      "cSuiteParticipates": true,
-      "parent": "resonance-energy"
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Deep Learning Research",
+      "slug": "deep-learning-research",
+      "category": "AI",
+      "path": "DeepLearningResearch",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Nanotechnology Division",
+      "slug": "nanotechnology-division",
+      "category": "Technology",
+      "path": "NanotechnologyDivision",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Climate Adaptation Corp",
+      "slug": "climate-adaptation-corp",
+      "category": "Environment",
+      "path": "ClimateAdaptationCorp",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Quantum Secure Networks",
+      "slug": "quantum-secure-networks",
+      "category": "Security",
+      "path": "QuantumSecureNetworks",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Bio-Defense Systems",
+      "slug": "bio-defense-systems",
+      "category": "Defense",
+      "path": "BioDefenseSystems",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Space Mining Operations",
+      "slug": "space-mining-operations",
+      "category": "Space",
+      "path": "SpaceMiningOperations",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "AI Governance Board",
+      "slug": "ai-governance-board",
+      "category": "Ethics",
+      "path": "AIGovernanceBoard",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Fusion Energy Corp",
+      "slug": "fusion-energy-corp",
+      "category": "Energy",
+      "path": "FusionEnergyCorp",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Neural Interface Tech",
+      "slug": "neural-interface-tech",
+      "category": "Technology",
+      "path": "NeuralInterfaceTech",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Planetary Defense Systems",
+      "slug": "planetary-defense-systems",
+      "category": "Defense",
+      "path": "PlanetaryDefenseSystems",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
+    },
+    {
+      "name": "Consciousness Research Institute",
+      "slug": "consciousness-research-institute",
+      "category": "Research",
+      "path": "ConsciousnessResearchInstitute",
+      "github": "",
+      "status": "Planning",
+      "progress": 0,
+      "azParticipates": true,
+      "cSuiteParticipates": true
     }
   ]
 }

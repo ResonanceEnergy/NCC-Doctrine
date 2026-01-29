@@ -1,8 +1,23 @@
+import express from 'express';
+import cors from 'cors';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const express = require('express');
-const cors = require('cors');
-const fs = require('fs');
-const path = require('path');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Error handling - log but don't exit to maintain server stability
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught Exception (continuing):', err);
+  // Don't exit - let the server continue running
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection (continuing):', promise, 'reason:', reason);
+  // Don't exit - let the server continue running
+});
+
 const app = express();
 const PORT = process.env.PORT || 4000;
 
@@ -13,9 +28,37 @@ app.use(express.json());
 let projectSchema = {};
 try {
   const schemaPath = path.join(__dirname, '..', 'NCC_ProjectSchema.json');
-  projectSchema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
+  const schemaContent = fs.readFileSync(schemaPath, 'utf8');
+  projectSchema = JSON.parse(schemaContent);
+  console.log('✅ Project schema loaded successfully');
 } catch (error) {
-  console.error('Error loading project schema:', error);
+  console.error('❌ Error loading project schema:', error.message);
+  console.log('🔄 Using fallback project schema...');
+  // Fallback schema with basic structure
+  projectSchema = {
+    projects: [
+      {
+        name: "Resonance Energy",
+        slug: "resonance-energy",
+        category: "Energy",
+        path: "ResonanceEnergyCorp",
+        status: "Active",
+        progress: 35,
+        azParticipates: true,
+        cSuiteParticipates: true
+      },
+      {
+        name: "Big Brain Intelligence",
+        slug: "big-brain-intelligence",
+        category: "R&D",
+        path: "BigBrainIntelligence",
+        status: "Planning",
+        progress: 10,
+        azParticipates: true,
+        cSuiteParticipates: true
+      }
+    ]
+  };
 }
 
 // Initialize task management system
@@ -154,7 +197,6 @@ setInterval(() => {
   cSuiteOversight.lastUpdate = now.toISOString();
   cSuiteOversight.activeAlerts = securityIncidents.filter(i => i.status === 'ACTIVE').length;
   cSuiteOversight.complianceScore = Math.max(0, 100 - securityIncidents.length * 2);
-
 }, 30000); // Update every 30 seconds
 
 // Placeholder data
@@ -308,9 +350,15 @@ app.post('/api/tasks/evolve', (req, res) => {
   res.json({ success: true, task: newTask });
 });
 
-app.listen(PORT, () => {
-  console.log(`NCC Command Center API running at http://localhost:${PORT}`);
-  console.log(`Task Management System: ACTIVE`);
-  console.log(`Security 10 Directive: ENFORCED`);
-  console.log(`Departments Monitored: ${Object.keys(departmentTasks).length}`);
+app.listen(PORT, (err) => {
+  if (err) {
+    console.error('Failed to start server:', err);
+    process.exit(1);
+  }
+  console.log(`🚀 NCC Command Center API running at http://localhost:${PORT}`);
+  console.log(`📊 Task Management System: ACTIVE`);
+  console.log(`🔒 Security 10 Directive: ENFORCED`);
+  console.log(`🏢 Departments Monitored: ${Object.keys(departmentTasks).length}`);
+  console.log(`🔄 Auto-evolution cycle: RUNNING`);
+  console.log(`🌐 Ready to accept connections...`);
 });

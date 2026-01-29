@@ -1,37 +1,30 @@
 const express = require('express');
-const helmet = require('helmet');
 const path = require('path');
 const app = express();
 const PORT = 8081;
 
-console.log('Starting static server...');
-
-app.use(helmet({
-  contentSecurityPolicy: {
-    directives: {
-      defaultSrc: ["'self'"],
-      styleSrc: ["'self'", "'unsafe-inline'"],
-      scriptSrc: ["'self'"],
-      imgSrc: ["'self'", "data:", "https:"],
-    },
-  },
-  hsts: {
-    maxAge: 31536000,
-    includeSubDomains: true,
-    preload: true
-  }
-}));
-
+// Serve static files from the dist directory
 app.use(express.static(path.join(__dirname, 'dist')));
 
-const server = app.listen(PORT, () => {
-  console.log(`Dashboard static server running at http://localhost:${PORT}`);
+// Handle client-side routing - serve index.html for all non-API routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
+const server = app.listen(PORT, '0.0.0.0', () => {
+  console.log(`NCC Dashboard server running at http://localhost:${PORT}`);
+  console.log(`Serving files from: ${path.join(__dirname, 'dist')}`);
 });
 
 server.on('error', (err) => {
-  console.error('Static server error:', err);
+  console.error('Server error:', err);
+  process.exit(1);
 });
 
-server.on('listening', () => {
-  console.log('Static server is listening');
+process.on('SIGINT', () => {
+  console.log('Shutting down server...');
+  server.close(() => {
+    console.log('Server closed');
+    process.exit(0);
+  });
 });
