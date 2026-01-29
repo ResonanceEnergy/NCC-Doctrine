@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-01-29T09:26:45.426052",
+  "last_update": "2026-01-29T09:27:19.288426",
   "trends_summary": {
     "total_companies": 27,
     "total_trends": 108,
@@ -25,11 +25,11 @@
     },
     {
       "type": "innovation_leaders",
-      "insight": "Innovation leaders: OffshoreOperationsDivision, Public, Scripts showing highest innovation indices",
+      "insight": "Innovation leaders: AIGovernanceCouncil, CommandCenter, Dashboard showing highest innovation indices",
       "companies_affected": [
-        "OffshoreOperationsDivision",
-        "Public",
-        "Scripts"
+        "AIGovernanceCouncil",
+        "CommandCenter",
+        "Dashboard"
       ],
       "recommendation": "Accelerate knowledge transfer from innovation leaders to other divisions"
     },
