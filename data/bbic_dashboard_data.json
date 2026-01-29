@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-01-29T09:33:32.466646",
+  "last_update": "2026-01-29T09:38:45.045446",
   "trends_summary": {
     "total_companies": 27,
     "total_trends": 108,
@@ -25,11 +25,11 @@
     },
     {
       "type": "innovation_leaders",
-      "insight": "Innovation leaders: CommandCenter, ResonanceEnergyCorp, OpsPackets showing highest innovation indices",
+      "insight": "Innovation leaders: ResonanceEnergyCorp, GlobalTalentAcquisition, BigBrainIntelligence showing highest innovation indices",
       "companies_affected": [
-        "CommandCenter",
         "ResonanceEnergyCorp",
-        "OpsPackets"
+        "GlobalTalentAcquisition",
+        "BigBrainIntelligence"
       ],
       "recommendation": "Accelerate knowledge transfer from innovation leaders to other divisions"
     },

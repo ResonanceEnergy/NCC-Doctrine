@@ -126,10 +126,16 @@ function Invoke-CompanyWideAudit {
 
     # 3. FINANCIAL AUDIT
     Write-OperationLog "AUDIT PHASE 3: Financial Systems Review" "AX-AUDIT"
-    if (Test-Path $budgetsPath) {
-        $budgets = Get-Content $budgetsPath | ConvertFrom-Json
-        $auditReport.performance_metrics.budget_utilization = ($budgets.allocated_budget / $budgets.total_budget) * 100
-        $auditReport.performance_metrics.available_budget = $budgets.available_budget
+    if (Test-Path $settingsPath) {
+        $budgets = Get-Content $DataPath\budgets.json | ConvertFrom-Json
+        if ($budgets -is [array]) {
+            $totalBudget = ($budgets | Measure-Object -Property Cap -Sum).Sum
+            $allocatedBudget = ($budgets | Measure-Object -Property Allocated -Sum).Sum
+            $auditReport.performance_metrics.budget_utilization = if ($totalBudget -gt 0) { ($allocatedBudget / $totalBudget) * 100 } else { 0 }
+        } else {
+            $auditReport.performance_metrics.budget_utilization = if ($budgets.total_budget -gt 0) { ($budgets.allocated_budget / $budgets.total_budget) * 100 } else { 0 }
+        }
+        $auditReport.performance_metrics.available_budget = $totalBudget - $allocatedBudget
     }
 
     # 4. PROJECT PORTFOLIO AUDIT
