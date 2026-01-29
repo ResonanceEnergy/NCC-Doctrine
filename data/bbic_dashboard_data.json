@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-01-29T09:27:19.288426",
+  "last_update": "2026-01-29T09:27:35.617927",
   "trends_summary": {
     "total_companies": 27,
     "total_trends": 108,
@@ -25,17 +25,17 @@
     },
     {
       "type": "innovation_leaders",
-      "insight": "Innovation leaders: AIGovernanceCouncil, CommandCenter, Dashboard showing highest innovation indices",
+      "insight": "Innovation leaders: Collab, Playbooks, ResonanceEnergyCorp showing highest innovation indices",
       "companies_affected": [
-        "AIGovernanceCouncil",
-        "CommandCenter",
-        "Dashboard"
+        "Collab",
+        "Playbooks",
+        "ResonanceEnergyCorp"
       ],
       "recommendation": "Accelerate knowledge transfer from innovation leaders to other divisions"
     },
     {
       "type": "risk_monitoring",
-      "insight": "Risk indicators detected in 1 companies requiring attention",
+      "insight": "Risk indicators detected in 2 companies requiring attention",
       "companies_affected": [
         "BigBrainIntelligence"
       ],
