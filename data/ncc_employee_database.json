@@ -24,7 +24,7 @@
         ],
         "performance_rating": 98.5,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043774",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.636977",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
           "bbic_dept_insights": 3
@@ -45,10 +45,10 @@
         ],
         "performance_rating": 99.7,
         "performance_metrics": {
-          "bbic_last_activity": "2026-01-29T09:38:45.015050",
+          "bbic_last_activity": "2026-01-29T09:39:00.584156",
           "bbic_insights_generated": 0,
           "bbic_categories_tracked": 3,
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043788",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637029",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
           "bbic_dept_insights": 4
@@ -69,10 +69,10 @@
         ],
         "performance_rating": 98.2,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043796",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637043",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 4
+          "bbic_dept_insights": 3
         }
       },
       "CybersecurityCommandCenter": {
@@ -90,10 +90,10 @@
         ],
         "performance_rating": 99.8,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043801",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637053",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 4
+          "bbic_dept_insights": 3
         }
       },
       "GlobalTalentAcquisition": {
@@ -111,7 +111,7 @@
         ],
         "performance_rating": 97.5,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043805",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637061",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
           "bbic_dept_insights": 4
@@ -132,7 +132,7 @@
         ],
         "performance_rating": 98.5,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043809",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637069",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
           "bbic_dept_insights": 3
@@ -153,7 +153,7 @@
         ],
         "performance_rating": 96.8,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043812",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637076",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
           "bbic_dept_insights": 3
@@ -177,10 +177,10 @@
         ],
         "performance_rating": 98.0,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043816",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637084",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 4
+          "bbic_dept_insights": 3
         }
       },
       "QuantumComputingDivision": {
@@ -198,10 +198,10 @@
         ],
         "performance_rating": 97.8,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043820",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637092",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 3
+          "bbic_dept_insights": 4
         }
       },
       "RoboticsAutomationDivision": {
@@ -219,7 +219,7 @@
         ],
         "performance_rating": 97.2,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043824",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637100",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
           "bbic_dept_insights": 3
@@ -240,10 +240,10 @@
         ],
         "performance_rating": 96.5,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043827",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637108",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 4
+          "bbic_dept_insights": 2
         }
       },
       "ResonanceEnergyCorp": {
@@ -261,10 +261,10 @@
         ],
         "performance_rating": 97.1,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043831",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637116",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 4
+          "bbic_dept_insights": 3
         }
       },
       "CommandCenter": {
@@ -282,7 +282,7 @@
         ],
         "performance_rating": 99.6,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043835",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637124",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
           "bbic_dept_insights": 4
@@ -303,7 +303,7 @@
         ],
         "performance_rating": 99.2,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043839",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637132",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
           "bbic_dept_insights": 3
@@ -324,10 +324,10 @@
         ],
         "performance_rating": 95.8,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043842",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637139",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 4
+          "bbic_dept_insights": 3
         }
       },
       "OpsPackets": {
@@ -345,10 +345,10 @@
         ],
         "performance_rating": 94.7,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043847",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637146",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 4
+          "bbic_dept_insights": 3
         }
       },
       "Playbooks": {
@@ -366,10 +366,10 @@
         ],
         "performance_rating": 95.2,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043850",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637154",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 2
+          "bbic_dept_insights": 3
         }
       },
       "Projects": {
@@ -387,7 +387,7 @@
         ],
         "performance_rating": 94.9,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043854",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637162",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
           "bbic_dept_insights": 3
@@ -408,10 +408,10 @@
         ],
         "performance_rating": 93.8,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043858",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637171",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 4
+          "bbic_dept_insights": 3
         }
       },
       "Scripts": {
@@ -429,10 +429,10 @@
         ],
         "performance_rating": 95.1,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043862",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637178",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 2
+          "bbic_dept_insights": 4
         }
       },
       "Templates": {
@@ -450,10 +450,10 @@
         ],
         "performance_rating": 94.3,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043865",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637185",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 4
+          "bbic_dept_insights": 3
         }
       },
       "Console": {
@@ -471,10 +471,10 @@
         ],
         "performance_rating": 96.2,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043869",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637193",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 3
+          "bbic_dept_insights": 4
         }
       },
       "CCD_VS_EDITION": {
@@ -492,10 +492,10 @@
         ],
         "performance_rating": 95.7,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043873",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637200",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 4
+          "bbic_dept_insights": 3
         }
       },
       "Collab": {
@@ -513,7 +513,7 @@
         ],
         "performance_rating": 94.1,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043877",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637208",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
           "bbic_dept_insights": 2
@@ -534,10 +534,10 @@
         ],
         "performance_rating": 96.8,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043880",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637215",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
-          "bbic_dept_insights": 3
+          "bbic_dept_insights": 4
         }
       },
       "OffshoreOperationsDivision": {
@@ -564,7 +564,7 @@
         ],
         "performance_rating": 98.5,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043884",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637223",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
           "bbic_dept_insights": 4
@@ -588,7 +588,7 @@
         ],
         "performance_rating": 99.4,
         "performance_metrics": {
-          "bbic_trends_last_update": "2026-01-29T09:38:45.043887",
+          "bbic_trends_last_update": "2026-01-29T09:39:00.637231",
           "bbic_trends_available": 108,
           "bbic_dept_trends": 4,
           "bbic_dept_insights": 4
