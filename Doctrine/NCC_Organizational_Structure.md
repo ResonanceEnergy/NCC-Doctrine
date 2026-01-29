@@ -1,31 +1,41 @@
 # NATHAN COMMAND CORP Organizational Structure
-**Version:** 1.3.0 | **Classification:** NATHAN COMMAND CORP TOP SECRET | **Date:** 2026-01-28
+**Version:** 1.4.0 | **Classification:** NATHAN COMMAND CORP TOP SECRET | **Date:** 2026-01-28
 
 ## Executive Summary
-This document outlines the complete organizational structure of NATHAN COMMAND CORP, including all core companies, divisions, and reporting hierarchies. All entities report to AZ PRIME and his executive team (S15, C33, CEO10, AX) for unified command and control.
+This document outlines the complete organizational structure of NATHAN COMMAND CORP, including all subsidiary corporations, divisions, and reporting hierarchies. All entities report to AZ PRIME and his executive team (S15, C33, CEO10, AX) for unified command and control.
 
-## Core NCC Companies
+## NCC Core Structure
+### NATHAN COMMAND CORP (Parent Company)
+- **Purpose:** Holding company and strategic oversight of all subsidiary corporations
+- **Divisions:** CSuite (Executive leadership and corporate governance)
+- **Leadership:** AZ PRIME (Autonomous Intelligence Orchestrator)
+- **Reporting:** Direct to Real World Nate
+
+## Subsidiary Corporations
 ### 1. Augmented Arbitrage Corp (AAC)
 - **Purpose:** AI-augmented systematic arbitrage operations
 - **Leadership:** CEO, COO, CIO, CRO, CTO
 - **AUM Target:** $50B+ within 5 years
-- **Reporting:** Direct to AZ PRIME
+- **Divisions:** Internal corporate divisions (TBD)
+- **Reporting:** Direct to AZ PRIME (NCC)
 
 ### 2. Big Brain Intelligence Corp (BBIC)
 - **Purpose:** Advanced AI research and intelligence operations
-- **Subdivisions:**
-  - Innovation Labs Division
 - **Leadership:** AI Research Director
-- **Reporting:** Direct to AZ PRIME
+- **Divisions:**
+  - Innovation Labs Division
+- **Reporting:** Direct to AZ PRIME (NCC)
 
 ### 3. Ludwig Law Corp (LLC)
 - **Purpose:** Exclusive legal counsel and compliance authority
 - **Leadership:** General Counsel
-- **Reporting:** Direct to AZ PRIME
+- **Divisions:** Internal legal practice divisions (TBD)
+- **Reporting:** Direct to AZ PRIME (NCC)
 
 ### 4. Resonance Energy Corp (REC)
 - **Purpose:** Energy innovation and micro-hydro initiatives
-- **Subdivisions:**
+- **Leadership:** Energy Operations Director
+- **Divisions:**
   - Advanced Research Division (ARD)
     - Robotics Automation Division
     - Space Operations Division
@@ -34,20 +44,26 @@ This document outlines the complete organizational structure of NATHAN COMMAND C
     - Flow Cube Project
     - Uruguay Project
     - Paraguay Project
-- **Leadership:** Energy Operations Director
+- **Reporting:** Direct to AZ PRIME (NCC)
+
+### 5. Faraday Financial Corp (FFC)
+- **Purpose:** Financial operations and quantitative strategies
+- **Leadership:** CFO/Financial Operations Director
+- **Divisions:** Internal financial divisions (TBD)
+- **Reporting:** Direct to AZ PRIME (NCC)
+
+## NCC Support Divisions
+### CSuite Division (Under NCC)
+- **Purpose:** Executive leadership and corporate governance
+- **Components:**
+  - Executive Leadership Team
+  - Corporate Governance Council
+  - Strategic Planning Division
+- **Leadership:** Chief Executive Officer
 - **Reporting:** Direct to AZ PRIME
 
-### 5. Advanced Research Division (ARD) - Under REC
-- **Purpose:** Cutting-edge research and development
-- **Subdivisions:**
-  - Robotics Automation Division
-  - Space Operations Division
-  - Biotech Corporation
-- **Leadership:** Research Director
-- **Reporting:** To REC, ultimately to AZ PRIME
-
 ## Administrative Functions
-### ADMIN Division
+### ADMIN Division (Under NCC)
 - **Purpose:** Corporate administration and support
 - **Components:**
   - HR (Human Resources)
@@ -76,52 +92,62 @@ The following projects require location verification and integration:
 ```
 Real World Nate (Supreme Commander)
 ├── NCL (NATHAN COMMAND LEADERSHIP Coordinator)
-└── AZ PRIME (Autonomous Intelligence Orchestrator)
-    ├── Elite Unit S15 (Security & IT)
-    ├── 10 CEO BOD (Strategic Board)
-    ├── C33 Council (Advisory Council)
-    ├── AAC (Augmented Arbitrage Corp)
-    ├── BBIC (Big Brain Intelligence Corp)
-    │   └── Innovation Labs Division
-    ├── LLC (Ludwig Law Corp)
-    ├── REC (Resonance Energy Corp)
-    │   ├── ARD (Advanced Research Division)
-    │   │   ├── Robotics Automation Division
-    │   │   ├── Space Operations Division
-    │   │   └── Biotech Corporation
-    │   └── Micro Hydro Project
-    │       ├── Flow Cube Project
-    │       ├── Uruguay Project
-    │       └── Paraguay Project
-    └── ADMIN
-        ├── HR
-        ├── Accounting
-        └── Global Talent Acquisition
+└── NATHAN COMMAND CORP (Parent Company)
+    └── AZ PRIME (Autonomous Intelligence Orchestrator)
+        ├── Elite Unit S15 (Security & IT)
+        ├── 10 CEO BOD (Strategic Board)
+        ├── C33 Council (Advisory Council)
+        ├── CSuite Division (NCC Executive Leadership)
+        ├── ADMIN Division (NCC Administration)
+        ├── Augmented Arbitrage Corp (AAC)
+        │   └── [Internal AAC Divisions]
+        ├── Big Brain Intelligence Corp (BBIC)
+        │   └── Innovation Labs Division
+        ├── Ludwig Law Corp (LLC)
+        │   └── [Internal LLC Divisions]
+        ├── Resonance Energy Corp (REC)
+        │   ├── Advanced Research Division (ARD)
+        │   │   ├── Robotics Automation Division
+        │   │   ├── Space Operations Division
+        │   │   └── Biotech Corporation
+        │   └── Micro Hydro Project
+        │       ├── Flow Cube Project
+        │       ├── Uruguay Project
+        │       └── Paraguay Project
+        └── Faraday Financial Corp (FFC)
+            └── [Internal FFC Divisions]
 ```
 
 ## Integration Points
-- **AZ PRIME Oversight:** All entities under 24/7 monitoring and coordination
-- **Cross-Company Collaboration:** Ludwig Law Corp provides legal support to all entities
-- **AI Governance:** AI Governance Council oversees AI operations across all companies
+- **AZ PRIME Oversight:** All subsidiary corporations under 24/7 monitoring and coordination
+- **Cross-Corporate Collaboration:** Ludwig Law Corp provides legal support to all NCC entities
+- **AI Governance:** AI Governance Council oversees AI operations across all corporations
 - **Financial Operations:** Faraday Financial Corp and Augmented Arbitrage Corp coordinate quantitative strategies
+- **NCC CSuite Leadership:** Strategic oversight and governance of all subsidiary corporations
 
 ## Operational Protocols
-- **Daily Reporting:** All companies submit operational reports to AZ PRIME by 6 AM
-- **Resource Allocation:** All capital requests coordinated through AZ PRIME
-- **Strategic Alignment:** Major initiatives require AZ PRIME pre-approval
-- **Performance Monitoring:** Quarterly reviews conducted by AZ PRIME team
+- **Daily Reporting:** All subsidiary corporations submit operational reports to AZ PRIME by 6 AM
+- **Resource Allocation:** All capital requests coordinated through NCC CSuite and AZ PRIME
+- **Strategic Alignment:** Major initiatives require AZ PRIME and NCC CSuite pre-approval
+- **Performance Monitoring:** Quarterly reviews conducted by AZ PRIME and NCC executive team
+
+## Corporate Governance
+- **NCC Ownership:** All subsidiary corporations are wholly owned by NATHAN COMMAND CORP
+- **Board Representation:** NCC CSuite maintains board seats on all subsidiary corporations
+- **Unified Strategy:** All corporations operate under NCC's strategic framework
+- **Resource Sharing:** Cross-corporate resource allocation and knowledge sharing
 
 ## Notes on Missing Projects
 - **Butterfield Acres:** Status and ownership unclear - needs verification
 - **Grip and Ripp HDD:** High Definition Development project location undetermined
-- **Action Required:** Conduct comprehensive audit to locate and integrate these projects into appropriate divisions
+- **Action Required:** Conduct comprehensive audit to locate and integrate these projects into appropriate corporations
 
 **Recently Located:**
 - **Uruguay and Paraguay Projects:** Located under REC > Micro Hydro Project (per ACCELERATED_MIGRATION_PLAN_9_MONTHS.md)
 
 ## Future Expansion
-- Additional divisions may be added as NCC grows
-- All new entities will follow the established reporting hierarchy
-- AZ PRIME will maintain unified oversight across all operations
+- Additional subsidiary corporations may be formed as NCC grows
+- All new entities will follow the established corporate reporting hierarchy
+- AZ PRIME and NCC CSuite will maintain unified oversight across all operations
 
-This organizational structure ensures NATHAN COMMAND CORP operates as a cohesive, AI-driven enterprise with clear reporting lines and strategic alignment under AZ PRIME's leadership.
+This organizational structure ensures NATHAN COMMAND CORP operates as a cohesive, AI-driven enterprise with clear corporate ownership, strategic alignment, and unified command and control under AZ PRIME's leadership.

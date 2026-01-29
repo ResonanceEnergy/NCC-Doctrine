@@ -14,95 +14,100 @@ This index documents the comprehensive distribution of NCL (NATHAN COMMAND LEADE
 
 ## DEPARTMENT INTEGRATION DOCUMENTS
 
-### Core Command & Control
-1. **Command Center** - `CommandCenter/NCL_Insights_CommandCenter_Integration.md`
-   - **Insights:** 150 prioritized insights
-   - **Focus:** Digital command-and-control operations, mission management, strategic coordination
-   - **Status:** Complete
-
-2. **CSuite** - `CSuite/NCL_Insights_CSuite_Integration.md`
+### NCC Corporate Divisions
+1. **CSuite** - `CSuite/NCL_Insights_CSuite_Integration.md`
    - **Insights:** 150 prioritized insights
    - **Focus:** Executive leadership, strategic governance, enterprise oversight
    - **Status:** Complete
 
+### Subsidiary Corporation Divisions
+
+#### Augmented Arbitrage Corp (AAC)
+2. **Command Center** - `CommandCenter/NCL_Insights_CommandCenter_Integration.md`
+   - **Insights:** 150 prioritized insights
+   - **Focus:** Digital command-and-control operations, mission management, strategic coordination
+   - **Status:** Complete
+
+#### Big Brain Intelligence Corp (BBIC)
 3. **Big Brain Intelligence** - `BigBrainIntelligence/NCL_Insights_BBI_Integration.md`
    - **Insights:** 152 prioritized insights
    - **Focus:** Intelligence analysis, threat assessment, strategic intelligence
    - **Status:** Complete
 
-### Operational Divisions
-4. **OpsPackets** - `OpsPackets/NCL_Insights_OpsPackets_Integration.md`
-   - **Insights:** 135 prioritized insights
-   - **Focus:** Operational procedures, process standardization, quality assurance
-   - **Status:** Complete
-
-5. **Playbooks** - `Playbooks/NCL_Insights_Playbooks_Integration.md`
-   - **Insights:** 142 prioritized insights
-   - **Focus:** Strategic playbooks, contingency planning, crisis management
-   - **Status:** Complete
-
-6. **Projects** - `Projects/NCL_Insights_Projects_Integration.md`
-   - **Insights:** 141 prioritized insights
-   - **Focus:** Project management, program execution, delivery optimization
-   - **Status:** Complete
-
-### Technology & Innovation
-7. **Quantum Computing Division** - `QuantumComputingDivision/NCL_Insights_QCD_Integration.md`
-   - **Insights:** 148 prioritized insights
-   - **Focus:** Quantum computing, advanced algorithms, computational supremacy
-   - **Status:** Complete
-
-8. **Robotics Automation Division** - `RoboticsAutomationDivision/NCL_Insights_RAD_Integration.md`
-   - **Insights:** 145 prioritized insights
-   - **Focus:** Robotics systems, automation technologies, intelligent machines
-   - **Status:** Complete
-
-9. **Innovation Labs Division** - `InnovationLabsDivision/NCL_Insights_ILD_Integration.md`
+4. **Innovation Labs Division** - `InnovationLabsDivision/NCL_Insights_ILD_Integration.md`
    - **Insights:** 147 prioritized insights
    - **Focus:** Innovation management, R&D operations, technology development
    - **Status:** Complete
 
-### Global Operations
-10. **International Operations Division** - `InternationalOperationsDivision/NCL_Insights_IOD_Integration.md`
+#### Resonance Energy Corp (REC)
+5. **Robotics Automation Division** - `RoboticsAutomationDivision/NCL_Insights_RAD_Integration.md`
+   - **Insights:** 145 prioritized insights
+   - **Focus:** Robotics systems, automation technologies, intelligent machines
+   - **Status:** Complete
+
+6. **Space Operations Division** - `SpaceOperationsDivision/NCL_Insights_SOD_Integration.md`
+   - **Insights:** 146 prioritized insights
+   - **Focus:** Space operations, orbital intelligence, aerospace innovation
+   - **Status:** Complete
+
+7. **Biotech Corporation** - `BiotechCorporation/NCL_Insights_Biotech_Integration.md`
+   - **Insights:** 143 prioritized insights
+   - **Focus:** Biotechnology, medical innovation, healthcare solutions
+   - **Status:** Complete
+
+8. **Resonance Energy Corp** - `ResonanceEnergyCorp/NCL_Insights_REC_Integration.md`
+   - **Insights:** 143 prioritized insights
+   - **Focus:** Clean energy, sustainable power, environmental leadership
+   - **Status:** Complete
+
+#### Ludwig Law Corp (LLC)
+9. **Ludwig Law Corp** - `LudwigLawCorp/NCL_Insights_LLC_Integration.md`
+   - **Insights:** 140 prioritized insights
+   - **Focus:** Legal operations, compliance management, regulatory affairs
+   - **Status:** Complete
+
+#### Faraday Financial Corp (FFC)
+10. **Quantum Computing Division** - `QuantumComputingDivision/NCL_Insights_QCD_Integration.md`
+    - **Insights:** 148 prioritized insights
+    - **Focus:** Quantum computing, advanced algorithms, computational supremacy
+    - **Status:** Complete
+
+### Operational Support Divisions
+11. **OpsPackets** - `OpsPackets/NCL_Insights_OpsPackets_Integration.md`
+    - **Insights:** 135 prioritized insights
+    - **Focus:** Operational procedures, process standardization, quality assurance
+    - **Status:** Complete
+
+12. **Playbooks** - `Playbooks/NCL_Insights_Playbooks_Integration.md`
+    - **Insights:** 142 prioritized insights
+    - **Focus:** Strategic playbooks, contingency planning, crisis management
+    - **Status:** Complete
+
+13. **Projects** - `Projects/NCL_Insights_Projects_Integration.md`
+    - **Insights:** 141 prioritized insights
+    - **Focus:** Project management, program execution, delivery optimization
+    - **Status:** Complete
+
+### Global Operations Divisions
+14. **International Operations Division** - `InternationalOperationsDivision/NCL_Insights_IOD_Integration.md`
     - **Insights:** 144 prioritized insights
     - **Focus:** Global operations, international coordination, cross-border management
     - **Status:** Complete
 
-11. **Global Talent Acquisition** - `GlobalTalentAcquisition/NCL_Insights_GTA_Integration.md`
+15. **Global Talent Acquisition** - `GlobalTalentAcquisition/NCL_Insights_GTA_Integration.md`
     - **Insights:** 146 prioritized insights
     - **Focus:** Talent acquisition, human capital management, workforce optimization
     - **Status:** Complete
 
-### Specialized Operations
-12. **Space Operations Division** - `SpaceOperationsDivision/NCL_Insights_SOD_Integration.md`
-    - **Insights:** 146 prioritized insights
-    - **Focus:** Space operations, orbital intelligence, aerospace innovation
-    - **Status:** Complete
-
-13. **Cybersecurity Command Center** - `CybersecurityCommandCenter/NCL_Insights_CCC_Integration.md`
+### Specialized Operations Divisions
+16. **Cybersecurity Command Center** - `CybersecurityCommandCenter/NCL_Insights_CCC_Integration.md`
     - **Insights:** 149 prioritized insights
     - **Focus:** Cybersecurity operations, threat defense, information security
     - **Status:** Complete
 
-14. **AI Governance Council** - `AIGovernanceCouncil/NCL_Insights_AIGC_Integration.md`
+17. **AI Governance Council** - `AIGovernanceCouncil/NCL_Insights_AIGC_Integration.md`
     - **Insights:** 151 prioritized insights
     - **Focus:** AI governance, ethical AI, artificial intelligence oversight
-    - **Status:** Complete
-
-### Corporate Divisions
-15. **Biotech Corporation** - `BiotechCorporation/NCL_Insights_Biotech_Integration.md`
-    - **Insights:** 143 prioritized insights
-    - **Focus:** Biotechnology, medical innovation, healthcare solutions
-    - **Status:** Complete
-
-16. **Resonance Energy Corp** - `ResonanceEnergyCorp/NCL_Insights_REC_Integration.md`
-    - **Insights:** 143 prioritized insights
-    - **Focus:** Clean energy, sustainable power, environmental leadership
-    - **Status:** Complete
-
-17. **Ludwig Law Corp** - `LudwigLawCorp/NCL_Insights_LLC_Integration.md`
-    - **Insights:** 140 prioritized insights
-    - **Focus:** Legal operations, compliance management, regulatory affairs
     - **Status:** Complete
 
 ### Support Divisions
