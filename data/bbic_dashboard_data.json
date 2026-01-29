@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-01-29T09:33:08.662244",
+  "last_update": "2026-01-29T09:33:32.466646",
   "trends_summary": {
     "total_companies": 27,
     "total_trends": 108,
@@ -25,17 +25,17 @@
     },
     {
       "type": "innovation_leaders",
-      "insight": "Innovation leaders: Collab, RoboticsAutomationDivision, CybersecurityCommandCenter showing highest innovation indices",
+      "insight": "Innovation leaders: CommandCenter, ResonanceEnergyCorp, OpsPackets showing highest innovation indices",
       "companies_affected": [
-        "Collab",
-        "RoboticsAutomationDivision",
-        "CybersecurityCommandCenter"
+        "CommandCenter",
+        "ResonanceEnergyCorp",
+        "OpsPackets"
       ],
       "recommendation": "Accelerate knowledge transfer from innovation leaders to other divisions"
     },
     {
       "type": "risk_monitoring",
-      "insight": "Risk indicators detected in 2 companies requiring attention",
+      "insight": "Risk indicators detected in 1 companies requiring attention",
       "companies_affected": [
         "BigBrainIntelligence"
       ],
