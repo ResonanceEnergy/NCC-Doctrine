@@ -3,11 +3,11 @@
   "last_updated": "2026-01-29T01:13:25.2901857-07:00",
   "last_cycle": 0,
   "ncc_operations": {
-    "security_score": 99,
-    "last_updated": "2026-01-29T03:49:36Z",
+    "security_score": 98,
+    "last_updated": "2026-01-29T03:51:47Z",
     "market_position": "DOMINANT",
     "compliance_level": 98,
-    "ai_performance": 98,
+    "ai_performance": 97,
     "operational_efficiency": 98,
     "lfg_protocol": {
       "status": "MAXIMUM_LFG",
@@ -17,22 +17,22 @@
     }
   },
   "bbic_intelligence": {
-    "last_update": "2026-01-29T10:49:42.154528",
-    "bulletin_id": "BBIC-DATA-TECH-20260129-104942",
+    "last_update": "2026-01-29T10:50:57.980077",
+    "bulletin_id": "BBIC-DATA-TECH-20260129-105057",
     "categories_discovered": 1,
     "total_insights": 2,
     "departments_notified": [
-      "BigBrainIntelligence",
+      "CSuite",
       "EliteTraderDesk",
-      "CSuite"
+      "BigBrainIntelligence"
     ]
   },
   "bbic_trends": {
-    "last_trends_update": "2026-01-29T10:49:42.202868",
+    "last_trends_update": "2026-01-29T10:50:58.048519",
     "total_companies_analyzed": 41,
     "total_trends_generated": 150,
     "total_insights_discovered": 3,
     "bulletins_created": 41,
-    "report_timestamp": "2026-01-29_10-49-42"
+    "report_timestamp": "2026-01-29_10-50-57"
   }
 }
