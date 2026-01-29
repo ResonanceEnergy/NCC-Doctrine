@@ -2,12 +2,34 @@
 # Channels: add channel_id values (not @handles). You can mix both channels and keyword queries.
 sources:
   channels:
-    - id: "UCX6OQ3DkcsbYNE6H8uQQuVA"   # MrBeast (example) – replace with energy/policy/finance channels
-    # - id: "<YOUR_CHANNEL_ID>"
+    # NCC Corporate Channels (placeholder - replace with actual NCC channels)
+    - id: "UCX6OQ3DkcsbYNE6H8uQQuVA"   # MrBeast (example - replace with NCC channel)
+    # - id: "<NCC_CORPORATE_CHANNEL_ID>"
+    # - id: "<AUGMENTED_ARBITRAGE_CHANNEL_ID>"
+    # - id: "<FARADAY_FINANCIAL_CHANNEL_ID>"
+    # - id: "<LUDWIG_LAW_CHANNEL_ID>"
+
+    # Business & Finance Intelligence Channels
+    - id: "UCI4xXQ2vjZ3wD4i-QgQ9hVQ"   # Bloomberg Quicktake
+    - id: "UCVLZmDKeT-mV4H3ToYXIFYg"   # CNBC
+    - id: "UCvJJ_dzjViJCoLf5uKUTwoA"   # The Wall Street Journal
+    - id: "UC16niRr50-MSBwiO3YDb3RA"   # BBC Business
+
+    # Technology & Innovation Channels
+    - id: "UC-lHJZR3Gqxm24_Vd_AJ5Yw"   # PewDiePie (example - replace with tech channels)
+    - id: "UCXuqSBlHAE6Xw-yeJA0Tunw"   # Linus Tech Tips
+    - id: "UCVYamHliCI9rw1tHR1xbkfw"   # Dave Lee (Financial Times)
+
   keywords:
-    - "energy policy latin america"
-    - "grid outage analysis"
-    - "hydropower micro hydro"
+    - "NCC corporation news"
+    - "Nathan Command Corp"
+    - "Augmented Arbitrage Corp"
+    - "Faraday Financial Corp"
+    - "Ludwig Law Corp"
+    - "corporate intelligence"
+    - "business strategy"
+    - "market analysis"
+    - "investment opportunities"
 limits:
   per_channel_recent: 25      # last N from uploads playlist (cheap)
   per_keyword_results: 5      # conservative due to search.list = 100 units/call

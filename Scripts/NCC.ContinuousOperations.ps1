@@ -859,13 +859,13 @@ function Conduct-BoardMeeting {
     Write-OperationLog "BOARD MEETING CONCLUDED - Cycle #$CycleNumber AZ Objectives Achieved - LFG! 🚀" "BOARD"
 }
 
-# MMC Board Meeting Automation (20-second cycles)
+# Mammoth Media Corp (MMC) Board Meeting Automation (20-second cycles)
 function Invoke-MMCBoardMeeting {
     param([int]$CycleNumber)
 
-    Write-OperationLog "MMC BOARD MEETING #$($CycleNumber.ToString('D4')) - LFG!" "MMC"
+    Write-OperationLog "MAMMOTH MEDIA CORP BOARD MEETING #$($CycleNumber.ToString('D4')) - LFG!" "MMC"
 
-    # MMC CEO Board Members
+    # MMC CEO Board Members (Mammoth Media Corp Leadership)
     $mmcCEOs = @(
         "MMC-001",  # CEO - Overall Strategic Direction
         "MMC-002",  # Chief Creative Officer
@@ -932,7 +932,7 @@ function Invoke-MMCBoardMeeting {
         Write-OperationLog "MMC Dashboard update failed: $($_.Exception.Message)" "ERROR"
     }
 
-    Write-OperationLog "MMC BOARD MEETING #$($CycleNumber.ToString('D4')) COMPLETE - STATUS: OPTIMAL" "MMC"
+    Write-OperationLog "MAMMOTH MEDIA CORP BOARD MEETING #$($CycleNumber.ToString('D4')) COMPLETE - STATUS: OPTIMAL" "MMC"
 }
 
 function Invoke-RESStatusReport {

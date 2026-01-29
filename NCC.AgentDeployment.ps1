@@ -195,5 +195,4 @@ Write-Host "  Total Agents: $($employeeData.ncc_employee_database.metadata.total
 Write-Host "  Gap to Target: $(1920 - $employeeData.ncc_employee_database.metadata.total_employees)" -ForegroundColor Red
 Write-Host "  Missing Divisions: 15+" -ForegroundColor Red
 Write-Host ""
-Write-Host "⚡ LFG! - Let's deploy those agents!" -ForegroundColor Magenta</content>
-<parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\NCC.AgentDeployment.ps1
+Write-Host "⚡ LFG! - Let's deploy those agents!" -ForegroundColor Magenta

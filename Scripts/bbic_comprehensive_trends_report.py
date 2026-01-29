@@ -34,16 +34,24 @@ class BBICTrendsReportCompiler:
         self.company_insights = defaultdict(list)
         self.bulletin_data = []
         self.web_scraping_sources = [
-            'https://towardsdatascience.com',
-            'https://www.kdnuggets.com',
-            'https://machinelearningmastery.com',
-            'https://www.analyticsvidhya.com',
-            'https://www.datacamp.com',
-            'https://github.com/trending',
-            'https://arxiv.org/list/cs.AI/recent',
-            'https://paperswithcode.com',
-            'https://huggingface.co/docs/transformers/index',
-            'https://pytorch.org/docs/stable/index.html'
+            # NCC Corporate Intelligence Sources
+            'https://www.crunchbase.com/organization/nathan-command-corp',
+            'https://www.linkedin.com/company/nathan-command-corp',
+            'https://news.google.com/search?q=NCC+Nathan+Command+Corp',
+            'https://www.reuters.com/search/news?blob=NCC+corporation',
+            'https://www.bloomberg.com/search?query=NCC+corp',
+            # Subsidiary Intelligence Sources
+            'https://www.crunchbase.com/organization/augmented-arbitrage-corp',
+            'https://www.crunchbase.com/organization/faraday-financial-corp',
+            'https://www.crunchbase.com/organization/ludwig-law-corp',
+            'https://www.crunchbase.com/organization/biotech-corporation',
+            'https://www.crunchbase.com/organization/resonance-energy-corp',
+            # Industry News Sources
+            'https://techcrunch.com/search/ncc',
+            'https://www.wsj.com/search?query=NCC+corporation',
+            'https://www.forbes.com/search/?q=NCC+corp',
+            'https://finance.yahoo.com/quote/NCC',
+            'https://www.marketwatch.com/investing/stock/ncc'
         ]
         self.scraped_insights = []
         self.data_techniques_bulletin = []

@@ -5,53 +5,40 @@ auth:
   user_agent: "bbic-intake/1.0 by ResonanceEnergy"
 intake:
   subreddits:
-    # Energy & Environment
-    - "energy"
-    - "oil"
-    - "renewableenergy"
-    - "climate"
-    - "sustainability"
-    - "environment"
-    - "Futurology"
-    - "uruguay"
-    - "latinamerica"
-
-    # Technology & Innovation
-    - "technology"
-    - "programming"
-    - "MachineLearning"
-    - "artificial"
+    # NCC Corporate Intelligence
+    - "NCC"
+    - "NathanCommandCorp"
+    - "CorporateStrategy"
+    - "BusinessStrategy"
+    - "Entrepreneur"
     - "startups"
-    - "entrepreneur"
-    - "technews"
-    - "cybersecurity"
-    - "datascience"
+    - "business"
+    - "economics"
 
-    # Finance & Business
+    # Subsidiary Intelligence
+    - "AugmentedArbitrage"
+    - "FaradayFinancial"
+    - "LudwigLaw"
+    - "Biotech"
+    - "ResonanceEnergy"
+    - "QuantumComputing"
+    - "Robotics"
+    - "SpaceX"  # Space Operations related
+    - "AI"
+    - "MachineLearning"
+
+    # Industry Intelligence
     - "investing"
     - "stocks"
     - "wallstreetbets"
     - "cryptocurrency"
     - "Bitcoin"
-    - "ethereum"
     - "finance"
-    - "business"
-    - "economics"
-
-    # Science & Research
-    - "science"
-    - "physics"
-    - "engineering"
-    - "space"
-    - "neuroscience"
-    - "biotech"
-
-    # Industry Specific
+    - "technology"
+    - "cybersecurity"
+    - "energy"
+    - "renewableenergy"
     - "microhydro"
-    - "hydro"
-    - "solar"
-    - "windpower"
-    - "grid"
     - "infrastructure"
     - "manufacturing"
 

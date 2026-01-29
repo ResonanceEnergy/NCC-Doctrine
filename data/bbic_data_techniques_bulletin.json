@@ -1,115 +1,35 @@
 {
-  "bulletin_id": "BBIC-DATA-TECH-20260129-095732",
-  "timestamp": "2026-01-29T09:57:32.917963",
+  "bulletin_id": "BBIC-DATA-TECH-20260129-104845",
+  "timestamp": "2026-01-29T10:48:45.302486",
   "title": "🚀 BBIC DATA TECHNIQUES BULLETIN - NEW SCRAPING & ANALYSIS METHODS 🚀",
-  "executive_summary": "Discovered 15 new data techniques across 3 categories. Immediate implementation recommended for maximum NCC efficiency.",
+  "executive_summary": "Discovered 2 new data techniques across 1 categories. Immediate implementation recommended for maximum NCC efficiency.",
   "sections": {
     "data_analytics": {
       "title": "🔬 Data Analytics Innovations",
       "insights_count": 2,
       "top_insights": [
         {
-          "source": "https://www.kdnuggets.com",
-          "title": "Data Science, Machine Learning, AI & Analytics - KDnuggets",
-          "type": "data_technique_discovery",
-          "timestamp": "2026-01-29T09:57:31.413434",
-          "relevance_score": 0.7455972898842085,
+          "source": "https://techcrunch.com/search/ncc",
+          "content": "Topics\n\n\n\n\t\tLatest\t\n\n\n\n\t\tAI\t\n\n\n\n\t\tAmazon\t\n\n\n\n\t\tApps\t\n\n\n\n\t\tBiotech & Health\t\n\n\n\n\t\tClimate\t\n\n\n\n\t\tCloud Computing\t\n\n\n\n\t\tCommerce\t\n\n\n\n\t\tCrypto\t\n\n\n\n\t\tEnterprise\t\n\n\n\n\t\tEVs\t\n\n\n\n\t\tFintech\t\n\n\n\n\t\tFundraising\t\n\n\n\n\t\tGadgets\t\n\n\n\n\t\tGaming\t\n\n\n\n\t\tGoogle\t\n\n\n\n\t\tGovernment & Policy\t\n\n\n\n\n\t\tHardware\t\n\n\n\n\t\tInstagram\t\n\n\n\n\t\tLayoffs\t\n\n\n\n\t\tMedia & Entertainment\t\n\n\n\n\t\tMeta\t\n\n\n\n\t\tMicrosoft\t\n\n\n\n\t\tPrivacy\t\n\n\n\n\t\tRobotics\t\n\n\n\n\t\tSecurity\t\n\n\n\n\t\tSocial\t\n\n\n\n\t\tSpace\t\n\n\n\n\t\tStartups\t\n\n\n\n\t\tTikTok\t\n\n\n\n\t\tTransportation\t\n\n\n\n\t\tVenture\t\n\n\n",
+          "type": "data_technique_summary",
+          "timestamp": "2026-01-29T10:48:44.520242",
+          "relevance_score": 0.6808211596389928,
           "category": "data_analytics"
         },
         {
-          "source": "https://www.analyticsvidhya.com",
-          "title": "Analytics Vidhya | The ultimate place for Generative AI, Data Science and Data Engineering",
-          "type": "data_technique_discovery",
-          "timestamp": "2026-01-29T09:57:32.332577",
-          "relevance_score": 0.7864350887198526,
+          "source": "https://techcrunch.com/search/ncc",
+          "content": "Topics\n\n\n\n\t\tLatest\t\n\n\n\n\t\tAI\t\n\n\n\n\t\tAmazon\t\n\n\n\n\t\tApps\t\n\n\n\n\t\tBiotech & Health\t\n\n\n\n\t\tClimate\t\n\n\n\n\t\tCloud Computing\t\n\n\n\n\t\tCommerce\t\n\n\n\n\t\tCrypto\t\n\n\n\n\t\tEnterprise\t\n\n\n\n\t\tEVs\t\n\n\n\n\t\tFintech\t\n\n\n\n\t\tFundraising\t\n\n\n\n\t\tGadgets\t\n\n\n\n\t\tGaming\t\n\n\n\n\t\tGoogle\t\n\n\n\n\t\tGovernment & Policy\t\n\n\n\n\n\t\tHardware\t\n\n\n\n\t\tInstagram\t\n\n\n\n\t\tLayoffs\t\n\n\n\n\t\tMedia & Entertainment\t\n\n\n\n\t\tMeta\t\n\n\n\n\t\tMicrosoft\t\n\n\n\n\t\tPrivacy\t\n\n\n\n\t\tRobotics\t\n\n\n\n\t\tSecurity\t\n\n\n\n\t\tSocial\t\n\n\n\n\t\tSpace\t\n\n\n\n\t\tStartups\t\n\n\n\n\t\tTikTok\t\n\n\n\n\t\tTransportation\t\n\n\n\n\t\tVenture\t\n\n\n",
+          "type": "data_technique_summary",
+          "timestamp": "2026-01-29T10:48:44.521177",
+          "relevance_score": 0.6042741664535835,
           "category": "data_analytics"
         }
       ],
-      "implementation_impact": 0.9192194271624365,
+      "implementation_impact": 0.7710571956555456,
       "ncc_departments_to_notify": [
         "BigBrainIntelligence",
         "EliteTraderDesk",
         "CSuite"
-      ]
-    },
-    "data_science_general": {
-      "title": "🔬 Data Science General Innovations",
-      "insights_count": 11,
-      "top_insights": [
-        {
-          "source": "https://www.kdnuggets.com",
-          "content": "This Is How Successful Data Teams Are Using AI (Sponsored) \n\nSuccessful data teams aren’t using more AI; they’re using AI differently. They embed it into workflows and decisions, employing ownership models that many SMBs haven’t adopted.\nBy Ingram Micro on January 28, 2026 in Partners",
-          "type": "data_technique_summary",
-          "timestamp": "2026-01-29T09:57:31.434355",
-          "relevance_score": 0.7699844813582182,
-          "category": "data_science_general"
-        },
-        {
-          "source": "https://huggingface.co/docs/transformers/index",
-          "content": "Hugging Face\n\n\n\n\n\n\n\n\t\t\t\t\t\tModels\n\n\t\t\t\t\t\tDatasets\n\n\t\t\t\t\t\tSpaces\n\n\n\n\t\t\tCommunity\n\t\t\n\n\n\t\t\t\t\t\tDocs\n\n\t\t\t\t\t\tEnterprise\n\nPricing\n\t\t\t\n\n\n\n\n\n\nLog In\n\t\t\t\t\nSign Up",
-          "type": "data_technique_summary",
-          "timestamp": "2026-01-29T09:57:31.477210",
-          "relevance_score": 0.6340905308503058,
-          "category": "data_science_general"
-        },
-        {
-          "source": "https://machinelearningmastery.com",
-          "title": "Machine Learning Mastery",
-          "type": "data_technique_discovery",
-          "timestamp": "2026-01-29T09:57:31.532137",
-          "relevance_score": 0.8284050353729879,
-          "category": "data_science_general"
-        },
-        {
-          "source": "https://machinelearningmastery.com",
-          "title": "Machine Learning Mastery",
-          "type": "data_technique_discovery",
-          "timestamp": "2026-01-29T09:57:31.532352",
-          "relevance_score": 0.7839218927482439,
-          "category": "data_science_general"
-        },
-        {
-          "source": "https://machinelearningmastery.com",
-          "content": "Home \n\n\n\n\n\n\nWe help developers like you skip years ahead. Discover how to get better results, faster.\nI’m Jason Brownlee, Ph.D. and I help developers like you skip years ahead. Get my Free eBook and accelerate your next project (and access to my exclusive email course)!\n Send Me the Free eBook!\n\n\n\n\n\n\n\n\nQuick Start Guides\nDiscover the shortest path to a result.\n\n\nTop Guides\n\nHow to get started\nUnderstanding algorithms\nTime series forecasting\n\nView All\n\n\n\n\n\n\nLatest Tutorials\nSave weeks of searchin",
-          "type": "data_technique_summary",
-          "timestamp": "2026-01-29T09:57:31.532731",
-          "relevance_score": 0.884672653933876,
-          "category": "data_science_general"
-        }
-      ],
-      "implementation_impact": 0.9191582952092142,
-      "ncc_departments_to_notify": [
-        "BigBrainIntelligence",
-        "InnovationLabsDivision",
-        "AIGovernanceCouncil"
-      ]
-    },
-    "machine_learning": {
-      "title": "🔬 Machine Learning Innovations",
-      "insights_count": 2,
-      "top_insights": [
-        {
-          "source": "https://pytorch.org/docs/stable/index.html",
-          "content": "PyTorch documentation#\nPyTorch is an optimized tensor library for deep learning using GPUs and CPUs.\nFeatures described in this documentation are classified by release status:\nStable (API-Stable):\nThese features will be maintained long-term and there should generally be no major performance limitations or gaps in documentation. We also expect to maintain backwards compatibility (although breaking changes can happen and notice will be given one release ahead of time).\nUnstable (API-Unstable):\nEnc",
-          "type": "data_technique_summary",
-          "timestamp": "2026-01-29T09:57:32.152223",
-          "relevance_score": 0.7930023052382529,
-          "category": "machine_learning"
-        },
-        {
-          "source": "https://pytorch.org/docs/stable/index.html",
-          "content": "PyTorch documentation#\nPyTorch is an optimized tensor library for deep learning using GPUs and CPUs.\nFeatures described in this documentation are classified by release status:\nStable (API-Stable):\nThese features will be maintained long-term and there should generally be no major performance limitations or gaps in documentation. We also expect to maintain backwards compatibility (although breaking changes can happen and notice will be given one release ahead of time).\nUnstable (API-Unstable):\nEnc",
-          "type": "data_technique_summary",
-          "timestamp": "2026-01-29T09:57:32.152428",
-          "relevance_score": 0.6610183802834415,
-          "category": "machine_learning"
-        }
-      ],
-      "implementation_impact": 0.8724124113130166,
-      "ncc_departments_to_notify": [
-        "BigBrainIntelligence",
-        "AIGovernanceCouncil",
-        "QuantumComputingDivision"
       ]
     }
   },
