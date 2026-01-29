@@ -4,7 +4,6 @@
 param(
 	[Parameter(Mandatory=$false)][switch]$Initialize,
 	[Parameter(Mandatory=$false)][switch]$Build,
-	[Parameter(Mandatory=$false)][switch]$Serve,
 	[Parameter(Mandatory=$false)][switch]$Open
 )
 
@@ -163,37 +162,6 @@ if ($Build) {
 	$html = New-NccDashboardHtml
 	$html | Out-File -FilePath $HtmlOut -Encoding UTF8
 	Write-Host "Built → $HtmlOut"
-}
-function Serve-NccDashboard {
-	if (!(Test-Path $HtmlOut)) {
-		Write-Host "[ERROR] Dashboard HTML not found: $HtmlOut"
-		return
-	}
-	$listener = New-Object System.Net.HttpListener
-	$port = 8081
-	$url = "http://localhost:$port/"
-	$listener.Prefixes.Add($url)
-	try {
-		$listener.Start()
-		Write-Host "Serving dashboard at $url"
-		Start-Process $url
-		while ($listener.IsListening) {
-			$context = $listener.GetContext()
-			$response = $context.Response
-			$buffer = [System.IO.File]::ReadAllBytes($HtmlOut)
-			$response.ContentType = "text/html"
-			$response.ContentLength64 = $buffer.Length
-			$response.OutputStream.Write($buffer, 0, $buffer.Length)
-			$response.OutputStream.Close()
-		}
-	} catch {
-		Write-Host "[ERROR] Failed to serve dashboard: $_"
-	} finally {
-		$listener.Stop()
-	}
-}
-if ($Serve) {
-	Serve-NccDashboard
 }
 if ($Open) {
 	if (!(Test-Path $HtmlOut)) {

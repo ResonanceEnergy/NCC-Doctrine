@@ -1,19 +1,19 @@
 {
   "Bank": {
-    "Source": "random",
-    "RunwayDays": 132,
-    "Balance": 188381.06,
-    "DeltaPct": 26.6,
-    "LastRefreshed": "2026-01-28 05:31",
+    "Source": "emergency_reset",
+    "RunwayDays": 0,
+    "Balance": 10.0,
+    "DeltaPct": 0.0,
+    "LastRefreshed": "2026-01-29 12:00",
     "Currency": "USD"
   },
   "Posture": "NORMAL",
   "ncc_operations": {
-    "security_score": 99,
-    "ai_performance": 98,
-    "last_updated": "2026-01-28T23:16:52Z",
     "market_position": "DOMINANT",
-    "operational_efficiency": 95,
-    "compliance_level": 98
+    "ai_performance": 96,
+    "last_updated": "2026-01-29T00:43:29Z",
+    "security_score": 99,
+    "compliance_level": 98,
+    "operational_efficiency": 96
   }
 }

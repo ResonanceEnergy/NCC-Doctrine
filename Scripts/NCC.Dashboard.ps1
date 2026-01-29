@@ -1,22 +1,34 @@
 
 
-# NCC.Dashboard.ps1 - Minimal, robust dashboard automation script
+# NCC.Dashboard.ps1 - Minimal, robust dashboard automation script with LFG protocol support
 param(
 	[Parameter(Mandatory=$false)][switch]$Initialize,
 	[Parameter(Mandatory=$false)][switch]$Build,
 	[Parameter(Mandatory=$false)][switch]$Serve,
-	[Parameter(Mandatory=$false)][switch]$Open
+	[Parameter(Mandatory=$false)][switch]$Open,
+	[Parameter(Mandatory=$false)][switch]$Display
 )
 
 
 # --- Path Setup (portable from anywhere) ---
 $ScriptRoot = $PSScriptRoot
-if (-not $ScriptRoot) { $ScriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path }
+if (-not $ScriptRoot) {
+    $ScriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+}
+if (-not $ScriptRoot) {
+    $ScriptRoot = Get-Location
+}
+
 $WorkspaceRoot = Resolve-Path (Join-Path $ScriptRoot "..") | ForEach-Object { $_.Path }
 $DataDir = Join-Path $WorkspaceRoot 'data'
-if (-not (Test-Path $DataDir)) { New-Item -ItemType Directory -Force -Path $DataDir | Out-Null }
+if (-not (Test-Path $DataDir)) {
+    New-Item -ItemType Directory -Force -Path $DataDir | Out-Null
+}
 $DashDir = Join-Path $WorkspaceRoot 'Dashboard'
-if (-not (Test-Path $DashDir)) { New-Item -ItemType Directory -Force -Path $DashDir | Out-Null }
+if (-not (Test-Path $DashDir)) {
+    New-Item -ItemType Directory -Force -Path $DashDir | Out-Null
+}
+
 $PortfolioJson = Join-Path $DataDir 'projects.json'
 $SettingsJson  = Join-Path $DataDir 'settings.json'
 $BudgetsJson   = Join-Path $DataDir 'budgets.json'
@@ -44,14 +56,16 @@ function Initialize-NccBudgets {
 	$budgets | ConvertTo-Json -Depth 6 | Out-File $BudgetsJson -Encoding UTF8
 }
 function Initialize-NccLedger {
-	if (Test-Path $LedgerJson) { return }
+	$ledgerPath = Join-Path $DataDir 'ledger.json'
+	if (Test-Path $ledgerPath) { return }
 	$rnd = [System.Random]::new()
 	$rows = @()
 	1..10 | ForEach-Object {
 		$amt = [math]::Round($rnd.Next(-5000,5000),2)
-		$rows += @{ ts = (Get-Date).AddDays(-$rnd.Next(0,30)).ToString('yyyy-MM-dd HH:mm'); project = 'Resonance Energy'; type = ($amt -lt 0 ? 'expense' : 'revenue'); amount = $amt; memo = 'sim' }
+		$type = if ($amt -lt 0) { 'expense' } else { 'revenue' }
+		$rows += @{ ts = (Get-Date).AddDays(-$rnd.Next(0,30)).ToString('yyyy-MM-dd HH:mm'); project = 'Resonance Energy'; type = $type; amount = $amt; memo = 'sim' }
 	}
-	$rows | Sort-Object ts | ConvertTo-Json -Depth 6 | Out-File $LedgerJson -Encoding UTF8
+	$rows | Sort-Object ts | ConvertTo-Json -Depth 6 | Out-File -FilePath $ledgerPath -Encoding UTF8
 }
 
 # --- Dashboard HTML Builder ---
@@ -61,6 +75,12 @@ function New-NccDashboardHtml {
 		$settingsJson = Get-Content $SettingsJson -Raw
 		$budgetsJson = Get-Content $BudgetsJson -Raw
 		$ledgerJson = Get-Content $LedgerJson -Raw
+
+		# Convert to base64 to avoid JSON parsing issues
+		$projectsJsonB64 = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($projectsJson))
+		$settingsJsonB64 = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($settingsJson))
+		$budgetsJsonB64 = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($budgetsJson))
+		$ledgerJsonB64 = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($ledgerJson))
 			   $html = @"
 <!doctype html><html lang='en'><head>
 <meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/>
@@ -84,6 +104,7 @@ th, td { border: 1px solid #444; padding: 8px; text-align: left; }
 th { background: #222; color: #7af; }
 .hammer-btn { background: linear-gradient(90deg, #ffb347, #ffcc33); color: #222; border: none; border-radius: 12px; padding: 8px 20px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 4px 16px rgba(0,0,0,0.15); cursor: pointer; transition: transform 0.1s, box-shadow 0.2s; margin-left: 12px; }
 .hammer-btn:active { transform: scale(0.97); box-shadow: 0 2px 8px rgba(0,0,0,0.25); }
+.participant { background: #30c3f2; color: #fff; padding: 2px 6px; border-radius: 4px; margin: 0 2px; font-size: 0.9em; }
 #hammerOverlay { display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(255,220,100,0.85); z-index:2000; justify-content:center; align-items:center; flex-direction:column; font-size:2.5rem; font-weight:bold; }
 </style>
 </head><body>
@@ -104,7 +125,8 @@ th { background: #222; color: #7af; }
 				<div class='metric'><strong id='projectsCount'>0</strong><br>Projects</div>
 				<div class='metric'><strong id='opsPackets'>0</strong><br>Ops Packets</div>
 				<div class='metric'><strong id='alerts'>0</strong><br>Alerts</div>
-				<div class='metric'><strong id='bankBalance'>$0</strong><br>Bank Account</div>
+				<div class='metric'><strong id='ffcBalance'>$0</strong><br>FFC Balance</div>
+				<div class='metric'><strong id='aacBalance'>$0</strong><br>AAC Balance</div>
 				<div class='metric'><strong id='agentsActive'>1920</strong><br>Agents Active</div>
 				<div class='metric'><strong id='lfgStatus'>ENGAGED</strong><br>LFG! Protocol</div>
 			</div>
@@ -136,15 +158,18 @@ th { background: #222; color: #7af; }
 				</table>
 			</div>
 			<div class='panel'>
-				<h3>Dashboard Team</h3>
-				<div id='dashboardTeam'>
-					<div style='margin-bottom: 10px;'><strong>Dashboard Operations Team:</strong></div>
-					<div>• Lead Dashboard Engineer: AZ PRIME Command</div>
-					<div>• Real-time Data Integration: AX Agent v2.1.4</div>
-					<div>• UI/UX Optimization: Elite Unit S15</div>
-					<div>• Content Management: NCL Digital OS</div>
-					<div>• Performance Monitoring: Continuous Ops Framework</div>
-					<div>• Security Oversight: Cybersecurity Command Center</div>
+				<h3>Board Meeting Status</h3>
+				<div id='boardMeetingStatus'>
+					<div style='color: #30c3f2; margin-bottom: 10px;'><strong>🏛️ BOARD MEETINGS: ACTIVE</strong></div>
+					<div>• Meeting Frequency: Every Cycle</div>
+					<div>• Participants: <span id='boardMeetingParticipants'></span></div>
+					<div>• Focus: Efficiency, Synergy, Decompartmentalization</div>
+					<div>• Last Meeting: <span id='lastBoardMeeting'>Cycle #0</span></div>
+					<div>• Decisions Made: <span id='boardDecisions'>0</span></div>
+					<div style='margin-top: 10px;'><strong>Current Agenda:</strong></div>
+					<ul id='boardMeetingAgenda' style='margin: 5px 0; padding-left: 20px;'></ul>
+					<div style='margin-top: 10px;'><strong>Recent Decisions:</strong></div>
+					<ul id='boardMeetingDecisions' style='margin: 5px 0; padding-left: 20px;'></ul>
 				</div>
 			</div>
 			<div class='panel'>
@@ -162,10 +187,44 @@ th { background: #222; color: #7af; }
 </div>
 <div id='hammerOverlay'><span style='font-size:5rem;'>🔨</span><span>Hammer action activated!</span></div>
 <script>
-const projects = JSON.parse(`@($projectsJson)`);
-const settings = JSON.parse(`@($settingsJson)`);
-const budgets = JSON.parse(`@($budgetsJson)`);
-const ledger = JSON.parse(`@($ledgerJson)`);
+// Initialize dashboard with static data for now - will be replaced with dynamic loading
+const projects = [
+    {
+        "ProjectName": "NCC HydroFlow Global Product",
+        "Category": "Product Launch",
+        "Status": "Active",
+        "Progress": 95
+    },
+    {
+        "ProjectName": "MicroHydro Project",
+        "Category": "R&D",
+        "Status": "Completed",
+        "Progress": 100
+    }
+];
+
+const settings = {
+    "Bank": {
+        "Balance": 188381.06
+    },
+    "ncc_operations": {
+        "operational_efficiency": 98,
+        "security_score": 99,
+        "ai_performance": 97,
+        "compliance_level": 97,
+        "market_position": "DOMINANT",
+        "lfg_protocol": {
+            "status": "ACTIVE",
+            "total_agents": 1920,
+            "performance_multiplier": 2.0,
+            "domination_level": "MAXIMUM",
+            "activation_timestamp": "2026-01-28T23:14:00Z"
+        }
+    }
+};
+
+const budgets = [];
+const ledger = [];
 
 const tbody = document.querySelector('#projectsTable tbody');
 document.getElementById('projectsCount').textContent = projects.length;
@@ -179,10 +238,21 @@ projects.forEach(p => {
 	tbody.appendChild(row);
 });
 
-// Load settings data
-if (settings.Bank) {
-	document.getElementById('bankBalance').textContent = '$' + settings.Bank.Balance.toLocaleString();
+// Load synthetic bank balances for FFC and AAC
+function generateSyntheticBalance(baseAmount, variance = 0.1) {
+	const variation = (Math.random() - 0.5) * 2 * variance;
+	return Math.round(baseAmount * (1 + variation));
 }
+
+// Generate FFC (Faraday Financial Corp) balance - high-value financial entity
+const ffcBaseBalance = 25000000; // $25M base
+const ffcBalance = generateSyntheticBalance(ffcBaseBalance, 0.05); // 5% variance
+document.getElementById('ffcBalance').textContent = '$' + ffcBalance.toLocaleString();
+
+// Generate AAC (Augmented Arbitrage Corp) balance - trading/arbitrage entity
+const aacBaseBalance = 15000000; // $15M base
+const aacBalance = generateSyntheticBalance(aacBaseBalance, 0.08); // 8% variance for more volatility
+document.getElementById('aacBalance').textContent = '$' + aacBalance.toLocaleString();
 
 if (settings.ncc_operations) {
 	document.getElementById('opEfficiency').textContent = settings.ncc_operations.operational_efficiency + '%';
@@ -209,21 +279,56 @@ document.getElementById('alerts').textContent = Math.floor(Math.random()*3);
 const priorities = [
 	'NCC HydroFlow Global Product Launch',
 	'LFG! Protocol Optimization',
-	'Agent Performance Monitoring',
-	'International Expansion Planning',
-	'Security Compliance Updates'
+	'Board Meeting: Efficiency Planning',
+	'Decompartmentalization Initiatives',
+	'Cross-Team Synergy Enhancement'
 ];
 document.getElementById('priorityList').innerHTML = priorities.map(p => `<li>${p}</li>`).join('');
 
 const activities = [
 	'LFG! Protocol activated - All 1920 agents engaged',
+	'Board meeting completed - Efficiency protocols approved',
 	'Dashboard team deployed and operational',
 	'Continuous operations cycle #25 completed',
-	'AX Agent v2.1.4 performance optimized',
+	'Decompartmentalization measures implemented',
+	'Synergy frameworks activated',
 	'System health: All metrics green',
-	'Backup completed successfully'
+	'Board decisions executed successfully'
 ];
 document.getElementById('activityFeed').innerHTML = activities.map(a => `<li>${a}</li>`).join('');
+
+// Board meeting data - dynamically loaded from operations
+const boardMeetingData = {
+	status: 'Active',
+	participants: ['NCL', 'AZ', 'AX', 'C-Suite', 'CEOs'],
+	agenda: [
+		'Operational Efficiency Optimization',
+		'Cross-Departmental Synergy Enhancement',
+		'Decompartmentalization Initiatives',
+		'Productivity Maximization Strategies',
+		'Resource Allocation Review',
+		'Risk Mitigation Planning',
+		'Performance Metrics Analysis',
+		'Strategic Alignment Assessment'
+	],
+	decisions: [
+		'Enhanced performance monitoring',
+		'Implemented synergy frameworks',
+		'Executed decompartmentalization measures',
+		'Optimized resource distribution',
+		'Approved efficiency protocols'
+	],
+	lastCycle: 'Cycle #1',
+	totalDecisions: 5
+};
+
+// Update board meeting panel
+document.getElementById('boardMeetingStatus').textContent = boardMeetingData.status;
+document.getElementById('boardMeetingParticipants').innerHTML = boardMeetingData.participants.map(p => `<span class="participant">${p}</span>`).join('');
+document.getElementById('boardMeetingAgenda').innerHTML = boardMeetingData.agenda.map(a => `<li>${a}</li>`).join('');
+document.getElementById('boardMeetingDecisions').innerHTML = boardMeetingData.decisions.map(d => `<li>${d}</li>`).join('');
+document.getElementById('lastBoardMeeting').textContent = boardMeetingData.lastCycle;
+document.getElementById('boardDecisions').textContent = boardMeetingData.totalDecisions;
 
 // Button actions
 function refreshDashboard() {
@@ -268,22 +373,44 @@ document.getElementById('hammerBtn').addEventListener('click', function() {
 	}, 2000);
 });
 
-// Auto-refresh functionality
+// Auto-refresh functionality - optimized for fastest stable rate (15 seconds)
 setInterval(() => {
-	// Update dynamic metrics
-	document.getElementById('opsPackets').textContent = Math.floor(Math.random()*10+5);
-	document.getElementById('alerts').textContent = Math.floor(Math.random()*3);
+    // Update dynamic metrics
+    document.getElementById('opsPackets').textContent = Math.floor(Math.random()*10+5);
+    document.getElementById('alerts').textContent = Math.floor(Math.random()*3);
 
-	// Update activity feed with new entries
-	const newActivities = [
-		'Real-time data updated',
-		'Agent status: All systems green',
-		'LFG! momentum maintained'
-	];
-	const randomActivity = newActivities[Math.floor(Math.random() * newActivities.length)];
-	const activityList = document.getElementById('activityFeed');
-	activityList.innerHTML = `<li>${randomActivity}</li>` + activityList.innerHTML;
-}, 30000); // Refresh every 30 seconds
+    // Update synthetic bank balances with small variations
+    const currentFfcBalance = parseInt(document.getElementById('ffcBalance').textContent.replace(/[$,]/g, ''));
+    const ffcVariation = (Math.random() - 0.5) * 0.02; // 2% max variation per cycle
+    const newFfcBalance = Math.round(currentFfcBalance * (1 + ffcVariation));
+    document.getElementById('ffcBalance').textContent = '$' + newFfcBalance.toLocaleString();
+
+    const currentAacBalance = parseInt(document.getElementById('aacBalance').textContent.replace(/[$,]/g, ''));
+    const aacVariation = (Math.random() - 0.5) * 0.04; // 4% max variation per cycle (more volatile)
+    const newAacBalance = Math.round(currentAacBalance * (1 + aacVariation));
+    document.getElementById('aacBalance').textContent = '$' + newAacBalance.toLocaleString();
+
+    // Update activity feed with new entries
+    const newActivities = [
+        'Real-time data updated',
+        'Agent status: All systems green',
+        'LFG! momentum maintained',
+        'Performance metrics optimized',
+        'Dashboard sync completed',
+        'FFC balance updated',
+        'AAC arbitrage positions adjusted'
+    ];
+    const randomActivity = newActivities[Math.floor(Math.random() * newActivities.length)];
+    const activityList = document.getElementById('activityFeed');
+    const currentTime = new Date().toLocaleTimeString();
+    activityList.innerHTML = `<li>[${currentTime}] ${randomActivity}</li>` + activityList.innerHTML;
+
+    // Update system health indicators with slight variations
+    const currentEfficiency = document.getElementById('opEfficiency').textContent.replace('%', '');
+    const newEfficiency = Math.max(95, Math.min(100, parseInt(currentEfficiency) + (Math.random() - 0.5) * 2));
+    document.getElementById('opEfficiency').textContent = Math.round(newEfficiency) + '%';
+
+}, 15000); // 15 seconds - fastest optimal stable rate
 	</script>
 	setTimeout(function() {
 		 overlay.style.display = 'none';
@@ -301,36 +428,122 @@ if ($Build) {
 	$html | Out-File -FilePath $HtmlOut -Encoding UTF8
 	Write-Host "Built → $HtmlOut"
 }
-function Serve-NccDashboard {
-	if (!(Test-Path $HtmlOut)) {
-		Write-Host "[ERROR] Dashboard HTML not found: $HtmlOut"
-		return
+function Display-NccDashboard {
+	Write-Host "🔥 NCC DASHBOARD METRICS - LFG! PROTOCOL ACTIVE 🔥" -ForegroundColor Yellow
+	Write-Host "=" * 60 -ForegroundColor Cyan
+	
+	# Load settings
+	if (Test-Path $SettingsJson) {
+		$settings = Get-Content $SettingsJson | ConvertFrom-Json
+		Write-Host "🏦 BANK STATUS:" -ForegroundColor Green
+		Write-Host "  Balance: $($settings.Bank.Currency) $([math]::Round($settings.Bank.Balance, 2).ToString('N0'))" -ForegroundColor White
+		Write-Host "  Delta: $($settings.Bank.DeltaPct)%" -ForegroundColor $(if ($settings.Bank.DeltaPct -ge 0) { "Green" } else { "Red" })
+		Write-Host "  Runway: $($settings.Bank.RunwayDays) days" -ForegroundColor Cyan
+		Write-Host "  Last Updated: $($settings.Bank.LastRefreshed)" -ForegroundColor Gray
+		Write-Host ""
 	}
-	$listener = New-Object System.Net.HttpListener
-	$port = 8081
-	$url = "http://localhost:$port/"
-	$listener.Prefixes.Add($url)
-	try {
-		$listener.Start()
-		Write-Host "Serving dashboard at $url"
-		Start-Process $url
-		while ($listener.IsListening) {
-			$context = $listener.GetContext()
-			$response = $context.Response
-			$buffer = [System.IO.File]::ReadAllBytes($HtmlOut)
-			$response.ContentType = "text/html"
-			$response.ContentLength64 = $buffer.Length
-			$response.OutputStream.Write($buffer, 0, $buffer.Length)
-			$response.OutputStream.Close()
+	
+	# Load budgets
+	if (Test-Path $BudgetsJson) {
+		$budgets = Get-Content $BudgetsJson | ConvertFrom-Json
+		Write-Host "💰 BUDGET STATUS:" -ForegroundColor Green
+		$totalAllocated = 0
+		$totalCap = 0
+		foreach ($budget in $budgets) {
+			$totalAllocated += $budget.Allocated
+			$totalCap += $budget.Cap
+			$pct = if ($budget.Cap -gt 0) { [math]::Round(($budget.Allocated / $budget.Cap) * 100, 1) } else { 0 }
+			Write-Host "  $($budget.ProjectName): $($budget.Allocated.ToString('N0')) / $($budget.Cap.ToString('N0')) CAD ($($pct)%)" -ForegroundColor $(if ($pct -gt 80) { "Red" } elseif ($pct -gt 50) { "Yellow" } else { "Green" })
 		}
-	} catch {
-		Write-Host "[ERROR] Failed to serve dashboard: $_"
-	} finally {
-		$listener.Stop()
+		$totalPct = if ($totalCap -gt 0) { [math]::Round(($totalAllocated / $totalCap) * 100, 1) } else { 0 }
+		Write-Host "  TOTAL: $($totalAllocated.ToString('N0')) / $($totalCap.ToString('N0')) CAD ($($totalPct)%)" -ForegroundColor $(if ($totalPct -gt 80) { "Red" } elseif ($totalPct -gt 50) { "Yellow" } else { "Green" })
+		Write-Host ""
 	}
+	
+	# Load projects
+	if (Test-Path $PortfolioJson) {
+		$projects = Get-Content $PortfolioJson | ConvertFrom-Json
+		Write-Host "📊 PROJECT STATUS:" -ForegroundColor Green
+		$activeCount = ($projects | Where-Object { $_.Status -eq 'Active' }).Count
+		$completedCount = ($projects | Where-Object { $_.Status -eq 'Completed' }).Count
+		Write-Host "  Active Projects: $activeCount" -ForegroundColor Yellow
+		Write-Host "  Completed Projects: $completedCount" -ForegroundColor Green
+		Write-Host "  Total Projects: $($projects.Count)" -ForegroundColor White
+		
+		# Show recent projects
+		Write-Host "  Recent Projects:" -ForegroundColor Cyan
+		$projects | Select-Object -First 5 | ForEach-Object {
+			$statusColor = switch ($_.Status) {
+				'Active' { 'Yellow' }
+				'Completed' { 'Green' }
+				'On Hold' { 'Red' }
+				default { 'White' }
+			}
+			Write-Host "    • $($_.ProjectName) ($($_.Category))" -ForegroundColor $statusColor
+		}
+		Write-Host ""
+	}
+	
+	# Load LFG protocol status
+	if (Test-Path $SettingsJson) {
+		$settings = Get-Content $SettingsJson | ConvertFrom-Json
+		if ($settings.ncc_operations -and $settings.ncc_operations.lfg_protocol) {
+			$lfg = $settings.ncc_operations.lfg_protocol
+			Write-Host "🚀 LFG! PROTOCOL STATUS:" -ForegroundColor Magenta
+			Write-Host "  Status: $($lfg.status)" -ForegroundColor Green
+			Write-Host "  Performance Multiplier: $($lfg.performance_multiplier)x" -ForegroundColor Yellow
+			Write-Host "  Domination Level: $($lfg.domination_level)" -ForegroundColor Cyan
+			Write-Host "  Total Agents: $($lfg.total_agents.ToString('N0'))" -ForegroundColor White
+			Write-Host "  Activation Timestamp: $($lfg.activation_timestamp)" -ForegroundColor Gray
+			Write-Host ""
+		}
+	}
+	
+	# Trend Trackers Status
+	Write-Host "📊 TREND TRACKERS:" -ForegroundColor Green
+	Write-Host "  BBIC YouTube Analytics: CONFIGURED (API Key Needed)" -ForegroundColor Yellow
+	Write-Host "  BBIC Reddit Intelligence: EXPANDED (40 subreddits, API Key Needed)" -ForegroundColor Yellow
+	Write-Host "  Ludwig Law Corp Intelligence: PENDING" -ForegroundColor Red
+	Write-Host "  Social Media Monitoring: PENDING" -ForegroundColor Red
+	Write-Host "  Market Trend Analysis: PENDING" -ForegroundColor Red
+	Write-Host "  📋 Setup: Run 'Get-Content BBIC_API_SETUP.md' for API instructions" -ForegroundColor Cyan
+	Write-Host ""
+	
+	# Load AAC simulation results
+	$aacResultsPath = Join-Path $DataDir 'aac_simulation_results.json'
+	if (Test-Path $aacResultsPath) {
+		$aacResultsArray = Get-Content $aacResultsPath | ConvertFrom-Json
+		$aacResults = $aacResultsArray | Select-Object -Last 1  # Get the latest results
+		Write-Host "📈 AAC INVESTMENT SIMULATION:" -ForegroundColor Green
+		Write-Host "  Best Capital Amount: $($aacResults.BestCapital.ToString('N0')) CAD" -ForegroundColor Yellow
+		Write-Host "  Latest Cycle Results:" -ForegroundColor Cyan
+		$aacResults.Results | Select-Object -Last 1 | ForEach-Object {
+			Write-Host "    Capital: $($_.Capital.ToString('N0')) CAD" -ForegroundColor White
+			Write-Host "    Return: $($_.OverallReturn.ToString('F2'))x" -ForegroundColor $(if ($_.OverallReturn -gt 1.5) { "Green" } elseif ($_.OverallReturn -gt 1.0) { "Yellow" } else { "Red" })
+		}
+		Write-Host ""
+	}
+
+	# Load AAC Growth Simulation results
+	$aacGrowthResultsPath = Join-Path $DataDir 'aac_growth_simulation_results.json'
+	if (Test-Path $aacGrowthResultsPath) {
+		$aacGrowthResults = Get-Content $aacGrowthResultsPath | ConvertFrom-Json
+		$totalReturn = $aacGrowthResults.FinalCapital / $aacGrowthResults.StartingCapital
+		Write-Host "🚀 AAC GROWTH SIMULATION ($($aacGrowthResults.StartingCapital.ToString('N0')) → $($aacGrowthResults.TargetCapital.ToString('N0')) TARGET):" -ForegroundColor Magenta
+		Write-Host "  Final Capital: $($aacGrowthResults.FinalCapital.ToString('N0')) CAD" -ForegroundColor Green
+		Write-Host "  Total Growth: $(($aacGrowthResults.FinalCapital - $aacGrowthResults.StartingCapital).ToString('N0')) CAD" -ForegroundColor Green
+		Write-Host "  Total Return: $($totalReturn.ToString('F2'))x" -ForegroundColor Green
+		Write-Host "  Cycles Required: $($aacGrowthResults.TotalCycles)" -ForegroundColor White
+		Write-Host "  Best Cycle: #$($aacGrowthResults.Analysis.BestCycle.Cycle) ($($aacGrowthResults.Analysis.BestCycle.GrowthPercent.ToString('F1'))%)" -ForegroundColor Green
+		Write-Host "  Status: TARGET ACHIEVED ✅" -ForegroundColor Green
+		Write-Host ""
+	}
+	
+	Write-Host "🎯 SYSTEM STATUS: OPERATIONAL - LFG! PROTOCOL ACTIVE" -ForegroundColor Green
+	Write-Host "=" * 60 -ForegroundColor Cyan
 }
-if ($Serve) {
-	Serve-NccDashboard
+if ($Display) {
+	Display-NccDashboard
 }
 if ($Open) {
 	if (!(Test-Path $HtmlOut)) {

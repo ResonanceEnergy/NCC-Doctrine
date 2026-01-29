@@ -1,0 +1,136 @@
+# AZ PRIME NCL Department Scan & Efficiency Analysis
+# Scanning all NCC departments for redundancies and gaps
+# Date: January 28, 2026
+
+param(
+    [switch]$Detailed,
+    [switch]$GenerateReport
+)
+
+Write-Host "🔍 AZ PRIME NCL DEPARTMENT SCAN INITIATED 🔍" -ForegroundColor Cyan
+Write-Host "Scanning all NCC departments for redundancies and efficiency gaps..." -ForegroundColor Yellow
+Write-Host ""
+
+# Define all NCC departments
+$departments = @(
+    "AIGovernanceCouncil",
+    "BigBrainIntelligence",
+    "BiotechCorporation",
+    "CybersecurityCommandCenter",
+    "GlobalTalentAcquisition",
+    "InnovationLabsDivision",
+    "InternationalOperationsDivision",
+    "QuantumComputingDivision",
+    "ResonanceEnergyCorp",
+    "RoboticsAutomationDivision",
+    "SpaceOperationsDivision"
+)
+
+$scanResults = @()
+$redundancies = @()
+$gaps = @()
+
+foreach ($dept in $departments) {
+    $deptPath = Join-Path $PSScriptRoot ".." $dept
+    Write-Host "📊 Scanning: $dept" -ForegroundColor Green
+
+    if (Test-Path $deptPath) {
+        # Analyze department structure
+        $files = Get-ChildItem -Path $deptPath -Recurse -File | Where-Object { $_.Extension -in @('.md', '.ps1', '.py', '.json') }
+        $subfolders = Get-ChildItem -Path $deptPath -Directory
+
+        $deptAnalysis = @{
+            Department = $dept
+            FileCount = $files.Count
+            SubfolderCount = $subfolders.Count
+            HasDoctrine = (Test-Path (Join-Path $deptPath "Doctrine"))
+            HasHandbook = (Test-Path (Join-Path $deptPath "Handbook"))
+            HasAgents = (Test-Path (Join-Path $deptPath "Agents"))
+            HasDivisions = (Test-Path (Join-Path $deptPath "Divisions"))
+            LastModified = (Get-Item $deptPath).LastWriteTime
+        }
+
+        $scanResults += $deptAnalysis
+
+        # Check for redundancies
+        if ($deptAnalysis.HasDoctrine -and $deptAnalysis.HasHandbook) {
+            $redundancies += "Department $dept has both Doctrine and Handbook folders - potential overlap"
+        }
+
+        # Check for gaps
+        if (-not $deptAnalysis.HasAgents) {
+            $gaps += "Department $dept missing Agents folder"
+        }
+        if (-not $deptAnalysis.HasDoctrine) {
+            $gaps += "Department $dept missing Doctrine folder"
+        }
+        if ($deptAnalysis.FileCount -lt 5) {
+            $gaps += "Department $dept has very few files ($($deptAnalysis.FileCount)) - underdevelopment"
+        }
+
+    } else {
+        $gaps += "Department $dept folder does not exist"
+    }
+}
+
+Write-Host ""
+Write-Host "📋 SCAN RESULTS SUMMARY:" -ForegroundColor Magenta
+Write-Host "Total Departments Scanned: $($departments.Count)" -ForegroundColor White
+Write-Host "Departments with Doctrine: $(($scanResults | Where-Object { $_.HasDoctrine }).Count)" -ForegroundColor Green
+Write-Host "Departments with Agents: $(($scanResults | Where-Object { $_.HasAgents }).Count)" -ForegroundColor Green
+Write-Host "Departments with Divisions: $(($scanResults | Where-Object { $_.HasDivisions }).Count)" -ForegroundColor Green
+
+Write-Host ""
+Write-Host "⚠️  REDUNDANCIES IDENTIFIED:" -ForegroundColor Red
+foreach ($redundancy in $redundancies) {
+    Write-Host "  • $redundancy" -ForegroundColor Yellow
+}
+
+Write-Host ""
+Write-Host "🚫 GAPS IDENTIFIED:" -ForegroundColor Red
+foreach ($gap in $gaps) {
+    Write-Host "  • $gap" -ForegroundColor Yellow
+}
+
+Write-Host ""
+Write-Host "💡 EFFICIENCY RECOMMENDATIONS:" -ForegroundColor Cyan
+Write-Host "  1. Standardize department structure across all divisions" -ForegroundColor White
+Write-Host "  2. Eliminate redundant Doctrine/Handbook overlaps" -ForegroundColor White
+Write-Host "  3. Ensure all departments have Agents and Doctrine folders" -ForegroundColor White
+Write-Host "  4. Implement automated compliance checking for department standards" -ForegroundColor White
+Write-Host "  5. Create centralized agent deployment system" -ForegroundColor White
+
+if ($Detailed) {
+    Write-Host ""
+    Write-Host "📊 DETAILED DEPARTMENT ANALYSIS:" -ForegroundColor Magenta
+    foreach ($result in $scanResults) {
+        Write-Host "  $($result.Department):" -ForegroundColor Cyan
+        Write-Host "    Files: $($result.FileCount) | Folders: $($result.SubfolderCount)" -ForegroundColor Gray
+        Write-Host "    Doctrine: $($result.HasDoctrine) | Agents: $($result.HasAgents) | Divisions: $($result.HasDivisions)" -ForegroundColor Gray
+        Write-Host "    Last Modified: $($result.LastModified)" -ForegroundColor Gray
+        Write-Host ""
+    }
+}
+
+if ($GenerateReport) {
+    $reportPath = Join-Path $PSScriptRoot ".." "data" "az_ncl_department_scan_report.json"
+    $reportData = @{
+        ScanDate = Get-Date
+        TotalDepartments = $departments.Count
+        ScanResults = $scanResults
+        Redundancies = $redundancies
+        Gaps = $gaps
+        Recommendations = @(
+            "Standardize department structure across all divisions",
+            "Eliminate redundant Doctrine/Handbook overlaps",
+            "Ensure all departments have Agents and Doctrine folders",
+            "Implement automated compliance checking for department standards",
+            "Create centralized agent deployment system"
+        )
+    }
+    $reportData | ConvertTo-Json -Depth 6 | Out-File -FilePath $reportPath -Encoding UTF8
+    Write-Host "📄 Report saved to: $reportPath" -ForegroundColor Green
+}
+
+Write-Host ""
+Write-Host "✅ AZ PRIME NCL DEPARTMENT SCAN COMPLETED" -ForegroundColor Green

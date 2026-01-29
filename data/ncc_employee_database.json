@@ -1,11 +1,11 @@
 {
   "ncc_employee_database": {
     "metadata": {
-      "version": "1.0",
+      "version": "1.1",
       "created_date": "2026-01-28",
-      "total_employees": 1277,
+      "total_employees": 1691,
       "classification": "NCC TOP SECRET",
-      "last_updated": "2026-01-28T22:00:00Z",
+      "last_updated": "2026-01-29T12:00:00Z",
       "auditor": "AX Helix"
     },
     "departments": {
@@ -22,11 +22,11 @@
       },
       "BigBrainIntelligence": {
         "department_head": "BBI-001",
-        "total_agents": 134,
+        "total_agents": 174,
         "type_breakdown": {
-          "A": 76,
-          "B": 45,
-          "C": 13
+          "A": 101,
+          "B": 57,
+          "C": 16
         },
         "specializations": ["Intelligence Analysis", "Risk Assessment", "Predictive Analytics"],
         "performance_rating": 99.7
@@ -44,11 +44,11 @@
       },
       "CybersecurityCommandCenter": {
         "department_head": "CCC-001",
-        "total_agents": 145,
+        "total_agents": 195,
         "type_breakdown": {
-          "A": 89,
-          "B": 45,
-          "C": 11
+          "A": 119,
+          "B": 60,
+          "C": 16
         },
         "specializations": ["Cybersecurity", "Threat Detection", "Security Operations"],
         "performance_rating": 99.8
@@ -85,6 +85,17 @@
         },
         "specializations": ["International Operations", "Global Strategy", "Cross-border Coordination"],
         "performance_rating": 96.8
+      },
+      "MediaCorp": {
+        "department_head": "MMC-001",
+        "total_agents": 75,
+        "type_breakdown": {
+          "A": 20,
+          "B": 45,
+          "C": 10
+        },
+        "specializations": ["Interactive Avatar Creation", "Live Media Production", "Voice Synthesis", "AI Animation", "Media Technology", "Content Development"],
+        "performance_rating": 98.0
       },
       "QuantumComputingDivision": {
         "department_head": "QCD-001",
@@ -272,26 +283,49 @@
         },
         "specializations": ["Dashboard Development", "Data Visualization", "Reporting"],
         "performance_rating": 96.8
+      },
+      "OffshoreOperationsDivision": {
+        "department_head": "OOD-001",
+        "total_agents": 75,
+        "type_breakdown": {
+          "A": 25,
+          "B": 35,
+          "C": 15
+        },
+        "specializations": ["Offshore R&D", "Financial Intelligence", "International Operations", "Regulatory Arbitrage", "Asset Protection"],
+        "jurisdictions": ["Cayman Islands", "Singapore", "Switzerland", "Luxembourg", "Dubai"],
+        "performance_rating": 98.5
+      },
+      "EliteTraderDesk": {
+        "department_head": "ETD-001",
+        "total_agents": 89,
+        "type_breakdown": {
+          "A": 45,
+          "B": 35,
+          "C": 9
+        },
+        "specializations": ["Elite Market Operations", "Real-time Trading Execution", "Cross-market Intelligence", "Security 10 Trading Protocols", "Algorithmic Trading", "Risk Management"],
+        "performance_rating": 99.4
       }
     },
     "agent_types": {
       "A": {
         "description": "Critical 24/7 Operations",
-        "total_count": 389,
+        "total_count": 509,
         "responsibilities": ["Security monitoring", "Real-time operations", "Critical system maintenance"],
         "schedule": "24/7 continuous",
         "performance_target": 99.5
       },
       "B": {
         "description": "Standard Business Operations",
-        "total_count": 612,
+        "total_count": 719,
         "responsibilities": ["Development", "Analysis", "Standard operations"],
         "schedule": "Business hours + on-call",
         "performance_target": 97.0
       },
       "C": {
         "description": "Support Operations",
-        "total_count": 276,
+        "total_count": 303,
         "responsibilities": ["Administrative support", "Maintenance", "Scheduled tasks"],
         "schedule": "Scheduled shifts with overlap",
         "performance_target": 95.0
@@ -317,6 +351,64 @@
         "total_agents": 10,
         "specializations": ["Executive leadership", "Board governance", "Strategic oversight"],
         "reporting_structure": "Direct to AZ PRIME",
+        "clearance_level": "TOP SECRET"
+      },
+      "FIN25": {
+        "description": "Elite International Finance Accounting Unit - World-Class Corporate Structure",
+        "total_agents": 25,
+        "corporate_structure": {
+          "executive_leadership": {
+            "ceo": 1,
+            "cfo": 1,
+            "coo": 1,
+            "cto": 1,
+            "cro": 1
+          },
+          "service_lines": {
+            "audit_assurance": 4,
+            "tax_services": 4,
+            "consulting_advisory": 4,
+            "transaction_services": 3
+          },
+          "industry_sectors": {
+            "financial_services": 2,
+            "energy_resources": 2,
+            "technology": 2,
+            "healthcare": 2
+          },
+          "regional_leaders": 5
+        },
+        "specializations": ["International finance", "Regional accounting", "Offshore operations", "Financial intelligence", "Alberta provincial finances", "UPI corporate finance structures", "Canadian tax optimization", "International regulatory compliance", "Global audit standards", "Cross-border transactions", "Regulatory compliance", "Financial advisory"],
+        "regional_breakdown": {
+          "NorthAmerica": 5,
+          "Europe": 5,
+          "AsiaPacific": 5,
+          "LatinAmerica": 4,
+          "MiddleEastAfrica": 4,
+          "OffshoreSpecialists": 2
+        },
+        "reporting_structure": "Direct to C-Suite Finance",
+        "clearance_level": "TOP SECRET",
+        "model": "Top 25 International Accounting Firms",
+        "success_metrics": {
+          "revenue_growth_target": "8-12% annually",
+          "profitability_target": "20-25% margin",
+          "client_satisfaction": "4.5/5",
+          "audit_quality": "99.5% compliance"
+        }
+      },
+      "SC-ELITE": {
+        "description": "Safety Captain Elite Oversight Unit",
+        "total_agents": 50,
+        "specializations": ["NCC security oversight", "AX PRIME monitoring", "Real-time audit systems", "Emergency response protocols", "Cross-departmental security coordination", "Security 10 Directive compliance"],
+        "reporting_structure": "Direct to Safety Captain",
+        "clearance_level": "TOP SECRET"
+      },
+      "MMC-CEO": {
+        "description": "MediaCorp Chief Executive Officers",
+        "total_agents": 5,
+        "specializations": ["MediaCorp strategic leadership", "Interactive avatar technology oversight", "Creative direction", "Technology innovation management", "Operational excellence"],
+        "reporting_structure": "Direct to NCC C-Suite",
         "clearance_level": "TOP SECRET"
       }
     },

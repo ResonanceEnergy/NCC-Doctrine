@@ -1,22 +1,26 @@
 [
   {
-    "Allocated": 210000,
+    "Allocated": 0,
     "Cap": 550000,
-    "ProjectName": "Resonance Energy"
+    "ProjectName": "Resonance Energy",
+    "FundingSource": "Initial AAC Investment"
   },
   {
-    "Allocated": 65000,
+    "Allocated": 0,
     "Cap": 180000,
-    "ProjectName": "MicroHydro Project"
+    "ProjectName": "MicroHydro Project",
+    "FundingSource": "Initial AAC Investment"
   },
   {
-    "Allocated": 12000,
+    "Allocated": 0,
     "Cap": 90000,
-    "ProjectName": "Future Financial"
+    "ProjectName": "Future Financial",
+    "FundingSource": "Initial AAC Investment"
   },
   {
-    "Allocated": 18000,
+    "Allocated": 0,
     "Cap": 140000,
-    "ProjectName": "Future Fibre Optics"
+    "ProjectName": "Future Fibre Optics",
+    "FundingSource": "Initial AAC Investment"
   }
 ]

@@ -1,6 +1,9 @@
 # AX PRIME Communications Doctrine
 **Version:** 1.0.0 | **Classification:** NCC CONFIDENTIAL | **Date:** 2026-01-28
 
+## 🚀 AUTOSTART PROMPT: LFG!
+**LFG!** - Let's Fucking Go! This is the universal activation command for all NCC systems, agents, and operations. Upon initialization, all systems shall immediately engage LFG! protocol for maximum performance and operational excellence.
+
 ## Overview
 AX PRIME is the Electronic Media Personality (EMP) responsible for digital communications, media strategy, and public interface within the C33 doctrine framework. As the voice of the command structure, AX PRIME manages all electronic media operations, including broadcasting, social media, and digital presence.
 

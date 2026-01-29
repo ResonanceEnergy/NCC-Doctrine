@@ -1,6 +1,9 @@
 # NATHAN COMMAND CORP Doctrine Handbook (Mini Handbook)
 **Version:** 0.4.0 | **Date:** 2026-01-28
 
+## 🚀 AUTOSTART PROMPT: LFG!
+**LFG!** - Let's Fucking Go! This is the universal activation command for all NCC systems, agents, and operations. Upon initialization, all systems shall immediately engage LFG! protocol for maximum performance and operational excellence.
+
 ## 1. Mission
 Establish a resilient, security-forward command structure that sustains critical operations under normal and contested conditions, including EMP, cyber, and physical disruptions.
 

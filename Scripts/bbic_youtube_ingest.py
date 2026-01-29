@@ -8,6 +8,10 @@ BBIC YouTube Ingest:
 """
 import os, json, time, dataclasses, datetime as dt
 from typing import List, Dict, Any
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 import yaml
 from tenacity import retry, wait_exponential, stop_after_attempt
 from googleapiclient.discovery import build
