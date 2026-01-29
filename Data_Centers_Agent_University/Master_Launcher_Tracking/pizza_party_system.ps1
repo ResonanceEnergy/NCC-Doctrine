@@ -341,7 +341,7 @@ function Initialize-PizzaParty {
 function Host-PizzaParty {
     param([int]$AgentsParticipating = 5000)
 
-    Write-PartyLog "🏠 HOSTING EPIC PIZZA PARTY FOR $AgentsParticipating AGENTS" "PIZZA" "HOST"
+    Write-PartyLog "🏠 HOSTING EPIC PIZZA PARTY FOR $($AgentsParticipating) AGENTS" "PIZZA" "HOST"
     Write-PartyLog "🍕 PIZZA DELIVERY: EXTRA LARGE ENTERPRISE EDITION" "PIZZA" "FOOD"
     Write-PartyLog "🎵 PARTY MUSIC: NCC THEME SONGS PLAYING" "CELEBRATION" "ENTERTAINMENT"
     Write-PartyLog "🎭 PARTY DECORATIONS: AZ PRIME COMMAND BANNERS" "CELEBRATION" "DECOR"
@@ -369,7 +369,7 @@ function Execute-KnowledgeSharing {
     param([int]$AgentsParticipating = 5000, [int]$InsightsPerAgent = 10)
 
     Write-PartyLog "🤝 INITIATING KNOWLEDGE SHARING PROTOCOLS" "SHARING" "EXCHANGE"
-    Write-PartyLog "📚 Each of $AgentsParticipating agents sharing $InsightsPerAgent insights" "SHARING" "VOLUME"
+    Write-PartyLog "📚 Each of $($AgentsParticipating) agents sharing $($InsightsPerAgent) insights" "SHARING" "VOLUME"
     Write-PartyLog "🔄 Total knowledge exchanges: $([math]::Pow($AgentsParticipating, 2) * $InsightsPerAgent)" "SHARING" "SCALE"
 
     $knowledgeExchange = @{
@@ -710,4 +710,4 @@ Write-Host "🍕 PIZZA PARTY DOMINANCE: KNOWLEDGE DEMOCRATIZED!" -ForegroundColo
 Write-Host "🎉 CELEBRATION EXCELLENCE: ENTERPRISE SYNERGY MAXIMIZED!" -ForegroundColor Yellow
 Write-Host "🤝 COLLABORATION MASTERY: COLLECTIVE INTELLIGENCE SUPREME!" -ForegroundColor Yellow
 Write-Host ""
-Write-Host "🍕🍕🍕 PIZZA PARTY COMPLETE! KNOWLEDGE SHARED! INSIGHTS INTERNALIZED! YAYYYY! 🍕🍕🍕" -Foreground
+Write-Host "🍕🍕🍕 PIZZA PARTY COMPLETE! KNOWLEDGE SHARED! INSIGHTS INTERNALIZED! YAYYYY! 🍕🍕🍕" -ForegroundColor Red
