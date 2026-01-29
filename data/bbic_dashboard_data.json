@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-01-29T09:21:29.771396",
+  "last_update": "2026-01-29T09:22:28.851205",
   "trends_summary": {
     "total_companies": 27,
     "total_trends": 108,
@@ -25,11 +25,11 @@
     },
     {
       "type": "innovation_leaders",
-      "insight": "Innovation leaders: CybersecurityCommandCenter, QuantumComputingDivision, Console showing highest innovation indices",
+      "insight": "Innovation leaders: CybersecurityCommandCenter, BigBrainIntelligence, Dashboard showing highest innovation indices",
       "companies_affected": [
         "CybersecurityCommandCenter",
-        "QuantumComputingDivision",
-        "Console"
+        "BigBrainIntelligence",
+        "Dashboard"
       ],
       "recommendation": "Accelerate knowledge transfer from innovation leaders to other divisions"
     },
