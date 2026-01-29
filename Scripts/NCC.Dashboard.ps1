@@ -76,11 +76,41 @@ function New-NccDashboardHtml {
 		$budgetsJson = Get-Content $BudgetsJson -Raw
 		$ledgerJson = Get-Content $LedgerJson -Raw
 
+		# Parse settings to get LFG protocol values
+		$settings = $settingsJson | ConvertFrom-Json
+		$lfgPerformanceMultiplier = "2.0x"
+		$lfgDominationLevel = "MAXIMUM"
+		$lfgAgentTeams = "15 Divisions"
+		$lfgLastActivation = "2026-01-28 23:14:00"
+
+		if ($settings.ncc_operations -and $settings.ncc_operations.lfg_protocol) {
+			$lfg = $settings.ncc_operations.lfg_protocol
+			$lfgPerformanceMultiplier = "$($lfg.performance_multiplier)x"
+			$lfgDominationLevel = $lfg.domination_level
+			$lfgAgentTeams = "1920 Agents"  # Update with actual agent count
+			$lfgLastActivation = $lfg.activation_timestamp -replace 'T', ' ' -replace '\..*', ''
+		}
+
 		# Convert to base64 to avoid JSON parsing issues
 		$projectsJsonB64 = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($projectsJson))
 		$settingsJsonB64 = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($settingsJson))
 		$budgetsJsonB64 = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($budgetsJson))
 		$ledgerJsonB64 = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($ledgerJson))
+
+		# Build LFG section with dynamic values
+		$lfgSection = @"
+			<div class='panel'>
+				<h3>LFG! Protocol Status</h3>
+				<div id='lfgProtocolStatus'>
+					<div style='color: #30c3f2; margin-bottom: 10px;'><strong>🔥 ALL SYSTEMS LFG! ENGAGED 🔥</strong></div>
+					<div>• Performance Multiplier: <span id='performanceMultiplier'>$lfgPerformanceMultiplier</span></div>
+					<div>• Domination Level: <span id='dominationLevel'>$lfgDominationLevel</span></div>
+					<div>• Agent Teams: <span id='agentTeams'>$lfgAgentTeams</span></div>
+					<div>• Last Activation: <span id='lastActivation'>$lfgLastActivation</span></div>
+				</div>
+			</div>
+"@
+
 			   $html = @"
 <!doctype html><html lang='en'><head>
 <meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/>
@@ -138,16 +168,7 @@ th { background: #222; color: #7af; }
 				<h3>Timeline / Activity Feed</h3>
 				<ul id='activityFeed'><li>Loading...</li></ul>
 			</div>
-			<div class='panel'>
-				<h3>LFG! Protocol Status</h3>
-				<div id='lfgProtocolStatus'>
-					<div style='color: #30c3f2; margin-bottom: 10px;'><strong>🔥 ALL SYSTEMS LFG! ENGAGED 🔥</strong></div>
-					<div>• Performance Multiplier: <span id='performanceMultiplier'>2.0x</span></div>
-					<div>• Domination Level: <span id='dominationLevel'>MAXIMUM</span></div>
-					<div>• Agent Teams: <span id='agentTeams'>15 Divisions</span></div>
-					<div>• Last Activation: <span id='lastActivation'>2026-01-28 23:14:00</span></div>
-				</div>
-			</div>
+			$lfgSection
 		</div>
 		<div>
 			<div class='panel'>
@@ -551,7 +572,22 @@ if ($Open) {
 	}
 }
 	if (Test-Path $HtmlOut) {
-		Start-Process $HtmlOut
+		# Force open in VS Code - no browser fallback
+		try {
+			$codeCmd = "code"
+			if (Get-Command $codeCmd -ErrorAction Stop) {
+				Start-Process $codeCmd -ArgumentList "`"$HtmlOut`"" -NoNewWindow
+				Write-Host "✅ Dashboard opened in VS Code: $HtmlOut" -ForegroundColor Green
+			} else {
+				throw "VS Code command not found"
+			}
+		} catch {
+			Write-Host "❌ ERROR: Cannot open dashboard - VS Code required for NCC operations" -ForegroundColor Red
+			Write-Host "🔧 SOLUTION: Install VS Code and ensure 'code' command is in PATH" -ForegroundColor Yellow
+			Write-Host "📍 PATH: $env:PATH" -ForegroundColor Gray
+			throw "VS Code required for dashboard display"
+		}
 	} else {
-		Write-Host "[ERROR] Dashboard HTML not found: $HtmlOut"
+		Write-Host "[ERROR] Dashboard HTML not found: $HtmlOut" -ForegroundColor Red
+		throw "Dashboard file missing"
 	}
