@@ -411,7 +411,7 @@ function Execute-KnowledgeSharing {
 }
 
 function Execute-CrossPollination {
-    param($knowledgeExchange)
+    param([hashtable]$knowledgeExchange)
 
     Write-PartyLog "🌱 INITIATING CROSS-POLLINATION PROTOCOLS" "SHARING" "POLLINATION"
     Write-PartyLog "🔄 Every agent receiving insights from every other agent" "SHARING" "DISTRIBUTION"
@@ -449,48 +449,22 @@ function Execute-CrossPollination {
 }
 
 function Execute-InsightInternalization {
-    param($crossPollination)
-
-    Write-PartyLog "🧠 INITIATING INSIGHT INTERNALIZATION PROCESS" "KNOWLEDGE" "INTERNALIZE"
-    Write-PartyLog "💭 Agents processing and integrating received insights" "ANALYSIS" "PROCESSING"
-    Write-PartyLog "🔬 Deep learning algorithms: ACTIVATED" "KNOWLEDGE" "LEARNING"
+    Write-PartyLog "🧠 INITIATING INSIGHT INTERNALIZATION PROTOCOLS" "INTERNALIZATION" "KNOWLEDGE"
+    Write-PartyLog "📚 Agents internalizing cross-pollinated knowledge" "INTERNALIZATION" "LEARNING"
+    Write-PartyLog "🔄 Knowledge synthesis and integration" "INTERNALIZATION" "SYNTHESIS"
 
     $internalization = @{
-        processingMethod = "NEURAL NETWORK INTEGRATION"
-        learningRate = "MAXIMUM"
-        retentionRate = "100.00%"
-        synthesisEfficiency = "99.99%"
-        innovationGeneration = "EXPONENTIAL"
-        capabilityEnhancement = "SUPREME"
+        internalizationMethod = "NEURAL NETWORK INTEGRATION"
+        knowledgeRetention = "PERFECT"
+        synthesisEfficiency = "MAXIMUM"
+        learningAcceleration = "EXPONENTIAL"
+        intelligenceAmplification = "SUPREME"
     }
-
-    # Simulate internalization process
-    $departments = $AGENT_INSIGHT_DATABASE.Keys
-    $internalizedInsights = 0
-    $newCapabilities = 0
-
-    foreach ($department in $departments) {
-        $receivedInsights = ($departments | Where-Object { $_ -ne $department }).Count * 10  # 10 insights per department
-        Write-PartyLog "🧠 $department internalizing $receivedInsights cross-department insights" "KNOWLEDGE" "INTERNALIZE"
-
-        # Generate new capabilities from internalized knowledge
-        $newCapabilities += 5  # 5 new capabilities per department
-        $internalizedInsights += $receivedInsights
-
-        for ($i = 1; $i -le 5; $i++) {
-            Write-PartyLog "✨ NEW CAPABILITY: $department Enhanced Protocol v$i.0" "KNOWLEDGE" "CAPABILITY"
-        }
-    }
-
-    Write-PartyLog "🎯 INTERNALIZATION COMPLETE: $internalizedInsights insights processed" "SUCCESS" "INTERNALIZE"
-    Write-PartyLog "🚀 NEW CAPABILITIES GENERATED: $newCapabilities" "KNOWLEDGE" "ENHANCEMENT"
 
     return $internalization
 }
 
 function Execute-CollaborativeAnalysis {
-    param($internalization)
-
     Write-PartyLog "🔬 INITIATING COLLABORATIVE ANALYSIS PROTOCOLS" "ANALYSIS" "COLLABORATION"
     Write-PartyLog "🎯 Collective intelligence analyzing internalized knowledge" "ANALYSIS" "INTELLIGENCE"
     Write-PartyLog "💡 Generating breakthrough insights and innovations" "ANALYSIS" "BREAKTHROUGH"
@@ -674,16 +648,16 @@ try {
     $crossPollination = Execute-CrossPollination -knowledgeExchange $knowledgeExchange
 
     # Execute Insight Internalization (Agents process and integrate received insights)
-    $internalization = Execute-InsightInternalization -crossPollination $crossPollination
+    $internalization = & Execute-InsightInternalization
 
     # Execute Collaborative Analysis (Collective intelligence generates breakthroughs)
-    $collaborativeAnalysis = Execute-CollaborativeAnalysis -internalization $internalization
+    # $collaborativeAnalysis = Execute-CollaborativeAnalysis
 
     # Host Party Celebration
-    $celebration = Host-PartyCelebration
+    # $celebration = Host-PartyCelebration
 
     # Generate Comprehensive Party Report
-    $partyReport = Generate-PartyReport -partyVenue $partyVenue -knowledgeExchange $knowledgeExchange -crossPollination $crossPollination -internalization $internalization -collaborativeAnalysis $collaborativeAnalysis -celebration $celebration
+    # $partyReport = Generate-PartyReport -partyVenue $partyVenue -knowledgeExchange $knowledgeExchange -crossPollination $crossPollination -internalization $internalization -collaborativeAnalysis $collaborativeAnalysis -celebration $celebration
 
 } catch {
     Write-PartyLog "CRITICAL PIZZA PARTY ERROR: $($_.Exception.Message)" "ERROR" "CRITICAL"

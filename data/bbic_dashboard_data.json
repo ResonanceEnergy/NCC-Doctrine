@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-01-29T10:50:58.054114",
+  "last_update": "2026-01-29T11:25:43.664854",
   "trends_summary": {
     "total_companies": 41,
     "total_trends": 150,
@@ -30,20 +30,20 @@
     },
     {
       "type": "innovation_leaders",
-      "insight": "Innovation leaders: ResonanceEnergyCorp, Collab, Hedge_Fund showing highest innovation indices",
+      "insight": "Innovation leaders: CommandCenter, config, OpsPackets showing highest innovation indices",
       "companies_affected": [
-        "ResonanceEnergyCorp",
-        "Collab",
-        "Hedge_Fund"
+        "CommandCenter",
+        "config",
+        "OpsPackets"
       ],
       "recommendation": "Accelerate knowledge transfer from innovation leaders to other divisions"
     },
     {
       "type": "risk_monitoring",
-      "insight": "Risk indicators detected in 4 companies requiring attention",
+      "insight": "Risk indicators detected in 3 companies requiring attention",
       "companies_affected": [
-        "Faraday_Financial_Corp",
-        "BigBrainIntelligence"
+        "BigBrainIntelligence",
+        "Faraday_Financial_Corp"
       ],
       "recommendation": "Implement proactive risk mitigation strategies across identified companies"
     }
