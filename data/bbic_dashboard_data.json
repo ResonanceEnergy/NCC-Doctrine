@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-01-29T11:25:43.664854",
+  "last_update": "2026-01-29T11:27:54.314745",
   "trends_summary": {
     "total_companies": 41,
     "total_trends": 150,
@@ -30,11 +30,11 @@
     },
     {
       "type": "innovation_leaders",
-      "insight": "Innovation leaders: CommandCenter, config, OpsPackets showing highest innovation indices",
+      "insight": "Innovation leaders: Scripts, Collab, Dashboard showing highest innovation indices",
       "companies_affected": [
-        "CommandCenter",
-        "config",
-        "OpsPackets"
+        "Scripts",
+        "Collab",
+        "Dashboard"
       ],
       "recommendation": "Accelerate knowledge transfer from innovation leaders to other divisions"
     },
@@ -42,8 +42,8 @@
       "type": "risk_monitoring",
       "insight": "Risk indicators detected in 3 companies requiring attention",
       "companies_affected": [
-        "BigBrainIntelligence",
-        "Faraday_Financial_Corp"
+        "Faraday_Financial_Corp",
+        "BigBrainIntelligence"
       ],
       "recommendation": "Implement proactive risk mitigation strategies across identified companies"
     }
