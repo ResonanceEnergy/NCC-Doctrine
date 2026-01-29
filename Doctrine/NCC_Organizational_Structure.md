@@ -26,6 +26,7 @@ This document outlines the complete organizational structure of NATHAN COMMAND C
   - Big Brain Intelligence (intelligence analysis, threat assessment)
   - Innovation Labs Division (R&D, technology development)
   - Data Centers & Agent University Division (data infrastructure and AI training)
+  - Data Brokers Division (data acquisition, aggregation, and monetization)
 - **Reporting:** Direct to AZ PRIME (NCC)
 
 ### 3. Ludwig Law Corp (LLC)
@@ -117,7 +118,8 @@ Real World Nate (Supreme Commander)
         ├── Big Brain Intelligence Corp (BBIC)
         │   ├── Big Brain Intelligence Division
         │   ├── Innovation Labs Division
-        │   └── Data Centers & Agent University Division
+        │   ├── Data Centers & Agent University Division
+        │   └── Data Brokers Division
         ├── Ludwig Law Corp (LLC)
         │   └── [Internal LLC Divisions]
         ├── Resonance Energy Corp (REC)
