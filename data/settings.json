@@ -7,5 +7,13 @@
     "LastRefreshed": "2026-01-28 05:31",
     "Currency": "USD"
   },
-  "Posture": "NORMAL"
+  "Posture": "NORMAL",
+  "ncc_operations": {
+    "ai_performance": 98,
+    "operational_efficiency": 98,
+    "last_updated": "2026-01-28T22:06:13Z",
+    "security_score": 99,
+    "compliance_level": 97,
+    "market_position": "DOMINANT"
+  }
 }
