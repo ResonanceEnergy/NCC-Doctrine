@@ -162,6 +162,50 @@ function Backup-SystemData {
     }
 }
 
+function Commit-GitChanges {
+    param([int]$CycleCount)
+    Write-OperationLog "Performing automated Git commit (Cycle #$CycleCount)" "GIT"
+
+    try {
+        # Add all changes
+        $gitAddResult = & git add . 2>&1
+        if ($LASTEXITCODE -eq 0) {
+            Write-OperationLog "Git add completed successfully" "GIT"
+        } else {
+            Write-OperationLog "Git add failed: $gitAddResult" "ERROR"
+        }
+
+        # Check if there are changes to commit
+        $gitStatus = & git status --porcelain 2>&1
+        if ($gitStatus) {
+            # Commit changes
+            $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+            $commitMessage = "LFG! NCC Automated Commit - Cycle #$CycleCount - $timestamp"
+            $gitCommitResult = & git commit -m $commitMessage 2>&1
+            if ($LASTEXITCODE -eq 0) {
+                Write-OperationLog "Git commit completed: $commitMessage" "GIT"
+            } else {
+                Write-OperationLog "Git commit failed: $gitCommitResult" "ERROR"
+            }
+
+            # Push to remote
+            $gitPushResult = & git push 2>&1
+            if ($LASTEXITCODE -eq 0) {
+                Write-OperationLog "Git push completed successfully" "GIT"
+            } else {
+                Write-OperationLog "Git push failed: $gitPushResult" "ERROR"
+            }
+        } else {
+            Write-OperationLog "No changes to commit" "GIT"
+        }
+
+        Write-OperationLog "Git commit cycle completed (Cycle #$CycleCount)" "GIT"
+
+    } catch {
+        Write-OperationLog "Git commit failed: $($_.Exception.Message)" "ERROR"
+    }
+}
+
 function Monitor-Operations {
     Write-OperationLog "Performing operational monitoring cycle" "MONITOR"
 
@@ -252,6 +296,173 @@ function Monitor-Operations {
     Write-OperationLog "Operational monitoring cycle completed" "MONITOR"
 }
 
+function Review-DocumentsAndProtocols {
+    param([int]$CycleCount)
+    Write-OperationLog "REVIEWING ESSENTIAL NCC DOCUMENTS AND PROTOCOLS - Cycle #$CycleCount" "REVIEW"
+
+    # Essential documents to review
+    $essentialDocuments = @(
+        "Doctrine/NCC_Full_Handbook.md",
+        "Doctrine/AZ_PRIME_24_7_Framework.md",
+        "Doctrine/Communications_Doctrine.md",
+        "Doctrine/Security_10_Directive.md",
+        "Doctrine/Faraday_Financial_Doctrine.md",
+        "Doctrine/NCC_Task_Management_System_Implementation.md",
+        "Doctrine/NNO_Compartmentalization_Doctrine.md"
+    )
+
+    # Check document integrity and review status
+    foreach ($doc in $essentialDocuments) {
+        $docPath = Join-Path $ScriptPath "..\$doc"
+        if (Test-Path $docPath) {
+            $lastModified = (Get-Item $docPath).LastWriteTime
+            $daysSinceModified = (Get-Date) - $lastModified
+            Write-OperationLog "REVIEWED: $doc | Last Modified: $($lastModified.ToString('yyyy-MM-dd')) | Days Since: $([math]::Round($daysSinceModified.TotalDays, 1))" "REVIEW"
+        } else {
+            Write-OperationLog "MISSING DOCUMENT: $doc - Requires immediate creation" "ERROR"
+        }
+    }
+
+    # Update best practices manuals for each department
+    Update-BestPracticesManuals -CycleCount $CycleCount
+
+    Write-OperationLog "Document and protocol review completed for Cycle #$CycleCount" "REVIEW"
+}
+
+function Update-BestPracticesManuals {
+    param([int]$CycleCount)
+
+    Write-OperationLog "UPDATING DEPARTMENT BEST PRACTICES MANUALS - Cycle #$CycleCount" "BESTPRACTICES"
+
+    # Department list
+    $departments = @(
+        "AIGovernanceCouncil",
+        "BigBrainIntelligence",
+        "BiotechCorporation",
+        "CybersecurityCommandCenter",
+        "GlobalTalentAcquisition",
+        "InnovationLabsDivision",
+        "InternationalOperationsDivision",
+        "MediaCorp",
+        "QuantumComputingDivision",
+        "ResonanceEnergyCorp",
+        "RoboticsAutomationDivision",
+        "SpaceOperationsDivision"
+    )
+
+    foreach ($dept in $departments) {
+        $manualPath = Join-Path $ScriptPath "..\Doctrine\$dept`_Best_Practices_Manual.md"
+        $manualDir = Split-Path $manualPath -Parent
+
+        # Ensure directory exists
+        if (!(Test-Path $manualDir)) {
+            New-Item -ItemType Directory -Path $manualDir -Force | Out-Null
+        }
+
+        # Check if manual exists, create/update it
+        if (!(Test-Path $manualPath)) {
+            Write-OperationLog "Creating Best Practices Manual for $dept" "BESTPRACTICES"
+            New-BestPracticesManual -Department $dept -ManualPath $manualPath -CycleCount $CycleCount
+        } else {
+            Write-OperationLog "Updating Best Practices Manual for $dept" "BESTPRACTICES"
+            Update-ExistingBestPracticesManual -Department $dept -ManualPath $manualPath -CycleCount $CycleCount
+        }
+    }
+
+    Write-OperationLog "Best practices manuals update completed" "BESTPRACTICES"
+}
+
+function New-BestPracticesManual {
+    param([string]$Department, [string]$ManualPath, [int]$CycleCount)
+
+    $content = @"
+# $Department Best Practices Manual
+## NCC Department: $Department
+## Created: $(Get-Date -Format 'yyyy-MM-dd')
+## Last Updated: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')
+## Cycle: $CycleCount
+
+## Executive Summary
+This manual contains the evolving best practices for the $Department department within the NCC organization.
+
+## Core Principles
+- Excellence in execution
+- Continuous improvement
+- Security-first approach
+- Innovation-driven development
+- Cross-departmental collaboration
+
+## Operational Protocols
+### Daily Operations
+1. Review essential NCC documents weekly
+2. Maintain security protocols at all times
+3. Report anomalies immediately
+4. Update progress logs daily
+5. Participate in cross-departmental meetings
+
+### Best Practices
+- Document all processes
+- Implement automation where possible
+- Regular training and skill development
+- Performance monitoring and optimization
+- Risk assessment and mitigation
+
+## Quality Standards
+- 99.9% uptime requirement
+- Zero security breaches
+- 95%+ efficiency metrics
+- Continuous learning and adaptation
+
+## Review Schedule
+- Daily: Operational checks
+- Weekly: Document review
+- Monthly: Performance analysis
+- Quarterly: Strategic planning
+
+## Emergency Protocols
+- Immediate escalation for security issues
+- Backup system activation
+- Cross-departmental support coordination
+- Crisis management procedures
+
+---
+*This manual evolves with each operational cycle. Last reviewed in Cycle $CycleCount*
+"@
+
+    $content | Set-Content -Path $ManualPath -Encoding UTF8
+    Write-OperationLog "Created Best Practices Manual for $Department" "BESTPRACTICES"
+}
+
+function Update-ExistingBestPracticesManual {
+    param([string]$Department, [string]$ManualPath, [int]$CycleCount)
+
+    # Read existing content
+    $content = Get-Content -Path $ManualPath -Raw
+
+    # Update the last updated timestamp and cycle
+    $updatedContent = $content -replace '## Last Updated: .*', "## Last Updated: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+    $updatedContent = $updatedContent -replace '## Cycle: .*', "## Cycle: $CycleCount"
+    $updatedContent = $updatedContent -replace '\*This manual evolves with each operational cycle\. Last reviewed in Cycle \d+\*', "*This manual evolves with each operational cycle. Last reviewed in Cycle $CycleCount*"
+
+    # Add new best practice based on cycle
+    $newPractice = Get-Random -InputObject @(
+        "- Enhanced automation protocols implemented",
+        "- Security measures strengthened",
+        "- Performance optimization completed",
+        "- Cross-departmental integration improved",
+        "- Training programs updated",
+        "- Risk mitigation strategies enhanced",
+        "- Innovation initiatives launched",
+        "- Compliance standards verified"
+    )
+
+    # Insert new practice in the Best Practices section
+    $updatedContent = $updatedContent -replace '(### Best Practices.*?)(\n\n## Quality Standards)', "`$1$newPractice`n$2"
+
+    $updatedContent | Set-Content -Path $ManualPath -Encoding UTF8
+    Write-OperationLog "Updated Best Practices Manual for $Department with Cycle $CycleCount improvements" "BESTPRACTICES"
+}
+
 function Execute-StrategicInitiatives {
     Write-OperationLog "Executing strategic initiatives" "EXECUTE"
 
@@ -286,7 +497,7 @@ function Execute-StrategicInitiatives {
 function Conduct-BoardMeeting {
     param([int]$CycleNumber)
 
-    Write-OperationLog "🏛️ CONVENING EMERGENCY BOARD MEETING - Cycle #$CycleNumber 🏛️" "BOARD"
+    Write-OperationLog "CONVENING EMERGENCY BOARD MEETING - Cycle #$CycleNumber" "BOARD"
 
     # Board meeting participants
     $participants = @(
@@ -322,7 +533,7 @@ function Conduct-BoardMeeting {
 
     Write-OperationLog "Meeting Agenda:" "BOARD"
     foreach ($item in $agendaItems) {
-        Write-OperationLog "  📋 $item" "BOARD"
+        Write-OperationLog "  [AGENDA] $item" "BOARD"
 
         # Simulate discussion and decisions
         $decisions = @(
@@ -338,7 +549,7 @@ function Conduct-BoardMeeting {
         )
 
         $decision = $decisions | Get-Random
-        Write-OperationLog "     ✅ DECISION: $decision" "BOARD"
+        Write-OperationLog "     [APPROVED] DECISION: $decision" "BOARD"
 
         # AX Agent board support
         $axBoardTimestamp = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
@@ -363,21 +574,21 @@ function Conduct-BoardMeeting {
 
     Write-OperationLog "Board Meeting Outcomes:" "BOARD"
     foreach ($outcome in $outcomes) {
-        Write-OperationLog "  🎯 $outcome" "BOARD"
+        Write-OperationLog "  [TARGET] $outcome" "BOARD"
     }
 
     # LFG Protocol reinforcement
-    Write-OperationLog "LFG! Protocol Status: REINFORCED & OPTIMIZED" "BOARD"
+    Write-OperationLog "LFG! Protocol Status: REINFORCED and OPTIMIZED" "BOARD"
     Write-OperationLog "All systems operating at maximum efficiency and synergy" "BOARD"
 
-    Write-OperationLog "🏛️ BOARD MEETING CONCLUDED - Cycle #$CycleNumber Objectives Achieved 🏛️" "BOARD"
+    Write-OperationLog "BOARD MEETING CONCLUDED - Cycle #$CycleNumber Objectives Achieved" "BOARD"
 }
 
 # MMC Board Meeting Automation (20-second cycles)
 function Invoke-MMCBoardMeeting {
     param([int]$CycleNumber)
 
-    Write-OperationLog "?? MMC BOARD MEETING #$($CycleNumber.ToString('D4')) - LFG! ??" "MMC"
+    Write-OperationLog "MMC BOARD MEETING #$($CycleNumber.ToString('D4')) - LFG!" "MMC"
 
     # MMC CEO Board Members
     $mmcCEOs = @(
@@ -408,7 +619,7 @@ function Invoke-MMCBoardMeeting {
 
     Write-OperationLog "MMC STRATEGIC DIRECTIVES:" "MMC"
     foreach ($directive in $directives) {
-        Write-OperationLog "  ✓ $directive" "MMC"
+        Write-OperationLog "  [OK] $directive" "MMC"
     }
 
     # Live Metrics Update
@@ -452,11 +663,11 @@ function Invoke-MMCBoardMeeting {
 function Invoke-RESStatusReport {
     param([int]$CycleNumber)
 
-    Write-OperationLog "🔋 GENERATING RESONANCE ENERGY CORP STATUS REPORT - Cycle #$($CycleNumber.ToString('D4')) 🔋" "RES"
+    Write-OperationLog "GENERATING RESONANCE ENERGY CORP STATUS REPORT - Cycle #$($CycleNumber.ToString('D4'))" "RES"
 
     # RES Executive Summary
     $resReport = @"
-# 🔋 RESONANCE ENERGY CORP (RES) - COMPREHENSIVE STATUS REPORT
+# RESONANCE ENERGY CORP (RES) - COMPREHENSIVE STATUS REPORT
 
 **Date:** $(Get-Date -Format "MMMM dd, yyyy")  
 **Classification:** NATHAN COMMAND CORP CONFIDENTIAL  
@@ -465,7 +676,7 @@ function Invoke-RESStatusReport {
 
 ---
 
-## 🎯 EXECUTIVE SUMMARY
+## EXECUTIVE SUMMARY
 
 **Resonance Energy Corp (RES)** is NCC's premier clean energy technology division, currently undergoing aggressive expansion and technology seeding under the AZ PRIME & NCL collaborative framework. RES is positioned to become a $5B+ annual revenue powerhouse in clean energy solutions, with MicroFlowHydro (MFH) as the foundational technology platform.
 
@@ -603,7 +814,7 @@ Off-Grid Technologies operates under RES as the decentralized power solutions di
 
 ---
 
-## 🎯 CONCLUSION & NEXT STEPS
+## CONCLUSION & NEXT STEPS
 
 **RES Status:** Actively transforming from startup phase to global clean energy leader through comprehensive NCC technology integration. Off-Grid Technologies positioned as key growth driver in decentralized power market.
 
@@ -639,7 +850,7 @@ Off-Grid Technologies operates under RES as the decentralized power solutions di
         Write-OperationLog "RES Status Report generation failed: $($_.Exception.Message)" "ERROR"
     }
 
-    Write-OperationLog "🔋 RES STATUS REPORT #$($CycleNumber.ToString('D4')) COMPLETE - STATUS: OPTIMAL 🔋" "RES"
+    Write-OperationLog "RES STATUS REPORT #$($CycleNumber.ToString('D4')) COMPLETE - STATUS: OPTIMAL" "RES"
 }
 
 # Main execution logic
@@ -668,6 +879,7 @@ if ($Continuous) {
             Monitor-Operations
             Execute-StrategicInitiatives
             Update-Dashboard
+            Review-DocumentsAndProtocols -CycleCount $cycleCount
 
             # MMC Board Meeting Automation (20-second cycles)
             Write-OperationLog "Starting MMC Board Meeting Automation (20-second cycles)" "MMC"
@@ -683,6 +895,11 @@ if ($Continuous) {
             if ($cycleCount % 10 -eq 0) {
                 $resCycleCount++
                 Invoke-RESStatusReport -CycleNumber $resCycleCount
+            }
+
+            # Git commit every 30 cycles
+            if ($cycleCount % 30 -eq 0) {
+                Commit-GitChanges -CycleCount $cycleCount
             }
 
             # Backup every 30 cycles
@@ -704,5 +921,6 @@ if ($Continuous) {
     Monitor-Operations
     Execute-StrategicInitiatives
     Update-Dashboard
+    Review-DocumentsAndProtocols -CycleCount 1
     Write-OperationLog "Single operation cycle completed" "SINGLE"
 }

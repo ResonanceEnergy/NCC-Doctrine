@@ -1,19 +1,19 @@
 {
-  "Bank": {
-    "Source": "emergency_reset",
-    "RunwayDays": 0,
-    "Balance": 10.0,
-    "DeltaPct": 0.0,
-    "LastRefreshed": "2026-01-29 12:00",
-    "Currency": "USD"
-  },
-  "Posture": "NORMAL",
-  "ncc_operations": {
-    "market_position": "DOMINANT",
-    "ai_performance": 96,
-    "last_updated": "2026-01-29T00:43:29Z",
-    "security_score": 99,
-    "compliance_level": 98,
-    "operational_efficiency": 96
-  }
+    "Bank":  {
+                 "Source":  "emergency_reset",
+                 "RunwayDays":  0,
+                 "Balance":  10.0,
+                 "DeltaPct":  0.0,
+                 "LastRefreshed":  "2026-01-29 12:00",
+                 "Currency":  "USD"
+             },
+    "Posture":  "NORMAL",
+    "ncc_operations":  {
+                           "market_position":  "DOMINANT",
+                           "ai_performance":  96,
+                           "last_updated":  "2026-01-29T00:51:31Z",
+                           "security_score":  99,
+                           "compliance_level":  97,
+                           "operational_efficiency":  95
+                       }
 }
