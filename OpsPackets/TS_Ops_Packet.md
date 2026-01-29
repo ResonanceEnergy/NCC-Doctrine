@@ -1,4 +1,4 @@
-﻿# Tactical Support Ops Packet (TS)
+# Tactical Support Ops Packet (TS)
 **Purpose:** Quick brief pack for operations.  
 **Format:** SMEAC (5-paragraph order)
 
@@ -22,3 +22,4 @@
 
 ---
 **Owner:** S3 | **Update Cycle:** Per operation
+

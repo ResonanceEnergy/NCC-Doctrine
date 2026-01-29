@@ -1,0 +1,28 @@
+# MicroHydroV1 - build_all.FCMacro (skeleton)
+# Purpose: load params.json then execute all part macros.
+# NOTE: Replace placeholders with your validated macros.
+
+import os, json
+
+def cad_root():
+    return os.path.dirname(__file__)
+
+ROOT = cad_root()
+PARAMS_FILE = os.path.join(os.path.dirname(ROOT), 'params', 'params.json')
+
+with open(PARAMS_FILE, 'r') as f:
+    PARAMS = json.load(f)
+
+def run(relpath):
+    path = os.path.join(ROOT, relpath)
+    code = open(path, 'rb').read()
+    exec(compile(code, path, 'exec'), {'PARAMS': PARAMS, 'ROOT': ROOT})
+
+run('01_Diffuser/build_diffuser.FCMacro')
+run('02_Nozzle/build_nozzle.FCMacro')
+run('03_VanePacks/build_vanepacks.FCMacro')
+run('04_Retainer/build_retainer.FCMacro')
+# Optional:
+# run('Assembly/build_assembly.FCMacro')
+# run('scripts/export_batch.FCMacro')
+print('[DONE] build_all complete')

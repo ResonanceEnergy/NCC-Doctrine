@@ -1,4 +1,4 @@
-﻿# Avatar Center
+# Avatar Center
 
 **Category:** Tech  
 **Description:** Msakes Avatars for all agents under NCC umbrella  
@@ -18,3 +18,4 @@
 ---
 
 Generated automatically by the NCC New Project Wizard.
+

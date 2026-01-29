@@ -17,7 +17,7 @@
 ### Project Mandate
 - **Relocate REC HQ & R&D:** From Alberta, Canada to Montevideo, Uruguay
 - **Relocate Manufacturing:** From Alberta, Canada to Paraguay
-- **Timeline:** Complete relocation within 6 months (July 2026)
+- **Timeline:** Complete relocation by December 2026 (all documents presented and processed)
 - **Success Criteria:** 100% operational continuity, enhanced global positioning, cost optimization
 - **Risk Level:** MINIMAL (Comprehensive planning and elite execution)
 
@@ -271,11 +271,11 @@
 ## Resource Requirements
 
 ### Financial Allocation
-- **Total Budget:** $500M (including contingencies)
-- **Facility Construction:** $200M
-- **Technology Migration:** $100M
-- **Workforce Transition:** $150M
-- **Operations Setup:** $50M
+- **Total Budget:** $50,000 CAD (relocation fund allocation)
+- **Facility Construction:** $20,000
+- **Technology Migration:** $10,000
+- **Workforce Transition:** $15,000
+- **Operations Setup:** $5,000
 
 ### Human Resources
 - **UPI Elite Team:** 10 dedicated agents

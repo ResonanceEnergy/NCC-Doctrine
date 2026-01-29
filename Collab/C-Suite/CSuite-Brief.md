@@ -1,4 +1,4 @@
-﻿# C-Suite Collaboration Brief
+# C-Suite Collaboration Brief
 
 For executive review and inputs.
 - Prepared: 2026-01-27 10:10
@@ -6,3 +6,4 @@ For executive review and inputs.
 - Risks:
 - Decisions Needed:
 - Next Steps:
+

@@ -1,4 +1,4 @@
-﻿# {PROJECT_NAME}
+# {PROJECT_NAME}
 
 **Created:** 2026-01-27 10:10  
 **Category:** {CATEGORY}  

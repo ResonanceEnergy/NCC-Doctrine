@@ -1,4 +1,4 @@
-﻿# Security Brief Template
+# Security Brief Template
 **Classification:** [ Public | Internal | Restricted | TS ]  
 **Author:** [Name] | **Date:** 2026-01-27 | **Version:** 0.1.0
 
@@ -40,3 +40,4 @@
 - A: Contact Roster
 - B: Maps/Site Diagrams
 - C: Checklists
+

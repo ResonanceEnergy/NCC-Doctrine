@@ -1,0 +1,27 @@
+{
+  "accepted_test_ids": [
+    "T-001",
+    "T-002",
+    "T-003",
+    "T-004"
+  ],
+  "sensor_keywords": {
+    "T-001": [
+      "coherence",
+      "jet"
+    ],
+    "T-002": [
+      "ripple"
+    ],
+    "T-003": [
+      "elc",
+      "stability",
+      "drift"
+    ],
+    "T-004": [
+      "power",
+      "kw"
+    ]
+  },
+  "notes": "Skeleton config. Align with STW + workbook formulas."
+}

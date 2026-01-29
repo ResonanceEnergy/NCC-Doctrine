@@ -116,7 +116,7 @@
 ## Resource Requirements Summary
 
 ### Financial Allocation
-- **Total Budget:** $550M (including contingencies)
+- **Total Budget:** $50,000 CAD (relocation fund allocation)
 - **Facility Construction:** $200M
 - **Workforce Transition:** $150M (enhanced retention programs)
 - **Technology Migration:** $100M

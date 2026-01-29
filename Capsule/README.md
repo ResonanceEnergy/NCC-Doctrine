@@ -53,3 +53,4 @@ Theres a few use cases where Capsule may have trouble exporting assets from your
 
 Yep, and they're all completely free - check out my GitHub account for other Blender goodies (https://github.com/Takanu).
 
+

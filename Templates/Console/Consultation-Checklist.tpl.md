@@ -1,4 +1,4 @@
-﻿# New Project Consultation (AZ + C-Suite)
+# New Project Consultation (AZ + C-Suite)
 
 **Project:** {PROJECT_NAME}  
 **Date:** 2026-01-27 10:10

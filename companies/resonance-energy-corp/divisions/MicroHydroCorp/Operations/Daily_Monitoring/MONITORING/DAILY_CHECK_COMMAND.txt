@@ -1,0 +1,46 @@
+# Daily Monitoring Command
+
+Run this every morning. Takes 30 seconds.
+
+## Quick Check (Do This Daily)
+
+```powershell
+# Tier 1 check
+$t1=@(Get-ChildItem c:\MircoHydro\TIER1_CLEANUP_ARCHIVED_20260124 -Recurse -File)
+# Tier 2 check
+$t2=@(Get-ChildItem c:\MircoHydro\TIER2_CLEANUP_ARCHIVED_20260124 -Recurse -File)
+# Report
+Write-Host "T1: $($t1.Count)/28, T2: $($t2.Count)/39"
+```
+
+**Expected Output:** `T1: 28/28, T2: 39/39`
+
+## What's Normal?
+
+✅ **Both numbers always 28 and 39**
+- Archive files never change
+- No adds, no deletes
+- Size stays same
+
+## What's Wrong?
+
+❌ **Numbers drop**
+- Example: "T1: 27/28, T2: 39/39"
+- STOP immediately
+- Escalate to team lead
+- Do NOT proceed with any deletions
+
+❌ **New numbers appear**
+- Example: "T1: 29/28, T2: 39/39"
+- Something modified archive
+- Investigate before proceeding
+
+## If All Good
+
+✅ Quick note: "Day X - T1: 28/28, T2: 39/39 ✓"
+✅ Move on with your day
+✅ Return tomorrow, repeat
+
+## Full Monitoring Script
+
+If you want more details, see: [DUAL_MONITORING_CHECK.ps1](../SCRIPTS/DUAL_MONITORING_CHECK.ps1)

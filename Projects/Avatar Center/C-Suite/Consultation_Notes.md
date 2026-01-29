@@ -1,4 +1,4 @@
-﻿# C-Suite Consultation – Avatar Center
+# C-Suite Consultation – Avatar Center
 
 ## Executive Summary
 Describe what this project is and why it matters.
@@ -16,4 +16,5 @@ Describe what this project is and why it matters.
 
 ## Notes
 (Write your C-Suite consultation notes here)
+
 

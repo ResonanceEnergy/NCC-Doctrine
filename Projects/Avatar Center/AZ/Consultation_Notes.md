@@ -1,4 +1,4 @@
-﻿# AZ Collaboration Consultation – Avatar Center
+# AZ Collaboration Consultation – Avatar Center
 
 ## Purpose
 Document collaboration insights, decisions, and strategic input for project: **Avatar Center**
@@ -13,4 +13,5 @@ Document collaboration insights, decisions, and strategic input for project: **A
 
 ## Notes
 (Write your AZ consultation notes here)
+
 
