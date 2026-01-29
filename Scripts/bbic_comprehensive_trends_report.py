@@ -7,6 +7,7 @@ BBIC Comprehensive Trends Report Compiler:
 - INTEGRATED WEB SCRAPING: Constantly searches for new data scraping, analysis, and storage methods
 - Generates bulletins and shares with NCC ecosystem
 - Integrated into NCC continuous operations cycle
+- CONTINUOUS MODE: Runs indefinitely in background with configurable intervals
 """
 import os
 import json
@@ -18,6 +19,10 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import time
+import sys
+import argparse
+import concurrent.futures
+import threading
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
@@ -261,7 +266,7 @@ class BBICTrendsReportCompiler:
         return report
 
     def save_report(self, report: Dict[str, Any]):
-        """Save comprehensive trends report"""
+        """Save comprehensive trends report and update all relevant logs/protocols"""
         output_dir = os.path.join(ROOT, "data", "bbic_trends_reports")
         os.makedirs(output_dir, exist_ok=True)
 
@@ -283,6 +288,9 @@ class BBICTrendsReportCompiler:
                 json.dump(bulletin, f, indent=2, ensure_ascii=False)
 
         print(f"[BBIC-Trends-Report] Individual company bulletins saved to {bulletins_dir}")
+        
+        # Update comprehensive logs and protocols
+        self.update_comprehensive_logs_and_protocols(report, timestamp)
 
     def scrape_web_for_data_techniques(self) -> List[Dict]:
         """Continuously scrape web for new data scraping, analysis, and storage methods"""
@@ -444,13 +452,161 @@ class BBICTrendsReportCompiler:
         with open(bulletin_path, 'w', encoding='utf-8') as f:
             json.dump(bulletin, f, indent=2, ensure_ascii=False)
 
-        # Log to NCC continuous operations
+        # Update NCC protocols with new insights
+        self.update_ncc_protocols_with_insights(bulletin)
+
+        # Log to multiple NCC logs
         log_entry = f"BBIC BULLETIN SHARED: {bulletin['bulletin_id']} - {len(bulletin['sections'])} categories discovered - LFG!"
+        
+        # Main operations log
         log_path = os.path.join(ROOT, "logs", "NCC_Continuous_Operations.log")
         with open(log_path, 'a', encoding='utf-8') as f:
             f.write(f"[{dt.datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')}] [BBIC] {log_entry}\n")
+        
+        # Intelligence log
+        intel_log_path = os.path.join(ROOT, "logs", "BBIC_Intelligence.log")
+        with open(intel_log_path, 'a', encoding='utf-8') as f:
+            f.write(f"[{dt.datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')}] [BBIC] BULLETIN: {bulletin['bulletin_id']} | INSIGHTS: {len(bulletin['sections'])} | CYCLE: CONTINUOUS\n")
+        
+        # Protocol updates log
+        protocol_log_path = os.path.join(ROOT, "logs", "NCC_Protocol_Updates.log")
+        with open(protocol_log_path, 'a', encoding='utf-8') as f:
+            f.write(f"[{dt.datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')}] [BBIC] PROTOCOL UPDATE: Data techniques protocols updated with {len(bulletin['sections'])} new categories\n")
 
         print(f"[BBIC-NCC-Share] Bulletin shared with NCC - {bulletin['bulletin_id']}")
+
+    def update_ncc_protocols_with_insights(self, bulletin: Dict):
+        """Update NCC protocols with new BBIC insights"""
+        print("[BBIC-Protocol-Update] Updating NCC protocols with new insights...")
+        
+        # Update settings.json with latest intelligence
+        settings_path = os.path.join(ROOT, "data", "settings.json")
+        try:
+            with open(settings_path, 'r', encoding='utf-8') as f:
+                settings = json.load(f)
+        except:
+            settings = {}
+        
+        # Add BBIC intelligence section
+        settings['bbic_intelligence'] = {
+            'last_update': dt.datetime.utcnow().isoformat(),
+            'bulletin_id': bulletin['bulletin_id'],
+            'categories_discovered': len(bulletin['sections']),
+            'total_insights': sum(section['insights_count'] for section in bulletin['sections'].values()),
+            'departments_notified': list(set(dept for section in bulletin['sections'].values() 
+                                           for dept in section['ncc_departments_to_notify']))
+        }
+        
+        with open(settings_path, 'w', encoding='utf-8') as f:
+            json.dump(settings, f, indent=2, ensure_ascii=False)
+        
+        # Update employee database with BBIC activity
+        db_path = os.path.join(ROOT, "data", "ncc_employee_database.json")
+        try:
+            with open(db_path, 'r', encoding='utf-8') as f:
+                db = json.load(f)
+            
+            # Update BigBrainIntelligence department with latest activity
+            if 'departments' in db.get('ncc_employee_database', {}):
+                bbi_dept = db['ncc_employee_database']['departments'].get('BigBrainIntelligence', {})
+                if 'performance_metrics' not in bbi_dept:
+                    bbi_dept['performance_metrics'] = {}
+                
+                bbi_dept['performance_metrics']['bbic_last_activity'] = dt.datetime.utcnow().isoformat()
+                bbi_dept['performance_metrics']['bbic_insights_generated'] = bulletin.get('total_insights', 0)
+                bbi_dept['performance_metrics']['bbic_categories_tracked'] = len(bulletin.get('sections', {}))
+                
+                db['ncc_employee_database']['departments']['BigBrainIntelligence'] = bbi_dept
+                
+                with open(db_path, 'w', encoding='utf-8') as f:
+                    json.dump(db, f, indent=2, ensure_ascii=False)
+        
+        except Exception as e:
+            print(f"[BBIC-Protocol-Update] Warning: Could not update employee database: {e}")
+        
+        print("[BBIC-Protocol-Update] NCC protocols updated with BBIC insights")
+
+    def update_comprehensive_logs_and_protocols(self, report: Dict[str, Any], timestamp: str):
+        """Update all comprehensive logs and protocols with trends report data"""
+        print("[BBIC-Comprehensive-Update] Updating all logs and protocols with trends data...")
+        
+        # Update main operations log
+        ops_log_path = os.path.join(ROOT, "logs", "NCC_Continuous_Operations.log")
+        with open(ops_log_path, 'a', encoding='utf-8') as f:
+            f.write(f"[{dt.datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')}] [BBIC] TRENDS REPORT GENERATED: {report['summary']['total_companies']} companies, {report['summary']['total_trends']} trends, {report['summary']['total_insights']} insights\n")
+        
+        # Update trends-specific log
+        trends_log_path = os.path.join(ROOT, "logs", "BBIC_Trends.log")
+        with open(trends_log_path, 'a', encoding='utf-8') as f:
+            f.write(f"[{dt.datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')}] [BBIC] REPORT: {timestamp} | COMPANIES: {report['summary']['total_companies']} | TRENDS: {report['summary']['total_trends']} | INSIGHTS: {report['summary']['total_insights']}\n")
+        
+        # Update protocol updates log
+        protocol_log_path = os.path.join(ROOT, "logs", "NCC_Protocol_Updates.log")
+        with open(protocol_log_path, 'a', encoding='utf-8') as f:
+            f.write(f"[{dt.datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')}] [BBIC] PROTOCOL UPDATE: Trends analysis protocols updated with {report['summary']['total_trends']} new trends across {report['summary']['total_companies']} companies\n")
+        
+        # Update settings.json with trends intelligence
+        settings_path = os.path.join(ROOT, "data", "settings.json")
+        try:
+            with open(settings_path, 'r', encoding='utf-8') as f:
+                settings = json.load(f)
+        except:
+            settings = {}
+        
+        # Add BBIC trends section
+        settings['bbic_trends'] = {
+            'last_trends_update': dt.datetime.utcnow().isoformat(),
+            'total_companies_analyzed': report['summary']['total_companies'],
+            'total_trends_generated': report['summary']['total_trends'],
+            'total_insights_discovered': report['summary']['total_insights'],
+            'bulletins_created': report['summary']['bulletins_generated'],
+            'report_timestamp': timestamp
+        }
+        
+        with open(settings_path, 'w', encoding='utf-8') as f:
+            json.dump(settings, f, indent=2, ensure_ascii=False)
+        
+        # Update employee database with trends activity
+        db_path = os.path.join(ROOT, "data", "ncc_employee_database.json")
+        try:
+            with open(db_path, 'r', encoding='utf-8') as f:
+                db = json.load(f)
+            
+            # Update all departments with trends insights
+            if 'departments' in db.get('ncc_employee_database', {}):
+                for dept_name, dept_data in db['ncc_employee_database']['departments'].items():
+                    if 'performance_metrics' not in dept_data:
+                        dept_data['performance_metrics'] = {}
+                    
+                    dept_data['performance_metrics']['bbic_trends_last_update'] = dt.datetime.utcnow().isoformat()
+                    dept_data['performance_metrics']['bbic_trends_available'] = report['summary']['total_trends']
+                    
+                    # Add department-specific insights if available
+                    if dept_name in report['company_bulletins']:
+                        bulletin = report['company_bulletins'][dept_name]
+                        dept_data['performance_metrics']['bbic_dept_trends'] = bulletin['trends_summary']['total_trends']
+                        dept_data['performance_metrics']['bbic_dept_insights'] = len(bulletin['key_insights'])
+                
+                with open(db_path, 'w', encoding='utf-8') as f:
+                    json.dump(db, f, indent=2, ensure_ascii=False)
+        
+        except Exception as e:
+            print(f"[BBIC-Comprehensive-Update] Warning: Could not update employee database: {e}")
+        
+        # Update dashboard data
+        dashboard_path = os.path.join(ROOT, "data", "bbic_dashboard_data.json")
+        dashboard_data = {
+            'last_update': dt.datetime.utcnow().isoformat(),
+            'trends_summary': report['summary'],
+            'top_insights': report['cross_company_insights'][:5],  # Top 5 insights
+            'active_companies': list(report['company_bulletins'].keys()),
+            'intelligence_status': 'ACTIVE - CONTINUOUS MONITORING'
+        }
+        
+        with open(dashboard_path, 'w', encoding='utf-8') as f:
+            json.dump(dashboard_data, f, indent=2, ensure_ascii=False)
+        
+        print("[BBIC-Comprehensive-Update] All logs and protocols updated with trends data")
 
     def run_web_scraping_cycle(self) -> Dict:
         """Run complete web scraping cycle for data techniques"""
@@ -479,33 +635,136 @@ class BBICTrendsReportCompiler:
         return cycle_report
 
 def main():
-    """Main execution function"""
+    """Main execution function with continuous mode support"""
+    parser = argparse.ArgumentParser(description='BBIC Comprehensive Trends Report Compiler')
+    parser.add_argument('--continuous', action='store_true', help='Run continuously in background')
+    parser.add_argument('--interval', type=int, default=30, help='Interval between cycles in minutes (default: 30)')
+    parser.add_argument('--cycles', type=int, help='Number of cycles to run (for continuous mode)')
+    
+    args = parser.parse_args()
+    
     compiler = BBICTrendsReportCompiler()
-
-    # Run comprehensive report cycle
-    report = compiler.run_comprehensive_report_cycle()
-
-    # Run web scraping cycle for data techniques
-    print("\n" + "="*80)
-    print("🚀 BBIC CONSTANT WEB SCRAPING FOR DATA TECHNIQUES - LFG! 🚀")
-    print("="*80)
-    web_cycle = compiler.run_web_scraping_cycle()
-
-    # Combine reports
-    combined_report = {
-        **report,
-        'web_scraping_cycle': web_cycle,
-        'total_insights': report['summary']['total_trends'] + web_cycle['insights_discovered']
-    }
-
-    # Save combined report
-    compiler.save_report(combined_report)
-
-    # Print summary
-    print("\n[BBIC-Trends-Report] Comprehensive Report Summary:")
-    print(f"  Total Companies Analyzed: {report['summary']['total_companies']}")
-    print(f"  Total Trends Generated: {report['summary']['total_trends']}")
-    print(f"  Cross-Company Insights: {report['summary']['total_insights']}")
+    
+    if args.continuous:
+        print(f"[BBIC-Continuous] Starting continuous BBIC analysis cycles every {args.interval} minutes...")
+        print("🚀 BBIC CONSTANT INTELLIGENCE GATHERING - LFG! 🚀")
+        
+        cycle_count = 0
+        max_cycles = args.cycles if args.cycles else float('inf')
+        
+        while cycle_count < max_cycles:
+            cycle_start = dt.datetime.utcnow()
+            combined_report = {'total_insights': 0}  # Initialize
+            duration = 0.0  # Initialize
+            
+            try:
+                print(f"\n{'='*80}")
+                print(f"[BBIC-Cycle-{cycle_count+1}] Starting analysis cycle at {cycle_start.strftime('%Y-%m-%d %H:%M:%S UTC')}")
+                print(f"{'='*80}")
+                
+                # Run comprehensive report cycle
+                report = compiler.run_comprehensive_report_cycle()
+                
+                # Run web scraping cycle for data techniques
+                print("\n" + "-"*60)
+                print("🔍 BBIC WEB SCRAPING FOR DATA TECHNIQUES 🔍")
+                print("-"*60)
+                web_cycle = compiler.run_web_scraping_cycle()
+                
+                # Combine reports
+                combined_report = {
+                    **report,
+                    'web_scraping_cycle': web_cycle,
+                    'total_insights': report['summary']['total_trends'] + web_cycle['insights_discovered'],
+                    'cycle_number': cycle_count + 1,
+                    'cycle_timestamp': cycle_start.isoformat()
+                }
+                
+                # Save combined report
+                compiler.save_report(combined_report)
+                
+                # Print cycle summary
+                cycle_end = dt.datetime.utcnow()
+                duration = (cycle_end - cycle_start).total_seconds()
+                
+                print(f"\n[BBIC-Cycle-{cycle_count+1}] Cycle Summary:")
+                print(f"  Duration: {duration:.1f} seconds")
+                print(f"  Companies Analyzed: {report['summary']['total_companies']}")
+                print(f"  Trends Generated: {report['summary']['total_trends']}")
+                print(f"  Web Insights: {web_cycle['insights_discovered']}")
+                print(f"  Total Intelligence: {combined_report['total_insights']}")
+                print(f"  Status: COMPLETE - LFG!")
+                
+                # Log cycle completion to all relevant logs
+                cycle_log_entry = f"CYCLE {cycle_count+1} COMPLETE: {cycle_end.strftime('%Y-%m-%d %H:%M:%S')} | DURATION: {duration:.1f}s | INTELLIGENCE: {combined_report['total_insights']} | STATUS: LFG!"
+                
+                # Continuous operations log
+                with open(os.path.join(ROOT, "logs", "NCC_Continuous_Operations.log"), 'a', encoding='utf-8') as f:
+                    f.write(f"[{cycle_end.strftime('%Y-%m-%d %H:%M:%S')}] [BBIC] {cycle_log_entry}\n")
+                
+                # BBIC specific log
+                with open(os.path.join(ROOT, "logs", "BBIC_Continuous.log"), 'a', encoding='utf-8') as f:
+                    f.write(f"[{cycle_end.strftime('%Y-%m-%d %H:%M:%S')}] CYCLE {cycle_count+1}: {combined_report['total_insights']} insights | {web_cycle['insights_discovered']} web insights | NEXT: +{args.interval}min\n")
+                
+                cycle_count += 1
+                
+                # Sleep until next cycle (unless this was the last cycle)
+                if cycle_count < max_cycles:
+                    sleep_time = args.interval * 60  # Convert minutes to seconds
+                    print(f"\n[BBIC-Wait] Next cycle in {args.interval} minutes... (Sleeping {sleep_time} seconds)")
+                    time.sleep(sleep_time)
+                    
+            except KeyboardInterrupt:
+                print("\n[BBIC-Interrupt] Continuous mode interrupted by user")
+                break
+            except Exception as e:
+                print(f"[BBIC-Error] Error in cycle {cycle_count+1}: {str(e)}")
+                print("[BBIC-Continue] Continuing to next cycle...")
+                time.sleep(60)  # Brief pause before retry
+        
+        print(f"\n[BBIC-Complete] Continuous analysis completed after {cycle_count} cycles")
+        
+    else:
+        # Single run mode (original behavior)
+        print("🚀 BBIC SINGLE ANALYSIS CYCLE - LFG! 🚀")
+        
+        # Run comprehensive report cycle
+        report = compiler.run_comprehensive_report_cycle()
+        
+        # Run web scraping cycle for data techniques
+        print("\n" + "="*80)
+        print("🔍 BBIC WEB SCRAPING FOR DATA TECHNIQUES 🔍")
+        print("="*80)
+        web_cycle = compiler.run_web_scraping_cycle()
+        
+        # Combine reports
+        combined_report = {
+            **report,
+            'web_scraping_cycle': web_cycle,
+            'total_insights': report['summary']['total_trends'] + web_cycle['insights_discovered']
+        }
+        
+        # Save combined report
+        compiler.save_report(combined_report)
+        
+        # Print summary
+        print("\n[BBIC-Trends-Report] Comprehensive Report Summary:")
+        print(f"  Total Companies Analyzed: {report['summary']['total_companies']}")
+        print(f"  Total Trends Generated: {report['summary']['total_trends']}")
+        print(f"  Cross-Company Insights: {report['summary']['total_insights']}")
+        print(f"  Company Bulletins Created: {report['summary']['bulletins_generated']}")
+        print(f"  Web Scraping Insights: {web_cycle['insights_discovered']}")
+        
+        print("\nTop Cross-Company Insights:")
+        for insight in report['cross_company_insights'][:3]:
+            print(f"  • {insight['insight']}")
+        
+        print("\nSample Company Bulletin (BigBrainIntelligence):")
+        if 'BigBrainIntelligence' in report['company_bulletins']:
+            bbi_bulletin = report['company_bulletins']['BigBrainIntelligence']
+            print(f"  Trends: {bbi_bulletin['trends_summary']['total_trends']}")
+            print(f"  Key Insights: {len(bbi_bulletin['key_insights'])}")
+            print(f"  Action Items: {len(bbi_bulletin['action_items'])}")
     print(f"  Company Bulletins Created: {report['summary']['bulletins_generated']}")
 
     print("\nTop Cross-Company Insights:")
