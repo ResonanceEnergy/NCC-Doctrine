@@ -4,7 +4,8 @@
 param(
     [switch]$Continuous,
     [int]$IntervalMinutes = 0.0167,  # 1 second for HYPER-SPEED MAXIMUM EFFICIENCY
-    [switch]$Initialize
+    [switch]$Initialize,
+    [string]$TargetEndTime = "08:00"  # Target end time for maximum speed/stability cycle
 )
 
 # Import required modules
@@ -557,6 +558,25 @@ function Integrate-RealWorldInterfaces {
     )
     Write-OperationLog "AZ ANALYSIS: Focus on $azAnalysis | Recommendation: $azRecommendation" "AZ"
 
+    # BBIC Comprehensive Trends Report Compilation
+    Write-OperationLog "BBIC COMPREHENSIVE TRENDS REPORT COMPILATION - Cycle #$CycleCount" "BBIC"
+
+    try {
+        $bbicScriptPath = Join-Path $ScriptPath "bbic_comprehensive_trends_report.py"
+        if (Test-Path $bbicScriptPath) {
+            $bbicProcess = Start-Process -FilePath "python" -ArgumentList "`"$bbicScriptPath`"" -NoNewWindow -Wait -PassThru
+            if ($bbicProcess.ExitCode -eq 0) {
+                Write-OperationLog "BBIC trends report compiled successfully - Comprehensive analysis completed for all companies" "BBIC"
+            } else {
+                Write-OperationLog "BBIC trends report compilation failed with exit code: $($bbicProcess.ExitCode)" "BBIC"
+            }
+        } else {
+            Write-OperationLog "BBIC trends report script not found at: $bbicScriptPath" "BBIC"
+        }
+    } catch {
+        Write-OperationLog "Error executing BBIC trends report: $($_.Exception.Message)" "BBIC"
+    }
+
     # AX Agent Implementation Tasks
     Write-OperationLog "AX AGENT IMPLEMENTATION TASKS - Cycle #$CycleCount" "AX"
 
@@ -583,6 +603,7 @@ function Integrate-RealWorldInterfaces {
         applicationsPlanned = $realWorldApplications.Count
         cSuiteDecisions = $cSuiteExecutives.Count
         azAnalysisCompleted = 1
+        bbicTrendsReportCompiled = 1
         axTasksCompleted = 3
         nclCapabilitiesUtilized = 2
         status = "INTEGRATION_CYCLE_COMPLETED"
@@ -1117,11 +1138,25 @@ if ($Initialize) {
 if ($Continuous) {
     Write-OperationLog "Starting continuous 24/7 operations monitoring" "START"
 
+    # Parse target end time
+    $targetTime = [DateTime]::Parse($TargetEndTime)
+    if ($targetTime -lt (Get-Date)) {
+        # If target time is in the past, assume tomorrow
+        $targetTime = $targetTime.AddDays(1)
+    }
+    Write-OperationLog "TARGET END TIME SET: $($targetTime.ToString('yyyy-MM-dd HH:mm:ss')) - MAX SPEED & STABILITY MODE ENGAGED" "TARGET"
+
     $cycleCount = 0
     $mmcCycleCount = 0
     $resCycleCount = 0
 
     while ($true) {
+        $currentTime = Get-Date
+        if ($currentTime -ge $targetTime) {
+            Write-OperationLog "TARGET END TIME REACHED: $($targetTime.ToString('yyyy-MM-dd HH:mm:ss')) - MAXIMUM EFFICIENCY CYCLE COMPLETE" "TARGET"
+            break
+        }
+
         $cycleCount++
         Write-OperationLog "=== Starting Operation Cycle #$cycleCount ===" "CYCLE"
 

@@ -1,19 +1,19 @@
 {
-  "Bank": {
-    "Source": "emergency_reset",
-    "RunwayDays": 0,
-    "Balance": 10.0,
-    "DeltaPct": 0.0,
-    "LastRefreshed": "2026-01-29 12:00",
-    "Currency": "USD"
-  },
-  "Posture": "NORMAL",
+  "system_status": "ACTIVE",
+  "last_updated": "2026-01-29T01:13:25.2901857-07:00",
+  "last_cycle": 0,
   "ncc_operations": {
+    "security_score": 98,
+    "last_updated": "2026-01-29T01:54:13Z",
     "market_position": "DOMINANT",
-    "ai_performance": 98,
-    "last_updated": "2026-01-29T00:56:40Z",
-    "security_score": 99,
     "compliance_level": 98,
-    "operational_efficiency": 98
+    "ai_performance": 96,
+    "operational_efficiency": 97,
+    "lfg_protocol": {
+      "status": "MAXIMUM_LFG",
+      "performance_multiplier": 10.0,
+      "domination_level": "ABSOLUTE",
+      "activation_timestamp": "2026-01-29T01:26:16.9176568-07:00"
+    }
   }
 }
