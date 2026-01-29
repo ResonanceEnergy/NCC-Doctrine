@@ -23,7 +23,9 @@ This document outlines the complete organizational structure of NATHAN COMMAND C
 - **Purpose:** Advanced AI research and intelligence operations
 - **Leadership:** AI Research Director
 - **Divisions:**
-  - Innovation Labs Division
+  - Big Brain Intelligence (intelligence analysis, threat assessment)
+  - Innovation Labs Division (R&D, technology development)
+  - Data Centers & Agent University Division (data infrastructure and AI training)
 - **Reporting:** Direct to AZ PRIME (NCC)
 
 ### 3. Ludwig Law Corp (LLC)
@@ -49,7 +51,10 @@ This document outlines the complete organizational structure of NATHAN COMMAND C
 ### 5. Faraday Financial Corp (FFC)
 - **Purpose:** Financial operations and quantitative strategies
 - **Leadership:** CFO/Financial Operations Director
-- **Divisions:** Internal financial divisions (TBD)
+- **Divisions:**
+  - Quantum Computing Division (quantum computing, advanced algorithms)
+  - Hedge Fund Division (alternative investment strategies)
+  - Elite Trader Desk (Top Secret) - 20 elite mathematical and physics geniuses under AZ PRIME command
 - **Reporting:** Direct to AZ PRIME (NCC)
 
 ## NCC Support Divisions
@@ -59,6 +64,7 @@ This document outlines the complete organizational structure of NATHAN COMMAND C
   - Executive Leadership Team
   - Corporate Governance Council
   - Strategic Planning Division
+  - Financial Sniper Division (FSD) - Elite trading command under AZ PRIME
 - **Leadership:** Chief Executive Officer
 - **Reporting:** Direct to AZ PRIME
 
@@ -73,6 +79,13 @@ This document outlines the complete organizational structure of NATHAN COMMAND C
 - **Reporting:** Direct to AZ PRIME
 
 ## Special Projects and Initiatives
+### Elite Trader Desk (Top Secret - FSD)
+- **Location:** Faraday Financial Corp > Under AZ PRIME Command in CSuite Financial Sniper Division
+- **Composition:** 20 elite mathematical and physics geniuses - most ruthless, strategic, risk assessors, high-stakes traders
+- **Capabilities:** 10 steps ahead of competition, supported by all relevant departments they designate
+- **Security Classification:** Top Secret - Enhanced by Cybersecurity Command Center, Big Brain Intelligence, Quantum Computing
+- **Command Structure:** Direct AZ PRIME oversight through CSuite FSD
+
 ### Micro Hydro Project (Under REC)
 - **Location:** Resonance Energy Corp
 - **Special Attention:** Dedicated oversight from Real World Nate and Digital World Nate
@@ -102,7 +115,9 @@ Real World Nate (Supreme Commander)
         ├── Augmented Arbitrage Corp (AAC)
         │   └── [Internal AAC Divisions]
         ├── Big Brain Intelligence Corp (BBIC)
-        │   └── Innovation Labs Division
+        │   ├── Big Brain Intelligence Division
+        │   ├── Innovation Labs Division
+        │   └── Data Centers & Agent University Division
         ├── Ludwig Law Corp (LLC)
         │   └── [Internal LLC Divisions]
         ├── Resonance Energy Corp (REC)
@@ -115,7 +130,9 @@ Real World Nate (Supreme Commander)
         │       ├── Uruguay Project
         │       └── Paraguay Project
         └── Faraday Financial Corp (FFC)
-            └── [Internal FFC Divisions]
+            ├── Quantum Computing Division
+            ├── Hedge Fund Division
+            └── Elite Trader Desk (Top Secret - Under AZ PRIME FSD Command)
 ```
 
 ## Integration Points
