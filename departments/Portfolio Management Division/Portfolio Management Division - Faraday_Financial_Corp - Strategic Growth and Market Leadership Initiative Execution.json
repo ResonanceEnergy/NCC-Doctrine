@@ -93,39 +93,4 @@
   "StatedGoal": "Execute Portfolio Management Division responsibilities within Faraday_Financial_Corp - Strategic Growth and Market Leadership Initiative framework",
   "AssignedAgents": [
     {
-<<<<<<< HEAD
-      "AssignedDate": "2026-01-30T09:31:16",
-      "TaskName": "PortMgmt_Agent_001 - Capability Assessment and Planning Execution",
-      "AgentName": "PortMgmt_Agent_001"
-    },
-    {
-      "AssignedDate": "2026-01-30T09:31:16",
-      "TaskName": "PortMgmt_Agent_002 - Execution Framework Development Execution",
-      "AgentName": "PortMgmt_Agent_002"
-    },
-    {
-      "AssignedDate": "2026-01-30T09:31:16",
-      "TaskName": "PortMgmt_Agent_003 - Quality Assurance Implementation Execution",
-      "AgentName": "PortMgmt_Agent_003"
-    }
-  ],
-  "LastUpdated": "2026-01-30T09:31:16"
-=======
-      "TaskName": "PortMgmt_Agent_001 - Capability Assessment and Planning Execution",
-      "AssignedDate": "2026-01-30T07:46:09",
-      "AgentName": "PortMgmt_Agent_001"
-    },
-    {
-      "TaskName": "PortMgmt_Agent_002 - Execution Framework Development Execution",
-      "AssignedDate": "2026-01-30T07:46:09",
-      "AgentName": "PortMgmt_Agent_002"
-    },
-    {
-      "TaskName": "PortMgmt_Agent_003 - Quality Assurance Implementation Execution",
-      "AssignedDate": "2026-01-30T07:46:09",
-      "AgentName": "PortMgmt_Agent_003"
-    }
-  ],
-  "LastUpdated": "2026-01-30T07:46:09"
->>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
-}
+

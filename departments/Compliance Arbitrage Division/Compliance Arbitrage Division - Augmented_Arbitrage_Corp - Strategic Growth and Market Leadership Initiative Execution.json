@@ -94,17 +94,4 @@
   "AssignedAgents": [
     {
       "AgentName": "C",
-<<<<<<< HEAD
-      "AssignedDate": "2026-01-30T09:31:14",
-      "TaskName": "C - Capability Assessment and Planning Execution"
-    }
-  ],
-  "LastUpdated": "2026-01-30T09:31:14"
-=======
-      "TaskName": "C - Capability Assessment and Planning Execution",
-      "AssignedDate": "2026-01-30T07:46:07"
-    }
-  ],
-  "LastUpdated": "2026-01-30T07:46:07"
->>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
-}
+

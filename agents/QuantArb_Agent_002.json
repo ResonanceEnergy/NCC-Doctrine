@@ -7,12 +7,4 @@
     "Quality assurance"
   ],
   "Status": "Active",
-<<<<<<< HEAD
-  "AgentName": "QuantArb_Agent_002",
-  "OptimizationLevel": "Phase1",
-  "ModularArchitecture": true,
-  "PerformanceMultiplier": 1.5
-=======
-  "AgentName": "QuantArb_Agent_002"
->>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
-}
+

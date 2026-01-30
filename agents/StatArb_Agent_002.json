@@ -7,12 +7,4 @@
     "Department operations",
     "Task execution",
     "Quality assurance"
-<<<<<<< HEAD
-  ],
-  "OptimizationLevel": "Phase1",
-  "ModularArchitecture": true,
-  "PerformanceMultiplier": 1.5
-=======
-  ]
->>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
-}
+

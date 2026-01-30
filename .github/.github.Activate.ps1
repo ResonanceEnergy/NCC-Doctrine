@@ -1,32 +1,3 @@
-<<<<<<< HEAD
-
-# Modular Agent Framework Integration
-$AgentModules = @{
-    Perception = "NCC.Agent.Perception.ps1"
-    Reasoning = "NCC.Agent.Reasoning.ps1"
-    Action = "NCC.Agent.Action.ps1"
-}
-
-function Invoke-SubAgentDecomposition {
-    param([string]$Task)
-
-    # Decompose complex tasks into sub-agent operations
-    $subTasks = @{
-        Analysis = "Analyze task requirements"
-        Planning = "Create execution plan"
-        Execution = "Perform task operations"
-        Validation = "Verify results"
-    }
-
-    foreach ($subTask in $subTasks.GetEnumerator()) {
-        Write-AgentLog "Executing sub-task: $($subTask.Key)" -Level "INFO"
-        # Execute sub-agent logic here
-    }
-}
-
-
-=======
->>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # .github Activation Script
 # Version: 1.0.0 | Date: 2026-01-29
 # Purpose: Activate all .github operations
@@ -71,7 +42,3 @@ if ($FullActivation) {
 
     Write-Host "✅ .github fully activated!" -ForegroundColor Green
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
