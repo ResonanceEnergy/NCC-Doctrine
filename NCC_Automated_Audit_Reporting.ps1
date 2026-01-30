@@ -343,19 +343,17 @@ class NCCAuditReportGenerator {
         $timestamp = Get-Date -Format "yyyy-MM-dd_HHmmss"
         $filename = "NCC_Audit_Report_$($this.ReportType)_$timestamp"
 
-        switch ($this.OutputFormat) {
-            "HTML" { return $this.GenerateHTMLReport($filename) }
-            "JSON" { return $this.GenerateJSONReport($filename) }
-            "CSV" { return $this.GenerateCSVReport($filename) }
-            default { return $this.GenerateHTMLReport($filename) }
-        }
+        if ($this.OutputFormat -eq "HTML") { return $this.GenerateHTMLReport($filename) }
+        elseif ($this.OutputFormat -eq "JSON") { return $this.GenerateJSONReport($filename) }
+        elseif ($this.OutputFormat -eq "CSV") { return $this.GenerateCSVReport($filename) }
+        else { return $this.GenerateHTMLReport($filename) }
     }
 
     [string]GenerateHTMLReport([string]$filename) {
         $filepath = Join-Path $this.Config.ReportsPath "$filename.html"
 
         $html = $this.GetHTMLTemplate()
-        $html = $html -replace "{{TITLE}}", "NCC $ReportType Audit Report"
+        $html = $html -replace "{{TITLE}}", "NCC $($this.ReportType) Audit Report"
         $html = $html -replace "{{GENERATED}}", (Get-Date -Format "yyyy-MM-dd HH:mm:ss")
         $html = $html -replace "{{TIMEFRAME}}", "$($this.Data.Summary.Timeframe.Start) - $($this.Data.Summary.Timeframe.End)"
         $html = $html -replace "{{SUMMARY}}", $this.GenerateSummarySection()
@@ -486,11 +484,9 @@ class NCCAuditReportGenerator {
         $html = "<div class='metric-grid'>"
 
         foreach ($framework in $compliance.GetEnumerator()) {
-            $statusClass = switch {
-                ($framework.Value.Score -ge 95) { "status-compliant" }
-                ($framework.Value.Score -ge 80) { "status-warning" }
-                default { "status-critical" }
-            }
+            $statusClass = if ($framework.Value.Score -ge 95) { "status-compliant" }
+                          elseif ($framework.Value.Score -ge 80) { "status-warning" }
+                          else { "status-critical" }
 
             $html += @"
             <div class="metric">
@@ -690,10 +686,10 @@ class NCCAuditScheduler {
         Write-Host "Setting up automated audit report scheduling..." -ForegroundColor Cyan
 
         # Create scheduled tasks for different report types
-        $this.CreateScheduledTask -TaskName "NCC_Daily_Audit_Report" -Schedule "DAILY" -Time "06:00" -ReportType "Daily"
-        $this.CreateScheduledTask -TaskName "NCC_Weekly_Audit_Report" -Schedule "WEEKLY" -Time "08:00" -ReportType "Weekly"
-        $this.CreateScheduledTask -TaskName "NCC_Monthly_Audit_Report" -Schedule "MONTHLY" -Time "09:00" -ReportType "Monthly"
-        $this.CreateScheduledTask -TaskName "NCC_Compliance_Audit_Report" -Schedule "WEEKLY" -Time "07:00" -ReportType "Compliance"
+        $this.CreateScheduledTask("NCC_Daily_Audit_Report", "DAILY", "06:00", "Daily")
+        $this.CreateScheduledTask("NCC_Weekly_Audit_Report", "WEEKLY", "08:00", "Weekly")
+        $this.CreateScheduledTask("NCC_Monthly_Audit_Report", "MONTHLY", "09:00", "Monthly")
+        $this.CreateScheduledTask("NCC_Compliance_Audit_Report", "WEEKLY", "07:00", "Compliance")
 
         Write-Host "Scheduled tasks created successfully." -ForegroundColor Green
     }

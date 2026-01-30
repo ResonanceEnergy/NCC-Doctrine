@@ -27,23 +27,6 @@
   ],
   "DirectiveName": "Portfolio Management Division - Faraday_Financial_Corp - Strategic Growth and Market Leadership Initiative Execution",
   "CreatedBy": "CEO_Faraday_Financial_Corp",
-  "AssignedAgents": [
-    {
-      "AssignedDate": "2026-01-29T21:15:23",
-      "TaskName": "PortMgmt_Agent_001 - Capability Assessment and Planning Execution",
-      "AgentName": "PortMgmt_Agent_001"
-    },
-    {
-      "AssignedDate": "2026-01-29T21:15:23",
-      "TaskName": "PortMgmt_Agent_002 - Execution Framework Development Execution",
-      "AgentName": "PortMgmt_Agent_002"
-    },
-    {
-      "AssignedDate": "2026-01-29T21:15:23",
-      "TaskName": "PortMgmt_Agent_003 - Quality Assurance Implementation Execution",
-      "AgentName": "PortMgmt_Agent_003"
-    }
-  ],
   "DepartmentName": "Portfolio Management Division",
   "CompletionRoadmap": {
     "Week9_24": {
@@ -107,5 +90,23 @@
     "StrategicAlignment": "Directive aligns with company mission and enterprise objectives"
   },
   "CompanyDirective": "Faraday_Financial_Corp - Strategic Growth and Market Leadership Initiative",
-  "StatedGoal": "Execute Portfolio Management Division responsibilities within Faraday_Financial_Corp - Strategic Growth and Market Leadership Initiative framework"
+  "StatedGoal": "Execute Portfolio Management Division responsibilities within Faraday_Financial_Corp - Strategic Growth and Market Leadership Initiative framework",
+  "AssignedAgents": [
+    {
+      "AssignedDate": "2026-01-30T02:07:31",
+      "AgentName": "PortMgmt_Agent_001",
+      "TaskName": "PortMgmt_Agent_001 - Capability Assessment and Planning Execution"
+    },
+    {
+      "AssignedDate": "2026-01-30T02:07:31",
+      "AgentName": "PortMgmt_Agent_002",
+      "TaskName": "PortMgmt_Agent_002 - Execution Framework Development Execution"
+    },
+    {
+      "AssignedDate": "2026-01-30T02:07:31",
+      "AgentName": "PortMgmt_Agent_003",
+      "TaskName": "PortMgmt_Agent_003 - Quality Assurance Implementation Execution"
+    }
+  ],
+  "LastUpdated": "2026-01-30T02:07:31"
 }

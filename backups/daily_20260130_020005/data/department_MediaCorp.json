@@ -1,0 +1,3693 @@
+{
+  "last_updated": "2026-01-29T19:17:34Z",
+  "current_tasks": [],
+  "department": "MediaCorp",
+  "tasks_completed": 614,
+  "agent_performance": {},
+  "data_repository": [
+    {
+      "completion_time": "2026-01-29T18:31:03Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 193
+    },
+    {
+      "completion_time": "2026-01-29T18:31:06Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 196
+    },
+    {
+      "completion_time": "2026-01-29T18:31:10Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 200
+    },
+    {
+      "completion_time": "2026-01-29T18:31:10Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 200
+    },
+    {
+      "completion_time": "2026-01-29T18:31:12Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 202
+    },
+    {
+      "completion_time": "2026-01-29T18:31:13Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 203
+    },
+    {
+      "completion_time": "2026-01-29T18:31:15Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 205
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:15Z",
+      "task_id": "MediaCorp-002",
+      "cycle": 2
+    },
+    {
+      "completion_time": "2026-01-29T18:31:16Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 206
+    },
+    {
+      "completion_time": "2026-01-29T18:31:18Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 208
+    },
+    {
+      "completion_time": "2026-01-29T18:31:19Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 209
+    },
+    {
+      "completion_time": "2026-01-29T18:31:22Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 212
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:22Z",
+      "task_id": "MediaCorp-001",
+      "cycle": 9
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:23Z",
+      "task_id": "MediaCorp-001",
+      "cycle": 10
+    },
+    {
+      "completion_time": "2026-01-29T18:31:24Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 214
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:25Z",
+      "task_id": "MediaCorp-002",
+      "cycle": 12
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:28Z",
+      "task_id": "MediaCorp-002",
+      "cycle": 14
+    },
+    {
+      "completion_time": "2026-01-29T18:31:34Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 224
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:39Z",
+      "task_id": "MediaCorp-001",
+      "cycle": 25
+    },
+    {
+      "completion_time": "2026-01-29T18:31:40Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 230
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:41Z",
+      "task_id": "MediaCorp-001",
+      "cycle": 27
+    },
+    {
+      "completion_time": "2026-01-29T18:31:42Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 231
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:45Z",
+      "task_id": "MediaCorp-002",
+      "cycle": 31
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:46Z",
+      "task_id": "MediaCorp-002",
+      "cycle": 32
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:48Z",
+      "task_id": "MediaCorp-002",
+      "cycle": 34
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:50Z",
+      "task_id": "MediaCorp-001",
+      "cycle": 36
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:52Z",
+      "task_id": "MediaCorp-001",
+      "cycle": 38
+    },
+    {
+      "completion_time": "2026-01-29T18:31:53Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 242
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:54Z",
+      "task_id": "MediaCorp-002",
+      "cycle": 40
+    },
+    {
+      "completion_time": "2026-01-29T18:32:03Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 252
+    },
+    {
+      "completion_time": "2026-01-29T18:32:07Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 256
+    },
+    {
+      "completion_time": "2026-01-29T18:32:10Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 259
+    },
+    {
+      "completion_time": "2026-01-29T18:32:16Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 265
+    },
+    {
+      "completion_time": "2026-01-29T18:32:17Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 266
+    },
+    {
+      "completion_time": "2026-01-29T18:32:22Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 271
+    },
+    {
+      "completion_time": "2026-01-29T18:32:26Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 275
+    },
+    {
+      "completion_time": "2026-01-29T18:32:29Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 278
+    },
+    {
+      "completion_time": "2026-01-29T18:32:32Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 281
+    },
+    {
+      "completion_time": "2026-01-29T18:32:39Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 288
+    },
+    {
+      "completion_time": "2026-01-29T18:32:42Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 291
+    },
+    {
+      "completion_time": "2026-01-29T18:32:50Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 299
+    },
+    {
+      "completion_time": "2026-01-29T18:32:54Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 303
+    },
+    {
+      "completion_time": "2026-01-29T18:33:05Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 314
+    },
+    {
+      "completion_time": "2026-01-29T18:33:11Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 320
+    },
+    {
+      "completion_time": "2026-01-29T18:33:28Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 337
+    },
+    {
+      "completion_time": "2026-01-29T18:33:29Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 338
+    },
+    {
+      "completion_time": "2026-01-29T18:33:31Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 340
+    },
+    {
+      "completion_time": "2026-01-29T18:33:34Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 343
+    },
+    {
+      "completion_time": "2026-01-29T18:33:43Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 351
+    },
+    {
+      "completion_time": "2026-01-29T18:33:48Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 356
+    },
+    {
+      "completion_time": "2026-01-29T18:34:00Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 368
+    },
+    {
+      "completion_time": "2026-01-29T18:34:09Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 377
+    },
+    {
+      "completion_time": "2026-01-29T18:34:20Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 388
+    },
+    {
+      "completion_time": "2026-01-29T18:34:26Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 394
+    },
+    {
+      "completion_time": "2026-01-29T18:34:30Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 398
+    },
+    {
+      "completion_time": "2026-01-29T18:34:41Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 409
+    },
+    {
+      "completion_time": "2026-01-29T18:34:42Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 410
+    },
+    {
+      "completion_time": "2026-01-29T18:34:43Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 411
+    },
+    {
+      "completion_time": "2026-01-29T18:34:49Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 417
+    },
+    {
+      "completion_time": "2026-01-29T18:34:50Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 418
+    },
+    {
+      "completion_time": "2026-01-29T18:34:55Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 423
+    },
+    {
+      "completion_time": "2026-01-29T18:34:55Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 423
+    },
+    {
+      "completion_time": "2026-01-29T18:34:58Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 426
+    },
+    {
+      "completion_time": "2026-01-29T18:34:59Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 427
+    },
+    {
+      "completion_time": "2026-01-29T18:35:01Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 429
+    },
+    {
+      "completion_time": "2026-01-29T18:35:02Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 430
+    },
+    {
+      "completion_time": "2026-01-29T18:35:06Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 434
+    },
+    {
+      "completion_time": "2026-01-29T18:35:20Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 448
+    },
+    {
+      "completion_time": "2026-01-29T18:35:24Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 452
+    },
+    {
+      "completion_time": "2026-01-29T18:35:25Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 453
+    },
+    {
+      "completion_time": "2026-01-29T18:35:26Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 454
+    },
+    {
+      "completion_time": "2026-01-29T18:35:31Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 458
+    },
+    {
+      "completion_time": "2026-01-29T18:35:32Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 459
+    },
+    {
+      "completion_time": "2026-01-29T18:35:34Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 461
+    },
+    {
+      "completion_time": "2026-01-29T18:35:34Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 462
+    },
+    {
+      "completion_time": "2026-01-29T18:35:37Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 464
+    },
+    {
+      "completion_time": "2026-01-29T18:35:43Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 470
+    },
+    {
+      "completion_time": "2026-01-29T18:35:45Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 472
+    },
+    {
+      "completion_time": "2026-01-29T18:35:49Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 476
+    },
+    {
+      "completion_time": "2026-01-29T18:35:52Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 479
+    },
+    {
+      "completion_time": "2026-01-29T18:35:53Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 480
+    },
+    {
+      "completion_time": "2026-01-29T18:35:58Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 485
+    },
+    {
+      "completion_time": "2026-01-29T18:36:04Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 491
+    },
+    {
+      "completion_time": "2026-01-29T18:36:04Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 491
+    },
+    {
+      "completion_time": "2026-01-29T18:36:08Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 495
+    },
+    {
+      "completion_time": "2026-01-29T18:36:09Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 496
+    },
+    {
+      "completion_time": "2026-01-29T18:36:18Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 505
+    },
+    {
+      "completion_time": "2026-01-29T18:36:18Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 505
+    },
+    {
+      "completion_time": "2026-01-29T18:36:19Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 506
+    },
+    {
+      "completion_time": "2026-01-29T18:36:20Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 507
+    },
+    {
+      "completion_time": "2026-01-29T18:36:23Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 510
+    },
+    {
+      "completion_time": "2026-01-29T18:36:25Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 512
+    },
+    {
+      "completion_time": "2026-01-29T18:36:41Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 528
+    },
+    {
+      "completion_time": "2026-01-29T18:36:41Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 528
+    },
+    {
+      "completion_time": "2026-01-29T18:37:12Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 559
+    },
+    {
+      "completion_time": "2026-01-29T18:37:18Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 565
+    },
+    {
+      "completion_time": "2026-01-29T18:37:18Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 565
+    },
+    {
+      "completion_time": "2026-01-29T18:37:20Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 567
+    },
+    {
+      "completion_time": "2026-01-29T18:37:23Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 570
+    },
+    {
+      "completion_time": "2026-01-29T18:37:27Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 574
+    },
+    {
+      "completion_time": "2026-01-29T18:38:03Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 609
+    },
+    {
+      "completion_time": "2026-01-29T18:38:07Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 613
+    },
+    {
+      "completion_time": "2026-01-29T18:38:14Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 620
+    },
+    {
+      "completion_time": "2026-01-29T18:38:18Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 624
+    },
+    {
+      "completion_time": "2026-01-29T18:38:21Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 627
+    },
+    {
+      "completion_time": "2026-01-29T18:38:25Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 631
+    },
+    {
+      "completion_time": "2026-01-29T18:38:27Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 633
+    },
+    {
+      "completion_time": "2026-01-29T18:38:40Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 646
+    },
+    {
+      "completion_time": "2026-01-29T18:38:43Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 649
+    },
+    {
+      "completion_time": "2026-01-29T18:38:51Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 657
+    },
+    {
+      "completion_time": "2026-01-29T18:38:55Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 661
+    },
+    {
+      "completion_time": "2026-01-29T18:39:15Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 681
+    },
+    {
+      "completion_time": "2026-01-29T18:39:19Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 685
+    },
+    {
+      "completion_time": "2026-01-29T18:39:25Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 691
+    },
+    {
+      "completion_time": "2026-01-29T18:39:26Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 692
+    },
+    {
+      "completion_time": "2026-01-29T18:39:29Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 695
+    },
+    {
+      "completion_time": "2026-01-29T18:39:35Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 700
+    },
+    {
+      "completion_time": "2026-01-29T18:39:38Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 703
+    },
+    {
+      "completion_time": "2026-01-29T18:39:39Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 704
+    },
+    {
+      "completion_time": "2026-01-29T18:39:40Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 705
+    },
+    {
+      "completion_time": "2026-01-29T18:39:42Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 707
+    },
+    {
+      "completion_time": "2026-01-29T18:39:49Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 714
+    },
+    {
+      "completion_time": "2026-01-29T18:39:50Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 715
+    },
+    {
+      "completion_time": "2026-01-29T18:40:03Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 728
+    },
+    {
+      "completion_time": "2026-01-29T18:40:16Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 741
+    },
+    {
+      "completion_time": "2026-01-29T18:40:20Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 745
+    },
+    {
+      "completion_time": "2026-01-29T18:40:23Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 748
+    },
+    {
+      "completion_time": "2026-01-29T18:40:24Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 749
+    },
+    {
+      "completion_time": "2026-01-29T18:40:25Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 750
+    },
+    {
+      "completion_time": "2026-01-29T18:40:27Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 752
+    },
+    {
+      "completion_time": "2026-01-29T18:40:28Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 753
+    },
+    {
+      "completion_time": "2026-01-29T18:40:38Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 763
+    },
+    {
+      "completion_time": "2026-01-29T18:40:41Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 766
+    },
+    {
+      "completion_time": "2026-01-29T18:40:44Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 769
+    },
+    {
+      "completion_time": "2026-01-29T18:40:45Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 770
+    },
+    {
+      "completion_time": "2026-01-29T18:40:48Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 773
+    },
+    {
+      "completion_time": "2026-01-29T18:40:49Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 774
+    },
+    {
+      "completion_time": "2026-01-29T18:40:52Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 777
+    },
+    {
+      "completion_time": "2026-01-29T18:40:56Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 781
+    },
+    {
+      "completion_time": "2026-01-29T18:40:59Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 784
+    },
+    {
+      "completion_time": "2026-01-29T18:41:01Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 786
+    },
+    {
+      "completion_time": "2026-01-29T18:41:05Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 790
+    },
+    {
+      "completion_time": "2026-01-29T18:41:06Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 791
+    },
+    {
+      "completion_time": "2026-01-29T18:41:08Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 793
+    },
+    {
+      "completion_time": "2026-01-29T18:41:12Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 797
+    },
+    {
+      "completion_time": "2026-01-29T18:41:15Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 800
+    },
+    {
+      "completion_time": "2026-01-29T18:41:16Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 801
+    },
+    {
+      "completion_time": "2026-01-29T18:41:17Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 802
+    },
+    {
+      "completion_time": "2026-01-29T18:41:21Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 806
+    },
+    {
+      "completion_time": "2026-01-29T18:41:31Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 815
+    },
+    {
+      "completion_time": "2026-01-29T18:41:32Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 816
+    },
+    {
+      "completion_time": "2026-01-29T18:41:36Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 820
+    },
+    {
+      "completion_time": "2026-01-29T18:41:41Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 825
+    },
+    {
+      "completion_time": "2026-01-29T18:41:49Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 833
+    },
+    {
+      "completion_time": "2026-01-29T18:41:51Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 835
+    },
+    {
+      "completion_time": "2026-01-29T18:42:07Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 851
+    },
+    {
+      "completion_time": "2026-01-29T18:42:07Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 851
+    },
+    {
+      "completion_time": "2026-01-29T18:42:20Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 864
+    },
+    {
+      "completion_time": "2026-01-29T18:42:28Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 872
+    },
+    {
+      "completion_time": "2026-01-29T18:42:30Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 874
+    },
+    {
+      "completion_time": "2026-01-29T18:42:31Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 875
+    },
+    {
+      "completion_time": "2026-01-29T18:42:35Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 879
+    },
+    {
+      "completion_time": "2026-01-29T18:42:36Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 880
+    },
+    {
+      "completion_time": "2026-01-29T18:42:38Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 882
+    },
+    {
+      "completion_time": "2026-01-29T18:42:40Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 884
+    },
+    {
+      "completion_time": "2026-01-29T18:42:43Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 887
+    },
+    {
+      "completion_time": "2026-01-29T18:42:51Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 895
+    },
+    {
+      "completion_time": "2026-01-29T18:42:57Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 901
+    },
+    {
+      "completion_time": "2026-01-29T18:43:04Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 908
+    },
+    {
+      "completion_time": "2026-01-29T18:43:06Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 910
+    },
+    {
+      "completion_time": "2026-01-29T18:43:06Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 910
+    },
+    {
+      "completion_time": "2026-01-29T18:43:10Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 914
+    },
+    {
+      "completion_time": "2026-01-29T18:43:10Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 914
+    },
+    {
+      "completion_time": "2026-01-29T18:43:18Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 921
+    },
+    {
+      "completion_time": "2026-01-29T18:43:20Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 923
+    },
+    {
+      "completion_time": "2026-01-29T18:43:22Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 925
+    },
+    {
+      "completion_time": "2026-01-29T18:43:23Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 926
+    },
+    {
+      "completion_time": "2026-01-29T18:43:28Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 931
+    },
+    {
+      "completion_time": "2026-01-29T18:43:39Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 942
+    },
+    {
+      "completion_time": "2026-01-29T18:43:40Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 943
+    },
+    {
+      "completion_time": "2026-01-29T18:43:46Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 949
+    },
+    {
+      "completion_time": "2026-01-29T18:43:48Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 951
+    },
+    {
+      "completion_time": "2026-01-29T18:43:50Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 953
+    },
+    {
+      "completion_time": "2026-01-29T18:43:50Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 953
+    },
+    {
+      "completion_time": "2026-01-29T18:43:52Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 955
+    },
+    {
+      "completion_time": "2026-01-29T18:44:06Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 969
+    },
+    {
+      "completion_time": "2026-01-29T18:44:07Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 970
+    },
+    {
+      "completion_time": "2026-01-29T18:44:20Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 983
+    },
+    {
+      "completion_time": "2026-01-29T18:44:23Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 986
+    },
+    {
+      "completion_time": "2026-01-29T18:44:25Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 988
+    },
+    {
+      "completion_time": "2026-01-29T18:44:26Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 989
+    },
+    {
+      "completion_time": "2026-01-29T18:44:28Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 991
+    },
+    {
+      "completion_time": "2026-01-29T18:44:33Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 996
+    },
+    {
+      "completion_time": "2026-01-29T18:44:47Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1010
+    },
+    {
+      "completion_time": "2026-01-29T18:44:51Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1014
+    },
+    {
+      "completion_time": "2026-01-29T18:44:56Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1019
+    },
+    {
+      "completion_time": "2026-01-29T18:44:57Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1020
+    },
+    {
+      "completion_time": "2026-01-29T18:44:58Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1021
+    },
+    {
+      "completion_time": "2026-01-29T18:45:00Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1023
+    },
+    {
+      "completion_time": "2026-01-29T18:45:03Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1026
+    },
+    {
+      "completion_time": "2026-01-29T18:45:16Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1039
+    },
+    {
+      "completion_time": "2026-01-29T18:45:22Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1044
+    },
+    {
+      "completion_time": "2026-01-29T18:45:28Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1050
+    },
+    {
+      "completion_time": "2026-01-29T18:45:29Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1051
+    },
+    {
+      "completion_time": "2026-01-29T18:45:30Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1052
+    },
+    {
+      "completion_time": "2026-01-29T18:45:36Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1058
+    },
+    {
+      "completion_time": "2026-01-29T18:45:40Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1062
+    },
+    {
+      "completion_time": "2026-01-29T18:45:41Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1063
+    },
+    {
+      "completion_time": "2026-01-29T18:45:44Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1066
+    },
+    {
+      "completion_time": "2026-01-29T18:45:50Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1072
+    },
+    {
+      "completion_time": "2026-01-29T18:45:54Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1076
+    },
+    {
+      "completion_time": "2026-01-29T18:46:00Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1082
+    },
+    {
+      "completion_time": "2026-01-29T18:46:07Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1089
+    },
+    {
+      "completion_time": "2026-01-29T18:46:09Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1091
+    },
+    {
+      "completion_time": "2026-01-29T18:46:10Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1092
+    },
+    {
+      "completion_time": "2026-01-29T18:46:12Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1094
+    },
+    {
+      "completion_time": "2026-01-29T18:46:20Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1102
+    },
+    {
+      "completion_time": "2026-01-29T18:46:37Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1119
+    },
+    {
+      "completion_time": "2026-01-29T18:46:42Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1124
+    },
+    {
+      "completion_time": "2026-01-29T18:46:43Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1125
+    },
+    {
+      "completion_time": "2026-01-29T18:46:47Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1129
+    },
+    {
+      "completion_time": "2026-01-29T18:46:56Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1138
+    },
+    {
+      "completion_time": "2026-01-29T18:47:00Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1142
+    },
+    {
+      "completion_time": "2026-01-29T18:47:02Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1144
+    },
+    {
+      "completion_time": "2026-01-29T18:47:09Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1151
+    },
+    {
+      "completion_time": "2026-01-29T18:47:15Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1157
+    },
+    {
+      "completion_time": "2026-01-29T18:47:27Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1168
+    },
+    {
+      "completion_time": "2026-01-29T18:47:28Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1169
+    },
+    {
+      "completion_time": "2026-01-29T18:47:31Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1172
+    },
+    {
+      "completion_time": "2026-01-29T18:47:32Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1173
+    },
+    {
+      "completion_time": "2026-01-29T18:47:38Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1179
+    },
+    {
+      "completion_time": "2026-01-29T18:47:48Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1189
+    },
+    {
+      "completion_time": "2026-01-29T18:47:50Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1191
+    },
+    {
+      "completion_time": "2026-01-29T18:48:05Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1206
+    },
+    {
+      "completion_time": "2026-01-29T18:48:08Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1209
+    },
+    {
+      "completion_time": "2026-01-29T18:48:09Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1210
+    },
+    {
+      "completion_time": "2026-01-29T18:48:18Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1219
+    },
+    {
+      "completion_time": "2026-01-29T18:48:24Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1225
+    },
+    {
+      "completion_time": "2026-01-29T18:48:25Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1226
+    },
+    {
+      "completion_time": "2026-01-29T18:48:26Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1227
+    },
+    {
+      "completion_time": "2026-01-29T18:48:29Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1230
+    },
+    {
+      "completion_time": "2026-01-29T18:48:29Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1230
+    },
+    {
+      "completion_time": "2026-01-29T18:48:33Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1234
+    },
+    {
+      "completion_time": "2026-01-29T18:48:33Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1234
+    },
+    {
+      "completion_time": "2026-01-29T18:48:35Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1236
+    },
+    {
+      "completion_time": "2026-01-29T18:48:41Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1242
+    },
+    {
+      "completion_time": "2026-01-29T18:48:43Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1244
+    },
+    {
+      "completion_time": "2026-01-29T18:48:47Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1248
+    },
+    {
+      "completion_time": "2026-01-29T18:48:47Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1248
+    },
+    {
+      "completion_time": "2026-01-29T18:48:49Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1250
+    },
+    {
+      "completion_time": "2026-01-29T18:48:50Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1251
+    },
+    {
+      "completion_time": "2026-01-29T18:48:52Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1253
+    },
+    {
+      "completion_time": "2026-01-29T18:48:54Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1255
+    },
+    {
+      "completion_time": "2026-01-29T18:48:56Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1257
+    },
+    {
+      "completion_time": "2026-01-29T18:48:57Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1258
+    },
+    {
+      "completion_time": "2026-01-29T18:48:58Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1259
+    },
+    {
+      "completion_time": "2026-01-29T18:49:05Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1266
+    },
+    {
+      "completion_time": "2026-01-29T18:49:10Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1271
+    },
+    {
+      "completion_time": "2026-01-29T18:49:11Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1272
+    },
+    {
+      "completion_time": "2026-01-29T18:49:15Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1276
+    },
+    {
+      "completion_time": "2026-01-29T18:49:18Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1279
+    },
+    {
+      "completion_time": "2026-01-29T18:49:39Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1299
+    },
+    {
+      "completion_time": "2026-01-29T18:49:40Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1300
+    },
+    {
+      "completion_time": "2026-01-29T18:49:43Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1303
+    },
+    {
+      "completion_time": "2026-01-29T18:49:48Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1308
+    },
+    {
+      "completion_time": "2026-01-29T18:49:48Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1308
+    },
+    {
+      "completion_time": "2026-01-29T18:49:53Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1313
+    },
+    {
+      "completion_time": "2026-01-29T18:49:56Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1316
+    },
+    {
+      "completion_time": "2026-01-29T18:49:58Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1318
+    },
+    {
+      "completion_time": "2026-01-29T18:50:02Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1322
+    },
+    {
+      "completion_time": "2026-01-29T18:50:13Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1331
+    },
+    {
+      "completion_time": "2026-01-29T18:50:13Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1331
+    },
+    {
+      "completion_time": "2026-01-29T18:50:14Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1332
+    },
+    {
+      "completion_time": "2026-01-29T18:50:14Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1332
+    },
+    {
+      "completion_time": "2026-01-29T18:50:19Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1337
+    },
+    {
+      "completion_time": "2026-01-29T18:50:23Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1341
+    },
+    {
+      "completion_time": "2026-01-29T18:50:27Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1345
+    },
+    {
+      "completion_time": "2026-01-29T18:50:39Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1357
+    },
+    {
+      "completion_time": "2026-01-29T18:50:41Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1359
+    },
+    {
+      "completion_time": "2026-01-29T18:50:46Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1364
+    },
+    {
+      "completion_time": "2026-01-29T18:50:49Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1367
+    },
+    {
+      "completion_time": "2026-01-29T18:50:56Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1374
+    },
+    {
+      "completion_time": "2026-01-29T18:50:59Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1377
+    },
+    {
+      "completion_time": "2026-01-29T18:51:03Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1381
+    },
+    {
+      "completion_time": "2026-01-29T18:51:04Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1382
+    },
+    {
+      "completion_time": "2026-01-29T18:51:08Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1386
+    },
+    {
+      "completion_time": "2026-01-29T18:51:14Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1392
+    },
+    {
+      "completion_time": "2026-01-29T18:51:17Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1395
+    },
+    {
+      "completion_time": "2026-01-29T18:51:18Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1396
+    },
+    {
+      "completion_time": "2026-01-29T18:51:20Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1398
+    },
+    {
+      "completion_time": "2026-01-29T18:51:26Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1404
+    },
+    {
+      "completion_time": "2026-01-29T18:51:30Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1408
+    },
+    {
+      "completion_time": "2026-01-29T18:51:39Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1416
+    },
+    {
+      "completion_time": "2026-01-29T18:51:48Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1425
+    },
+    {
+      "completion_time": "2026-01-29T18:51:58Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1435
+    },
+    {
+      "completion_time": "2026-01-29T18:52:00Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1437
+    },
+    {
+      "completion_time": "2026-01-29T18:52:04Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1441
+    },
+    {
+      "completion_time": "2026-01-29T18:52:16Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1453
+    },
+    {
+      "completion_time": "2026-01-29T18:52:17Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1454
+    },
+    {
+      "completion_time": "2026-01-29T18:52:23Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1460
+    },
+    {
+      "completion_time": "2026-01-29T18:52:25Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1462
+    },
+    {
+      "completion_time": "2026-01-29T18:52:27Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1464
+    },
+    {
+      "completion_time": "2026-01-29T18:52:33Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1470
+    },
+    {
+      "completion_time": "2026-01-29T18:52:34Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1471
+    },
+    {
+      "completion_time": "2026-01-29T18:52:40Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1477
+    },
+    {
+      "completion_time": "2026-01-29T18:52:43Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1480
+    },
+    {
+      "completion_time": "2026-01-29T18:52:44Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1481
+    },
+    {
+      "completion_time": "2026-01-29T18:52:47Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1484
+    },
+    {
+      "completion_time": "2026-01-29T18:52:49Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1486
+    },
+    {
+      "completion_time": "2026-01-29T18:52:52Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1489
+    },
+    {
+      "completion_time": "2026-01-29T18:52:53Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1490
+    },
+    {
+      "completion_time": "2026-01-29T18:53:04Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1501
+    },
+    {
+      "completion_time": "2026-01-29T18:53:10Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1507
+    },
+    {
+      "completion_time": "2026-01-29T18:53:11Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1508
+    },
+    {
+      "completion_time": "2026-01-29T18:53:14Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1511
+    },
+    {
+      "completion_time": "2026-01-29T18:53:15Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1512
+    },
+    {
+      "completion_time": "2026-01-29T18:53:23Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1519
+    },
+    {
+      "completion_time": "2026-01-29T18:53:28Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1524
+    },
+    {
+      "completion_time": "2026-01-29T18:53:34Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1530
+    },
+    {
+      "completion_time": "2026-01-29T18:53:35Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1531
+    },
+    {
+      "completion_time": "2026-01-29T18:53:39Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1535
+    },
+    {
+      "completion_time": "2026-01-29T18:53:41Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1537
+    },
+    {
+      "completion_time": "2026-01-29T18:53:41Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1537
+    },
+    {
+      "completion_time": "2026-01-29T18:53:54Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1550
+    },
+    {
+      "completion_time": "2026-01-29T18:54:01Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1557
+    },
+    {
+      "completion_time": "2026-01-29T18:54:02Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1558
+    },
+    {
+      "completion_time": "2026-01-29T18:54:08Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1564
+    },
+    {
+      "completion_time": "2026-01-29T18:54:10Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1566
+    },
+    {
+      "completion_time": "2026-01-29T18:54:17Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1573
+    },
+    {
+      "completion_time": "2026-01-29T18:54:27Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1583
+    },
+    {
+      "completion_time": "2026-01-29T18:54:32Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1588
+    },
+    {
+      "completion_time": "2026-01-29T18:54:33Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1589
+    },
+    {
+      "completion_time": "2026-01-29T18:54:36Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1592
+    },
+    {
+      "completion_time": "2026-01-29T18:54:49Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1605
+    },
+    {
+      "completion_time": "2026-01-29T18:54:51Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1607
+    },
+    {
+      "completion_time": "2026-01-29T18:54:55Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1611
+    },
+    {
+      "completion_time": "2026-01-29T18:55:12Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1628
+    },
+    {
+      "completion_time": "2026-01-29T18:55:21Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1636
+    },
+    {
+      "completion_time": "2026-01-29T18:55:25Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1640
+    },
+    {
+      "completion_time": "2026-01-29T18:55:28Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1643
+    },
+    {
+      "completion_time": "2026-01-29T18:55:32Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1647
+    },
+    {
+      "completion_time": "2026-01-29T18:55:35Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1650
+    },
+    {
+      "completion_time": "2026-01-29T18:55:36Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1651
+    },
+    {
+      "completion_time": "2026-01-29T18:55:39Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1654
+    },
+    {
+      "completion_time": "2026-01-29T18:55:44Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1659
+    },
+    {
+      "completion_time": "2026-01-29T18:55:47Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1662
+    },
+    {
+      "completion_time": "2026-01-29T18:55:56Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1671
+    },
+    {
+      "completion_time": "2026-01-29T18:56:06Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1681
+    },
+    {
+      "completion_time": "2026-01-29T18:56:07Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1682
+    },
+    {
+      "completion_time": "2026-01-29T18:56:10Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1685
+    },
+    {
+      "completion_time": "2026-01-29T18:56:13Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1688
+    },
+    {
+      "completion_time": "2026-01-29T18:56:14Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1689
+    },
+    {
+      "completion_time": "2026-01-29T18:56:21Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1696
+    },
+    {
+      "completion_time": "2026-01-29T18:56:22Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1697
+    },
+    {
+      "completion_time": "2026-01-29T18:56:29Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1704
+    },
+    {
+      "completion_time": "2026-01-29T18:56:33Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1708
+    },
+    {
+      "completion_time": "2026-01-29T18:56:36Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1711
+    },
+    {
+      "completion_time": "2026-01-29T18:56:48Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1723
+    },
+    {
+      "completion_time": "2026-01-29T18:57:05Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1739
+    },
+    {
+      "completion_time": "2026-01-29T18:57:09Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1743
+    },
+    {
+      "completion_time": "2026-01-29T18:57:14Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1748
+    },
+    {
+      "completion_time": "2026-01-29T18:57:16Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1750
+    },
+    {
+      "completion_time": "2026-01-29T18:57:18Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1752
+    },
+    {
+      "completion_time": "2026-01-29T18:57:30Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1764
+    },
+    {
+      "completion_time": "2026-01-29T18:57:31Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1765
+    },
+    {
+      "completion_time": "2026-01-29T18:57:33Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1767
+    },
+    {
+      "completion_time": "2026-01-29T18:57:46Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1780
+    },
+    {
+      "completion_time": "2026-01-29T18:57:51Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1785
+    },
+    {
+      "completion_time": "2026-01-29T18:58:23Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1817
+    },
+    {
+      "completion_time": "2026-01-29T18:58:23Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1817
+    },
+    {
+      "completion_time": "2026-01-29T18:58:30Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1824
+    },
+    {
+      "completion_time": "2026-01-29T18:58:35Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1829
+    },
+    {
+      "completion_time": "2026-01-29T18:58:41Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1834
+    },
+    {
+      "completion_time": "2026-01-29T18:58:43Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1836
+    },
+    {
+      "completion_time": "2026-01-29T18:58:48Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1841
+    },
+    {
+      "completion_time": "2026-01-29T18:59:02Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1855
+    },
+    {
+      "completion_time": "2026-01-29T18:59:04Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1857
+    },
+    {
+      "completion_time": "2026-01-29T18:59:04Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1857
+    },
+    {
+      "completion_time": "2026-01-29T18:59:22Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1875
+    },
+    {
+      "completion_time": "2026-01-29T18:59:26Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1879
+    },
+    {
+      "completion_time": "2026-01-29T18:59:31Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1884
+    },
+    {
+      "completion_time": "2026-01-29T18:59:42Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1895
+    },
+    {
+      "completion_time": "2026-01-29T18:59:48Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1901
+    },
+    {
+      "completion_time": "2026-01-29T18:59:56Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1909
+    },
+    {
+      "completion_time": "2026-01-29T18:59:58Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1911
+    },
+    {
+      "completion_time": "2026-01-29T19:00:03Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1916
+    },
+    {
+      "completion_time": "2026-01-29T19:00:13Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1926
+    },
+    {
+      "completion_time": "2026-01-29T19:00:18Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1931
+    },
+    {
+      "completion_time": "2026-01-29T19:00:32Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1944
+    },
+    {
+      "completion_time": "2026-01-29T19:00:37Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1949
+    },
+    {
+      "completion_time": "2026-01-29T19:00:38Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1950
+    },
+    {
+      "completion_time": "2026-01-29T19:00:42Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1954
+    },
+    {
+      "completion_time": "2026-01-29T19:00:44Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1956
+    },
+    {
+      "completion_time": "2026-01-29T19:00:46Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1958
+    },
+    {
+      "completion_time": "2026-01-29T19:00:50Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1962
+    },
+    {
+      "completion_time": "2026-01-29T19:00:51Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1963
+    },
+    {
+      "completion_time": "2026-01-29T19:00:58Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1970
+    },
+    {
+      "completion_time": "2026-01-29T19:01:10Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1982
+    },
+    {
+      "completion_time": "2026-01-29T19:01:11Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1983
+    },
+    {
+      "completion_time": "2026-01-29T19:01:15Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1987
+    },
+    {
+      "completion_time": "2026-01-29T19:01:18Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1990
+    },
+    {
+      "completion_time": "2026-01-29T19:01:20Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1992
+    },
+    {
+      "completion_time": "2026-01-29T19:01:27Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1999
+    },
+    {
+      "completion_time": "2026-01-29T19:01:28Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2000
+    },
+    {
+      "completion_time": "2026-01-29T19:01:41Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2013
+    },
+    {
+      "completion_time": "2026-01-29T19:01:44Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2016
+    },
+    {
+      "completion_time": "2026-01-29T19:01:47Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2019
+    },
+    {
+      "completion_time": "2026-01-29T19:01:52Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2024
+    },
+    {
+      "completion_time": "2026-01-29T19:01:52Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2024
+    },
+    {
+      "completion_time": "2026-01-29T19:01:56Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2028
+    },
+    {
+      "completion_time": "2026-01-29T19:01:59Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2031
+    },
+    {
+      "completion_time": "2026-01-29T19:01:59Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2031
+    },
+    {
+      "completion_time": "2026-01-29T19:02:09Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2041
+    },
+    {
+      "completion_time": "2026-01-29T19:02:10Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2042
+    },
+    {
+      "completion_time": "2026-01-29T19:02:12Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2044
+    },
+    {
+      "completion_time": "2026-01-29T19:02:27Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2058
+    },
+    {
+      "completion_time": "2026-01-29T19:02:43Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2074
+    },
+    {
+      "completion_time": "2026-01-29T19:02:48Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2079
+    },
+    {
+      "completion_time": "2026-01-29T19:02:51Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2082
+    },
+    {
+      "completion_time": "2026-01-29T19:02:54Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2085
+    },
+    {
+      "completion_time": "2026-01-29T19:02:58Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2089
+    },
+    {
+      "completion_time": "2026-01-29T19:03:01Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2092
+    },
+    {
+      "completion_time": "2026-01-29T19:03:02Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2093
+    },
+    {
+      "completion_time": "2026-01-29T19:03:18Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2109
+    },
+    {
+      "completion_time": "2026-01-29T19:03:24Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2115
+    },
+    {
+      "completion_time": "2026-01-29T19:03:25Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2116
+    },
+    {
+      "completion_time": "2026-01-29T19:03:39Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2130
+    },
+    {
+      "completion_time": "2026-01-29T19:03:43Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2134
+    },
+    {
+      "completion_time": "2026-01-29T19:03:46Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2137
+    },
+    {
+      "completion_time": "2026-01-29T19:03:50Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2141
+    },
+    {
+      "completion_time": "2026-01-29T19:03:54Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2145
+    },
+    {
+      "completion_time": "2026-01-29T19:03:56Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2147
+    },
+    {
+      "completion_time": "2026-01-29T19:03:58Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2149
+    },
+    {
+      "completion_time": "2026-01-29T19:04:01Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2152
+    },
+    {
+      "completion_time": "2026-01-29T19:04:04Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2155
+    },
+    {
+      "completion_time": "2026-01-29T19:04:06Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2157
+    },
+    {
+      "completion_time": "2026-01-29T19:04:07Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2158
+    },
+    {
+      "completion_time": "2026-01-29T19:04:13Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2164
+    },
+    {
+      "completion_time": "2026-01-29T19:04:16Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2167
+    },
+    {
+      "completion_time": "2026-01-29T19:04:20Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2171
+    },
+    {
+      "completion_time": "2026-01-29T19:04:27Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2177
+    },
+    {
+      "completion_time": "2026-01-29T19:04:31Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2181
+    },
+    {
+      "completion_time": "2026-01-29T19:04:32Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2182
+    },
+    {
+      "completion_time": "2026-01-29T19:04:38Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2188
+    },
+    {
+      "completion_time": "2026-01-29T19:04:40Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2190
+    },
+    {
+      "completion_time": "2026-01-29T19:04:43Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2193
+    },
+    {
+      "completion_time": "2026-01-29T19:04:48Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2198
+    },
+    {
+      "completion_time": "2026-01-29T19:04:51Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2201
+    },
+    {
+      "completion_time": "2026-01-29T19:04:53Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2203
+    },
+    {
+      "completion_time": "2026-01-29T19:05:00Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2210
+    },
+    {
+      "completion_time": "2026-01-29T19:05:04Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2214
+    },
+    {
+      "completion_time": "2026-01-29T19:05:07Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2217
+    },
+    {
+      "completion_time": "2026-01-29T19:05:11Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2221
+    },
+    {
+      "completion_time": "2026-01-29T19:05:11Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2221
+    },
+    {
+      "completion_time": "2026-01-29T19:05:20Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2230
+    },
+    {
+      "completion_time": "2026-01-29T19:05:21Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2231
+    },
+    {
+      "completion_time": "2026-01-29T19:05:21Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2231
+    },
+    {
+      "completion_time": "2026-01-29T19:05:24Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2234
+    },
+    {
+      "completion_time": "2026-01-29T19:05:28Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2238
+    },
+    {
+      "completion_time": "2026-01-29T19:05:30Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2240
+    },
+    {
+      "completion_time": "2026-01-29T19:05:37Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2247
+    },
+    {
+      "completion_time": "2026-01-29T19:05:38Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2248
+    },
+    {
+      "completion_time": "2026-01-29T19:05:39Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2249
+    },
+    {
+      "completion_time": "2026-01-29T19:05:41Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2251
+    },
+    {
+      "completion_time": "2026-01-29T19:05:44Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2254
+    },
+    {
+      "completion_time": "2026-01-29T19:05:53Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2263
+    },
+    {
+      "completion_time": "2026-01-29T19:06:08Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2278
+    },
+    {
+      "completion_time": "2026-01-29T19:06:09Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2279
+    },
+    {
+      "completion_time": "2026-01-29T19:06:09Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2279
+    },
+    {
+      "completion_time": "2026-01-29T19:06:11Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2281
+    },
+    {
+      "completion_time": "2026-01-29T19:06:19Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2289
+    },
+    {
+      "completion_time": "2026-01-29T19:06:19Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2289
+    },
+    {
+      "completion_time": "2026-01-29T19:06:27Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2297
+    },
+    {
+      "completion_time": "2026-01-29T19:06:27Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2297
+    },
+    {
+      "completion_time": "2026-01-29T19:06:41Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2310
+    },
+    {
+      "completion_time": "2026-01-29T19:06:50Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2319
+    },
+    {
+      "completion_time": "2026-01-29T19:07:03Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2332
+    },
+    {
+      "completion_time": "2026-01-29T19:07:03Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2332
+    },
+    {
+      "completion_time": "2026-01-29T19:07:10Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2339
+    },
+    {
+      "completion_time": "2026-01-29T19:07:11Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2340
+    },
+    {
+      "completion_time": "2026-01-29T19:07:15Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2344
+    },
+    {
+      "completion_time": "2026-01-29T19:07:18Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2347
+    },
+    {
+      "completion_time": "2026-01-29T19:07:22Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2351
+    },
+    {
+      "completion_time": "2026-01-29T19:07:30Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2359
+    },
+    {
+      "completion_time": "2026-01-29T19:07:36Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2365
+    },
+    {
+      "completion_time": "2026-01-29T19:07:46Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2375
+    },
+    {
+      "completion_time": "2026-01-29T19:07:48Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2377
+    },
+    {
+      "completion_time": "2026-01-29T19:07:52Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2381
+    },
+    {
+      "completion_time": "2026-01-29T19:07:56Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2385
+    },
+    {
+      "completion_time": "2026-01-29T19:07:59Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2388
+    },
+    {
+      "completion_time": "2026-01-29T19:08:02Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2391
+    },
+    {
+      "completion_time": "2026-01-29T19:08:12Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2401
+    },
+    {
+      "completion_time": "2026-01-29T19:08:17Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2405
+    },
+    {
+      "completion_time": "2026-01-29T19:08:19Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2407
+    },
+    {
+      "completion_time": "2026-01-29T19:08:24Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2412
+    },
+    {
+      "completion_time": "2026-01-29T19:08:31Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2418
+    },
+    {
+      "completion_time": "2026-01-29T19:08:34Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2421
+    },
+    {
+      "completion_time": "2026-01-29T19:08:35Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2422
+    },
+    {
+      "completion_time": "2026-01-29T19:08:40Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2427
+    },
+    {
+      "completion_time": "2026-01-29T19:08:42Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2429
+    },
+    {
+      "completion_time": "2026-01-29T19:08:43Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2430
+    },
+    {
+      "completion_time": "2026-01-29T19:08:47Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2434
+    },
+    {
+      "completion_time": "2026-01-29T19:08:55Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2442
+    },
+    {
+      "completion_time": "2026-01-29T19:08:58Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2445
+    },
+    {
+      "completion_time": "2026-01-29T19:08:58Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2445
+    },
+    {
+      "completion_time": "2026-01-29T19:09:02Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2449
+    },
+    {
+      "completion_time": "2026-01-29T19:09:04Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2451
+    },
+    {
+      "completion_time": "2026-01-29T19:09:22Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2469
+    },
+    {
+      "completion_time": "2026-01-29T19:09:29Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2476
+    },
+    {
+      "completion_time": "2026-01-29T19:09:32Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2479
+    },
+    {
+      "completion_time": "2026-01-29T19:09:35Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2482
+    },
+    {
+      "completion_time": "2026-01-29T19:09:36Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2483
+    },
+    {
+      "completion_time": "2026-01-29T19:09:37Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2484
+    },
+    {
+      "completion_time": "2026-01-29T19:09:37Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2484
+    },
+    {
+      "completion_time": "2026-01-29T19:09:42Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2489
+    },
+    {
+      "completion_time": "2026-01-29T19:09:44Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2491
+    },
+    {
+      "completion_time": "2026-01-29T19:09:54Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2501
+    },
+    {
+      "completion_time": "2026-01-29T19:09:55Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2502
+    },
+    {
+      "completion_time": "2026-01-29T19:09:55Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2502
+    },
+    {
+      "completion_time": "2026-01-29T19:09:56Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2503
+    },
+    {
+      "completion_time": "2026-01-29T19:09:58Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2505
+    },
+    {
+      "completion_time": "2026-01-29T19:10:02Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2508
+    },
+    {
+      "completion_time": "2026-01-29T19:10:06Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2512
+    },
+    {
+      "completion_time": "2026-01-29T19:10:11Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2517
+    },
+    {
+      "completion_time": "2026-01-29T19:10:20Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2526
+    },
+    {
+      "completion_time": "2026-01-29T19:10:22Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2528
+    },
+    {
+      "completion_time": "2026-01-29T19:10:25Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2531
+    },
+    {
+      "completion_time": "2026-01-29T19:10:29Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2535
+    },
+    {
+      "completion_time": "2026-01-29T19:10:30Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2536
+    },
+    {
+      "completion_time": "2026-01-29T19:10:32Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2538
+    },
+    {
+      "completion_time": "2026-01-29T19:10:36Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2542
+    },
+    {
+      "completion_time": "2026-01-29T19:10:47Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2553
+    },
+    {
+      "completion_time": "2026-01-29T19:10:48Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2554
+    },
+    {
+      "completion_time": "2026-01-29T19:10:58Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2564
+    },
+    {
+      "completion_time": "2026-01-29T19:11:05Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2571
+    },
+    {
+      "completion_time": "2026-01-29T19:11:06Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2572
+    },
+    {
+      "completion_time": "2026-01-29T19:11:11Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2577
+    },
+    {
+      "completion_time": "2026-01-29T19:11:13Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2579
+    },
+    {
+      "completion_time": "2026-01-29T19:11:20Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2586
+    },
+    {
+      "completion_time": "2026-01-29T19:11:26Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2592
+    },
+    {
+      "completion_time": "2026-01-29T19:11:36Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2602
+    },
+    {
+      "completion_time": "2026-01-29T19:11:39Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2605
+    },
+    {
+      "completion_time": "2026-01-29T19:11:40Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2606
+    },
+    {
+      "completion_time": "2026-01-29T19:11:42Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2608
+    },
+    {
+      "completion_time": "2026-01-29T19:11:49Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2615
+    },
+    {
+      "completion_time": "2026-01-29T19:11:52Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2618
+    },
+    {
+      "completion_time": "2026-01-29T19:11:59Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2624
+    },
+    {
+      "completion_time": "2026-01-29T19:12:05Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2630
+    },
+    {
+      "completion_time": "2026-01-29T19:12:13Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2638
+    },
+    {
+      "completion_time": "2026-01-29T19:12:14Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2639
+    },
+    {
+      "completion_time": "2026-01-29T19:12:19Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2644
+    },
+    {
+      "completion_time": "2026-01-29T19:12:25Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2650
+    },
+    {
+      "completion_time": "2026-01-29T19:12:32Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2657
+    },
+    {
+      "completion_time": "2026-01-29T19:12:35Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2660
+    },
+    {
+      "completion_time": "2026-01-29T19:12:35Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2660
+    },
+    {
+      "completion_time": "2026-01-29T19:12:47Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2672
+    },
+    {
+      "completion_time": "2026-01-29T19:13:01Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2686
+    },
+    {
+      "completion_time": "2026-01-29T19:13:04Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2689
+    },
+    {
+      "completion_time": "2026-01-29T19:13:05Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2690
+    },
+    {
+      "completion_time": "2026-01-29T19:13:06Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2691
+    },
+    {
+      "completion_time": "2026-01-29T19:13:10Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2695
+    },
+    {
+      "completion_time": "2026-01-29T19:13:12Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2697
+    },
+    {
+      "completion_time": "2026-01-29T19:13:19Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2704
+    },
+    {
+      "completion_time": "2026-01-29T19:13:21Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2706
+    },
+    {
+      "completion_time": "2026-01-29T19:13:21Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2706
+    },
+    {
+      "completion_time": "2026-01-29T19:13:22Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2707
+    },
+    {
+      "completion_time": "2026-01-29T19:13:24Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2709
+    },
+    {
+      "completion_time": "2026-01-29T19:13:28Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2713
+    },
+    {
+      "completion_time": "2026-01-29T19:13:31Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2716
+    },
+    {
+      "completion_time": "2026-01-29T19:13:31Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2716
+    },
+    {
+      "completion_time": "2026-01-29T19:13:35Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2719
+    },
+    {
+      "completion_time": "2026-01-29T19:13:37Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2722
+    },
+    {
+      "completion_time": "2026-01-29T19:13:45Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2729
+    },
+    {
+      "completion_time": "2026-01-29T19:13:47Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2731
+    },
+    {
+      "completion_time": "2026-01-29T19:13:51Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2735
+    },
+    {
+      "completion_time": "2026-01-29T19:14:00Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2744
+    },
+    {
+      "completion_time": "2026-01-29T19:14:04Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2748
+    },
+    {
+      "completion_time": "2026-01-29T19:14:17Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2761
+    },
+    {
+      "completion_time": "2026-01-29T19:14:33Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2777
+    },
+    {
+      "completion_time": "2026-01-29T19:14:50Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2794
+    },
+    {
+      "completion_time": "2026-01-29T19:14:54Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2798
+    },
+    {
+      "completion_time": "2026-01-29T19:14:55Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2799
+    },
+    {
+      "completion_time": "2026-01-29T19:14:57Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2801
+    },
+    {
+      "completion_time": "2026-01-29T19:14:57Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2801
+    },
+    {
+      "completion_time": "2026-01-29T19:14:59Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2803
+    },
+    {
+      "completion_time": "2026-01-29T19:15:05Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2809
+    },
+    {
+      "completion_time": "2026-01-29T19:15:07Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2811
+    },
+    {
+      "completion_time": "2026-01-29T19:15:08Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2812
+    },
+    {
+      "completion_time": "2026-01-29T19:15:10Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2814
+    },
+    {
+      "completion_time": "2026-01-29T19:15:24Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2827
+    },
+    {
+      "completion_time": "2026-01-29T19:15:26Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2829
+    },
+    {
+      "completion_time": "2026-01-29T19:15:29Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2832
+    },
+    {
+      "completion_time": "2026-01-29T19:15:32Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2835
+    },
+    {
+      "completion_time": "2026-01-29T19:15:49Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2852
+    },
+    {
+      "completion_time": "2026-01-29T19:15:50Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2853
+    },
+    {
+      "completion_time": "2026-01-29T19:15:56Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2859
+    },
+    {
+      "completion_time": "2026-01-29T19:15:58Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2861
+    },
+    {
+      "completion_time": "2026-01-29T19:16:01Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2864
+    },
+    {
+      "completion_time": "2026-01-29T19:16:08Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2871
+    },
+    {
+      "completion_time": "2026-01-29T19:16:14Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2877
+    },
+    {
+      "completion_time": "2026-01-29T19:16:17Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2880
+    },
+    {
+      "completion_time": "2026-01-29T19:16:27Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2890
+    },
+    {
+      "completion_time": "2026-01-29T19:16:29Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2892
+    },
+    {
+      "completion_time": "2026-01-29T19:16:48Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2911
+    },
+    {
+      "completion_time": "2026-01-29T19:16:55Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2918
+    },
+    {
+      "completion_time": "2026-01-29T19:16:56Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2919
+    },
+    {
+      "completion_time": "2026-01-29T19:16:56Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2919
+    },
+    {
+      "completion_time": "2026-01-29T19:16:58Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2921
+    },
+    {
+      "completion_time": "2026-01-29T19:17:00Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2923
+    },
+    {
+      "completion_time": "2026-01-29T19:17:03Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2926
+    },
+    {
+      "completion_time": "2026-01-29T19:17:05Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2928
+    },
+    {
+      "completion_time": "2026-01-29T19:17:21Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2943
+    },
+    {
+      "completion_time": "2026-01-29T19:17:30Z",
+      "task_id": "MediaCorp-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2952
+    },
+    {
+      "completion_time": "2026-01-29T19:17:32Z",
+      "task_id": "MediaCorp-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2954
+    }
+  ]
+}

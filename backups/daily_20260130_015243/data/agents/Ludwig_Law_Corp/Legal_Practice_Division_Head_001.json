@@ -1,0 +1,49 @@
+﻿{
+    "CreatedDate":  "2026-01-29T22:29:16Z",
+    "ReportingHierarchy":  {
+                               "DivisionHead":  "",
+                               "DirectSupervisor":  "AZ_PRIME_001",
+                               "AZ_PRIME_Liaison":  "",
+                               "ExecutiveSponsor":  ""
+                           },
+    "Supervisor":  "AZ_PRIME_001",
+    "SecurityClearance":  "TOP SECRET",
+    "AgentId":  "Legal_Practice_Division_Head_001",
+    "AuthorizedSystems":  [
+
+                          ],
+    "Status":  "Active",
+    "AgentName":  "Division Head - Legal Practice",
+    "Division":  "Ludwig Law Corp",
+    "Role":  "Division Head - Legal Practice",
+    "CommunicationChannels":  [
+
+                              ],
+    "PerformanceMetrics":  {
+                               "MandateCompliance":  0,
+                               "ErrorCount":  0,
+                               "TasksCompleted":  0,
+                               "KPIScore":  0,
+                               "ResponseTime":  0,
+                               "LastEvaluation":  "2026-01-29",
+                               "SuccessRate":  0
+                           },
+    "LastUpdate":  "2026-01-29T22:34:04Z",
+    "Mandate":  "Departmental agent supporting Ludwig Law Corp operations and contributing to team objectives.",
+    "KeyResponsibilities":  [
+                                "Execute assigned operational tasks",
+                                "Maintain quality and efficiency standards",
+                                "Collaborate with team members",
+                                "Support departmental initiatives",
+                                "Continuous learning and improvement"
+                            ],
+    "KPIs":  [
+                 "Task completion rate \u003e90%",
+                 "Quality compliance \u003e95%",
+                 "Team collaboration score \u003e80%",
+                 "Efficiency improvement \u003e10%",
+                 "Professional development \u003e80% completion"
+             ],
+    "AuthorityLevel":  "DEPARTMENTAL",
+    "ReportingTo":  "DEPARTMENT_HEAD"
+}

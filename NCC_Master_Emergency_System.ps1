@@ -84,7 +84,7 @@ class NCCMasterEmergencyController {
         $this.ActiveProcesses = @{}
     }
 
-    [void]ActivateFullSystem() {
+    [void]ActivateFullSystem([bool]$continuous = $false) {
         Write-Host "NCC COMPREHENSIVE EMERGENCY MANAGEMENT SYSTEM ACTIVATION" -ForegroundColor Cyan
         Write-Host "=========================================================" -ForegroundColor Cyan
         Write-Host ""
@@ -117,7 +117,7 @@ class NCCMasterEmergencyController {
         Write-Host "Enterprise-wide crisis response capabilities: OPERATIONAL" -ForegroundColor Green
         Write-Host ""
 
-        if ($Continuous) {
+        if ($continuous) {
             $this.StartContinuousOperation()
         }
     }
@@ -522,7 +522,8 @@ Last System Check: $($this.SystemHealth.LastSystemCheck)
                 "Failed" { "Red" }
                 default { "Gray" }
             }
-            Write-Host "  $($component.Name): $($component.Status) $(if ($component.ProcessId) { "(PID: $($component.ProcessId))" } else { "" })" -ForegroundColor $statusColor
+            $processInfo = if ($component.ProcessId) { "(PID: $($component.ProcessId))" } else { "" }
+            Write-Host "  $($component.Name): $($component.Status) $processInfo" -ForegroundColor $statusColor
         }
 
         Write-Host ""
@@ -557,7 +558,7 @@ $MasterController = [NCCMasterEmergencyController]::new($MasterConfig)
 
 switch ($Action) {
     "FullSystem" {
-        $MasterController.ActivateFullSystem()
+        $MasterController.ActivateFullSystem($Continuous)
     }
 
     "Detection" {

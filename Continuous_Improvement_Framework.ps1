@@ -50,11 +50,11 @@ $CONTINUOUS_IMPROVEMENT_CONFIG = @{
 
 class ABTester {
     [string]$TestName
-    [hashtable]$ControlGroup
-    [hashtable]$TestGroup
+    $ControlGroup
+    $TestGroup
     [double]$TestDuration
     [string]$Status
-    [hashtable]$Results
+    $Results
 
     ABTester([string]$name) {
         $this.TestName = $name
@@ -95,29 +95,49 @@ class ABTester {
         }
     }
 
-    [hashtable]AnalyzeResults() {
+    [hashtable]AnalyzeResults([double]$minThreshold = 2.0) {
         Write-ImprovementLog "Analyzing A/B test results for $($this.TestName)" "ANALYSIS" $this.TestName
 
+        # Ensure Results is initialized
+        if (-not $this.Results) {
+            $this.Results = @{
+                improvement = 0.0
+                confidence = 0.0
+                significant = $false
+            }
+        }
+
+        $result = [PSCustomObject]@{
+            improvement = 0.0
+            confidence = 0.0
+            significant = $false
+        }
+
         if ($this.ControlGroup.sampleSize -lt 10 -or $this.TestGroup.sampleSize -lt 10) {
-            $this.Results.significant = $false
-            $this.Results.confidence = 0.0
+            $result.significant = $false
+            $result.confidence = 0.0
+            $result.improvement = 0.0
+            $this.Results = $result
             Write-ImprovementLog "Insufficient sample size for analysis" "WARNING" $this.TestName
-            return $this.Results
+            return $result
         }
 
         # Calculate average performance for each group
         $controlAvg = ($this.ControlGroup.metrics | Measure-Object -Property efficiency -Average).Average
         $testAvg = ($this.TestGroup.metrics | Measure-Object -Property efficiency -Average).Average
 
-        $this.Results.improvement = [math]::Round($testAvg - $controlAvg, 2)
-        $this.Results.confidence = Calculate-StatisticalConfidence $this.ControlGroup.metrics $this.TestGroup.metrics
-        $this.Results.significant = [math]::Abs($this.Results.improvement) -gt $CONTINUOUS_IMPROVEMENT_CONFIG.ABTestingConfig.MinImprovementThreshold
+        $result.improvement = [math]::Round($testAvg - $controlAvg, 2)
+        $result.confidence = Calculate-StatisticalConfidence $this.ControlGroup.metrics $this.TestGroup.metrics
+
+        $improvementAbs = [math]::Abs($result.improvement)
+        $result.significant = $improvementAbs -gt $minThreshold
 
         $this.Status = "COMPLETED"
+        $this.Results = $result
 
-        Write-ImprovementLog "A/B test analysis complete - Improvement: $($this.Results.improvement)%, Confidence: $([math]::Round($this.Results.confidence, 2))%" "SUCCESS" $this.TestName
+        Write-ImprovementLog "A/B test analysis complete - Improvement: $($result.improvement)%, Confidence: $([math]::Round($result.confidence, 2))%" "SUCCESS" $this.TestName
 
-        return $this.Results
+        return $result
     }
 }
 
@@ -214,8 +234,8 @@ class OptimizationStrategy {
 }
 
 class TrendAnalyzer {
-    [array]$HistoricalData
-    [hashtable]$Trends
+    $HistoricalData
+    $Trends
     [double]$AnalysisAccuracy
 
     TrendAnalyzer() {
@@ -233,10 +253,10 @@ class TrendAnalyzer {
         }
     }
 
-    [hashtable]AnalyzeTrends() {
+    AnalyzeTrends() {
         Write-ImprovementLog "Analyzing performance trends from $($this.HistoricalData.Count) data points" "ANALYSIS" "TRENDS"
 
-        $trends = @{
+        $trendResults = @{
             efficiencyTrend = "STABLE"
             performanceTrend = "STABLE"
             improvementRate = 0.0
@@ -246,7 +266,8 @@ class TrendAnalyzer {
 
         if ($this.HistoricalData.Count -lt 20) {
             Write-ImprovementLog "Insufficient data for trend analysis" "WARNING" "TRENDS"
-            return $trends
+            $this.Trends = $trendResults
+            return
         }
 
         # Analyze efficiency trend
@@ -254,22 +275,20 @@ class TrendAnalyzer {
         $olderEfficiency = ($this.HistoricalData | Select-Object -First 10 | Measure-Object -Property efficiency -Average).Average
 
         if ($recentEfficiency -gt $olderEfficiency + 1) {
-            $trends.efficiencyTrend = "IMPROVING"
+            $trendResults.efficiencyTrend = "IMPROVING"
         } elseif ($recentEfficiency -lt $olderEfficiency - 1) {
-            $trends.efficiencyTrend = "DECLINING"
+            $trendResults.efficiencyTrend = "DECLINING"
         }
 
         # Calculate improvement rate
-        $trends.improvementRate = [math]::Round($recentEfficiency - $olderEfficiency, 2)
+        $trendResults.improvementRate = [math]::Round($recentEfficiency - $olderEfficiency, 2)
 
         # Generate key insights
-        $trends.keyInsights = $this.GenerateKeyInsights($trends)
+        $trendResults.keyInsights = $this.GenerateKeyInsights($trendResults)
 
-        $this.Trends = $trends
+        $this.Trends = $trendResults
 
-        Write-ImprovementLog "Trend analysis complete - Efficiency trend: $($trends.efficiencyTrend), Improvement rate: $($trends.improvementRate)%" "SUCCESS" "TRENDS"
-
-        return $trends
+        Write-ImprovementLog "Trend analysis complete - Efficiency trend: $($trendResults.efficiencyTrend), Improvement rate: $($trendResults.improvementRate)%" "SUCCESS" "TRENDS"
     }
 
     [array]GenerateKeyInsights($trends) {
@@ -290,8 +309,8 @@ class TrendAnalyzer {
 }
 
 class FeedbackLoop {
-    [array]$FeedbackHistory
-    [hashtable]$ImprovementPatterns
+    $FeedbackHistory
+    $ImprovementPatterns
     [double]$LearningRate
 
     FeedbackLoop() {
@@ -448,7 +467,8 @@ function Start-ContinuousImprovement {
             Execute-ABTesting $systemState
 
             # Analyze trends
-            $trends = $script:TrendAnalyzer.AnalyzeTrends()
+            $script:TrendAnalyzer.AnalyzeTrends()
+            $trends = $script:TrendAnalyzer.Trends
 
             # Execute optimization strategies
             Execute-OptimizationStrategies $systemState $trends
@@ -533,7 +553,7 @@ function Execute-ABTesting {
     # Check if test should be completed
     $testDuration = (Get-Date) - [DateTime]::Parse($script:ABTester.ControlGroup.startTime)
     if ($testDuration.TotalMinutes -ge $script:ABTester.TestDuration) {
-        $results = $script:ABTester.AnalyzeResults()
+        $results = $script:ABTester.AnalyzeResults($CONTINUOUS_IMPROVEMENT_CONFIG.ABTestingConfig.MinImprovementThreshold)
 
         if ($results.significant) {
             Write-ImprovementLog "A/B test found significant improvement: $($results.improvement)%" "SUCCESS" "ABTEST"
@@ -641,7 +661,7 @@ function Run-ManualABTest {
     $testState.efficiency *= 1.02  # Simulate test improvement
     $script:ABTester.RecordMeasurement($testState, "test")
 
-    $results = $script:ABTester.AnalyzeResults()
+    $results = $script:ABTester.AnalyzeResults($CONTINUOUS_IMPROVEMENT_CONFIG.ABTestingConfig.MinImprovementThreshold)
 
     Write-Host "A/B Test Results:" -ForegroundColor Yellow
     Write-Host "Improvement: $($results.improvement)%" -ForegroundColor White
@@ -652,7 +672,8 @@ function Run-ManualABTest {
 function Analyze-ImprovementTrends {
     Write-ImprovementLog "ANALYZING CONTINUOUS IMPROVEMENT TRENDS" "ANALYSIS" "TRENDS"
 
-    $trends = $script:TrendAnalyzer.AnalyzeTrends()
+    $script:TrendAnalyzer.AnalyzeTrends()
+    $trends = $script:TrendAnalyzer.Trends
     $recommendations = $script:FeedbackLoop.GetRecommendedStrategies()
 
     $analysis = @{
@@ -681,7 +702,8 @@ function Execute-ManualOptimization {
     Write-ImprovementLog "EXECUTING MANUAL OPTIMIZATION CYCLE" "OPTIMIZATION" "MANUAL"
 
     $systemState = Collect-SystemState
-    $trends = $script:TrendAnalyzer.AnalyzeTrends()
+    $script:TrendAnalyzer.AnalyzeTrends()
+    $trends = $script:TrendAnalyzer.Trends
 
     Execute-OptimizationStrategies $systemState $trends
     Update-FeedbackLoop
@@ -832,5 +854,4 @@ Write-Host "AX CONTINUOUS DOMINANCE: IMPROVEMENT SYSTEMS ACTIVE!" -ForegroundCol
 Write-Host "QUANTUM PROCESSING: A/B TESTING ENGAGED!" -ForegroundColor Magenta
 Write-Host "STRATEGIC ALIGNMENT: CONTINUOUS OPTIMIZATION ENABLED!" -ForegroundColor Magenta
 Write-Host ""
-Write-Host "IMPROVEMENTS TESTED! TRENDS ANALYZED! EFFICIENCY MAXIMIZED!" -ForegroundColor Cyan</content>
-<parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Continuous_Improvement_Framework.ps1
+Write-Host "IMPROVEMENTS TESTED! TRENDS ANALYZED! EFFICIENCY MAXIMIZED!" -ForegroundColor Cyan

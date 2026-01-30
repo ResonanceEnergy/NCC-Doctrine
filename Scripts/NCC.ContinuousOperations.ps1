@@ -10,6 +10,9 @@ param(
     [int]$IntervalMinutes = 60,
 
     [Parameter(Mandatory=$false)]
+    [int]$IntervalSeconds,
+
+    [Parameter(Mandatory=$false)]
     [switch]$SingleCycle,
 
     [Parameter(Mandatory=$false)]
@@ -474,9 +477,10 @@ function Invoke-SingleCycle {
 
 # Continuous operations loop
 function Start-ContinuousOperations {
-    param([int]$IntervalMinutes)
+    param([int]$IntervalMinutes, [int]$IntervalSeconds)
 
-    Write-Log "🚀 Starting NCC Continuous Operations (Interval: $IntervalMinutes minutes)" "INFO"
+    $intervalText = if ($IntervalSeconds) { "$IntervalSeconds seconds" } else { "$IntervalMinutes minutes" }
+    Write-Log "🚀 Starting NCC Continuous Operations (Interval: $intervalText)" "INFO"
     Write-Log "Press Ctrl+C to stop continuous operations" "WARN"
 
     $cycleCount = 0
@@ -503,8 +507,12 @@ function Start-ContinuousOperations {
             Write-Log "❌ Error in cycle #$cycleCount : $_" "ERROR"
         }
 
-        Write-Log "⏱️ Waiting $IntervalMinutes minutes until next cycle..." "INFO"
-        Start-Sleep -Seconds ($IntervalMinutes * 60)
+        Write-Log "⏱️ Waiting $intervalText until next cycle..." "INFO"
+        if ($IntervalSeconds) {
+            Start-Sleep -Seconds $IntervalSeconds
+        } else {
+            Start-Sleep -Seconds ($IntervalMinutes * 60)
+        }
     }
 }
 
@@ -524,12 +532,17 @@ if ($SingleCycle) {
 }
 
 if ($Continuous) {
-    Start-ContinuousOperations -IntervalMinutes $IntervalMinutes
+    if ($IntervalSeconds) {
+        Start-ContinuousOperations -IntervalMinutes $IntervalMinutes -IntervalSeconds $IntervalSeconds
+    } else {
+        Start-ContinuousOperations -IntervalMinutes $IntervalMinutes
+    }
 } else {
     Write-Host "Usage:" -ForegroundColor Cyan
     Write-Host "  .\NCC.ContinuousOperations.ps1 -SingleCycle              # Run one complete cycle" -ForegroundColor White
     Write-Host "  .\NCC.ContinuousOperations.ps1 -Continuous              # Run continuous operations (default 60min intervals)" -ForegroundColor White
     Write-Host "  .\NCC.ContinuousOperations.ps1 -Continuous -IntervalMinutes 30  # Run with 30min intervals" -ForegroundColor White
+    Write-Host "  .\NCC.ContinuousOperations.ps1 -Continuous -IntervalSeconds 1   # Run with 1 second intervals" -ForegroundColor White
     Write-Host "  .\NCC.ContinuousOperations.ps1 -StatusReport            # Generate system status report" -ForegroundColor White
     Write-Host ""
     Write-Host "The hierarchical directive system includes:" -ForegroundColor Gray

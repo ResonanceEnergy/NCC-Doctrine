@@ -243,8 +243,8 @@ function New-AgentTask {
 function Update-DepartmentDirective {
     param([object]$DeptDirective, [array]$AssignedAgents)
     
-    $DeptDirective.AssignedAgents = $AssignedAgents
-    $DeptDirective.LastUpdated = Get-Date -Format "yyyy-MM-ddTHH:mm:ss"
+    $DeptDirective | Add-Member -MemberType NoteProperty -Name AssignedAgents -Value $AssignedAgents -Force
+    $DeptDirective | Add-Member -MemberType NoteProperty -Name LastUpdated -Value (Get-Date -Format "yyyy-MM-ddTHH:mm:ss") -Force
     
     $directivePath = Join-Path $DepartmentsPath "$($DeptDirective.DepartmentName)\$($DeptDirective.DirectiveName).json"
     $DeptDirective | ConvertTo-Json -Depth 10 | Out-File -FilePath $directivePath -Encoding UTF8

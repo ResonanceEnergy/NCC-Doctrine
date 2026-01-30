@@ -27,18 +27,6 @@
   ],
   "DirectiveName": "Risk Management Division - Faraday_Financial_Corp - Strategic Growth and Market Leadership Initiative Execution",
   "CreatedBy": "CEO_Faraday_Financial_Corp",
-  "AssignedAgents": [
-    {
-      "AssignedDate": "2026-01-29T21:15:46",
-      "AgentName": "RiskMgmt_Agent_001",
-      "TaskName": "RiskMgmt_Agent_001 - Capability Assessment and Planning Execution"
-    },
-    {
-      "AssignedDate": "2026-01-29T21:15:46",
-      "AgentName": "RiskMgmt_Agent_002",
-      "TaskName": "RiskMgmt_Agent_002 - Execution Framework Development Execution"
-    }
-  ],
   "DepartmentName": "Risk Management Division",
   "CompletionRoadmap": {
     "Week9_24": {
@@ -102,5 +90,18 @@
     "StrategicAlignment": "Directive aligns with company mission and enterprise objectives"
   },
   "CompanyDirective": "Faraday_Financial_Corp - Strategic Growth and Market Leadership Initiative",
-  "StatedGoal": "Execute Risk Management Division responsibilities within Faraday_Financial_Corp - Strategic Growth and Market Leadership Initiative framework"
+  "StatedGoal": "Execute Risk Management Division responsibilities within Faraday_Financial_Corp - Strategic Growth and Market Leadership Initiative framework",
+  "AssignedAgents": [
+    {
+      "AssignedDate": "2026-01-30T02:07:43",
+      "AgentName": "RiskMgmt_Agent_001",
+      "TaskName": "RiskMgmt_Agent_001 - Capability Assessment and Planning Execution"
+    },
+    {
+      "AssignedDate": "2026-01-30T02:07:43",
+      "AgentName": "RiskMgmt_Agent_002",
+      "TaskName": "RiskMgmt_Agent_002 - Execution Framework Development Execution"
+    }
+  ],
+  "LastUpdated": "2026-01-30T02:07:43"
 }

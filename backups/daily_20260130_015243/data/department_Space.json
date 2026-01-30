@@ -1,0 +1,3789 @@
+{
+  "last_updated": "2026-01-29T19:17:34Z",
+  "current_tasks": [],
+  "department": "Space",
+  "tasks_completed": 630,
+  "agent_performance": {},
+  "data_repository": [
+    {
+      "completion_time": "2026-01-29T18:31:04Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 194
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:16Z",
+      "task_id": "Space-002",
+      "cycle": 3
+    },
+    {
+      "completion_time": "2026-01-29T18:31:17Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 207
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:18Z",
+      "task_id": "Space-001",
+      "cycle": 5
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:19Z",
+      "task_id": "Space-002",
+      "cycle": 6
+    },
+    {
+      "completion_time": "2026-01-29T18:31:20Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 210
+    },
+    {
+      "completion_time": "2026-01-29T18:31:20Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 210
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:20Z",
+      "task_id": "Space-001",
+      "cycle": 7
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:21Z",
+      "task_id": "Space-001",
+      "cycle": 8
+    },
+    {
+      "completion_time": "2026-01-29T18:31:24Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 214
+    },
+    {
+      "completion_time": "2026-01-29T18:31:27Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 217
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:29Z",
+      "task_id": "Space-002",
+      "cycle": 15
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:29Z",
+      "task_id": "Space-001",
+      "cycle": 15
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:30Z",
+      "task_id": "Space-001",
+      "cycle": 16
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:31Z",
+      "task_id": "Space-002",
+      "cycle": 17
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:36Z",
+      "task_id": "Space-002",
+      "cycle": 22
+    },
+    {
+      "completion_time": "2026-01-29T18:31:36Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 226
+    },
+    {
+      "completion_time": "2026-01-29T18:31:36Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 226
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:50Z",
+      "task_id": "Space-001",
+      "cycle": 36
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:51Z",
+      "task_id": "Space-001",
+      "cycle": 37
+    },
+    {
+      "completion_time": "2026-01-29T18:31:56Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 245
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:56Z",
+      "task_id": "Space-001",
+      "cycle": 42
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:57Z",
+      "task_id": "Space-002",
+      "cycle": 43
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:57Z",
+      "task_id": "Space-001",
+      "cycle": 43
+    },
+    {
+      "completion_time": "2026-01-29T18:32:01Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 250
+    },
+    {
+      "completion_time": "2026-01-29T18:32:08Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 257
+    },
+    {
+      "completion_time": "2026-01-29T18:32:14Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 263
+    },
+    {
+      "completion_time": "2026-01-29T18:32:22Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 271
+    },
+    {
+      "completion_time": "2026-01-29T18:32:23Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 272
+    },
+    {
+      "completion_time": "2026-01-29T18:32:30Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 279
+    },
+    {
+      "completion_time": "2026-01-29T18:32:33Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 282
+    },
+    {
+      "completion_time": "2026-01-29T18:32:40Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 289
+    },
+    {
+      "completion_time": "2026-01-29T18:32:45Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 294
+    },
+    {
+      "completion_time": "2026-01-29T18:32:59Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 308
+    },
+    {
+      "completion_time": "2026-01-29T18:33:12Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 321
+    },
+    {
+      "completion_time": "2026-01-29T18:33:16Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 325
+    },
+    {
+      "completion_time": "2026-01-29T18:33:18Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 327
+    },
+    {
+      "completion_time": "2026-01-29T18:33:18Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 327
+    },
+    {
+      "completion_time": "2026-01-29T18:33:20Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 329
+    },
+    {
+      "completion_time": "2026-01-29T18:33:20Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 329
+    },
+    {
+      "completion_time": "2026-01-29T18:33:39Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 348
+    },
+    {
+      "completion_time": "2026-01-29T18:33:41Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 350
+    },
+    {
+      "completion_time": "2026-01-29T18:33:45Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 353
+    },
+    {
+      "completion_time": "2026-01-29T18:33:45Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 353
+    },
+    {
+      "completion_time": "2026-01-29T18:33:52Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 360
+    },
+    {
+      "completion_time": "2026-01-29T18:33:56Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 364
+    },
+    {
+      "completion_time": "2026-01-29T18:34:00Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 368
+    },
+    {
+      "completion_time": "2026-01-29T18:34:04Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 372
+    },
+    {
+      "completion_time": "2026-01-29T18:34:09Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 377
+    },
+    {
+      "completion_time": "2026-01-29T18:34:13Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 381
+    },
+    {
+      "completion_time": "2026-01-29T18:34:18Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 386
+    },
+    {
+      "completion_time": "2026-01-29T18:34:20Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 388
+    },
+    {
+      "completion_time": "2026-01-29T18:34:21Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 389
+    },
+    {
+      "completion_time": "2026-01-29T18:34:27Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 395
+    },
+    {
+      "completion_time": "2026-01-29T18:34:29Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 397
+    },
+    {
+      "completion_time": "2026-01-29T18:34:31Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 399
+    },
+    {
+      "completion_time": "2026-01-29T18:34:35Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 403
+    },
+    {
+      "completion_time": "2026-01-29T18:34:39Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 407
+    },
+    {
+      "completion_time": "2026-01-29T18:34:39Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 407
+    },
+    {
+      "completion_time": "2026-01-29T18:34:40Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 408
+    },
+    {
+      "completion_time": "2026-01-29T18:34:45Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 413
+    },
+    {
+      "completion_time": "2026-01-29T18:34:47Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 415
+    },
+    {
+      "completion_time": "2026-01-29T18:34:50Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 418
+    },
+    {
+      "completion_time": "2026-01-29T18:34:53Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 421
+    },
+    {
+      "completion_time": "2026-01-29T18:34:54Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 422
+    },
+    {
+      "completion_time": "2026-01-29T18:34:55Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 423
+    },
+    {
+      "completion_time": "2026-01-29T18:35:00Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 428
+    },
+    {
+      "completion_time": "2026-01-29T18:35:09Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 437
+    },
+    {
+      "completion_time": "2026-01-29T18:35:12Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 440
+    },
+    {
+      "completion_time": "2026-01-29T18:35:13Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 441
+    },
+    {
+      "completion_time": "2026-01-29T18:35:14Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 442
+    },
+    {
+      "completion_time": "2026-01-29T18:35:15Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 443
+    },
+    {
+      "completion_time": "2026-01-29T18:35:17Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 445
+    },
+    {
+      "completion_time": "2026-01-29T18:35:19Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 447
+    },
+    {
+      "completion_time": "2026-01-29T18:35:23Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 451
+    },
+    {
+      "completion_time": "2026-01-29T18:35:24Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 452
+    },
+    {
+      "completion_time": "2026-01-29T18:35:24Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 452
+    },
+    {
+      "completion_time": "2026-01-29T18:35:32Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 460
+    },
+    {
+      "completion_time": "2026-01-29T18:35:54Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 481
+    },
+    {
+      "completion_time": "2026-01-29T18:36:17Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 504
+    },
+    {
+      "completion_time": "2026-01-29T18:36:22Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 509
+    },
+    {
+      "completion_time": "2026-01-29T18:36:26Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 513
+    },
+    {
+      "completion_time": "2026-01-29T18:36:33Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 520
+    },
+    {
+      "completion_time": "2026-01-29T18:36:44Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 531
+    },
+    {
+      "completion_time": "2026-01-29T18:36:46Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 533
+    },
+    {
+      "completion_time": "2026-01-29T18:36:47Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 534
+    },
+    {
+      "completion_time": "2026-01-29T18:36:48Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 535
+    },
+    {
+      "completion_time": "2026-01-29T18:36:53Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 540
+    },
+    {
+      "completion_time": "2026-01-29T18:36:54Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 541
+    },
+    {
+      "completion_time": "2026-01-29T18:36:57Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 544
+    },
+    {
+      "completion_time": "2026-01-29T18:36:57Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 544
+    },
+    {
+      "completion_time": "2026-01-29T18:36:58Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 545
+    },
+    {
+      "completion_time": "2026-01-29T18:37:18Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 565
+    },
+    {
+      "completion_time": "2026-01-29T18:37:21Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 568
+    },
+    {
+      "completion_time": "2026-01-29T18:37:23Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 570
+    },
+    {
+      "completion_time": "2026-01-29T18:37:26Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 573
+    },
+    {
+      "completion_time": "2026-01-29T18:37:34Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 581
+    },
+    {
+      "completion_time": "2026-01-29T18:37:36Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 583
+    },
+    {
+      "completion_time": "2026-01-29T18:37:40Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 586
+    },
+    {
+      "completion_time": "2026-01-29T18:37:41Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 587
+    },
+    {
+      "completion_time": "2026-01-29T18:37:49Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 595
+    },
+    {
+      "completion_time": "2026-01-29T18:38:02Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 608
+    },
+    {
+      "completion_time": "2026-01-29T18:38:13Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 619
+    },
+    {
+      "completion_time": "2026-01-29T18:38:13Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 619
+    },
+    {
+      "completion_time": "2026-01-29T18:38:19Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 625
+    },
+    {
+      "completion_time": "2026-01-29T18:38:20Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 626
+    },
+    {
+      "completion_time": "2026-01-29T18:38:26Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 632
+    },
+    {
+      "completion_time": "2026-01-29T18:38:34Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 640
+    },
+    {
+      "completion_time": "2026-01-29T18:38:40Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 646
+    },
+    {
+      "completion_time": "2026-01-29T18:38:41Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 647
+    },
+    {
+      "completion_time": "2026-01-29T18:38:46Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 652
+    },
+    {
+      "completion_time": "2026-01-29T18:38:47Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 653
+    },
+    {
+      "completion_time": "2026-01-29T18:38:53Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 659
+    },
+    {
+      "completion_time": "2026-01-29T18:38:55Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 661
+    },
+    {
+      "completion_time": "2026-01-29T18:39:05Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 671
+    },
+    {
+      "completion_time": "2026-01-29T18:39:09Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 675
+    },
+    {
+      "completion_time": "2026-01-29T18:39:10Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 676
+    },
+    {
+      "completion_time": "2026-01-29T18:39:21Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 687
+    },
+    {
+      "completion_time": "2026-01-29T18:39:27Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 693
+    },
+    {
+      "completion_time": "2026-01-29T18:39:33Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 698
+    },
+    {
+      "completion_time": "2026-01-29T18:39:35Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 700
+    },
+    {
+      "completion_time": "2026-01-29T18:39:36Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 701
+    },
+    {
+      "completion_time": "2026-01-29T18:39:37Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 702
+    },
+    {
+      "completion_time": "2026-01-29T18:39:39Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 704
+    },
+    {
+      "completion_time": "2026-01-29T18:39:41Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 706
+    },
+    {
+      "completion_time": "2026-01-29T18:39:45Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 710
+    },
+    {
+      "completion_time": "2026-01-29T18:39:55Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 720
+    },
+    {
+      "completion_time": "2026-01-29T18:39:56Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 721
+    },
+    {
+      "completion_time": "2026-01-29T18:40:05Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 730
+    },
+    {
+      "completion_time": "2026-01-29T18:40:18Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 743
+    },
+    {
+      "completion_time": "2026-01-29T18:40:27Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 752
+    },
+    {
+      "completion_time": "2026-01-29T18:40:31Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 756
+    },
+    {
+      "completion_time": "2026-01-29T18:40:41Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 766
+    },
+    {
+      "completion_time": "2026-01-29T18:40:52Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 777
+    },
+    {
+      "completion_time": "2026-01-29T18:40:53Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 778
+    },
+    {
+      "completion_time": "2026-01-29T18:40:59Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 784
+    },
+    {
+      "completion_time": "2026-01-29T18:41:01Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 786
+    },
+    {
+      "completion_time": "2026-01-29T18:41:02Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 787
+    },
+    {
+      "completion_time": "2026-01-29T18:41:12Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 797
+    },
+    {
+      "completion_time": "2026-01-29T18:41:12Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 797
+    },
+    {
+      "completion_time": "2026-01-29T18:41:19Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 804
+    },
+    {
+      "completion_time": "2026-01-29T18:41:19Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 804
+    },
+    {
+      "completion_time": "2026-01-29T18:41:24Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 809
+    },
+    {
+      "completion_time": "2026-01-29T18:41:25Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 810
+    },
+    {
+      "completion_time": "2026-01-29T18:41:34Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 818
+    },
+    {
+      "completion_time": "2026-01-29T18:41:35Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 819
+    },
+    {
+      "completion_time": "2026-01-29T18:41:38Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 822
+    },
+    {
+      "completion_time": "2026-01-29T18:41:42Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 826
+    },
+    {
+      "completion_time": "2026-01-29T18:41:45Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 829
+    },
+    {
+      "completion_time": "2026-01-29T18:41:53Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 837
+    },
+    {
+      "completion_time": "2026-01-29T18:41:54Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 838
+    },
+    {
+      "completion_time": "2026-01-29T18:42:08Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 852
+    },
+    {
+      "completion_time": "2026-01-29T18:42:11Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 855
+    },
+    {
+      "completion_time": "2026-01-29T18:42:14Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 858
+    },
+    {
+      "completion_time": "2026-01-29T18:42:27Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 871
+    },
+    {
+      "completion_time": "2026-01-29T18:42:28Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 872
+    },
+    {
+      "completion_time": "2026-01-29T18:42:30Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 874
+    },
+    {
+      "completion_time": "2026-01-29T18:42:35Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 879
+    },
+    {
+      "completion_time": "2026-01-29T18:42:39Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 883
+    },
+    {
+      "completion_time": "2026-01-29T18:42:40Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 884
+    },
+    {
+      "completion_time": "2026-01-29T18:42:50Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 894
+    },
+    {
+      "completion_time": "2026-01-29T18:42:52Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 896
+    },
+    {
+      "completion_time": "2026-01-29T18:42:54Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 898
+    },
+    {
+      "completion_time": "2026-01-29T18:42:54Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 898
+    },
+    {
+      "completion_time": "2026-01-29T18:42:55Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 899
+    },
+    {
+      "completion_time": "2026-01-29T18:43:01Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 905
+    },
+    {
+      "completion_time": "2026-01-29T18:43:05Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 909
+    },
+    {
+      "completion_time": "2026-01-29T18:43:06Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 910
+    },
+    {
+      "completion_time": "2026-01-29T18:43:11Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 915
+    },
+    {
+      "completion_time": "2026-01-29T18:43:18Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 921
+    },
+    {
+      "completion_time": "2026-01-29T18:43:23Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 926
+    },
+    {
+      "completion_time": "2026-01-29T18:43:24Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 927
+    },
+    {
+      "completion_time": "2026-01-29T18:43:25Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 928
+    },
+    {
+      "completion_time": "2026-01-29T18:43:26Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 929
+    },
+    {
+      "completion_time": "2026-01-29T18:43:27Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 930
+    },
+    {
+      "completion_time": "2026-01-29T18:43:33Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 936
+    },
+    {
+      "completion_time": "2026-01-29T18:43:35Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 938
+    },
+    {
+      "completion_time": "2026-01-29T18:43:41Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 944
+    },
+    {
+      "completion_time": "2026-01-29T18:43:42Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 945
+    },
+    {
+      "completion_time": "2026-01-29T18:43:44Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 947
+    },
+    {
+      "completion_time": "2026-01-29T18:43:56Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 959
+    },
+    {
+      "completion_time": "2026-01-29T18:44:11Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 974
+    },
+    {
+      "completion_time": "2026-01-29T18:44:12Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 975
+    },
+    {
+      "completion_time": "2026-01-29T18:44:20Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 983
+    },
+    {
+      "completion_time": "2026-01-29T18:44:27Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 990
+    },
+    {
+      "completion_time": "2026-01-29T18:44:27Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 990
+    },
+    {
+      "completion_time": "2026-01-29T18:44:28Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 991
+    },
+    {
+      "completion_time": "2026-01-29T18:44:35Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 998
+    },
+    {
+      "completion_time": "2026-01-29T18:44:42Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1005
+    },
+    {
+      "completion_time": "2026-01-29T18:44:44Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1007
+    },
+    {
+      "completion_time": "2026-01-29T18:44:46Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1009
+    },
+    {
+      "completion_time": "2026-01-29T18:44:49Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1012
+    },
+    {
+      "completion_time": "2026-01-29T18:44:56Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1019
+    },
+    {
+      "completion_time": "2026-01-29T18:44:59Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1022
+    },
+    {
+      "completion_time": "2026-01-29T18:45:03Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1026
+    },
+    {
+      "completion_time": "2026-01-29T18:45:17Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1039
+    },
+    {
+      "completion_time": "2026-01-29T18:45:17Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1039
+    },
+    {
+      "completion_time": "2026-01-29T18:45:19Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1041
+    },
+    {
+      "completion_time": "2026-01-29T18:45:36Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1058
+    },
+    {
+      "completion_time": "2026-01-29T18:45:37Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1059
+    },
+    {
+      "completion_time": "2026-01-29T18:45:37Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1059
+    },
+    {
+      "completion_time": "2026-01-29T18:45:40Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1062
+    },
+    {
+      "completion_time": "2026-01-29T18:45:41Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1063
+    },
+    {
+      "completion_time": "2026-01-29T18:45:41Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1063
+    },
+    {
+      "completion_time": "2026-01-29T18:45:42Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1064
+    },
+    {
+      "completion_time": "2026-01-29T18:45:44Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1066
+    },
+    {
+      "completion_time": "2026-01-29T18:45:45Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1067
+    },
+    {
+      "completion_time": "2026-01-29T18:45:46Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1068
+    },
+    {
+      "completion_time": "2026-01-29T18:46:10Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1092
+    },
+    {
+      "completion_time": "2026-01-29T18:46:13Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1095
+    },
+    {
+      "completion_time": "2026-01-29T18:46:16Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1098
+    },
+    {
+      "completion_time": "2026-01-29T18:46:20Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1102
+    },
+    {
+      "completion_time": "2026-01-29T18:46:24Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1106
+    },
+    {
+      "completion_time": "2026-01-29T18:46:27Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1109
+    },
+    {
+      "completion_time": "2026-01-29T18:46:29Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1111
+    },
+    {
+      "completion_time": "2026-01-29T18:46:34Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1116
+    },
+    {
+      "completion_time": "2026-01-29T18:46:55Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1137
+    },
+    {
+      "completion_time": "2026-01-29T18:47:02Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1144
+    },
+    {
+      "completion_time": "2026-01-29T18:47:10Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1152
+    },
+    {
+      "completion_time": "2026-01-29T18:47:11Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1153
+    },
+    {
+      "completion_time": "2026-01-29T18:47:13Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1155
+    },
+    {
+      "completion_time": "2026-01-29T18:47:33Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1174
+    },
+    {
+      "completion_time": "2026-01-29T18:47:35Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1176
+    },
+    {
+      "completion_time": "2026-01-29T18:47:36Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1177
+    },
+    {
+      "completion_time": "2026-01-29T18:47:39Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1180
+    },
+    {
+      "completion_time": "2026-01-29T18:47:40Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1181
+    },
+    {
+      "completion_time": "2026-01-29T18:47:48Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1189
+    },
+    {
+      "completion_time": "2026-01-29T18:47:52Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1193
+    },
+    {
+      "completion_time": "2026-01-29T18:47:55Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1196
+    },
+    {
+      "completion_time": "2026-01-29T18:47:59Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1200
+    },
+    {
+      "completion_time": "2026-01-29T18:48:00Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1201
+    },
+    {
+      "completion_time": "2026-01-29T18:48:02Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1203
+    },
+    {
+      "completion_time": "2026-01-29T18:48:05Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1206
+    },
+    {
+      "completion_time": "2026-01-29T18:48:07Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1208
+    },
+    {
+      "completion_time": "2026-01-29T18:48:09Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1210
+    },
+    {
+      "completion_time": "2026-01-29T18:48:28Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1229
+    },
+    {
+      "completion_time": "2026-01-29T18:48:36Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1237
+    },
+    {
+      "completion_time": "2026-01-29T18:48:47Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1248
+    },
+    {
+      "completion_time": "2026-01-29T18:48:50Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1251
+    },
+    {
+      "completion_time": "2026-01-29T18:48:53Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1254
+    },
+    {
+      "completion_time": "2026-01-29T18:49:11Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1272
+    },
+    {
+      "completion_time": "2026-01-29T18:49:11Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1272
+    },
+    {
+      "completion_time": "2026-01-29T18:49:13Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1274
+    },
+    {
+      "completion_time": "2026-01-29T18:49:14Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1275
+    },
+    {
+      "completion_time": "2026-01-29T18:49:15Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1276
+    },
+    {
+      "completion_time": "2026-01-29T18:49:25Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1286
+    },
+    {
+      "completion_time": "2026-01-29T18:49:31Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1291
+    },
+    {
+      "completion_time": "2026-01-29T18:49:33Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1293
+    },
+    {
+      "completion_time": "2026-01-29T18:49:37Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1297
+    },
+    {
+      "completion_time": "2026-01-29T18:49:38Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1298
+    },
+    {
+      "completion_time": "2026-01-29T18:49:44Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1304
+    },
+    {
+      "completion_time": "2026-01-29T18:49:56Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1316
+    },
+    {
+      "completion_time": "2026-01-29T18:49:57Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1317
+    },
+    {
+      "completion_time": "2026-01-29T18:50:11Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1329
+    },
+    {
+      "completion_time": "2026-01-29T18:50:12Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1330
+    },
+    {
+      "completion_time": "2026-01-29T18:50:15Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1333
+    },
+    {
+      "completion_time": "2026-01-29T18:50:18Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1336
+    },
+    {
+      "completion_time": "2026-01-29T18:50:21Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1339
+    },
+    {
+      "completion_time": "2026-01-29T18:50:24Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1342
+    },
+    {
+      "completion_time": "2026-01-29T18:50:25Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1343
+    },
+    {
+      "completion_time": "2026-01-29T18:50:35Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1353
+    },
+    {
+      "completion_time": "2026-01-29T18:50:37Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1355
+    },
+    {
+      "completion_time": "2026-01-29T18:50:38Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1356
+    },
+    {
+      "completion_time": "2026-01-29T18:50:42Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1360
+    },
+    {
+      "completion_time": "2026-01-29T18:50:44Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1362
+    },
+    {
+      "completion_time": "2026-01-29T18:50:46Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1364
+    },
+    {
+      "completion_time": "2026-01-29T18:50:53Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1371
+    },
+    {
+      "completion_time": "2026-01-29T18:50:54Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1372
+    },
+    {
+      "completion_time": "2026-01-29T18:50:58Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1376
+    },
+    {
+      "completion_time": "2026-01-29T18:50:59Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1377
+    },
+    {
+      "completion_time": "2026-01-29T18:51:00Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1378
+    },
+    {
+      "completion_time": "2026-01-29T18:51:01Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1379
+    },
+    {
+      "completion_time": "2026-01-29T18:51:03Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1381
+    },
+    {
+      "completion_time": "2026-01-29T18:51:06Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1384
+    },
+    {
+      "completion_time": "2026-01-29T18:51:08Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1386
+    },
+    {
+      "completion_time": "2026-01-29T18:51:10Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1388
+    },
+    {
+      "completion_time": "2026-01-29T18:51:24Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1402
+    },
+    {
+      "completion_time": "2026-01-29T18:51:25Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1403
+    },
+    {
+      "completion_time": "2026-01-29T18:51:27Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1405
+    },
+    {
+      "completion_time": "2026-01-29T18:51:34Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1411
+    },
+    {
+      "completion_time": "2026-01-29T18:51:36Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1413
+    },
+    {
+      "completion_time": "2026-01-29T18:51:46Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1423
+    },
+    {
+      "completion_time": "2026-01-29T18:51:53Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1430
+    },
+    {
+      "completion_time": "2026-01-29T18:51:54Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1431
+    },
+    {
+      "completion_time": "2026-01-29T18:51:57Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1434
+    },
+    {
+      "completion_time": "2026-01-29T18:52:04Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1441
+    },
+    {
+      "completion_time": "2026-01-29T18:52:06Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1443
+    },
+    {
+      "completion_time": "2026-01-29T18:52:06Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1443
+    },
+    {
+      "completion_time": "2026-01-29T18:52:13Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1450
+    },
+    {
+      "completion_time": "2026-01-29T18:52:17Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1454
+    },
+    {
+      "completion_time": "2026-01-29T18:52:18Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1455
+    },
+    {
+      "completion_time": "2026-01-29T18:52:19Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1456
+    },
+    {
+      "completion_time": "2026-01-29T18:52:20Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1457
+    },
+    {
+      "completion_time": "2026-01-29T18:52:22Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1459
+    },
+    {
+      "completion_time": "2026-01-29T18:52:23Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1460
+    },
+    {
+      "completion_time": "2026-01-29T18:52:26Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1463
+    },
+    {
+      "completion_time": "2026-01-29T18:52:28Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1465
+    },
+    {
+      "completion_time": "2026-01-29T18:52:31Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1468
+    },
+    {
+      "completion_time": "2026-01-29T18:52:33Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1470
+    },
+    {
+      "completion_time": "2026-01-29T18:52:45Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1482
+    },
+    {
+      "completion_time": "2026-01-29T18:52:48Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1485
+    },
+    {
+      "completion_time": "2026-01-29T18:52:58Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1495
+    },
+    {
+      "completion_time": "2026-01-29T18:52:59Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1496
+    },
+    {
+      "completion_time": "2026-01-29T18:53:02Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1499
+    },
+    {
+      "completion_time": "2026-01-29T18:53:04Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1501
+    },
+    {
+      "completion_time": "2026-01-29T18:53:05Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1502
+    },
+    {
+      "completion_time": "2026-01-29T18:53:14Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1511
+    },
+    {
+      "completion_time": "2026-01-29T18:53:17Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1513
+    },
+    {
+      "completion_time": "2026-01-29T18:53:23Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1519
+    },
+    {
+      "completion_time": "2026-01-29T18:53:26Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1522
+    },
+    {
+      "completion_time": "2026-01-29T18:53:32Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1528
+    },
+    {
+      "completion_time": "2026-01-29T18:53:33Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1529
+    },
+    {
+      "completion_time": "2026-01-29T18:53:36Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1532
+    },
+    {
+      "completion_time": "2026-01-29T18:53:38Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1534
+    },
+    {
+      "completion_time": "2026-01-29T18:53:39Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1535
+    },
+    {
+      "completion_time": "2026-01-29T18:53:41Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1537
+    },
+    {
+      "completion_time": "2026-01-29T18:53:49Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1545
+    },
+    {
+      "completion_time": "2026-01-29T18:53:54Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1550
+    },
+    {
+      "completion_time": "2026-01-29T18:53:57Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1553
+    },
+    {
+      "completion_time": "2026-01-29T18:54:01Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1557
+    },
+    {
+      "completion_time": "2026-01-29T18:54:02Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1558
+    },
+    {
+      "completion_time": "2026-01-29T18:54:05Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1561
+    },
+    {
+      "completion_time": "2026-01-29T18:54:19Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1575
+    },
+    {
+      "completion_time": "2026-01-29T18:54:21Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1577
+    },
+    {
+      "completion_time": "2026-01-29T18:54:24Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1580
+    },
+    {
+      "completion_time": "2026-01-29T18:54:36Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1592
+    },
+    {
+      "completion_time": "2026-01-29T18:54:37Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1593
+    },
+    {
+      "completion_time": "2026-01-29T18:54:47Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1603
+    },
+    {
+      "completion_time": "2026-01-29T18:54:52Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1608
+    },
+    {
+      "completion_time": "2026-01-29T18:54:56Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1612
+    },
+    {
+      "completion_time": "2026-01-29T18:55:09Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1625
+    },
+    {
+      "completion_time": "2026-01-29T18:55:12Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1628
+    },
+    {
+      "completion_time": "2026-01-29T18:55:21Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1636
+    },
+    {
+      "completion_time": "2026-01-29T18:55:23Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1638
+    },
+    {
+      "completion_time": "2026-01-29T18:55:24Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1639
+    },
+    {
+      "completion_time": "2026-01-29T18:55:48Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1663
+    },
+    {
+      "completion_time": "2026-01-29T18:55:50Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1665
+    },
+    {
+      "completion_time": "2026-01-29T18:55:51Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1666
+    },
+    {
+      "completion_time": "2026-01-29T18:56:04Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1679
+    },
+    {
+      "completion_time": "2026-01-29T18:56:16Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1691
+    },
+    {
+      "completion_time": "2026-01-29T18:56:20Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1695
+    },
+    {
+      "completion_time": "2026-01-29T18:56:21Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1696
+    },
+    {
+      "completion_time": "2026-01-29T18:56:28Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1703
+    },
+    {
+      "completion_time": "2026-01-29T18:56:29Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1704
+    },
+    {
+      "completion_time": "2026-01-29T18:56:33Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1708
+    },
+    {
+      "completion_time": "2026-01-29T18:56:34Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1709
+    },
+    {
+      "completion_time": "2026-01-29T18:56:36Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1711
+    },
+    {
+      "completion_time": "2026-01-29T18:56:37Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1712
+    },
+    {
+      "completion_time": "2026-01-29T18:56:41Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1716
+    },
+    {
+      "completion_time": "2026-01-29T18:56:43Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1717
+    },
+    {
+      "completion_time": "2026-01-29T18:56:43Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1718
+    },
+    {
+      "completion_time": "2026-01-29T18:56:44Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1719
+    },
+    {
+      "completion_time": "2026-01-29T18:56:46Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1721
+    },
+    {
+      "completion_time": "2026-01-29T18:56:47Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1722
+    },
+    {
+      "completion_time": "2026-01-29T18:56:49Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1724
+    },
+    {
+      "completion_time": "2026-01-29T18:56:52Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1727
+    },
+    {
+      "completion_time": "2026-01-29T18:56:53Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1728
+    },
+    {
+      "completion_time": "2026-01-29T18:57:00Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1734
+    },
+    {
+      "completion_time": "2026-01-29T18:57:00Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1734
+    },
+    {
+      "completion_time": "2026-01-29T18:57:19Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1753
+    },
+    {
+      "completion_time": "2026-01-29T18:57:26Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1760
+    },
+    {
+      "completion_time": "2026-01-29T18:57:27Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1761
+    },
+    {
+      "completion_time": "2026-01-29T18:57:28Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1762
+    },
+    {
+      "completion_time": "2026-01-29T18:57:41Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1775
+    },
+    {
+      "completion_time": "2026-01-29T18:57:41Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1775
+    },
+    {
+      "completion_time": "2026-01-29T18:58:00Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1794
+    },
+    {
+      "completion_time": "2026-01-29T18:58:01Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1795
+    },
+    {
+      "completion_time": "2026-01-29T18:58:09Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1803
+    },
+    {
+      "completion_time": "2026-01-29T18:58:12Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1806
+    },
+    {
+      "completion_time": "2026-01-29T18:58:15Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1809
+    },
+    {
+      "completion_time": "2026-01-29T18:58:36Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1830
+    },
+    {
+      "completion_time": "2026-01-29T18:58:50Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1843
+    },
+    {
+      "completion_time": "2026-01-29T18:59:17Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1870
+    },
+    {
+      "completion_time": "2026-01-29T18:59:25Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1878
+    },
+    {
+      "completion_time": "2026-01-29T18:59:31Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1884
+    },
+    {
+      "completion_time": "2026-01-29T18:59:32Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1885
+    },
+    {
+      "completion_time": "2026-01-29T18:59:32Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1885
+    },
+    {
+      "completion_time": "2026-01-29T18:59:35Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1888
+    },
+    {
+      "completion_time": "2026-01-29T18:59:39Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1892
+    },
+    {
+      "completion_time": "2026-01-29T18:59:40Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1893
+    },
+    {
+      "completion_time": "2026-01-29T18:59:43Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1896
+    },
+    {
+      "completion_time": "2026-01-29T18:59:48Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1901
+    },
+    {
+      "completion_time": "2026-01-29T18:59:53Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1906
+    },
+    {
+      "completion_time": "2026-01-29T18:59:54Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1907
+    },
+    {
+      "completion_time": "2026-01-29T18:59:55Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1908
+    },
+    {
+      "completion_time": "2026-01-29T18:59:58Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1911
+    },
+    {
+      "completion_time": "2026-01-29T19:00:02Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1915
+    },
+    {
+      "completion_time": "2026-01-29T19:00:03Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1916
+    },
+    {
+      "completion_time": "2026-01-29T19:00:07Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1920
+    },
+    {
+      "completion_time": "2026-01-29T19:00:08Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1921
+    },
+    {
+      "completion_time": "2026-01-29T19:00:09Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1922
+    },
+    {
+      "completion_time": "2026-01-29T19:00:12Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1925
+    },
+    {
+      "completion_time": "2026-01-29T19:00:15Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1928
+    },
+    {
+      "completion_time": "2026-01-29T19:00:15Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1928
+    },
+    {
+      "completion_time": "2026-01-29T19:00:17Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1930
+    },
+    {
+      "completion_time": "2026-01-29T19:00:18Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1931
+    },
+    {
+      "completion_time": "2026-01-29T19:00:19Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1932
+    },
+    {
+      "completion_time": "2026-01-29T19:00:31Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1943
+    },
+    {
+      "completion_time": "2026-01-29T19:00:35Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1947
+    },
+    {
+      "completion_time": "2026-01-29T19:00:37Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1949
+    },
+    {
+      "completion_time": "2026-01-29T19:00:48Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1960
+    },
+    {
+      "completion_time": "2026-01-29T19:00:53Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1965
+    },
+    {
+      "completion_time": "2026-01-29T19:01:04Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1976
+    },
+    {
+      "completion_time": "2026-01-29T19:01:05Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1977
+    },
+    {
+      "completion_time": "2026-01-29T19:01:08Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1980
+    },
+    {
+      "completion_time": "2026-01-29T19:01:13Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1985
+    },
+    {
+      "completion_time": "2026-01-29T19:01:13Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1985
+    },
+    {
+      "completion_time": "2026-01-29T19:01:14Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1986
+    },
+    {
+      "completion_time": "2026-01-29T19:01:18Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1990
+    },
+    {
+      "completion_time": "2026-01-29T19:01:27Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1999
+    },
+    {
+      "completion_time": "2026-01-29T19:01:28Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2000
+    },
+    {
+      "completion_time": "2026-01-29T19:01:29Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2001
+    },
+    {
+      "completion_time": "2026-01-29T19:01:32Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2004
+    },
+    {
+      "completion_time": "2026-01-29T19:01:43Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2015
+    },
+    {
+      "completion_time": "2026-01-29T19:01:45Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2017
+    },
+    {
+      "completion_time": "2026-01-29T19:01:46Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2018
+    },
+    {
+      "completion_time": "2026-01-29T19:01:49Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2021
+    },
+    {
+      "completion_time": "2026-01-29T19:01:51Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2023
+    },
+    {
+      "completion_time": "2026-01-29T19:01:52Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2024
+    },
+    {
+      "completion_time": "2026-01-29T19:01:53Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2025
+    },
+    {
+      "completion_time": "2026-01-29T19:01:54Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2026
+    },
+    {
+      "completion_time": "2026-01-29T19:01:58Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2030
+    },
+    {
+      "completion_time": "2026-01-29T19:02:02Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2034
+    },
+    {
+      "completion_time": "2026-01-29T19:02:03Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2035
+    },
+    {
+      "completion_time": "2026-01-29T19:02:04Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2036
+    },
+    {
+      "completion_time": "2026-01-29T19:02:05Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2037
+    },
+    {
+      "completion_time": "2026-01-29T19:02:08Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2040
+    },
+    {
+      "completion_time": "2026-01-29T19:02:11Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2043
+    },
+    {
+      "completion_time": "2026-01-29T19:02:13Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2045
+    },
+    {
+      "completion_time": "2026-01-29T19:02:21Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2052
+    },
+    {
+      "completion_time": "2026-01-29T19:02:23Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2054
+    },
+    {
+      "completion_time": "2026-01-29T19:02:27Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2058
+    },
+    {
+      "completion_time": "2026-01-29T19:02:29Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2060
+    },
+    {
+      "completion_time": "2026-01-29T19:02:36Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2067
+    },
+    {
+      "completion_time": "2026-01-29T19:02:39Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2070
+    },
+    {
+      "completion_time": "2026-01-29T19:02:43Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2074
+    },
+    {
+      "completion_time": "2026-01-29T19:02:43Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2074
+    },
+    {
+      "completion_time": "2026-01-29T19:02:49Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2080
+    },
+    {
+      "completion_time": "2026-01-29T19:02:54Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2085
+    },
+    {
+      "completion_time": "2026-01-29T19:02:58Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2089
+    },
+    {
+      "completion_time": "2026-01-29T19:02:58Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2089
+    },
+    {
+      "completion_time": "2026-01-29T19:03:01Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2092
+    },
+    {
+      "completion_time": "2026-01-29T19:03:03Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2094
+    },
+    {
+      "completion_time": "2026-01-29T19:03:04Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2095
+    },
+    {
+      "completion_time": "2026-01-29T19:03:06Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2097
+    },
+    {
+      "completion_time": "2026-01-29T19:03:11Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2102
+    },
+    {
+      "completion_time": "2026-01-29T19:03:13Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2104
+    },
+    {
+      "completion_time": "2026-01-29T19:03:17Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2108
+    },
+    {
+      "completion_time": "2026-01-29T19:03:20Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2111
+    },
+    {
+      "completion_time": "2026-01-29T19:03:23Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2114
+    },
+    {
+      "completion_time": "2026-01-29T19:03:25Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2116
+    },
+    {
+      "completion_time": "2026-01-29T19:03:27Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2118
+    },
+    {
+      "completion_time": "2026-01-29T19:03:28Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2119
+    },
+    {
+      "completion_time": "2026-01-29T19:03:34Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2125
+    },
+    {
+      "completion_time": "2026-01-29T19:03:35Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2126
+    },
+    {
+      "completion_time": "2026-01-29T19:03:37Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2128
+    },
+    {
+      "completion_time": "2026-01-29T19:03:41Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2132
+    },
+    {
+      "completion_time": "2026-01-29T19:03:44Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2135
+    },
+    {
+      "completion_time": "2026-01-29T19:03:44Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2135
+    },
+    {
+      "completion_time": "2026-01-29T19:03:46Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2137
+    },
+    {
+      "completion_time": "2026-01-29T19:03:46Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2137
+    },
+    {
+      "completion_time": "2026-01-29T19:03:49Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2140
+    },
+    {
+      "completion_time": "2026-01-29T19:03:54Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2145
+    },
+    {
+      "completion_time": "2026-01-29T19:04:06Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2157
+    },
+    {
+      "completion_time": "2026-01-29T19:04:08Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2159
+    },
+    {
+      "completion_time": "2026-01-29T19:04:10Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2161
+    },
+    {
+      "completion_time": "2026-01-29T19:04:16Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2167
+    },
+    {
+      "completion_time": "2026-01-29T19:04:20Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2171
+    },
+    {
+      "completion_time": "2026-01-29T19:04:27Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2178
+    },
+    {
+      "completion_time": "2026-01-29T19:04:31Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2181
+    },
+    {
+      "completion_time": "2026-01-29T19:04:41Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2191
+    },
+    {
+      "completion_time": "2026-01-29T19:04:51Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2201
+    },
+    {
+      "completion_time": "2026-01-29T19:04:52Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2202
+    },
+    {
+      "completion_time": "2026-01-29T19:05:09Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2219
+    },
+    {
+      "completion_time": "2026-01-29T19:05:20Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2230
+    },
+    {
+      "completion_time": "2026-01-29T19:05:26Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2236
+    },
+    {
+      "completion_time": "2026-01-29T19:05:27Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2237
+    },
+    {
+      "completion_time": "2026-01-29T19:05:29Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2239
+    },
+    {
+      "completion_time": "2026-01-29T19:05:33Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2243
+    },
+    {
+      "completion_time": "2026-01-29T19:05:40Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2250
+    },
+    {
+      "completion_time": "2026-01-29T19:05:43Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2253
+    },
+    {
+      "completion_time": "2026-01-29T19:05:44Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2254
+    },
+    {
+      "completion_time": "2026-01-29T19:05:54Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2264
+    },
+    {
+      "completion_time": "2026-01-29T19:05:57Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2267
+    },
+    {
+      "completion_time": "2026-01-29T19:06:01Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2271
+    },
+    {
+      "completion_time": "2026-01-29T19:06:05Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2275
+    },
+    {
+      "completion_time": "2026-01-29T19:06:13Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2283
+    },
+    {
+      "completion_time": "2026-01-29T19:06:15Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2285
+    },
+    {
+      "completion_time": "2026-01-29T19:06:16Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2286
+    },
+    {
+      "completion_time": "2026-01-29T19:06:20Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2290
+    },
+    {
+      "completion_time": "2026-01-29T19:06:26Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2296
+    },
+    {
+      "completion_time": "2026-01-29T19:06:34Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2304
+    },
+    {
+      "completion_time": "2026-01-29T19:06:38Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2307
+    },
+    {
+      "completion_time": "2026-01-29T19:06:40Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2309
+    },
+    {
+      "completion_time": "2026-01-29T19:06:50Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2319
+    },
+    {
+      "completion_time": "2026-01-29T19:06:54Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2323
+    },
+    {
+      "completion_time": "2026-01-29T19:06:58Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2327
+    },
+    {
+      "completion_time": "2026-01-29T19:06:59Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2328
+    },
+    {
+      "completion_time": "2026-01-29T19:07:04Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2333
+    },
+    {
+      "completion_time": "2026-01-29T19:07:05Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2334
+    },
+    {
+      "completion_time": "2026-01-29T19:07:08Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2337
+    },
+    {
+      "completion_time": "2026-01-29T19:07:09Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2338
+    },
+    {
+      "completion_time": "2026-01-29T19:07:11Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2340
+    },
+    {
+      "completion_time": "2026-01-29T19:07:32Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2361
+    },
+    {
+      "completion_time": "2026-01-29T19:07:33Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2362
+    },
+    {
+      "completion_time": "2026-01-29T19:07:39Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2368
+    },
+    {
+      "completion_time": "2026-01-29T19:07:49Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2378
+    },
+    {
+      "completion_time": "2026-01-29T19:07:50Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2379
+    },
+    {
+      "completion_time": "2026-01-29T19:07:51Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2380
+    },
+    {
+      "completion_time": "2026-01-29T19:07:53Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2382
+    },
+    {
+      "completion_time": "2026-01-29T19:07:59Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2388
+    },
+    {
+      "completion_time": "2026-01-29T19:08:05Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2394
+    },
+    {
+      "completion_time": "2026-01-29T19:08:08Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2397
+    },
+    {
+      "completion_time": "2026-01-29T19:08:13Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2402
+    },
+    {
+      "completion_time": "2026-01-29T19:08:14Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2403
+    },
+    {
+      "completion_time": "2026-01-29T19:08:21Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2409
+    },
+    {
+      "completion_time": "2026-01-29T19:08:31Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2418
+    },
+    {
+      "completion_time": "2026-01-29T19:08:43Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2430
+    },
+    {
+      "completion_time": "2026-01-29T19:08:44Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2431
+    },
+    {
+      "completion_time": "2026-01-29T19:08:47Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2434
+    },
+    {
+      "completion_time": "2026-01-29T19:08:58Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2445
+    },
+    {
+      "completion_time": "2026-01-29T19:09:03Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2450
+    },
+    {
+      "completion_time": "2026-01-29T19:09:05Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2452
+    },
+    {
+      "completion_time": "2026-01-29T19:09:17Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2464
+    },
+    {
+      "completion_time": "2026-01-29T19:09:17Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2464
+    },
+    {
+      "completion_time": "2026-01-29T19:09:23Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2470
+    },
+    {
+      "completion_time": "2026-01-29T19:09:24Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2471
+    },
+    {
+      "completion_time": "2026-01-29T19:09:31Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2478
+    },
+    {
+      "completion_time": "2026-01-29T19:09:33Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2480
+    },
+    {
+      "completion_time": "2026-01-29T19:09:37Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2484
+    },
+    {
+      "completion_time": "2026-01-29T19:09:41Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2488
+    },
+    {
+      "completion_time": "2026-01-29T19:09:45Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2492
+    },
+    {
+      "completion_time": "2026-01-29T19:09:47Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2494
+    },
+    {
+      "completion_time": "2026-01-29T19:09:50Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2497
+    },
+    {
+      "completion_time": "2026-01-29T19:09:57Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2504
+    },
+    {
+      "completion_time": "2026-01-29T19:10:02Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2508
+    },
+    {
+      "completion_time": "2026-01-29T19:10:06Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2512
+    },
+    {
+      "completion_time": "2026-01-29T19:10:07Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2513
+    },
+    {
+      "completion_time": "2026-01-29T19:10:16Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2522
+    },
+    {
+      "completion_time": "2026-01-29T19:10:28Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2534
+    },
+    {
+      "completion_time": "2026-01-29T19:10:31Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2537
+    },
+    {
+      "completion_time": "2026-01-29T19:10:32Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2538
+    },
+    {
+      "completion_time": "2026-01-29T19:10:33Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2539
+    },
+    {
+      "completion_time": "2026-01-29T19:10:33Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2539
+    },
+    {
+      "completion_time": "2026-01-29T19:10:36Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2542
+    },
+    {
+      "completion_time": "2026-01-29T19:10:44Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2550
+    },
+    {
+      "completion_time": "2026-01-29T19:10:45Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2551
+    },
+    {
+      "completion_time": "2026-01-29T19:10:46Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2552
+    },
+    {
+      "completion_time": "2026-01-29T19:10:54Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2560
+    },
+    {
+      "completion_time": "2026-01-29T19:10:58Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2564
+    },
+    {
+      "completion_time": "2026-01-29T19:11:00Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2566
+    },
+    {
+      "completion_time": "2026-01-29T19:11:09Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2575
+    },
+    {
+      "completion_time": "2026-01-29T19:11:11Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2577
+    },
+    {
+      "completion_time": "2026-01-29T19:11:19Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2585
+    },
+    {
+      "completion_time": "2026-01-29T19:11:39Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2605
+    },
+    {
+      "completion_time": "2026-01-29T19:11:42Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2608
+    },
+    {
+      "completion_time": "2026-01-29T19:11:50Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2616
+    },
+    {
+      "completion_time": "2026-01-29T19:11:51Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2617
+    },
+    {
+      "completion_time": "2026-01-29T19:11:59Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2624
+    },
+    {
+      "completion_time": "2026-01-29T19:11:59Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2624
+    },
+    {
+      "completion_time": "2026-01-29T19:12:05Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2630
+    },
+    {
+      "completion_time": "2026-01-29T19:12:10Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2635
+    },
+    {
+      "completion_time": "2026-01-29T19:12:12Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2637
+    },
+    {
+      "completion_time": "2026-01-29T19:12:14Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2639
+    },
+    {
+      "completion_time": "2026-01-29T19:12:16Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2641
+    },
+    {
+      "completion_time": "2026-01-29T19:12:25Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2650
+    },
+    {
+      "completion_time": "2026-01-29T19:12:33Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2658
+    },
+    {
+      "completion_time": "2026-01-29T19:12:39Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2664
+    },
+    {
+      "completion_time": "2026-01-29T19:12:39Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2664
+    },
+    {
+      "completion_time": "2026-01-29T19:12:40Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2665
+    },
+    {
+      "completion_time": "2026-01-29T19:12:41Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2666
+    },
+    {
+      "completion_time": "2026-01-29T19:12:45Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2670
+    },
+    {
+      "completion_time": "2026-01-29T19:12:50Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2675
+    },
+    {
+      "completion_time": "2026-01-29T19:12:52Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2677
+    },
+    {
+      "completion_time": "2026-01-29T19:12:58Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2683
+    },
+    {
+      "completion_time": "2026-01-29T19:13:02Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2687
+    },
+    {
+      "completion_time": "2026-01-29T19:13:04Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2689
+    },
+    {
+      "completion_time": "2026-01-29T19:13:06Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2691
+    },
+    {
+      "completion_time": "2026-01-29T19:13:14Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2699
+    },
+    {
+      "completion_time": "2026-01-29T19:13:15Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2700
+    },
+    {
+      "completion_time": "2026-01-29T19:13:26Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2711
+    },
+    {
+      "completion_time": "2026-01-29T19:13:27Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2712
+    },
+    {
+      "completion_time": "2026-01-29T19:13:28Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2713
+    },
+    {
+      "completion_time": "2026-01-29T19:13:35Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2719
+    },
+    {
+      "completion_time": "2026-01-29T19:13:48Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2732
+    },
+    {
+      "completion_time": "2026-01-29T19:13:53Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2737
+    },
+    {
+      "completion_time": "2026-01-29T19:13:55Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2739
+    },
+    {
+      "completion_time": "2026-01-29T19:13:58Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2742
+    },
+    {
+      "completion_time": "2026-01-29T19:14:11Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2755
+    },
+    {
+      "completion_time": "2026-01-29T19:14:12Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2756
+    },
+    {
+      "completion_time": "2026-01-29T19:14:18Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2762
+    },
+    {
+      "completion_time": "2026-01-29T19:14:21Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2765
+    },
+    {
+      "completion_time": "2026-01-29T19:14:41Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2785
+    },
+    {
+      "completion_time": "2026-01-29T19:14:44Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2788
+    },
+    {
+      "completion_time": "2026-01-29T19:14:50Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2794
+    },
+    {
+      "completion_time": "2026-01-29T19:14:51Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2795
+    },
+    {
+      "completion_time": "2026-01-29T19:14:57Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2801
+    },
+    {
+      "completion_time": "2026-01-29T19:15:03Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2807
+    },
+    {
+      "completion_time": "2026-01-29T19:15:08Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2812
+    },
+    {
+      "completion_time": "2026-01-29T19:15:11Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2815
+    },
+    {
+      "completion_time": "2026-01-29T19:15:14Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2818
+    },
+    {
+      "completion_time": "2026-01-29T19:15:22Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2826
+    },
+    {
+      "completion_time": "2026-01-29T19:15:30Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2833
+    },
+    {
+      "completion_time": "2026-01-29T19:15:39Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2842
+    },
+    {
+      "completion_time": "2026-01-29T19:15:47Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2850
+    },
+    {
+      "completion_time": "2026-01-29T19:15:48Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2851
+    },
+    {
+      "completion_time": "2026-01-29T19:15:52Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2855
+    },
+    {
+      "completion_time": "2026-01-29T19:15:59Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2862
+    },
+    {
+      "completion_time": "2026-01-29T19:16:05Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2868
+    },
+    {
+      "completion_time": "2026-01-29T19:16:06Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2869
+    },
+    {
+      "completion_time": "2026-01-29T19:16:07Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2870
+    },
+    {
+      "completion_time": "2026-01-29T19:16:12Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2875
+    },
+    {
+      "completion_time": "2026-01-29T19:16:13Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2876
+    },
+    {
+      "completion_time": "2026-01-29T19:16:33Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2896
+    },
+    {
+      "completion_time": "2026-01-29T19:16:39Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2902
+    },
+    {
+      "completion_time": "2026-01-29T19:16:41Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2904
+    },
+    {
+      "completion_time": "2026-01-29T19:16:42Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2905
+    },
+    {
+      "completion_time": "2026-01-29T19:16:43Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2906
+    },
+    {
+      "completion_time": "2026-01-29T19:16:46Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2909
+    },
+    {
+      "completion_time": "2026-01-29T19:16:47Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2910
+    },
+    {
+      "completion_time": "2026-01-29T19:16:49Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2912
+    },
+    {
+      "completion_time": "2026-01-29T19:16:50Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2913
+    },
+    {
+      "completion_time": "2026-01-29T19:16:55Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2918
+    },
+    {
+      "completion_time": "2026-01-29T19:17:00Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2923
+    },
+    {
+      "completion_time": "2026-01-29T19:17:03Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2926
+    },
+    {
+      "completion_time": "2026-01-29T19:17:04Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2927
+    },
+    {
+      "completion_time": "2026-01-29T19:17:14Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2937
+    },
+    {
+      "completion_time": "2026-01-29T19:17:31Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2953
+    },
+    {
+      "completion_time": "2026-01-29T19:17:32Z",
+      "task_id": "Space-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2954
+    },
+    {
+      "completion_time": "2026-01-29T19:17:34Z",
+      "task_id": "Space-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2956
+    }
+  ]
+}

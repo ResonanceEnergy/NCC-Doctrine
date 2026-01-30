@@ -149,8 +149,8 @@ document.getElementById('projectsCount').textContent = projects.length;
 projects.forEach(p => {
 	const row = document.createElement('tr');
 	const progress = p.Progress || 0;
-	const progressBar = <div style='background: #333; border-radius: 4px; height: 8px; width: 100%;'><div style='background: linear-gradient(90deg, #30c3f2, #7a5cf5); height: 100%; width: %; border-radius: 4px;'></div></div>;
-	row.innerHTML = <td></td><td></td><td></td><td> %</td>;
+	const progressBar = `<div style='background: #333; border-radius: 4px; height: 8px; width: 100%;'><div style='background: linear-gradient(90deg, #30c3f2, #7a5cf5); height: 100%; width: ${progress}%; border-radius: 4px;'></div></div>`;
+	row.innerHTML = `<td>${p.ProjectName}</td><td>${p.Category}</td><td>${p.Status}</td><td>${progressBar} ${progress}%</td>`;
 	tbody.appendChild(row);
 });
 
@@ -199,7 +199,7 @@ const priorities = [
 	'Decompartmentalization Initiatives',
 	'Cross-Team Synergy Enhancement'
 ];
-document.getElementById('priorityList').innerHTML = priorities.map(p => <li></li>).join('');
+document.getElementById('priorityList').innerHTML = priorities.map(p => `<li>${p}</li>`).join('');
 
 const activities = [
 	'LFG! Protocol activated - All 1920 agents engaged',
@@ -211,7 +211,7 @@ const activities = [
 	'System health: All metrics green',
 	'Board decisions executed successfully'
 ];
-document.getElementById('activityFeed').innerHTML = activities.map(a => <li></li>).join('');
+document.getElementById('activityFeed').innerHTML = activities.map(a => `<li>${a}</li>`).join('');
 
 // Board meeting data - dynamically loaded from operations
 const boardMeetingData = {
@@ -240,9 +240,9 @@ const boardMeetingData = {
 
 // Update board meeting panel
 document.getElementById('boardMeetingStatus').textContent = boardMeetingData.status;
-document.getElementById('boardMeetingParticipants').innerHTML = boardMeetingData.participants.map(p => <span class="participant"></span>).join('');
-document.getElementById('boardMeetingAgenda').innerHTML = boardMeetingData.agenda.map(a => <li></li>).join('');
-document.getElementById('boardMeetingDecisions').innerHTML = boardMeetingData.decisions.map(d => <li></li>).join('');
+document.getElementById('boardMeetingParticipants').innerHTML = boardMeetingData.participants.map(p => `<span class="participant">${p}</span>`).join('');
+document.getElementById('boardMeetingAgenda').innerHTML = boardMeetingData.agenda.map(a => `<li>${a}</li>`).join('');
+document.getElementById('boardMeetingDecisions').innerHTML = boardMeetingData.decisions.map(d => `<li>${d}</li>`).join('');
 document.getElementById('lastBoardMeeting').textContent = boardMeetingData.lastCycle;
 document.getElementById('boardDecisions').textContent = boardMeetingData.totalDecisions;
 
@@ -256,14 +256,14 @@ function addWidget() {
 }
 
 function showSettings() {
-	const settingsInfo = 
+	const settingsInfo = `
 Dashboard Settings:
 • Auto-refresh: Enabled (30s intervals)
 • Data source: Live NCC operations
 • Theme: Dark Professional
 • LFG Protocol: Active
 • Team: Dashboard Operations Team
-	;
+`;
 	alert(settingsInfo);
 }
 
@@ -278,11 +278,11 @@ function triggerEmoji() {
 // Hammer action with LFG theme
 document.getElementById('hammerBtn').addEventListener('click', function() {
 	var overlay = document.getElementById('hammerOverlay');
-	overlay.innerHTML = 
+	overlay.innerHTML = `
 		<span style='font-size:5rem;'>🔨⚡</span>
 		<span>HAMMER ACTION ACTIVATED!</span>
 		<span style='font-size:1.5rem; margin-top: 10px;'>LFG! Protocol Engaged!</span>
-	;
+	`;
 	overlay.style.display = 'flex';
 	setTimeout(function() {
 		overlay.style.display = 'none';
@@ -319,7 +319,7 @@ setInterval(() => {
     const randomActivity = newActivities[Math.floor(Math.random() * newActivities.length)];
     const activityList = document.getElementById('activityFeed');
     const currentTime = new Date().toLocaleTimeString();
-    activityList.innerHTML = <li>[] </li> + activityList.innerHTML;
+    activityList.innerHTML = `<li>[${currentTime}] ${randomActivity}</li>` + activityList.innerHTML;
 
     // Update system health indicators with slight variations
     const currentEfficiency = document.getElementById('opEfficiency').textContent.replace('%', '');
@@ -327,10 +327,5 @@ setInterval(() => {
     document.getElementById('opEfficiency').textContent = Math.round(newEfficiency) + '%';
 
 }, 15000); // 15 seconds - fastest optimal stable rate
-	</script>
-	setTimeout(function() {
-		 overlay.style.display = 'none';
-	}, 1200);
-});
 	</script>
 	</body></html>

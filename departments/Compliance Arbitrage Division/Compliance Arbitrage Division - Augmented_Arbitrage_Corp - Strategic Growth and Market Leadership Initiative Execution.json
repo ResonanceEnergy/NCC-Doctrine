@@ -27,13 +27,6 @@
   ],
   "DirectiveName": "Compliance Arbitrage Division - Augmented_Arbitrage_Corp - Strategic Growth and Market Leadership Initiative Execution",
   "CreatedBy": "CEO_Augmented_Arbitrage_Corp",
-  "AssignedAgents": [
-    {
-      "AssignedDate": "2026-01-29T21:15:18",
-      "TaskName": "C - Capability Assessment and Planning Execution",
-      "AgentName": "C"
-    }
-  ],
   "DepartmentName": "Compliance Arbitrage Division",
   "CompletionRoadmap": {
     "Week9_24": {
@@ -97,5 +90,13 @@
     "StrategicAlignment": "Directive aligns with company mission and enterprise objectives"
   },
   "CompanyDirective": "Augmented_Arbitrage_Corp - Strategic Growth and Market Leadership Initiative",
-  "StatedGoal": "Execute Compliance Arbitrage Division responsibilities within Augmented_Arbitrage_Corp - Strategic Growth and Market Leadership Initiative framework"
+  "StatedGoal": "Execute Compliance Arbitrage Division responsibilities within Augmented_Arbitrage_Corp - Strategic Growth and Market Leadership Initiative framework",
+  "AssignedAgents": [
+    {
+      "TaskName": "C - Capability Assessment and Planning Execution",
+      "AssignedDate": "2026-01-30T02:07:27",
+      "AgentName": "C"
+    }
+  ],
+  "LastUpdated": "2026-01-30T02:07:27"
 }

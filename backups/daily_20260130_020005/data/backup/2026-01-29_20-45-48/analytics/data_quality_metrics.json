@@ -1,0 +1,35 @@
+{
+  "ValidationResults": [],
+  "Metrics": {
+    "Timeliness": {
+      "MaxAgeHours": 24,
+      "UpdateFrequency": "Daily"
+    },
+    "Consistency": {
+      "FormatCompliance": 100,
+      "SchemaAdherence": 100
+    },
+    "Completeness": {
+      "NullValueThreshold": 5,
+      "RequiredFields": 95
+    },
+    "Integrity": {
+      "DuplicateRate": 0,
+      "ReferentialIntegrity": 100
+    },
+    "Accuracy": {
+      "ValidationPassRate": 98,
+      "ErrorTolerance": 2
+    }
+  },
+  "Timestamp": "2026-01-29T20:41:27.8389478-07:00",
+  "CurrentScores": {
+    "Timeliness": 100,
+    "Consistency": 100,
+    "Completeness": 100,
+    "Integrity": 100,
+    "Accuracy": 100
+  },
+  "LastAssessment": "2026-01-29T20:41:27.8391497-07:00",
+  "Division": "TestDivision"
+}

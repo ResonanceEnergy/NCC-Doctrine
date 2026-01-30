@@ -1,0 +1,48 @@
+# BBIC Reddit Configuration - Expanded Intelligence Network
+auth:
+  client_id: "${REDDIT_CLIENT_ID}"
+  client_secret: "${REDDIT_CLIENT_SECRET}"
+  user_agent: "bbic-intake/1.0 by ResonanceEnergy"
+intake:
+  subreddits:
+    # NCC Corporate Intelligence
+    - "NCC"
+    - "NathanCommandCorp"
+    - "CorporateStrategy"
+    - "BusinessStrategy"
+    - "Entrepreneur"
+    - "startups"
+    - "business"
+    - "economics"
+
+    # Subsidiary Intelligence
+    - "AugmentedArbitrage"
+    - "FaradayFinancial"
+    - "LudwigLaw"
+    - "Biotech"
+    - "ResonanceEnergy"
+    - "QuantumComputing"
+    - "Robotics"
+    - "SpaceX"  # Space Operations related
+    - "AI"
+    - "MachineLearning"
+
+    # Industry Intelligence
+    - "investing"
+    - "stocks"
+    - "wallstreetbets"
+    - "cryptocurrency"
+    - "Bitcoin"
+    - "finance"
+    - "technology"
+    - "cybersecurity"
+    - "energy"
+    - "renewableenergy"
+    - "microhydro"
+    - "infrastructure"
+    - "manufacturing"
+
+  limit_per_subreddit: 10  # Reduced from 20 to manage API limits
+  time_filter: "day"       # Last 24 hours for timely intelligence
+storage:
+  root: "data/bbic/reddit"

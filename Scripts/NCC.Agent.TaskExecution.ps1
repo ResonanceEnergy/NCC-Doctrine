@@ -60,6 +60,14 @@ function Get-AgentTasks {
 function Invoke-TaskExecution {
     param([object]$Task)
     
+    # Ensure task object has required properties
+    $requiredProperties = @('Progress', 'Deliverables', 'StartedDate', 'CompletedDate', 'ActualDuration', 'LastUpdated')
+    foreach ($prop in $requiredProperties) {
+        if (-not (Get-Member -InputObject $Task -Name $prop -MemberType Properties)) {
+            Add-Member -InputObject $Task -MemberType NoteProperty -Name $prop -Value $null
+        }
+    }
+    
     Write-Host "`n🚀 Executing task: $($Task.TaskName)" -ForegroundColor Cyan
     Write-Host "Goal: $($Task.ClearGoal)" -ForegroundColor White
     

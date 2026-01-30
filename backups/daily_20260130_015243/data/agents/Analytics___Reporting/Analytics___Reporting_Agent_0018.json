@@ -1,0 +1,49 @@
+﻿{
+    "CreatedDate":  "2026-01-29T22:29:24Z",
+    "ReportingHierarchy":  {
+                               "DivisionHead":  "",
+                               "DirectSupervisor":  "Analytics___Reporting_Division_Head",
+                               "AZ_PRIME_Liaison":  "",
+                               "ExecutiveSponsor":  ""
+                           },
+    "Supervisor":  "Analytics___Reporting_Division_Head",
+    "SecurityClearance":  "SECRET",
+    "AgentId":  "Analytics___Reporting_Agent_0018",
+    "AuthorizedSystems":  [
+
+                          ],
+    "Status":  "Active",
+    "AgentName":  "Analytics \u0026 Reporting Agent 18",
+    "Division":  "Analytics \u0026 Reporting",
+    "Role":  "Department Operations",
+    "CommunicationChannels":  [
+
+                              ],
+    "PerformanceMetrics":  {
+                               "MandateCompliance":  0,
+                               "ErrorCount":  0,
+                               "TasksCompleted":  0,
+                               "KPIScore":  0,
+                               "ResponseTime":  0,
+                               "LastEvaluation":  "2026-01-29",
+                               "SuccessRate":  0
+                           },
+    "LastUpdate":  "2026-01-29T22:33:44Z",
+    "Mandate":  "Departmental agent supporting Analytics \u0026 Reporting operations and contributing to team objectives.",
+    "KeyResponsibilities":  [
+                                "Execute assigned operational tasks",
+                                "Maintain quality and efficiency standards",
+                                "Collaborate with team members",
+                                "Support departmental initiatives",
+                                "Continuous learning and improvement"
+                            ],
+    "KPIs":  [
+                 "Task completion rate \u003e90%",
+                 "Quality compliance \u003e95%",
+                 "Team collaboration score \u003e80%",
+                 "Efficiency improvement \u003e10%",
+                 "Professional development \u003e80% completion"
+             ],
+    "AuthorityLevel":  "DEPARTMENTAL",
+    "ReportingTo":  "DEPARTMENT_HEAD"
+}

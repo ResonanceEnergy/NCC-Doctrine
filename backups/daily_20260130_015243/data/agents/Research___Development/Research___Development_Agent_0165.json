@@ -1,0 +1,49 @@
+﻿{
+    "CreatedDate":  "2026-01-29T22:29:18Z",
+    "ReportingHierarchy":  {
+                               "DivisionHead":  "",
+                               "DirectSupervisor":  "Research___Development_Division_Head",
+                               "AZ_PRIME_Liaison":  "",
+                               "ExecutiveSponsor":  ""
+                           },
+    "Supervisor":  "Research___Development_Division_Head",
+    "SecurityClearance":  "SECRET",
+    "AgentId":  "Research___Development_Agent_0165",
+    "AuthorizedSystems":  [
+
+                          ],
+    "Status":  "Active",
+    "AgentName":  "Research \u0026 Development Agent 165",
+    "Division":  "Research \u0026 Development",
+    "Role":  "Department Operations",
+    "CommunicationChannels":  [
+
+                              ],
+    "PerformanceMetrics":  {
+                               "MandateCompliance":  0,
+                               "ErrorCount":  0,
+                               "TasksCompleted":  0,
+                               "KPIScore":  0,
+                               "ResponseTime":  0,
+                               "LastEvaluation":  "2026-01-29",
+                               "SuccessRate":  0
+                           },
+    "LastUpdate":  "2026-01-29T22:34:11Z",
+    "Mandate":  "Departmental agent supporting Research \u0026 Development operations and contributing to team objectives.",
+    "KeyResponsibilities":  [
+                                "Execute assigned operational tasks",
+                                "Maintain quality and efficiency standards",
+                                "Collaborate with team members",
+                                "Support departmental initiatives",
+                                "Continuous learning and improvement"
+                            ],
+    "KPIs":  [
+                 "Task completion rate \u003e90%",
+                 "Quality compliance \u003e95%",
+                 "Team collaboration score \u003e80%",
+                 "Efficiency improvement \u003e10%",
+                 "Professional development \u003e80% completion"
+             ],
+    "AuthorityLevel":  "DEPARTMENTAL",
+    "ReportingTo":  "DEPARTMENT_HEAD"
+}

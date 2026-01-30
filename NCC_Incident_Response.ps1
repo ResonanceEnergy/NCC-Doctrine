@@ -563,30 +563,38 @@ class NCCIncidentAnalysisEngine {
         return $rootCauses[$incident.DetectionRule] ?? "Unknown - requires further investigation"
     }
 
-    [hashtable]AssessImpact([hashtable]$incident) {
-        $impact = @{
-            Severity = $incident.Severity
-            Scope = "Single system"  # Would be determined by analysis
-            DataExposure = "None"    # Would be determined by investigation
-            FinancialImpact = "$0"   # Would be calculated
-            OperationalImpact = "Minimal"  # Would be assessed
-            ReputationImpact = "Low"  # Would be evaluated
-        }
-
-        # Adjust based on severity
-        switch ($incident.Severity) {
-            "Critical" {
-                $impact.OperationalImpact = "Severe"
-                $impact.ReputationImpact = "High"
-            }
-            "High" {
-                $impact.OperationalImpact = "Moderate"
-                $impact.ReputationImpact = "Medium"
-            }
-        }
-
-        return $impact
-    }
+    # Temporarily commented out due to PowerShell parser issues with class methods
+    # [PSCustomObject]AssessImpact([hashtable]$incident) {
+    #     $impact = [PSCustomObject]@{
+    #         Severity = $incident.Severity
+    #         Scope = "Single system"
+    #         DataExposure = "None"
+    #         FinancialImpact = "$0"
+    #         OperationalImpact = "Minimal"
+    #         ReputationImpact = "Low"
+    #     }
+    #
+    #     # Adjust based on severity
+    #     switch ($incident.Severity) {
+    #         "Critical" {
+    #             $impact.OperationalImpact = "Severe"
+    #             $impact.ReputationImpact = "High"
+    #             $impact.FinancialImpact = "$100,000+"
+    #         }
+    #         "High" {
+    #             $impact.OperationalImpact = "Moderate"
+    #             $impact.ReputationImpact = "Medium"
+    #             $impact.FinancialImpact = "$10,000-$100,000"
+    #         }
+    #         "Medium" {
+    #             $impact.OperationalImpact = "Low"
+    #             $impact.ReputationImpact = "Low"
+    #             $impact.FinancialImpact = "$1,000-$10,000"
+    #         }
+    #     }
+    #
+    #     return $impact
+    # }
 
     [hashtable]AnalyzeTimeline([hashtable]$incident) {
         $timeline = @{

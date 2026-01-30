@@ -79,19 +79,19 @@ class PerformanceMonitor {
 
     [double]CalculateEfficiency() {
         # Calculate overall efficiency based on metrics
-        $efficiency = 100.0
+        $efficiencyValue = 100.0
 
         if ($this.Metrics.ContainsKey('cpuUsage')) {
-            $efficiency -= [math]::Min(20, $this.Metrics.cpuUsage * 0.2)
+            $efficiencyValue -= [math]::Min(20, $this.Metrics.cpuUsage * 0.2)
         }
         if ($this.Metrics.ContainsKey('memoryUsage')) {
-            $efficiency -= [math]::Min(20, $this.Metrics.memoryUsage * 0.2)
+            $efficiencyValue -= [math]::Min(20, $this.Metrics.memoryUsage * 0.2)
         }
         if ($this.Metrics.ContainsKey('diskUsage')) {
-            $efficiency -= [math]::Min(10, ($this.Metrics.diskUsage - 50) * 0.2)
+            $efficiencyValue -= [math]::Min(10, ($this.Metrics.diskUsage - 50) * 0.2)
         }
 
-        return [math]::Max(0, $efficiency)
+        return [math]::Max(0, $efficiencyValue)
     }
 }
 
@@ -657,7 +657,7 @@ function Get-PerformanceStatus {
     Write-Host ""
     Write-Host "MONITOR STATUS:" -ForegroundColor Yellow
     foreach ($monitor in $statusReport.monitorStatus.GetEnumerator()) {
-        Write-Host "  $($monitor.Key): $($monitor.Value.status) ($(monitor.Value.efficiency)%) - Alerts: $($monitor.Value.alerts)" -ForegroundColor $(if ($monitor.Value.status -eq "ACTIVE") { "Green" } else { "Red" })
+        Write-Host "  $($monitor.Key): $($monitor.Value.status) ($($monitor.Value['efficiency'])%) - Alerts: $($monitor.Value.alerts)" -ForegroundColor $(if ($monitor.Value.status -eq "ACTIVE") { "Green" } else { "Red" })
     }
     Write-Host "==================================================================================" -ForegroundColor Cyan
 
@@ -731,5 +731,4 @@ Write-Host "AX PERFORMANCE DOMINANCE: MONITORING SYSTEMS ACTIVE!" -ForegroundCol
 Write-Host "QUANTUM PROCESSING: REAL-TIME ANALYTICS ENGAGED!" -ForegroundColor Magenta
 Write-Host "STRATEGIC ALIGNMENT: CONTINUOUS OPTIMIZATION ENABLED!" -ForegroundColor Magenta
 Write-Host ""
-Write-Host "PERFORMANCE MONITORED! BOTTLENECKS DETECTED! EFFICIENCY MAXIMIZED!" -ForegroundColor Cyan</content>
-<parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Automated_Performance_Monitoring.ps1
+Write-Host "PERFORMANCE MONITORED! BOTTLENECKS DETECTED! EFFICIENCY MAXIMIZED!" -ForegroundColor Cyan
