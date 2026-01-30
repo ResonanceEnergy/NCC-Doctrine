@@ -1,0 +1,129 @@
+﻿{
+    "OverallScore":  93.5,
+    "Timestamp":  {
+                      "value":  "\/Date(1769748585393)\/",
+                      "DisplayHint":  2,
+                      "DateTime":  "January 29, 2026 9:49:45 PM"
+                  },
+    "AgentID":  "SYSTEM",
+    "Status":  "WARNING",
+    "Division":  "AUDIT",
+    "Framework":  "GDPR",
+    "Recommendations":  [
+                            {
+                                "Priority":  "MEDIUM",
+                                "Rule":  "DataSubjectRights",
+                                "Recommendation":  "Address findings in DataSubjectRights: Most rights implemented, some automation needed"
+                            }
+                        ],
+    "Checks":  [
+                   {
+                       "Timestamp":  {
+                                         "value":  "\/Date(1769748585448)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 9:49:45 PM"
+                                     },
+                       "RuleName":  "ConsentManagement",
+                       "Findings":  [
+                                        "Consent management system in place"
+                                    ],
+                       "Status":  "COMPLIANT",
+                       "Evidence":  [
+                                        "Consent records",
+                                        "User preference storage"
+                                    ],
+                       "Score":  92,
+                       "Description":  "Consent Management"
+                   },
+                   {
+                       "Timestamp":  {
+                                         "value":  "\/Date(1769748585465)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 9:49:45 PM"
+                                     },
+                       "RuleName":  "DataBreachNotification",
+                       "Findings":  [
+                                        "Breach notification procedures established"
+                                    ],
+                       "Status":  "COMPLIANT",
+                       "Evidence":  [
+                                        "Incident response plan",
+                                        "Notification templates"
+                                    ],
+                       "Score":  96,
+                       "Description":  "Data Breach Notification"
+                   },
+                   {
+                       "Timestamp":  {
+                                         "value":  "\/Date(1769748585467)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 9:49:45 PM"
+                                     },
+                       "RuleName":  "DataProtection",
+                       "Findings":  [
+                                        "All data protection principles implemented"
+                                    ],
+                       "Status":  "COMPLIANT",
+                       "Evidence":  [
+                                        "Data processing logs",
+                                        "Privacy policy documentation"
+                                    ],
+                       "Score":  95,
+                       "Description":  "Data Protection Principles"
+                   },
+                   {
+                       "Timestamp":  {
+                                         "value":  "\/Date(1769748585469)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 9:49:45 PM"
+                                     },
+                       "RuleName":  "PrivacyByDesign",
+                       "Findings":  [
+                                        "Privacy considerations integrated into design"
+                                    ],
+                       "Status":  "COMPLIANT",
+                       "Evidence":  [
+                                        "System architecture documents",
+                                        "Privacy impact assessments"
+                                    ],
+                       "Score":  90,
+                       "Description":  "Privacy by Design and Default"
+                   },
+                   {
+                       "Timestamp":  {
+                                         "value":  "\/Date(1769748585472)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 9:49:45 PM"
+                                     },
+                       "RuleName":  "DataSubjectRights",
+                       "Findings":  [
+                                        "Most rights implemented, some automation needed"
+                                    ],
+                       "Status":  "WARNING",
+                       "Evidence":  [
+                                        "Rights request procedures",
+                                        "Data access controls"
+                                    ],
+                       "Score":  88,
+                       "Description":  "Data Subject Rights"
+                   },
+                   {
+                       "Timestamp":  {
+                                         "value":  "\/Date(1769748585475)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 9:49:45 PM"
+                                     },
+                       "RuleName":  "DataProtectionOfficer",
+                       "Findings":  [
+                                        "DPO appointed and operational"
+                                    ],
+                       "Status":  "COMPLIANT",
+                       "Evidence":  [
+                                        "DPO appointment letter",
+                                        "Contact information"
+                                    ],
+                       "Score":  100,
+                       "Description":  "Data Protection Officer"
+                   }
+               ]
+}

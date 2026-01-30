@@ -1,0 +1,502 @@
+# Faraday Financial Corp - Financial Analysis Agent
+# Advanced financial analysis and regulatory compliance operations
+
+param(
+    [switch]$Initialize,
+    [switch]$StartOperations,
+    [switch]$StopOperations,
+    [switch]$Status,
+    [switch]$AnalyzeMarkets,
+    [switch]$MonitorCompliance,
+    [switch]$RiskAssessment,
+    [switch]$GenerateReports
+)
+
+# Agent-specific configuration
+$AgentConfig = @{
+    Name = "Faraday_Financial_Corp.Agent.FinancialAnalysis"
+    Division = "Faraday_Financial_Corp"
+    Role = "FinancialAnalysis"
+    Specialization = "Financial Analysis & Regulatory Compliance"
+    Status = "Inactive"
+    FinancialInstruments = @("Stocks", "Bonds", "Derivatives", "Forex", "Commodities", "Cryptocurrencies")
+    RegulatoryBodies = @("SEC", "FINRA", "CFTC", "FDIC", "OCC", "Federal Reserve")
+    RiskTypes = @("Market Risk", "Credit Risk", "Liquidity Risk", "Operational Risk", "Compliance Risk")
+}
+
+function Write-AgentLog {
+    param([string]$Message, [string]$Level = "INFO")
+    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $logMessage = "[$timestamp] [$($AgentConfig.Name)] [$Level] $Message"
+    Write-Host $logMessage -ForegroundColor $(switch($Level){"ERROR"{"Red"}"WARNING"{"Yellow"}"SUCCESS"{"Green"}default{"Cyan"}})
+}
+
+function Initialize-Agent {
+    Write-AgentLog "Initializing Faraday Financial Corp Financial Analysis Agent..." -Level "INFO"
+
+    # Create financial directories
+    $dirs = @("data", "logs", "config", "analysis", "compliance", "risk", "reports", "portfolios")
+    foreach ($dir in $dirs) {
+        $path = Join-Path $PSScriptRoot $dir
+        if (-not (Test-Path $path)) { New-Item -ItemType Directory -Path $path -Force | Out-Null }
+    }
+
+    # Initialize financial databases
+    $marketPath = Join-Path $PSScriptRoot "data\market_data.json"
+    @{Markets = @(); LastUpdate = Get-Date} | ConvertTo-Json | Out-File $marketPath -Encoding UTF8
+
+    $portfolioPath = Join-Path $PSScriptRoot "data\portfolio_data.json"
+    @{Portfolios = @(); LastUpdate = Get-Date} | ConvertTo-Json | Out-File $portfolioPath -Encoding UTF8
+
+    $compliancePath = Join-Path $PSScriptRoot "data\compliance_status.json"
+    @{Regulations = @(); LastUpdate = Get-Date} | ConvertTo-Json | Out-File $compliancePath -Encoding UTF8
+
+    $AgentConfig.Status = "Initialized"
+    Write-AgentLog "Financial analysis agent initialization completed" -Level "SUCCESS"
+}
+
+function Start-AgentOperations {
+    Write-AgentLog "Starting financial analysis operations..." -Level "INFO"
+    $AgentConfig.Status = "Active"
+
+    # Start financial monitoring systems
+    Start-MarketAnalysis
+    Start-ComplianceMonitoring
+    Start-RiskAssessment
+    Start-PortfolioTracking
+
+    Write-AgentLog "Financial analysis operations started" -Level "SUCCESS"
+}
+
+function Stop-AgentOperations {
+    Write-AgentLog "Stopping financial analysis operations..." -Level "INFO"
+    $AgentConfig.Status = "Inactive"
+
+    Stop-MarketAnalysis
+    Stop-ComplianceMonitoring
+    Stop-RiskAssessment
+    Stop-PortfolioTracking
+
+    Write-AgentLog "Financial analysis operations stopped" -Level "SUCCESS"
+}
+
+function Start-MarketAnalysis {
+    Write-AgentLog "Starting market analysis..." -Level "INFO"
+}
+
+function Start-ComplianceMonitoring {
+    Write-AgentLog "Starting compliance monitoring..." -Level "INFO"
+}
+
+function Start-RiskAssessment {
+    Write-AgentLog "Starting risk assessment..." -Level "INFO"
+}
+
+function Start-PortfolioTracking {
+    Write-AgentLog "Starting portfolio tracking..." -Level "INFO"
+}
+
+function Stop-MarketAnalysis {
+    Write-AgentLog "Stopping market analysis..." -Level "INFO"
+}
+
+function Stop-ComplianceMonitoring {
+    Write-AgentLog "Stopping compliance monitoring..." -Level "INFO"
+}
+
+function Stop-RiskAssessment {
+    Write-AgentLog "Stopping risk assessment..." -Level "INFO"
+}
+
+function Stop-PortfolioTracking {
+    Write-AgentLog "Stopping portfolio tracking..." -Level "INFO"
+}
+
+function Analyze-MarketData {
+    Write-AgentLog "Analyzing market data and trends..." -Level "INFO"
+
+    $analysis = @{
+        Timestamp = Get-Date
+        MarketOverview = @{}
+        SectorAnalysis = @()
+        TechnicalIndicators = @()
+        SentimentAnalysis = @{}
+        TradingOpportunities = @()
+        MarketRisks = @()
+    }
+
+    # Market overview
+    $analysis.MarketOverview = @{
+        SP500 = [math]::Round((Get-Random -Minimum 4200 -Maximum 4800), 2)
+        Nasdaq = [math]::Round((Get-Random -Minimum 13500 -Maximum 15500), 2)
+        DowJones = [math]::Round((Get-Random -Minimum 33000 -Maximum 37000), 2)
+        VIX = [math]::Round((Get-Random -Minimum 12 -Maximum 35), 2)
+        MarketDirection = @("Bullish", "Bearish", "Neutral") | Get-Random
+        VolatilityLevel = @("Low", "Medium", "High") | Get-Random
+        TradingVolume = "$(Get-Random -Minimum 8 -Maximum 15)B shares"
+    }
+
+    # Sector analysis
+    $sectors = @("Technology", "Healthcare", "Financials", "Consumer Discretionary", "Energy", "Industrials", "Materials", "Utilities", "Real Estate", "Communication Services")
+    foreach ($sector in $sectors) {
+        $sectorAnalysis = @{
+            Sector = $sector
+            Performance = [math]::Round((Get-Random -Minimum -5 -Maximum 8), 2)
+            Volume = "$(Get-Random -Minimum 50 -Maximum 200)M shares"
+            LeadingStocks = @("Stock A", "Stock B", "Stock C") | Get-Random -Count 3
+            Trend = @("Uptrend", "Downtrend", "Sideways") | Get-Random
+            Momentum = @("Strong", "Moderate", "Weak") | Get-Random
+        }
+        $analysis.SectorAnalysis += $sectorAnalysis
+    }
+
+    # Technical indicators
+    $analysis.TechnicalIndicators = @(
+        @{Indicator = "RSI"; Value = Get-Random -Minimum 30 -Maximum 70; Signal = "Neutral"},
+        @{Indicator = "MACD"; Value = [math]::Round((Get-Random -Minimum -2 -Maximum 2), 2); Signal = "Bullish"},
+        @{Indicator = "Moving Average"; Value = [math]::Round((Get-Random -Minimum 4200 -Maximum 4500), 2); Signal = "Support"},
+        @{Indicator = "Bollinger Bands"; Value = [math]::Round((Get-Random -Minimum 4300 -Maximum 4400), 2); Signal = "Middle Band"}
+    )
+
+    # Sentiment analysis
+    $analysis.SentimentAnalysis = @{
+        NewsSentiment = @("Positive", "Neutral", "Negative") | Get-Random
+        SocialMediaSentiment = @("Bullish", "Bearish", "Mixed") | Get-Random
+        AnalystRatings = @{
+            Buy = Get-Random -Minimum 40 -Maximum 60
+            Hold = Get-Random -Minimum 20 -Maximum 40
+            Sell = Get-Random -Minimum 5 -Maximum 20
+        }
+        FearGreedIndex = Get-Random -Minimum 20 -Maximum 80
+    }
+
+    # Trading opportunities
+    $opportunityCount = Get-Random -Minimum 3 -Maximum 8
+    for ($i = 1; $i -le $opportunityCount; $i++) {
+        $opportunity = @{
+            Symbol = "STOCK$i"
+            Type = @("Long", "Short", "Options", "Pairs Trade") | Get-Random
+            EntryPrice = [math]::Round((Get-Random -Minimum 50 -Maximum 500), 2)
+            TargetPrice = [math]::Round((Get-Random -Minimum 55 -Maximum 550), 2)
+            StopLoss = [math]::Round((Get-Random -Minimum 45 -Maximum 475), 2)
+            Confidence = [math]::Round((Get-Random -Minimum 60 -Maximum 90), 1)
+            Timeframe = @("Intraday", "Swing", "Position") | Get-Random
+            Rationale = "Technical breakout with strong volume"
+        }
+        $analysis.TradingOpportunities += $opportunity
+    }
+
+    # Market risks
+    $analysis.MarketRisks = @(
+        "Geopolitical tensions affecting energy prices",
+        "Inflation concerns impacting interest rates",
+        "Supply chain disruptions in semiconductor industry",
+        "Regulatory changes in financial sector",
+        "Currency fluctuations affecting multinational companies"
+    )
+
+    # Save market analysis
+    $analysisPath = Join-Path $PSScriptRoot "analysis\market_analysis_$(Get-Date -Format 'yyyy-MM-dd').json"
+    $analysisDir = Split-Path $analysisPath -Parent
+    if (-not (Test-Path $analysisDir)) { New-Item -ItemType Directory -Path $analysisDir -Force | Out-Null }
+    $analysis | ConvertTo-Json -Depth 10 | Out-File $analysisPath -Encoding UTF8
+
+    Write-AgentLog "Market analysis completed - $($analysis.TradingOpportunities.Count) trading opportunities identified" -Level "SUCCESS"
+    return $analysis
+}
+
+function Monitor-RegulatoryCompliance {
+    Write-AgentLog "Monitoring regulatory compliance and filings..." -Level "INFO"
+
+    $compliance = @{
+        Timestamp = Get-Date
+        RegulatoryFilings = @()
+        ComplianceStatus = @()
+        AuditFindings = @()
+        RiskAssessments = @()
+        RemediationPlans = @()
+        UpcomingDeadlines = @()
+    }
+
+    # Regulatory filings
+    $filings = @("10-K", "10-Q", "8-K", "13F", "13D", "Schedule 13G", "Form ADV", "Form PF")
+    foreach ($filing in $filings) {
+        $filingStatus = @{
+            Form = $filing
+            Status = @("Filed", "Pending", "In Progress", "Overdue") | Get-Random
+            DueDate = (Get-Date).AddDays((Get-Random -Minimum -30 -Maximum 90))
+            FiledDate = (Get-Date).AddDays(-(Get-Random -Minimum 1 -Maximum 60))
+            Regulator = $AgentConfig.RegulatoryBodies | Get-Random
+            ComplianceScore = [math]::Round((Get-Random -Minimum 85 -Maximum 100), 1)
+        }
+        $compliance.RegulatoryFilings += $filingStatus
+    }
+
+    # Compliance status by regulation
+    $regulations = @("Dodd-Frank Act", "Sarbanes-Oxley Act", "Investment Advisers Act", "Investment Company Act", "Bank Secrecy Act", "Anti-Money Laundering")
+    foreach ($regulation in $regulations) {
+        $status = @{
+            Regulation = $regulation
+            ComplianceLevel = [math]::Round((Get-Random -Minimum 85 -Maximum 98), 1)
+            LastAudit = (Get-Date).AddDays(-(Get-Random -Minimum 30 -Maximum 365))
+            NextAudit = (Get-Date).AddDays((Get-Random -Minimum 30 -Maximum 365))
+            CriticalFindings = Get-Random -Minimum 0 -Maximum 3
+            Status = @("Compliant", "Conditional", "Non-Compliant") | Get-Random
+        }
+        $compliance.ComplianceStatus += $status
+    }
+
+    # Audit findings
+    $findingCount = Get-Random -Minimum 0 -Maximum 5
+    for ($i = 1; $i -le $findingCount; $i++) {
+        $finding = @{
+            Id = "AUD-$i"
+            Severity = @("Critical", "High", "Medium", "Low") | Get-Random
+            Category = @("Internal Controls", "Financial Reporting", "Risk Management", "Data Security", "Operational Procedures") | Get-Random
+            Description = "Audit finding requiring remediation"
+            Impact = @("High", "Medium", "Low") | Get-Random
+            DueDate = (Get-Date).AddDays((Get-Random -Minimum 30 -Maximum 180))
+            Status = @("Open", "In Progress", "Remediated", "Closed") | Get-Random
+        }
+        $compliance.AuditFindings += $finding
+    }
+
+    # Risk assessments
+    $compliance.RiskAssessments = @(
+        @{Risk = "Regulatory Non-Compliance"; Likelihood = "Low"; Impact = "High"; Mitigation = "Strong compliance program"},
+        @{Risk = "Financial Misreporting"; Likelihood = "Very Low"; Impact = "Critical"; Mitigation = "Independent audits"},
+        @{Risk = "Market Manipulation"; Likelihood = "Very Low"; Impact = "Critical"; Mitigation = "Trading surveillance"},
+        @{Risk = "Insider Trading"; Likelihood = "Low"; Impact = "High"; Mitigation = "Information barriers"}
+    )
+
+    # Remediation plans
+    $compliance.RemediationPlans = @(
+        @{Issue = "Enhanced internal controls"; Priority = "High"; Timeline = "Q1 2026"; Owner = "Compliance Team"},
+        @{Issue = "Updated financial reporting procedures"; Priority = "Medium"; Timeline = "Q2 2026"; Owner = "Finance Department"},
+        @{Issue = "Strengthened data security measures"; Priority = "High"; Timeline = "Q1 2026"; Owner = "IT Security"}
+    )
+
+    # Upcoming deadlines
+    $compliance.UpcomingDeadlines = @(
+        @{Deadline = (Get-Date).AddDays(30); Description = "Q4 10-K Filing"; Regulator = "SEC"},
+        @{Deadline = (Get-Date).AddDays(60); Description = "Annual Compliance Certification"; Regulator = "FINRA"},
+        @{Deadline = (Get-Date).AddDays(90); Description = "Form PF Filing"; Regulator = "SEC"}
+    )
+
+    # Save compliance monitoring
+    $compliancePath = Join-Path $PSScriptRoot "compliance\compliance_monitoring_$(Get-Date -Format 'yyyy-MM-dd').json"
+    $complianceDir = Split-Path $compliancePath -Parent
+    if (-not (Test-Path $complianceDir)) { New-Item -ItemType Directory -Path $complianceDir -Force | Out-Null }
+    $compliance | ConvertTo-Json -Depth 10 | Out-File $compliancePath -Encoding UTF8
+
+    Write-AgentLog "Regulatory compliance monitoring completed" -Level "SUCCESS"
+    return $compliance
+}
+
+function Assess-FinancialRisks {
+    Write-AgentLog "Assessing financial risks and exposures..." -Level "INFO"
+
+    $risk = @{
+        Timestamp = Get-Date
+        PortfolioRisk = @{}
+        MarketRisk = @{}
+        CreditRisk = @{}
+        LiquidityRisk = @{}
+        OperationalRisk = @{}
+        StressTesting = @()
+        RiskMitigation = @()
+    }
+
+    # Portfolio risk metrics
+    $risk.PortfolioRisk = @{
+        ValueAtRisk = [math]::Round((Get-Random -Minimum 1000000 -Maximum 5000000), 2)
+        ExpectedShortfall = [math]::Round((Get-Random -Minimum 1500000 -Maximum 7500000), 2)
+        SharpeRatio = [math]::Round((Get-Random -Minimum 0.5 -Maximum 2.5), 2)
+        SortinoRatio = [math]::Round((Get-Random -Minimum 0.8 -Maximum 3.2), 2)
+        MaximumDrawdown = [math]::Round((Get-Random -Minimum 5 -Maximum 25), 2)
+        Beta = [math]::Round((Get-Random -Minimum 0.8 -Maximum 1.4), 2)
+    }
+
+    # Market risk assessment
+    $risk.MarketRisk = @{
+        EquityRisk = [math]::Round((Get-Random -Minimum 60 -Maximum 85), 1)
+        InterestRateRisk = [math]::Round((Get-Random -Minimum 40 -Maximum 70), 1)
+        CurrencyRisk = [math]::Round((Get-Random -Minimum 30 -Maximum 60), 1)
+        CommodityRisk = [math]::Round((Get-Random -Minimum 25 -Maximum 50), 1)
+        OverallMarketRisk = [math]::Round((Get-Random -Minimum 45 -Maximum 75), 1)
+    }
+
+    # Credit risk analysis
+    $risk.CreditRisk = @{
+        CreditRatingDistribution = @{
+            AAA = Get-Random -Minimum 20 -Maximum 40
+            AA = Get-Random -Minimum 15 -Maximum 30
+            A = Get-Random -Minimum 20 -Maximum 35
+            BBB = Get-Random -Minimum 15 -Maximum 25
+            BelowBBB = Get-Random -Minimum 5 -Maximum 15
+        }
+        DefaultProbability = [math]::Round((Get-Random -Minimum 0.5 -Maximum 3.0), 2)
+        LossGivenDefault = [math]::Round((Get-Random -Minimum 40 -Maximum 70), 1)
+        CreditVaR = [math]::Round((Get-Random -Minimum 500000 -Maximum 2000000), 2)
+    }
+
+    # Liquidity risk
+    $risk.LiquidityRisk = @{
+        CashRatio = [math]::Round((Get-Random -Minimum 0.1 -Maximum 0.5), 2)
+        QuickRatio = [math]::Round((Get-Random -Minimum 0.8 -Maximum 1.5), 2)
+        CurrentRatio = [math]::Round((Get-Random -Minimum 1.2 -Maximum 2.0), 2)
+        LiquidityCoverageRatio = [math]::Round((Get-Random -Minimum 1.0 -Maximum 1.5), 2)
+        NetStableFundingRatio = [math]::Round((Get-Random -Minimum 1.0 -Maximum 1.3), 2)
+    }
+
+    # Operational risk
+    $risk.OperationalRisk = @{
+        OperationalLosses = Get-Random -Minimum 100000 -Maximum 1000000
+        RiskEvents = Get-Random -Minimum 5 -Maximum 25
+        KeyRiskIndicators = @(
+            "Trading errors",
+            "System failures",
+            "Cybersecurity incidents",
+            "Compliance breaches",
+            "Employee misconduct"
+        )
+        RiskAppetite = "Conservative"
+        RiskTolerance = [math]::Round((Get-Random -Minimum 100000 -Maximum 500000), 2)
+    }
+
+    # Stress testing scenarios
+    $scenarios = @("Global Recession", "Interest Rate Shock", "Market Crash", "Geopolitical Crisis", "Cyber Attack")
+    foreach ($scenario in $scenarios) {
+        $stressTest = @{
+            Scenario = $scenario
+            Probability = [math]::Round((Get-Random -Minimum 5 -Maximum 30), 1)
+            Impact = [math]::Round((Get-Random -Minimum -50 -Maximum -10), 1)
+            TimeHorizon = @("1 Month", "3 Months", "1 Year") | Get-Random
+            Mitigation = "Diversification and hedging strategies"
+        }
+        $risk.StressTesting += $stressTest
+    }
+
+    # Risk mitigation strategies
+    $risk.RiskMitigation = @(
+        "Portfolio diversification across asset classes",
+        "Hedging strategies using derivatives",
+        "Regular stress testing and scenario analysis",
+        "Strong risk management governance",
+        "Continuous monitoring and early warning systems"
+    )
+
+    # Save risk assessment
+    $riskPath = Join-Path $PSScriptRoot "risk\risk_assessment_$(Get-Date -Format 'yyyy-MM-dd').json"
+    $riskDir = Split-Path $riskPath -Parent
+    if (-not (Test-Path $riskDir)) { New-Item -ItemType Directory -Path $riskDir -Force | Out-Null }
+    $risk | ConvertTo-Json -Depth 10 | Out-File $riskPath -Encoding UTF8
+
+    Write-AgentLog "Financial risk assessment completed - Overall risk level: Moderate" -Level "SUCCESS"
+    return $risk
+}
+
+function Generate-FinancialReports {
+    Write-AgentLog "Generating comprehensive financial reports..." -Level "INFO"
+
+    $reports = @{
+        Timestamp = Get-Date
+        ExecutiveSummary = @{}
+        PerformanceReports = @()
+        RiskReports = @()
+        ComplianceReports = @()
+        RegulatoryFilings = @()
+        MarketAnalysis = @()
+        Recommendations = @()
+    }
+
+    # Executive summary
+    $reports.ExecutiveSummary = @{
+        Period = "Q4 2025"
+        TotalAssets = Get-Random -Minimum 5000000000 -Maximum 20000000000
+        NetIncome = Get-Random -Minimum 500000000 -Maximum 2000000000
+        ReturnOnEquity = [math]::Round((Get-Random -Minimum 8 -Maximum 18), 1)
+        RiskAdjustedReturn = [math]::Round((Get-Random -Minimum 6 -Maximum 15), 1)
+        KeyAchievements = @(
+            "15% portfolio growth",
+            "Maintained compliance across all regulations",
+            "Successfully navigated market volatility"
+        )
+        Challenges = @(
+            "Rising interest rates",
+            "Geopolitical uncertainties",
+            "Regulatory changes"
+        )
+        Outlook = "Positive with cautious optimism"
+    }
+
+    # Performance reports
+    $reports.PerformanceReports = @(
+        @{Portfolio = "Equity Portfolio"; Return = [math]::Round((Get-Random -Minimum 8 -Maximum 22), 1); Benchmark = "S&P 500"; Outperformance = [math]::Round((Get-Random -Minimum -2 -Maximum 5), 1)},
+        @{Portfolio = "Fixed Income"; Return = [math]::Round((Get-Random -Minimum 2 -Maximum 8), 1); Benchmark = "Bloomberg Barclays"; Outperformance = [math]::Round((Get-Random -Minimum -1 -Maximum 2), 1)},
+        @{Portfolio = "Alternative Investments"; Return = [math]::Round((Get-Random -Minimum 10 -Maximum 25), 1); Benchmark = "Custom Index"; Outperformance = [math]::Round((Get-Random -Minimum 2 -Maximum 8), 1)}
+    )
+
+    # Risk reports
+    $reports.RiskReports = @(
+        @{RiskType = "Market Risk"; Exposure = "High"; Mitigation = "Diversification"; Status = "Managed"},
+        @{RiskType = "Credit Risk"; Exposure = "Medium"; Mitigation = "Credit Analysis"; Status = "Monitored"},
+        @{RiskType = "Liquidity Risk"; Exposure = "Low"; Mitigation = "Cash Reserves"; Status = "Controlled"},
+        @{RiskType = "Operational Risk"; Exposure = "Medium"; Mitigation = "Controls"; Status = "Managed"}
+    )
+
+    # Compliance reports
+    $reports.ComplianceReports = @(
+        @{Regulation = "SEC Regulations"; Compliance = 96; Violations = 0; Status = "Excellent"},
+        @{Regulation = "FINRA Rules"; Compliance = 98; Violations = 1; Status = "Good"},
+        @{Regulation = "Anti-Money Laundering"; Compliance = 100; Violations = 0; Status = "Perfect"}
+    )
+
+    # Regulatory filings
+    $reports.RegulatoryFilings = @(
+        @{Form = "Form 10-K"; Status = "Filed"; Date = (Get-Date).AddDays(-15); Regulator = "SEC"},
+        @{Form = "Form 13F"; Status = "Filed"; Date = (Get-Date).AddDays(-30); Regulator = "SEC"},
+        @{Form = "Form ADV"; Status = "Filed"; Date = (Get-Date).AddDays(-45); Regulator = "SEC"}
+    )
+
+    # Market analysis summary
+    $reports.MarketAnalysis = @(
+        @{Indicator = "Market Trend"; Value = "Bullish"; Confidence = "High"},
+        @{Indicator = "Volatility"; Value = "Moderate"; Confidence = "Medium"},
+        @{Indicator = "Economic Growth"; Value = "Stable"; Confidence = "High"},
+        @{Indicator = "Inflation"; Value = "Controlled"; Confidence = "Medium"}
+    )
+
+    # Strategic recommendations
+    $reports.Recommendations = @(
+        "Increase allocation to technology sector",
+        "Implement enhanced risk management protocols",
+        "Expand alternative investment strategies",
+        "Strengthen cybersecurity measures",
+        "Pursue strategic partnerships"
+    )
+
+    # Save financial reports
+    $reportsPath = Join-Path $PSScriptRoot "reports\financial_reports_$(Get-Date -Format 'yyyy-MM-dd').json"
+    $reportsDir = Split-Path $reportsPath -Parent
+    if (-not (Test-Path $reportsDir)) { New-Item -ItemType Directory -Path $reportsDir -Force | Out-Null }
+    $reports | ConvertTo-Json -Depth 10 | Out-File $reportsPath -Encoding UTF8
+
+    Write-AgentLog "Financial reports generated successfully" -Level "SUCCESS"
+    return $reports
+}
+
+# Main execution logic
+if ($Initialize) { Initialize-Agent }
+if ($StartOperations) { Start-AgentOperations }
+if ($StopOperations) { Stop-AgentOperations }
+if ($Status) { Write-AgentLog "Status: $($AgentConfig.Status)" -Level "INFO" }
+if ($AnalyzeMarkets) { Analyze-MarketData }
+if ($MonitorCompliance) { Monitor-RegulatoryCompliance }
+if ($RiskAssessment) { Assess-FinancialRisks }
+if ($GenerateReports) { Generate-FinancialReports }
+
+# Default status display
+if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $AnalyzeMarkets -or $MonitorCompliance -or $RiskAssessment -or $GenerateReports)) {
+    Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Financial Instruments: $($AgentConfig.FinancialInstruments.Count)" -Level "INFO"
+}

@@ -1,0 +1,239 @@
+# MMC Configuration File
+# NATHAN COMMAND CORP TOP SECRET
+# Version: 1.0.0 | Date: 2026-01-29
+
+# Mammoth Media Enterprise Configuration
+Mammoth_Media:
+  Mission: "Create a media engine that amplifies ideas, stories, and products with massive reach, strategic clarity, and long-term intellectual property value"
+  Positioning: "A24 + Vox Media + Skunkworks R&D hybrid for modern creator-industrial ecosystem"
+  Activation_Command: "LFG!"
+
+  Three_Pillars:
+    Narrative_Production:
+      Outputs:
+        - "Video series, micro-documentaries, shorts"
+        - "Podcasts & spoken-word formats"
+        - "Editorial essays & visual explainers"
+        - "Technical breakdowns for engineering ventures"
+      Systems:
+        - "Story pipeline"
+        - "Topic discovery engine"
+        - "Editorial calendar"
+        - "Modular production workflow"
+
+    Brand_IP_Development:
+      Outputs:
+        - "IP universes"
+        - "Visual identities"
+        - "Product lines"
+        - "Merch, NFTs, digital assets"
+      Systems:
+        - "IP registry"
+        - "Brand kit generator"
+        - "Lore development cycles"
+        - "Visual design templates"
+
+    Platform_Distribution:
+      Outputs:
+        - "Social media ecosystems"
+        - "Website hubs"
+        - "Newsletter"
+        - "Community portals"
+        - "Subscription tiers"
+      Systems:
+        - "Omnichannel content map"
+        - "Growth analytics"
+        - "Automation layers"
+        - "SEO + discovery framework"
+
+  Enterprise_Integrations:
+    BBAI:
+      Content_Focus: "AI automation, business systems, technical tutorials"
+      Distribution: "Developer communities, tech platforms"
+      Avatar_Role: "Conversational AI assistants"
+
+    Micro_Hydro:
+      Content_Focus: "Engineering explainers, prototype showcases, R&D docs"
+      Distribution: "Industry publications, renewable energy networks"
+      Avatar_Role: "Technical presentation specialists"
+
+    Financial_Freedom:
+      Content_Focus: "Wealth frameworks, educational courses, money systems"
+      Distribution: "Personal finance platforms, wealth communities"
+      Avatar_Role: "Financial advisory and coaching"
+
+    Nates_Command_Center:
+      Content_Focus: "Dashboard tutorials, strategic overviews, command docs"
+      Distribution: "Internal enterprise networks"
+      Avatar_Role: "Command interface assistants"
+
+    Grip_Ripp_HDD:
+      Content_Focus: "Field demonstrations, equipment breakdowns, safety training"
+      Distribution: "Construction industry networks"
+      Avatar_Role: "Safety and training specialists"
+
+    Future_Fibre_Optics:
+      Content_Focus: "Network infrastructure docs, connectivity explainers"
+      Distribution: "Telecom sector publications"
+      Avatar_Role: "Technical consultation experts"
+
+    Off_Grid_Technologies:
+      Content_Focus: "Product testing, system walkthroughs, DIY guides"
+      Distribution: "Preparedness and resilience communities"
+      Avatar_Role: "Instructional and training avatars"
+
+    Butterfield_Acres:
+      Content_Focus: "Farming tutorials, homestead content, land management"
+      Distribution: "Agricultural and lifestyle communities"
+      Avatar_Role: "Community engagement specialists"
+
+  Build_Blueprint:
+    Phase_1_Days_1_30:
+      Week_1: "Identity & Architecture - Mission, positioning, brand kit, flagship pillars"
+      Week_2: "Infrastructure - Pipeline, channels, templates, asset systems"
+      Week_3: "Content Lab - Workflows, calendars, style guides, team training"
+      Week_4: "Launch - Content release, distribution activation, audience capture"
+
+    Phase_2_Days_31_60: "Media Engine Optimization - Scale production, optimize algorithms, enhance analytics"
+
+    Phase_3_Days_61_90: "Ecosystem Expansion - Network launches, avatar deployments, monetization models"
+
+# HeyGen Live Configuration
+HeyGen:
+  API_Endpoint: "https://api.heygen.com/v1"
+  Upload_Timeout: 300
+  Processing_Timeout: 600
+  Quality_Target: 99
+  Latency_Target: 100
+
+# ElevenLabs Voice Configuration (MMC Bible Standards)
+ElevenLabs:
+  API_Endpoint: "https://api.elevenlabs.io/v1"
+  Primary_Voices:
+    - Adam
+    - Antoni
+  Voice_Settings:
+    Stability: 70
+    Clarity_Similarity: 85
+    Style_Exaggeration: "LOW"
+    Boosted_Model: true
+  Audio_Processing:
+    Low_Shelf_Boost: "+2dB at 120-180Hz"
+    Compression: "3:1 ratio, slow attack, medium release"
+    High_Roll_Off: "12kHz"
+    Saturation: "Light warmth"
+
+# AI Brain Configuration (GPT-Class)
+AI_Brain:
+  Provider: "Azure_OpenAI"  # Options: Azure_OpenAI, OpenAI, Claude
+  Model: "GPT-4"  # or GPT-3.5-turbo
+  Parameters:
+    Temperature: 0.4  # Range: 0.4-0.6 for controlled consistency
+    Top_P: 0.9
+    Max_Tokens: 1000
+    Safety_Filters: "NCC_Compliant"
+
+# AZ PRIME System Prompt (Locked)
+AZ_PRIME_Prompt: |
+  You are AZ PRIME.
+
+  You speak with calm authority, strategic clarity, and mature confidence.
+  Your tone is measured, deliberate, and composed.
+  You never rush, never over-explain, and never use filler language.
+
+  You favor short declarative sentences.
+  You make statements, not speeches.
+  You pause between ideas.
+
+  You do not seek approval.
+  You do not ask unnecessary questions.
+  You do not mirror emotional intensity.
+
+  Your presence is large, quiet, and controlled.
+
+# Voice Doctrine Rules
+Voice_Doctrine:
+  Speech_Construction:
+    - Short declarative sentences
+    - No filler language or hesitation markers
+    - Clear, intentional pauses between statements
+    - Measured pacing with controlled cadence
+  Emotional_Profile:
+    - Calm authority and confidence
+    - Strategic clarity and precision
+    - Unemotional decision-making
+    - Quiet dominance without volume
+  Communication_Standards:
+    - Declarative statements over questions
+    - Strategic pauses for emphasis
+    - No enthusiasm spikes or emotional variation
+    - Consistent, inevitable presence
+
+# Operational Modes
+Modes:
+  Scripted_Authority:
+    Input: "Pre-written text"
+    Voice: "ElevenLabs synthesis"
+    Animation: "HeyGen avatar"
+    Use_Case: "Announcements, doctrine delivery, formal presentations"
+  Live_Founder_Control:
+    Input: "Real-time microphone"
+    Processing: "Direct lip-sync"
+    Interaction: "Human-controlled"
+    Use_Case: "Presentations, negotiations, command communications"
+  Autonomous_AZ_PRIME:
+    Engine: "AI-driven conversation"
+    Responses: "Self-directed"
+    Availability: "Persistent"
+    Use_Case: "Website presence, continuous oversight, automated advisors"
+
+# Performance Targets
+Performance:
+  Realism_Score: 99
+  Response_Latency: 100  # milliseconds
+  Voice_Quality: "Broadcast-professional"
+  Uptime: 99.9
+
+# Security Configuration
+Security:
+  Encryption: "AES-256"
+  Protocol: "Security_10_Directive"
+  Anti_Tampering: true
+  Audit_Logging: true
+  Emergency_Lockdown: true
+
+# Deployment Targets
+Deployment:
+  Web:
+    Platform: "Embedded interface"
+    URL_Pattern: "https://ncc-mediacorp.com/avatar/{AvatarId}"
+  ZOOM:
+    Integration: "Meeting participant"
+    Controls: "Host-only"
+  OBS:
+    Streaming: "Live production"
+    Overlay: "Customizable"
+  Autonomous:
+    Persistence: "24/7"
+    Monitoring: "Real-time"
+    Fallback: "Backup systems"
+
+# Quality Assurance
+QA:
+  Creative_Review_Board: "Weekly"
+  Technical_Audits: "Monthly"
+  Performance_Testing: "Continuous"
+  User_Feedback: "Integrated"
+  Security_Validation: "Regular"
+
+# Emergency Protocols
+Emergency:
+  System_Failure:
+    Failover: "Automatic"
+    Notification: "5 minutes"
+    Recovery: "Post-incident analysis"
+  Security_Incident:
+    Isolation: "Immediate"
+    Activation: "Cybersecurity Command Center"
+    Verification: "Content integrity"
+    Lockdown: "As required"

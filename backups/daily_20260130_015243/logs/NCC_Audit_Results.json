@@ -1,0 +1,279 @@
+{
+  "Departments": {
+    "Technology Arbitrage Division": {
+      "HasData": true,
+      "HasScripts": false,
+      "HasDirective": true,
+      "HasAgents": true
+    },
+    "Portfolio Management Division": {
+      "HasData": true,
+      "HasScripts": false,
+      "HasDirective": true,
+      "HasAgents": true
+    },
+    "Risk Management Division": {
+      "HasData": true,
+      "HasScripts": false,
+      "HasDirective": true,
+      "HasAgents": true
+    },
+    "Structural Arbitrage Division": {
+      "HasData": true,
+      "HasScripts": false,
+      "HasDirective": true,
+      "HasAgents": true
+    },
+    "Quantitative Arbitrage Division": {
+      "HasData": true,
+      "HasScripts": false,
+      "HasDirective": true,
+      "HasAgents": true
+    },
+    "Compliance Arbitrage Division": {
+      "HasData": true,
+      "HasScripts": false,
+      "HasDirective": true,
+      "HasAgents": true
+    },
+    "Statistical Arbitrage Division": {
+      "HasData": true,
+      "HasScripts": false,
+      "HasDirective": true,
+      "HasAgents": true
+    },
+    "Technology Infrastructure Division": {
+      "HasData": true,
+      "HasScripts": false,
+      "HasDirective": true,
+      "HasAgents": true
+    },
+    "Quantitative Research Division": {
+      "HasData": true,
+      "HasScripts": false,
+      "HasDirective": true,
+      "HasAgents": true
+    }
+  },
+  "PerformanceIssues": [
+    "Unnecessary sleep in: AAC.AgentTracking.ps1",
+    "Unnecessary sleep in: AAC.InformationSystem.ps1",
+    "Unnecessary sleep in: AAC.InvestmentSimulation.ps1",
+    "Unnecessary sleep in: ASG.ps1",
+    "Unnecessary sleep in: AZ.AX.Efficiency.Optimization.ps1",
+    "Unnecessary sleep in: AZ.FullActivation.ps1",
+    "Unnecessary sleep in: EX.InnovationAgent.ps1",
+    "Unnecessary sleep in: LFG.Activate.ps1",
+    "Unnecessary sleep in: LFG.Activate.v2.ps1",
+    "Unnecessary sleep in: LFG.SuperLauncher.ps1",
+    "Unnecessary sleep in: Master_Brain_Storage_Analysis.ps1",
+    "Unnecessary sleep in: MCC.Activate.ps1",
+    "Unnecessary sleep in: NCC.Agent.TaskExecution.ps1",
+    "Unnecessary sleep in: NCC.ContinuousOperations.ps1",
+    "Unnecessary sleep in: NCC.FrameworkProtocols.ps1",
+    "Unnecessary sleep in: NCC.Optimized.ContinuousOperations.ps1",
+    "Unnecessary sleep in: NCC.System.Audit.Optimization.ps1",
+    "Blocking console output in: NCC.System.Audit.Optimization.ps1",
+    "Unnecessary sleep in: RES.FullSteamActivation.ps1"
+  ],
+  "Companies": {
+    ".github": {
+      "HasData": true,
+      "HasDoctrine": true,
+      "HasScripts": true,
+      "HasDashboard": false,
+      "HasAgents": true
+    },
+    "cycle_data": {
+      "HasData": false,
+      "HasDoctrine": false,
+      "HasScripts": false,
+      "HasDashboard": false,
+      "HasAgents": false
+    },
+    "Augmented_Arbitrage_Corp": {
+      "HasData": true,
+      "HasDoctrine": true,
+      "HasScripts": true,
+      "HasDashboard": false,
+      "HasAgents": true
+    },
+    "Ludwig_Law_Corp": {
+      "HasData": true,
+      "HasDoctrine": true,
+      "HasScripts": true,
+      "HasDashboard": false,
+      "HasAgents": true
+    },
+    "agents": {
+      "HasData": true,
+      "HasDoctrine": true,
+      "HasScripts": true,
+      "HasDashboard": false,
+      "HasAgents": true
+    },
+    "GlobalTalentAcquisition": {
+      "HasData": true,
+      "HasDoctrine": true,
+      "HasScripts": true,
+      "HasDashboard": false,
+      "HasAgents": true
+    },
+    "BiotechCorporation": {
+      "HasData": true,
+      "HasDoctrine": true,
+      "HasScripts": true,
+      "HasDashboard": false,
+      "HasAgents": true
+    },
+    "AugmentedArbitrageCorp": {
+      "HasData": true,
+      "HasDoctrine": true,
+      "HasScripts": true,
+      "HasDashboard": false,
+      "HasAgents": true
+    },
+    "BigBrainIntelligence": {
+      "HasData": true,
+      "HasDoctrine": true,
+      "HasScripts": true,
+      "HasDashboard": false,
+      "HasAgents": true
+    },
+    "Faraday_Financial_Corp": {
+      "HasData": true,
+      "HasDoctrine": true,
+      "HasScripts": true,
+      "HasDashboard": false,
+      "HasAgents": true
+    }
+  },
+  "StructureIssues": [
+    "Missing Agents folder: cycle_data",
+    "Missing data folder: cycle_data",
+    "Missing Doctrine folder: cycle_data",
+    "Missing agent folder: CompArb_Agent_001",
+    "Missing agent folder: PortMgmt_Agent_001",
+    "Missing agent folder: PortMgmt_Agent_002",
+    "Missing agent folder: PortMgmt_Agent_003",
+    "Missing agent folder: QuantArb_Agent_001",
+    "Missing agent folder: QuantArb_Agent_002",
+    "Missing agent folder: QuantArb_Agent_003",
+    "Missing agent folder: QuantRes_Agent_001",
+    "Missing agent folder: QuantRes_Agent_002",
+    "Missing agent folder: RiskMgmt_Agent_001",
+    "Missing agent folder: RiskMgmt_Agent_002",
+    "Missing agent folder: StatArb_Agent_001",
+    "Missing agent folder: StatArb_Agent_002",
+    "Missing agent folder: StatArb_Agent_003",
+    "Missing agent folder: StructArb_Agent_001",
+    "Missing agent folder: StructArb_Agent_002",
+    "Missing agent folder: TechArb_Agent_001",
+    "Missing agent folder: TechArb_Agent_002",
+    "Missing agent folder: TechInfra_Agent_001",
+    "Missing agent folder: TechInfra_Agent_002"
+  ],
+  "Agents": {
+    "QuantArb_Agent_001": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "QuantRes_Agent_002": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "QuantRes_Agent_001": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "StatArb_Agent_002": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "PortMgmt_Agent_002": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "CompArb_Agent_001": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "QuantArb_Agent_003": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "RiskMgmt_Agent_002": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "TechInfra_Agent_002": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "StructArb_Agent_002": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "StatArb_Agent_001": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "TechInfra_Agent_001": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "TechArb_Agent_002": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "PortMgmt_Agent_003": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "StructArb_Agent_001": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "PortMgmt_Agent_001": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "StatArb_Agent_003": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "TechArb_Agent_001": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "QuantArb_Agent_002": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    },
+    "RiskMgmt_Agent_001": {
+      "HasFolder": false,
+      "HasData": false,
+      "HasTasks": false
+    }
+  },
+  "MissingFiles": []
+}

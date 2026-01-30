@@ -1,0 +1,20 @@
+{
+  "specialization": "SpaceOperationsDivision Monitoring Operations",
+  "contact": "agent@spaceoperationsdivision.ncc",
+  "name": "SpaceOperationsDivision.Agent.Monitoring",
+  "version": "2.0.0",
+  "role": "Monitoring",
+  "capabilities": [
+    "Health Monitoring",
+    "Performance Tracking",
+    "Alert Management",
+    "System Diagnostics",
+    "Reporting"
+  ],
+  "description": "Performance tracking and alerting for Space exploration and operations",
+  "dependencies": [],
+  "status": "Active",
+  "lastModified": "2026-01-29",
+  "created": "2026-01-29",
+  "division": "SpaceOperationsDivision"
+}

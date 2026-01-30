@@ -1,0 +1,39 @@
+{
+  "FailedBackups": 0,
+  "SuccessfulBackups": 17,
+  "Timestamp": "20260129_123418",
+  "TotalItems": 17,
+  "Config": {
+    "RealTimeBackup": true,
+    "Authority": "AZ PRIME COMMAND",
+    "Version": "3.0.0",
+    "Verification": true,
+    "Encryption": "AES-256",
+    "Redundancy": 3,
+    "Compression": "LZMA2",
+    "RetentionPolicy": "90 days",
+    "EmergencyProtocols": true,
+    "Classification": "TOP SECRET"
+  },
+  "Paths": {
+    "Templates": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\Templates",
+    "Scripts": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\scripts",
+    "AXLauncher": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\AX\\Launcher_Distribution",
+    "Playbooks": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\Playbooks",
+    "AXSystems": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\AX",
+    "Config": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\config",
+    "Dashboard": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\Dashboard",
+    "Data": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\data",
+    "Database": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\database",
+    "Logs": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\logs",
+    "Doctrine": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\Doctrine",
+    "Public": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\public",
+    "CoreSystems": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine",
+    "Operations": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\operations",
+    "Agents": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\agents",
+    "Companies": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\companies",
+    "Intelligence": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\intelligence"
+  },
+  "BackupRoot": "c:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\backups\\full_backup_20260129_123418",
+  "BackupType": "FULL"
+}

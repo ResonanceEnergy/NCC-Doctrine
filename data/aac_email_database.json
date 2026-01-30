@@ -1,0 +1,24 @@
+{
+    "messages":  [
+
+                 ],
+    "security_log":  [
+
+                     ],
+    "conversations":  [
+
+                      ],
+    "alerts":  [
+
+               ],
+    "last_updated":  "2026-01-29T17:39:59.5268104-07:00",
+    "system_status":  {
+                          "total_messages":  0,
+                          "last_backup":  null,
+                          "unread_messages":  0,
+                          "active_conversations":  0
+                      },
+    "user_inboxes":  {
+
+                     }
+}

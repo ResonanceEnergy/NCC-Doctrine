@@ -1,0 +1,56 @@
+{
+    "performance_metrics":  {
+                                "message_throughput":  0,
+                                "error_rate":  0,
+                                "uptime_percentage":  0,
+                                "data_processing_rate":  0
+                            },
+    "system_components":  {
+                              "EmailSystem":  {
+                                                  "last_start":  "2026-01-29T17:40:05.2261120-07:00",
+                                                  "script":  "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\Scripts\\AAC.EmailSystem.ps1",
+                                                  "description":  "Internal messaging and alerts",
+                                                  "status":  "Running",
+                                                  "process_id":  5006
+                                              },
+                              "HRDatabase":  {
+                                                 "last_start":  "2026-01-29T17:40:05.2381736-07:00",
+                                                 "script":  "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\Scripts\\AAC.HRDatabase.ps1",
+                                                 "description":  "Employee records and HR management",
+                                                 "status":  "Running",
+                                                 "process_id":  1224
+                                             },
+                              "AgentTracking":  {
+                                                    "last_start":  "2026-01-29T17:40:05.2446485-07:00",
+                                                    "script":  "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\Scripts\\AAC.AgentTracking.ps1",
+                                                    "description":  "Real-time agent monitoring and communication",
+                                                    "status":  "Running",
+                                                    "process_id":  7168
+                                                },
+                              "InformationSystem":  {
+                                                        "last_start":  "2026-01-29T17:40:05.2496464-07:00",
+                                                        "script":  "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\Scripts\\AAC.InformationSystem.ps1",
+                                                        "description":  "Data ingestion, analysis, and distribution",
+                                                        "status":  "Running",
+                                                        "process_id":  9614
+                                                    }
+                          },
+    "integration_status":  {
+                               "hr_database_initialized":  true,
+                               "email_system_initialized":  true,
+                               "information_system_initialized":  true,
+                               "agent_tracking_initialized":  true,
+                               "cross_system_communication":  true
+                           },
+    "system_status":  {
+                          "last_maintenance":  null,
+                          "active_systems":  4,
+                          "total_systems":  4,
+                          "last_backup":  null,
+                          "overall_status":  "Ready"
+                      },
+    "last_updated":  "2026-01-29T17:39:56.2905638-07:00",
+    "alerts":  [
+
+               ]
+}

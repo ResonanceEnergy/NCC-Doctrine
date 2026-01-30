@@ -1,0 +1,49 @@
+﻿{
+    "CreatedDate":  "2026-01-29T22:29:26Z",
+    "ReportingHierarchy":  {
+                               "DivisionHead":  "",
+                               "DirectSupervisor":  "CSuite_Operations_Division_Head",
+                               "AZ_PRIME_Liaison":  "",
+                               "ExecutiveSponsor":  ""
+                           },
+    "Supervisor":  "CSuite_Operations_Division_Head",
+    "SecurityClearance":  "SECRET",
+    "AgentId":  "CSuite_Operations_Agent_0097",
+    "AuthorizedSystems":  [
+
+                          ],
+    "Status":  "Active",
+    "AgentName":  "CSuite Operations Agent 97",
+    "Division":  "CSuite Operations",
+    "Role":  "Department Operations",
+    "CommunicationChannels":  [
+
+                              ],
+    "PerformanceMetrics":  {
+                               "MandateCompliance":  0,
+                               "ErrorCount":  0,
+                               "TasksCompleted":  0,
+                               "KPIScore":  0,
+                               "ResponseTime":  0,
+                               "LastEvaluation":  "2026-01-29",
+                               "SuccessRate":  0
+                           },
+    "LastUpdate":  "2026-01-29T22:33:58Z",
+    "Mandate":  "Departmental agent supporting CSuite Operations operations and contributing to team objectives.",
+    "KeyResponsibilities":  [
+                                "Execute assigned operational tasks",
+                                "Maintain quality and efficiency standards",
+                                "Collaborate with team members",
+                                "Support departmental initiatives",
+                                "Continuous learning and improvement"
+                            ],
+    "KPIs":  [
+                 "Task completion rate \u003e90%",
+                 "Quality compliance \u003e95%",
+                 "Team collaboration score \u003e80%",
+                 "Efficiency improvement \u003e10%",
+                 "Professional development \u003e80% completion"
+             ],
+    "AuthorityLevel":  "DEPARTMENTAL",
+    "ReportingTo":  "DEPARTMENT_HEAD"
+}

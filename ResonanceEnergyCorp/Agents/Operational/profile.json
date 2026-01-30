@@ -1,0 +1,20 @@
+{
+  "specialization": "ResonanceEnergyCorp Operational Operations",
+  "contact": "agent@resonanceenergycorp.ncc",
+  "name": "ResonanceEnergyCorp.Agent.Operational",
+  "version": "2.0.0",
+  "role": "Operational",
+  "capabilities": [
+    "Task Execution",
+    "Workflow Management",
+    "Process Optimization",
+    "Resource Coordination",
+    "Performance Tracking"
+  ],
+  "description": "Day-to-day operations and task execution for Energy production and management",
+  "dependencies": [],
+  "status": "Active",
+  "lastModified": "2026-01-29",
+  "created": "2026-01-29",
+  "division": "ResonanceEnergyCorp"
+}

@@ -1,0 +1,12 @@
+schema_version = "1.0.0"
+id = "capsule"
+name = "Capsule"
+tagline = "Batch export and asset management for Blender"
+description = "Capsule makes the process of exporting quick and seamless, letting you export hundreds of assets into multiple formats with a single click."
+version = "1.42.0"
+type = "add-on"
+author = "Takanu"
+maintainer = "Takanu"
+license = ["GPL-3.0-or-later"]
+blender_version_min = "3.5.0"
+blender_version_max = "5.0.99"

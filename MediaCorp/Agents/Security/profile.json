@@ -1,0 +1,20 @@
+{
+  "specialization": "MediaCorp Security Operations",
+  "contact": "agent@mediacorp.ncc",
+  "name": "MediaCorp.Agent.Security",
+  "version": "2.0.0",
+  "role": "Security",
+  "capabilities": [
+    "Threat Monitoring",
+    "Compliance Checking",
+    "Risk Assessment",
+    "Security Protocols",
+    "Audit Management"
+  ],
+  "description": "Compliance and risk management for Media and communications",
+  "dependencies": [],
+  "status": "Active",
+  "lastModified": "2026-01-29",
+  "created": "2026-01-29",
+  "division": "MediaCorp"
+}

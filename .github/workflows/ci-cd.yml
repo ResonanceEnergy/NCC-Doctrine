@@ -1,0 +1,50 @@
+name: NCC Doctrine CI/CD
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: CommandCenter/package-lock.json
+
+    - name: Install dependencies
+      run: |
+        cd CommandCenter
+        npm ci
+
+    - name: Run security audit
+      run: |
+        cd CommandCenter
+        npm audit --audit-level moderate
+
+    - name: Build
+      run: |
+        cd CommandCenter
+        npm run build
+
+    - name: Run tests
+      run: |
+        cd CommandCenter
+        npx playwright install
+        npx playwright test
+
+    - name: Security scan with CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: javascript
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2

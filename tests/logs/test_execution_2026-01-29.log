@@ -1,0 +1,118 @@
+[2026-01-29 20:42:02] [NCC-TEST] [TestDivision] [FRAMEWORK] [INFO] Initializing NCC Test Framework for TestDivision...
+[2026-01-29 20:42:06] [NCC-TEST] [TestDivision] [FRAMEWORK] [PASS] Test framework initialization completed
+[2026-01-29 20:42:06] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running agent validation tests...
+[2026-01-29 20:42:06] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Initialization Test
+[2026-01-29 20:42:07] [NCC-TEST] [TestDivision] [AGENT] [PASS] Agent Initialization Test: PASS - Agent initialized successfully
+[2026-01-29 20:42:07] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Communication Test
+[2026-01-29 20:42:08] [NCC-TEST] [TestDivision] [AGENT] [FAIL] Agent Communication Test: FAIL - Communication test failed: At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\NCC.Agent.Communication.ps1:267 char:40
++         Write-CommLog "Connectivity to $TargetAgent: SUCCESS" -Level  …
++                                        ~~~~~~~~~~~~~
+Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.
+
+At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\NCC.Agent.Communication.ps1:270 char:40
++         Write-CommLog "Connectivity to $TargetAgent: FAILED" -Level " …
++                                        ~~~~~~~~~~~~~
+Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.
+[2026-01-29 20:42:08] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Performance Test
+[2026-01-29 20:42:08] [NCC-TEST] [TestDivision] [AGENT] [PASS] Agent Performance Test: PASS - Response time: 5.2771ms
+[2026-01-29 20:42:08] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Security Test
+[2026-01-29 20:42:09] [NCC-TEST] [TestDivision] [AGENT] [WARN] Agent Security Test: WARN - No security measures detected in agents
+[2026-01-29 20:42:09] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Lifecycle Test
+[2026-01-29 20:42:09] [NCC-TEST] [TestDivision] [AGENT] [FAIL] Agent Lifecycle Test: FAIL - Lifecycle test failed: A parameter cannot be found that matches parameter name 'Initialize'.
+[2026-01-29 20:42:09] [NCC-TEST] [TestDivision] [DATA] [INFO] Running data validation tests...
+[2026-01-29 20:42:09] [NCC-TEST] [TestDivision] [DATA] [INFO] Running: Data Repository Integrity Test
+[2026-01-29 20:42:51] [NCC-TEST] [TestDivision] [DATA] [PASS] Data Repository Integrity Test: PASS - 31237 valid data files found
+[2026-01-29 20:42:51] [NCC-TEST] [TestDivision] [DATA] [INFO] Running: Data Validation Test
+[2026-01-29 20:42:51] [NCC-TEST] [TestDivision] [DATA] [FAIL] Data Validation Test: FAIL - Data validation test failed: A Using variable cannot be retrieved. A Using variable can be used only with Invoke-Command, Start-Job, or InlineScript in the script workflow. When it is used with Invoke-Command, the Using variable is valid only if the script block is invoked on a remote computer.
+[2026-01-29 20:42:51] [NCC-TEST] [TestDivision] [DATA] [INFO] Running: Data Security Test
+[2026-01-29 20:43:21] [NCC-TEST] [TestDivision] [DATA] [PASS] Data Security Test: PASS - 6524 files passed security check
+[2026-01-29 20:43:21] [NCC-TEST] [TestDivision] [DATA] [INFO] Running: Data Performance Test
+[2026-01-29 20:43:22] [NCC-TEST] [TestDivision] [DATA] [PASS] Data Performance Test: PASS - Data processing time: 628.1545ms
+[2026-01-29 20:43:23] [NCC-TEST] [TestDivision] [DATA] [INFO] Running: Data Backup Test
+[2026-01-29 20:43:23] [NCC-TEST] [TestDivision] [DATA] [FAIL] Data Backup Test: FAIL - Backup test failed: A Using variable cannot be retrieved. A Using variable can be used only with Invoke-Command, Start-Job, or InlineScript in the script workflow. When it is used with Invoke-Command, the Using variable is valid only if the script block is invoked on a remote computer.
+[2026-01-29 20:43:23] [NCC-TEST] [TestDivision] [SYSTEM] [INFO] Running system health tests...
+[2026-01-29 20:43:23] [NCC-TEST] [TestDivision] [SYSTEM] [INFO] Running: System Health Check
+[2026-01-29 20:43:25] [NCC-TEST] [TestDivision] [SYSTEM] [PASS] System Health Check: PASS - System health score: 100%
+[2026-01-29 20:43:25] [NCC-TEST] [TestDivision] [SYSTEM] [INFO] Running: System Performance Test
+[2026-01-29 20:43:26] [NCC-TEST] [TestDivision] [SYSTEM] [PASS] System Performance Test: PASS - Processing time: 694.2385ms
+[2026-01-29 20:43:26] [NCC-TEST] [TestDivision] [SYSTEM] [INFO] Running: System Security Test
+[2026-01-29 20:43:42] [NCC-TEST] [TestDivision] [SYSTEM] [PASS] System Security Test: PASS - Security posture good
+[2026-01-29 20:43:42] [NCC-TEST] [TestDivision] [SYSTEM] [INFO] Running: System Availability Test
+[2026-01-29 20:43:43] [NCC-TEST] [TestDivision] [SYSTEM] [WARN] System Availability Test: WARN - Recent restart: 11.1 hours ago
+[2026-01-29 20:43:43] [NCC-TEST] [TestDivision] [SYSTEM] [INFO] Running: System Resources Test
+[2026-01-29 20:43:45] [NCC-TEST] [TestDivision] [SYSTEM] [PASS] System Resources Test: PASS - Resource score: 100%
+[2026-01-29 20:43:45] [NCC-TEST] [TestDivision] [INTEGRATION] [INFO] Running integration tests...
+[2026-01-29 20:43:45] [NCC-TEST] [TestDivision] [INTEGRATION] [INFO] Running: Cross-Division Communication Test
+[2026-01-29 20:43:45] [NCC-TEST] [TestDivision] [INTEGRATION] [FAIL] Cross-Division Communication Test: FAIL - Communication test failed: At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\NCC.Agent.Communication.ps1:267 char:40
++         Write-CommLog "Connectivity to $TargetAgent: SUCCESS" -Level  …
++                                        ~~~~~~~~~~~~~
+Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.
+
+At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\NCC.Agent.Communication.ps1:270 char:40
++         Write-CommLog "Connectivity to $TargetAgent: FAILED" -Level " …
++                                        ~~~~~~~~~~~~~
+Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.
+[2026-01-29 20:43:45] [NCC-TEST] [TestDivision] [INTEGRATION] [INFO] Running: Data Synchronization Test
+[2026-01-29 20:43:45] [NCC-TEST] [TestDivision] [INTEGRATION] [FAIL] Data Synchronization Test: FAIL - Data sync test failed: A Using variable cannot be retrieved. A Using variable can be used only with Invoke-Command, Start-Job, or InlineScript in the script workflow. When it is used with Invoke-Command, the Using variable is valid only if the script block is invoked on a remote computer.
+[2026-01-29 20:43:45] [NCC-TEST] [TestDivision] [INTEGRATION] [INFO] Running: Agent Coordination Test
+[2026-01-29 20:43:46] [NCC-TEST] [TestDivision] [INTEGRATION] [SKIP] Agent Coordination Test: SKIP - Insufficient agents for coordination test
+[2026-01-29 20:43:46] [NCC-TEST] [TestDivision] [INTEGRATION] [INFO] Running: System Integration Test
+[2026-01-29 20:43:46] [NCC-TEST] [TestDivision] [INTEGRATION] [PASS] System Integration Test: PASS - All 3 system components operational
+[2026-01-29 20:43:46] [NCC-TEST] [TestDivision] [SUMMARY] [WARNING] Test execution completed - Total: 19, Passed: 10, Failed: 6, Warnings: 2
+[2026-01-29 20:44:25] [NCC-TEST] [TestDivision] [FRAMEWORK] [INFO] Initializing NCC Test Framework for TestDivision...
+[2026-01-29 20:44:31] [NCC-TEST] [TestDivision] [FRAMEWORK] [PASS] Test framework initialization completed
+[2026-01-29 20:44:31] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running agent validation tests...
+[2026-01-29 20:44:31] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Initialization Test
+[2026-01-29 20:44:32] [NCC-TEST] [TestDivision] [AGENT] [PASS] Agent Initialization Test: PASS - Agent initialized successfully
+[2026-01-29 20:44:32] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Communication Test
+[2026-01-29 20:44:34] [NCC-TEST] [TestDivision] [AGENT] [PASS] Agent Communication Test: PASS - Communication system operational
+[2026-01-29 20:44:34] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Performance Test
+[2026-01-29 20:44:35] [NCC-TEST] [TestDivision] [AGENT] [PASS] Agent Performance Test: PASS - Response time: 10.534ms
+[2026-01-29 20:44:35] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Security Test
+[2026-01-29 20:44:36] [NCC-TEST] [TestDivision] [AGENT] [WARN] Agent Security Test: WARN - No security measures detected in agents
+[2026-01-29 20:44:36] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Lifecycle Test
+[2026-01-29 20:44:38] [NCC-TEST] [TestDivision] [AGENT] [PASS] Agent Lifecycle Test: PASS - Agent lifecycle test completed
+[2026-01-29 20:44:38] [NCC-TEST] [TestDivision] [DATA] [INFO] Running data validation tests...
+[2026-01-29 20:44:38] [NCC-TEST] [TestDivision] [DATA] [INFO] Running: Data Repository Integrity Test
+[2026-01-29 20:45:18] [NCC-TEST] [TestDivision] [DATA] [PASS] Data Repository Integrity Test: PASS - 31237 valid data files found
+[2026-01-29 20:45:18] [NCC-TEST] [TestDivision] [DATA] [INFO] Running: Data Validation Test
+[2026-01-29 20:45:19] [NCC-TEST] [TestDivision] [DATA] [PASS] Data Validation Test: PASS - Data validation passed
+[2026-01-29 20:45:19] [NCC-TEST] [TestDivision] [DATA] [INFO] Running: Data Security Test
+[2026-01-29 20:45:46] [NCC-TEST] [TestDivision] [DATA] [PASS] Data Security Test: PASS - 6525 files passed security check
+[2026-01-29 20:45:46] [NCC-TEST] [TestDivision] [DATA] [INFO] Running: Data Performance Test
+[2026-01-29 20:45:47] [NCC-TEST] [TestDivision] [DATA] [PASS] Data Performance Test: PASS - Data processing time: 796.921ms
+[2026-01-29 20:45:47] [NCC-TEST] [TestDivision] [DATA] [INFO] Running: Data Backup Test
+[2026-01-29 20:50:39] [NCC-TEST] [TestDivision] [FRAMEWORK] [INFO] Initializing NCC Test Framework for TestDivision...
+[2026-01-29 20:50:44] [NCC-TEST] [TestDivision] [FRAMEWORK] [PASS] Test framework initialization completed
+[2026-01-29 20:50:44] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running agent validation tests...
+[2026-01-29 20:50:44] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Initialization Test
+[2026-01-29 20:50:46] [NCC-TEST] [TestDivision] [AGENT] [PASS] Agent Initialization Test: PASS - Agent initialized successfully
+[2026-01-29 20:50:46] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Communication Test
+[2026-01-29 20:50:47] [NCC-TEST] [TestDivision] [AGENT] [PASS] Agent Communication Test: PASS - Communication system operational
+[2026-01-29 20:50:47] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Performance Test
+[2026-01-29 20:50:48] [NCC-TEST] [TestDivision] [AGENT] [PASS] Agent Performance Test: PASS - Response time: 24.1997ms
+[2026-01-29 20:50:48] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Security Test
+[2026-01-29 20:50:48] [NCC-TEST] [TestDivision] [AGENT] [WARN] Agent Security Test: WARN - No security measures detected in agents
+[2026-01-29 20:50:48] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Lifecycle Test
+[2026-01-29 20:50:50] [NCC-TEST] [TestDivision] [AGENT] [PASS] Agent Lifecycle Test: PASS - Agent lifecycle test completed
+[2026-01-29 20:50:50] [NCC-TEST] [TestDivision] [DATA] [INFO] Running data validation tests...
+[2026-01-29 20:50:50] [NCC-TEST] [TestDivision] [DATA] [INFO] Running: Data Repository Integrity Test
+[2026-01-29 20:51:58] [NCC-TEST] [TestDivision] [DATA] [PASS] Data Repository Integrity Test: PASS - 50331 valid data files found
+[2026-01-29 20:51:58] [NCC-TEST] [TestDivision] [DATA] [INFO] Running: Data Validation Test
+[2026-01-29 20:52:00] [NCC-TEST] [TestDivision] [DATA] [PASS] Data Validation Test: PASS - Data validation passed
+[2026-01-29 20:52:00] [NCC-TEST] [TestDivision] [DATA] [INFO] Running: Data Security Test
+[2026-01-29 20:52:42] [NCC-TEST] [TestDivision] [FRAMEWORK] [INFO] Initializing NCC Test Framework for TestDivision...
+[2026-01-29 20:52:47] [NCC-TEST] [TestDivision] [FRAMEWORK] [PASS] Test framework initialization completed
+[2026-01-29 20:52:47] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running agent validation tests...
+[2026-01-29 20:52:47] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Initialization Test
+[2026-01-29 20:52:48] [NCC-TEST] [TestDivision] [AGENT] [PASS] Agent Initialization Test: PASS - Agent initialized successfully
+[2026-01-29 20:52:48] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Communication Test
+[2026-01-29 20:52:50] [NCC-TEST] [TestDivision] [AGENT] [PASS] Agent Communication Test: PASS - Communication system operational
+[2026-01-29 20:52:50] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Performance Test
+[2026-01-29 20:52:50] [NCC-TEST] [TestDivision] [AGENT] [PASS] Agent Performance Test: PASS - Response time: 23.3342ms
+[2026-01-29 20:52:50] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Security Test
+[2026-01-29 20:52:51] [NCC-TEST] [TestDivision] [AGENT] [WARN] Agent Security Test: WARN - No security measures detected in agents
+[2026-01-29 20:52:51] [NCC-TEST] [TestDivision] [AGENT] [INFO] Running: Agent Lifecycle Test
+[2026-01-29 20:52:52] [NCC-TEST] [TestDivision] [AGENT] [PASS] Agent Lifecycle Test: PASS - Agent lifecycle test completed
+[2026-01-29 20:52:52] [NCC-TEST] [TestDivision] [DATA] [INFO] Running data validation tests...
+[2026-01-29 20:52:52] [NCC-TEST] [TestDivision] [DATA] [INFO] Running: Data Repository Integrity Test

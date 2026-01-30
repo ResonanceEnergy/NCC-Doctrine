@@ -1,0 +1,20 @@
+{
+  "specialization": "QuantumComputingDivision Security Operations",
+  "contact": "agent@quantumcomputingdivision.ncc",
+  "name": "QuantumComputingDivision.Agent.Security",
+  "version": "2.0.0",
+  "role": "Security",
+  "capabilities": [
+    "Threat Monitoring",
+    "Compliance Checking",
+    "Risk Assessment",
+    "Security Protocols",
+    "Audit Management"
+  ],
+  "description": "Compliance and risk management for Quantum computing and algorithms",
+  "dependencies": [],
+  "status": "Active",
+  "lastModified": "2026-01-29",
+  "created": "2026-01-29",
+  "division": "QuantumComputingDivision"
+}

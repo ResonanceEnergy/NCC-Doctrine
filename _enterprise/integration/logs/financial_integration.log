@@ -1,0 +1,69 @@
+[2026-01-29 22:13:13] [SUCCESS] [FinancialIntegration] Financial integration system initialized successfully
+[2026-01-29 22:13:13] [INFO] [FinancialIntegration] Command completed: Initialize
+[2026-01-29 22:13:16] [INFO] [FinancialIntegration] === NCC Financial Systems Integration v1.0.0 ===
+[2026-01-29 22:13:16] [INFO] [FinancialIntegration] Action: Status
+[2026-01-29 22:13:17] [ERROR] [FinancialIntegration] Failed to decrypt API key: Exception calling "FromBase64String" with "1" argument(s): "The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters."
+[2026-01-29 22:13:17] [ERROR] [FinancialIntegration] Failed to retrieve API key for NCC_Internal_Bank
+[2026-01-29 22:13:17] [ERROR] [FinancialIntegration] Failed to retrieve API key for Commercial_Bank_A
+[2026-01-29 22:13:17] [ERROR] [FinancialIntegration] Failed to retrieve API key for Investment_Bank_B
+[2026-01-29 22:13:17] [INFO] [FinancialIntegration] Command completed: Status
+[2026-01-29 22:14:21] [INFO] [FinancialIntegration] === NCC Financial Systems Integration v1.0.0 ===
+[2026-01-29 22:14:21] [INFO] [FinancialIntegration] Action: Status
+[2026-01-29 22:14:21] [ERROR] [FinancialIntegration] Failed to decrypt API key: Exception calling "FromBase64String" with "1" argument(s): "The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters."
+[2026-01-29 22:14:21] [ERROR] [FinancialIntegration] Failed to retrieve API key for NCC_Internal_Bank
+[2026-01-29 22:14:21] [ERROR] [FinancialIntegration] Failed to retrieve API key for Commercial_Bank_A
+[2026-01-29 22:14:21] [ERROR] [FinancialIntegration] Failed to retrieve API key for Investment_Bank_B
+[2026-01-29 22:14:21] [INFO] [FinancialIntegration] Command completed: Status
+[2026-01-29 22:14:21] [INFO] [FinancialIntegration] === NCC Financial Systems Integration v1.0.0 ===
+[2026-01-29 22:14:21] [INFO] [FinancialIntegration] Action: Test
+[2026-01-29 22:14:21] [INFO] [FinancialIntegration] Running financial integration tests
+[2026-01-29 22:14:21] [ERROR] [FinancialIntegration] Failed to decrypt API key: Exception calling "FromBase64String" with "1" argument(s): "The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters."
+[2026-01-29 22:14:21] [ERROR] [FinancialIntegration] Failed to retrieve API key for NCC_Internal_Bank
+[2026-01-29 22:14:21] [ERROR] [FinancialIntegration] Failed to retrieve API key for Commercial_Bank_A
+[2026-01-29 22:14:21] [ERROR] [FinancialIntegration] Failed to retrieve API key for Investment_Bank_B
+[2026-01-29 22:14:21] [WARNING] [FinancialIntegration] Connection tests: 0/3 passed
+[2026-01-29 22:14:21] [INFO] [FinancialIntegration] Retrieving balance for account ACC-001 from NCC_Internal_Bank
+[2026-01-29 22:14:21] [ERROR] [FinancialIntegration] Failed to decrypt API key: Exception calling "FromBase64String" with "1" argument(s): "The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters."
+[2026-01-29 22:14:21] [ERROR] [FinancialIntegration] Failed to retrieve API key for NCC_Internal_Bank
+[2026-01-29 22:14:21] [INFO] [FinancialIntegration] Command completed: Test
+[2026-01-29 22:14:28] [INFO] [FinancialIntegration] === NCC Financial Systems Integration v1.0.0 ===
+[2026-01-29 22:14:28] [INFO] [FinancialIntegration] Action: GetBalance
+[2026-01-29 22:14:28] [ERROR] [FinancialIntegration] Bank name and account ID are required
+[2026-01-29 22:14:31] [INFO] [FinancialIntegration] === NCC Financial Systems Integration v1.0.0 ===
+[2026-01-29 22:14:31] [INFO] [FinancialIntegration] Action: Status
+[2026-01-29 22:14:31] [ERROR] [FinancialIntegration] Failed to decrypt API key: Exception calling "FromBase64String" with "1" argument(s): "The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters."
+[2026-01-29 22:14:31] [ERROR] [FinancialIntegration] Failed to retrieve API key for NCC_Internal_Bank
+[2026-01-29 22:14:31] [ERROR] [FinancialIntegration] Failed to retrieve API key for Commercial_Bank_A
+[2026-01-29 22:14:31] [ERROR] [FinancialIntegration] Failed to retrieve API key for Investment_Bank_B
+[2026-01-29 22:14:31] [INFO] [FinancialIntegration] Command completed: Status
+[2026-01-29 22:14:31] [INFO] [FinancialIntegration] === NCC Financial Systems Integration v1.0.0 ===
+[2026-01-29 22:14:31] [INFO] [FinancialIntegration] Action: Test
+[2026-01-29 22:14:31] [INFO] [FinancialIntegration] Running financial integration tests
+[2026-01-29 22:14:31] [ERROR] [FinancialIntegration] Failed to decrypt API key: Exception calling "FromBase64String" with "1" argument(s): "The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters."
+[2026-01-29 22:14:31] [ERROR] [FinancialIntegration] Failed to retrieve API key for NCC_Internal_Bank
+[2026-01-29 22:14:31] [ERROR] [FinancialIntegration] Failed to retrieve API key for Commercial_Bank_A
+[2026-01-29 22:14:31] [ERROR] [FinancialIntegration] Failed to retrieve API key for Investment_Bank_B
+[2026-01-29 22:14:31] [WARNING] [FinancialIntegration] Connection tests: 0/3 passed
+[2026-01-29 22:14:31] [INFO] [FinancialIntegration] Retrieving balance for account ACC-001 from NCC_Internal_Bank
+[2026-01-29 22:14:31] [ERROR] [FinancialIntegration] Failed to decrypt API key: Exception calling "FromBase64String" with "1" argument(s): "The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters."
+[2026-01-29 22:14:31] [ERROR] [FinancialIntegration] Failed to retrieve API key for NCC_Internal_Bank
+[2026-01-29 22:14:31] [INFO] [FinancialIntegration] Command completed: Test
+[2026-01-29 22:14:33] [INFO] [FinancialIntegration] === NCC Financial Systems Integration v1.0.0 ===
+[2026-01-29 22:14:33] [INFO] [FinancialIntegration] Action: Status
+[2026-01-29 22:14:33] [ERROR] [FinancialIntegration] Failed to decrypt API key: Exception calling "FromBase64String" with "1" argument(s): "The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters."
+[2026-01-29 22:14:33] [ERROR] [FinancialIntegration] Failed to retrieve API key for NCC_Internal_Bank
+[2026-01-29 22:14:33] [ERROR] [FinancialIntegration] Failed to retrieve API key for Commercial_Bank_A
+[2026-01-29 22:14:33] [ERROR] [FinancialIntegration] Failed to retrieve API key for Investment_Bank_B
+[2026-01-29 22:14:33] [INFO] [FinancialIntegration] Command completed: Status
+[2026-01-29 22:14:33] [INFO] [FinancialIntegration] === NCC Financial Systems Integration v1.0.0 ===
+[2026-01-29 22:14:33] [INFO] [FinancialIntegration] Action: Test
+[2026-01-29 22:14:33] [INFO] [FinancialIntegration] Running financial integration tests
+[2026-01-29 22:14:33] [ERROR] [FinancialIntegration] Failed to decrypt API key: Exception calling "FromBase64String" with "1" argument(s): "The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters."
+[2026-01-29 22:14:33] [ERROR] [FinancialIntegration] Failed to retrieve API key for NCC_Internal_Bank
+[2026-01-29 22:14:33] [ERROR] [FinancialIntegration] Failed to retrieve API key for Commercial_Bank_A
+[2026-01-29 22:14:33] [ERROR] [FinancialIntegration] Failed to retrieve API key for Investment_Bank_B
+[2026-01-29 22:14:33] [WARNING] [FinancialIntegration] Connection tests: 0/3 passed
+[2026-01-29 22:14:33] [INFO] [FinancialIntegration] Retrieving balance for account ACC-001 from NCC_Internal_Bank
+[2026-01-29 22:14:33] [ERROR] [FinancialIntegration] Failed to decrypt API key: Exception calling "FromBase64String" with "1" argument(s): "The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters."
+[2026-01-29 22:14:33] [ERROR] [FinancialIntegration] Failed to retrieve API key for NCC_Internal_Bank
+[2026-01-29 22:14:33] [INFO] [FinancialIntegration] Command completed: Test

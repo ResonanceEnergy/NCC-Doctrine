@@ -1,0 +1,50 @@
+﻿{
+    "policies":  [
+                     {
+                         "name":  "Data Classification Policy",
+                         "description":  "All data must be classified with appropriate sensitivity levels",
+                         "active":  true,
+                         "policy_id":  "data_classification",
+                         "created_at":  "2026-01-29T22:36:31.7874235-07:00",
+                         "rules":  [
+                                       {
+                                           "rule_id":  "classification_required",
+                                           "condition":  "data_access",
+                                           "action":  "require_classification",
+                                           "severity":  "high"
+                                       }
+                                   ]
+                     },
+                     {
+                         "name":  "Access Control Policy",
+                         "description":  "Role-based access control for all data operations",
+                         "active":  true,
+                         "policy_id":  "access_control",
+                         "created_at":  "2026-01-29T22:36:31.7894288-07:00",
+                         "rules":  [
+                                       {
+                                           "rule_id":  "rbac_enforcement",
+                                           "condition":  "data_access",
+                                           "action":  "check_permissions",
+                                           "severity":  "critical"
+                                       }
+                                   ]
+                     },
+                     {
+                         "name":  "Data Retention Policy",
+                         "description":  "Data retention and deletion policies",
+                         "active":  true,
+                         "policy_id":  "data_retention",
+                         "created_at":  "2026-01-29T22:36:31.7894288-07:00",
+                         "rules":  [
+                                       {
+                                           "rule_id":  "retention_compliance",
+                                           "condition":  "data_age",
+                                           "action":  "enforce_retention",
+                                           "severity":  "medium"
+                                       }
+                                   ]
+                     }
+                 ],
+    "last_updated":  "2026-01-29T22:36:31.7914402-07:00"
+}

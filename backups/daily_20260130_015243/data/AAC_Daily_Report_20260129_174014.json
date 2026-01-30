@@ -1,0 +1,33 @@
+{
+    "recommendations":  [
+                            "Agent performance is below target. Consider additional training programs."
+                        ],
+    "performance_metrics":  {
+                                "message_throughput":  0,
+                                "error_rate":  0,
+                                "uptime_percentage":  0,
+                                "data_processing_rate":  0
+                            },
+    "agent_activity":  {
+                           "total_agents":  0,
+                           "top_performers":  null,
+                           "active_agents":  0,
+                           "performance_avg":  null
+                       },
+    "alerts_and_incidents":  {
+                                 "critical_alerts":  0,
+                                 "total_alerts":  0,
+                                 "total_messages":  0,
+                                 "unread_messages":  0
+                             },
+    "generated_at":  "2026-01-29T17:40:14.3282295-07:00",
+    "report_type":  "Daily",
+    "system_status":  {
+                          "last_maintenance":  null,
+                          "active_systems":  4,
+                          "total_systems":  4,
+                          "last_backup":  null,
+                          "overall_status":  "Ready"
+                      },
+    "period":  "2026-01-29"
+}

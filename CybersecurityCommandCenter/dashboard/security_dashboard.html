@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCC Security Monitoring Dashboard - Security 10 Directive</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0f23, #1a1a2e);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .metric-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+        }
+        .metric-title {
+            font-size: 14px;
+            color: #a0a0a0;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .metric-value {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .metric-subtitle {
+            font-size: 12px;
+            color: #cccccc;
+            opacity: 0.8;
+        }
+        .status-healthy { color: #28a745; }
+        .status-warning { color: #ffc107; }
+        .status-critical { color: #dc3545; }
+        .status-info { color: #17a2b8; }
+
+        .charts-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .chart-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+        }
+        .chart-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .alerts-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+        }
+        .alerts-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .alerts-title {
+            font-size: 20px;
+        }
+        .alert-count {
+            background: #dc3545;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .alert-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: background 0.3s ease;
+        }
+        .alert-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .alert-severity {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .alert-severity.critical { background: #dc3545; }
+        .alert-severity.high { background: #ffc107; }
+        .alert-severity.medium { background: #28a745; }
+        .alert-severity.low { background: #17a2b8; }
+        .alert-content {
+            flex: 1;
+        }
+        .alert-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .alert-details {
+            font-size: 14px;
+            color: #cccccc;
+        }
+        .alert-time {
+            font-size: 12px;
+            color: #a0a0a0;
+        }
+
+        .compliance-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            margin-top: 30px;
+        }
+        .compliance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .compliance-item {
+            text-align: center;
+        }
+        .compliance-label {
+            font-size: 14px;
+            color: #a0a0a0;
+            margin-bottom: 10px;
+        }
+        .compliance-score {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #a0a0a0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .charts-section {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 NCC Security Monitoring Dashboard</h1>
+            <p>Security 10 Directive Compliance & Enterprise Threat Protection</p>
+            <p id="last-updated">Last Updated: <span id="update-time">Loading...</span></p>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-title">Security Score</div>
+                <div class="metric-value status-healthy" id="security-score">98.5%</div>
+                <div class="metric-subtitle">Overall System Health</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-title">Active Agents</div>
+                <div class="metric-value status-healthy" id="active-agents">1,247 / 1,340</div>
+                <div class="metric-subtitle">Security 10 Compliant</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-title">Critical Alerts</div>
+                <div class="metric-value status-critical" id="critical-alerts">3</div>
+                <div class="metric-subtitle">Require Immediate Action</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-title">Threat Blocks</div>
+                <div class="metric-value status-info" id="threat-blocks">1,429</div>
+                <div class="metric-subtitle">Last 24 Hours</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-title">Encryption Status</div>
+                <div class="metric-value status-healthy" id="encryption-status">AES-256 Active</div>
+                <div class="metric-subtitle">All Channels Secured</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-title">Compliance Score</div>
+                <div class="metric-value status-healthy" id="compliance-score">96.2%</div>
+                <div class="metric-subtitle">Security 10 Directive</div>
+            </div>
+        </div>
+
+        <div class="charts-section">
+            <div class="chart-container">
+                <div class="chart-title">Security Events (Last 24h)</div>
+                <canvas id="eventsChart" width="400" height="200"></canvas>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-title">Compliance Trend</div>
+                <canvas id="complianceChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+
+        <div class="alerts-section">
+            <div class="alerts-header">
+                <h2 class="alerts-title">Active Security Alerts</h2>
+                <div class="alert-count" id="alert-count">5</div>
+            </div>
+            <div id="alerts-container">
+                <div class="alert-item">
+                    <div class="alert-severity critical"></div>
+                    <div class="alert-content">
+                        <div class="alert-title">Suspicious Network Activity Detected</div>
+                        <div class="alert-details">Unusual outbound connections from Finance Division server</div>
+                        <div class="alert-time">2 minutes ago</div>
+                    </div>
+                </div>
+                <div class="alert-item">
+                    <div class="alert-severity high"></div>
+                    <div class="alert-content">
+                        <div class="alert-title">Failed Authentication Attempts</div>
+                        <div class="alert-details">Multiple failed login attempts from unknown IP: 192.168.1.100</div>
+                        <div class="alert-time">15 minutes ago</div>
+                    </div>
+                </div>
+                <div class="alert-item">
+                    <div class="alert-severity high"></div>
+                    <div class="alert-content">
+                        <div class="alert-title">Certificate Expiring Soon</div>
+                        <div class="alert-details">SSL certificate for api.nccorp.com expires in 7 days</div>
+                        <div class="alert-time">1 hour ago</div>
+                    </div>
+                </div>
+                <div class="alert-item">
+                    <div class="alert-severity medium"></div>
+                    <div class="alert-content">
+                        <div class="alert-title">Configuration Drift Detected</div>
+                        <div class="alert-details">Firewall rules modified without approval in Data Center 3</div>
+                        <div class="alert-time">2 hours ago</div>
+                    </div>
+                </div>
+                <div class="alert-item">
+                    <div class="alert-severity low"></div>
+                    <div class="alert-content">
+                        <div class="alert-title">Security Patch Available</div>
+                        <div class="alert-details">Critical Windows security update available for 45 systems</div>
+                        <div class="alert-time">4 hours ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="compliance-section">
+            <h2 style="margin-bottom: 20px;">Compliance Framework Status</h2>
+            <div class="compliance-grid">
+                <div class="compliance-item">
+                    <div class="compliance-label">NIST SP 800-53</div>
+                    <div class="compliance-score status-healthy">97%</div>
+                </div>
+                <div class="compliance-item">
+                    <div class="compliance-label">ISO 27001</div>
+                    <div class="compliance-score status-healthy">95%</div>
+                </div>
+                <div class="compliance-item">
+                    <div class="compliance-label">GDPR</div>
+                    <div class="compliance-score status-healthy">98%</div>
+                </div>
+                <div class="compliance-item">
+                    <div class="compliance-label">HIPAA</div>
+                    <div class="compliance-score status-healthy">96%</div>
+                </div>
+                <div class="compliance-item">
+                    <div class="compliance-label">PCI DSS</div>
+                    <div class="compliance-score status-warning">89%</div>
+                </div>
+                <div class="compliance-item">
+                    <div class="compliance-label">SOX</div>
+                    <div class="compliance-score status-healthy">94%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🔐 Nathan Command Corp - Cybersecurity Command Center | Security 10 Directive Compliant</p>
+            <p>Dashboard auto-refreshes every 30 seconds | Emergency Contact: security@nccorp.com</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Update timestamp
+        function updateTimestamp() {
+            const now = new Date();
+            document.getElementById('update-time').textContent = now.toLocaleString();
+        }
+        updateTimestamp();
+        setInterval(updateTimestamp, 1000);
+
+        // Security Events Chart
+        const eventsCtx = document.getElementById('eventsChart').getContext('2d');
+        new Chart(eventsCtx, {
+            type: 'line',
+            data: {
+                labels: ['00:00', '04:00', '08:00', '12:00', '16:00', '20:00'],
+                datasets: [{
+                    label: 'Security Events',
+                    data: [12, 8, 15, 22, 18, 14],
+                    borderColor: '#17a2b8',
+                    backgroundColor: 'rgba(23, 162, 184, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }, {
+                    label: 'Threats Blocked',
+                    data: [3, 2, 5, 8, 6, 4],
+                    borderColor: '#dc3545',
+                    backgroundColor: 'rgba(220, 53, 69, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#ffffff'
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: '#ffffff'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: '#ffffff'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Compliance Trend Chart
+        const complianceCtx = document.getElementById('complianceChart').getContext('2d');
+        new Chart(complianceCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                datasets: [{
+                    label: 'Compliance Score',
+                    data: [92.5, 94.2, 95.8, 96.2],
+                    backgroundColor: [
+                        'rgba(40, 167, 69, 0.8)',
+                        'rgba(40, 167, 69, 0.8)',
+                        'rgba(40, 167, 69, 0.8)',
+                        'rgba(40, 167, 69, 0.8)'
+                    ],
+                    borderColor: [
+                        'rgba(40, 167, 69, 1)',
+                        'rgba(40, 167, 69, 1)',
+                        'rgba(40, 167, 69, 1)',
+                        'rgba(40, 167, 69, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#ffffff'
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: '#ffffff',
+                            callback: function(value) {
+                                return value + '%';
+                            }
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: '#ffffff'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Auto-refresh dashboard
+        setInterval(function() {
+            // In a real implementation, this would fetch updated data from the server
+            console.log('Refreshing dashboard data...');
+            updateTimestamp();
+        }, 30000); // Refresh every 30 seconds
+    </script>
+</body>
+</html>

@@ -1,0 +1,3525 @@
+{
+  "last_updated": "2026-01-29T19:17:34Z",
+  "current_tasks": [],
+  "department": "Robotics",
+  "tasks_completed": 586,
+  "agent_performance": {},
+  "data_repository": [
+    {
+      "completion_time": "2026-01-29T18:31:02Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 192
+    },
+    {
+      "completion_time": "2026-01-29T18:31:07Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 197
+    },
+    {
+      "completion_time": "2026-01-29T18:31:12Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 202
+    },
+    {
+      "completion_time": "2026-01-29T18:31:20Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 210
+    },
+    {
+      "completion_time": "2026-01-29T18:31:21Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 211
+    },
+    {
+      "completion_time": "2026-01-29T18:31:22Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 212
+    },
+    {
+      "completion_time": "2026-01-29T18:31:26Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 216
+    },
+    {
+      "completion_time": "2026-01-29T18:31:33Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 223
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:34Z",
+      "task_id": "Robotics-002",
+      "cycle": 20
+    },
+    {
+      "completion_time": "2026-01-29T18:31:38Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 228
+    },
+    {
+      "completion_time": "2026-01-29T18:31:39Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 229
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:42Z",
+      "task_id": "Robotics-002",
+      "cycle": 28
+    },
+    {
+      "completion_time": "2026-01-29T18:31:50Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 239
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:53Z",
+      "task_id": "Robotics-002",
+      "cycle": 39
+    },
+    {
+      "completion_time": "2026-01-29T18:31:55Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 244
+    },
+    {
+      "completion_time": "2026-01-29T18:31:57Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 246
+    },
+    {
+      "completion_time": "2026-01-29T18:32:01Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 250
+    },
+    {
+      "completion_time": "2026-01-29T18:32:11Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 260
+    },
+    {
+      "completion_time": "2026-01-29T18:32:11Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 260
+    },
+    {
+      "completion_time": "2026-01-29T18:32:18Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 267
+    },
+    {
+      "completion_time": "2026-01-29T18:32:18Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 267
+    },
+    {
+      "completion_time": "2026-01-29T18:32:25Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 274
+    },
+    {
+      "completion_time": "2026-01-29T18:32:26Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 275
+    },
+    {
+      "completion_time": "2026-01-29T18:32:40Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 289
+    },
+    {
+      "completion_time": "2026-01-29T18:32:41Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 290
+    },
+    {
+      "completion_time": "2026-01-29T18:32:42Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 291
+    },
+    {
+      "completion_time": "2026-01-29T18:32:44Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 293
+    },
+    {
+      "completion_time": "2026-01-29T18:32:49Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 298
+    },
+    {
+      "completion_time": "2026-01-29T18:32:58Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 307
+    },
+    {
+      "completion_time": "2026-01-29T18:33:12Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 321
+    },
+    {
+      "completion_time": "2026-01-29T18:33:14Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 323
+    },
+    {
+      "completion_time": "2026-01-29T18:33:14Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 323
+    },
+    {
+      "completion_time": "2026-01-29T18:33:19Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 328
+    },
+    {
+      "completion_time": "2026-01-29T18:33:24Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 333
+    },
+    {
+      "completion_time": "2026-01-29T18:33:24Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 333
+    },
+    {
+      "completion_time": "2026-01-29T18:33:32Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 341
+    },
+    {
+      "completion_time": "2026-01-29T18:33:35Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 344
+    },
+    {
+      "completion_time": "2026-01-29T18:33:36Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 345
+    },
+    {
+      "completion_time": "2026-01-29T18:33:44Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 352
+    },
+    {
+      "completion_time": "2026-01-29T18:33:51Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 359
+    },
+    {
+      "completion_time": "2026-01-29T18:33:54Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 362
+    },
+    {
+      "completion_time": "2026-01-29T18:33:58Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 366
+    },
+    {
+      "completion_time": "2026-01-29T18:34:04Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 372
+    },
+    {
+      "completion_time": "2026-01-29T18:34:06Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 374
+    },
+    {
+      "completion_time": "2026-01-29T18:34:08Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 376
+    },
+    {
+      "completion_time": "2026-01-29T18:34:12Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 380
+    },
+    {
+      "completion_time": "2026-01-29T18:34:13Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 381
+    },
+    {
+      "completion_time": "2026-01-29T18:34:16Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 384
+    },
+    {
+      "completion_time": "2026-01-29T18:34:20Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 388
+    },
+    {
+      "completion_time": "2026-01-29T18:34:29Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 397
+    },
+    {
+      "completion_time": "2026-01-29T18:34:34Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 402
+    },
+    {
+      "completion_time": "2026-01-29T18:34:37Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 405
+    },
+    {
+      "completion_time": "2026-01-29T18:34:44Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 412
+    },
+    {
+      "completion_time": "2026-01-29T18:34:49Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 417
+    },
+    {
+      "completion_time": "2026-01-29T18:34:51Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 419
+    },
+    {
+      "completion_time": "2026-01-29T18:34:53Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 421
+    },
+    {
+      "completion_time": "2026-01-29T18:34:54Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 422
+    },
+    {
+      "completion_time": "2026-01-29T18:34:55Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 423
+    },
+    {
+      "completion_time": "2026-01-29T18:35:04Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 432
+    },
+    {
+      "completion_time": "2026-01-29T18:35:11Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 439
+    },
+    {
+      "completion_time": "2026-01-29T18:35:13Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 441
+    },
+    {
+      "completion_time": "2026-01-29T18:35:17Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 445
+    },
+    {
+      "completion_time": "2026-01-29T18:35:19Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 447
+    },
+    {
+      "completion_time": "2026-01-29T18:35:21Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 449
+    },
+    {
+      "completion_time": "2026-01-29T18:35:34Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 461
+    },
+    {
+      "completion_time": "2026-01-29T18:35:38Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 465
+    },
+    {
+      "completion_time": "2026-01-29T18:35:44Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 471
+    },
+    {
+      "completion_time": "2026-01-29T18:35:46Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 473
+    },
+    {
+      "completion_time": "2026-01-29T18:35:54Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 481
+    },
+    {
+      "completion_time": "2026-01-29T18:36:01Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 488
+    },
+    {
+      "completion_time": "2026-01-29T18:36:03Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 490
+    },
+    {
+      "completion_time": "2026-01-29T18:36:11Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 498
+    },
+    {
+      "completion_time": "2026-01-29T18:36:14Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 501
+    },
+    {
+      "completion_time": "2026-01-29T18:36:24Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 511
+    },
+    {
+      "completion_time": "2026-01-29T18:36:25Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 512
+    },
+    {
+      "completion_time": "2026-01-29T18:36:33Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 520
+    },
+    {
+      "completion_time": "2026-01-29T18:36:35Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 522
+    },
+    {
+      "completion_time": "2026-01-29T18:36:38Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 525
+    },
+    {
+      "completion_time": "2026-01-29T18:36:42Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 529
+    },
+    {
+      "completion_time": "2026-01-29T18:36:45Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 532
+    },
+    {
+      "completion_time": "2026-01-29T18:36:49Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 536
+    },
+    {
+      "completion_time": "2026-01-29T18:36:51Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 538
+    },
+    {
+      "completion_time": "2026-01-29T18:36:53Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 540
+    },
+    {
+      "completion_time": "2026-01-29T18:37:09Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 556
+    },
+    {
+      "completion_time": "2026-01-29T18:37:13Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 560
+    },
+    {
+      "completion_time": "2026-01-29T18:37:17Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 564
+    },
+    {
+      "completion_time": "2026-01-29T18:37:25Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 572
+    },
+    {
+      "completion_time": "2026-01-29T18:37:42Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 588
+    },
+    {
+      "completion_time": "2026-01-29T18:38:03Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 609
+    },
+    {
+      "completion_time": "2026-01-29T18:38:10Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 616
+    },
+    {
+      "completion_time": "2026-01-29T18:38:15Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 621
+    },
+    {
+      "completion_time": "2026-01-29T18:38:19Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 625
+    },
+    {
+      "completion_time": "2026-01-29T18:38:26Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 632
+    },
+    {
+      "completion_time": "2026-01-29T18:38:27Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 633
+    },
+    {
+      "completion_time": "2026-01-29T18:38:45Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 651
+    },
+    {
+      "completion_time": "2026-01-29T18:38:47Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 653
+    },
+    {
+      "completion_time": "2026-01-29T18:39:04Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 670
+    },
+    {
+      "completion_time": "2026-01-29T18:39:04Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 670
+    },
+    {
+      "completion_time": "2026-01-29T18:39:07Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 673
+    },
+    {
+      "completion_time": "2026-01-29T18:39:13Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 679
+    },
+    {
+      "completion_time": "2026-01-29T18:39:23Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 689
+    },
+    {
+      "completion_time": "2026-01-29T18:39:28Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 694
+    },
+    {
+      "completion_time": "2026-01-29T18:39:35Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 700
+    },
+    {
+      "completion_time": "2026-01-29T18:39:37Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 702
+    },
+    {
+      "completion_time": "2026-01-29T18:39:39Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 704
+    },
+    {
+      "completion_time": "2026-01-29T18:39:42Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 707
+    },
+    {
+      "completion_time": "2026-01-29T18:39:48Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 713
+    },
+    {
+      "completion_time": "2026-01-29T18:40:00Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 725
+    },
+    {
+      "completion_time": "2026-01-29T18:40:07Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 732
+    },
+    {
+      "completion_time": "2026-01-29T18:40:07Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 732
+    },
+    {
+      "completion_time": "2026-01-29T18:40:11Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 736
+    },
+    {
+      "completion_time": "2026-01-29T18:40:17Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 742
+    },
+    {
+      "completion_time": "2026-01-29T18:40:18Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 743
+    },
+    {
+      "completion_time": "2026-01-29T18:40:20Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 745
+    },
+    {
+      "completion_time": "2026-01-29T18:40:24Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 749
+    },
+    {
+      "completion_time": "2026-01-29T18:40:27Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 752
+    },
+    {
+      "completion_time": "2026-01-29T18:40:29Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 754
+    },
+    {
+      "completion_time": "2026-01-29T18:40:29Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 754
+    },
+    {
+      "completion_time": "2026-01-29T18:40:50Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 775
+    },
+    {
+      "completion_time": "2026-01-29T18:40:55Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 780
+    },
+    {
+      "completion_time": "2026-01-29T18:40:56Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 781
+    },
+    {
+      "completion_time": "2026-01-29T18:40:57Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 782
+    },
+    {
+      "completion_time": "2026-01-29T18:41:07Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 792
+    },
+    {
+      "completion_time": "2026-01-29T18:41:10Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 795
+    },
+    {
+      "completion_time": "2026-01-29T18:41:10Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 795
+    },
+    {
+      "completion_time": "2026-01-29T18:41:13Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 798
+    },
+    {
+      "completion_time": "2026-01-29T18:41:14Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 799
+    },
+    {
+      "completion_time": "2026-01-29T18:41:23Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 808
+    },
+    {
+      "completion_time": "2026-01-29T18:41:26Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 811
+    },
+    {
+      "completion_time": "2026-01-29T18:41:26Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 811
+    },
+    {
+      "completion_time": "2026-01-29T18:41:30Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 814
+    },
+    {
+      "completion_time": "2026-01-29T18:41:34Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 818
+    },
+    {
+      "completion_time": "2026-01-29T18:41:44Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 828
+    },
+    {
+      "completion_time": "2026-01-29T18:41:49Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 833
+    },
+    {
+      "completion_time": "2026-01-29T18:41:51Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 835
+    },
+    {
+      "completion_time": "2026-01-29T18:41:53Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 837
+    },
+    {
+      "completion_time": "2026-01-29T18:42:09Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 853
+    },
+    {
+      "completion_time": "2026-01-29T18:42:10Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 854
+    },
+    {
+      "completion_time": "2026-01-29T18:42:13Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 857
+    },
+    {
+      "completion_time": "2026-01-29T18:42:17Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 861
+    },
+    {
+      "completion_time": "2026-01-29T18:42:23Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 867
+    },
+    {
+      "completion_time": "2026-01-29T18:42:24Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 868
+    },
+    {
+      "completion_time": "2026-01-29T18:42:34Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 878
+    },
+    {
+      "completion_time": "2026-01-29T18:42:41Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 885
+    },
+    {
+      "completion_time": "2026-01-29T18:42:44Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 888
+    },
+    {
+      "completion_time": "2026-01-29T18:42:51Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 895
+    },
+    {
+      "completion_time": "2026-01-29T18:42:56Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 900
+    },
+    {
+      "completion_time": "2026-01-29T18:42:58Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 902
+    },
+    {
+      "completion_time": "2026-01-29T18:43:03Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 907
+    },
+    {
+      "completion_time": "2026-01-29T18:43:11Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 915
+    },
+    {
+      "completion_time": "2026-01-29T18:43:11Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 915
+    },
+    {
+      "completion_time": "2026-01-29T18:43:23Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 926
+    },
+    {
+      "completion_time": "2026-01-29T18:43:24Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 927
+    },
+    {
+      "completion_time": "2026-01-29T18:43:24Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 927
+    },
+    {
+      "completion_time": "2026-01-29T18:43:26Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 929
+    },
+    {
+      "completion_time": "2026-01-29T18:43:26Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 929
+    },
+    {
+      "completion_time": "2026-01-29T18:43:27Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 930
+    },
+    {
+      "completion_time": "2026-01-29T18:43:30Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 933
+    },
+    {
+      "completion_time": "2026-01-29T18:43:36Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 939
+    },
+    {
+      "completion_time": "2026-01-29T18:43:40Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 943
+    },
+    {
+      "completion_time": "2026-01-29T18:43:43Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 946
+    },
+    {
+      "completion_time": "2026-01-29T18:43:50Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 953
+    },
+    {
+      "completion_time": "2026-01-29T18:43:52Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 955
+    },
+    {
+      "completion_time": "2026-01-29T18:43:56Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 959
+    },
+    {
+      "completion_time": "2026-01-29T18:43:58Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 961
+    },
+    {
+      "completion_time": "2026-01-29T18:44:06Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 969
+    },
+    {
+      "completion_time": "2026-01-29T18:44:11Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 974
+    },
+    {
+      "completion_time": "2026-01-29T18:44:13Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 976
+    },
+    {
+      "completion_time": "2026-01-29T18:44:18Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 981
+    },
+    {
+      "completion_time": "2026-01-29T18:44:23Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 986
+    },
+    {
+      "completion_time": "2026-01-29T18:44:23Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 986
+    },
+    {
+      "completion_time": "2026-01-29T18:44:25Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 988
+    },
+    {
+      "completion_time": "2026-01-29T18:44:26Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 989
+    },
+    {
+      "completion_time": "2026-01-29T18:44:26Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 989
+    },
+    {
+      "completion_time": "2026-01-29T18:44:27Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 990
+    },
+    {
+      "completion_time": "2026-01-29T18:44:30Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 993
+    },
+    {
+      "completion_time": "2026-01-29T18:44:35Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 998
+    },
+    {
+      "completion_time": "2026-01-29T18:44:37Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1000
+    },
+    {
+      "completion_time": "2026-01-29T18:44:40Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1003
+    },
+    {
+      "completion_time": "2026-01-29T18:44:42Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1005
+    },
+    {
+      "completion_time": "2026-01-29T18:44:45Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1008
+    },
+    {
+      "completion_time": "2026-01-29T18:44:49Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1012
+    },
+    {
+      "completion_time": "2026-01-29T18:44:52Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1015
+    },
+    {
+      "completion_time": "2026-01-29T18:44:53Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1016
+    },
+    {
+      "completion_time": "2026-01-29T18:44:55Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1018
+    },
+    {
+      "completion_time": "2026-01-29T18:44:56Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1019
+    },
+    {
+      "completion_time": "2026-01-29T18:45:01Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1024
+    },
+    {
+      "completion_time": "2026-01-29T18:45:03Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1026
+    },
+    {
+      "completion_time": "2026-01-29T18:45:05Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1028
+    },
+    {
+      "completion_time": "2026-01-29T18:45:11Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1034
+    },
+    {
+      "completion_time": "2026-01-29T18:45:17Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1040
+    },
+    {
+      "completion_time": "2026-01-29T18:45:21Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1043
+    },
+    {
+      "completion_time": "2026-01-29T18:45:33Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1055
+    },
+    {
+      "completion_time": "2026-01-29T18:45:34Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1056
+    },
+    {
+      "completion_time": "2026-01-29T18:45:35Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1057
+    },
+    {
+      "completion_time": "2026-01-29T18:45:36Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1058
+    },
+    {
+      "completion_time": "2026-01-29T18:45:37Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1059
+    },
+    {
+      "completion_time": "2026-01-29T18:45:47Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1069
+    },
+    {
+      "completion_time": "2026-01-29T18:45:54Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1076
+    },
+    {
+      "completion_time": "2026-01-29T18:46:03Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1085
+    },
+    {
+      "completion_time": "2026-01-29T18:46:11Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1093
+    },
+    {
+      "completion_time": "2026-01-29T18:46:13Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1095
+    },
+    {
+      "completion_time": "2026-01-29T18:46:14Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1096
+    },
+    {
+      "completion_time": "2026-01-29T18:46:26Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1108
+    },
+    {
+      "completion_time": "2026-01-29T18:46:39Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1121
+    },
+    {
+      "completion_time": "2026-01-29T18:46:44Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1126
+    },
+    {
+      "completion_time": "2026-01-29T18:46:45Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1127
+    },
+    {
+      "completion_time": "2026-01-29T18:46:53Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1135
+    },
+    {
+      "completion_time": "2026-01-29T18:46:53Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1135
+    },
+    {
+      "completion_time": "2026-01-29T18:46:56Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1138
+    },
+    {
+      "completion_time": "2026-01-29T18:47:00Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1142
+    },
+    {
+      "completion_time": "2026-01-29T18:47:11Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1153
+    },
+    {
+      "completion_time": "2026-01-29T18:47:11Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1153
+    },
+    {
+      "completion_time": "2026-01-29T18:47:12Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1154
+    },
+    {
+      "completion_time": "2026-01-29T18:47:22Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1164
+    },
+    {
+      "completion_time": "2026-01-29T18:47:23Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1165
+    },
+    {
+      "completion_time": "2026-01-29T18:47:42Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1183
+    },
+    {
+      "completion_time": "2026-01-29T18:47:46Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1187
+    },
+    {
+      "completion_time": "2026-01-29T18:47:50Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1191
+    },
+    {
+      "completion_time": "2026-01-29T18:47:57Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1198
+    },
+    {
+      "completion_time": "2026-01-29T18:48:09Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1210
+    },
+    {
+      "completion_time": "2026-01-29T18:48:09Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1210
+    },
+    {
+      "completion_time": "2026-01-29T18:48:18Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1219
+    },
+    {
+      "completion_time": "2026-01-29T18:48:37Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1238
+    },
+    {
+      "completion_time": "2026-01-29T18:48:45Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1246
+    },
+    {
+      "completion_time": "2026-01-29T18:48:48Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1249
+    },
+    {
+      "completion_time": "2026-01-29T18:48:56Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1257
+    },
+    {
+      "completion_time": "2026-01-29T18:48:58Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1259
+    },
+    {
+      "completion_time": "2026-01-29T18:49:09Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1270
+    },
+    {
+      "completion_time": "2026-01-29T18:49:15Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1276
+    },
+    {
+      "completion_time": "2026-01-29T18:49:22Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1283
+    },
+    {
+      "completion_time": "2026-01-29T18:49:32Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1292
+    },
+    {
+      "completion_time": "2026-01-29T18:49:37Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1297
+    },
+    {
+      "completion_time": "2026-01-29T18:49:38Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1298
+    },
+    {
+      "completion_time": "2026-01-29T18:49:47Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1307
+    },
+    {
+      "completion_time": "2026-01-29T18:49:51Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1311
+    },
+    {
+      "completion_time": "2026-01-29T18:49:52Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1312
+    },
+    {
+      "completion_time": "2026-01-29T18:49:53Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1313
+    },
+    {
+      "completion_time": "2026-01-29T18:50:02Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1322
+    },
+    {
+      "completion_time": "2026-01-29T18:50:06Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1325
+    },
+    {
+      "completion_time": "2026-01-29T18:50:08Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1327
+    },
+    {
+      "completion_time": "2026-01-29T18:50:20Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1338
+    },
+    {
+      "completion_time": "2026-01-29T18:50:28Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1346
+    },
+    {
+      "completion_time": "2026-01-29T18:50:31Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1349
+    },
+    {
+      "completion_time": "2026-01-29T18:50:40Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1358
+    },
+    {
+      "completion_time": "2026-01-29T18:50:43Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1361
+    },
+    {
+      "completion_time": "2026-01-29T18:50:43Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1361
+    },
+    {
+      "completion_time": "2026-01-29T18:50:45Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1363
+    },
+    {
+      "completion_time": "2026-01-29T18:50:46Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1364
+    },
+    {
+      "completion_time": "2026-01-29T18:50:47Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1365
+    },
+    {
+      "completion_time": "2026-01-29T18:50:50Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1368
+    },
+    {
+      "completion_time": "2026-01-29T18:50:56Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1374
+    },
+    {
+      "completion_time": "2026-01-29T18:51:08Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1386
+    },
+    {
+      "completion_time": "2026-01-29T18:51:14Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1392
+    },
+    {
+      "completion_time": "2026-01-29T18:51:20Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1398
+    },
+    {
+      "completion_time": "2026-01-29T18:51:21Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1399
+    },
+    {
+      "completion_time": "2026-01-29T18:51:29Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1407
+    },
+    {
+      "completion_time": "2026-01-29T18:51:32Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1410
+    },
+    {
+      "completion_time": "2026-01-29T18:51:37Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1414
+    },
+    {
+      "completion_time": "2026-01-29T18:51:38Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1415
+    },
+    {
+      "completion_time": "2026-01-29T18:51:42Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1419
+    },
+    {
+      "completion_time": "2026-01-29T18:51:44Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1421
+    },
+    {
+      "completion_time": "2026-01-29T18:51:50Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1427
+    },
+    {
+      "completion_time": "2026-01-29T18:51:52Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1429
+    },
+    {
+      "completion_time": "2026-01-29T18:51:53Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1430
+    },
+    {
+      "completion_time": "2026-01-29T18:51:55Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1432
+    },
+    {
+      "completion_time": "2026-01-29T18:52:04Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1441
+    },
+    {
+      "completion_time": "2026-01-29T18:52:05Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1442
+    },
+    {
+      "completion_time": "2026-01-29T18:52:12Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1449
+    },
+    {
+      "completion_time": "2026-01-29T18:52:14Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1451
+    },
+    {
+      "completion_time": "2026-01-29T18:52:23Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1460
+    },
+    {
+      "completion_time": "2026-01-29T18:52:36Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1473
+    },
+    {
+      "completion_time": "2026-01-29T18:52:43Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1480
+    },
+    {
+      "completion_time": "2026-01-29T18:52:50Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1487
+    },
+    {
+      "completion_time": "2026-01-29T18:52:51Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1488
+    },
+    {
+      "completion_time": "2026-01-29T18:52:53Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1490
+    },
+    {
+      "completion_time": "2026-01-29T18:52:58Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1495
+    },
+    {
+      "completion_time": "2026-01-29T18:53:03Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1500
+    },
+    {
+      "completion_time": "2026-01-29T18:53:04Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1501
+    },
+    {
+      "completion_time": "2026-01-29T18:53:09Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1506
+    },
+    {
+      "completion_time": "2026-01-29T18:53:11Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1508
+    },
+    {
+      "completion_time": "2026-01-29T18:53:17Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1513
+    },
+    {
+      "completion_time": "2026-01-29T18:53:23Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1519
+    },
+    {
+      "completion_time": "2026-01-29T18:53:25Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1521
+    },
+    {
+      "completion_time": "2026-01-29T18:53:27Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1523
+    },
+    {
+      "completion_time": "2026-01-29T18:53:30Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1526
+    },
+    {
+      "completion_time": "2026-01-29T18:53:34Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1530
+    },
+    {
+      "completion_time": "2026-01-29T18:53:45Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1541
+    },
+    {
+      "completion_time": "2026-01-29T18:53:47Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1543
+    },
+    {
+      "completion_time": "2026-01-29T18:53:57Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1553
+    },
+    {
+      "completion_time": "2026-01-29T18:54:06Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1562
+    },
+    {
+      "completion_time": "2026-01-29T18:54:08Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1564
+    },
+    {
+      "completion_time": "2026-01-29T18:54:09Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1565
+    },
+    {
+      "completion_time": "2026-01-29T18:54:20Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1576
+    },
+    {
+      "completion_time": "2026-01-29T18:54:38Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1594
+    },
+    {
+      "completion_time": "2026-01-29T18:54:39Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1595
+    },
+    {
+      "completion_time": "2026-01-29T18:54:43Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1599
+    },
+    {
+      "completion_time": "2026-01-29T18:54:44Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1600
+    },
+    {
+      "completion_time": "2026-01-29T18:54:46Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1602
+    },
+    {
+      "completion_time": "2026-01-29T18:54:51Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1607
+    },
+    {
+      "completion_time": "2026-01-29T18:55:05Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1621
+    },
+    {
+      "completion_time": "2026-01-29T18:55:08Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1624
+    },
+    {
+      "completion_time": "2026-01-29T18:55:09Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1625
+    },
+    {
+      "completion_time": "2026-01-29T18:55:13Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1629
+    },
+    {
+      "completion_time": "2026-01-29T18:55:13Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1629
+    },
+    {
+      "completion_time": "2026-01-29T18:55:15Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1631
+    },
+    {
+      "completion_time": "2026-01-29T18:55:39Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1654
+    },
+    {
+      "completion_time": "2026-01-29T18:55:47Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1662
+    },
+    {
+      "completion_time": "2026-01-29T18:55:49Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1664
+    },
+    {
+      "completion_time": "2026-01-29T18:55:51Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1666
+    },
+    {
+      "completion_time": "2026-01-29T18:55:54Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1669
+    },
+    {
+      "completion_time": "2026-01-29T18:55:57Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1672
+    },
+    {
+      "completion_time": "2026-01-29T18:56:13Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1688
+    },
+    {
+      "completion_time": "2026-01-29T18:56:14Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1689
+    },
+    {
+      "completion_time": "2026-01-29T18:56:17Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1692
+    },
+    {
+      "completion_time": "2026-01-29T18:56:21Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1696
+    },
+    {
+      "completion_time": "2026-01-29T18:56:23Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1698
+    },
+    {
+      "completion_time": "2026-01-29T18:56:30Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1705
+    },
+    {
+      "completion_time": "2026-01-29T18:56:32Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1707
+    },
+    {
+      "completion_time": "2026-01-29T18:56:45Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1720
+    },
+    {
+      "completion_time": "2026-01-29T18:56:51Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1726
+    },
+    {
+      "completion_time": "2026-01-29T18:56:53Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1728
+    },
+    {
+      "completion_time": "2026-01-29T18:56:56Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1730
+    },
+    {
+      "completion_time": "2026-01-29T18:57:00Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1734
+    },
+    {
+      "completion_time": "2026-01-29T18:57:29Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1763
+    },
+    {
+      "completion_time": "2026-01-29T18:57:38Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1772
+    },
+    {
+      "completion_time": "2026-01-29T18:57:47Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1781
+    },
+    {
+      "completion_time": "2026-01-29T18:57:48Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1782
+    },
+    {
+      "completion_time": "2026-01-29T18:57:49Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1783
+    },
+    {
+      "completion_time": "2026-01-29T18:57:51Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1785
+    },
+    {
+      "completion_time": "2026-01-29T18:57:52Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1786
+    },
+    {
+      "completion_time": "2026-01-29T18:57:57Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1791
+    },
+    {
+      "completion_time": "2026-01-29T18:57:59Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1793
+    },
+    {
+      "completion_time": "2026-01-29T18:58:03Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1797
+    },
+    {
+      "completion_time": "2026-01-29T18:58:09Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1803
+    },
+    {
+      "completion_time": "2026-01-29T18:58:11Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1805
+    },
+    {
+      "completion_time": "2026-01-29T18:58:12Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1806
+    },
+    {
+      "completion_time": "2026-01-29T18:58:15Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1809
+    },
+    {
+      "completion_time": "2026-01-29T18:58:15Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1809
+    },
+    {
+      "completion_time": "2026-01-29T18:58:17Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1811
+    },
+    {
+      "completion_time": "2026-01-29T18:58:20Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1814
+    },
+    {
+      "completion_time": "2026-01-29T18:58:22Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1816
+    },
+    {
+      "completion_time": "2026-01-29T18:58:24Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1818
+    },
+    {
+      "completion_time": "2026-01-29T18:58:30Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1824
+    },
+    {
+      "completion_time": "2026-01-29T18:58:31Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1825
+    },
+    {
+      "completion_time": "2026-01-29T18:58:35Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1829
+    },
+    {
+      "completion_time": "2026-01-29T18:58:36Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1830
+    },
+    {
+      "completion_time": "2026-01-29T18:58:38Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1832
+    },
+    {
+      "completion_time": "2026-01-29T18:58:41Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1834
+    },
+    {
+      "completion_time": "2026-01-29T18:58:44Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1837
+    },
+    {
+      "completion_time": "2026-01-29T18:58:45Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1838
+    },
+    {
+      "completion_time": "2026-01-29T18:58:49Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1842
+    },
+    {
+      "completion_time": "2026-01-29T18:58:51Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1844
+    },
+    {
+      "completion_time": "2026-01-29T18:58:54Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1847
+    },
+    {
+      "completion_time": "2026-01-29T18:58:55Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1848
+    },
+    {
+      "completion_time": "2026-01-29T18:58:57Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1850
+    },
+    {
+      "completion_time": "2026-01-29T18:58:57Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1850
+    },
+    {
+      "completion_time": "2026-01-29T18:58:58Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1851
+    },
+    {
+      "completion_time": "2026-01-29T18:58:59Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1852
+    },
+    {
+      "completion_time": "2026-01-29T18:59:02Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1855
+    },
+    {
+      "completion_time": "2026-01-29T18:59:03Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1856
+    },
+    {
+      "completion_time": "2026-01-29T18:59:04Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1857
+    },
+    {
+      "completion_time": "2026-01-29T18:59:07Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1860
+    },
+    {
+      "completion_time": "2026-01-29T18:59:08Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1861
+    },
+    {
+      "completion_time": "2026-01-29T18:59:13Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1866
+    },
+    {
+      "completion_time": "2026-01-29T18:59:14Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1867
+    },
+    {
+      "completion_time": "2026-01-29T18:59:35Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1888
+    },
+    {
+      "completion_time": "2026-01-29T18:59:39Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1892
+    },
+    {
+      "completion_time": "2026-01-29T18:59:43Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1896
+    },
+    {
+      "completion_time": "2026-01-29T18:59:58Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1911
+    },
+    {
+      "completion_time": "2026-01-29T19:00:01Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1914
+    },
+    {
+      "completion_time": "2026-01-29T19:00:01Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1914
+    },
+    {
+      "completion_time": "2026-01-29T19:00:03Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1916
+    },
+    {
+      "completion_time": "2026-01-29T19:00:16Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1929
+    },
+    {
+      "completion_time": "2026-01-29T19:00:20Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1933
+    },
+    {
+      "completion_time": "2026-01-29T19:00:28Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1940
+    },
+    {
+      "completion_time": "2026-01-29T19:00:29Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1941
+    },
+    {
+      "completion_time": "2026-01-29T19:00:35Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1947
+    },
+    {
+      "completion_time": "2026-01-29T19:00:43Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1955
+    },
+    {
+      "completion_time": "2026-01-29T19:00:44Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1956
+    },
+    {
+      "completion_time": "2026-01-29T19:00:50Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1962
+    },
+    {
+      "completion_time": "2026-01-29T19:00:54Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1966
+    },
+    {
+      "completion_time": "2026-01-29T19:00:54Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1966
+    },
+    {
+      "completion_time": "2026-01-29T19:00:57Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1969
+    },
+    {
+      "completion_time": "2026-01-29T19:00:58Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1970
+    },
+    {
+      "completion_time": "2026-01-29T19:01:03Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1975
+    },
+    {
+      "completion_time": "2026-01-29T19:01:06Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1978
+    },
+    {
+      "completion_time": "2026-01-29T19:01:15Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1987
+    },
+    {
+      "completion_time": "2026-01-29T19:01:20Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1992
+    },
+    {
+      "completion_time": "2026-01-29T19:01:25Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1997
+    },
+    {
+      "completion_time": "2026-01-29T19:01:27Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1999
+    },
+    {
+      "completion_time": "2026-01-29T19:01:30Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2002
+    },
+    {
+      "completion_time": "2026-01-29T19:01:34Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2006
+    },
+    {
+      "completion_time": "2026-01-29T19:01:39Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2011
+    },
+    {
+      "completion_time": "2026-01-29T19:01:43Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2015
+    },
+    {
+      "completion_time": "2026-01-29T19:01:58Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2030
+    },
+    {
+      "completion_time": "2026-01-29T19:02:02Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2034
+    },
+    {
+      "completion_time": "2026-01-29T19:02:20Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2051
+    },
+    {
+      "completion_time": "2026-01-29T19:02:32Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2063
+    },
+    {
+      "completion_time": "2026-01-29T19:02:38Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2069
+    },
+    {
+      "completion_time": "2026-01-29T19:02:44Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2075
+    },
+    {
+      "completion_time": "2026-01-29T19:02:48Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2079
+    },
+    {
+      "completion_time": "2026-01-29T19:02:52Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2083
+    },
+    {
+      "completion_time": "2026-01-29T19:02:53Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2084
+    },
+    {
+      "completion_time": "2026-01-29T19:02:55Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2086
+    },
+    {
+      "completion_time": "2026-01-29T19:03:01Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2092
+    },
+    {
+      "completion_time": "2026-01-29T19:03:04Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2095
+    },
+    {
+      "completion_time": "2026-01-29T19:03:05Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2096
+    },
+    {
+      "completion_time": "2026-01-29T19:03:07Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2098
+    },
+    {
+      "completion_time": "2026-01-29T19:03:08Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2099
+    },
+    {
+      "completion_time": "2026-01-29T19:03:18Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2109
+    },
+    {
+      "completion_time": "2026-01-29T19:03:18Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2109
+    },
+    {
+      "completion_time": "2026-01-29T19:03:19Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2110
+    },
+    {
+      "completion_time": "2026-01-29T19:03:23Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2114
+    },
+    {
+      "completion_time": "2026-01-29T19:03:26Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2117
+    },
+    {
+      "completion_time": "2026-01-29T19:03:29Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2120
+    },
+    {
+      "completion_time": "2026-01-29T19:03:43Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2134
+    },
+    {
+      "completion_time": "2026-01-29T19:03:47Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2138
+    },
+    {
+      "completion_time": "2026-01-29T19:03:54Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2145
+    },
+    {
+      "completion_time": "2026-01-29T19:03:55Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2146
+    },
+    {
+      "completion_time": "2026-01-29T19:03:56Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2147
+    },
+    {
+      "completion_time": "2026-01-29T19:03:56Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2147
+    },
+    {
+      "completion_time": "2026-01-29T19:04:01Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2152
+    },
+    {
+      "completion_time": "2026-01-29T19:04:13Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2164
+    },
+    {
+      "completion_time": "2026-01-29T19:04:14Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2165
+    },
+    {
+      "completion_time": "2026-01-29T19:04:19Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2170
+    },
+    {
+      "completion_time": "2026-01-29T19:04:20Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2171
+    },
+    {
+      "completion_time": "2026-01-29T19:04:42Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2192
+    },
+    {
+      "completion_time": "2026-01-29T19:04:45Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2195
+    },
+    {
+      "completion_time": "2026-01-29T19:04:52Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2202
+    },
+    {
+      "completion_time": "2026-01-29T19:04:58Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2208
+    },
+    {
+      "completion_time": "2026-01-29T19:05:01Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2211
+    },
+    {
+      "completion_time": "2026-01-29T19:05:02Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2212
+    },
+    {
+      "completion_time": "2026-01-29T19:05:07Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2217
+    },
+    {
+      "completion_time": "2026-01-29T19:05:08Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2218
+    },
+    {
+      "completion_time": "2026-01-29T19:05:10Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2220
+    },
+    {
+      "completion_time": "2026-01-29T19:05:10Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2220
+    },
+    {
+      "completion_time": "2026-01-29T19:05:11Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2221
+    },
+    {
+      "completion_time": "2026-01-29T19:05:12Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2222
+    },
+    {
+      "completion_time": "2026-01-29T19:05:12Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2222
+    },
+    {
+      "completion_time": "2026-01-29T19:05:20Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2230
+    },
+    {
+      "completion_time": "2026-01-29T19:05:22Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2232
+    },
+    {
+      "completion_time": "2026-01-29T19:05:24Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2234
+    },
+    {
+      "completion_time": "2026-01-29T19:05:26Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2236
+    },
+    {
+      "completion_time": "2026-01-29T19:05:29Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2239
+    },
+    {
+      "completion_time": "2026-01-29T19:05:37Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2247
+    },
+    {
+      "completion_time": "2026-01-29T19:05:40Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2250
+    },
+    {
+      "completion_time": "2026-01-29T19:05:47Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2257
+    },
+    {
+      "completion_time": "2026-01-29T19:05:48Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2258
+    },
+    {
+      "completion_time": "2026-01-29T19:05:51Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2261
+    },
+    {
+      "completion_time": "2026-01-29T19:05:54Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2264
+    },
+    {
+      "completion_time": "2026-01-29T19:06:00Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2270
+    },
+    {
+      "completion_time": "2026-01-29T19:06:02Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2272
+    },
+    {
+      "completion_time": "2026-01-29T19:06:06Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2276
+    },
+    {
+      "completion_time": "2026-01-29T19:06:12Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2282
+    },
+    {
+      "completion_time": "2026-01-29T19:06:13Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2283
+    },
+    {
+      "completion_time": "2026-01-29T19:06:14Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2284
+    },
+    {
+      "completion_time": "2026-01-29T19:06:18Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2288
+    },
+    {
+      "completion_time": "2026-01-29T19:06:31Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2301
+    },
+    {
+      "completion_time": "2026-01-29T19:06:37Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2306
+    },
+    {
+      "completion_time": "2026-01-29T19:06:42Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2311
+    },
+    {
+      "completion_time": "2026-01-29T19:06:47Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2316
+    },
+    {
+      "completion_time": "2026-01-29T19:06:54Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2323
+    },
+    {
+      "completion_time": "2026-01-29T19:06:58Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2327
+    },
+    {
+      "completion_time": "2026-01-29T19:07:23Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2352
+    },
+    {
+      "completion_time": "2026-01-29T19:07:46Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2375
+    },
+    {
+      "completion_time": "2026-01-29T19:07:53Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2382
+    },
+    {
+      "completion_time": "2026-01-29T19:07:58Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2387
+    },
+    {
+      "completion_time": "2026-01-29T19:07:59Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2388
+    },
+    {
+      "completion_time": "2026-01-29T19:08:00Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2389
+    },
+    {
+      "completion_time": "2026-01-29T19:08:19Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2407
+    },
+    {
+      "completion_time": "2026-01-29T19:08:27Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2415
+    },
+    {
+      "completion_time": "2026-01-29T19:08:38Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2425
+    },
+    {
+      "completion_time": "2026-01-29T19:08:39Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2426
+    },
+    {
+      "completion_time": "2026-01-29T19:08:43Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2430
+    },
+    {
+      "completion_time": "2026-01-29T19:08:50Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2437
+    },
+    {
+      "completion_time": "2026-01-29T19:08:51Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2438
+    },
+    {
+      "completion_time": "2026-01-29T19:08:55Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2442
+    },
+    {
+      "completion_time": "2026-01-29T19:09:03Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2450
+    },
+    {
+      "completion_time": "2026-01-29T19:09:07Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2454
+    },
+    {
+      "completion_time": "2026-01-29T19:09:20Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2467
+    },
+    {
+      "completion_time": "2026-01-29T19:09:20Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2467
+    },
+    {
+      "completion_time": "2026-01-29T19:09:21Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2468
+    },
+    {
+      "completion_time": "2026-01-29T19:09:22Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2469
+    },
+    {
+      "completion_time": "2026-01-29T19:09:30Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2477
+    },
+    {
+      "completion_time": "2026-01-29T19:09:35Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2482
+    },
+    {
+      "completion_time": "2026-01-29T19:09:36Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2483
+    },
+    {
+      "completion_time": "2026-01-29T19:09:41Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2488
+    },
+    {
+      "completion_time": "2026-01-29T19:09:47Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2494
+    },
+    {
+      "completion_time": "2026-01-29T19:09:48Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2495
+    },
+    {
+      "completion_time": "2026-01-29T19:09:52Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2499
+    },
+    {
+      "completion_time": "2026-01-29T19:10:05Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2511
+    },
+    {
+      "completion_time": "2026-01-29T19:10:09Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2515
+    },
+    {
+      "completion_time": "2026-01-29T19:10:10Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2516
+    },
+    {
+      "completion_time": "2026-01-29T19:10:18Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2524
+    },
+    {
+      "completion_time": "2026-01-29T19:10:25Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2531
+    },
+    {
+      "completion_time": "2026-01-29T19:10:29Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2535
+    },
+    {
+      "completion_time": "2026-01-29T19:10:33Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2539
+    },
+    {
+      "completion_time": "2026-01-29T19:10:35Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2541
+    },
+    {
+      "completion_time": "2026-01-29T19:10:36Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2542
+    },
+    {
+      "completion_time": "2026-01-29T19:10:44Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2550
+    },
+    {
+      "completion_time": "2026-01-29T19:10:44Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2550
+    },
+    {
+      "completion_time": "2026-01-29T19:10:47Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2553
+    },
+    {
+      "completion_time": "2026-01-29T19:10:50Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2556
+    },
+    {
+      "completion_time": "2026-01-29T19:10:54Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2560
+    },
+    {
+      "completion_time": "2026-01-29T19:10:58Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2564
+    },
+    {
+      "completion_time": "2026-01-29T19:11:00Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2566
+    },
+    {
+      "completion_time": "2026-01-29T19:11:07Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2573
+    },
+    {
+      "completion_time": "2026-01-29T19:11:08Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2574
+    },
+    {
+      "completion_time": "2026-01-29T19:11:17Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2583
+    },
+    {
+      "completion_time": "2026-01-29T19:11:21Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2587
+    },
+    {
+      "completion_time": "2026-01-29T19:11:25Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2591
+    },
+    {
+      "completion_time": "2026-01-29T19:11:26Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2592
+    },
+    {
+      "completion_time": "2026-01-29T19:11:31Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2597
+    },
+    {
+      "completion_time": "2026-01-29T19:11:35Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2601
+    },
+    {
+      "completion_time": "2026-01-29T19:11:41Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2607
+    },
+    {
+      "completion_time": "2026-01-29T19:11:47Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2613
+    },
+    {
+      "completion_time": "2026-01-29T19:11:54Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2620
+    },
+    {
+      "completion_time": "2026-01-29T19:12:01Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2626
+    },
+    {
+      "completion_time": "2026-01-29T19:12:24Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2649
+    },
+    {
+      "completion_time": "2026-01-29T19:12:25Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2650
+    },
+    {
+      "completion_time": "2026-01-29T19:12:26Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2651
+    },
+    {
+      "completion_time": "2026-01-29T19:12:38Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2663
+    },
+    {
+      "completion_time": "2026-01-29T19:12:41Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2666
+    },
+    {
+      "completion_time": "2026-01-29T19:12:44Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2669
+    },
+    {
+      "completion_time": "2026-01-29T19:12:49Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2674
+    },
+    {
+      "completion_time": "2026-01-29T19:12:54Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2679
+    },
+    {
+      "completion_time": "2026-01-29T19:12:57Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2682
+    },
+    {
+      "completion_time": "2026-01-29T19:12:59Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2684
+    },
+    {
+      "completion_time": "2026-01-29T19:13:07Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2692
+    },
+    {
+      "completion_time": "2026-01-29T19:13:11Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2696
+    },
+    {
+      "completion_time": "2026-01-29T19:13:16Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2701
+    },
+    {
+      "completion_time": "2026-01-29T19:13:22Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2707
+    },
+    {
+      "completion_time": "2026-01-29T19:13:32Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2717
+    },
+    {
+      "completion_time": "2026-01-29T19:13:33Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2718
+    },
+    {
+      "completion_time": "2026-01-29T19:13:36Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2720
+    },
+    {
+      "completion_time": "2026-01-29T19:13:37Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2722
+    },
+    {
+      "completion_time": "2026-01-29T19:13:38Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2723
+    },
+    {
+      "completion_time": "2026-01-29T19:13:46Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2730
+    },
+    {
+      "completion_time": "2026-01-29T19:13:50Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2734
+    },
+    {
+      "completion_time": "2026-01-29T19:13:59Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2743
+    },
+    {
+      "completion_time": "2026-01-29T19:14:00Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2744
+    },
+    {
+      "completion_time": "2026-01-29T19:14:04Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2748
+    },
+    {
+      "completion_time": "2026-01-29T19:14:10Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2754
+    },
+    {
+      "completion_time": "2026-01-29T19:14:15Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2759
+    },
+    {
+      "completion_time": "2026-01-29T19:14:20Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2764
+    },
+    {
+      "completion_time": "2026-01-29T19:14:26Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2770
+    },
+    {
+      "completion_time": "2026-01-29T19:14:35Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2779
+    },
+    {
+      "completion_time": "2026-01-29T19:14:37Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2781
+    },
+    {
+      "completion_time": "2026-01-29T19:14:46Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2790
+    },
+    {
+      "completion_time": "2026-01-29T19:14:47Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2791
+    },
+    {
+      "completion_time": "2026-01-29T19:14:53Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2797
+    },
+    {
+      "completion_time": "2026-01-29T19:14:59Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2803
+    },
+    {
+      "completion_time": "2026-01-29T19:15:07Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2811
+    },
+    {
+      "completion_time": "2026-01-29T19:15:08Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2812
+    },
+    {
+      "completion_time": "2026-01-29T19:15:09Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2813
+    },
+    {
+      "completion_time": "2026-01-29T19:15:15Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2819
+    },
+    {
+      "completion_time": "2026-01-29T19:15:20Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2824
+    },
+    {
+      "completion_time": "2026-01-29T19:15:22Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2826
+    },
+    {
+      "completion_time": "2026-01-29T19:15:34Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2837
+    },
+    {
+      "completion_time": "2026-01-29T19:15:36Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2839
+    },
+    {
+      "completion_time": "2026-01-29T19:15:41Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2844
+    },
+    {
+      "completion_time": "2026-01-29T19:15:43Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2846
+    },
+    {
+      "completion_time": "2026-01-29T19:15:49Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2852
+    },
+    {
+      "completion_time": "2026-01-29T19:15:53Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2856
+    },
+    {
+      "completion_time": "2026-01-29T19:15:57Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2860
+    },
+    {
+      "completion_time": "2026-01-29T19:16:08Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2871
+    },
+    {
+      "completion_time": "2026-01-29T19:16:09Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2872
+    },
+    {
+      "completion_time": "2026-01-29T19:16:26Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2889
+    },
+    {
+      "completion_time": "2026-01-29T19:16:28Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2891
+    },
+    {
+      "completion_time": "2026-01-29T19:16:32Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2895
+    },
+    {
+      "completion_time": "2026-01-29T19:16:34Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2897
+    },
+    {
+      "completion_time": "2026-01-29T19:16:37Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2900
+    },
+    {
+      "completion_time": "2026-01-29T19:16:42Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2905
+    },
+    {
+      "completion_time": "2026-01-29T19:16:47Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2910
+    },
+    {
+      "completion_time": "2026-01-29T19:16:49Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2912
+    },
+    {
+      "completion_time": "2026-01-29T19:16:50Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2913
+    },
+    {
+      "completion_time": "2026-01-29T19:16:51Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2914
+    },
+    {
+      "completion_time": "2026-01-29T19:17:00Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2923
+    },
+    {
+      "completion_time": "2026-01-29T19:17:07Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2929
+    },
+    {
+      "completion_time": "2026-01-29T19:17:09Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2932
+    },
+    {
+      "completion_time": "2026-01-29T19:17:12Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2935
+    },
+    {
+      "completion_time": "2026-01-29T19:17:17Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2939
+    },
+    {
+      "completion_time": "2026-01-29T19:17:23Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2945
+    },
+    {
+      "completion_time": "2026-01-29T19:17:27Z",
+      "task_id": "Robotics-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2949
+    },
+    {
+      "completion_time": "2026-01-29T19:17:33Z",
+      "task_id": "Robotics-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2955
+    }
+  ]
+}

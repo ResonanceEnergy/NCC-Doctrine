@@ -1,0 +1,43 @@
+{
+  "Meta": {
+    "Project": "MicroHydroV1",
+    "Version": "v0.1.0",
+    "Units": "mm",
+    "Notes": "Canonical CAD parameters. Edit via change control; do not duplicate params.json elsewhere."
+  },
+  "Diffuser": {
+    "D_in": 32,
+    "D_out": 82,
+    "Length": 95,
+    "Wall": 3,
+    "ArcSagitta": 2.0
+  },
+  "Nozzle": {
+    "D_throat": 9,
+    "D_inlet": 26,
+    "L_converge": 38,
+    "L_straight": 12,
+    "Wall": 2.5
+  },
+  "VanePack_Common": {
+    "Outer_Diameter": 88,
+    "Inner_Hub_D": 18,
+    "Height": 18,
+    "Vane_Thickness": 2,
+    "Vane_Count": 12
+  },
+  "VanePacks": {
+    "Angles": [
+      10,
+      20,
+      30
+    ]
+  },
+  "RetainerCap": {
+    "OD": 92,
+    "Thickness": 5,
+    "Bolt_PCD": 84,
+    "Bolt_Count": 4,
+    "Center_Hole": 20
+  }
+}

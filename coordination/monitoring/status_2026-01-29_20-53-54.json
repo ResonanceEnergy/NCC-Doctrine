@@ -1,0 +1,20 @@
+{
+  "PerformanceMetrics": {
+    "MessageThroughput": 0,
+    "SuccessRate": 100,
+    "TotalCoordinations": 0,
+    "AverageResponseTime": 0,
+    "SuccessfulCoordinations": 0
+  },
+  "Timestamp": "2026-01-29T20:53:54.8008984-07:00",
+  "ResourceUtilization": {},
+  "ConflictStatus": {
+    "ActiveConflicts": 0,
+    "ResolvedToday": 0,
+    "EscalatedConflicts": 0,
+    "Status": "NORMAL"
+  },
+  "HealthStatus": "HEALTHY",
+  "ActiveCoordinations": 0,
+  "Issues": []
+}

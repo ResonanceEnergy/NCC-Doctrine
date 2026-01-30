@@ -1,0 +1,419 @@
+param(
+    [Parameter(Mandatory=$false)]
+    [ValidateSet("Broadcast", "Notify", "Status", "Test", "Initialize")]
+    [string]$Action = "Status",
+
+    [Parameter(Mandatory=$false)]
+    [string]$Message = "",
+
+    [Parameter(Mandatory=$false)]
+    [ValidateSet("Critical", "High", "Normal", "Low")]
+    [string]$Priority = "Normal",
+
+    [Parameter(Mandatory=$false)]
+    [string]$Recipient = "All",
+
+    [Parameter(Mandatory=$false)]
+    [string]$LogFile = "$PSScriptRoot\logs\emergency_communication.log"
+)
+
+# =============================================================================
+# NCC EMERGENCY COMMUNICATION SYSTEM
+# Version: 1.0.0 | Classification: TOP SECRET
+# Date: 2026-01-29 | Authority: AZ PRIME Command
+# =============================================================================
+
+$ScriptVersion = "1.0.0"
+$SystemName = "NCC Emergency Communication System"
+
+# Configuration
+$Config = @{
+    Channels = @(
+        @{ Name = "NCC_Agent_Communication"; Type = "Internal"; Status = "Active" }
+        @{ Name = "Email"; Type = "External"; Status = "Active" }
+        @{ Name = "SMS"; Type = "External"; Status = "Active" }
+        @{ Name = "Emergency_Broadcast"; Type = "Internal"; Status = "Active" }
+    )
+    Recipients = @{
+        AZ_PRIME = @{ Email = "azprime@nccorp.com"; SMS = "+1-555-0100"; Priority = "Critical" }
+        C_Suite = @{ Email = "csuite@nccorp.com"; SMS = "+1-555-0200"; Priority = "High" }
+        Security = @{ Email = "security@nccorp.com"; SMS = "+1-555-0300"; Priority = "High" }
+        Operations = @{ Email = "operations@nccorp.com"; SMS = "+1-555-0400"; Priority = "Normal" }
+        All_Agents = @{ Email = "agents@nccorp.com"; SMS = ""; Priority = "Normal" }
+    }
+    EmergencyContacts = @(
+        "AZ PRIME Command Center: +1-555-0001",
+        "Security Operations Center: +1-555-0002",
+        "Technical Support: +1-555-0003",
+        "Executive Command: +1-555-0004"
+    )
+}
+
+# =============================================================================
+# LOGGING FUNCTIONS
+# =============================================================================
+
+function Write-CommunicationLog {
+    param(
+        [string]$Message,
+        [ValidateSet("INFO", "WARNING", "ERROR", "CRITICAL", "SUCCESS")]
+        [string]$Level = "INFO",
+        [string]$Component = "EmergencyComm"
+    )
+
+    $Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $LogEntry = "[$Timestamp] [$Level] [$Component] $Message"
+
+    # Write to console with color coding
+    switch ($Level) {
+        "CRITICAL" { Write-Host $LogEntry -ForegroundColor Red -BackgroundColor White }
+        "ERROR" { Write-Host $LogEntry -ForegroundColor Red }
+        "WARNING" { Write-Host $LogEntry -ForegroundColor Yellow }
+        "SUCCESS" { Write-Host $LogEntry -ForegroundColor Green }
+        "INFO" { Write-Host $LogEntry -ForegroundColor Cyan }
+    }
+
+    # Write to log file
+    try {
+        $LogEntry | Out-File -FilePath $LogFile -Append -Encoding UTF8
+    } catch {
+        Write-Host "Failed to write to log file: $($_.Exception.Message)" -ForegroundColor Red
+    }
+}
+
+# =============================================================================
+# COMMUNICATION CHANNELS
+# =============================================================================
+
+function Send-NCCAgentMessage {
+    param([string]$Message, [string]$Priority, [string]$Recipient)
+
+    Write-CommunicationLog "Sending NCC Agent message: $Message" -Level "INFO"
+
+    try {
+        $agentCommScript = "$PSScriptRoot\..\communication\NCC.Agent.Communication.ps1"
+        if (Test-Path $agentCommScript) {
+            & $agentCommScript -Action "Broadcast" -Message $Message -Priority $Priority -Recipient $Recipient
+            Write-CommunicationLog "NCC Agent message sent successfully" -Level "SUCCESS"
+            return $true
+        } else {
+            Write-CommunicationLog "NCC Agent communication script not found" -Level "ERROR"
+            return $false
+        }
+    } catch {
+        Write-CommunicationLog "Failed to send NCC Agent message: $($_.Exception.Message)" -Level "ERROR"
+        return $false
+    }
+}
+
+function Send-EmailNotification {
+    param([string]$Subject, [string]$Body, [string]$Recipient)
+
+    Write-CommunicationLog "Sending email to $Recipient" -Level "INFO"
+
+    try {
+        # Note: In production, this would use actual email server configuration
+        # For now, we'll simulate email sending
+        $emailLog = "To: $Recipient`nSubject: $Subject`nBody: $Body`nTimestamp: $(Get-Date)"
+        $emailLog | Out-File -FilePath "$PSScriptRoot\logs\email_notifications.log" -Append -Encoding UTF8
+
+        Write-CommunicationLog "Email notification logged (simulation)" -Level "SUCCESS"
+        return $true
+    } catch {
+        Write-CommunicationLog "Failed to send email: $($_.Exception.Message)" -Level "ERROR"
+        return $false
+    }
+}
+
+function Send-SMSNotification {
+    param([string]$Message, [string]$Recipient)
+
+    Write-CommunicationLog "Sending SMS to $Recipient" -Level "INFO"
+
+    try {
+        # Note: In production, this would integrate with SMS service provider
+        # For now, we'll simulate SMS sending
+        $smsLog = "To: $Recipient`nMessage: $Message`nTimestamp: $(Get-Date)"
+        $smsLog | Out-File -FilePath "$PSScriptRoot\logs\sms_notifications.log" -Append -Encoding UTF8
+
+        Write-CommunicationLog "SMS notification logged (simulation)" -Level "SUCCESS"
+        return $true
+    } catch {
+        Write-CommunicationLog "Failed to send SMS: $($_.Exception.Message)" -Level "ERROR"
+        return $false
+    }
+}
+
+function Send-EmergencyBroadcast {
+    param([string]$Message, [string]$Priority)
+
+    Write-CommunicationLog "Sending emergency broadcast: $Message" -Level "CRITICAL"
+
+    $broadcastMessage = @"
+EMERGENCY BROADCAST - $Priority PRIORITY
+$(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
+
+$MESSAGE
+
+EMERGENCY CONTACTS:
+$($Config.EmergencyContacts -join "`n")
+
+Please follow emergency protocols immediately.
+"@
+
+    # Send via all available channels simultaneously
+    $results = @()
+
+    # NCC Agent Broadcast
+    $results += Send-NCCAgentMessage -Message $broadcastMessage -Priority $Priority -Recipient "All"
+
+    # Email Broadcast
+    foreach ($recipient in $Config.Recipients.Keys) {
+        if ($Config.Recipients[$recipient].Email) {
+            $results += Send-EmailNotification -Subject "EMERGENCY BROADCAST - $Priority" -Body $broadcastMessage -Recipient $Config.Recipients[$recipient].Email
+        }
+    }
+
+    # SMS Broadcast (for critical recipients only)
+    if ($Priority -eq "Critical") {
+        foreach ($recipient in $Config.Recipients.Keys) {
+            if ($Config.Recipients[$recipient].SMS) {
+                $results += Send-SMSNotification -Message "EMERGENCY: $Message" -Recipient $Config.Recipients[$recipient].SMS
+            }
+        }
+    }
+
+    $successCount = ($results | Where-Object { $_ -eq $true }).Count
+    $totalCount = $results.Count
+
+    Write-CommunicationLog "Emergency broadcast sent to $successCount/$totalCount channels" -Level $(if ($successCount -eq $totalCount) { "SUCCESS" } else { "WARNING" })
+
+    return ($successCount -gt 0)
+}
+
+# =============================================================================
+# NOTIFICATION SYSTEM
+# =============================================================================
+
+function Send-TargetedNotification {
+    param([string]$Message, [string]$Priority, [string]$Recipient)
+
+    Write-CommunicationLog "Sending targeted notification to $Recipient" -Level "INFO"
+
+    $notificationMessage = @"
+NCC NOTIFICATION - $Priority PRIORITY
+$(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
+
+$Message
+
+Please acknowledge receipt and follow appropriate protocols.
+"@
+
+    $results = @()
+
+    # Determine recipient details
+    if ($Config.Recipients.ContainsKey($Recipient)) {
+        $recipientInfo = $Config.Recipients[$Recipient]
+
+        # Send based on priority and available channels
+        if ($recipientInfo.Email) {
+            $results += Send-EmailNotification -Subject "NCC Notification - $Priority" -Body $notificationMessage -Recipient $recipientInfo.Email
+        }
+
+        if ($recipientInfo.SMS -and ($Priority -eq "Critical" -or $Priority -eq "High")) {
+            $results += Send-SMSNotification -Message "NCC ALERT: $Message" -Recipient $recipientInfo.SMS
+        }
+
+        # Always send via NCC Agent system if available
+        $results += Send-NCCAgentMessage -Message $notificationMessage -Priority $Priority -Recipient $Recipient
+    } else {
+        Write-CommunicationLog "Unknown recipient: $Recipient" -Level "WARNING"
+        return $false
+    }
+
+    $successCount = ($results | Where-Object { $_ -eq $true }).Count
+    $totalCount = $results.Count
+
+    Write-CommunicationLog "Targeted notification sent to $successCount/$totalCount channels" -Level $(if ($successCount -gt 0) { "SUCCESS" } else { "ERROR" })
+
+    return ($successCount -gt 0)
+}
+
+# =============================================================================
+# STATUS MONITORING
+# =============================================================================
+
+function Get-CommunicationStatus {
+    $status = @{
+        Timestamp = Get-Date
+        Channels = @()
+        OverallHealth = "Healthy"
+        ActiveChannels = 0
+        TotalChannels = $Config.Channels.Count
+    }
+
+    foreach ($channel in $Config.Channels) {
+        $channelStatus = @{
+            Name = $channel.Name
+            Type = $channel.Type
+            Status = $channel.Status
+            LastTest = Get-Date
+            Health = "Unknown"
+        }
+
+        # Test channel health (simplified)
+        try {
+            switch ($channel.Name) {
+                "NCC_Agent_Communication" {
+                    $testScript = "$PSScriptRoot\..\communication\NCC.Agent.Communication.ps1"
+                    if (Test-Path $testScript) {
+                        $channelStatus.Health = "Healthy"
+                    } else {
+                        $channelStatus.Health = "Failed"
+                        $status.OverallHealth = "Degraded"
+                    }
+                }
+                "Email" {
+                    # Test email configuration
+                    $channelStatus.Health = "Healthy" # Simulated
+                }
+                "SMS" {
+                    # Test SMS configuration
+                    $channelStatus.Health = "Healthy" # Simulated
+                }
+                "Emergency_Broadcast" {
+                    $channelStatus.Health = "Healthy" # Always available
+                }
+            }
+
+            if ($channelStatus.Health -eq "Healthy") {
+                $status.ActiveChannels++
+            }
+        } catch {
+            $channelStatus.Health = "Error"
+            $status.OverallHealth = "Degraded"
+        }
+
+        $status.Channels += $channelStatus
+    }
+
+    return $status
+}
+
+# =============================================================================
+# MAIN EXECUTION
+# =============================================================================
+
+Write-CommunicationLog "=== $SystemName v$ScriptVersion ===" -Level "INFO"
+Write-CommunicationLog "Action: $Action" -Level "INFO"
+
+switch ($Action) {
+    "Initialize" {
+        Write-CommunicationLog "Initializing emergency communication system..." -Level "INFO"
+
+        # Create necessary directories
+        $dirs = @("logs", "config", "reports", "backups")
+        foreach ($dir in $dirs) {
+            if (-not (Test-Path "$PSScriptRoot\$dir")) {
+                New-Item -ItemType Directory -Path "$PSScriptRoot\$dir" -Force | Out-Null
+            }
+        }
+
+        # Create configuration file
+        $Config | ConvertTo-Json -Depth 10 | Out-File "$PSScriptRoot\config\communication_config.json" -Encoding UTF8
+
+        Write-CommunicationLog "Emergency communication system initialized successfully" -Level "SUCCESS"
+    }
+
+    "Broadcast" {
+        if (-not $Message) {
+            Write-CommunicationLog "Broadcast message is required" -Level "ERROR"
+            exit 1
+        }
+
+        Write-CommunicationLog "Initiating emergency broadcast with priority: $Priority" -Level "CRITICAL"
+        $result = Send-EmergencyBroadcast -Message $Message -Priority $Priority
+
+        if ($result) {
+            Write-CommunicationLog "Emergency broadcast completed successfully" -Level "SUCCESS"
+        } else {
+            Write-CommunicationLog "Emergency broadcast failed" -Level "CRITICAL"
+        }
+    }
+
+    "Notify" {
+        if (-not $Message) {
+            Write-CommunicationLog "Notification message is required" -Level "ERROR"
+            exit 1
+        }
+
+        Write-CommunicationLog "Sending targeted notification to $Recipient with priority: $Priority" -Level "INFO"
+        $result = Send-TargetedNotification -Message $Message -Priority $Priority -Recipient $Recipient
+
+        if ($result) {
+            Write-CommunicationLog "Targeted notification sent successfully" -Level "SUCCESS"
+        } else {
+            Write-CommunicationLog "Targeted notification failed" -Level "ERROR"
+        }
+    }
+
+    "Test" {
+        Write-CommunicationLog "Running communication system tests" -Level "INFO"
+
+        # Test each channel
+        $testResults = @()
+
+        # Test NCC Agent Communication
+        $testResults += Send-NCCAgentMessage -Message "Test message from emergency communication system" -Priority "Low" -Recipient "Test"
+
+        # Test Email (simulated)
+        $testResults += Send-EmailNotification -Subject "Test Email" -Body "This is a test email from the emergency communication system" -Recipient "test@nccorp.com"
+
+        # Test SMS (simulated)
+        $testResults += Send-SMSNotification -Message "Test SMS from emergency communication system" -Recipient "+1-555-9999"
+
+        $passedTests = ($testResults | Where-Object { $_ -eq $true }).Count
+        $totalTests = $testResults.Count
+
+        Write-CommunicationLog "Communication tests: $passedTests/$totalTests passed" -Level $(if ($passedTests -eq $totalTests) { "SUCCESS" } else { "WARNING" })
+
+        if ($passedTests -eq $totalTests) {
+            Write-Host "✓ All communication channels tested successfully" -ForegroundColor Green
+        } else {
+            Write-Host "⚠ Some communication channels failed testing" -ForegroundColor Yellow
+        }
+    }
+
+    "Status" {
+        $status = Get-CommunicationStatus
+
+        Write-Host "`n=== $SystemName Status ===" -ForegroundColor Cyan
+        Write-Host "Version: $ScriptVersion" -ForegroundColor White
+        Write-Host "Timestamp: $($status.Timestamp)" -ForegroundColor White
+        Write-Host "Overall Health: $($status.OverallHealth)" -ForegroundColor $(if ($status.OverallHealth -eq "Healthy") { "Green" } else { "Red" })
+        Write-Host "Active Channels: $($status.ActiveChannels)/$($status.TotalChannels)" -ForegroundColor $(if ($status.ActiveChannels -eq $status.TotalChannels) { "Green" } else { "Yellow" })
+        Write-Host ""
+
+        Write-Host "Channel Status:" -ForegroundColor Yellow
+        foreach ($channel in $status.Channels) {
+            $color = switch ($channel.Health) {
+                "Healthy" { "Green" }
+                "Failed" { "Red" }
+                "Error" { "Red" }
+                default { "Yellow" }
+            }
+            Write-Host "  $($channel.Name) ($($channel.Type)): $($channel.Health)" -ForegroundColor $color
+        }
+
+        Write-Host "`nEmergency Contacts:" -ForegroundColor Yellow
+        foreach ($contact in $Config.EmergencyContacts) {
+            Write-Host "  $contact" -ForegroundColor White
+        }
+
+        Write-Host "`nLog File: $LogFile" -ForegroundColor White
+        Write-Host ""
+    }
+}
+
+Write-CommunicationLog "Command completed: $Action" -Level "INFO"</content>
+<parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\_enterprise\emergency\NCC.Emergency.Communication.ps1

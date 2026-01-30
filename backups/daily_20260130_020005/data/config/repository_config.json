@@ -1,0 +1,164 @@
+{
+  "LastUpdate": "2026-01-29T20:53:45.3458015-07:00",
+  "QualityStandards": {
+    "Accuracy": {
+      "ErrorTolerance": 2,
+      "ValidationPassRate": 98
+    },
+    "Completeness": {
+      "NullValueThreshold": 5,
+      "RequiredFields": 95
+    },
+    "Timeliness": {
+      "MaxAgeHours": 24,
+      "UpdateFrequency": "Daily"
+    },
+    "Consistency": {
+      "SchemaAdherence": 100,
+      "FormatCompliance": 100
+    },
+    "Integrity": {
+      "DuplicateRate": 0,
+      "ReferentialIntegrity": 100
+    }
+  },
+  "Status": "Active",
+  "Division": "TestDivision",
+  "Version": "3.0.0",
+  "DirectoryStructure": {
+    "Root": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine",
+    "Backup": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\data\\backup",
+    "Config": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\data\\config",
+    "Logs": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\data\\logs",
+    "Temp": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\data\\temp",
+    "Analytics": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\data\\analytics",
+    "Archive": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\data\\archive",
+    "Processed": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\data\\processed",
+    "Raw": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\data\\raw"
+  },
+  "DataSchemas": {
+    "ComplianceData": {
+      "Optional": [
+        "findings_count",
+        "remediation_status",
+        "next_audit",
+        "compliance_score"
+      ],
+      "Validation": {
+        "compliance_score": "number:0-100",
+        "compliance_status": "enum:Compliant,Non-Compliant,Pending,Waived",
+        "findings_count": "number:0-999"
+      },
+      "Required": [
+        "timestamp",
+        "division",
+        "regulation",
+        "compliance_status",
+        "last_audit"
+      ]
+    },
+    "OperationalData": {
+      "Optional": [
+        "resources_used",
+        "output_volume",
+        "quality_score",
+        "efficiency_rating"
+      ],
+      "Validation": {
+        "duration": "number:0-86400",
+        "efficiency_rating": "number:0-100",
+        "quality_score": "number:0-100"
+      },
+      "Required": [
+        "timestamp",
+        "division",
+        "operation_type",
+        "status",
+        "duration"
+      ]
+    },
+    "AgentMetrics": {
+      "Optional": [
+        "error_count",
+        "response_time",
+        "resource_usage",
+        "data_processed"
+      ],
+      "Validation": {
+        "performance_score": "number:0-100",
+        "timestamp": "datetime",
+        "error_count": "number:0-999999"
+      },
+      "Required": [
+        "timestamp",
+        "agent_name",
+        "division",
+        "operation",
+        "status",
+        "performance_score"
+      ]
+    },
+    "PerformanceData": {
+      "Optional": [
+        "unit",
+        "trend",
+        "benchmark",
+        "variance_percentage"
+      ],
+      "Validation": {
+        "metric_value": "number",
+        "variance_percentage": "number:-1000-1000",
+        "target_value": "number"
+      },
+      "Required": [
+        "timestamp",
+        "division",
+        "metric_name",
+        "metric_value",
+        "target_value"
+      ]
+    },
+    "FinancialData": {
+      "Optional": [
+        "risk_rating",
+        "return_rate",
+        "volatility",
+        "benchmark"
+      ],
+      "Validation": {
+        "value": "number",
+        "volatility": "number:0-100",
+        "return_rate": "number:-100-1000"
+      },
+      "Required": [
+        "timestamp",
+        "division",
+        "asset_class",
+        "value",
+        "currency"
+      ]
+    },
+    "RiskData": {
+      "Optional": [
+        "impact_severity",
+        "mitigation_status",
+        "responsible_party",
+        "due_date"
+      ],
+      "Validation": {
+        "exposure_amount": "number:0-999999999",
+        "probability": "number:0-1",
+        "impact_severity": "enum:Low,Medium,High,Critical"
+      },
+      "Required": [
+        "timestamp",
+        "division",
+        "risk_type",
+        "exposure_amount",
+        "probability"
+      ]
+    }
+  },
+  "Initialized": "2026-01-29T20:53:45.3457034-07:00",
+  "SchemaVersion": "NCC-DATA-2026"
+}

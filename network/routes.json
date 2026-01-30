@@ -1,0 +1,35 @@
+﻿{
+    "LastUpdate":  {
+                       "value":  "\/Date(1769747441981)\/",
+                       "DisplayHint":  2,
+                       "DateTime":  "January 29, 2026 9:30:41 PM"
+                   },
+    "Routes":  [
+                   {
+                       "TargetType":  "DivisionBroadcast",
+                       "Pattern":  "DIVISION:*",
+                       "Priority":  "High",
+                       "Filters":  [
+                                       "SecurityCheck",
+                                       "RateLimit"
+                                   ]
+                   },
+                   {
+                       "TargetType":  "AllAgents",
+                       "Pattern":  "EMERGENCY",
+                       "Priority":  "Critical",
+                       "Filters":  [
+                                       "Redundancy",
+                                       "Acknowledgment"
+                                   ]
+                   },
+                   {
+                       "TargetType":  "SwarmParticipants",
+                       "Pattern":  "COORDINATE",
+                       "Priority":  "High",
+                       "Filters":  [
+                                       "TaskValidation"
+                                   ]
+                   }
+               ]
+}

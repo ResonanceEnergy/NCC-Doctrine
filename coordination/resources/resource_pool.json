@@ -1,0 +1,66 @@
+﻿{
+    "LastUpdate":  {
+                       "value":  "\/Date(1769751143844)\/",
+                       "DisplayHint":  2,
+                       "DateTime":  "January 29, 2026 10:32:23 PM"
+                   },
+    "Resources":  {
+                      "STORAGE":  {
+                                      "TotalCapacity":  953,
+                                      "AllocationHistory":  [
+
+                                                            ],
+                                      "AllocatedCapacity":  0,
+                                      "AvailableCapacity":  953,
+                                      "Type":  "STORAGE"
+                                  },
+                      "API_QUOTA":  {
+                                        "TotalCapacity":  1000,
+                                        "AllocationHistory":  [
+
+                                                              ],
+                                        "AllocatedCapacity":  0,
+                                        "AvailableCapacity":  1000,
+                                        "Type":  "API_QUOTA"
+                                    },
+                      "MEMORY":  {
+                                     "TotalCapacity":  15,
+                                     "AllocationHistory":  [
+
+                                                           ],
+                                     "AllocatedCapacity":  0,
+                                     "AvailableCapacity":  15,
+                                     "Type":  "MEMORY"
+                                 },
+                      "DATA_ACCESS":  {
+                                          "TotalCapacity":  100,
+                                          "AllocationHistory":  [
+
+                                                                ],
+                                          "AllocatedCapacity":  0,
+                                          "AvailableCapacity":  100,
+                                          "Type":  "DATA_ACCESS"
+                                      },
+                      "NETWORK":  {
+                                      "TotalCapacity":  1000,
+                                      "AllocationHistory":  [
+
+                                                            ],
+                                      "AllocatedCapacity":  0,
+                                      "AvailableCapacity":  1000,
+                                      "Type":  "NETWORK"
+                                  },
+                      "COMPUTE":  {
+                                      "TotalCapacity":  12,
+                                      "AllocationHistory":  [
+
+                                                            ],
+                                      "AllocatedCapacity":  0,
+                                      "AvailableCapacity":  12,
+                                      "Type":  "COMPUTE"
+                                  }
+                  },
+    "Allocations":  {
+
+                    }
+}

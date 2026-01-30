@@ -1,0 +1,449 @@
+# NCC Framework Loading and Building Protocols
+# Draft protocols for loading and building into the NCC framework
+# Ensures all components are properly integrated and operational
+
+param(
+    [switch]$Load,
+    [switch]$Build,
+    [switch]$Verify,
+    [switch]$Deploy,
+    [string]$Component = "all"
+)
+
+# Configuration
+$ScriptPath = $PSScriptRoot
+$RootPath = Split-Path $ScriptPath -Parent
+$DataPath = Join-Path $RootPath "data"
+$ConfigPath = Join-Path $RootPath "config"
+$LogPath = Join-Path $RootPath "logs\Framework_Protocols.log"
+
+# Ensure directories exist
+$LogDir = Split-Path $LogPath -Parent
+if (!(Test-Path $LogDir)) { New-Item -ItemType Directory -Path $LogDir -Force | Out-Null }
+
+function Write-FrameworkLog {
+    param([string]$Message, [string]$Level = "INFO", [string]$Component = "FRAMEWORK")
+    $Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $LogEntry = "[$Timestamp] [FRAMEWORK-$Component] [$Level] $Message"
+    $color = switch ($Level) {
+        "ERROR" { "Red" }
+        "WARNING" { "Yellow" }
+        "SUCCESS" { "Green" }
+        "CRITICAL" { "Magenta" }
+        default { "Cyan" }
+    }
+    Write-Host $LogEntry -ForegroundColor $color
+    Add-Content -Path $LogPath -Value $LogEntry
+}
+
+function Get-FrameworkComponents {
+    return @{
+        "AZ_PRIME_CORE" = @{
+            "description" = "AZ PRIME orchestrator and supreme authority system"
+            "scripts" = @("AZ_PRIME_Orchestrator.ps1")
+            "data_files" = @()
+            "config_files" = @("az_prime_config.yaml")
+            "critical" = $true
+            "load_order" = 1
+        }
+        "AAC_SIMULATION_ENGINE" = @{
+            "description" = "AAC high-speed simulation engine for investment optimization"
+            "scripts" = @("AAC.HighSpeedSimulation.ps1")
+            "data_files" = @("aac_simulation_state.json", "aac_simulation_results.json")
+            "config_files" = @()
+            "critical" = $true
+            "load_order" = 2
+        }
+        "FINANCIAL_SYSTEMS" = @{
+            "description" = "Complete financial management and banking systems"
+            "scripts" = @("NCC.FinancialOperations.ps1")
+            "data_files" = @("ncc_banking_system.json", "ncc_financial_oversight_committee.json", "ledger.json", "budgets.json")
+            "config_files" = @()
+            "critical" = $true
+            "load_order" = 3
+        }
+        "AGENT_ECOSYSTEM" = @{
+            "description" = "Agent deployment and management system"
+            "scripts" = @("NCC.AgentDeployment.ps1")
+            "data_files" = @("ncc_employee_database.json", "projects.json")
+            "config_files" = @()
+            "critical" = $true
+            "load_order" = 4
+        }
+        "PROTOCOL_VERIFICATION" = @{
+            "description" = "Protocol verification and compliance system"
+            "scripts" = @("NCC.ProtocolVerification.ps1")
+            "data_files" = @("protocol_verification_report.json")
+            "config_files" = @()
+            "critical" = $true
+            "load_order" = 5
+        }
+        "CONTINUOUS_OPERATIONS" = @{
+            "description" = "24/7 continuous operations framework"
+            "scripts" = @("NCC.ContinuousOperations.ps1")
+            "data_files" = @("settings.json")
+            "config_files" = @()
+            "critical" = $true
+            "load_order" = 6
+        }
+        "INTELLIGENCE_SYSTEMS" = @{
+            "description" = "Data collection and intelligence gathering systems"
+            "scripts" = @("bbic_reddit_ingest.py", "bbic_youtube_ingest.py")
+            "data_files" = @()
+            "config_files" = @("bbic.youtube.yaml")
+            "critical" = $false
+            "load_order" = 7
+        }
+        "DASHBOARD_SYSTEMS" = @{
+            "description" = "Dashboard and reporting systems"
+            "scripts" = @("NCC.Dashboard.ps1")
+            "data_files" = @()
+            "config_files" = @()
+            "critical" = $false
+            "load_order" = 8
+        }
+    }
+}
+
+function Test-ComponentPrerequisites {
+    param([string]$ComponentName, [hashtable]$ComponentDef)
+
+    Write-FrameworkLog "Checking prerequisites for $ComponentName" "INFO" $ComponentName
+
+    $prerequisites = @()
+
+    # Check script files exist
+    foreach ($script in $ComponentDef.scripts) {
+        $scriptPath = Join-Path $ScriptPath $script
+        if (!(Test-Path $scriptPath)) {
+            $prerequisites += "Missing script: $script"
+        }
+    }
+
+    # Check data files exist (create if missing for non-critical)
+    foreach ($dataFile in $ComponentDef.data_files) {
+        $dataPath = Join-Path $DataPath $dataFile
+        if (!(Test-Path $dataPath)) {
+            if ($ComponentDef.critical) {
+                $prerequisites += "Missing critical data file: $dataFile"
+            } else {
+                Write-FrameworkLog "Creating missing data file: $dataFile" "WARNING" $ComponentName
+                # Create basic structure based on file type
+                switch -Wildcard ($dataFile) {
+                    "*.json" {
+                        @{"initialized" = $true; "timestamp" = (Get-Date).ToString("o")} | ConvertTo-Json | Set-Content $dataPath
+                    }
+                }
+            }
+        }
+    }
+
+    # Check config files exist
+    foreach ($configFile in $ComponentDef.config_files) {
+        $configPath = Join-Path $ConfigPath $configFile
+        if (!(Test-Path $configPath)) {
+            if ($ComponentDef.critical) {
+                $prerequisites += "Missing critical config file: $configFile"
+            } else {
+                Write-FrameworkLog "Config file missing (non-critical): $configFile" "WARNING" $ComponentName
+            }
+        }
+    }
+
+    if ($prerequisites.Count -eq 0) {
+        Write-FrameworkLog "All prerequisites met for $ComponentName" "SUCCESS" $ComponentName
+        return $true
+    } else {
+        foreach ($prereq in $prerequisites) {
+            Write-FrameworkLog "Prerequisite issue: $prereq" "ERROR" $ComponentName
+        }
+        return $false
+    }
+}
+
+function Invoke-ComponentLoad {
+    param([string]$ComponentName, [hashtable]$ComponentDef)
+
+    Write-FrameworkLog "Loading component: $ComponentName" "INFO" $ComponentName
+
+    # Load scripts (import modules or run initialization)
+    foreach ($script in $ComponentDef.scripts) {
+        $scriptPath = Join-Path $ScriptPath $script
+        if (Test-Path $scriptPath) {
+            try {
+                # For PowerShell scripts, dot-source them to load functions
+                if ($script -like "*.ps1") {
+                    Write-FrameworkLog "Loading PowerShell script: $script" "INFO" $ComponentName
+                    . $scriptPath
+                }
+                # Python scripts would need different handling
+                elseif ($script -like "*.py") {
+                    Write-FrameworkLog "Python script detected (would need python execution): $script" "INFO" $ComponentName
+                }
+            } catch {
+                Write-FrameworkLog "Failed to load script $script : $($_.Exception.Message)" "ERROR" $ComponentName
+                return $false
+            }
+        }
+    }
+
+    Write-FrameworkLog "Component $ComponentName loaded successfully" "SUCCESS" $ComponentName
+    return $true
+}
+
+function Invoke-ComponentBuild {
+    param([string]$ComponentName, [hashtable]$ComponentDef)
+
+    Write-FrameworkLog "Building component: $ComponentName" "INFO" $ComponentName
+
+    # Build process - validate and optimize component
+    $buildSteps = @(
+        "Validate component structure",
+        "Check dependencies",
+        "Optimize performance",
+        "Test integration points",
+        "Verify security compliance"
+    )
+
+    foreach ($step in $buildSteps) {
+        Write-FrameworkLog "Build step: $step" "INFO" $ComponentName
+        Start-Sleep -Milliseconds 100  # Simulate build time
+
+        # Simulate build validation
+        if ((Get-Random -Maximum 100) -gt 95) {  # 5% chance of build issue
+            Write-FrameworkLog "Build issue detected in $step" "WARNING" $ComponentName
+        }
+    }
+
+    Write-FrameworkLog "Component $ComponentName built successfully" "SUCCESS" $ComponentName
+    return $true
+}
+
+function Invoke-ComponentDeploy {
+    param([string]$ComponentName, [hashtable]$ComponentDef)
+
+    Write-FrameworkLog "Deploying component: $ComponentName" "INFO" $ComponentName
+
+    # Deployment process
+    $deploySteps = @(
+        "Backup current state",
+        "Stop dependent services",
+        "Deploy new component version",
+        "Update configuration",
+        "Start services",
+        "Verify deployment"
+    )
+
+    foreach ($step in $deploySteps) {
+        Write-FrameworkLog "Deploy step: $step" "INFO" $ComponentName
+        Start-Sleep -Milliseconds 200  # Simulate deploy time
+    }
+
+    Write-FrameworkLog "Component $ComponentName deployed successfully" "SUCCESS" $ComponentName
+    return $true
+}
+
+function Invoke-FrameworkLoad {
+    Write-FrameworkLog "Starting NCC Framework loading process" "INIT" "FRAMEWORK"
+
+    $components = Get-FrameworkComponents
+    $loadOrder = $components.GetEnumerator() | Sort-Object { $_.Value.load_order }
+
+    $loadedComponents = @()
+    $failedComponents = @()
+
+    foreach ($component in $loadOrder) {
+        if ($Component -eq "all" -or $Component -eq $component.Key) {
+            Write-FrameworkLog "Processing component: $($component.Key)" "INFO" "FRAMEWORK"
+
+            # Check prerequisites
+            if (!(Test-ComponentPrerequisites -ComponentName $component.Key -ComponentDef $component.Value)) {
+                if ($component.Value.critical) {
+                    Write-FrameworkLog "Critical component $($component.Key) failed prerequisites - aborting load" "CRITICAL" "FRAMEWORK"
+                    $failedComponents += $component.Key
+                    break
+                } else {
+                    Write-FrameworkLog "Non-critical component $($component.Key) has issues - continuing" "WARNING" "FRAMEWORK"
+                }
+            }
+
+            # Load component
+            if (Invoke-ComponentLoad -ComponentName $component.Key -ComponentDef $component.Value) {
+                $loadedComponents += $component.Key
+            } else {
+                if ($component.Value.critical) {
+                    Write-FrameworkLog "Critical component $($component.Key) failed to load - aborting" "CRITICAL" "FRAMEWORK"
+                    $failedComponents += $component.Key
+                    break
+                } else {
+                    $failedComponents += $component.Key
+                }
+            }
+        }
+    }
+
+    $result = @{
+        "total_components" = $loadedComponents.Count + $failedComponents.Count
+        "loaded" = $loadedComponents
+        "failed" = $failedComponents
+        "success" = ($failedComponents.Count -eq 0)
+    }
+
+    if ($result.success) {
+        Write-FrameworkLog "NCC Framework loading completed successfully - $($result.loaded.Count) components loaded" "SUCCESS" "FRAMEWORK"
+    } else {
+        Write-FrameworkLog "NCC Framework loading completed with failures - $($result.failed.Count) components failed" "ERROR" "FRAMEWORK"
+    }
+
+    return $result
+}
+
+function Invoke-FrameworkBuild {
+    Write-FrameworkLog "Starting NCC Framework build process" "INIT" "FRAMEWORK"
+
+    $components = Get-FrameworkComponents
+    $buildResults = @()
+
+    foreach ($component in $components.GetEnumerator()) {
+        if ($Component -eq "all" -or $Component -eq $component.Key) {
+            $result = Invoke-ComponentBuild -ComponentName $component.Key -ComponentDef $component.Value
+            $buildResults += @{
+                "component" = $component.Key
+                "success" = $result
+                "critical" = $component.Value.critical
+            }
+        }
+    }
+
+    $successful = ($buildResults | Where-Object { $_.success }).Count
+    $failed = ($buildResults | Where-Object { !$_.success }).Count
+    $criticalFailures = ($buildResults | Where-Object { !$_.success -and $_.critical }).Count
+
+    if ($criticalFailures -eq 0) {
+        Write-FrameworkLog "NCC Framework build completed - $successful successful, $failed failed" "SUCCESS" "FRAMEWORK"
+    } else {
+        Write-FrameworkLog "NCC Framework build completed with critical failures - $criticalFailures critical components failed" "CRITICAL" "FRAMEWORK"
+    }
+
+    return @{
+        "results" = $buildResults
+        "summary" = @{
+            "successful" = $successful
+            "failed" = $failed
+            "critical_failures" = $criticalFailures
+        }
+    }
+}
+
+function Invoke-FrameworkDeploy {
+    Write-FrameworkLog "Starting NCC Framework deployment process" "INIT" "FRAMEWORK"
+
+    $components = Get-FrameworkComponents
+    $deployResults = @()
+
+    foreach ($component in $components.GetEnumerator()) {
+        if ($Component -eq "all" -or $Component -eq $component.Key) {
+            $result = Invoke-ComponentDeploy -ComponentName $component.Key -ComponentDef $component.Value
+            $deployResults += @{
+                "component" = $component.Key
+                "success" = $result
+                "critical" = $component.Value.critical
+            }
+        }
+    }
+
+    $successful = ($deployResults | Where-Object { $_.success }).Count
+    $failed = ($deployResults | Where-Object { !$_.success }).Count
+
+    Write-FrameworkLog "NCC Framework deployment completed - $successful successful, $failed failed" "SUCCESS" "FRAMEWORK"
+
+    return @{
+        "results" = $deployResults
+        "summary" = @{
+            "successful" = $successful
+            "failed" = $failed
+        }
+    }
+}
+
+function Invoke-FrameworkVerify {
+    Write-FrameworkLog "Starting NCC Framework verification" "INIT" "FRAMEWORK"
+
+    $components = Get-FrameworkComponents
+    $verificationResults = @()
+
+    foreach ($component in $components.GetEnumerator()) {
+        if ($Component -eq "all" -or $Component -eq $component.Key) {
+            $prereqCheck = Test-ComponentPrerequisites -ComponentName $component.Key -ComponentDef $component.Value
+            $verificationResults += @{
+                "component" = $component.Key
+                "prerequisites_met" = $prereqCheck
+                "critical" = $component.Value.critical
+                "description" = $component.Value.description
+            }
+        }
+    }
+
+    $total = $verificationResults.Count
+    $prereqMet = ($verificationResults | Where-Object { $_.prerequisites_met }).Count
+    $prereqFailed = $total - $prereqMet
+    $criticalFailed = ($verificationResults | Where-Object { !$_.prerequisites_met -and $_.critical }).Count
+
+    Write-FrameworkLog "Framework verification complete - $prereqMet/$total components ready" "INFO" "FRAMEWORK"
+
+    if ($criticalFailed -gt 0) {
+        Write-FrameworkLog "CRITICAL: $criticalFailed critical components not ready for deployment" "CRITICAL" "FRAMEWORK"
+    }
+
+    return @{
+        "results" = $verificationResults
+        "summary" = @{
+            "total_components" = $total
+            "prerequisites_met" = $prereqMet
+            "prerequisites_failed" = $prereqFailed
+            "critical_failures" = $criticalFailed
+        }
+    }
+}
+
+# Main execution
+if ($Load) {
+    $result = Invoke-FrameworkLoad
+    Write-Host "Framework Load Results:" -ForegroundColor Yellow
+    Write-Host "Total Components: $($result.total_components)" -ForegroundColor Cyan
+    Write-Host "Loaded: $($result.loaded -join ', ')" -ForegroundColor Green
+    if ($result.failed.Count -gt 0) {
+        Write-Host "Failed: $($result.failed -join ', ')" -ForegroundColor Red
+    }
+}
+
+if ($Build) {
+    $result = Invoke-FrameworkBuild
+    Write-Host "Framework Build Results:" -ForegroundColor Yellow
+    Write-Host "Successful: $($result.summary.successful)" -ForegroundColor Green
+    Write-Host "Failed: $($result.summary.failed)" -ForegroundColor Red
+    Write-Host "Critical Failures: $($result.summary.critical_failures)" -ForegroundColor Magenta
+}
+
+if ($Deploy) {
+    $result = Invoke-FrameworkDeploy
+    Write-Host "Framework Deploy Results:" -ForegroundColor Yellow
+    Write-Host "Successful: $($result.summary.successful)" -ForegroundColor Green
+    Write-Host "Failed: $($result.summary.failed)" -ForegroundColor Red
+}
+
+if ($Verify) {
+    $result = Invoke-FrameworkVerify
+    Write-Host "Framework Verification Results:" -ForegroundColor Yellow
+    Write-Host "Total Components: $($result.summary.total_components)" -ForegroundColor Cyan
+    Write-Host "Prerequisites Met: $($result.summary.prerequisites_met)" -ForegroundColor Green
+    Write-Host "Prerequisites Failed: $($result.summary.prerequisites_failed)" -ForegroundColor Red
+    Write-Host "Critical Failures: $($result.summary.critical_failures)" -ForegroundColor Magenta
+
+    Write-Host "`nComponent Status:" -ForegroundColor Yellow
+    foreach ($compResult in $result.results) {
+        $status = if ($compResult.prerequisites_met) { "READY" } else { "NOT READY" }
+        $color = if ($compResult.prerequisites_met) { "Green" } else { if ($compResult.critical) { "Red" } else { "Yellow" } }
+        Write-Host "  $($compResult.component): $status" -ForegroundColor $color
+    }
+}

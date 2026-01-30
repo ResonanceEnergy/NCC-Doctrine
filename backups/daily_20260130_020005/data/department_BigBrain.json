@@ -1,0 +1,5481 @@
+{
+  "last_updated": "2026-01-29T19:17:34Z",
+  "current_tasks": [],
+  "department": "BigBrain",
+  "tasks_completed": 912,
+  "agent_performance": {},
+  "data_repository": [
+    {
+      "completion_time": "2026-01-29T18:31:02Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 192
+    },
+    {
+      "completion_time": "2026-01-29T18:31:02Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 192
+    },
+    {
+      "completion_time": "2026-01-29T18:31:06Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 196
+    },
+    {
+      "completion_time": "2026-01-29T18:31:10Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 200
+    },
+    {
+      "completion_time": "2026-01-29T18:31:15Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 205
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:15Z",
+      "task_id": "BB-003",
+      "cycle": 2
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:16Z",
+      "task_id": "BB-003",
+      "cycle": 3
+    },
+    {
+      "completion_time": "2026-01-29T18:31:17Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 207
+    },
+    {
+      "completion_time": "2026-01-29T18:31:18Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 208
+    },
+    {
+      "completion_time": "2026-01-29T18:31:22Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 212
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:23Z",
+      "task_id": "BB-003",
+      "cycle": 10
+    },
+    {
+      "completion_time": "2026-01-29T18:31:28Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 218
+    },
+    {
+      "completion_time": "2026-01-29T18:31:29Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 219
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:30Z",
+      "task_id": "BB-001",
+      "cycle": 16
+    },
+    {
+      "completion_time": "2026-01-29T18:31:31Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 221
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:32Z",
+      "task_id": "BB-002",
+      "cycle": 18
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:32Z",
+      "task_id": "BB-003",
+      "cycle": 18
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:34Z",
+      "task_id": "BB-003",
+      "cycle": 20
+    },
+    {
+      "completion_time": "2026-01-29T18:31:35Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 225
+    },
+    {
+      "completion_time": "2026-01-29T18:31:36Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 226
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:37Z",
+      "task_id": "BB-002",
+      "cycle": 23
+    },
+    {
+      "completion_time": "2026-01-29T18:31:38Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 228
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:39Z",
+      "task_id": "BB-002",
+      "cycle": 25
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:40Z",
+      "task_id": "BB-002",
+      "cycle": 26
+    },
+    {
+      "completion_time": "2026-01-29T18:31:44Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 233
+    },
+    {
+      "completion_time": "2026-01-29T18:31:45Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 234
+    },
+    {
+      "completion_time": "2026-01-29T18:31:47Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 236
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:47Z",
+      "task_id": "BB-003",
+      "cycle": 33
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:47Z",
+      "task_id": "BB-001",
+      "cycle": 33
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:49Z",
+      "task_id": "BB-003",
+      "cycle": 35
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:53Z",
+      "task_id": "BB-001",
+      "cycle": 39
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:56Z",
+      "task_id": "BB-001",
+      "cycle": 42
+    },
+    {
+      "completion_time": "2026-01-29T18:31:58Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 247
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:59Z",
+      "task_id": "BB-003",
+      "cycle": 45
+    },
+    {
+      "completion_time": "2026-01-29T18:32:00Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 249
+    },
+    {
+      "completion_time": "2026-01-29T18:32:03Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 252
+    },
+    {
+      "completion_time": "2026-01-29T18:32:04Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 253
+    },
+    {
+      "completion_time": "2026-01-29T18:32:06Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 255
+    },
+    {
+      "completion_time": "2026-01-29T18:32:09Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 258
+    },
+    {
+      "completion_time": "2026-01-29T18:32:09Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 258
+    },
+    {
+      "completion_time": "2026-01-29T18:32:16Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 265
+    },
+    {
+      "completion_time": "2026-01-29T18:32:25Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 274
+    },
+    {
+      "completion_time": "2026-01-29T18:32:28Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 277
+    },
+    {
+      "completion_time": "2026-01-29T18:32:28Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 277
+    },
+    {
+      "completion_time": "2026-01-29T18:32:28Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 277
+    },
+    {
+      "completion_time": "2026-01-29T18:32:30Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 279
+    },
+    {
+      "completion_time": "2026-01-29T18:32:31Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 280
+    },
+    {
+      "completion_time": "2026-01-29T18:32:33Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 282
+    },
+    {
+      "completion_time": "2026-01-29T18:32:34Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 283
+    },
+    {
+      "completion_time": "2026-01-29T18:32:37Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 286
+    },
+    {
+      "completion_time": "2026-01-29T18:32:38Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 287
+    },
+    {
+      "completion_time": "2026-01-29T18:32:39Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 288
+    },
+    {
+      "completion_time": "2026-01-29T18:32:43Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 292
+    },
+    {
+      "completion_time": "2026-01-29T18:32:45Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 294
+    },
+    {
+      "completion_time": "2026-01-29T18:32:47Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 296
+    },
+    {
+      "completion_time": "2026-01-29T18:32:50Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 299
+    },
+    {
+      "completion_time": "2026-01-29T18:32:51Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 300
+    },
+    {
+      "completion_time": "2026-01-29T18:32:52Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 301
+    },
+    {
+      "completion_time": "2026-01-29T18:32:55Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 304
+    },
+    {
+      "completion_time": "2026-01-29T18:33:03Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 312
+    },
+    {
+      "completion_time": "2026-01-29T18:33:09Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 318
+    },
+    {
+      "completion_time": "2026-01-29T18:33:15Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 324
+    },
+    {
+      "completion_time": "2026-01-29T18:33:15Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 324
+    },
+    {
+      "completion_time": "2026-01-29T18:33:23Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 332
+    },
+    {
+      "completion_time": "2026-01-29T18:33:24Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 333
+    },
+    {
+      "completion_time": "2026-01-29T18:33:28Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 337
+    },
+    {
+      "completion_time": "2026-01-29T18:33:31Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 340
+    },
+    {
+      "completion_time": "2026-01-29T18:33:32Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 341
+    },
+    {
+      "completion_time": "2026-01-29T18:33:40Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 349
+    },
+    {
+      "completion_time": "2026-01-29T18:33:43Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 351
+    },
+    {
+      "completion_time": "2026-01-29T18:33:49Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 357
+    },
+    {
+      "completion_time": "2026-01-29T18:33:50Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 358
+    },
+    {
+      "completion_time": "2026-01-29T18:33:53Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 361
+    },
+    {
+      "completion_time": "2026-01-29T18:33:57Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 365
+    },
+    {
+      "completion_time": "2026-01-29T18:33:58Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 366
+    },
+    {
+      "completion_time": "2026-01-29T18:34:05Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 373
+    },
+    {
+      "completion_time": "2026-01-29T18:34:09Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 377
+    },
+    {
+      "completion_time": "2026-01-29T18:34:11Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 379
+    },
+    {
+      "completion_time": "2026-01-29T18:34:12Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 380
+    },
+    {
+      "completion_time": "2026-01-29T18:34:16Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 384
+    },
+    {
+      "completion_time": "2026-01-29T18:34:28Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 396
+    },
+    {
+      "completion_time": "2026-01-29T18:34:29Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 397
+    },
+    {
+      "completion_time": "2026-01-29T18:34:34Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 402
+    },
+    {
+      "completion_time": "2026-01-29T18:34:37Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 405
+    },
+    {
+      "completion_time": "2026-01-29T18:34:38Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 406
+    },
+    {
+      "completion_time": "2026-01-29T18:34:41Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 409
+    },
+    {
+      "completion_time": "2026-01-29T18:34:44Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 412
+    },
+    {
+      "completion_time": "2026-01-29T18:34:46Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 414
+    },
+    {
+      "completion_time": "2026-01-29T18:34:49Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 417
+    },
+    {
+      "completion_time": "2026-01-29T18:34:53Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 421
+    },
+    {
+      "completion_time": "2026-01-29T18:34:56Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 424
+    },
+    {
+      "completion_time": "2026-01-29T18:34:58Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 426
+    },
+    {
+      "completion_time": "2026-01-29T18:35:01Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 429
+    },
+    {
+      "completion_time": "2026-01-29T18:35:04Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 432
+    },
+    {
+      "completion_time": "2026-01-29T18:35:04Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 432
+    },
+    {
+      "completion_time": "2026-01-29T18:35:04Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 432
+    },
+    {
+      "completion_time": "2026-01-29T18:35:06Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 434
+    },
+    {
+      "completion_time": "2026-01-29T18:35:06Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 434
+    },
+    {
+      "completion_time": "2026-01-29T18:35:14Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 442
+    },
+    {
+      "completion_time": "2026-01-29T18:35:14Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 442
+    },
+    {
+      "completion_time": "2026-01-29T18:35:21Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 449
+    },
+    {
+      "completion_time": "2026-01-29T18:35:22Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 450
+    },
+    {
+      "completion_time": "2026-01-29T18:35:22Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 450
+    },
+    {
+      "completion_time": "2026-01-29T18:35:23Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 451
+    },
+    {
+      "completion_time": "2026-01-29T18:35:29Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 457
+    },
+    {
+      "completion_time": "2026-01-29T18:35:34Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 461
+    },
+    {
+      "completion_time": "2026-01-29T18:35:39Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 466
+    },
+    {
+      "completion_time": "2026-01-29T18:35:40Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 467
+    },
+    {
+      "completion_time": "2026-01-29T18:35:42Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 469
+    },
+    {
+      "completion_time": "2026-01-29T18:35:46Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 473
+    },
+    {
+      "completion_time": "2026-01-29T18:35:47Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 474
+    },
+    {
+      "completion_time": "2026-01-29T18:35:49Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 476
+    },
+    {
+      "completion_time": "2026-01-29T18:35:51Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 478
+    },
+    {
+      "completion_time": "2026-01-29T18:35:53Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 480
+    },
+    {
+      "completion_time": "2026-01-29T18:36:05Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 492
+    },
+    {
+      "completion_time": "2026-01-29T18:36:11Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 498
+    },
+    {
+      "completion_time": "2026-01-29T18:36:15Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 502
+    },
+    {
+      "completion_time": "2026-01-29T18:36:16Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 503
+    },
+    {
+      "completion_time": "2026-01-29T18:36:17Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 504
+    },
+    {
+      "completion_time": "2026-01-29T18:36:17Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 504
+    },
+    {
+      "completion_time": "2026-01-29T18:36:18Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 505
+    },
+    {
+      "completion_time": "2026-01-29T18:36:22Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 509
+    },
+    {
+      "completion_time": "2026-01-29T18:36:23Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 510
+    },
+    {
+      "completion_time": "2026-01-29T18:36:26Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 513
+    },
+    {
+      "completion_time": "2026-01-29T18:36:28Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 515
+    },
+    {
+      "completion_time": "2026-01-29T18:36:31Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 518
+    },
+    {
+      "completion_time": "2026-01-29T18:36:35Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 522
+    },
+    {
+      "completion_time": "2026-01-29T18:36:35Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 522
+    },
+    {
+      "completion_time": "2026-01-29T18:36:38Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 525
+    },
+    {
+      "completion_time": "2026-01-29T18:36:41Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 528
+    },
+    {
+      "completion_time": "2026-01-29T18:36:44Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 531
+    },
+    {
+      "completion_time": "2026-01-29T18:36:50Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 537
+    },
+    {
+      "completion_time": "2026-01-29T18:36:52Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 539
+    },
+    {
+      "completion_time": "2026-01-29T18:36:54Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 541
+    },
+    {
+      "completion_time": "2026-01-29T18:37:03Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 550
+    },
+    {
+      "completion_time": "2026-01-29T18:37:04Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 551
+    },
+    {
+      "completion_time": "2026-01-29T18:37:05Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 552
+    },
+    {
+      "completion_time": "2026-01-29T18:37:05Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 552
+    },
+    {
+      "completion_time": "2026-01-29T18:37:06Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 553
+    },
+    {
+      "completion_time": "2026-01-29T18:37:12Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 559
+    },
+    {
+      "completion_time": "2026-01-29T18:37:17Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 564
+    },
+    {
+      "completion_time": "2026-01-29T18:37:18Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 565
+    },
+    {
+      "completion_time": "2026-01-29T18:37:18Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 565
+    },
+    {
+      "completion_time": "2026-01-29T18:37:24Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 571
+    },
+    {
+      "completion_time": "2026-01-29T18:37:27Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 574
+    },
+    {
+      "completion_time": "2026-01-29T18:37:37Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 584
+    },
+    {
+      "completion_time": "2026-01-29T18:37:39Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 585
+    },
+    {
+      "completion_time": "2026-01-29T18:37:46Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 592
+    },
+    {
+      "completion_time": "2026-01-29T18:37:48Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 594
+    },
+    {
+      "completion_time": "2026-01-29T18:38:00Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 606
+    },
+    {
+      "completion_time": "2026-01-29T18:38:02Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 608
+    },
+    {
+      "completion_time": "2026-01-29T18:38:03Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 609
+    },
+    {
+      "completion_time": "2026-01-29T18:38:09Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 615
+    },
+    {
+      "completion_time": "2026-01-29T18:38:11Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 617
+    },
+    {
+      "completion_time": "2026-01-29T18:38:12Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 618
+    },
+    {
+      "completion_time": "2026-01-29T18:38:13Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 619
+    },
+    {
+      "completion_time": "2026-01-29T18:38:15Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 621
+    },
+    {
+      "completion_time": "2026-01-29T18:38:17Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 623
+    },
+    {
+      "completion_time": "2026-01-29T18:38:18Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 624
+    },
+    {
+      "completion_time": "2026-01-29T18:38:21Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 627
+    },
+    {
+      "completion_time": "2026-01-29T18:38:22Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 628
+    },
+    {
+      "completion_time": "2026-01-29T18:38:26Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 632
+    },
+    {
+      "completion_time": "2026-01-29T18:38:28Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 634
+    },
+    {
+      "completion_time": "2026-01-29T18:38:34Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 640
+    },
+    {
+      "completion_time": "2026-01-29T18:38:34Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 640
+    },
+    {
+      "completion_time": "2026-01-29T18:38:36Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 642
+    },
+    {
+      "completion_time": "2026-01-29T18:38:39Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 645
+    },
+    {
+      "completion_time": "2026-01-29T18:38:43Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 649
+    },
+    {
+      "completion_time": "2026-01-29T18:38:47Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 653
+    },
+    {
+      "completion_time": "2026-01-29T18:38:47Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 653
+    },
+    {
+      "completion_time": "2026-01-29T18:38:48Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 654
+    },
+    {
+      "completion_time": "2026-01-29T18:38:56Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 662
+    },
+    {
+      "completion_time": "2026-01-29T18:38:58Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 664
+    },
+    {
+      "completion_time": "2026-01-29T18:39:10Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 676
+    },
+    {
+      "completion_time": "2026-01-29T18:39:12Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 678
+    },
+    {
+      "completion_time": "2026-01-29T18:39:13Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 679
+    },
+    {
+      "completion_time": "2026-01-29T18:39:19Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 685
+    },
+    {
+      "completion_time": "2026-01-29T18:39:27Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 693
+    },
+    {
+      "completion_time": "2026-01-29T18:39:33Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 698
+    },
+    {
+      "completion_time": "2026-01-29T18:39:36Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 701
+    },
+    {
+      "completion_time": "2026-01-29T18:39:37Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 702
+    },
+    {
+      "completion_time": "2026-01-29T18:39:39Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 704
+    },
+    {
+      "completion_time": "2026-01-29T18:39:39Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 704
+    },
+    {
+      "completion_time": "2026-01-29T18:39:43Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 708
+    },
+    {
+      "completion_time": "2026-01-29T18:39:44Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 709
+    },
+    {
+      "completion_time": "2026-01-29T18:39:46Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 711
+    },
+    {
+      "completion_time": "2026-01-29T18:39:47Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 712
+    },
+    {
+      "completion_time": "2026-01-29T18:39:48Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 713
+    },
+    {
+      "completion_time": "2026-01-29T18:39:49Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 714
+    },
+    {
+      "completion_time": "2026-01-29T18:39:50Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 715
+    },
+    {
+      "completion_time": "2026-01-29T18:39:55Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 720
+    },
+    {
+      "completion_time": "2026-01-29T18:40:02Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 727
+    },
+    {
+      "completion_time": "2026-01-29T18:40:09Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 734
+    },
+    {
+      "completion_time": "2026-01-29T18:40:15Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 740
+    },
+    {
+      "completion_time": "2026-01-29T18:40:23Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 748
+    },
+    {
+      "completion_time": "2026-01-29T18:40:24Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 749
+    },
+    {
+      "completion_time": "2026-01-29T18:40:32Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 757
+    },
+    {
+      "completion_time": "2026-01-29T18:40:32Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 757
+    },
+    {
+      "completion_time": "2026-01-29T18:40:34Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 759
+    },
+    {
+      "completion_time": "2026-01-29T18:40:37Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 762
+    },
+    {
+      "completion_time": "2026-01-29T18:40:41Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 766
+    },
+    {
+      "completion_time": "2026-01-29T18:40:42Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 767
+    },
+    {
+      "completion_time": "2026-01-29T18:40:43Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 768
+    },
+    {
+      "completion_time": "2026-01-29T18:40:47Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 772
+    },
+    {
+      "completion_time": "2026-01-29T18:40:49Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 774
+    },
+    {
+      "completion_time": "2026-01-29T18:40:50Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 775
+    },
+    {
+      "completion_time": "2026-01-29T18:40:51Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 776
+    },
+    {
+      "completion_time": "2026-01-29T18:40:52Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 777
+    },
+    {
+      "completion_time": "2026-01-29T18:40:53Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 778
+    },
+    {
+      "completion_time": "2026-01-29T18:40:55Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 780
+    },
+    {
+      "completion_time": "2026-01-29T18:40:59Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 784
+    },
+    {
+      "completion_time": "2026-01-29T18:41:00Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 785
+    },
+    {
+      "completion_time": "2026-01-29T18:41:01Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 786
+    },
+    {
+      "completion_time": "2026-01-29T18:41:03Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 788
+    },
+    {
+      "completion_time": "2026-01-29T18:41:06Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 791
+    },
+    {
+      "completion_time": "2026-01-29T18:41:18Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 803
+    },
+    {
+      "completion_time": "2026-01-29T18:41:21Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 806
+    },
+    {
+      "completion_time": "2026-01-29T18:41:25Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 810
+    },
+    {
+      "completion_time": "2026-01-29T18:41:30Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 814
+    },
+    {
+      "completion_time": "2026-01-29T18:41:33Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 817
+    },
+    {
+      "completion_time": "2026-01-29T18:41:42Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 826
+    },
+    {
+      "completion_time": "2026-01-29T18:41:46Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 830
+    },
+    {
+      "completion_time": "2026-01-29T18:41:49Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 833
+    },
+    {
+      "completion_time": "2026-01-29T18:41:51Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 835
+    },
+    {
+      "completion_time": "2026-01-29T18:41:55Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 839
+    },
+    {
+      "completion_time": "2026-01-29T18:41:59Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 843
+    },
+    {
+      "completion_time": "2026-01-29T18:42:00Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 844
+    },
+    {
+      "completion_time": "2026-01-29T18:42:02Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 846
+    },
+    {
+      "completion_time": "2026-01-29T18:42:05Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 849
+    },
+    {
+      "completion_time": "2026-01-29T18:42:07Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 851
+    },
+    {
+      "completion_time": "2026-01-29T18:42:13Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 857
+    },
+    {
+      "completion_time": "2026-01-29T18:42:17Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 861
+    },
+    {
+      "completion_time": "2026-01-29T18:42:18Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 862
+    },
+    {
+      "completion_time": "2026-01-29T18:42:26Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 870
+    },
+    {
+      "completion_time": "2026-01-29T18:42:27Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 871
+    },
+    {
+      "completion_time": "2026-01-29T18:42:28Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 872
+    },
+    {
+      "completion_time": "2026-01-29T18:42:30Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 874
+    },
+    {
+      "completion_time": "2026-01-29T18:42:30Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 874
+    },
+    {
+      "completion_time": "2026-01-29T18:42:34Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 878
+    },
+    {
+      "completion_time": "2026-01-29T18:42:41Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 885
+    },
+    {
+      "completion_time": "2026-01-29T18:42:41Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 885
+    },
+    {
+      "completion_time": "2026-01-29T18:42:42Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 886
+    },
+    {
+      "completion_time": "2026-01-29T18:42:45Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 889
+    },
+    {
+      "completion_time": "2026-01-29T18:42:46Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 890
+    },
+    {
+      "completion_time": "2026-01-29T18:42:54Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 898
+    },
+    {
+      "completion_time": "2026-01-29T18:42:57Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 901
+    },
+    {
+      "completion_time": "2026-01-29T18:42:59Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 903
+    },
+    {
+      "completion_time": "2026-01-29T18:43:02Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 906
+    },
+    {
+      "completion_time": "2026-01-29T18:43:02Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 906
+    },
+    {
+      "completion_time": "2026-01-29T18:43:12Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 916
+    },
+    {
+      "completion_time": "2026-01-29T18:43:17Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 920
+    },
+    {
+      "completion_time": "2026-01-29T18:43:22Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 925
+    },
+    {
+      "completion_time": "2026-01-29T18:43:24Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 927
+    },
+    {
+      "completion_time": "2026-01-29T18:43:25Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 928
+    },
+    {
+      "completion_time": "2026-01-29T18:43:30Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 933
+    },
+    {
+      "completion_time": "2026-01-29T18:43:32Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 935
+    },
+    {
+      "completion_time": "2026-01-29T18:43:34Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 937
+    },
+    {
+      "completion_time": "2026-01-29T18:43:35Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 938
+    },
+    {
+      "completion_time": "2026-01-29T18:43:48Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 951
+    },
+    {
+      "completion_time": "2026-01-29T18:43:51Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 954
+    },
+    {
+      "completion_time": "2026-01-29T18:43:53Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 956
+    },
+    {
+      "completion_time": "2026-01-29T18:43:56Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 959
+    },
+    {
+      "completion_time": "2026-01-29T18:44:02Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 965
+    },
+    {
+      "completion_time": "2026-01-29T18:44:16Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 979
+    },
+    {
+      "completion_time": "2026-01-29T18:44:22Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 985
+    },
+    {
+      "completion_time": "2026-01-29T18:44:23Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 986
+    },
+    {
+      "completion_time": "2026-01-29T18:44:25Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 988
+    },
+    {
+      "completion_time": "2026-01-29T18:44:28Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 991
+    },
+    {
+      "completion_time": "2026-01-29T18:44:29Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 992
+    },
+    {
+      "completion_time": "2026-01-29T18:44:31Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 994
+    },
+    {
+      "completion_time": "2026-01-29T18:44:32Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 995
+    },
+    {
+      "completion_time": "2026-01-29T18:44:36Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 999
+    },
+    {
+      "completion_time": "2026-01-29T18:44:38Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1001
+    },
+    {
+      "completion_time": "2026-01-29T18:44:39Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1002
+    },
+    {
+      "completion_time": "2026-01-29T18:44:43Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1006
+    },
+    {
+      "completion_time": "2026-01-29T18:44:43Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1006
+    },
+    {
+      "completion_time": "2026-01-29T18:44:46Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1009
+    },
+    {
+      "completion_time": "2026-01-29T18:44:50Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1013
+    },
+    {
+      "completion_time": "2026-01-29T18:44:55Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1018
+    },
+    {
+      "completion_time": "2026-01-29T18:44:56Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1019
+    },
+    {
+      "completion_time": "2026-01-29T18:45:03Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1026
+    },
+    {
+      "completion_time": "2026-01-29T18:45:05Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1028
+    },
+    {
+      "completion_time": "2026-01-29T18:45:06Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1029
+    },
+    {
+      "completion_time": "2026-01-29T18:45:16Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1038
+    },
+    {
+      "completion_time": "2026-01-29T18:45:16Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1038
+    },
+    {
+      "completion_time": "2026-01-29T18:45:19Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1041
+    },
+    {
+      "completion_time": "2026-01-29T18:45:24Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1046
+    },
+    {
+      "completion_time": "2026-01-29T18:45:26Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1048
+    },
+    {
+      "completion_time": "2026-01-29T18:45:26Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1048
+    },
+    {
+      "completion_time": "2026-01-29T18:45:29Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1051
+    },
+    {
+      "completion_time": "2026-01-29T18:45:32Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1054
+    },
+    {
+      "completion_time": "2026-01-29T18:45:37Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1059
+    },
+    {
+      "completion_time": "2026-01-29T18:45:38Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1060
+    },
+    {
+      "completion_time": "2026-01-29T18:45:39Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1061
+    },
+    {
+      "completion_time": "2026-01-29T18:45:40Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1062
+    },
+    {
+      "completion_time": "2026-01-29T18:45:41Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1063
+    },
+    {
+      "completion_time": "2026-01-29T18:45:45Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1067
+    },
+    {
+      "completion_time": "2026-01-29T18:45:48Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1070
+    },
+    {
+      "completion_time": "2026-01-29T18:45:50Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1072
+    },
+    {
+      "completion_time": "2026-01-29T18:45:51Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1073
+    },
+    {
+      "completion_time": "2026-01-29T18:45:53Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1075
+    },
+    {
+      "completion_time": "2026-01-29T18:45:55Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1077
+    },
+    {
+      "completion_time": "2026-01-29T18:45:58Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1080
+    },
+    {
+      "completion_time": "2026-01-29T18:46:00Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1082
+    },
+    {
+      "completion_time": "2026-01-29T18:46:00Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1082
+    },
+    {
+      "completion_time": "2026-01-29T18:46:01Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1083
+    },
+    {
+      "completion_time": "2026-01-29T18:46:09Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1091
+    },
+    {
+      "completion_time": "2026-01-29T18:46:13Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1095
+    },
+    {
+      "completion_time": "2026-01-29T18:46:20Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1102
+    },
+    {
+      "completion_time": "2026-01-29T18:46:21Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1103
+    },
+    {
+      "completion_time": "2026-01-29T18:46:24Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1106
+    },
+    {
+      "completion_time": "2026-01-29T18:46:24Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1106
+    },
+    {
+      "completion_time": "2026-01-29T18:46:42Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1124
+    },
+    {
+      "completion_time": "2026-01-29T18:46:44Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1126
+    },
+    {
+      "completion_time": "2026-01-29T18:46:44Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1126
+    },
+    {
+      "completion_time": "2026-01-29T18:46:47Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1129
+    },
+    {
+      "completion_time": "2026-01-29T18:46:49Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1131
+    },
+    {
+      "completion_time": "2026-01-29T18:46:50Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1132
+    },
+    {
+      "completion_time": "2026-01-29T18:46:55Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1137
+    },
+    {
+      "completion_time": "2026-01-29T18:46:56Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1138
+    },
+    {
+      "completion_time": "2026-01-29T18:46:58Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1140
+    },
+    {
+      "completion_time": "2026-01-29T18:46:59Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1141
+    },
+    {
+      "completion_time": "2026-01-29T18:47:00Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1142
+    },
+    {
+      "completion_time": "2026-01-29T18:47:05Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1147
+    },
+    {
+      "completion_time": "2026-01-29T18:47:09Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1151
+    },
+    {
+      "completion_time": "2026-01-29T18:47:09Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1151
+    },
+    {
+      "completion_time": "2026-01-29T18:47:11Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1153
+    },
+    {
+      "completion_time": "2026-01-29T18:47:13Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1155
+    },
+    {
+      "completion_time": "2026-01-29T18:47:14Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1156
+    },
+    {
+      "completion_time": "2026-01-29T18:47:18Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1160
+    },
+    {
+      "completion_time": "2026-01-29T18:47:18Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1160
+    },
+    {
+      "completion_time": "2026-01-29T18:47:29Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1170
+    },
+    {
+      "completion_time": "2026-01-29T18:47:32Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1173
+    },
+    {
+      "completion_time": "2026-01-29T18:47:32Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1173
+    },
+    {
+      "completion_time": "2026-01-29T18:47:33Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1174
+    },
+    {
+      "completion_time": "2026-01-29T18:47:34Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1175
+    },
+    {
+      "completion_time": "2026-01-29T18:47:37Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1178
+    },
+    {
+      "completion_time": "2026-01-29T18:47:42Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1183
+    },
+    {
+      "completion_time": "2026-01-29T18:47:42Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1183
+    },
+    {
+      "completion_time": "2026-01-29T18:48:06Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1207
+    },
+    {
+      "completion_time": "2026-01-29T18:48:07Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1208
+    },
+    {
+      "completion_time": "2026-01-29T18:48:09Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1210
+    },
+    {
+      "completion_time": "2026-01-29T18:48:09Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1210
+    },
+    {
+      "completion_time": "2026-01-29T18:48:11Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1212
+    },
+    {
+      "completion_time": "2026-01-29T18:48:15Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1216
+    },
+    {
+      "completion_time": "2026-01-29T18:48:21Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1222
+    },
+    {
+      "completion_time": "2026-01-29T18:48:25Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1226
+    },
+    {
+      "completion_time": "2026-01-29T18:48:27Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1228
+    },
+    {
+      "completion_time": "2026-01-29T18:48:29Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1230
+    },
+    {
+      "completion_time": "2026-01-29T18:48:30Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1231
+    },
+    {
+      "completion_time": "2026-01-29T18:48:36Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1237
+    },
+    {
+      "completion_time": "2026-01-29T18:48:38Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1239
+    },
+    {
+      "completion_time": "2026-01-29T18:48:42Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1243
+    },
+    {
+      "completion_time": "2026-01-29T18:48:51Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1252
+    },
+    {
+      "completion_time": "2026-01-29T18:48:55Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1256
+    },
+    {
+      "completion_time": "2026-01-29T18:48:56Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1257
+    },
+    {
+      "completion_time": "2026-01-29T18:48:57Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1258
+    },
+    {
+      "completion_time": "2026-01-29T18:49:00Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1261
+    },
+    {
+      "completion_time": "2026-01-29T18:49:04Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1265
+    },
+    {
+      "completion_time": "2026-01-29T18:49:13Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1274
+    },
+    {
+      "completion_time": "2026-01-29T18:49:14Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1275
+    },
+    {
+      "completion_time": "2026-01-29T18:49:17Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1278
+    },
+    {
+      "completion_time": "2026-01-29T18:49:22Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1283
+    },
+    {
+      "completion_time": "2026-01-29T18:49:25Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1286
+    },
+    {
+      "completion_time": "2026-01-29T18:49:29Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1289
+    },
+    {
+      "completion_time": "2026-01-29T18:49:29Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1289
+    },
+    {
+      "completion_time": "2026-01-29T18:49:30Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1290
+    },
+    {
+      "completion_time": "2026-01-29T18:49:33Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1293
+    },
+    {
+      "completion_time": "2026-01-29T18:49:34Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1294
+    },
+    {
+      "completion_time": "2026-01-29T18:49:34Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1294
+    },
+    {
+      "completion_time": "2026-01-29T18:49:35Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1295
+    },
+    {
+      "completion_time": "2026-01-29T18:49:36Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1296
+    },
+    {
+      "completion_time": "2026-01-29T18:49:37Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1297
+    },
+    {
+      "completion_time": "2026-01-29T18:49:37Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1297
+    },
+    {
+      "completion_time": "2026-01-29T18:49:44Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1304
+    },
+    {
+      "completion_time": "2026-01-29T18:49:45Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1305
+    },
+    {
+      "completion_time": "2026-01-29T18:49:57Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1317
+    },
+    {
+      "completion_time": "2026-01-29T18:50:05Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1324
+    },
+    {
+      "completion_time": "2026-01-29T18:50:08Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1327
+    },
+    {
+      "completion_time": "2026-01-29T18:50:15Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1333
+    },
+    {
+      "completion_time": "2026-01-29T18:50:16Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1334
+    },
+    {
+      "completion_time": "2026-01-29T18:50:17Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1335
+    },
+    {
+      "completion_time": "2026-01-29T18:50:18Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1336
+    },
+    {
+      "completion_time": "2026-01-29T18:50:20Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1338
+    },
+    {
+      "completion_time": "2026-01-29T18:50:21Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1339
+    },
+    {
+      "completion_time": "2026-01-29T18:50:21Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1339
+    },
+    {
+      "completion_time": "2026-01-29T18:50:24Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1342
+    },
+    {
+      "completion_time": "2026-01-29T18:50:40Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1358
+    },
+    {
+      "completion_time": "2026-01-29T18:50:42Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1360
+    },
+    {
+      "completion_time": "2026-01-29T18:50:43Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1361
+    },
+    {
+      "completion_time": "2026-01-29T18:50:43Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1361
+    },
+    {
+      "completion_time": "2026-01-29T18:50:44Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1362
+    },
+    {
+      "completion_time": "2026-01-29T18:50:48Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1366
+    },
+    {
+      "completion_time": "2026-01-29T18:50:54Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1372
+    },
+    {
+      "completion_time": "2026-01-29T18:51:01Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1379
+    },
+    {
+      "completion_time": "2026-01-29T18:51:05Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1383
+    },
+    {
+      "completion_time": "2026-01-29T18:51:06Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1384
+    },
+    {
+      "completion_time": "2026-01-29T18:51:09Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1387
+    },
+    {
+      "completion_time": "2026-01-29T18:51:10Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1388
+    },
+    {
+      "completion_time": "2026-01-29T18:51:15Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1393
+    },
+    {
+      "completion_time": "2026-01-29T18:51:15Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1393
+    },
+    {
+      "completion_time": "2026-01-29T18:51:17Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1395
+    },
+    {
+      "completion_time": "2026-01-29T18:51:17Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1395
+    },
+    {
+      "completion_time": "2026-01-29T18:51:18Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1396
+    },
+    {
+      "completion_time": "2026-01-29T18:51:19Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1397
+    },
+    {
+      "completion_time": "2026-01-29T18:51:20Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1398
+    },
+    {
+      "completion_time": "2026-01-29T18:51:21Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1399
+    },
+    {
+      "completion_time": "2026-01-29T18:51:26Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1404
+    },
+    {
+      "completion_time": "2026-01-29T18:51:29Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1407
+    },
+    {
+      "completion_time": "2026-01-29T18:51:30Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1408
+    },
+    {
+      "completion_time": "2026-01-29T18:51:37Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1414
+    },
+    {
+      "completion_time": "2026-01-29T18:51:39Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1416
+    },
+    {
+      "completion_time": "2026-01-29T18:51:40Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1417
+    },
+    {
+      "completion_time": "2026-01-29T18:51:45Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1422
+    },
+    {
+      "completion_time": "2026-01-29T18:51:49Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1426
+    },
+    {
+      "completion_time": "2026-01-29T18:51:51Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1428
+    },
+    {
+      "completion_time": "2026-01-29T18:51:53Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1430
+    },
+    {
+      "completion_time": "2026-01-29T18:51:53Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1430
+    },
+    {
+      "completion_time": "2026-01-29T18:51:56Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1433
+    },
+    {
+      "completion_time": "2026-01-29T18:52:00Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1437
+    },
+    {
+      "completion_time": "2026-01-29T18:52:07Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1444
+    },
+    {
+      "completion_time": "2026-01-29T18:52:10Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1447
+    },
+    {
+      "completion_time": "2026-01-29T18:52:14Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1451
+    },
+    {
+      "completion_time": "2026-01-29T18:52:23Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1460
+    },
+    {
+      "completion_time": "2026-01-29T18:52:25Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1462
+    },
+    {
+      "completion_time": "2026-01-29T18:52:27Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1464
+    },
+    {
+      "completion_time": "2026-01-29T18:52:28Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1465
+    },
+    {
+      "completion_time": "2026-01-29T18:52:30Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1467
+    },
+    {
+      "completion_time": "2026-01-29T18:52:33Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1470
+    },
+    {
+      "completion_time": "2026-01-29T18:52:33Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1470
+    },
+    {
+      "completion_time": "2026-01-29T18:52:37Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1474
+    },
+    {
+      "completion_time": "2026-01-29T18:52:37Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1474
+    },
+    {
+      "completion_time": "2026-01-29T18:52:44Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1481
+    },
+    {
+      "completion_time": "2026-01-29T18:52:44Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1481
+    },
+    {
+      "completion_time": "2026-01-29T18:52:46Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1483
+    },
+    {
+      "completion_time": "2026-01-29T18:52:50Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1487
+    },
+    {
+      "completion_time": "2026-01-29T18:52:51Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1488
+    },
+    {
+      "completion_time": "2026-01-29T18:52:56Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1493
+    },
+    {
+      "completion_time": "2026-01-29T18:52:56Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1493
+    },
+    {
+      "completion_time": "2026-01-29T18:52:58Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1495
+    },
+    {
+      "completion_time": "2026-01-29T18:52:59Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1496
+    },
+    {
+      "completion_time": "2026-01-29T18:53:00Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1497
+    },
+    {
+      "completion_time": "2026-01-29T18:53:02Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1499
+    },
+    {
+      "completion_time": "2026-01-29T18:53:03Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1500
+    },
+    {
+      "completion_time": "2026-01-29T18:53:04Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1501
+    },
+    {
+      "completion_time": "2026-01-29T18:53:07Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1504
+    },
+    {
+      "completion_time": "2026-01-29T18:53:07Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1504
+    },
+    {
+      "completion_time": "2026-01-29T18:53:08Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1505
+    },
+    {
+      "completion_time": "2026-01-29T18:53:13Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1510
+    },
+    {
+      "completion_time": "2026-01-29T18:53:20Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1516
+    },
+    {
+      "completion_time": "2026-01-29T18:53:30Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1526
+    },
+    {
+      "completion_time": "2026-01-29T18:53:37Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1533
+    },
+    {
+      "completion_time": "2026-01-29T18:53:38Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1534
+    },
+    {
+      "completion_time": "2026-01-29T18:53:42Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1538
+    },
+    {
+      "completion_time": "2026-01-29T18:53:45Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1541
+    },
+    {
+      "completion_time": "2026-01-29T18:53:50Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1546
+    },
+    {
+      "completion_time": "2026-01-29T18:53:51Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1547
+    },
+    {
+      "completion_time": "2026-01-29T18:53:54Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1550
+    },
+    {
+      "completion_time": "2026-01-29T18:53:56Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1552
+    },
+    {
+      "completion_time": "2026-01-29T18:53:57Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1553
+    },
+    {
+      "completion_time": "2026-01-29T18:54:03Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1559
+    },
+    {
+      "completion_time": "2026-01-29T18:54:05Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1561
+    },
+    {
+      "completion_time": "2026-01-29T18:54:05Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1561
+    },
+    {
+      "completion_time": "2026-01-29T18:54:08Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1564
+    },
+    {
+      "completion_time": "2026-01-29T18:54:12Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1568
+    },
+    {
+      "completion_time": "2026-01-29T18:54:15Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1571
+    },
+    {
+      "completion_time": "2026-01-29T18:54:23Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1579
+    },
+    {
+      "completion_time": "2026-01-29T18:54:29Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1585
+    },
+    {
+      "completion_time": "2026-01-29T18:54:31Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1587
+    },
+    {
+      "completion_time": "2026-01-29T18:54:36Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1592
+    },
+    {
+      "completion_time": "2026-01-29T18:54:36Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1592
+    },
+    {
+      "completion_time": "2026-01-29T18:54:41Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1597
+    },
+    {
+      "completion_time": "2026-01-29T18:54:42Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1598
+    },
+    {
+      "completion_time": "2026-01-29T18:54:43Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1599
+    },
+    {
+      "completion_time": "2026-01-29T18:54:43Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1599
+    },
+    {
+      "completion_time": "2026-01-29T18:54:45Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1601
+    },
+    {
+      "completion_time": "2026-01-29T18:54:47Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1603
+    },
+    {
+      "completion_time": "2026-01-29T18:54:48Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1604
+    },
+    {
+      "completion_time": "2026-01-29T18:54:51Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1607
+    },
+    {
+      "completion_time": "2026-01-29T18:54:56Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1612
+    },
+    {
+      "completion_time": "2026-01-29T18:54:57Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1613
+    },
+    {
+      "completion_time": "2026-01-29T18:55:05Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1621
+    },
+    {
+      "completion_time": "2026-01-29T18:55:19Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1634
+    },
+    {
+      "completion_time": "2026-01-29T18:55:20Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1635
+    },
+    {
+      "completion_time": "2026-01-29T18:55:24Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1639
+    },
+    {
+      "completion_time": "2026-01-29T18:55:26Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1641
+    },
+    {
+      "completion_time": "2026-01-29T18:55:33Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1648
+    },
+    {
+      "completion_time": "2026-01-29T18:55:36Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1651
+    },
+    {
+      "completion_time": "2026-01-29T18:55:36Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1651
+    },
+    {
+      "completion_time": "2026-01-29T18:55:37Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1652
+    },
+    {
+      "completion_time": "2026-01-29T18:55:42Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1657
+    },
+    {
+      "completion_time": "2026-01-29T18:55:43Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1658
+    },
+    {
+      "completion_time": "2026-01-29T18:55:51Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1666
+    },
+    {
+      "completion_time": "2026-01-29T18:56:00Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1675
+    },
+    {
+      "completion_time": "2026-01-29T18:56:05Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1680
+    },
+    {
+      "completion_time": "2026-01-29T18:56:09Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1684
+    },
+    {
+      "completion_time": "2026-01-29T18:56:11Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1686
+    },
+    {
+      "completion_time": "2026-01-29T18:56:15Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1690
+    },
+    {
+      "completion_time": "2026-01-29T18:56:16Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1691
+    },
+    {
+      "completion_time": "2026-01-29T18:56:17Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1692
+    },
+    {
+      "completion_time": "2026-01-29T18:56:18Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1693
+    },
+    {
+      "completion_time": "2026-01-29T18:56:24Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1699
+    },
+    {
+      "completion_time": "2026-01-29T18:56:24Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1699
+    },
+    {
+      "completion_time": "2026-01-29T18:56:26Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1701
+    },
+    {
+      "completion_time": "2026-01-29T18:56:32Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1707
+    },
+    {
+      "completion_time": "2026-01-29T18:56:35Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1710
+    },
+    {
+      "completion_time": "2026-01-29T18:56:39Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1714
+    },
+    {
+      "completion_time": "2026-01-29T18:56:45Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1720
+    },
+    {
+      "completion_time": "2026-01-29T18:56:47Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1722
+    },
+    {
+      "completion_time": "2026-01-29T18:56:47Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1722
+    },
+    {
+      "completion_time": "2026-01-29T18:56:51Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1726
+    },
+    {
+      "completion_time": "2026-01-29T18:56:58Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1732
+    },
+    {
+      "completion_time": "2026-01-29T18:56:59Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1733
+    },
+    {
+      "completion_time": "2026-01-29T18:57:00Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1734
+    },
+    {
+      "completion_time": "2026-01-29T18:57:04Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1738
+    },
+    {
+      "completion_time": "2026-01-29T18:57:05Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1739
+    },
+    {
+      "completion_time": "2026-01-29T18:57:11Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1745
+    },
+    {
+      "completion_time": "2026-01-29T18:57:14Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1748
+    },
+    {
+      "completion_time": "2026-01-29T18:57:15Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1749
+    },
+    {
+      "completion_time": "2026-01-29T18:57:19Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1753
+    },
+    {
+      "completion_time": "2026-01-29T18:57:20Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1754
+    },
+    {
+      "completion_time": "2026-01-29T18:57:21Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1755
+    },
+    {
+      "completion_time": "2026-01-29T18:57:21Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1755
+    },
+    {
+      "completion_time": "2026-01-29T18:57:25Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1759
+    },
+    {
+      "completion_time": "2026-01-29T18:57:27Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1761
+    },
+    {
+      "completion_time": "2026-01-29T18:57:28Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1762
+    },
+    {
+      "completion_time": "2026-01-29T18:57:34Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1768
+    },
+    {
+      "completion_time": "2026-01-29T18:57:35Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1769
+    },
+    {
+      "completion_time": "2026-01-29T18:57:36Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1770
+    },
+    {
+      "completion_time": "2026-01-29T18:57:40Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1774
+    },
+    {
+      "completion_time": "2026-01-29T18:57:41Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1775
+    },
+    {
+      "completion_time": "2026-01-29T18:57:41Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1775
+    },
+    {
+      "completion_time": "2026-01-29T18:57:50Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1784
+    },
+    {
+      "completion_time": "2026-01-29T18:57:53Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1787
+    },
+    {
+      "completion_time": "2026-01-29T18:58:04Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1798
+    },
+    {
+      "completion_time": "2026-01-29T18:58:05Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1799
+    },
+    {
+      "completion_time": "2026-01-29T18:58:06Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1800
+    },
+    {
+      "completion_time": "2026-01-29T18:58:08Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1802
+    },
+    {
+      "completion_time": "2026-01-29T18:58:09Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1803
+    },
+    {
+      "completion_time": "2026-01-29T18:58:10Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1804
+    },
+    {
+      "completion_time": "2026-01-29T18:58:12Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1806
+    },
+    {
+      "completion_time": "2026-01-29T18:58:21Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1815
+    },
+    {
+      "completion_time": "2026-01-29T18:58:25Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1819
+    },
+    {
+      "completion_time": "2026-01-29T18:58:29Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1823
+    },
+    {
+      "completion_time": "2026-01-29T18:58:31Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1825
+    },
+    {
+      "completion_time": "2026-01-29T18:58:36Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1830
+    },
+    {
+      "completion_time": "2026-01-29T18:58:38Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1832
+    },
+    {
+      "completion_time": "2026-01-29T18:58:40Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1833
+    },
+    {
+      "completion_time": "2026-01-29T18:58:41Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1834
+    },
+    {
+      "completion_time": "2026-01-29T18:58:42Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1835
+    },
+    {
+      "completion_time": "2026-01-29T18:58:44Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1837
+    },
+    {
+      "completion_time": "2026-01-29T18:58:55Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1848
+    },
+    {
+      "completion_time": "2026-01-29T18:58:55Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1848
+    },
+    {
+      "completion_time": "2026-01-29T18:58:57Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1850
+    },
+    {
+      "completion_time": "2026-01-29T18:58:57Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1850
+    },
+    {
+      "completion_time": "2026-01-29T18:58:58Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1851
+    },
+    {
+      "completion_time": "2026-01-29T18:58:59Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1852
+    },
+    {
+      "completion_time": "2026-01-29T18:58:59Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1852
+    },
+    {
+      "completion_time": "2026-01-29T18:59:01Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1854
+    },
+    {
+      "completion_time": "2026-01-29T18:59:08Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1861
+    },
+    {
+      "completion_time": "2026-01-29T18:59:09Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1862
+    },
+    {
+      "completion_time": "2026-01-29T18:59:10Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1863
+    },
+    {
+      "completion_time": "2026-01-29T18:59:16Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1869
+    },
+    {
+      "completion_time": "2026-01-29T18:59:18Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1871
+    },
+    {
+      "completion_time": "2026-01-29T18:59:19Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1872
+    },
+    {
+      "completion_time": "2026-01-29T18:59:21Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1874
+    },
+    {
+      "completion_time": "2026-01-29T18:59:25Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1878
+    },
+    {
+      "completion_time": "2026-01-29T18:59:30Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1883
+    },
+    {
+      "completion_time": "2026-01-29T18:59:34Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1887
+    },
+    {
+      "completion_time": "2026-01-29T18:59:36Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1889
+    },
+    {
+      "completion_time": "2026-01-29T18:59:43Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1896
+    },
+    {
+      "completion_time": "2026-01-29T18:59:50Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1903
+    },
+    {
+      "completion_time": "2026-01-29T18:59:53Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1906
+    },
+    {
+      "completion_time": "2026-01-29T18:59:56Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1909
+    },
+    {
+      "completion_time": "2026-01-29T18:59:56Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1909
+    },
+    {
+      "completion_time": "2026-01-29T19:00:00Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1913
+    },
+    {
+      "completion_time": "2026-01-29T19:00:02Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1915
+    },
+    {
+      "completion_time": "2026-01-29T19:00:04Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1917
+    },
+    {
+      "completion_time": "2026-01-29T19:00:17Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1930
+    },
+    {
+      "completion_time": "2026-01-29T19:00:32Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1944
+    },
+    {
+      "completion_time": "2026-01-29T19:00:35Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1947
+    },
+    {
+      "completion_time": "2026-01-29T19:00:36Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1948
+    },
+    {
+      "completion_time": "2026-01-29T19:00:41Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1953
+    },
+    {
+      "completion_time": "2026-01-29T19:00:44Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1956
+    },
+    {
+      "completion_time": "2026-01-29T19:00:46Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1958
+    },
+    {
+      "completion_time": "2026-01-29T19:00:48Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1960
+    },
+    {
+      "completion_time": "2026-01-29T19:01:03Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1975
+    },
+    {
+      "completion_time": "2026-01-29T19:01:10Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1982
+    },
+    {
+      "completion_time": "2026-01-29T19:01:11Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1983
+    },
+    {
+      "completion_time": "2026-01-29T19:01:16Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1988
+    },
+    {
+      "completion_time": "2026-01-29T19:01:18Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1990
+    },
+    {
+      "completion_time": "2026-01-29T19:01:25Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1997
+    },
+    {
+      "completion_time": "2026-01-29T19:01:26Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1998
+    },
+    {
+      "completion_time": "2026-01-29T19:01:27Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1999
+    },
+    {
+      "completion_time": "2026-01-29T19:01:28Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2000
+    },
+    {
+      "completion_time": "2026-01-29T19:01:34Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2006
+    },
+    {
+      "completion_time": "2026-01-29T19:01:35Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2007
+    },
+    {
+      "completion_time": "2026-01-29T19:01:37Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2009
+    },
+    {
+      "completion_time": "2026-01-29T19:01:37Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2009
+    },
+    {
+      "completion_time": "2026-01-29T19:01:38Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2010
+    },
+    {
+      "completion_time": "2026-01-29T19:01:44Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2016
+    },
+    {
+      "completion_time": "2026-01-29T19:01:45Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2017
+    },
+    {
+      "completion_time": "2026-01-29T19:01:52Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2024
+    },
+    {
+      "completion_time": "2026-01-29T19:01:56Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2028
+    },
+    {
+      "completion_time": "2026-01-29T19:01:57Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2029
+    },
+    {
+      "completion_time": "2026-01-29T19:01:59Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2031
+    },
+    {
+      "completion_time": "2026-01-29T19:02:09Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2041
+    },
+    {
+      "completion_time": "2026-01-29T19:02:10Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2042
+    },
+    {
+      "completion_time": "2026-01-29T19:02:12Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2044
+    },
+    {
+      "completion_time": "2026-01-29T19:02:18Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2050
+    },
+    {
+      "completion_time": "2026-01-29T19:02:20Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2051
+    },
+    {
+      "completion_time": "2026-01-29T19:02:27Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2058
+    },
+    {
+      "completion_time": "2026-01-29T19:02:27Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2058
+    },
+    {
+      "completion_time": "2026-01-29T19:02:28Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2059
+    },
+    {
+      "completion_time": "2026-01-29T19:02:31Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2062
+    },
+    {
+      "completion_time": "2026-01-29T19:02:36Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2067
+    },
+    {
+      "completion_time": "2026-01-29T19:02:40Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2071
+    },
+    {
+      "completion_time": "2026-01-29T19:02:42Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2073
+    },
+    {
+      "completion_time": "2026-01-29T19:02:43Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2074
+    },
+    {
+      "completion_time": "2026-01-29T19:02:43Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2074
+    },
+    {
+      "completion_time": "2026-01-29T19:02:47Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2078
+    },
+    {
+      "completion_time": "2026-01-29T19:02:49Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2080
+    },
+    {
+      "completion_time": "2026-01-29T19:02:52Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2083
+    },
+    {
+      "completion_time": "2026-01-29T19:02:53Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2084
+    },
+    {
+      "completion_time": "2026-01-29T19:02:59Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2090
+    },
+    {
+      "completion_time": "2026-01-29T19:03:01Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2092
+    },
+    {
+      "completion_time": "2026-01-29T19:03:05Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2096
+    },
+    {
+      "completion_time": "2026-01-29T19:03:07Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2098
+    },
+    {
+      "completion_time": "2026-01-29T19:03:09Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2100
+    },
+    {
+      "completion_time": "2026-01-29T19:03:14Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2105
+    },
+    {
+      "completion_time": "2026-01-29T19:03:15Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2106
+    },
+    {
+      "completion_time": "2026-01-29T19:03:16Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2107
+    },
+    {
+      "completion_time": "2026-01-29T19:03:23Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2114
+    },
+    {
+      "completion_time": "2026-01-29T19:03:32Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2123
+    },
+    {
+      "completion_time": "2026-01-29T19:03:34Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2125
+    },
+    {
+      "completion_time": "2026-01-29T19:03:43Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2134
+    },
+    {
+      "completion_time": "2026-01-29T19:03:51Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2142
+    },
+    {
+      "completion_time": "2026-01-29T19:03:56Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2147
+    },
+    {
+      "completion_time": "2026-01-29T19:03:57Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2148
+    },
+    {
+      "completion_time": "2026-01-29T19:03:59Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2150
+    },
+    {
+      "completion_time": "2026-01-29T19:04:00Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2151
+    },
+    {
+      "completion_time": "2026-01-29T19:04:01Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2152
+    },
+    {
+      "completion_time": "2026-01-29T19:04:04Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2155
+    },
+    {
+      "completion_time": "2026-01-29T19:04:07Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2158
+    },
+    {
+      "completion_time": "2026-01-29T19:04:09Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2160
+    },
+    {
+      "completion_time": "2026-01-29T19:04:10Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2161
+    },
+    {
+      "completion_time": "2026-01-29T19:04:11Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2162
+    },
+    {
+      "completion_time": "2026-01-29T19:04:16Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2167
+    },
+    {
+      "completion_time": "2026-01-29T19:04:18Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2169
+    },
+    {
+      "completion_time": "2026-01-29T19:04:24Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2175
+    },
+    {
+      "completion_time": "2026-01-29T19:04:29Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2179
+    },
+    {
+      "completion_time": "2026-01-29T19:04:30Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2180
+    },
+    {
+      "completion_time": "2026-01-29T19:04:32Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2182
+    },
+    {
+      "completion_time": "2026-01-29T19:04:37Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2187
+    },
+    {
+      "completion_time": "2026-01-29T19:04:38Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2188
+    },
+    {
+      "completion_time": "2026-01-29T19:04:41Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2191
+    },
+    {
+      "completion_time": "2026-01-29T19:04:46Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2196
+    },
+    {
+      "completion_time": "2026-01-29T19:04:47Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2197
+    },
+    {
+      "completion_time": "2026-01-29T19:04:50Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2200
+    },
+    {
+      "completion_time": "2026-01-29T19:04:54Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2204
+    },
+    {
+      "completion_time": "2026-01-29T19:04:57Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2207
+    },
+    {
+      "completion_time": "2026-01-29T19:05:02Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2212
+    },
+    {
+      "completion_time": "2026-01-29T19:05:02Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2212
+    },
+    {
+      "completion_time": "2026-01-29T19:05:04Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2214
+    },
+    {
+      "completion_time": "2026-01-29T19:05:11Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2221
+    },
+    {
+      "completion_time": "2026-01-29T19:05:11Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2221
+    },
+    {
+      "completion_time": "2026-01-29T19:05:12Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2222
+    },
+    {
+      "completion_time": "2026-01-29T19:05:14Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2224
+    },
+    {
+      "completion_time": "2026-01-29T19:05:15Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2225
+    },
+    {
+      "completion_time": "2026-01-29T19:05:18Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2228
+    },
+    {
+      "completion_time": "2026-01-29T19:05:19Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2229
+    },
+    {
+      "completion_time": "2026-01-29T19:05:21Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2231
+    },
+    {
+      "completion_time": "2026-01-29T19:05:24Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2234
+    },
+    {
+      "completion_time": "2026-01-29T19:05:28Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2238
+    },
+    {
+      "completion_time": "2026-01-29T19:05:30Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2240
+    },
+    {
+      "completion_time": "2026-01-29T19:05:38Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2248
+    },
+    {
+      "completion_time": "2026-01-29T19:05:39Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2249
+    },
+    {
+      "completion_time": "2026-01-29T19:05:40Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2250
+    },
+    {
+      "completion_time": "2026-01-29T19:05:41Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2251
+    },
+    {
+      "completion_time": "2026-01-29T19:05:42Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2252
+    },
+    {
+      "completion_time": "2026-01-29T19:05:44Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2254
+    },
+    {
+      "completion_time": "2026-01-29T19:05:45Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2255
+    },
+    {
+      "completion_time": "2026-01-29T19:05:49Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2259
+    },
+    {
+      "completion_time": "2026-01-29T19:05:53Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2263
+    },
+    {
+      "completion_time": "2026-01-29T19:05:56Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2266
+    },
+    {
+      "completion_time": "2026-01-29T19:05:58Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2268
+    },
+    {
+      "completion_time": "2026-01-29T19:05:59Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2269
+    },
+    {
+      "completion_time": "2026-01-29T19:06:06Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2276
+    },
+    {
+      "completion_time": "2026-01-29T19:06:07Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2277
+    },
+    {
+      "completion_time": "2026-01-29T19:06:08Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2278
+    },
+    {
+      "completion_time": "2026-01-29T19:06:09Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2279
+    },
+    {
+      "completion_time": "2026-01-29T19:06:12Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2282
+    },
+    {
+      "completion_time": "2026-01-29T19:06:13Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2283
+    },
+    {
+      "completion_time": "2026-01-29T19:06:13Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2283
+    },
+    {
+      "completion_time": "2026-01-29T19:06:16Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2286
+    },
+    {
+      "completion_time": "2026-01-29T19:06:17Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2287
+    },
+    {
+      "completion_time": "2026-01-29T19:06:18Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2288
+    },
+    {
+      "completion_time": "2026-01-29T19:06:27Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2297
+    },
+    {
+      "completion_time": "2026-01-29T19:06:30Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2300
+    },
+    {
+      "completion_time": "2026-01-29T19:06:37Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2306
+    },
+    {
+      "completion_time": "2026-01-29T19:06:43Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2312
+    },
+    {
+      "completion_time": "2026-01-29T19:06:50Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2319
+    },
+    {
+      "completion_time": "2026-01-29T19:06:53Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2322
+    },
+    {
+      "completion_time": "2026-01-29T19:06:55Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2324
+    },
+    {
+      "completion_time": "2026-01-29T19:06:56Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2325
+    },
+    {
+      "completion_time": "2026-01-29T19:06:58Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2327
+    },
+    {
+      "completion_time": "2026-01-29T19:07:01Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2330
+    },
+    {
+      "completion_time": "2026-01-29T19:07:04Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2333
+    },
+    {
+      "completion_time": "2026-01-29T19:07:05Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2334
+    },
+    {
+      "completion_time": "2026-01-29T19:07:05Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2334
+    },
+    {
+      "completion_time": "2026-01-29T19:07:06Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2335
+    },
+    {
+      "completion_time": "2026-01-29T19:07:11Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2340
+    },
+    {
+      "completion_time": "2026-01-29T19:07:11Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2340
+    },
+    {
+      "completion_time": "2026-01-29T19:07:12Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2341
+    },
+    {
+      "completion_time": "2026-01-29T19:07:15Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2344
+    },
+    {
+      "completion_time": "2026-01-29T19:07:16Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2345
+    },
+    {
+      "completion_time": "2026-01-29T19:07:19Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2348
+    },
+    {
+      "completion_time": "2026-01-29T19:07:20Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2349
+    },
+    {
+      "completion_time": "2026-01-29T19:07:21Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2350
+    },
+    {
+      "completion_time": "2026-01-29T19:07:21Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2350
+    },
+    {
+      "completion_time": "2026-01-29T19:07:22Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2351
+    },
+    {
+      "completion_time": "2026-01-29T19:07:25Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2354
+    },
+    {
+      "completion_time": "2026-01-29T19:07:25Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2354
+    },
+    {
+      "completion_time": "2026-01-29T19:07:31Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2360
+    },
+    {
+      "completion_time": "2026-01-29T19:07:32Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2361
+    },
+    {
+      "completion_time": "2026-01-29T19:07:33Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2362
+    },
+    {
+      "completion_time": "2026-01-29T19:07:34Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2363
+    },
+    {
+      "completion_time": "2026-01-29T19:07:39Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2368
+    },
+    {
+      "completion_time": "2026-01-29T19:07:42Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2371
+    },
+    {
+      "completion_time": "2026-01-29T19:07:57Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2386
+    },
+    {
+      "completion_time": "2026-01-29T19:07:59Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2388
+    },
+    {
+      "completion_time": "2026-01-29T19:08:02Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2391
+    },
+    {
+      "completion_time": "2026-01-29T19:08:13Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2402
+    },
+    {
+      "completion_time": "2026-01-29T19:08:20Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2408
+    },
+    {
+      "completion_time": "2026-01-29T19:08:27Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2415
+    },
+    {
+      "completion_time": "2026-01-29T19:08:35Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2422
+    },
+    {
+      "completion_time": "2026-01-29T19:08:38Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2425
+    },
+    {
+      "completion_time": "2026-01-29T19:08:42Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2429
+    },
+    {
+      "completion_time": "2026-01-29T19:08:42Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2429
+    },
+    {
+      "completion_time": "2026-01-29T19:08:43Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2430
+    },
+    {
+      "completion_time": "2026-01-29T19:08:43Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2430
+    },
+    {
+      "completion_time": "2026-01-29T19:08:44Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2431
+    },
+    {
+      "completion_time": "2026-01-29T19:08:46Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2433
+    },
+    {
+      "completion_time": "2026-01-29T19:08:50Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2437
+    },
+    {
+      "completion_time": "2026-01-29T19:08:51Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2438
+    },
+    {
+      "completion_time": "2026-01-29T19:08:54Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2441
+    },
+    {
+      "completion_time": "2026-01-29T19:08:55Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2442
+    },
+    {
+      "completion_time": "2026-01-29T19:08:55Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2442
+    },
+    {
+      "completion_time": "2026-01-29T19:08:58Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2445
+    },
+    {
+      "completion_time": "2026-01-29T19:09:03Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2450
+    },
+    {
+      "completion_time": "2026-01-29T19:09:04Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2451
+    },
+    {
+      "completion_time": "2026-01-29T19:09:05Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2452
+    },
+    {
+      "completion_time": "2026-01-29T19:09:07Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2454
+    },
+    {
+      "completion_time": "2026-01-29T19:09:08Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2455
+    },
+    {
+      "completion_time": "2026-01-29T19:09:13Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2460
+    },
+    {
+      "completion_time": "2026-01-29T19:09:16Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2463
+    },
+    {
+      "completion_time": "2026-01-29T19:09:21Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2468
+    },
+    {
+      "completion_time": "2026-01-29T19:09:23Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2470
+    },
+    {
+      "completion_time": "2026-01-29T19:09:24Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2471
+    },
+    {
+      "completion_time": "2026-01-29T19:09:27Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2474
+    },
+    {
+      "completion_time": "2026-01-29T19:09:29Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2476
+    },
+    {
+      "completion_time": "2026-01-29T19:09:30Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2477
+    },
+    {
+      "completion_time": "2026-01-29T19:09:34Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2481
+    },
+    {
+      "completion_time": "2026-01-29T19:09:37Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2484
+    },
+    {
+      "completion_time": "2026-01-29T19:09:41Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2488
+    },
+    {
+      "completion_time": "2026-01-29T19:09:47Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2494
+    },
+    {
+      "completion_time": "2026-01-29T19:09:47Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2494
+    },
+    {
+      "completion_time": "2026-01-29T19:09:50Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2497
+    },
+    {
+      "completion_time": "2026-01-29T19:09:53Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2500
+    },
+    {
+      "completion_time": "2026-01-29T19:09:55Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2502
+    },
+    {
+      "completion_time": "2026-01-29T19:09:57Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2504
+    },
+    {
+      "completion_time": "2026-01-29T19:10:07Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2513
+    },
+    {
+      "completion_time": "2026-01-29T19:10:14Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2520
+    },
+    {
+      "completion_time": "2026-01-29T19:10:14Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2520
+    },
+    {
+      "completion_time": "2026-01-29T19:10:17Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2523
+    },
+    {
+      "completion_time": "2026-01-29T19:10:17Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2523
+    },
+    {
+      "completion_time": "2026-01-29T19:10:19Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2525
+    },
+    {
+      "completion_time": "2026-01-29T19:10:21Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2527
+    },
+    {
+      "completion_time": "2026-01-29T19:10:24Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2530
+    },
+    {
+      "completion_time": "2026-01-29T19:10:27Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2533
+    },
+    {
+      "completion_time": "2026-01-29T19:10:31Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2537
+    },
+    {
+      "completion_time": "2026-01-29T19:10:39Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2545
+    },
+    {
+      "completion_time": "2026-01-29T19:10:40Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2546
+    },
+    {
+      "completion_time": "2026-01-29T19:10:41Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2547
+    },
+    {
+      "completion_time": "2026-01-29T19:10:43Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2549
+    },
+    {
+      "completion_time": "2026-01-29T19:10:54Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2560
+    },
+    {
+      "completion_time": "2026-01-29T19:10:55Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2561
+    },
+    {
+      "completion_time": "2026-01-29T19:11:02Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2568
+    },
+    {
+      "completion_time": "2026-01-29T19:11:07Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2573
+    },
+    {
+      "completion_time": "2026-01-29T19:11:11Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2577
+    },
+    {
+      "completion_time": "2026-01-29T19:11:15Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2581
+    },
+    {
+      "completion_time": "2026-01-29T19:11:20Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2586
+    },
+    {
+      "completion_time": "2026-01-29T19:11:21Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2587
+    },
+    {
+      "completion_time": "2026-01-29T19:11:23Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2589
+    },
+    {
+      "completion_time": "2026-01-29T19:11:24Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2590
+    },
+    {
+      "completion_time": "2026-01-29T19:11:25Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2591
+    },
+    {
+      "completion_time": "2026-01-29T19:11:33Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2599
+    },
+    {
+      "completion_time": "2026-01-29T19:11:35Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2601
+    },
+    {
+      "completion_time": "2026-01-29T19:11:43Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2609
+    },
+    {
+      "completion_time": "2026-01-29T19:11:50Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2616
+    },
+    {
+      "completion_time": "2026-01-29T19:11:55Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2621
+    },
+    {
+      "completion_time": "2026-01-29T19:11:55Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2621
+    },
+    {
+      "completion_time": "2026-01-29T19:12:06Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2631
+    },
+    {
+      "completion_time": "2026-01-29T19:12:08Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2633
+    },
+    {
+      "completion_time": "2026-01-29T19:12:09Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2634
+    },
+    {
+      "completion_time": "2026-01-29T19:12:10Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2635
+    },
+    {
+      "completion_time": "2026-01-29T19:12:10Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2635
+    },
+    {
+      "completion_time": "2026-01-29T19:12:11Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2636
+    },
+    {
+      "completion_time": "2026-01-29T19:12:12Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2637
+    },
+    {
+      "completion_time": "2026-01-29T19:12:13Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2638
+    },
+    {
+      "completion_time": "2026-01-29T19:12:15Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2640
+    },
+    {
+      "completion_time": "2026-01-29T19:12:18Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2643
+    },
+    {
+      "completion_time": "2026-01-29T19:12:23Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2648
+    },
+    {
+      "completion_time": "2026-01-29T19:12:25Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2650
+    },
+    {
+      "completion_time": "2026-01-29T19:12:31Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2656
+    },
+    {
+      "completion_time": "2026-01-29T19:12:32Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2657
+    },
+    {
+      "completion_time": "2026-01-29T19:12:40Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2665
+    },
+    {
+      "completion_time": "2026-01-29T19:12:43Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2668
+    },
+    {
+      "completion_time": "2026-01-29T19:12:48Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2673
+    },
+    {
+      "completion_time": "2026-01-29T19:12:50Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2675
+    },
+    {
+      "completion_time": "2026-01-29T19:12:51Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2676
+    },
+    {
+      "completion_time": "2026-01-29T19:12:52Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2677
+    },
+    {
+      "completion_time": "2026-01-29T19:12:54Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2679
+    },
+    {
+      "completion_time": "2026-01-29T19:13:00Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2685
+    },
+    {
+      "completion_time": "2026-01-29T19:13:01Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2686
+    },
+    {
+      "completion_time": "2026-01-29T19:13:02Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2687
+    },
+    {
+      "completion_time": "2026-01-29T19:13:07Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2692
+    },
+    {
+      "completion_time": "2026-01-29T19:13:09Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2694
+    },
+    {
+      "completion_time": "2026-01-29T19:13:19Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2704
+    },
+    {
+      "completion_time": "2026-01-29T19:13:22Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2707
+    },
+    {
+      "completion_time": "2026-01-29T19:13:23Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2708
+    },
+    {
+      "completion_time": "2026-01-29T19:13:24Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2709
+    },
+    {
+      "completion_time": "2026-01-29T19:13:29Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2714
+    },
+    {
+      "completion_time": "2026-01-29T19:13:30Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2715
+    },
+    {
+      "completion_time": "2026-01-29T19:13:37Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2722
+    },
+    {
+      "completion_time": "2026-01-29T19:13:40Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2725
+    },
+    {
+      "completion_time": "2026-01-29T19:13:47Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2731
+    },
+    {
+      "completion_time": "2026-01-29T19:13:49Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2733
+    },
+    {
+      "completion_time": "2026-01-29T19:13:51Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2735
+    },
+    {
+      "completion_time": "2026-01-29T19:13:51Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2735
+    },
+    {
+      "completion_time": "2026-01-29T19:13:53Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2737
+    },
+    {
+      "completion_time": "2026-01-29T19:13:56Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2740
+    },
+    {
+      "completion_time": "2026-01-29T19:13:58Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2742
+    },
+    {
+      "completion_time": "2026-01-29T19:14:00Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2744
+    },
+    {
+      "completion_time": "2026-01-29T19:14:04Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2748
+    },
+    {
+      "completion_time": "2026-01-29T19:14:04Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2748
+    },
+    {
+      "completion_time": "2026-01-29T19:14:08Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2752
+    },
+    {
+      "completion_time": "2026-01-29T19:14:10Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2754
+    },
+    {
+      "completion_time": "2026-01-29T19:14:11Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2755
+    },
+    {
+      "completion_time": "2026-01-29T19:14:11Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2755
+    },
+    {
+      "completion_time": "2026-01-29T19:14:20Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2764
+    },
+    {
+      "completion_time": "2026-01-29T19:14:22Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2766
+    },
+    {
+      "completion_time": "2026-01-29T19:14:23Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2767
+    },
+    {
+      "completion_time": "2026-01-29T19:14:23Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2767
+    },
+    {
+      "completion_time": "2026-01-29T19:14:26Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2770
+    },
+    {
+      "completion_time": "2026-01-29T19:14:29Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2773
+    },
+    {
+      "completion_time": "2026-01-29T19:14:30Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2774
+    },
+    {
+      "completion_time": "2026-01-29T19:14:30Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2774
+    },
+    {
+      "completion_time": "2026-01-29T19:14:31Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2775
+    },
+    {
+      "completion_time": "2026-01-29T19:14:32Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2776
+    },
+    {
+      "completion_time": "2026-01-29T19:14:38Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2782
+    },
+    {
+      "completion_time": "2026-01-29T19:14:46Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2790
+    },
+    {
+      "completion_time": "2026-01-29T19:14:52Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2796
+    },
+    {
+      "completion_time": "2026-01-29T19:14:53Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2797
+    },
+    {
+      "completion_time": "2026-01-29T19:14:59Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2803
+    },
+    {
+      "completion_time": "2026-01-29T19:15:00Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2804
+    },
+    {
+      "completion_time": "2026-01-29T19:15:03Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2807
+    },
+    {
+      "completion_time": "2026-01-29T19:15:07Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2811
+    },
+    {
+      "completion_time": "2026-01-29T19:15:07Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2811
+    },
+    {
+      "completion_time": "2026-01-29T19:15:12Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2816
+    },
+    {
+      "completion_time": "2026-01-29T19:15:15Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2819
+    },
+    {
+      "completion_time": "2026-01-29T19:15:25Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2828
+    },
+    {
+      "completion_time": "2026-01-29T19:15:30Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2833
+    },
+    {
+      "completion_time": "2026-01-29T19:15:36Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2839
+    },
+    {
+      "completion_time": "2026-01-29T19:15:38Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2841
+    },
+    {
+      "completion_time": "2026-01-29T19:15:43Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2846
+    },
+    {
+      "completion_time": "2026-01-29T19:15:46Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2849
+    },
+    {
+      "completion_time": "2026-01-29T19:15:46Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2849
+    },
+    {
+      "completion_time": "2026-01-29T19:15:50Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2853
+    },
+    {
+      "completion_time": "2026-01-29T19:15:54Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2857
+    },
+    {
+      "completion_time": "2026-01-29T19:15:55Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2858
+    },
+    {
+      "completion_time": "2026-01-29T19:15:56Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2859
+    },
+    {
+      "completion_time": "2026-01-29T19:15:57Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2860
+    },
+    {
+      "completion_time": "2026-01-29T19:15:58Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2861
+    },
+    {
+      "completion_time": "2026-01-29T19:16:02Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2865
+    },
+    {
+      "completion_time": "2026-01-29T19:16:03Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2866
+    },
+    {
+      "completion_time": "2026-01-29T19:16:03Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2866
+    },
+    {
+      "completion_time": "2026-01-29T19:16:13Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2876
+    },
+    {
+      "completion_time": "2026-01-29T19:16:15Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2878
+    },
+    {
+      "completion_time": "2026-01-29T19:16:17Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2880
+    },
+    {
+      "completion_time": "2026-01-29T19:16:19Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2882
+    },
+    {
+      "completion_time": "2026-01-29T19:16:28Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2891
+    },
+    {
+      "completion_time": "2026-01-29T19:16:30Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2893
+    },
+    {
+      "completion_time": "2026-01-29T19:16:33Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2896
+    },
+    {
+      "completion_time": "2026-01-29T19:16:35Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2898
+    },
+    {
+      "completion_time": "2026-01-29T19:16:36Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2899
+    },
+    {
+      "completion_time": "2026-01-29T19:16:38Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2901
+    },
+    {
+      "completion_time": "2026-01-29T19:16:41Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2904
+    },
+    {
+      "completion_time": "2026-01-29T19:16:44Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2907
+    },
+    {
+      "completion_time": "2026-01-29T19:16:45Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2908
+    },
+    {
+      "completion_time": "2026-01-29T19:16:47Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2910
+    },
+    {
+      "completion_time": "2026-01-29T19:16:51Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2914
+    },
+    {
+      "completion_time": "2026-01-29T19:16:52Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2915
+    },
+    {
+      "completion_time": "2026-01-29T19:16:57Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2920
+    },
+    {
+      "completion_time": "2026-01-29T19:17:00Z",
+      "task_id": "BB-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2923
+    },
+    {
+      "completion_time": "2026-01-29T19:17:00Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2923
+    },
+    {
+      "completion_time": "2026-01-29T19:17:05Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2928
+    },
+    {
+      "completion_time": "2026-01-29T19:17:13Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2936
+    },
+    {
+      "completion_time": "2026-01-29T19:17:13Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2936
+    },
+    {
+      "completion_time": "2026-01-29T19:17:14Z",
+      "task_id": "BB-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2937
+    },
+    {
+      "completion_time": "2026-01-29T19:17:19Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2941
+    },
+    {
+      "completion_time": "2026-01-29T19:17:21Z",
+      "task_id": "BB-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2943
+    }
+  ]
+}

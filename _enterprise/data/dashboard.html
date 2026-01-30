@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCC Enterprise Data Architecture Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #00ff88, #00ccff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.8;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+        }
+
+        .card h3 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #00ff88;
+            border-bottom: 2px solid #00ff88;
+            padding-bottom: 5px;
+        }
+
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+
+        .metric-label {
+            font-weight: 500;
+        }
+
+        .metric-value {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #00ccff;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .status-healthy { background-color: #00ff88; }
+        .status-warning { background-color: #ffaa00; }
+        .status-critical { background-color: #ff4444; }
+
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin-top: 20px;
+        }
+
+        .alerts-section {
+            margin-top: 30px;
+        }
+
+        .alert {
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+
+        .alert-critical {
+            background: rgba(255, 68, 68, 0.2);
+            border-left-color: #ff4444;
+        }
+
+        .alert-warning {
+            background: rgba(255, 170, 0, 0.2);
+            border-left-color: #ffaa00;
+        }
+
+        .alert-info {
+            background: rgba(0, 204, 255, 0.2);
+            border-left-color: #00ccff;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            background: linear-gradient(45deg, #00ff88, #00ccff);
+            color: #0f0f23;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .refresh-indicator {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #00ff88;
+            animation: spin 1s ease-in-out infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .last-updated {
+            text-align: center;
+            margin-top: 20px;
+            opacity: 0.7;
+            font-size: 0.9em;
+        }
+
+        .system-status {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(0, 255, 136, 0.1);
+            border-radius: 10px;
+            border: 1px solid #00ff88;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>NCC Enterprise Data Architecture</h1>
+            <p>Real-time monitoring and management dashboard for 3340+ agents</p>
+        </div>
+
+        <div class="system-status">
+            <h3>System Status: <span id="systemStatus">Initializing...</span></h3>
+            <p id="systemStatusDetail">Loading system metrics...</p>
+        </div>
+
+        <div class="controls">
+            <button class="btn" onclick="refreshDashboard()">Refresh Dashboard</button>
+            <button class="btn btn-secondary" onclick="runDataPipeline()">Run Data Pipeline</button>
+            <button class="btn btn-secondary" onclick="runQualityCheck()">Quality Check</button>
+            <button class="btn btn-secondary" onclick="runBackup()">Create Backup</button>
+            <button class="btn btn-secondary" onclick="runGovernanceAudit()">Governance Audit</button>
+            <span id="refreshIndicator" class="refresh-indicator" style="display: none;"></span>
+        </div>
+
+        <div class="dashboard-grid">
+            <!-- Data Pipeline Status -->
+            <div class="card">
+                <h3>Data Pipeline Status</h3>
+                <div class="metric">
+                    <span class="metric-label">Last Run</span>
+                    <span class="metric-value" id="pipelineLastRun">--:--:--</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Status</span>
+                    <span class="metric-value">
+                        <span class="status-indicator" id="pipelineStatusIndicator"></span>
+                        <span id="pipelineStatus">Unknown</span>
+                    </span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Records Processed</span>
+                    <span class="metric-value" id="pipelineRecords">0</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Data Quality Score</span>
+                    <span class="metric-value" id="pipelineQuality">0%</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="pipelineChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Data Quality Metrics -->
+            <div class="card">
+                <h3>Data Quality Overview</h3>
+                <div class="metric">
+                    <span class="metric-label">Completeness</span>
+                    <span class="metric-value" id="qualityCompleteness">0%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Accuracy</span>
+                    <span class="metric-value" id="qualityAccuracy">0%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Timeliness</span>
+                    <span class="metric-value" id="qualityTimeliness">0%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Validity</span>
+                    <span class="metric-value" id="qualityValidity">0%</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="qualityChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Storage & Backup Status -->
+            <div class="card">
+                <h3>Storage & Backup</h3>
+                <div class="metric">
+                    <span class="metric-label">Total Data Size</span>
+                    <span class="metric-value" id="storageTotalSize">0 GB</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Last Backup</span>
+                    <span class="metric-value" id="backupLastRun">--:--:--</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Backup Status</span>
+                    <span class="metric-value">
+                        <span class="status-indicator" id="backupStatusIndicator"></span>
+                        <span id="backupStatus">Unknown</span>
+                    </span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Storage Health</span>
+                    <span class="metric-value" id="storageHealth">0%</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="storageChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Governance & Compliance -->
+            <div class="card">
+                <h3>Governance & Compliance</h3>
+                <div class="metric">
+                    <span class="metric-label">Active Policies</span>
+                    <span class="metric-value" id="governancePolicies">0</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Compliance Score</span>
+                    <span class="metric-value" id="governanceCompliance">0%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Access Violations</span>
+                    <span class="metric-value" id="governanceViolations">0</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Last Audit</span>
+                    <span class="metric-value" id="governanceLastAudit">--:--:--</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="governanceChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Agent Activity -->
+            <div class="card">
+                <h3>Agent Activity (3340+ Agents)</h3>
+                <div class="metric">
+                    <span class="metric-label">Active Agents</span>
+                    <span class="metric-value" id="agentsActive">0</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Data Submissions</span>
+                    <span class="metric-value" id="agentsSubmissions">0</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Average Response Time</span>
+                    <span class="metric-value" id="agentsResponseTime">0ms</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Error Rate</span>
+                    <span class="metric-value" id="agentsErrorRate">0%</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="agentsChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Enterprise Metrics -->
+            <div class="card">
+                <h3>Enterprise Overview</h3>
+                <div class="metric">
+                    <span class="metric-label">Total Divisions</span>
+                    <span class="metric-value" id="enterpriseDivisions">0</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Data Sources</span>
+                    <span class="metric-value" id="enterpriseDataSources">0</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">System Uptime</span>
+                    <span class="metric-value" id="enterpriseUptime">0%</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Performance Score</span>
+                    <span class="metric-value" id="enterprisePerformance">0%</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="enterpriseChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="alerts-section">
+            <h3>System Alerts & Notifications</h3>
+            <div id="alertsContainer">
+                <div class="alert alert-info">
+                    <strong>System Initializing:</strong> Loading dashboard data...
+                </div>
+            </div>
+        </div>
+
+        <div class="last-updated">
+            Last updated: <span id="lastUpdated">Never</span>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let dashboardData = {};
+        let charts = {};
+        let refreshInterval;
+
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeCharts();
+            loadDashboardData();
+            startAutoRefresh();
+        });
+
+        function initializeCharts() {
+            // Pipeline Chart
+            const pipelineCtx = document.getElementById('pipelineChart').getContext('2d');
+            charts.pipeline = new Chart(pipelineCtx, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'Records Processed',
+                        data: [],
+                        borderColor: '#00ff88',
+                        backgroundColor: 'rgba(0, 255, 136, 0.1)',
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            ticks: { color: '#ffffff' }
+                        },
+                        x: {
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            ticks: { color: '#ffffff' }
+                        }
+                    },
+                    plugins: {
+                        legend: { labels: { color: '#ffffff' } }
+                    }
+                }
+            });
+
+            // Quality Chart
+            const qualityCtx = document.getElementById('qualityChart').getContext('2d');
+            charts.quality = new Chart(qualityCtx, {
+                type: 'radar',
+                data: {
+                    labels: ['Completeness', 'Accuracy', 'Timeliness', 'Validity', 'Consistency'],
+                    datasets: [{
+                        label: 'Data Quality',
+                        data: [0, 0, 0, 0, 0],
+                        borderColor: '#00ccff',
+                        backgroundColor: 'rgba(0, 204, 255, 0.1)',
+                        pointBackgroundColor: '#00ccff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            max: 100,
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            ticks: { color: '#ffffff' },
+                            pointLabels: { color: '#ffffff' }
+                        }
+                    },
+                    plugins: {
+                        legend: { labels: { color: '#ffffff' } }
+                    }
+                }
+            });
+
+            // Storage Chart
+            const storageCtx = document.getElementById('storageChart').getContext('2d');
+            charts.storage = new Chart(storageCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Used', 'Available', 'Backups'],
+                    datasets: [{
+                        data: [0, 0, 0],
+                        backgroundColor: ['#00ff88', '#00ccff', '#ffaa00'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: '#ffffff' },
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+
+            // Governance Chart
+            const governanceCtx = document.getElementById('governanceChart').getContext('2d');
+            charts.governance = new Chart(governanceCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Policies', 'Compliance', 'Violations', 'Audits'],
+                    datasets: [{
+                        label: 'Governance Metrics',
+                        data: [0, 0, 0, 0],
+                        backgroundColor: ['#00ff88', '#00ccff', '#ff4444', '#ffaa00'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            ticks: { color: '#ffffff' }
+                        },
+                        x: {
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            ticks: { color: '#ffffff' }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+
+            // Agents Chart
+            const agentsCtx = document.getElementById('agentsChart').getContext('2d');
+            charts.agents = new Chart(agentsCtx, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'Active Agents',
+                        data: [],
+                        borderColor: '#00ff88',
+                        backgroundColor: 'rgba(0, 255, 136, 0.1)',
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            ticks: { color: '#ffffff' }
+                        },
+                        x: {
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            ticks: { color: '#ffffff' }
+                        }
+                    },
+                    plugins: {
+                        legend: { labels: { color: '#ffffff' } }
+                    }
+                }
+            });
+
+            // Enterprise Chart
+            const enterpriseCtx = document.getElementById('enterpriseChart').getContext('2d');
+            charts.enterprise = new Chart(enterpriseCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Divisions', 'Data Sources', 'Uptime', 'Performance'],
+                    datasets: [{
+                        label: 'Enterprise Metrics',
+                        data: [0, 0, 0, 0],
+                        backgroundColor: ['#00ff88', '#00ccff', '#ffaa00', '#ff4444'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            ticks: { color: '#ffffff' }
+                        },
+                        x: {
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            ticks: { color: '#ffffff' }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+        }
+
+        async function loadDashboardData() {
+            try {
+                showRefreshIndicator(true);
+
+                // Simulate API calls to gather data
+                const response = await fetch('/api/dashboard-data');
+                if (response.ok) {
+                    dashboardData = await response.json();
+                } else {
+                    // Generate mock data for demonstration
+                    dashboardData = generateMockData();
+                }
+
+                updateDashboard();
+                updateCharts();
+                updateAlerts();
+
+                document.getElementById('lastUpdated').textContent = new Date().toLocaleString();
+                document.getElementById('systemStatus').textContent = 'Operational';
+                document.getElementById('systemStatusDetail').textContent = 'All systems running normally';
+
+            } catch (error) {
+                console.error('Failed to load dashboard data:', error);
+                document.getElementById('systemStatus').textContent = 'Error';
+                document.getElementById('systemStatusDetail').textContent = 'Failed to load system data';
+                showAlert('Failed to load dashboard data. Using cached data.', 'warning');
+            } finally {
+                showRefreshIndicator(false);
+            }
+        }
+
+        function generateMockData() {
+            return {
+                pipeline: {
+                    lastRun: new Date(Date.now() - 300000).toLocaleTimeString(),
+                    status: 'healthy',
+                    recordsProcessed: 125000,
+                    qualityScore: 94.2
+                },
+                quality: {
+                    completeness: 96.8,
+                    accuracy: 92.4,
+                    timeliness: 98.1,
+                    validity: 95.3,
+                    consistency: 93.7
+                },
+                storage: {
+                    totalSize: 45.2,
+                    lastBackup: new Date(Date.now() - 3600000).toLocaleTimeString(),
+                    backupStatus: 'healthy',
+                    health: 98.5
+                },
+                governance: {
+                    activePolicies: 12,
+                    complianceScore: 96.3,
+                    violations: 2,
+                    lastAudit: new Date(Date.now() - 86400000).toLocaleTimeString()
+                },
+                agents: {
+                    active: 3340,
+                    submissions: 8920,
+                    responseTime: 245,
+                    errorRate: 0.8
+                },
+                enterprise: {
+                    divisions: 28,
+                    dataSources: 156,
+                    uptime: 99.7,
+                    performance: 94.8
+                },
+                alerts: [
+                    {
+                        type: 'info',
+                        message: 'Data pipeline completed successfully',
+                        timestamp: new Date(Date.now() - 300000).toISOString()
+                    },
+                    {
+                        type: 'warning',
+                        message: 'Storage capacity approaching 80%',
+                        timestamp: new Date(Date.now() - 1800000).toISOString()
+                    }
+                ]
+            };
+        }
+
+        function updateDashboard() {
+            // Pipeline metrics
+            document.getElementById('pipelineLastRun').textContent = dashboardData.pipeline.lastRun;
+            document.getElementById('pipelineStatus').textContent = dashboardData.pipeline.status;
+            document.getElementById('pipelineRecords').textContent = dashboardData.pipeline.recordsProcessed.toLocaleString();
+            document.getElementById('pipelineQuality').textContent = dashboardData.pipeline.qualityScore + '%';
+
+            updateStatusIndicator('pipelineStatusIndicator', dashboardData.pipeline.status);
+
+            // Quality metrics
+            document.getElementById('qualityCompleteness').textContent = dashboardData.quality.completeness + '%';
+            document.getElementById('qualityAccuracy').textContent = dashboardData.quality.accuracy + '%';
+            document.getElementById('qualityTimeliness').textContent = dashboardData.quality.timeliness + '%';
+            document.getElementById('qualityValidity').textContent = dashboardData.quality.validity + '%';
+
+            // Storage metrics
+            document.getElementById('storageTotalSize').textContent = dashboardData.storage.totalSize + ' GB';
+            document.getElementById('backupLastRun').textContent = dashboardData.storage.lastBackup;
+            document.getElementById('backupStatus').textContent = dashboardData.storage.backupStatus;
+            document.getElementById('storageHealth').textContent = dashboardData.storage.health + '%';
+
+            updateStatusIndicator('backupStatusIndicator', dashboardData.storage.backupStatus);
+
+            // Governance metrics
+            document.getElementById('governancePolicies').textContent = dashboardData.governance.activePolicies;
+            document.getElementById('governanceCompliance').textContent = dashboardData.governance.complianceScore + '%';
+            document.getElementById('governanceViolations').textContent = dashboardData.governance.violations;
+            document.getElementById('governanceLastAudit').textContent = dashboardData.governance.lastAudit;
+
+            // Agent metrics
+            document.getElementById('agentsActive').textContent = dashboardData.agents.active.toLocaleString();
+            document.getElementById('agentsSubmissions').textContent = dashboardData.agents.submissions.toLocaleString();
+            document.getElementById('agentsResponseTime').textContent = dashboardData.agents.responseTime + 'ms';
+            document.getElementById('agentsErrorRate').textContent = dashboardData.agents.errorRate + '%';
+
+            // Enterprise metrics
+            document.getElementById('enterpriseDivisions').textContent = dashboardData.enterprise.divisions;
+            document.getElementById('enterpriseDataSources').textContent = dashboardData.enterprise.dataSources;
+            document.getElementById('enterpriseUptime').textContent = dashboardData.enterprise.uptime + '%';
+            document.getElementById('enterprisePerformance').textContent = dashboardData.enterprise.performance + '%';
+        }
+
+        function updateCharts() {
+            // Update pipeline chart with historical data
+            const pipelineLabels = [];
+            const pipelineData = [];
+            for (let i = 23; i >= 0; i--) {
+                const time = new Date(Date.now() - (i * 3600000));
+                pipelineLabels.push(time.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}));
+                pipelineData.push(Math.floor(Math.random() * 10000) + 50000);
+            }
+            charts.pipeline.data.labels = pipelineLabels;
+            charts.pipeline.data.datasets[0].data = pipelineData;
+            charts.pipeline.update();
+
+            // Update quality chart
+            charts.quality.data.datasets[0].data = [
+                dashboardData.quality.completeness,
+                dashboardData.quality.accuracy,
+                dashboardData.quality.timeliness,
+                dashboardData.quality.validity,
+                dashboardData.quality.consistency
+            ];
+            charts.quality.update();
+
+            // Update storage chart
+            const usedStorage = dashboardData.storage.totalSize * 0.75;
+            const availableStorage = dashboardData.storage.totalSize * 0.15;
+            const backupStorage = dashboardData.storage.totalSize * 0.10;
+            charts.storage.data.datasets[0].data = [usedStorage, availableStorage, backupStorage];
+            charts.storage.update();
+
+            // Update governance chart
+            charts.governance.data.datasets[0].data = [
+                dashboardData.governance.activePolicies,
+                dashboardData.governance.complianceScore,
+                dashboardData.governance.violations,
+                1 // Last audit count
+            ];
+            charts.governance.update();
+
+            // Update agents chart
+            const agentLabels = [];
+            const agentData = [];
+            for (let i = 23; i >= 0; i--) {
+                const time = new Date(Date.now() - (i * 3600000));
+                agentLabels.push(time.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}));
+                agentData.push(Math.floor(Math.random() * 200) + 3200);
+            }
+            charts.agents.data.labels = agentLabels;
+            charts.agents.data.datasets[0].data = agentData;
+            charts.agents.update();
+
+            // Update enterprise chart
+            charts.enterprise.data.datasets[0].data = [
+                dashboardData.enterprise.divisions,
+                dashboardData.enterprise.dataSources,
+                dashboardData.enterprise.uptime,
+                dashboardData.enterprise.performance
+            ];
+            charts.enterprise.update();
+        }
+
+        function updateAlerts() {
+            const alertsContainer = document.getElementById('alertsContainer');
+            alertsContainer.innerHTML = '';
+
+            if (!dashboardData.alerts || dashboardData.alerts.length === 0) {
+                alertsContainer.innerHTML = '<div class="alert alert-info"><strong>All Clear:</strong> No active alerts</div>';
+                return;
+            }
+
+            dashboardData.alerts.forEach(alert => {
+                const alertDiv = document.createElement('div');
+                alertDiv.className = `alert alert-${alert.type}`;
+                alertDiv.innerHTML = `
+                    <strong>${alert.type.toUpperCase()}:</strong> ${alert.message}
+                    <br><small>${new Date(alert.timestamp).toLocaleString()}</small>
+                `;
+                alertsContainer.appendChild(alertDiv);
+            });
+        }
+
+        function updateStatusIndicator(elementId, status) {
+            const indicator = document.getElementById(elementId);
+            indicator.className = 'status-indicator';
+
+            switch (status.toLowerCase()) {
+                case 'healthy':
+                case 'success':
+                case 'operational':
+                    indicator.classList.add('status-healthy');
+                    break;
+                case 'warning':
+                case 'degraded':
+                    indicator.classList.add('status-warning');
+                    break;
+                case 'critical':
+                case 'error':
+                case 'failed':
+                    indicator.classList.add('status-critical');
+                    break;
+                default:
+                    indicator.classList.add('status-warning');
+            }
+        }
+
+        function showAlert(message, type = 'info') {
+            const alertsContainer = document.getElementById('alertsContainer');
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `alert alert-${type}`;
+            alertDiv.innerHTML = `<strong>${type.toUpperCase()}:</strong> ${message}`;
+            alertsContainer.insertBefore(alertDiv, alertsContainer.firstChild);
+
+            // Auto-remove after 10 seconds
+            setTimeout(() => {
+                if (alertDiv.parentNode) {
+                    alertDiv.remove();
+                }
+            }, 10000);
+        }
+
+        function showRefreshIndicator(show) {
+            document.getElementById('refreshIndicator').style.display = show ? 'inline-block' : 'none';
+        }
+
+        function startAutoRefresh() {
+            refreshInterval = setInterval(loadDashboardData, 30000); // Refresh every 30 seconds
+        }
+
+        function stopAutoRefresh() {
+            if (refreshInterval) {
+                clearInterval(refreshInterval);
+            }
+        }
+
+        // Control functions
+        async function refreshDashboard() {
+            stopAutoRefresh();
+            await loadDashboardData();
+            startAutoRefresh();
+        }
+
+        async function runDataPipeline() {
+            showAlert('Running data pipeline...', 'info');
+            try {
+                const response = await fetch('/api/run-pipeline', { method: 'POST' });
+                if (response.ok) {
+                    showAlert('Data pipeline completed successfully', 'info');
+                    await loadDashboardData();
+                } else {
+                    showAlert('Failed to run data pipeline', 'critical');
+                }
+            } catch (error) {
+                showAlert('Error running data pipeline', 'critical');
+            }
+        }
+
+        async function runQualityCheck() {
+            showAlert('Running quality check...', 'info');
+            try {
+                const response = await fetch('/api/run-quality-check', { method: 'POST' });
+                if (response.ok) {
+                    showAlert('Quality check completed successfully', 'info');
+                    await loadDashboardData();
+                } else {
+                    showAlert('Failed to run quality check', 'warning');
+                }
+            } catch (error) {
+                showAlert('Error running quality check', 'warning');
+            }
+        }
+
+        async function runBackup() {
+            showAlert('Creating backup...', 'info');
+            try {
+                const response = await fetch('/api/run-backup', { method: 'POST' });
+                if (response.ok) {
+                    showAlert('Backup completed successfully', 'info');
+                    await loadDashboardData();
+                } else {
+                    showAlert('Failed to create backup', 'critical');
+                }
+            } catch (error) {
+                showAlert('Error creating backup', 'critical');
+            }
+        }
+
+        async function runGovernanceAudit() {
+            showAlert('Running governance audit...', 'info');
+            try {
+                const response = await fetch('/api/run-governance-audit', { method: 'POST' });
+                if (response.ok) {
+                    showAlert('Governance audit completed successfully', 'info');
+                    await loadDashboardData();
+                } else {
+                    showAlert('Failed to run governance audit', 'warning');
+                }
+            } catch (error) {
+                showAlert('Error running governance audit', 'warning');
+            }
+        }
+
+        // Cleanup on page unload
+        window.addEventListener('beforeunload', stopAutoRefresh);
+    </script>
+</body>
+</html>

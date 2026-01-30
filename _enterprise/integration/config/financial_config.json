@@ -1,0 +1,47 @@
+{
+  "Security": {
+    "APITimeout": 30,
+    "RetryAttempts": 3,
+    "RateLimitDelay": 1,
+    "EncryptionKey": "ncc-financial-enc-key-2026"
+  },
+  "Monitoring": {
+    "HealthCheckInterval": 300,
+    "BalanceThreshold": 10000,
+    "TransactionThreshold": 5000
+  },
+  "Banks": [
+    {
+      "Accounts": [
+        "ACC-001",
+        "ACC-002",
+        "ACC-003"
+      ],
+      "APIKey": "ncc-internal-key-2026",
+      "APIEndpoint": "https://api.nccbank.internal",
+      "Name": "NCC_Internal_Bank",
+      "Status": "Active"
+    },
+    {
+      "Accounts": [
+        "CBA-001",
+        "CBA-002"
+      ],
+      "APIKey": null,
+      "APIEndpoint": "https://api.commercialbanka.com",
+      "Name": "Commercial_Bank_A",
+      "Status": "Active"
+    },
+    {
+      "Accounts": [
+        "IBB-001",
+        "IBB-002",
+        "IBB-003"
+      ],
+      "APIKey": null,
+      "APIEndpoint": "https://api.investmentbankb.com",
+      "Name": "Investment_Bank_B",
+      "Status": "Active"
+    }
+  ]
+}

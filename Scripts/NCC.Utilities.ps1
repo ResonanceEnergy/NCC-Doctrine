@@ -1,0 +1,116 @@
+# NCC Utilities Module v1.0.0
+# Author: NCC Command Center
+# Purpose: Common utilities and functions for NCC scripts
+
+# Write-Log function for consistent logging across all NCC scripts
+function Write-Log {
+    param(
+        [string]$Message,
+        [string]$Level = "INFO",
+        [string]$LogFile = $null
+    )
+
+    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $logMessage = "[$timestamp] [$Level] $Message"
+
+    # Color coding for console output
+    switch ($Level) {
+        "ERROR"   { Write-Host $logMessage -ForegroundColor Red }
+        "WARNING" { Write-Host $logMessage -ForegroundColor Yellow }
+        "SUCCESS" { Write-Host $logMessage -ForegroundColor Green }
+        "INFO"    { Write-Host $logMessage -ForegroundColor Cyan }
+        "DEBUG"   { Write-Host $logMessage -ForegroundColor Gray }
+        default   { Write-Host $logMessage }
+    }
+
+    # Write to log file if specified
+    if ($LogFile) {
+        Add-Content -Path $LogFile -Value $logMessage
+    }
+}
+
+# Get-RandomString function for generating random strings
+function Get-RandomString {
+    param([int]$Length = 8)
+
+    $chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+    $random = -join ((1..$Length) | ForEach-Object { $chars[(Get-Random -Maximum $chars.Length)] })
+    return $random
+}
+
+# Test-DirectoryExists function
+function Test-DirectoryExists {
+    param([string]$Path)
+
+    return Test-Path -Path $Path -PathType Container
+}
+
+# Test-FileExists function
+function Test-FileExists {
+    param([string]$Path)
+
+    return Test-Path -Path $Path -PathType Leaf
+}
+
+# New-DirectoryIfNotExists function
+function New-DirectoryIfNotExists {
+    param([string]$Path)
+
+    if (-not (Test-DirectoryExists -Path $Path)) {
+        New-Item -ItemType Directory -Path $Path -Force | Out-Null
+        Write-Log "Created directory: $Path" -Level "INFO"
+    }
+}
+
+# Get-JsonFile function
+function Get-JsonFile {
+    param([string]$Path)
+
+    if (Test-FileExists -Path $Path) {
+        try {
+            $content = Get-Content -Path $Path -Raw | ConvertFrom-Json
+            return $content
+        }
+        catch {
+            Write-Log "Error reading JSON file: $Path - $($_.Exception.Message)" -Level "ERROR"
+            return $null
+        }
+    } else {
+        Write-Log "JSON file not found: $Path" -Level "WARNING"
+        return $null
+    }
+}
+
+# Set-JsonFile function
+function Set-JsonFile {
+    param(
+        [string]$Path,
+        [object]$Data,
+        [int]$Depth = 10
+    )
+
+    try {
+        $Data | ConvertTo-Json -Depth $Depth | Set-Content -Path $Path
+        Write-Log "Saved JSON file: $Path" -Level "INFO"
+    }
+    catch {
+        Write-Log "Error saving JSON file: $Path - $($_.Exception.Message)" -Level "ERROR"
+    }
+}
+
+# Get-ConfigValue function
+function Get-ConfigValue {
+    param(
+        [string]$Key,
+        [object]$Config,
+        [object]$DefaultValue = $null
+    )
+
+    if ($Config -and $Config.PSObject.Properties.Name -contains $Key) {
+        return $Config.$Key
+    } else {
+        return $DefaultValue
+    }
+}
+
+# Functions are available for use in other scripts

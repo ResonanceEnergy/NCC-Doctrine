@@ -1,0 +1,207 @@
+<!doctype html><html lang='en'><head>
+<meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/>
+<title>NCC Dashboard</title>
+<style>
+body { background: linear-gradient(135deg, #0a0f14 0%, #1a2a3a 100%); color: #e6f7ff; font-family: 'Inter', system-ui, sans-serif; margin: 0; }
+.container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+.header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+.avatar { width: 80px; height: 80px; border-radius: 50%; background: radial-gradient(circle at 50% 50%, #19384b 0%, #30c3f2 100%); animation: breath 3s infinite alternate; display: flex; align-items: center; justify-content: center; font-size: 48px; }
+@keyframes breath { 0% { box-shadow: 0 0 0 0 #30c3f2; } 100% { box-shadow: 0 0 30px 10px #7a5cf5; } }
+.buttons { display: flex; gap: 12px; }
+.btn { background: #14202a; color: #9bdfff; border: 1px solid #30c3f2; border-radius: 8px; padding: 8px 16px; cursor: pointer; font-size: 16px; transition: background 0.2s; }
+.btn:hover { background: #30c3f2; color: #fff; }
+.main { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; }
+.panel { background: #0e151d; border-radius: 12px; padding: 18px; box-shadow: 0 2px 16px #06101644; margin-bottom: 18px; }
+.metrics { display: flex; gap: 24px; margin-bottom: 18px; }
+.metric { background: #19384b; color: #fff; border-radius: 8px; padding: 12px 18px; min-width: 120px; text-align: center; }
+.activity, .priority { margin-bottom: 18px; }
+table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+th, td { border: 1px solid #444; padding: 8px; text-align: left; }
+th { background: #222; color: #7af; }
+.hammer-btn { background: linear-gradient(90deg, #ffb347, #ffcc33); color: #222; border: none; border-radius: 12px; padding: 8px 20px; font-size: 1.2rem; font-weight: bold; box-shadow: 0 4px 16px rgba(0,0,0,0.15); cursor: pointer; transition: transform 0.1s, box-shadow 0.2s; margin-left: 12px; }
+.hammer-btn:active { transform: scale(0.97); box-shadow: 0 2px 8px rgba(0,0,0,0.25); }
+#hammerOverlay { display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(255,220,100,0.85); z-index:2000; justify-content:center; align-items:center; flex-direction:column; font-size:2.5rem; font-weight:bold; }
+</style>
+</head><body>
+<div class='container'>
+	<div class='header'>
+		<div class='avatar' id='azAvatar'>🤖</div>
+		<div class='buttons'>
+			<button class='btn' onclick='refreshDashboard()'>Refresh</button>
+			<button class='btn' onclick='addWidget()'>Add Widget</button>
+			<button class='btn' onclick='showSettings()'>Settings</button>
+			<button class='btn' onclick='triggerEmoji()'>AZ Emoji</button>
+			<button class='hammer-btn' id='hammerBtn'>🔨 Hammer</button>
+		</div>
+	</div>
+	<div class='main'>
+		<div>
+			<div class='panel metrics'>
+				<div class='metric'><strong id='projectsCount'>0</strong><br>Projects</div>
+				<div class='metric'><strong id='opsPackets'>0</strong><br>Ops Packets</div>
+				<div class='metric'><strong id='alerts'>0</strong><br>Alerts</div>
+				<div class='metric'><strong id='bankBalance'></strong><br>Bank Account</div>
+			</div>
+			<div class='panel priority'>
+				<h3>Priority List</h3>
+				<ul id='priorityList'><li>Loading...</li></ul>
+			</div>
+			<div class='panel activity'>
+				<h3>Timeline / Activity Feed</h3>
+				<ul id='activityFeed'><li>Loading...</li></ul>
+			</div>
+		</div>
+		<div>
+			<div class='panel'>
+				<h3>Projects</h3>
+				<table id='projectsTable'>
+					<thead><tr><th>Name</th><th>Category</th><th>Status</th></tr></thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<div id='hammerOverlay'><span style='font-size:5rem;'>🔨</span><span>Hammer action activated!</span></div>
+<script>
+const projects = JSON.parse(@([
+  {
+    "Description": "NCC's first global water-to-electricity product - HydroFlow clean energy system",
+    "Status": "Active",
+    "Progress": 95,
+    "ProjectName": "NCC HydroFlow Global Product",
+    "Path": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\ResonanceEnergyCorp\\MicroHydroCorp",
+    "Parent": "",
+    "LastUpdated": "2026-01-28 12:00",
+    "Category": "Product Launch"
+  },
+  {
+    "Description": "Micro hydro technology assessment and transformation foundation",
+    "Status": "Completed",
+    "Progress": 100,
+    "ProjectName": "MicroHydro Project",
+    "Path": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\scripts\\..\\Projects\\MicroHydro Project",
+    "Parent": "NCC HydroFlow Global Product",
+    "LastUpdated": "2026-01-28 12:00",
+    "Category": "R&D"
+  },
+  {
+    "Description": "",
+    "Status": "Active",
+    "Progress": 0,
+    "ProjectName": "Big Brain Intelligence",
+    "Path": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\scripts\\..\\Projects\\Big Brain Intelligence",
+    "Parent": "",
+    "LastUpdated": "2026-01-27 10:34",
+    "Category": "R&D"
+  },
+  {
+    "Description": "",
+    "Status": "Active",
+    "Progress": 0,
+    "ProjectName": "Future Financial",
+    "Path": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\scripts\\..\\Projects\\Future Financial",
+    "Parent": "",
+    "LastUpdated": "2026-01-27 10:34",
+    "Category": "Finance"
+  },
+  {
+    "Description": "",
+    "Status": "Active",
+    "Progress": 0,
+    "ProjectName": "Future Fibre Optics",
+    "Path": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\scripts\\..\\Projects\\Future Fibre Optics",
+    "Parent": "",
+    "LastUpdated": "2026-01-27 10:34",
+    "Category": "Infrastructure"
+  },
+  {
+    "Description": "",
+    "Status": "Active",
+    "Progress": 0,
+    "ProjectName": "Mammoth Media",
+    "Path": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\scripts\\..\\Projects\\Mammoth Media",
+    "Parent": "",
+    "LastUpdated": "2026-01-27 10:34",
+    "Category": "Media"
+  },
+  {
+    "Description": "",
+    "Status": "Active",
+    "Progress": 0,
+    "ProjectName": "Off Grid Technologies",
+    "Path": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\scripts\\..\\Projects\\Off Grid Technologies",
+    "Parent": "",
+    "LastUpdated": "2026-01-27 10:34",
+    "Category": "R&D"
+  },
+  {
+    "Description": "",
+    "Status": "Active",
+    "Progress": 0,
+    "ProjectName": "Grip And Ripp HDD",
+    "Path": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\scripts\\..\\Projects\\Grip And Ripp HDD",
+    "Parent": "",
+    "LastUpdated": "2026-01-27 10:34",
+    "Category": "Ops"
+  },
+  {
+    "Description": "",
+    "Status": "Active",
+    "Progress": 0,
+    "ProjectName": "Butterfield Acres",
+    "Path": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\scripts\\..\\Projects\\Butterfield Acres",
+    "Parent": "",
+    "LastUpdated": "2026-01-27 10:34",
+    "Category": "Ops"
+  },
+  {
+    "Description": "",
+    "Status": "Active",
+    "Progress": 0,
+    "ProjectName": "Phone App Builder",
+    "Path": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\scripts\\..\\Projects\\Phone App Builder",
+    "Parent": "",
+    "LastUpdated": "2026-01-27 10:34",
+    "Category": "Software"
+  },
+  {
+    "Description": "",
+    "Status": "Active",
+    "Progress": 0,
+    "ProjectName": "Uruguay and Paraguay Dream to Reality",
+    "Path": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\scripts\\..\\Projects\\Uruguay and Paraguay Dream to Reality",
+    "Parent": "",
+    "LastUpdated": "",
+    "Category": "Strategy"
+  }
+]
+));
+const tbody = document.querySelector('#projectsTable tbody');
+document.getElementById('projectsCount').textContent = projects.length;
+projects.forEach(p => {
+	const row = document.createElement('tr');
+	row.innerHTML = <td></td><td></td><td></td>;
+	tbody.appendChild(row);
+});
+// Placeholder for live metrics
+document.getElementById('opsPackets').textContent = Math.floor(Math.random()*10+1);
+document.getElementById('alerts').textContent = Math.floor(Math.random()*5);
+document.getElementById('bankBalance').textContent = '$' + (Math.floor(Math.random()*100000)+1000);
+// Priority list and activity feed
+document.getElementById('priorityList').innerHTML = '<li>Project Alpha</li><li>Project Beta</li><li>Urgent: Ops Packet</li>';
+document.getElementById('activityFeed').innerHTML = '<li>Bank account updated</li><li>New alert received</li><li>Widget added</li>';
+// Button actions
+function refreshDashboard() { location.reload(); }
+function addWidget() { alert('Widget added!'); }
+function showSettings() { alert('Settings dialog (not implemented)'); }
+function triggerEmoji() { const avatar = document.getElementById('azAvatar'); avatar.textContent = '😎'; setTimeout(()=>avatar.textContent='🤖', 1200); }
+document.getElementById('hammerBtn').addEventListener('click', function() {
+	var overlay = document.getElementById('hammerOverlay');
+	overlay.style.display = 'flex';
+	setTimeout(function() {
+		 overlay.style.display = 'none';
+	}, 1200);
+});
+	</script>
+	</body></html>

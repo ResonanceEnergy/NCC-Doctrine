@@ -1,0 +1,389 @@
+param(
+    [Parameter(Mandatory=$false)]
+    [ValidateSet("Initialize", "Monitor", "Detect", "Respond", "Recover", "Status", "Test")]
+    [string]$Action = "Status",
+
+    [Parameter(Mandatory=$false)]
+    [int]$MonitoringInterval = 30,  # seconds
+
+    [Parameter(Mandatory=$false)]
+    [string]$LogFile = "$PSScriptRoot\logs\emergency_system.log"
+)
+
+# =============================================================================
+# NCC EMERGENCY & CRISIS MANAGEMENT SYSTEM
+# Version: 1.0.0 | Classification: TOP SECRET
+# Date: 2026-01-29 | Authority: AZ PRIME Command
+# =============================================================================
+
+$ScriptVersion = "1.0.0"
+$SystemName = "NCC Emergency & Crisis Management System"
+
+# Configuration
+$Config = @{
+    DetectionThresholds = @{
+        Critical = @{ CPU = 95; Memory = 90; Disk = 95; ResponseTime = 5000 }
+        High = @{ CPU = 80; Memory = 75; Disk = 85; ResponseTime = 2000 }
+        Medium = @{ CPU = 60; Memory = 60; Disk = 70; ResponseTime = 1000 }
+        Low = @{ CPU = 40; Memory = 45; Disk = 50; ResponseTime = 500 }
+    }
+    EmergencyLevels = @{
+        1 = @{ Name = "Minor Incident"; AutoResolve = $true; Notification = $false }
+        2 = @{ Name = "Significant Incident"; AutoResolve = $false; Notification = $true }
+        3 = @{ Name = "Major Incident"; AutoResolve = $false; Notification = $true }
+        4 = @{ Name = "Critical Incident"; AutoResolve = $false; Notification = $true }
+    }
+    CommunicationChannels = @(
+        "NCC.Agent.Communication.ps1",
+        "Email",
+        "SMS",
+        "Emergency Broadcast"
+    )
+}
+
+# =============================================================================
+# LOGGING FUNCTIONS
+# =============================================================================
+
+function Write-EmergencyLog {
+    param(
+        [string]$Message,
+        [ValidateSet("INFO", "WARNING", "ERROR", "CRITICAL")]
+        [string]$Level = "INFO",
+        [string]$Component = "EmergencySystem"
+    )
+
+    $Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $LogEntry = "[$Timestamp] [$Level] [$Component] $Message"
+
+    # Write to console with color coding
+    switch ($Level) {
+        "CRITICAL" { Write-Host $LogEntry -ForegroundColor Red -BackgroundColor White }
+        "ERROR" { Write-Host $LogEntry -ForegroundColor Red }
+        "WARNING" { Write-Host $LogEntry -ForegroundColor Yellow }
+        "INFO" { Write-Host $LogEntry -ForegroundColor Green }
+    }
+
+    # Write to log file
+    try {
+        $LogEntry | Out-File -FilePath $LogFile -Append -Encoding UTF8
+    } catch {
+        Write-Host "Failed to write to log file: $($_.Exception.Message)" -ForegroundColor Red
+    }
+}
+
+# =============================================================================
+# SYSTEM HEALTH MONITORING
+# =============================================================================
+
+function Get-SystemHealth {
+    try {
+        # CPU Usage
+        $cpuUsage = (Get-Counter '\Processor(_Total)\% Processor Time' -SampleInterval 1 -MaxSamples 1).CounterSamples.CookedValue
+
+        # Memory Usage
+        $memory = Get-CimInstance -ClassName Win32_OperatingSystem
+        $totalMemory = $memory.TotalVisibleMemorySize
+        $freeMemory = $memory.FreePhysicalMemory
+        $memoryUsage = (($totalMemory - $freeMemory) / $totalMemory) * 100
+
+        # Disk Usage (C: drive)
+        $disk = Get-CimInstance -ClassName Win32_LogicalDisk -Filter "DeviceID='C:'"
+        $diskUsage = (($disk.Size - $disk.FreeSpace) / $disk.Size) * 100
+
+        # Network Connectivity
+        $networkTest = Test-Connection -ComputerName "8.8.8.8" -Count 1 -Quiet
+
+        # Service Health (check key NCC services)
+        $servicesHealthy = $true
+        $keyServices = @("NCC.MessageBroker", "NCC.DataPipeline", "NCC.SecurityMonitor")
+        foreach ($service in $keyServices) {
+            if (-not (Get-Process -Name $service -ErrorAction SilentlyContinue)) {
+                $servicesHealthy = $false
+                break
+            }
+        }
+
+        return @{
+            CPU = [math]::Round($cpuUsage, 2)
+            Memory = [math]::Round($memoryUsage, 2)
+            Disk = [math]::Round($diskUsage, 2)
+            Network = $networkTest
+            Services = $servicesHealthy
+            Timestamp = Get-Date
+            OverallHealth = "Healthy"
+        }
+    } catch {
+        Write-EmergencyLog "Failed to get system health: $($_.Exception.Message)" -Level "ERROR"
+        return $null
+    }
+}
+
+# =============================================================================
+# EMERGENCY DETECTION
+# =============================================================================
+
+function Test-EmergencyDetection {
+    param([hashtable]$HealthData)
+
+    if (-not $HealthData) {
+        return @{ Level = 4; Reason = "Unable to collect system health data" }
+    }
+
+    $thresholds = $Config.DetectionThresholds
+
+    # Critical Level 4
+    if ($HealthData.CPU -gt $thresholds.Critical.CPU -or
+        $HealthData.Memory -gt $thresholds.Critical.Memory -or
+        $HealthData.Disk -gt $thresholds.Critical.Disk -or
+        -not $HealthData.Network -or
+        -not $HealthData.Services) {
+        return @{ Level = 4; Reason = "Critical system parameters exceeded or services down" }
+    }
+
+    # High Level 3
+    if ($HealthData.CPU -gt $thresholds.High.CPU -or
+        $HealthData.Memory -gt $thresholds.High.Memory -or
+        $HealthData.Disk -gt $thresholds.High.Disk) {
+        return @{ Level = 3; Reason = "High system resource usage detected" }
+    }
+
+    # Medium Level 2
+    if ($HealthData.CPU -gt $thresholds.Medium.CPU -or
+        $HealthData.Memory -gt $thresholds.Medium.Memory -or
+        $HealthData.Disk -gt $thresholds.Medium.Disk) {
+        return @{ Level = 2; Reason = "Elevated system resource usage" }
+    }
+
+    # Low Level 1
+    if ($HealthData.CPU -gt $thresholds.Low.CPU -or
+        $HealthData.Memory -gt $thresholds.Low.Memory) {
+        return @{ Level = 1; Reason = "Minor system resource elevation" }
+    }
+
+    return @{ Level = 0; Reason = "All systems normal" }
+}
+
+# =============================================================================
+# CRISIS RESPONSE
+# =============================================================================
+
+function Invoke-CrisisResponse {
+    param([int]$Level, [string]$Reason)
+
+    Write-EmergencyLog "Initiating crisis response - Level $Level - $Reason" -Level "CRITICAL"
+
+    switch ($Level) {
+        1 {
+            # Level 1: Auto-resolve minor issues
+            Write-EmergencyLog "Level 1: Attempting automatic resolution" -Level "WARNING"
+            # Implement auto-resolution logic here
+        }
+        2 {
+            # Level 2: Manual intervention required
+            Write-EmergencyLog "Level 2: Manual intervention required" -Level "ERROR"
+            Send-EmergencyNotification -Level $Level -Message $Reason
+        }
+        3 {
+            # Level 3: Major incident response
+            Write-EmergencyLog "Level 3: Major incident - activating response team" -Level "CRITICAL"
+            Send-EmergencyNotification -Level $Level -Message $Reason
+            Start-FailoverProcedures
+        }
+        4 {
+            # Level 4: Critical incident
+            Write-EmergencyLog "Level 4: Critical incident - emergency broadcast" -Level "CRITICAL"
+            Send-EmergencyBroadcast -Message "CRITICAL INCIDENT: $Reason"
+            Invoke-EmergencyLockdown
+        }
+    }
+}
+
+# =============================================================================
+# COMMUNICATION FUNCTIONS
+# =============================================================================
+
+function Send-EmergencyNotification {
+    param([int]$Level, [string]$Message)
+
+    $subject = "NCC Emergency Alert - Level $Level"
+    $body = @"
+EMERGENCY ALERT
+
+Level: $Level
+Time: $(Get-Date)
+Message: $Message
+
+Please respond immediately to emergency protocols.
+"@
+
+    Write-EmergencyLog "Sending emergency notification: $subject" -Level "WARNING"
+
+    # Send via NCC communication system
+    try {
+        & "$PSScriptRoot\NCC.Agent.Communication.ps1" -Action "Broadcast" -Message $body -Priority "Critical"
+    } catch {
+        Write-EmergencyLog "Failed to send via NCC communication: $($_.Exception.Message)" -Level "ERROR"
+    }
+}
+
+function Send-EmergencyBroadcast {
+    param([string]$Message)
+
+    Write-EmergencyLog "Sending emergency broadcast: $Message" -Level "CRITICAL"
+
+    # Implement emergency broadcast logic
+    # This would send to all emergency channels simultaneously
+}
+
+# =============================================================================
+# RECOVERY FUNCTIONS
+# =============================================================================
+
+function Start-FailoverProcedures {
+    Write-EmergencyLog "Initiating failover procedures" -Level "WARNING"
+
+    # Implement failover logic
+    # - Switch to backup systems
+    # - Redirect traffic
+    # - Activate redundant infrastructure
+}
+
+function Invoke-EmergencyLockdown {
+    Write-EmergencyLog "Initiating emergency lockdown" -Level "CRITICAL"
+
+    # Implement lockdown procedures
+    # - Suspend non-critical operations
+    # - Activate security protocols
+    # - Isolate affected systems
+}
+
+# =============================================================================
+# MONITORING LOOP
+# =============================================================================
+
+function Start-EmergencyMonitoring {
+    Write-EmergencyLog "Starting emergency monitoring (interval: $MonitoringInterval seconds)" -Level "INFO"
+
+    while ($true) {
+        try {
+            $health = Get-SystemHealth
+            if ($health) {
+                $emergency = Test-EmergencyDetection -HealthData $health
+
+                if ($emergency.Level -gt 0) {
+                    Invoke-CrisisResponse -Level $emergency.Level -Reason $emergency.Reason
+                }
+
+                # Log health status
+                Write-EmergencyLog "Health Check - CPU: $($health.CPU)%, Memory: $($health.Memory)%, Disk: $($health.Disk)%, Network: $($health.Network), Services: $($health.Services)" -Level "INFO"
+            }
+        } catch {
+            Write-EmergencyLog "Monitoring error: $($_.Exception.Message)" -Level "ERROR"
+        }
+
+        Start-Sleep -Seconds $MonitoringInterval
+    }
+}
+
+# =============================================================================
+# MAIN EXECUTION
+# =============================================================================
+
+Write-EmergencyLog "=== $SystemName v$ScriptVersion ===" -Level "INFO"
+Write-EmergencyLog "Action: $Action" -Level "INFO"
+
+switch ($Action) {
+    "Initialize" {
+        Write-EmergencyLog "Initializing emergency system..." -Level "INFO"
+
+        # Create necessary directories
+        $dirs = @("logs", "config", "reports", "backups")
+        foreach ($dir in $dirs) {
+            if (-not (Test-Path "$PSScriptRoot\$dir")) {
+                New-Item -ItemType Directory -Path "$PSScriptRoot\$dir" -Force | Out-Null
+            }
+        }
+
+        # Create configuration file
+        $Config | ConvertTo-Json -Depth 10 | Out-File "$PSScriptRoot\config\emergency_config.json" -Encoding UTF8
+
+        Write-EmergencyLog "Emergency system initialized successfully" -Level "INFO"
+    }
+
+    "Monitor" {
+        Start-EmergencyMonitoring
+    }
+
+    "Detect" {
+        $health = Get-SystemHealth
+        $emergency = Test-EmergencyDetection -HealthData $health
+
+        Write-EmergencyLog "Detection Result - Level: $($emergency.Level), Reason: $($emergency.Reason)" -Level "INFO"
+        Write-Host "Emergency Level: $($emergency.Level)"
+        Write-Host "Reason: $($emergency.Reason)"
+    }
+
+    "Respond" {
+        # Test response with Level 2
+        Invoke-CrisisResponse -Level 2 -Reason "Manual test of crisis response system"
+    }
+
+    "Recover" {
+        Write-EmergencyLog "Testing recovery procedures" -Level "INFO"
+        Start-FailoverProcedures
+    }
+
+    "Test" {
+        Write-EmergencyLog "Running emergency system tests" -Level "INFO"
+
+        # Test health monitoring
+        $health = Get-SystemHealth
+        if ($health) {
+            Write-Host "✓ Health monitoring: PASS" -ForegroundColor Green
+        } else {
+            Write-Host "✗ Health monitoring: FAIL" -ForegroundColor Red
+        }
+
+        # Test detection
+        $emergency = Test-EmergencyDetection -HealthData $health
+        Write-Host "✓ Emergency detection: PASS (Level: $($emergency.Level))" -ForegroundColor Green
+
+        # Test communication
+        try {
+            Send-EmergencyNotification -Level 1 -Message "Test notification"
+            Write-Host "✓ Emergency notification: PASS" -ForegroundColor Green
+        } catch {
+            Write-Host "✗ Emergency notification: FAIL" -ForegroundColor Red
+        }
+
+        Write-EmergencyLog "Emergency system tests completed" -Level "INFO"
+    }
+
+    "Status" {
+        $health = Get-SystemHealth
+        $emergency = Test-EmergencyDetection -HealthData $health
+
+        Write-Host "`n=== $SystemName Status ===" -ForegroundColor Cyan
+        Write-Host "Version: $ScriptVersion" -ForegroundColor White
+        Write-Host "Timestamp: $(Get-Date)" -ForegroundColor White
+        Write-Host ""
+
+        Write-Host "System Health:" -ForegroundColor Yellow
+        Write-Host "  CPU Usage: $($health.CPU)%" -ForegroundColor $(if ($health.CPU -gt 80) { "Red" } elseif ($health.CPU -gt 60) { "Yellow" } else { "Green" })
+        Write-Host "  Memory Usage: $($health.Memory)%" -ForegroundColor $(if ($health.Memory -gt 80) { "Red" } elseif ($health.Memory -gt 60) { "Yellow" } else { "Green" })
+        Write-Host "  Disk Usage: $($health.Disk)%" -ForegroundColor $(if ($health.Disk -gt 90) { "Red" } elseif ($health.Disk -gt 75) { "Yellow" } else { "Green" })
+        Write-Host "  Network: $($health.Network)" -ForegroundColor $(if ($health.Network) { "Green" } else { "Red" })
+        Write-Host "  Services: $($health.Services)" -ForegroundColor $(if ($health.Services) { "Green" } else { "Red" })
+
+        Write-Host "`nEmergency Status:" -ForegroundColor Yellow
+        Write-Host "  Detection Level: $($emergency.Level)" -ForegroundColor $(if ($emergency.Level -gt 2) { "Red" } elseif ($emergency.Level -gt 0) { "Yellow" } else { "Green" })
+        Write-Host "  Status: $($emergency.Reason)" -ForegroundColor White
+
+        Write-Host "`nLog File: $LogFile" -ForegroundColor White
+        Write-Host ""
+    }
+}
+
+Write-EmergencyLog "Command completed: $Action" -Level "INFO"</content>
+<parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\_enterprise\emergency\NCC.Emergency.Crisis.Management.ps1

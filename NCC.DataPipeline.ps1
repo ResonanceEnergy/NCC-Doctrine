@@ -1,0 +1,785 @@
+#Requires -Version 5.1
+
+<#
+.SYNOPSIS
+    NCC.DataPipeline.ps1 - Automated Data Collection and Aggregation Pipeline
+
+.DESCRIPTION
+    This script implements the automated data pipeline for NCC enterprise data architecture.
+    It collects data from all agents, divisions, and systems, validates it, and aggregates
+    it into the central data repository.
+
+.PARAMETER Mode
+    Pipeline execution mode: Full, Incremental, or Validation
+
+.PARAMETER IntervalMinutes
+    Interval for scheduled execution (default: 5 minutes)
+
+.PARAMETER DryRun
+    Run in dry-run mode without making changes
+
+.EXAMPLE
+    .\NCC.DataPipeline.ps1 -Mode Full
+
+.EXAMPLE
+    .\NCC.DataPipeline.ps1 -Mode Incremental -IntervalMinutes 2
+
+.NOTES
+    Author: NCC Data Engineering Team
+    Version: 1.0.0
+    Requires: PowerShell 5.1+, Azure PowerShell modules (if using cloud storage)
+#>
+
+[CmdletBinding()]
+param(
+    [Parameter(Mandatory = $false)]
+    [ValidateSet("Full", "Incremental", "Validation")]
+    [string]$Mode = "Incremental",
+
+    [Parameter(Mandatory = $false)]
+    [int]$IntervalMinutes = 5,
+
+    [Parameter(Mandatory = $false)]
+    [switch]$DryRun,
+
+    [Parameter(Mandatory = $false)]
+    [switch]$Continuous
+)
+
+# Configuration
+$Config = @{
+    DataRoot = "_enterprise/data"
+    AgentDataPath = "_enterprise/data/agent_data"
+    DivisionDataPath = "_enterprise/data/division_data"
+    EnterpriseDataPath = "_enterprise/data/enterprise_data"
+    ArchivePath = "_enterprise/data/archives"
+    LogPath = "_enterprise/logs"
+    TempPath = "_enterprise/temp"
+    MaxRetries = 3
+    TimeoutSeconds = 300
+    BatchSize = 1000
+}
+
+# Logging setup
+$LogFile = Join-Path $Config.LogPath "NCC_DataPipeline_$(Get-Date -Format 'yyyy-MM-dd').log"
+
+function Write-PipelineLog {
+    param(
+        [string]$Message,
+        [string]$Level = "INFO"
+    )
+
+    $Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $LogEntry = "[$Timestamp] [$Level] $Message"
+
+    Write-Host $LogEntry
+
+    # Ensure log directory exists
+    if (-not (Test-Path $Config.LogPath)) {
+        New-Item -ItemType Directory -Path $Config.LogPath -Force | Out-Null
+    }
+
+    Add-Content -Path $LogFile -Value $LogEntry -ErrorAction SilentlyContinue
+}
+
+function Initialize-Pipeline {
+    Write-PipelineLog "Initializing NCC Data Pipeline..." "INFO"
+
+    # Create required directories
+    $directories = @(
+        $Config.DataRoot,
+        $Config.AgentDataPath,
+        $Config.DivisionDataPath,
+        $Config.EnterpriseDataPath,
+        $Config.ArchivePath,
+        $Config.LogPath,
+        $Config.TempPath
+    )
+
+    foreach ($dir in $directories) {
+        if (-not (Test-Path $dir)) {
+            if (-not $DryRun) {
+                New-Item -ItemType Directory -Path $dir -Force | Out-Null
+            }
+            Write-PipelineLog "Created directory: $dir" "INFO"
+        }
+    }
+
+    # Validate data schemas exist
+    $schemaPath = Join-Path $Config.DataRoot "DATA_SCHEMA.md"
+    if (-not (Test-Path $schemaPath)) {
+        Write-PipelineLog "Data schema file not found: $schemaPath" "ERROR"
+        throw "Data schema file is required for pipeline operation"
+    }
+
+    Write-PipelineLog "Pipeline initialization completed" "INFO"
+}
+
+function Get-AgentData {
+    param([int]$MaxRetries = $Config.MaxRetries)
+
+    Write-PipelineLog "Collecting agent data..." "INFO"
+
+    $agentData = @()
+    $retryCount = 0
+
+    while ($retryCount -lt $MaxRetries) {
+        try {
+            # Scan for agent data sources
+            $agentDirectories = Get-ChildItem -Path "agents" -Directory -ErrorAction SilentlyContinue
+            $divisionDirectories = Get-ChildItem -Path "." -Directory | Where-Object {
+                $_.Name -match "^(AX|AZ|CCD|CSuite|Elite_Trader_Desk|Faraday_Financial_Corp|GlobalLogisticsNetwork|GlobalTalentAcquisition|HedgeFundDivision|HR|InnovationLabsDivision|IntegratedInsuranceCorp|InternationalOperationsDivision|Ludwig_Law_Corp|MediaCorp|QuantumComputingDivision)$"
+            }
+
+            # Collect from agent directories
+            foreach ($agentDir in $agentDirectories) {
+                $agentFiles = Get-ChildItem -Path $agentDir.FullName -Filter "*.json" -ErrorAction SilentlyContinue
+                foreach ($file in $agentFiles) {
+                    try {
+                        $data = Get-Content $file.FullName -Raw | ConvertFrom-Json
+                        if ($data.agent_id) {
+                            $agentData += $data
+                        }
+                    }
+                    catch {
+                        Write-PipelineLog "Failed to parse agent data file: $($file.FullName)" "WARNING"
+                    }
+                }
+            }
+
+            # Collect from division directories
+            foreach ($divisionDir in $divisionDirectories) {
+                $divisionAgentFiles = Get-ChildItem -Path $divisionDir.FullName -Filter "*agent*.json" -Recurse -ErrorAction SilentlyContinue
+                foreach ($file in $divisionAgentFiles) {
+                    try {
+                        $data = Get-Content $file.FullName -Raw | ConvertFrom-Json
+                        if ($data.agent_id) {
+                            $agentData += $data
+                        }
+                    }
+                    catch {
+                        Write-PipelineLog "Failed to parse division agent data file: $($file.FullName)" "WARNING"
+                    }
+                }
+            }
+
+            Write-PipelineLog "Collected data for $($agentData.Count) agents" "INFO"
+            return $agentData
+
+        }
+        catch {
+            $retryCount++
+            Write-PipelineLog "Agent data collection failed (attempt $retryCount/$MaxRetries): $($_.Exception.Message)" "WARNING"
+            if ($retryCount -lt $MaxRetries) {
+                Start-Sleep -Seconds 5
+            }
+        }
+    }
+
+    Write-PipelineLog "Failed to collect agent data after $MaxRetries attempts" "ERROR"
+    return @()
+}
+
+function Get-DivisionData {
+    param([int]$MaxRetries = $Config.MaxRetries)
+
+    Write-PipelineLog "Collecting division data..." "INFO"
+
+    $divisionData = @()
+    $retryCount = 0
+
+    while ($retryCount -lt $MaxRetries) {
+        try {
+            # Get division directories
+            $divisionDirectories = Get-ChildItem -Path "." -Directory | Where-Object {
+                $_.Name -match "^(AX|AZ|CCD|CSuite|Elite_Trader_Desk|Faraday_Financial_Corp|GlobalLogisticsNetwork|GlobalTalentAcquisition|HedgeFundDivision|HR|InnovationLabsDivision|IntegratedInsuranceCorp|InternationalOperationsDivision|Ludwig_Law_Corp|MediaCorp|QuantumComputingDivision)$"
+            }
+
+            foreach ($divisionDir in $divisionDirectories) {
+                $metricsFile = Join-Path $divisionDir.FullName "metrics.json"
+                $statusFile = Join-Path $divisionDir.FullName "status.json"
+
+                $divisionMetrics = @{
+                    division_id = $divisionDir.Name
+                    division_name = $divisionDir.Name
+                    timestamp = (Get-Date).ToString("o")
+                    metrics = @{
+                        agent_count = 0
+                        active_tasks = 0
+                        completed_tasks = 0
+                        success_rate = 0
+                        average_response_time = 0
+                        resource_utilization = 0
+                    }
+                    kpis = @{
+                        efficiency_score = 0
+                        quality_score = 0
+                        innovation_index = 0
+                    }
+                    metadata = @{
+                        reporting_period = "current"
+                        data_quality_score = 95
+                    }
+                }
+
+                # Try to read existing metrics
+                if (Test-Path $metricsFile) {
+                    try {
+                        $existingMetrics = Get-Content $metricsFile -Raw | ConvertFrom-Json
+                        $divisionMetrics.metrics = $existingMetrics
+                    }
+                    catch {
+                        Write-PipelineLog "Failed to parse division metrics: $metricsFile" "WARNING"
+                    }
+                }
+
+                # Count agents in division
+                $agentCount = (Get-ChildItem -Path $divisionDir.FullName -Filter "*agent*.json" -Recurse -ErrorAction SilentlyContinue).Count
+                $divisionMetrics.metrics.agent_count = $agentCount
+
+                $divisionData += $divisionMetrics
+            }
+
+            Write-PipelineLog "Collected data for $($divisionData.Count) divisions" "INFO"
+            return $divisionData
+
+        }
+        catch {
+            $retryCount++
+            Write-PipelineLog "Division data collection failed (attempt $retryCount/$MaxRetries): $($_.Exception.Message)" "WARNING"
+            if ($retryCount -lt $MaxRetries) {
+                Start-Sleep -Seconds 5
+            }
+        }
+    }
+
+    Write-PipelineLog "Failed to collect division data after $MaxRetries attempts" "ERROR"
+    return @()
+}
+
+function Validate-Data {
+    param(
+        [Parameter(Mandatory = $true)]
+        [AllowNull()]
+        [array]$Data,
+
+        [Parameter(Mandatory = $true)]
+        [string]$DataType
+    )
+
+    Write-PipelineLog "Validating $DataType data..." "INFO"
+
+    $validRecords = @()
+    $invalidRecords = @()
+
+    # Handle null data
+    if (-not $Data -or $Data.Count -eq 0) {
+        Write-PipelineLog "No $DataType data to validate" "WARNING"
+        return @{
+            Valid = @()
+            Invalid = @()
+            Summary = @{
+                total = 0
+                valid = 0
+                invalid = 0
+                validation_rate = 0
+            }
+        }
+    }
+
+    foreach ($record in $Data) {
+        $isValid = $true
+        $validationErrors = @()
+
+        # Common validation rules
+        if (-not $record.metadata) {
+            $record | Add-Member -MemberType NoteProperty -Name "metadata" -Value @{
+                created_at = (Get-Date).ToString("o")
+                updated_at = (Get-Date).ToString("o")
+                version = "1.0.0"
+            } -Force
+        }
+
+        # Type-specific validation
+        switch ($DataType) {
+            "agent" {
+                if (-not $record.agent_id) {
+                    $isValid = $false
+                    $validationErrors += "Missing agent_id"
+                }
+                if ($record.performance_score -and ($record.performance_score -lt 0 -or $record.performance_score -gt 100)) {
+                    $isValid = $false
+                    $validationErrors += "Performance score out of range: $($record.performance_score)"
+                }
+            }
+            "division" {
+                if (-not $record.division_id) {
+                    $isValid = $false
+                    $validationErrors += "Missing division_id"
+                }
+                if ($record.metrics.success_rate -and ($record.metrics.success_rate -lt 0 -or $record.metrics.success_rate -gt 100)) {
+                    $isValid = $false
+                    $validationErrors += "Success rate out of range: $($record.metrics.success_rate)"
+                }
+            }
+        }
+
+        if ($isValid) {
+            $validRecords += $record
+        }
+        else {
+            $invalidRecords += @{
+                record = $record
+                errors = $validationErrors
+            }
+            Write-PipelineLog "Invalid $DataType record: $($validationErrors -join ', ')" "WARNING"
+        }
+    }
+
+    Write-PipelineLog "Validation complete: $($validRecords.Count) valid, $($invalidRecords.Count) invalid" "INFO"
+    return @{
+        Valid = $validRecords
+        Invalid = $invalidRecords
+    }
+}
+
+function Save-Data {
+    param(
+        [Parameter(Mandatory = $true)]
+        [array]$Data,
+
+        [Parameter(Mandatory = $true)]
+        [string]$DataType,
+
+        [Parameter(Mandatory = $false)]
+        [switch]$DryRun
+    )
+
+    if ($DryRun) {
+        Write-PipelineLog "DRY RUN: Would save $($Data.Count) $DataType records" "INFO"
+        return $true
+    }
+
+    $outputPath = switch ($DataType) {
+        "agent" { $Config.AgentDataPath }
+        "division" { $Config.DivisionDataPath }
+        "enterprise" { $Config.EnterpriseDataPath }
+        default { $Config.DataRoot }
+    }
+
+    $timestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
+    $outputFile = Join-Path $outputPath "$DataType`_data_$timestamp.json"
+
+    try {
+        $Data | ConvertTo-Json -Depth 10 | Set-Content -Path $outputFile -Encoding UTF8
+        Write-PipelineLog "Saved $($Data.Count) $DataType records to: $outputFile" "INFO"
+        return $true
+    }
+    catch {
+        Write-PipelineLog "Failed to save $DataType data: $($_.Exception.Message)" "ERROR"
+        return $false
+    }
+}
+
+function Aggregate-EnterpriseData {
+    param(
+        [Parameter(Mandatory = $true)]
+        [AllowNull()]
+        [array]$AgentData,
+
+        [Parameter(Mandatory = $true)]
+        [AllowNull()]
+        [array]$DivisionData
+    )
+
+    Write-PipelineLog "Aggregating enterprise data..." "INFO"
+
+    # Handle null inputs
+    $agentCount = if ($AgentData) { $AgentData.Count } else { 0 }
+    $divisionCount = if ($DivisionData) { $DivisionData.Count } else { 0 }
+
+    $enterpriseMetrics = @{
+        timestamp = (Get-Date).ToString("o")
+        enterprise_metrics = @{
+            total_agents = $agentCount
+            active_divisions = $divisionCount
+            system_health_score = 95
+            overall_efficiency = 0
+            data_quality_index = 95
+        }
+        division_breakdown = @()
+        alerts = @()
+        metadata = @{
+            data_freshness = (Get-Date).ToString("o")
+            last_updated = (Get-Date).ToString("o")
+        }
+    }
+
+    # Calculate division breakdown
+    foreach ($division in $DivisionData) {
+        $divisionBreakdown = @{
+            division_name = $division.division_name
+            contribution_percentage = if ($AgentData.Count -gt 0) {
+                [math]::Round(($division.metrics.agent_count / $AgentData.Count) * 100, 2)
+            } else { 0 }
+            health_status = "good"
+        }
+
+        # Determine health status based on metrics
+        if ($division.metrics.success_rate -lt 80) {
+            $divisionBreakdown.health_status = "warning"
+        }
+        if ($division.metrics.success_rate -lt 60) {
+            $divisionBreakdown.health_status = "critical"
+        }
+        if ($division.kpis.efficiency_score -gt 90) {
+            $divisionBreakdown.health_status = "excellent"
+        }
+
+        $enterpriseMetrics.division_breakdown += $divisionBreakdown
+    }
+
+    # Calculate overall efficiency
+    $totalEfficiency = 0
+    $divisionCount = 0
+    foreach ($division in $DivisionData) {
+        if ($division.kpis.efficiency_score -gt 0) {
+            $totalEfficiency += $division.kpis.efficiency_score
+            $divisionCount++
+        }
+    }
+    $enterpriseMetrics.enterprise_metrics.overall_efficiency = if ($divisionCount -gt 0) {
+        [math]::Round($totalEfficiency / $divisionCount, 2)
+    } else { 0 }
+
+    # Generate alerts based on thresholds
+    if ($enterpriseMetrics.enterprise_metrics.total_agents -lt 1000) {
+        $enterpriseMetrics.alerts += @{
+            alert_id = [guid]::NewGuid().ToString()
+            severity = "warning"
+            message = "Agent count below threshold: $($enterpriseMetrics.enterprise_metrics.total_agents)"
+            timestamp = (Get-Date).ToString("o")
+        }
+    }
+
+    if ($enterpriseMetrics.enterprise_metrics.overall_efficiency -lt 70) {
+        $enterpriseMetrics.alerts += @{
+            alert_id = [guid]::NewGuid().ToString()
+            severity = "error"
+            message = "Overall efficiency below acceptable threshold: $($enterpriseMetrics.enterprise_metrics.overall_efficiency)%"
+            timestamp = (Get-Date).ToString("o")
+        }
+    }
+
+    Write-PipelineLog "Enterprise data aggregation completed" "INFO"
+    return $enterpriseMetrics
+}
+
+function Invoke-DataQualityChecks {
+    param(
+        [Parameter(Mandatory = $true)]
+        [AllowNull()]
+        [array]$Data,
+
+        [Parameter(Mandatory = $true)]
+        [string]$DataType
+    )
+
+    Write-PipelineLog "Running data quality checks on $DataType data..." "INFO"
+
+    # Handle empty data
+    if (-not $Data -or $Data.Count -eq 0) {
+        Write-PipelineLog "No $DataType data for quality checks" "WARNING"
+        return @{
+            total_records = 0
+            completeness_score = 0
+            accuracy_score = 0
+            timeliness_score = 0
+            validity_score = 0
+            overall_quality_score = 0
+        }
+    }
+
+    $qualityMetrics = @{
+        total_records = $Data.Count
+        completeness_score = 0
+        accuracy_score = 0
+        consistency_score = 0
+        timeliness_score = 0
+        validity_score = 0
+        overall_quality_score = 0
+    }
+
+    if ($Data.Count -eq 0) {
+        Write-PipelineLog "No data to quality check" "WARNING"
+        return $qualityMetrics
+    }
+
+    # Completeness check
+    $completeRecords = 0
+    foreach ($record in $Data) {
+        $isComplete = $true
+        switch ($DataType) {
+            "agent" {
+                if (-not ($record.agent_id -and $record.agent_name -and $record.division)) {
+                    $isComplete = $false
+                }
+            }
+            "division" {
+                if (-not ($record.division_id -and $record.division_name -and $record.metrics)) {
+                    $isComplete = $false
+                }
+            }
+        }
+        if ($isComplete) { $completeRecords++ }
+    }
+    $qualityMetrics.completeness_score = [math]::Round(($completeRecords / $Data.Count) * 100, 2)
+
+    # Validity check (basic)
+    $validRecords = 0
+    foreach ($record in $Data) {
+        $isValid = $true
+        if ($record.performance_score -and ($record.performance_score -lt 0 -or $record.performance_score -gt 100)) {
+            $isValid = $false
+        }
+        if ($record.metrics -and $record.metrics.success_rate -and ($record.metrics.success_rate -lt 0 -or $record.metrics.success_rate -gt 100)) {
+            $isValid = $false
+        }
+        if ($isValid) { $validRecords++ }
+    }
+    $qualityMetrics.validity_score = [math]::Round(($validRecords / $Data.Count) * 100, 2)
+
+    # Timeliness check (data not older than 24 hours)
+    $timelyRecords = 0
+    $cutoffDate = (Get-Date).AddHours(-24)
+    foreach ($record in $Data) {
+        $recordDate = [DateTime]::Parse($record.timestamp)
+        if ($recordDate -gt $cutoffDate) {
+            $timelyRecords++
+        }
+    }
+    $qualityMetrics.timeliness_score = [math]::Round(($timelyRecords / $Data.Count) * 100, 2)
+
+    # Overall quality score (weighted average)
+    $qualityMetrics.overall_quality_score = [math]::Round((
+        ($qualityMetrics.completeness_score * 0.3) +
+        ($qualityMetrics.validity_score * 0.3) +
+        ($qualityMetrics.timeliness_score * 0.4)
+    ), 2)
+
+    Write-PipelineLog "Data quality check completed. Overall score: $($qualityMetrics.overall_quality_score)%" "INFO"
+    return $qualityMetrics
+}
+
+function Invoke-FullPipeline {
+    Write-PipelineLog "Starting full data pipeline execution..." "INFO"
+
+    try {
+        # Initialize pipeline
+        Initialize-Pipeline
+
+        # Collect data
+        $agentData = Get-AgentData
+        $divisionData = Get-DivisionData
+
+        # Validate data
+        $validatedAgentData = Validate-Data -Data $agentData -DataType "agent"
+        $validatedDivisionData = Validate-Data -Data $divisionData -DataType "division"
+
+        # Save validated data
+        if ($validatedAgentData.Valid -and $validatedAgentData.Valid.Count -gt 0) {
+            Save-Data -Data $validatedAgentData.Valid -DataType "agent" -DryRun:$DryRun
+        } else {
+            Write-PipelineLog "No valid agent data to save" "WARNING"
+        }
+
+        if ($validatedDivisionData.Valid -and $validatedDivisionData.Valid.Count -gt 0) {
+            Save-Data -Data $validatedDivisionData.Valid -DataType "division" -DryRun:$DryRun
+        } else {
+            Write-PipelineLog "No valid division data to save" "WARNING"
+        }
+
+        # Aggregate enterprise data
+        $enterpriseData = Aggregate-EnterpriseData -AgentData $validatedAgentData.Valid -DivisionData $validatedDivisionData.Valid
+        Save-Data -Data @($enterpriseData) -DataType "enterprise" -DryRun:$DryRun
+
+        # Run quality checks
+        if ($validatedAgentData.Valid -and $validatedAgentData.Valid.Count -gt 0) {
+            $agentQuality = Invoke-DataQualityChecks -Data $validatedAgentData.Valid -DataType "agent"
+            Write-PipelineLog "Agent data quality: $($agentQuality.overall_quality_score)%" "INFO"
+        } else {
+            Write-PipelineLog "Skipping agent data quality checks - no valid data" "WARNING"
+        }
+
+        if ($validatedDivisionData.Valid -and $validatedDivisionData.Valid.Count -gt 0) {
+            $divisionQuality = Invoke-DataQualityChecks -Data $validatedDivisionData.Valid -DataType "division"
+            Write-PipelineLog "Division data quality: $($divisionQuality.overall_quality_score)%" "INFO"
+        } else {
+            Write-PipelineLog "Skipping division data quality checks - no valid data" "WARNING"
+        }
+
+        # Archive old data if in full mode
+        if ($Mode -eq "Full") {
+            Invoke-DataArchival
+        }
+
+        Write-PipelineLog "Full data pipeline execution completed successfully" "INFO"
+        return $true
+
+    }
+    catch {
+        Write-PipelineLog "Pipeline execution failed: $($_.Exception.Message)" "ERROR"
+        Write-PipelineLog "Stack trace: $($_.ScriptStackTrace)" "ERROR"
+        return $false
+    }
+}
+
+function Invoke-IncrementalPipeline {
+    Write-PipelineLog "Starting incremental data pipeline execution..." "INFO"
+
+    # For incremental mode, only process recent changes
+    # This is a simplified version - in production, you'd track last processed timestamps
+
+    try {
+        # Quick validation of existing data
+        $existingAgentFiles = Get-ChildItem -Path $Config.AgentDataPath -Filter "*.json" | Sort-Object LastWriteTime -Descending
+        $existingDivisionFiles = Get-ChildItem -Path $Config.DivisionDataPath -Filter "*.json" | Sort-Object LastWriteTime -Descending
+
+        if ($existingAgentFiles.Count -gt 0 -or $existingDivisionFiles.Count -gt 0) {
+            Write-PipelineLog "Found existing data files, running validation only" "INFO"
+
+            # Validate existing data quality
+            foreach ($file in $existingAgentFiles | Select-Object -First 5) {
+                $data = Get-Content $file.FullName -Raw | ConvertFrom-Json
+                $quality = Invoke-DataQualityChecks -Data $data -DataType "agent"
+                if ($quality.overall_quality_score -lt 90) {
+                    Write-PipelineLog "Low quality score for agent data file: $($file.Name) - $($quality.overall_quality_score)%" "WARNING"
+                }
+            }
+        }
+        else {
+            Write-PipelineLog "No existing data found, running full collection" "INFO"
+            return Invoke-FullPipeline
+        }
+
+        Write-PipelineLog "Incremental data pipeline execution completed" "INFO"
+        return $true
+
+    }
+    catch {
+        Write-PipelineLog "Incremental pipeline execution failed: $($_.Exception.Message)" "ERROR"
+        return $false
+    }
+}
+
+function Invoke-ValidationPipeline {
+    Write-PipelineLog "Starting data validation pipeline..." "INFO"
+
+    try {
+        # Validate all existing data files
+        $dataFiles = Get-ChildItem -Path $Config.DataRoot -Filter "*.json" -Recurse
+
+        $totalQualityScore = 0
+        $fileCount = 0
+
+        foreach ($file in $dataFiles) {
+            try {
+                $data = Get-Content $file.FullName -Raw | ConvertFrom-Json
+                $dataType = if ($file.DirectoryName -match "agent_data") { "agent" }
+                           elseif ($file.DirectoryName -match "division_data") { "division" }
+                           else { "unknown" }
+
+                if ($dataType -ne "unknown") {
+                    $quality = Invoke-DataQualityChecks -Data $data -DataType $dataType
+                    $totalQualityScore += $quality.overall_quality_score
+                    $fileCount++
+
+                    if ($quality.overall_quality_score -lt 85) {
+                        Write-PipelineLog "Poor quality data file: $($file.FullName) - Score: $($quality.overall_quality_score)%" "WARNING"
+                    }
+                }
+            }
+            catch {
+                Write-PipelineLog "Failed to validate file: $($file.FullName) - $($_.Exception.Message)" "ERROR"
+            }
+        }
+
+        $averageQuality = if ($fileCount -gt 0) { [math]::Round($totalQualityScore / $fileCount, 2) } else { 0 }
+        Write-PipelineLog "Data validation completed. Average quality score: $averageQuality% across $fileCount files" "INFO"
+
+        return $true
+
+    }
+    catch {
+        Write-PipelineLog "Validation pipeline execution failed: $($_.Exception.Message)" "ERROR"
+        return $false
+    }
+}
+
+function Invoke-DataArchival {
+    Write-PipelineLog "Starting data archival process..." "INFO"
+
+    try {
+        # Archive old data files (older than 30 days)
+        $cutoffDate = (Get-Date).AddDays(-30)
+        $oldFiles = Get-ChildItem -Path $Config.DataRoot -Filter "*.json" -Recurse |
+                   Where-Object { $_.LastWriteTime -lt $cutoffDate }
+
+        foreach ($file in $oldFiles) {
+            $archiveFileName = "$($file.BaseName)_archived_$(Get-Date -Format 'yyyy-MM-dd')$($file.Extension)"
+            $archivePath = Join-Path $Config.ArchivePath $archiveFileName
+
+            if (-not $DryRun) {
+                Copy-Item -Path $file.FullName -Destination $archivePath -Force
+                Remove-Item -Path $file.FullName -Force
+            }
+
+            Write-PipelineLog "Archived file: $($file.FullName) -> $archivePath" "INFO"
+        }
+
+        Write-PipelineLog "Data archival completed. Archived $($oldFiles.Count) files" "INFO"
+        return $true
+
+    }
+    catch {
+        Write-PipelineLog "Data archival failed: $($_.Exception.Message)" "ERROR"
+        return $false
+    }
+}
+
+# Main execution logic
+Write-PipelineLog "=== NCC Data Pipeline Started ===" "INFO"
+Write-PipelineLog "Mode: $Mode, Interval: $IntervalMinutes minutes, DryRun: $DryRun, Continuous: $Continuous" "INFO"
+
+$success = $false
+
+switch ($Mode) {
+    "Full" {
+        $success = Invoke-FullPipeline
+    }
+    "Incremental" {
+        $success = Invoke-IncrementalPipeline
+    }
+    "Validation" {
+        $success = Invoke-ValidationPipeline
+    }
+}
+
+if ($Continuous) {
+    Write-PipelineLog "Running in continuous mode with $IntervalMinutes minute intervals" "INFO"
+    Write-PipelineLog "Press Ctrl+C to stop" "INFO"
+
+    while ($true) {
+        Start-Sleep -Seconds ($IntervalMinutes * 60)
+
+        $nextRun = Invoke-IncrementalPipeline
+        if (-not $nextRun) {
+            Write-PipelineLog "Incremental run failed, continuing..." "WARNING"
+        }
+    }
+}
+
+Write-PipelineLog "=== NCC Data Pipeline Completed ===" "INFO"
+Write-PipelineLog "Execution result: $(if ($success) { 'SUCCESS' } else { 'FAILED' })" "INFO"
+
+exit $(if ($success) { 0 } else { 1 })

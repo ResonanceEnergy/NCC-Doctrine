@@ -1,0 +1,14 @@
+{
+  "Status": "Inactive",
+  "Version": "2.0.0",
+  "LastUpdate": "2026-01-29T21:27:16.3911417-07:00",
+  "Division": "C-Suite",
+  "Name": "C-Suite.Agent.Executive",
+  "Role": "Executive",
+  "PerformanceMetrics": {
+    "AverageResponseTime": 0,
+    "ErrorCount": 0,
+    "SuccessRate": 0.0,
+    "TasksCompleted": 0
+  }
+}

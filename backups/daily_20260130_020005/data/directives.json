@@ -1,0 +1,152 @@
+{
+  "current_directive": {
+    "departments": [
+      "AI",
+      "BigBrain",
+      "Cybersecurity",
+      "MediaCorp",
+      "Resonance",
+      "Quantum",
+      "Space",
+      "Robotics",
+      "GlobalTalent"
+    ],
+    "ceo_initiated": true,
+    "timestamp": "2026-01-29T18:31:14Z",
+    "objectives": [
+      "Maximize departmental efficiency and output",
+      "Achieve NCC strategic goals within cycle timeframe",
+      "Optimize resource utilization across all agents",
+      "Generate actionable insights for continuous improvement"
+    ],
+    "status": "ACTIVE",
+    "id": "DIR-20260129-183114",
+    "priority": "CRITICAL"
+  },
+  "directive_history": [],
+  "department_tasks": {},
+  "completion_status": {},
+  "agent_tasks": {},
+  "ceo_directives": [
+    {
+      "status": "ACTIVE",
+      "priority": "CRITICAL",
+      "timestamp": "2026-01-29T18:27:49Z",
+      "departments": [
+        "AI",
+        "BigBrain",
+        "Cybersecurity",
+        "MediaCorp",
+        "Resonance",
+        "Quantum",
+        "Space",
+        "Robotics",
+        "GlobalTalent"
+      ],
+      "objectives": [
+        "Maximize departmental efficiency and output",
+        "Achieve NCC strategic goals within cycle timeframe",
+        "Optimize resource utilization across all agents",
+        "Generate actionable insights for continuous improvement"
+      ],
+      "ceo_initiated": true,
+      "id": "DIR-20260129-182749"
+    },
+    {
+      "objectives": [
+        "Maximize departmental efficiency and output",
+        "Achieve NCC strategic goals within cycle timeframe",
+        "Optimize resource utilization across all agents",
+        "Generate actionable insights for continuous improvement"
+      ],
+      "status": "ACTIVE",
+      "departments": [
+        "AI",
+        "BigBrain",
+        "Cybersecurity",
+        "MediaCorp",
+        "Resonance",
+        "Quantum",
+        "Space",
+        "Robotics",
+        "GlobalTalent"
+      ],
+      "ceo_initiated": true,
+      "priority": "CRITICAL",
+      "timestamp": "2026-01-29T18:27:54Z",
+      "id": "DIR-20260129-182754"
+    },
+    {
+      "ceo_initiated": true,
+      "objectives": [
+        "Maximize departmental efficiency and output",
+        "Achieve NCC strategic goals within cycle timeframe",
+        "Optimize resource utilization across all agents",
+        "Generate actionable insights for continuous improvement"
+      ],
+      "departments": [
+        "AI",
+        "BigBrain",
+        "Cybersecurity",
+        "MediaCorp",
+        "Resonance",
+        "Quantum",
+        "Space",
+        "Robotics",
+        "GlobalTalent"
+      ],
+      "priority": "CRITICAL",
+      "timestamp": "2026-01-29T18:28:21Z",
+      "status": "ACTIVE",
+      "id": "DIR-20260129-182821"
+    },
+    {
+      "priority": "CRITICAL",
+      "ceo_initiated": true,
+      "departments": [
+        "AI",
+        "BigBrain",
+        "Cybersecurity",
+        "MediaCorp",
+        "Resonance",
+        "Quantum",
+        "Space",
+        "Robotics",
+        "GlobalTalent"
+      ],
+      "objectives": [
+        "Maximize departmental efficiency and output",
+        "Achieve NCC strategic goals within cycle timeframe",
+        "Optimize resource utilization across all agents",
+        "Generate actionable insights for continuous improvement"
+      ],
+      "status": "ACTIVE",
+      "timestamp": "2026-01-29T18:31:02Z",
+      "id": "DIR-20260129-183102"
+    },
+    {
+      "departments": [
+        "AI",
+        "BigBrain",
+        "Cybersecurity",
+        "MediaCorp",
+        "Resonance",
+        "Quantum",
+        "Space",
+        "Robotics",
+        "GlobalTalent"
+      ],
+      "ceo_initiated": true,
+      "timestamp": "2026-01-29T18:31:14Z",
+      "objectives": [
+        "Maximize departmental efficiency and output",
+        "Achieve NCC strategic goals within cycle timeframe",
+        "Optimize resource utilization across all agents",
+        "Generate actionable insights for continuous improvement"
+      ],
+      "status": "ACTIVE",
+      "id": "DIR-20260129-183114",
+      "priority": "CRITICAL"
+    }
+  ]
+}

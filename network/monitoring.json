@@ -1,0 +1,21 @@
+﻿{
+    "NetworkStats":  {
+                         "MessagesReceived":  0,
+                         "TotalMessages":  0,
+                         "ActiveAgents":  0,
+                         "MessagesFailed":  0,
+                         "MessagesSent":  0,
+                         "ConnectivityChecks":  0
+                     },
+    "AgentHealth":  {
+
+                    },
+    "Metrics":  {
+
+                },
+    "LastUpdate":  {
+                       "value":  "\/Date(1769747403636)\/",
+                       "DisplayHint":  2,
+                       "DateTime":  "January 29, 2026 9:30:03 PM"
+                   }
+}

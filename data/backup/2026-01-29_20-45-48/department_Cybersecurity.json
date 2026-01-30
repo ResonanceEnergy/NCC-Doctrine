@@ -1,0 +1,5883 @@
+{
+  "last_updated": "2026-01-29T19:17:34Z",
+  "current_tasks": [],
+  "department": "Cybersecurity",
+  "tasks_completed": 979,
+  "agent_performance": {},
+  "data_repository": [
+    {
+      "completion_time": "2026-01-29T18:31:02Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 192
+    },
+    {
+      "completion_time": "2026-01-29T18:31:05Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 195
+    },
+    {
+      "completion_time": "2026-01-29T18:31:05Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 195
+    },
+    {
+      "completion_time": "2026-01-29T18:31:06Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 196
+    },
+    {
+      "completion_time": "2026-01-29T18:31:08Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 198
+    },
+    {
+      "completion_time": "2026-01-29T18:31:10Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 200
+    },
+    {
+      "completion_time": "2026-01-29T18:31:12Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 202
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:18Z",
+      "task_id": "SEC-001",
+      "cycle": 5
+    },
+    {
+      "completion_time": "2026-01-29T18:31:20Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 210
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:20Z",
+      "task_id": "SEC-002",
+      "cycle": 7
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:20Z",
+      "task_id": "SEC-001",
+      "cycle": 7
+    },
+    {
+      "completion_time": "2026-01-29T18:31:21Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 211
+    },
+    {
+      "completion_time": "2026-01-29T18:31:22Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 212
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:26Z",
+      "task_id": "SEC-001",
+      "cycle": 13
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:30Z",
+      "task_id": "SEC-003",
+      "cycle": 16
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:31Z",
+      "task_id": "SEC-002",
+      "cycle": 17
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:31Z",
+      "task_id": "SEC-001",
+      "cycle": 17
+    },
+    {
+      "completion_time": "2026-01-29T18:31:33Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 223
+    },
+    {
+      "completion_time": "2026-01-29T18:31:33Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 223
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:36Z",
+      "task_id": "SEC-002",
+      "cycle": 22
+    },
+    {
+      "completion_time": "2026-01-29T18:31:38Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 228
+    },
+    {
+      "completion_time": "2026-01-29T18:31:39Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 229
+    },
+    {
+      "completion_time": "2026-01-29T18:31:40Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 230
+    },
+    {
+      "completion_time": "2026-01-29T18:31:45Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 234
+    },
+    {
+      "completion_time": "2026-01-29T18:31:47Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 236
+    },
+    {
+      "completion_time": "2026-01-29T18:31:50Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 239
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:50Z",
+      "task_id": "SEC-003",
+      "cycle": 36
+    },
+    {
+      "completion_time": "2026-01-29T18:31:51Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 240
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:52Z",
+      "task_id": "SEC-002",
+      "cycle": 38
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:52Z",
+      "task_id": "SEC-003",
+      "cycle": 38
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:52Z",
+      "task_id": "SEC-001",
+      "cycle": 38
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:53Z",
+      "task_id": "SEC-003",
+      "cycle": 39
+    },
+    {
+      "completion_time": "2026-01-29T18:31:55Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 244
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:58Z",
+      "task_id": "SEC-001",
+      "cycle": 44
+    },
+    {
+      "completion_time": "2026-01-29T18:32:10Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 259
+    },
+    {
+      "completion_time": "2026-01-29T18:32:12Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 261
+    },
+    {
+      "completion_time": "2026-01-29T18:32:15Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 264
+    },
+    {
+      "completion_time": "2026-01-29T18:32:17Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 266
+    },
+    {
+      "completion_time": "2026-01-29T18:32:18Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 267
+    },
+    {
+      "completion_time": "2026-01-29T18:32:27Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 276
+    },
+    {
+      "completion_time": "2026-01-29T18:32:35Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 284
+    },
+    {
+      "completion_time": "2026-01-29T18:32:37Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 286
+    },
+    {
+      "completion_time": "2026-01-29T18:32:38Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 287
+    },
+    {
+      "completion_time": "2026-01-29T18:32:39Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 288
+    },
+    {
+      "completion_time": "2026-01-29T18:32:40Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 289
+    },
+    {
+      "completion_time": "2026-01-29T18:32:44Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 293
+    },
+    {
+      "completion_time": "2026-01-29T18:32:46Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 295
+    },
+    {
+      "completion_time": "2026-01-29T18:32:47Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 296
+    },
+    {
+      "completion_time": "2026-01-29T18:32:48Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 297
+    },
+    {
+      "completion_time": "2026-01-29T18:32:53Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 302
+    },
+    {
+      "completion_time": "2026-01-29T18:32:57Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 306
+    },
+    {
+      "completion_time": "2026-01-29T18:33:00Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 309
+    },
+    {
+      "completion_time": "2026-01-29T18:33:07Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 316
+    },
+    {
+      "completion_time": "2026-01-29T18:33:10Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 319
+    },
+    {
+      "completion_time": "2026-01-29T18:33:14Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 323
+    },
+    {
+      "completion_time": "2026-01-29T18:33:16Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 325
+    },
+    {
+      "completion_time": "2026-01-29T18:33:19Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 328
+    },
+    {
+      "completion_time": "2026-01-29T18:33:20Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 329
+    },
+    {
+      "completion_time": "2026-01-29T18:33:25Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 334
+    },
+    {
+      "completion_time": "2026-01-29T18:33:26Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 335
+    },
+    {
+      "completion_time": "2026-01-29T18:33:29Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 338
+    },
+    {
+      "completion_time": "2026-01-29T18:33:37Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 346
+    },
+    {
+      "completion_time": "2026-01-29T18:33:38Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 347
+    },
+    {
+      "completion_time": "2026-01-29T18:33:45Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 353
+    },
+    {
+      "completion_time": "2026-01-29T18:33:46Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 354
+    },
+    {
+      "completion_time": "2026-01-29T18:33:47Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 355
+    },
+    {
+      "completion_time": "2026-01-29T18:33:48Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 356
+    },
+    {
+      "completion_time": "2026-01-29T18:33:49Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 357
+    },
+    {
+      "completion_time": "2026-01-29T18:33:51Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 359
+    },
+    {
+      "completion_time": "2026-01-29T18:33:51Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 359
+    },
+    {
+      "completion_time": "2026-01-29T18:33:53Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 361
+    },
+    {
+      "completion_time": "2026-01-29T18:33:53Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 361
+    },
+    {
+      "completion_time": "2026-01-29T18:33:59Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 367
+    },
+    {
+      "completion_time": "2026-01-29T18:34:02Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 370
+    },
+    {
+      "completion_time": "2026-01-29T18:34:08Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 376
+    },
+    {
+      "completion_time": "2026-01-29T18:34:09Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 377
+    },
+    {
+      "completion_time": "2026-01-29T18:34:12Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 380
+    },
+    {
+      "completion_time": "2026-01-29T18:34:13Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 381
+    },
+    {
+      "completion_time": "2026-01-29T18:34:20Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 388
+    },
+    {
+      "completion_time": "2026-01-29T18:34:38Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 406
+    },
+    {
+      "completion_time": "2026-01-29T18:34:39Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 407
+    },
+    {
+      "completion_time": "2026-01-29T18:34:40Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 408
+    },
+    {
+      "completion_time": "2026-01-29T18:34:42Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 410
+    },
+    {
+      "completion_time": "2026-01-29T18:34:44Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 412
+    },
+    {
+      "completion_time": "2026-01-29T18:34:44Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 412
+    },
+    {
+      "completion_time": "2026-01-29T18:34:49Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 417
+    },
+    {
+      "completion_time": "2026-01-29T18:34:52Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 420
+    },
+    {
+      "completion_time": "2026-01-29T18:34:55Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 423
+    },
+    {
+      "completion_time": "2026-01-29T18:34:55Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 423
+    },
+    {
+      "completion_time": "2026-01-29T18:34:57Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 425
+    },
+    {
+      "completion_time": "2026-01-29T18:35:06Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 434
+    },
+    {
+      "completion_time": "2026-01-29T18:35:06Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 434
+    },
+    {
+      "completion_time": "2026-01-29T18:35:07Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 435
+    },
+    {
+      "completion_time": "2026-01-29T18:35:10Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 438
+    },
+    {
+      "completion_time": "2026-01-29T18:35:10Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 438
+    },
+    {
+      "completion_time": "2026-01-29T18:35:15Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 443
+    },
+    {
+      "completion_time": "2026-01-29T18:35:23Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 451
+    },
+    {
+      "completion_time": "2026-01-29T18:35:24Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 452
+    },
+    {
+      "completion_time": "2026-01-29T18:35:27Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 455
+    },
+    {
+      "completion_time": "2026-01-29T18:35:32Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 460
+    },
+    {
+      "completion_time": "2026-01-29T18:35:34Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 461
+    },
+    {
+      "completion_time": "2026-01-29T18:35:34Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 461
+    },
+    {
+      "completion_time": "2026-01-29T18:35:35Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 462
+    },
+    {
+      "completion_time": "2026-01-29T18:35:39Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 466
+    },
+    {
+      "completion_time": "2026-01-29T18:35:41Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 468
+    },
+    {
+      "completion_time": "2026-01-29T18:35:42Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 469
+    },
+    {
+      "completion_time": "2026-01-29T18:35:42Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 469
+    },
+    {
+      "completion_time": "2026-01-29T18:35:44Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 471
+    },
+    {
+      "completion_time": "2026-01-29T18:35:50Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 477
+    },
+    {
+      "completion_time": "2026-01-29T18:35:53Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 480
+    },
+    {
+      "completion_time": "2026-01-29T18:35:54Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 481
+    },
+    {
+      "completion_time": "2026-01-29T18:36:00Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 487
+    },
+    {
+      "completion_time": "2026-01-29T18:36:00Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 487
+    },
+    {
+      "completion_time": "2026-01-29T18:36:04Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 491
+    },
+    {
+      "completion_time": "2026-01-29T18:36:08Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 495
+    },
+    {
+      "completion_time": "2026-01-29T18:36:13Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 500
+    },
+    {
+      "completion_time": "2026-01-29T18:36:14Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 501
+    },
+    {
+      "completion_time": "2026-01-29T18:36:18Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 505
+    },
+    {
+      "completion_time": "2026-01-29T18:36:27Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 514
+    },
+    {
+      "completion_time": "2026-01-29T18:36:28Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 515
+    },
+    {
+      "completion_time": "2026-01-29T18:36:29Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 516
+    },
+    {
+      "completion_time": "2026-01-29T18:36:30Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 517
+    },
+    {
+      "completion_time": "2026-01-29T18:36:33Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 520
+    },
+    {
+      "completion_time": "2026-01-29T18:36:37Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 524
+    },
+    {
+      "completion_time": "2026-01-29T18:36:39Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 526
+    },
+    {
+      "completion_time": "2026-01-29T18:36:40Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 527
+    },
+    {
+      "completion_time": "2026-01-29T18:36:42Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 529
+    },
+    {
+      "completion_time": "2026-01-29T18:36:44Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 531
+    },
+    {
+      "completion_time": "2026-01-29T18:36:44Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 531
+    },
+    {
+      "completion_time": "2026-01-29T18:36:45Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 532
+    },
+    {
+      "completion_time": "2026-01-29T18:36:47Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 534
+    },
+    {
+      "completion_time": "2026-01-29T18:36:49Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 536
+    },
+    {
+      "completion_time": "2026-01-29T18:36:50Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 537
+    },
+    {
+      "completion_time": "2026-01-29T18:36:52Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 539
+    },
+    {
+      "completion_time": "2026-01-29T18:36:56Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 543
+    },
+    {
+      "completion_time": "2026-01-29T18:36:58Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 545
+    },
+    {
+      "completion_time": "2026-01-29T18:37:00Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 547
+    },
+    {
+      "completion_time": "2026-01-29T18:37:00Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 547
+    },
+    {
+      "completion_time": "2026-01-29T18:37:01Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 548
+    },
+    {
+      "completion_time": "2026-01-29T18:37:04Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 551
+    },
+    {
+      "completion_time": "2026-01-29T18:37:06Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 553
+    },
+    {
+      "completion_time": "2026-01-29T18:37:12Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 559
+    },
+    {
+      "completion_time": "2026-01-29T18:37:15Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 562
+    },
+    {
+      "completion_time": "2026-01-29T18:37:21Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 568
+    },
+    {
+      "completion_time": "2026-01-29T18:37:22Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 569
+    },
+    {
+      "completion_time": "2026-01-29T18:37:24Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 571
+    },
+    {
+      "completion_time": "2026-01-29T18:37:27Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 574
+    },
+    {
+      "completion_time": "2026-01-29T18:37:35Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 582
+    },
+    {
+      "completion_time": "2026-01-29T18:37:37Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 584
+    },
+    {
+      "completion_time": "2026-01-29T18:37:42Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 588
+    },
+    {
+      "completion_time": "2026-01-29T18:37:45Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 591
+    },
+    {
+      "completion_time": "2026-01-29T18:37:45Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 591
+    },
+    {
+      "completion_time": "2026-01-29T18:37:49Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 595
+    },
+    {
+      "completion_time": "2026-01-29T18:37:50Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 596
+    },
+    {
+      "completion_time": "2026-01-29T18:37:51Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 597
+    },
+    {
+      "completion_time": "2026-01-29T18:37:52Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 598
+    },
+    {
+      "completion_time": "2026-01-29T18:37:54Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 600
+    },
+    {
+      "completion_time": "2026-01-29T18:37:57Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 603
+    },
+    {
+      "completion_time": "2026-01-29T18:38:00Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 606
+    },
+    {
+      "completion_time": "2026-01-29T18:38:07Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 613
+    },
+    {
+      "completion_time": "2026-01-29T18:38:09Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 615
+    },
+    {
+      "completion_time": "2026-01-29T18:38:12Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 618
+    },
+    {
+      "completion_time": "2026-01-29T18:38:16Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 622
+    },
+    {
+      "completion_time": "2026-01-29T18:38:16Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 622
+    },
+    {
+      "completion_time": "2026-01-29T18:38:18Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 624
+    },
+    {
+      "completion_time": "2026-01-29T18:38:19Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 625
+    },
+    {
+      "completion_time": "2026-01-29T18:38:20Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 626
+    },
+    {
+      "completion_time": "2026-01-29T18:38:22Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 628
+    },
+    {
+      "completion_time": "2026-01-29T18:38:22Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 628
+    },
+    {
+      "completion_time": "2026-01-29T18:38:28Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 634
+    },
+    {
+      "completion_time": "2026-01-29T18:38:37Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 643
+    },
+    {
+      "completion_time": "2026-01-29T18:38:38Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 644
+    },
+    {
+      "completion_time": "2026-01-29T18:38:45Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 651
+    },
+    {
+      "completion_time": "2026-01-29T18:38:48Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 654
+    },
+    {
+      "completion_time": "2026-01-29T18:38:49Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 655
+    },
+    {
+      "completion_time": "2026-01-29T18:38:50Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 656
+    },
+    {
+      "completion_time": "2026-01-29T18:39:00Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 666
+    },
+    {
+      "completion_time": "2026-01-29T18:39:05Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 671
+    },
+    {
+      "completion_time": "2026-01-29T18:39:05Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 671
+    },
+    {
+      "completion_time": "2026-01-29T18:39:07Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 673
+    },
+    {
+      "completion_time": "2026-01-29T18:39:10Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 676
+    },
+    {
+      "completion_time": "2026-01-29T18:39:11Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 677
+    },
+    {
+      "completion_time": "2026-01-29T18:39:11Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 677
+    },
+    {
+      "completion_time": "2026-01-29T18:39:12Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 678
+    },
+    {
+      "completion_time": "2026-01-29T18:39:15Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 681
+    },
+    {
+      "completion_time": "2026-01-29T18:39:17Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 683
+    },
+    {
+      "completion_time": "2026-01-29T18:39:19Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 685
+    },
+    {
+      "completion_time": "2026-01-29T18:39:20Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 686
+    },
+    {
+      "completion_time": "2026-01-29T18:39:24Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 690
+    },
+    {
+      "completion_time": "2026-01-29T18:39:26Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 692
+    },
+    {
+      "completion_time": "2026-01-29T18:39:40Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 705
+    },
+    {
+      "completion_time": "2026-01-29T18:39:46Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 711
+    },
+    {
+      "completion_time": "2026-01-29T18:39:53Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 718
+    },
+    {
+      "completion_time": "2026-01-29T18:40:07Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 732
+    },
+    {
+      "completion_time": "2026-01-29T18:40:08Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 733
+    },
+    {
+      "completion_time": "2026-01-29T18:40:09Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 734
+    },
+    {
+      "completion_time": "2026-01-29T18:40:10Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 735
+    },
+    {
+      "completion_time": "2026-01-29T18:40:14Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 739
+    },
+    {
+      "completion_time": "2026-01-29T18:40:16Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 741
+    },
+    {
+      "completion_time": "2026-01-29T18:40:16Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 741
+    },
+    {
+      "completion_time": "2026-01-29T18:40:19Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 744
+    },
+    {
+      "completion_time": "2026-01-29T18:40:22Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 747
+    },
+    {
+      "completion_time": "2026-01-29T18:40:23Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 748
+    },
+    {
+      "completion_time": "2026-01-29T18:40:25Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 750
+    },
+    {
+      "completion_time": "2026-01-29T18:40:25Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 750
+    },
+    {
+      "completion_time": "2026-01-29T18:40:30Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 755
+    },
+    {
+      "completion_time": "2026-01-29T18:40:38Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 763
+    },
+    {
+      "completion_time": "2026-01-29T18:40:45Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 770
+    },
+    {
+      "completion_time": "2026-01-29T18:40:48Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 773
+    },
+    {
+      "completion_time": "2026-01-29T18:40:54Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 779
+    },
+    {
+      "completion_time": "2026-01-29T18:40:56Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 781
+    },
+    {
+      "completion_time": "2026-01-29T18:41:02Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 787
+    },
+    {
+      "completion_time": "2026-01-29T18:41:05Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 790
+    },
+    {
+      "completion_time": "2026-01-29T18:41:05Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 790
+    },
+    {
+      "completion_time": "2026-01-29T18:41:06Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 791
+    },
+    {
+      "completion_time": "2026-01-29T18:41:08Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 793
+    },
+    {
+      "completion_time": "2026-01-29T18:41:08Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 793
+    },
+    {
+      "completion_time": "2026-01-29T18:41:10Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 795
+    },
+    {
+      "completion_time": "2026-01-29T18:41:10Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 795
+    },
+    {
+      "completion_time": "2026-01-29T18:41:10Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 795
+    },
+    {
+      "completion_time": "2026-01-29T18:41:18Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 803
+    },
+    {
+      "completion_time": "2026-01-29T18:41:19Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 804
+    },
+    {
+      "completion_time": "2026-01-29T18:41:30Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 814
+    },
+    {
+      "completion_time": "2026-01-29T18:41:37Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 821
+    },
+    {
+      "completion_time": "2026-01-29T18:41:40Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 824
+    },
+    {
+      "completion_time": "2026-01-29T18:41:40Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 824
+    },
+    {
+      "completion_time": "2026-01-29T18:41:42Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 826
+    },
+    {
+      "completion_time": "2026-01-29T18:41:42Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 826
+    },
+    {
+      "completion_time": "2026-01-29T18:41:42Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 826
+    },
+    {
+      "completion_time": "2026-01-29T18:41:45Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 829
+    },
+    {
+      "completion_time": "2026-01-29T18:41:48Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 832
+    },
+    {
+      "completion_time": "2026-01-29T18:41:49Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 833
+    },
+    {
+      "completion_time": "2026-01-29T18:41:50Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 834
+    },
+    {
+      "completion_time": "2026-01-29T18:41:52Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 836
+    },
+    {
+      "completion_time": "2026-01-29T18:41:54Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 838
+    },
+    {
+      "completion_time": "2026-01-29T18:41:57Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 841
+    },
+    {
+      "completion_time": "2026-01-29T18:41:57Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 841
+    },
+    {
+      "completion_time": "2026-01-29T18:42:00Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 844
+    },
+    {
+      "completion_time": "2026-01-29T18:42:01Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 845
+    },
+    {
+      "completion_time": "2026-01-29T18:42:02Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 846
+    },
+    {
+      "completion_time": "2026-01-29T18:42:02Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 846
+    },
+    {
+      "completion_time": "2026-01-29T18:42:06Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 850
+    },
+    {
+      "completion_time": "2026-01-29T18:42:07Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 851
+    },
+    {
+      "completion_time": "2026-01-29T18:42:14Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 858
+    },
+    {
+      "completion_time": "2026-01-29T18:42:15Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 859
+    },
+    {
+      "completion_time": "2026-01-29T18:42:18Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 862
+    },
+    {
+      "completion_time": "2026-01-29T18:42:20Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 864
+    },
+    {
+      "completion_time": "2026-01-29T18:42:24Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 868
+    },
+    {
+      "completion_time": "2026-01-29T18:42:31Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 875
+    },
+    {
+      "completion_time": "2026-01-29T18:42:40Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 884
+    },
+    {
+      "completion_time": "2026-01-29T18:42:42Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 886
+    },
+    {
+      "completion_time": "2026-01-29T18:42:45Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 889
+    },
+    {
+      "completion_time": "2026-01-29T18:42:45Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 889
+    },
+    {
+      "completion_time": "2026-01-29T18:42:55Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 899
+    },
+    {
+      "completion_time": "2026-01-29T18:42:58Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 902
+    },
+    {
+      "completion_time": "2026-01-29T18:42:59Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 903
+    },
+    {
+      "completion_time": "2026-01-29T18:43:01Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 905
+    },
+    {
+      "completion_time": "2026-01-29T18:43:03Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 907
+    },
+    {
+      "completion_time": "2026-01-29T18:43:03Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 907
+    },
+    {
+      "completion_time": "2026-01-29T18:43:04Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 908
+    },
+    {
+      "completion_time": "2026-01-29T18:43:13Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 917
+    },
+    {
+      "completion_time": "2026-01-29T18:43:17Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 920
+    },
+    {
+      "completion_time": "2026-01-29T18:43:17Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 920
+    },
+    {
+      "completion_time": "2026-01-29T18:43:20Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 923
+    },
+    {
+      "completion_time": "2026-01-29T18:43:22Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 925
+    },
+    {
+      "completion_time": "2026-01-29T18:43:27Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 930
+    },
+    {
+      "completion_time": "2026-01-29T18:43:29Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 932
+    },
+    {
+      "completion_time": "2026-01-29T18:43:34Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 937
+    },
+    {
+      "completion_time": "2026-01-29T18:43:35Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 938
+    },
+    {
+      "completion_time": "2026-01-29T18:43:37Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 940
+    },
+    {
+      "completion_time": "2026-01-29T18:43:49Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 952
+    },
+    {
+      "completion_time": "2026-01-29T18:43:50Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 953
+    },
+    {
+      "completion_time": "2026-01-29T18:43:52Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 955
+    },
+    {
+      "completion_time": "2026-01-29T18:43:54Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 957
+    },
+    {
+      "completion_time": "2026-01-29T18:43:58Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 961
+    },
+    {
+      "completion_time": "2026-01-29T18:44:01Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 964
+    },
+    {
+      "completion_time": "2026-01-29T18:44:06Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 969
+    },
+    {
+      "completion_time": "2026-01-29T18:44:07Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 970
+    },
+    {
+      "completion_time": "2026-01-29T18:44:12Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 975
+    },
+    {
+      "completion_time": "2026-01-29T18:44:19Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 982
+    },
+    {
+      "completion_time": "2026-01-29T18:44:21Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 984
+    },
+    {
+      "completion_time": "2026-01-29T18:44:22Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 985
+    },
+    {
+      "completion_time": "2026-01-29T18:44:27Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 990
+    },
+    {
+      "completion_time": "2026-01-29T18:44:27Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 990
+    },
+    {
+      "completion_time": "2026-01-29T18:44:33Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 996
+    },
+    {
+      "completion_time": "2026-01-29T18:44:37Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1000
+    },
+    {
+      "completion_time": "2026-01-29T18:44:40Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1003
+    },
+    {
+      "completion_time": "2026-01-29T18:44:41Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1004
+    },
+    {
+      "completion_time": "2026-01-29T18:44:44Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1007
+    },
+    {
+      "completion_time": "2026-01-29T18:44:46Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1009
+    },
+    {
+      "completion_time": "2026-01-29T18:44:47Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1010
+    },
+    {
+      "completion_time": "2026-01-29T18:44:50Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1013
+    },
+    {
+      "completion_time": "2026-01-29T18:44:53Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1016
+    },
+    {
+      "completion_time": "2026-01-29T18:45:03Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1026
+    },
+    {
+      "completion_time": "2026-01-29T18:45:05Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1028
+    },
+    {
+      "completion_time": "2026-01-29T18:45:06Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1029
+    },
+    {
+      "completion_time": "2026-01-29T18:45:07Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1030
+    },
+    {
+      "completion_time": "2026-01-29T18:45:12Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1035
+    },
+    {
+      "completion_time": "2026-01-29T18:45:12Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1035
+    },
+    {
+      "completion_time": "2026-01-29T18:45:13Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1036
+    },
+    {
+      "completion_time": "2026-01-29T18:45:14Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1037
+    },
+    {
+      "completion_time": "2026-01-29T18:45:17Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1039
+    },
+    {
+      "completion_time": "2026-01-29T18:45:28Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1050
+    },
+    {
+      "completion_time": "2026-01-29T18:45:31Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1053
+    },
+    {
+      "completion_time": "2026-01-29T18:45:32Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1054
+    },
+    {
+      "completion_time": "2026-01-29T18:45:37Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1059
+    },
+    {
+      "completion_time": "2026-01-29T18:45:38Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1060
+    },
+    {
+      "completion_time": "2026-01-29T18:45:43Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1065
+    },
+    {
+      "completion_time": "2026-01-29T18:45:45Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1067
+    },
+    {
+      "completion_time": "2026-01-29T18:45:47Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1069
+    },
+    {
+      "completion_time": "2026-01-29T18:45:47Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1069
+    },
+    {
+      "completion_time": "2026-01-29T18:45:51Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1073
+    },
+    {
+      "completion_time": "2026-01-29T18:45:52Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1074
+    },
+    {
+      "completion_time": "2026-01-29T18:45:53Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1075
+    },
+    {
+      "completion_time": "2026-01-29T18:45:55Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1077
+    },
+    {
+      "completion_time": "2026-01-29T18:45:58Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1080
+    },
+    {
+      "completion_time": "2026-01-29T18:46:06Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1088
+    },
+    {
+      "completion_time": "2026-01-29T18:46:07Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1089
+    },
+    {
+      "completion_time": "2026-01-29T18:46:16Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1098
+    },
+    {
+      "completion_time": "2026-01-29T18:46:18Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1100
+    },
+    {
+      "completion_time": "2026-01-29T18:46:20Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1102
+    },
+    {
+      "completion_time": "2026-01-29T18:46:27Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1109
+    },
+    {
+      "completion_time": "2026-01-29T18:46:27Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1109
+    },
+    {
+      "completion_time": "2026-01-29T18:46:29Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1111
+    },
+    {
+      "completion_time": "2026-01-29T18:46:30Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1112
+    },
+    {
+      "completion_time": "2026-01-29T18:46:35Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1117
+    },
+    {
+      "completion_time": "2026-01-29T18:46:35Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1117
+    },
+    {
+      "completion_time": "2026-01-29T18:46:36Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1118
+    },
+    {
+      "completion_time": "2026-01-29T18:46:37Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1119
+    },
+    {
+      "completion_time": "2026-01-29T18:46:39Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1121
+    },
+    {
+      "completion_time": "2026-01-29T18:46:43Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1125
+    },
+    {
+      "completion_time": "2026-01-29T18:46:45Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1127
+    },
+    {
+      "completion_time": "2026-01-29T18:46:48Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1130
+    },
+    {
+      "completion_time": "2026-01-29T18:46:49Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1131
+    },
+    {
+      "completion_time": "2026-01-29T18:46:51Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1133
+    },
+    {
+      "completion_time": "2026-01-29T18:46:55Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1137
+    },
+    {
+      "completion_time": "2026-01-29T18:46:56Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1138
+    },
+    {
+      "completion_time": "2026-01-29T18:46:56Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1138
+    },
+    {
+      "completion_time": "2026-01-29T18:46:57Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1139
+    },
+    {
+      "completion_time": "2026-01-29T18:46:58Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1140
+    },
+    {
+      "completion_time": "2026-01-29T18:47:04Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1146
+    },
+    {
+      "completion_time": "2026-01-29T18:47:05Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1147
+    },
+    {
+      "completion_time": "2026-01-29T18:47:09Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1151
+    },
+    {
+      "completion_time": "2026-01-29T18:47:11Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1153
+    },
+    {
+      "completion_time": "2026-01-29T18:47:14Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1156
+    },
+    {
+      "completion_time": "2026-01-29T18:47:19Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1161
+    },
+    {
+      "completion_time": "2026-01-29T18:47:19Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1161
+    },
+    {
+      "completion_time": "2026-01-29T18:47:20Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1162
+    },
+    {
+      "completion_time": "2026-01-29T18:47:22Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1164
+    },
+    {
+      "completion_time": "2026-01-29T18:47:24Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1166
+    },
+    {
+      "completion_time": "2026-01-29T18:47:26Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1167
+    },
+    {
+      "completion_time": "2026-01-29T18:47:27Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1168
+    },
+    {
+      "completion_time": "2026-01-29T18:47:29Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1170
+    },
+    {
+      "completion_time": "2026-01-29T18:47:31Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1172
+    },
+    {
+      "completion_time": "2026-01-29T18:47:32Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1173
+    },
+    {
+      "completion_time": "2026-01-29T18:47:36Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1177
+    },
+    {
+      "completion_time": "2026-01-29T18:47:36Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1177
+    },
+    {
+      "completion_time": "2026-01-29T18:47:38Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1179
+    },
+    {
+      "completion_time": "2026-01-29T18:47:41Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1182
+    },
+    {
+      "completion_time": "2026-01-29T18:47:44Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1185
+    },
+    {
+      "completion_time": "2026-01-29T18:47:44Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1185
+    },
+    {
+      "completion_time": "2026-01-29T18:47:45Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1186
+    },
+    {
+      "completion_time": "2026-01-29T18:47:46Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1187
+    },
+    {
+      "completion_time": "2026-01-29T18:47:47Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1188
+    },
+    {
+      "completion_time": "2026-01-29T18:47:48Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1189
+    },
+    {
+      "completion_time": "2026-01-29T18:47:48Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1189
+    },
+    {
+      "completion_time": "2026-01-29T18:47:52Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1193
+    },
+    {
+      "completion_time": "2026-01-29T18:47:57Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1198
+    },
+    {
+      "completion_time": "2026-01-29T18:48:03Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1204
+    },
+    {
+      "completion_time": "2026-01-29T18:48:05Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1206
+    },
+    {
+      "completion_time": "2026-01-29T18:48:07Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1208
+    },
+    {
+      "completion_time": "2026-01-29T18:48:08Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1209
+    },
+    {
+      "completion_time": "2026-01-29T18:48:12Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1213
+    },
+    {
+      "completion_time": "2026-01-29T18:48:13Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1214
+    },
+    {
+      "completion_time": "2026-01-29T18:48:13Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1214
+    },
+    {
+      "completion_time": "2026-01-29T18:48:14Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1215
+    },
+    {
+      "completion_time": "2026-01-29T18:48:20Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1221
+    },
+    {
+      "completion_time": "2026-01-29T18:48:22Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1223
+    },
+    {
+      "completion_time": "2026-01-29T18:48:23Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1224
+    },
+    {
+      "completion_time": "2026-01-29T18:48:33Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1234
+    },
+    {
+      "completion_time": "2026-01-29T18:48:34Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1235
+    },
+    {
+      "completion_time": "2026-01-29T18:48:38Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1239
+    },
+    {
+      "completion_time": "2026-01-29T18:48:38Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1239
+    },
+    {
+      "completion_time": "2026-01-29T18:48:41Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1242
+    },
+    {
+      "completion_time": "2026-01-29T18:48:48Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1249
+    },
+    {
+      "completion_time": "2026-01-29T18:48:51Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1252
+    },
+    {
+      "completion_time": "2026-01-29T18:48:54Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1255
+    },
+    {
+      "completion_time": "2026-01-29T18:48:55Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1256
+    },
+    {
+      "completion_time": "2026-01-29T18:48:56Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1257
+    },
+    {
+      "completion_time": "2026-01-29T18:48:56Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1257
+    },
+    {
+      "completion_time": "2026-01-29T18:49:00Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1261
+    },
+    {
+      "completion_time": "2026-01-29T18:49:02Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1263
+    },
+    {
+      "completion_time": "2026-01-29T18:49:11Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1272
+    },
+    {
+      "completion_time": "2026-01-29T18:49:12Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1273
+    },
+    {
+      "completion_time": "2026-01-29T18:49:14Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1275
+    },
+    {
+      "completion_time": "2026-01-29T18:49:16Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1277
+    },
+    {
+      "completion_time": "2026-01-29T18:49:19Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1280
+    },
+    {
+      "completion_time": "2026-01-29T18:49:20Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1281
+    },
+    {
+      "completion_time": "2026-01-29T18:49:22Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1283
+    },
+    {
+      "completion_time": "2026-01-29T18:49:28Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1288
+    },
+    {
+      "completion_time": "2026-01-29T18:49:30Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1290
+    },
+    {
+      "completion_time": "2026-01-29T18:49:40Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1300
+    },
+    {
+      "completion_time": "2026-01-29T18:49:47Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1307
+    },
+    {
+      "completion_time": "2026-01-29T18:49:47Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1307
+    },
+    {
+      "completion_time": "2026-01-29T18:49:51Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1311
+    },
+    {
+      "completion_time": "2026-01-29T18:49:57Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1317
+    },
+    {
+      "completion_time": "2026-01-29T18:50:00Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1320
+    },
+    {
+      "completion_time": "2026-01-29T18:50:02Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1322
+    },
+    {
+      "completion_time": "2026-01-29T18:50:05Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1324
+    },
+    {
+      "completion_time": "2026-01-29T18:50:05Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1324
+    },
+    {
+      "completion_time": "2026-01-29T18:50:09Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1328
+    },
+    {
+      "completion_time": "2026-01-29T18:50:11Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1329
+    },
+    {
+      "completion_time": "2026-01-29T18:50:17Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1335
+    },
+    {
+      "completion_time": "2026-01-29T18:50:18Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1336
+    },
+    {
+      "completion_time": "2026-01-29T18:50:19Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1337
+    },
+    {
+      "completion_time": "2026-01-29T18:50:24Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1342
+    },
+    {
+      "completion_time": "2026-01-29T18:50:25Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1343
+    },
+    {
+      "completion_time": "2026-01-29T18:50:28Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1346
+    },
+    {
+      "completion_time": "2026-01-29T18:50:31Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1349
+    },
+    {
+      "completion_time": "2026-01-29T18:50:33Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1351
+    },
+    {
+      "completion_time": "2026-01-29T18:50:34Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1352
+    },
+    {
+      "completion_time": "2026-01-29T18:50:46Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1364
+    },
+    {
+      "completion_time": "2026-01-29T18:50:49Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1367
+    },
+    {
+      "completion_time": "2026-01-29T18:50:51Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1369
+    },
+    {
+      "completion_time": "2026-01-29T18:50:55Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1373
+    },
+    {
+      "completion_time": "2026-01-29T18:51:01Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1379
+    },
+    {
+      "completion_time": "2026-01-29T18:51:05Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1383
+    },
+    {
+      "completion_time": "2026-01-29T18:51:10Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1388
+    },
+    {
+      "completion_time": "2026-01-29T18:51:20Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1398
+    },
+    {
+      "completion_time": "2026-01-29T18:51:21Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1399
+    },
+    {
+      "completion_time": "2026-01-29T18:51:22Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1400
+    },
+    {
+      "completion_time": "2026-01-29T18:51:23Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1401
+    },
+    {
+      "completion_time": "2026-01-29T18:51:31Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1409
+    },
+    {
+      "completion_time": "2026-01-29T18:51:32Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1410
+    },
+    {
+      "completion_time": "2026-01-29T18:51:34Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1411
+    },
+    {
+      "completion_time": "2026-01-29T18:51:35Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1412
+    },
+    {
+      "completion_time": "2026-01-29T18:51:37Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1414
+    },
+    {
+      "completion_time": "2026-01-29T18:51:38Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1415
+    },
+    {
+      "completion_time": "2026-01-29T18:51:44Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1421
+    },
+    {
+      "completion_time": "2026-01-29T18:51:45Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1422
+    },
+    {
+      "completion_time": "2026-01-29T18:51:47Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1424
+    },
+    {
+      "completion_time": "2026-01-29T18:51:49Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1426
+    },
+    {
+      "completion_time": "2026-01-29T18:51:50Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1427
+    },
+    {
+      "completion_time": "2026-01-29T18:51:53Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1430
+    },
+    {
+      "completion_time": "2026-01-29T18:51:57Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1434
+    },
+    {
+      "completion_time": "2026-01-29T18:52:08Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1445
+    },
+    {
+      "completion_time": "2026-01-29T18:52:09Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1446
+    },
+    {
+      "completion_time": "2026-01-29T18:52:09Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1446
+    },
+    {
+      "completion_time": "2026-01-29T18:52:17Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1454
+    },
+    {
+      "completion_time": "2026-01-29T18:52:19Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1456
+    },
+    {
+      "completion_time": "2026-01-29T18:52:26Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1463
+    },
+    {
+      "completion_time": "2026-01-29T18:52:31Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1468
+    },
+    {
+      "completion_time": "2026-01-29T18:52:35Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1472
+    },
+    {
+      "completion_time": "2026-01-29T18:52:35Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1472
+    },
+    {
+      "completion_time": "2026-01-29T18:52:37Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1474
+    },
+    {
+      "completion_time": "2026-01-29T18:52:38Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1475
+    },
+    {
+      "completion_time": "2026-01-29T18:52:39Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1476
+    },
+    {
+      "completion_time": "2026-01-29T18:52:43Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1480
+    },
+    {
+      "completion_time": "2026-01-29T18:52:48Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1485
+    },
+    {
+      "completion_time": "2026-01-29T18:52:53Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1490
+    },
+    {
+      "completion_time": "2026-01-29T18:52:53Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1490
+    },
+    {
+      "completion_time": "2026-01-29T18:53:02Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1499
+    },
+    {
+      "completion_time": "2026-01-29T18:53:05Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1502
+    },
+    {
+      "completion_time": "2026-01-29T18:53:08Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1505
+    },
+    {
+      "completion_time": "2026-01-29T18:53:09Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1506
+    },
+    {
+      "completion_time": "2026-01-29T18:53:14Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1511
+    },
+    {
+      "completion_time": "2026-01-29T18:53:14Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1511
+    },
+    {
+      "completion_time": "2026-01-29T18:53:20Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1516
+    },
+    {
+      "completion_time": "2026-01-29T18:53:20Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1516
+    },
+    {
+      "completion_time": "2026-01-29T18:53:23Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1519
+    },
+    {
+      "completion_time": "2026-01-29T18:53:27Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1523
+    },
+    {
+      "completion_time": "2026-01-29T18:53:28Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1524
+    },
+    {
+      "completion_time": "2026-01-29T18:53:34Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1530
+    },
+    {
+      "completion_time": "2026-01-29T18:53:36Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1532
+    },
+    {
+      "completion_time": "2026-01-29T18:53:39Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1535
+    },
+    {
+      "completion_time": "2026-01-29T18:53:41Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1537
+    },
+    {
+      "completion_time": "2026-01-29T18:53:42Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1538
+    },
+    {
+      "completion_time": "2026-01-29T18:53:47Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1543
+    },
+    {
+      "completion_time": "2026-01-29T18:53:49Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1545
+    },
+    {
+      "completion_time": "2026-01-29T18:53:53Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1549
+    },
+    {
+      "completion_time": "2026-01-29T18:54:05Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1561
+    },
+    {
+      "completion_time": "2026-01-29T18:54:09Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1565
+    },
+    {
+      "completion_time": "2026-01-29T18:54:12Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1568
+    },
+    {
+      "completion_time": "2026-01-29T18:54:12Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1568
+    },
+    {
+      "completion_time": "2026-01-29T18:54:17Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1573
+    },
+    {
+      "completion_time": "2026-01-29T18:54:24Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1580
+    },
+    {
+      "completion_time": "2026-01-29T18:54:25Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1581
+    },
+    {
+      "completion_time": "2026-01-29T18:54:28Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1584
+    },
+    {
+      "completion_time": "2026-01-29T18:54:31Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1587
+    },
+    {
+      "completion_time": "2026-01-29T18:54:32Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1588
+    },
+    {
+      "completion_time": "2026-01-29T18:54:33Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1589
+    },
+    {
+      "completion_time": "2026-01-29T18:54:34Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1590
+    },
+    {
+      "completion_time": "2026-01-29T18:54:36Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1592
+    },
+    {
+      "completion_time": "2026-01-29T18:54:38Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1594
+    },
+    {
+      "completion_time": "2026-01-29T18:54:44Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1600
+    },
+    {
+      "completion_time": "2026-01-29T18:54:47Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1603
+    },
+    {
+      "completion_time": "2026-01-29T18:54:50Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1606
+    },
+    {
+      "completion_time": "2026-01-29T18:54:54Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1610
+    },
+    {
+      "completion_time": "2026-01-29T18:55:07Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1623
+    },
+    {
+      "completion_time": "2026-01-29T18:55:10Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1626
+    },
+    {
+      "completion_time": "2026-01-29T18:55:13Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1629
+    },
+    {
+      "completion_time": "2026-01-29T18:55:14Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1630
+    },
+    {
+      "completion_time": "2026-01-29T18:55:17Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1632
+    },
+    {
+      "completion_time": "2026-01-29T18:55:19Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1634
+    },
+    {
+      "completion_time": "2026-01-29T18:55:26Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1641
+    },
+    {
+      "completion_time": "2026-01-29T18:55:31Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1646
+    },
+    {
+      "completion_time": "2026-01-29T18:55:31Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1646
+    },
+    {
+      "completion_time": "2026-01-29T18:55:32Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1647
+    },
+    {
+      "completion_time": "2026-01-29T18:55:34Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1649
+    },
+    {
+      "completion_time": "2026-01-29T18:55:38Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1653
+    },
+    {
+      "completion_time": "2026-01-29T18:55:39Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1654
+    },
+    {
+      "completion_time": "2026-01-29T18:55:41Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1656
+    },
+    {
+      "completion_time": "2026-01-29T18:55:41Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1656
+    },
+    {
+      "completion_time": "2026-01-29T18:55:45Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1660
+    },
+    {
+      "completion_time": "2026-01-29T18:55:50Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1665
+    },
+    {
+      "completion_time": "2026-01-29T18:55:56Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1671
+    },
+    {
+      "completion_time": "2026-01-29T18:56:01Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1676
+    },
+    {
+      "completion_time": "2026-01-29T18:56:02Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1677
+    },
+    {
+      "completion_time": "2026-01-29T18:56:04Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1679
+    },
+    {
+      "completion_time": "2026-01-29T18:56:07Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1682
+    },
+    {
+      "completion_time": "2026-01-29T18:56:11Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1686
+    },
+    {
+      "completion_time": "2026-01-29T18:56:12Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1687
+    },
+    {
+      "completion_time": "2026-01-29T18:56:13Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1688
+    },
+    {
+      "completion_time": "2026-01-29T18:56:17Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1692
+    },
+    {
+      "completion_time": "2026-01-29T18:56:18Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1693
+    },
+    {
+      "completion_time": "2026-01-29T18:56:19Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1694
+    },
+    {
+      "completion_time": "2026-01-29T18:56:22Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1697
+    },
+    {
+      "completion_time": "2026-01-29T18:56:23Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1698
+    },
+    {
+      "completion_time": "2026-01-29T18:56:25Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1700
+    },
+    {
+      "completion_time": "2026-01-29T18:56:32Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1707
+    },
+    {
+      "completion_time": "2026-01-29T18:56:33Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1708
+    },
+    {
+      "completion_time": "2026-01-29T18:56:36Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1711
+    },
+    {
+      "completion_time": "2026-01-29T18:56:38Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1713
+    },
+    {
+      "completion_time": "2026-01-29T18:56:43Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1717
+    },
+    {
+      "completion_time": "2026-01-29T18:56:43Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1717
+    },
+    {
+      "completion_time": "2026-01-29T18:56:45Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1720
+    },
+    {
+      "completion_time": "2026-01-29T18:56:46Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1721
+    },
+    {
+      "completion_time": "2026-01-29T18:56:48Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1723
+    },
+    {
+      "completion_time": "2026-01-29T18:56:53Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1728
+    },
+    {
+      "completion_time": "2026-01-29T18:56:54Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1729
+    },
+    {
+      "completion_time": "2026-01-29T18:56:58Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1732
+    },
+    {
+      "completion_time": "2026-01-29T18:56:59Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1733
+    },
+    {
+      "completion_time": "2026-01-29T18:56:59Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1733
+    },
+    {
+      "completion_time": "2026-01-29T18:57:00Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1734
+    },
+    {
+      "completion_time": "2026-01-29T18:57:03Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1737
+    },
+    {
+      "completion_time": "2026-01-29T18:57:04Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1738
+    },
+    {
+      "completion_time": "2026-01-29T18:57:08Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1742
+    },
+    {
+      "completion_time": "2026-01-29T18:57:08Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1742
+    },
+    {
+      "completion_time": "2026-01-29T18:57:10Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1744
+    },
+    {
+      "completion_time": "2026-01-29T18:57:10Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1744
+    },
+    {
+      "completion_time": "2026-01-29T18:57:11Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1745
+    },
+    {
+      "completion_time": "2026-01-29T18:57:14Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1748
+    },
+    {
+      "completion_time": "2026-01-29T18:57:15Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1749
+    },
+    {
+      "completion_time": "2026-01-29T18:57:16Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1750
+    },
+    {
+      "completion_time": "2026-01-29T18:57:26Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1760
+    },
+    {
+      "completion_time": "2026-01-29T18:57:33Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1767
+    },
+    {
+      "completion_time": "2026-01-29T18:57:35Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1769
+    },
+    {
+      "completion_time": "2026-01-29T18:57:41Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1775
+    },
+    {
+      "completion_time": "2026-01-29T18:57:46Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1780
+    },
+    {
+      "completion_time": "2026-01-29T18:57:51Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1785
+    },
+    {
+      "completion_time": "2026-01-29T18:57:53Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1787
+    },
+    {
+      "completion_time": "2026-01-29T18:57:54Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1788
+    },
+    {
+      "completion_time": "2026-01-29T18:57:56Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1790
+    },
+    {
+      "completion_time": "2026-01-29T18:57:57Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1791
+    },
+    {
+      "completion_time": "2026-01-29T18:57:59Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1793
+    },
+    {
+      "completion_time": "2026-01-29T18:58:03Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1797
+    },
+    {
+      "completion_time": "2026-01-29T18:58:07Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1801
+    },
+    {
+      "completion_time": "2026-01-29T18:58:08Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1802
+    },
+    {
+      "completion_time": "2026-01-29T18:58:09Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1803
+    },
+    {
+      "completion_time": "2026-01-29T18:58:30Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1824
+    },
+    {
+      "completion_time": "2026-01-29T18:58:33Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1827
+    },
+    {
+      "completion_time": "2026-01-29T18:58:37Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1831
+    },
+    {
+      "completion_time": "2026-01-29T18:58:38Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1832
+    },
+    {
+      "completion_time": "2026-01-29T18:58:51Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1844
+    },
+    {
+      "completion_time": "2026-01-29T18:58:53Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1846
+    },
+    {
+      "completion_time": "2026-01-29T18:58:56Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1849
+    },
+    {
+      "completion_time": "2026-01-29T18:58:57Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1850
+    },
+    {
+      "completion_time": "2026-01-29T18:58:57Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1850
+    },
+    {
+      "completion_time": "2026-01-29T18:58:59Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1852
+    },
+    {
+      "completion_time": "2026-01-29T18:59:01Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1854
+    },
+    {
+      "completion_time": "2026-01-29T18:59:02Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1855
+    },
+    {
+      "completion_time": "2026-01-29T18:59:02Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1855
+    },
+    {
+      "completion_time": "2026-01-29T18:59:04Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1857
+    },
+    {
+      "completion_time": "2026-01-29T18:59:05Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1858
+    },
+    {
+      "completion_time": "2026-01-29T18:59:12Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1865
+    },
+    {
+      "completion_time": "2026-01-29T18:59:15Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1868
+    },
+    {
+      "completion_time": "2026-01-29T18:59:16Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1869
+    },
+    {
+      "completion_time": "2026-01-29T18:59:18Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1871
+    },
+    {
+      "completion_time": "2026-01-29T18:59:18Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1871
+    },
+    {
+      "completion_time": "2026-01-29T18:59:20Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1873
+    },
+    {
+      "completion_time": "2026-01-29T18:59:25Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1878
+    },
+    {
+      "completion_time": "2026-01-29T18:59:25Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1878
+    },
+    {
+      "completion_time": "2026-01-29T18:59:29Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1882
+    },
+    {
+      "completion_time": "2026-01-29T18:59:30Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1883
+    },
+    {
+      "completion_time": "2026-01-29T18:59:30Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1883
+    },
+    {
+      "completion_time": "2026-01-29T18:59:31Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1884
+    },
+    {
+      "completion_time": "2026-01-29T18:59:32Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1885
+    },
+    {
+      "completion_time": "2026-01-29T18:59:36Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1889
+    },
+    {
+      "completion_time": "2026-01-29T18:59:41Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1894
+    },
+    {
+      "completion_time": "2026-01-29T18:59:43Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1896
+    },
+    {
+      "completion_time": "2026-01-29T18:59:44Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1897
+    },
+    {
+      "completion_time": "2026-01-29T18:59:46Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1899
+    },
+    {
+      "completion_time": "2026-01-29T18:59:46Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1899
+    },
+    {
+      "completion_time": "2026-01-29T18:59:55Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1908
+    },
+    {
+      "completion_time": "2026-01-29T19:00:01Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1914
+    },
+    {
+      "completion_time": "2026-01-29T19:00:04Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1917
+    },
+    {
+      "completion_time": "2026-01-29T19:00:11Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1924
+    },
+    {
+      "completion_time": "2026-01-29T19:00:12Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1925
+    },
+    {
+      "completion_time": "2026-01-29T19:00:15Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1928
+    },
+    {
+      "completion_time": "2026-01-29T19:00:19Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1932
+    },
+    {
+      "completion_time": "2026-01-29T19:00:20Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1933
+    },
+    {
+      "completion_time": "2026-01-29T19:00:27Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1939
+    },
+    {
+      "completion_time": "2026-01-29T19:00:30Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1942
+    },
+    {
+      "completion_time": "2026-01-29T19:00:31Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1943
+    },
+    {
+      "completion_time": "2026-01-29T19:00:31Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1943
+    },
+    {
+      "completion_time": "2026-01-29T19:00:36Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1948
+    },
+    {
+      "completion_time": "2026-01-29T19:00:36Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1948
+    },
+    {
+      "completion_time": "2026-01-29T19:00:39Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1951
+    },
+    {
+      "completion_time": "2026-01-29T19:00:41Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1953
+    },
+    {
+      "completion_time": "2026-01-29T19:00:45Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1957
+    },
+    {
+      "completion_time": "2026-01-29T19:00:45Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1957
+    },
+    {
+      "completion_time": "2026-01-29T19:00:48Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1960
+    },
+    {
+      "completion_time": "2026-01-29T19:00:50Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1962
+    },
+    {
+      "completion_time": "2026-01-29T19:00:54Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1966
+    },
+    {
+      "completion_time": "2026-01-29T19:00:55Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1967
+    },
+    {
+      "completion_time": "2026-01-29T19:00:56Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1968
+    },
+    {
+      "completion_time": "2026-01-29T19:00:57Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1969
+    },
+    {
+      "completion_time": "2026-01-29T19:00:57Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1969
+    },
+    {
+      "completion_time": "2026-01-29T19:01:03Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1975
+    },
+    {
+      "completion_time": "2026-01-29T19:01:04Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1976
+    },
+    {
+      "completion_time": "2026-01-29T19:01:09Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1981
+    },
+    {
+      "completion_time": "2026-01-29T19:01:11Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1983
+    },
+    {
+      "completion_time": "2026-01-29T19:01:11Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1983
+    },
+    {
+      "completion_time": "2026-01-29T19:01:11Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1983
+    },
+    {
+      "completion_time": "2026-01-29T19:01:16Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1988
+    },
+    {
+      "completion_time": "2026-01-29T19:01:18Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1990
+    },
+    {
+      "completion_time": "2026-01-29T19:01:20Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1992
+    },
+    {
+      "completion_time": "2026-01-29T19:01:24Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1996
+    },
+    {
+      "completion_time": "2026-01-29T19:01:28Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2000
+    },
+    {
+      "completion_time": "2026-01-29T19:01:28Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2000
+    },
+    {
+      "completion_time": "2026-01-29T19:01:32Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2004
+    },
+    {
+      "completion_time": "2026-01-29T19:01:33Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2005
+    },
+    {
+      "completion_time": "2026-01-29T19:01:34Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2006
+    },
+    {
+      "completion_time": "2026-01-29T19:01:37Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2009
+    },
+    {
+      "completion_time": "2026-01-29T19:01:40Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2012
+    },
+    {
+      "completion_time": "2026-01-29T19:01:45Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2017
+    },
+    {
+      "completion_time": "2026-01-29T19:01:47Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2019
+    },
+    {
+      "completion_time": "2026-01-29T19:01:48Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2020
+    },
+    {
+      "completion_time": "2026-01-29T19:01:52Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2024
+    },
+    {
+      "completion_time": "2026-01-29T19:01:57Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2029
+    },
+    {
+      "completion_time": "2026-01-29T19:01:59Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2031
+    },
+    {
+      "completion_time": "2026-01-29T19:02:02Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2034
+    },
+    {
+      "completion_time": "2026-01-29T19:02:06Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2038
+    },
+    {
+      "completion_time": "2026-01-29T19:02:15Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2047
+    },
+    {
+      "completion_time": "2026-01-29T19:02:17Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2049
+    },
+    {
+      "completion_time": "2026-01-29T19:02:18Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2050
+    },
+    {
+      "completion_time": "2026-01-29T19:02:18Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2050
+    },
+    {
+      "completion_time": "2026-01-29T19:02:25Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2056
+    },
+    {
+      "completion_time": "2026-01-29T19:02:29Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2060
+    },
+    {
+      "completion_time": "2026-01-29T19:02:38Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2069
+    },
+    {
+      "completion_time": "2026-01-29T19:02:40Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2071
+    },
+    {
+      "completion_time": "2026-01-29T19:02:41Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2072
+    },
+    {
+      "completion_time": "2026-01-29T19:02:42Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2073
+    },
+    {
+      "completion_time": "2026-01-29T19:02:43Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2074
+    },
+    {
+      "completion_time": "2026-01-29T19:02:46Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2077
+    },
+    {
+      "completion_time": "2026-01-29T19:02:48Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2079
+    },
+    {
+      "completion_time": "2026-01-29T19:02:49Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2080
+    },
+    {
+      "completion_time": "2026-01-29T19:02:51Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2082
+    },
+    {
+      "completion_time": "2026-01-29T19:02:53Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2084
+    },
+    {
+      "completion_time": "2026-01-29T19:02:55Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2086
+    },
+    {
+      "completion_time": "2026-01-29T19:02:56Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2087
+    },
+    {
+      "completion_time": "2026-01-29T19:02:59Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2090
+    },
+    {
+      "completion_time": "2026-01-29T19:03:13Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2104
+    },
+    {
+      "completion_time": "2026-01-29T19:03:14Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2105
+    },
+    {
+      "completion_time": "2026-01-29T19:03:17Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2108
+    },
+    {
+      "completion_time": "2026-01-29T19:03:17Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2108
+    },
+    {
+      "completion_time": "2026-01-29T19:03:19Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2110
+    },
+    {
+      "completion_time": "2026-01-29T19:03:21Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2112
+    },
+    {
+      "completion_time": "2026-01-29T19:03:34Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2125
+    },
+    {
+      "completion_time": "2026-01-29T19:03:35Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2126
+    },
+    {
+      "completion_time": "2026-01-29T19:03:38Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2129
+    },
+    {
+      "completion_time": "2026-01-29T19:03:42Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2133
+    },
+    {
+      "completion_time": "2026-01-29T19:03:43Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2134
+    },
+    {
+      "completion_time": "2026-01-29T19:03:45Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2136
+    },
+    {
+      "completion_time": "2026-01-29T19:03:47Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2138
+    },
+    {
+      "completion_time": "2026-01-29T19:03:48Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2139
+    },
+    {
+      "completion_time": "2026-01-29T19:03:50Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2141
+    },
+    {
+      "completion_time": "2026-01-29T19:03:54Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2145
+    },
+    {
+      "completion_time": "2026-01-29T19:03:54Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2145
+    },
+    {
+      "completion_time": "2026-01-29T19:03:58Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2149
+    },
+    {
+      "completion_time": "2026-01-29T19:04:06Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2157
+    },
+    {
+      "completion_time": "2026-01-29T19:04:08Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2159
+    },
+    {
+      "completion_time": "2026-01-29T19:04:11Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2162
+    },
+    {
+      "completion_time": "2026-01-29T19:04:13Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2164
+    },
+    {
+      "completion_time": "2026-01-29T19:04:22Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2173
+    },
+    {
+      "completion_time": "2026-01-29T19:04:29Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2179
+    },
+    {
+      "completion_time": "2026-01-29T19:04:31Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2181
+    },
+    {
+      "completion_time": "2026-01-29T19:04:32Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2182
+    },
+    {
+      "completion_time": "2026-01-29T19:04:34Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2184
+    },
+    {
+      "completion_time": "2026-01-29T19:04:34Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2184
+    },
+    {
+      "completion_time": "2026-01-29T19:04:37Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2187
+    },
+    {
+      "completion_time": "2026-01-29T19:04:37Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2187
+    },
+    {
+      "completion_time": "2026-01-29T19:04:46Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2196
+    },
+    {
+      "completion_time": "2026-01-29T19:04:46Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2196
+    },
+    {
+      "completion_time": "2026-01-29T19:04:48Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2198
+    },
+    {
+      "completion_time": "2026-01-29T19:04:49Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2199
+    },
+    {
+      "completion_time": "2026-01-29T19:04:57Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2207
+    },
+    {
+      "completion_time": "2026-01-29T19:04:58Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2208
+    },
+    {
+      "completion_time": "2026-01-29T19:05:04Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2214
+    },
+    {
+      "completion_time": "2026-01-29T19:05:08Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2218
+    },
+    {
+      "completion_time": "2026-01-29T19:05:09Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2219
+    },
+    {
+      "completion_time": "2026-01-29T19:05:09Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2219
+    },
+    {
+      "completion_time": "2026-01-29T19:05:24Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2234
+    },
+    {
+      "completion_time": "2026-01-29T19:05:28Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2238
+    },
+    {
+      "completion_time": "2026-01-29T19:05:35Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2245
+    },
+    {
+      "completion_time": "2026-01-29T19:05:37Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2247
+    },
+    {
+      "completion_time": "2026-01-29T19:05:38Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2248
+    },
+    {
+      "completion_time": "2026-01-29T19:05:41Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2251
+    },
+    {
+      "completion_time": "2026-01-29T19:05:42Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2252
+    },
+    {
+      "completion_time": "2026-01-29T19:05:43Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2253
+    },
+    {
+      "completion_time": "2026-01-29T19:05:50Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2260
+    },
+    {
+      "completion_time": "2026-01-29T19:05:51Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2261
+    },
+    {
+      "completion_time": "2026-01-29T19:05:51Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2261
+    },
+    {
+      "completion_time": "2026-01-29T19:05:53Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2263
+    },
+    {
+      "completion_time": "2026-01-29T19:05:54Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2264
+    },
+    {
+      "completion_time": "2026-01-29T19:06:05Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2275
+    },
+    {
+      "completion_time": "2026-01-29T19:06:06Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2276
+    },
+    {
+      "completion_time": "2026-01-29T19:06:07Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2277
+    },
+    {
+      "completion_time": "2026-01-29T19:06:12Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2282
+    },
+    {
+      "completion_time": "2026-01-29T19:06:13Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2283
+    },
+    {
+      "completion_time": "2026-01-29T19:06:15Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2285
+    },
+    {
+      "completion_time": "2026-01-29T19:06:16Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2286
+    },
+    {
+      "completion_time": "2026-01-29T19:06:20Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2290
+    },
+    {
+      "completion_time": "2026-01-29T19:06:23Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2293
+    },
+    {
+      "completion_time": "2026-01-29T19:06:29Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2299
+    },
+    {
+      "completion_time": "2026-01-29T19:06:29Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2299
+    },
+    {
+      "completion_time": "2026-01-29T19:06:30Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2300
+    },
+    {
+      "completion_time": "2026-01-29T19:06:34Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2303
+    },
+    {
+      "completion_time": "2026-01-29T19:06:38Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2307
+    },
+    {
+      "completion_time": "2026-01-29T19:06:38Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2307
+    },
+    {
+      "completion_time": "2026-01-29T19:06:41Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2310
+    },
+    {
+      "completion_time": "2026-01-29T19:06:48Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2317
+    },
+    {
+      "completion_time": "2026-01-29T19:06:49Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2318
+    },
+    {
+      "completion_time": "2026-01-29T19:06:50Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2319
+    },
+    {
+      "completion_time": "2026-01-29T19:06:51Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2320
+    },
+    {
+      "completion_time": "2026-01-29T19:06:52Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2321
+    },
+    {
+      "completion_time": "2026-01-29T19:06:52Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2321
+    },
+    {
+      "completion_time": "2026-01-29T19:06:54Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2323
+    },
+    {
+      "completion_time": "2026-01-29T19:06:56Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2325
+    },
+    {
+      "completion_time": "2026-01-29T19:07:00Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2329
+    },
+    {
+      "completion_time": "2026-01-29T19:07:02Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2331
+    },
+    {
+      "completion_time": "2026-01-29T19:07:02Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2331
+    },
+    {
+      "completion_time": "2026-01-29T19:07:03Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2332
+    },
+    {
+      "completion_time": "2026-01-29T19:07:09Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2338
+    },
+    {
+      "completion_time": "2026-01-29T19:07:11Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2340
+    },
+    {
+      "completion_time": "2026-01-29T19:07:14Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2343
+    },
+    {
+      "completion_time": "2026-01-29T19:07:15Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2344
+    },
+    {
+      "completion_time": "2026-01-29T19:07:16Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2345
+    },
+    {
+      "completion_time": "2026-01-29T19:07:21Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2350
+    },
+    {
+      "completion_time": "2026-01-29T19:07:22Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2351
+    },
+    {
+      "completion_time": "2026-01-29T19:07:24Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2353
+    },
+    {
+      "completion_time": "2026-01-29T19:07:26Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2355
+    },
+    {
+      "completion_time": "2026-01-29T19:07:29Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2358
+    },
+    {
+      "completion_time": "2026-01-29T19:07:31Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2360
+    },
+    {
+      "completion_time": "2026-01-29T19:07:31Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2360
+    },
+    {
+      "completion_time": "2026-01-29T19:07:40Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2369
+    },
+    {
+      "completion_time": "2026-01-29T19:07:45Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2374
+    },
+    {
+      "completion_time": "2026-01-29T19:07:52Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2381
+    },
+    {
+      "completion_time": "2026-01-29T19:07:54Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2383
+    },
+    {
+      "completion_time": "2026-01-29T19:08:05Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2394
+    },
+    {
+      "completion_time": "2026-01-29T19:08:06Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2395
+    },
+    {
+      "completion_time": "2026-01-29T19:08:09Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2398
+    },
+    {
+      "completion_time": "2026-01-29T19:08:15Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2404
+    },
+    {
+      "completion_time": "2026-01-29T19:08:19Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2407
+    },
+    {
+      "completion_time": "2026-01-29T19:08:20Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2408
+    },
+    {
+      "completion_time": "2026-01-29T19:08:23Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2411
+    },
+    {
+      "completion_time": "2026-01-29T19:08:31Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2418
+    },
+    {
+      "completion_time": "2026-01-29T19:08:35Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2422
+    },
+    {
+      "completion_time": "2026-01-29T19:08:38Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2425
+    },
+    {
+      "completion_time": "2026-01-29T19:08:40Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2427
+    },
+    {
+      "completion_time": "2026-01-29T19:08:40Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2427
+    },
+    {
+      "completion_time": "2026-01-29T19:08:46Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2433
+    },
+    {
+      "completion_time": "2026-01-29T19:08:46Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2433
+    },
+    {
+      "completion_time": "2026-01-29T19:08:47Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2434
+    },
+    {
+      "completion_time": "2026-01-29T19:08:51Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2438
+    },
+    {
+      "completion_time": "2026-01-29T19:08:55Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2442
+    },
+    {
+      "completion_time": "2026-01-29T19:08:56Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2443
+    },
+    {
+      "completion_time": "2026-01-29T19:08:58Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2445
+    },
+    {
+      "completion_time": "2026-01-29T19:09:00Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2447
+    },
+    {
+      "completion_time": "2026-01-29T19:09:01Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2448
+    },
+    {
+      "completion_time": "2026-01-29T19:09:03Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2450
+    },
+    {
+      "completion_time": "2026-01-29T19:09:05Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2452
+    },
+    {
+      "completion_time": "2026-01-29T19:09:08Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2455
+    },
+    {
+      "completion_time": "2026-01-29T19:09:09Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2456
+    },
+    {
+      "completion_time": "2026-01-29T19:09:10Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2457
+    },
+    {
+      "completion_time": "2026-01-29T19:09:12Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2459
+    },
+    {
+      "completion_time": "2026-01-29T19:09:14Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2461
+    },
+    {
+      "completion_time": "2026-01-29T19:09:17Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2464
+    },
+    {
+      "completion_time": "2026-01-29T19:09:19Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2466
+    },
+    {
+      "completion_time": "2026-01-29T19:09:26Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2473
+    },
+    {
+      "completion_time": "2026-01-29T19:09:28Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2475
+    },
+    {
+      "completion_time": "2026-01-29T19:09:30Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2477
+    },
+    {
+      "completion_time": "2026-01-29T19:09:33Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2480
+    },
+    {
+      "completion_time": "2026-01-29T19:09:33Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2480
+    },
+    {
+      "completion_time": "2026-01-29T19:09:35Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2482
+    },
+    {
+      "completion_time": "2026-01-29T19:09:43Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2490
+    },
+    {
+      "completion_time": "2026-01-29T19:09:44Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2491
+    },
+    {
+      "completion_time": "2026-01-29T19:09:45Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2492
+    },
+    {
+      "completion_time": "2026-01-29T19:09:47Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2494
+    },
+    {
+      "completion_time": "2026-01-29T19:09:50Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2497
+    },
+    {
+      "completion_time": "2026-01-29T19:09:54Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2501
+    },
+    {
+      "completion_time": "2026-01-29T19:09:57Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2504
+    },
+    {
+      "completion_time": "2026-01-29T19:10:04Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2510
+    },
+    {
+      "completion_time": "2026-01-29T19:10:05Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2511
+    },
+    {
+      "completion_time": "2026-01-29T19:10:06Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2512
+    },
+    {
+      "completion_time": "2026-01-29T19:10:07Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2513
+    },
+    {
+      "completion_time": "2026-01-29T19:10:08Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2514
+    },
+    {
+      "completion_time": "2026-01-29T19:10:13Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2519
+    },
+    {
+      "completion_time": "2026-01-29T19:10:20Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2526
+    },
+    {
+      "completion_time": "2026-01-29T19:10:23Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2529
+    },
+    {
+      "completion_time": "2026-01-29T19:10:26Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2532
+    },
+    {
+      "completion_time": "2026-01-29T19:10:27Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2533
+    },
+    {
+      "completion_time": "2026-01-29T19:10:29Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2535
+    },
+    {
+      "completion_time": "2026-01-29T19:10:30Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2536
+    },
+    {
+      "completion_time": "2026-01-29T19:10:30Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2536
+    },
+    {
+      "completion_time": "2026-01-29T19:10:31Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2537
+    },
+    {
+      "completion_time": "2026-01-29T19:10:32Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2538
+    },
+    {
+      "completion_time": "2026-01-29T19:10:34Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2540
+    },
+    {
+      "completion_time": "2026-01-29T19:10:36Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2542
+    },
+    {
+      "completion_time": "2026-01-29T19:10:38Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2544
+    },
+    {
+      "completion_time": "2026-01-29T19:10:39Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2545
+    },
+    {
+      "completion_time": "2026-01-29T19:10:40Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2546
+    },
+    {
+      "completion_time": "2026-01-29T19:10:41Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2547
+    },
+    {
+      "completion_time": "2026-01-29T19:10:43Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2549
+    },
+    {
+      "completion_time": "2026-01-29T19:10:44Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2550
+    },
+    {
+      "completion_time": "2026-01-29T19:10:44Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2550
+    },
+    {
+      "completion_time": "2026-01-29T19:10:45Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2551
+    },
+    {
+      "completion_time": "2026-01-29T19:10:46Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2552
+    },
+    {
+      "completion_time": "2026-01-29T19:10:48Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2554
+    },
+    {
+      "completion_time": "2026-01-29T19:10:54Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2560
+    },
+    {
+      "completion_time": "2026-01-29T19:11:00Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2566
+    },
+    {
+      "completion_time": "2026-01-29T19:11:03Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2569
+    },
+    {
+      "completion_time": "2026-01-29T19:11:09Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2575
+    },
+    {
+      "completion_time": "2026-01-29T19:11:11Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2577
+    },
+    {
+      "completion_time": "2026-01-29T19:11:13Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2579
+    },
+    {
+      "completion_time": "2026-01-29T19:11:15Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2581
+    },
+    {
+      "completion_time": "2026-01-29T19:11:17Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2583
+    },
+    {
+      "completion_time": "2026-01-29T19:11:18Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2584
+    },
+    {
+      "completion_time": "2026-01-29T19:11:20Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2586
+    },
+    {
+      "completion_time": "2026-01-29T19:11:23Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2589
+    },
+    {
+      "completion_time": "2026-01-29T19:11:26Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2592
+    },
+    {
+      "completion_time": "2026-01-29T19:11:28Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2594
+    },
+    {
+      "completion_time": "2026-01-29T19:11:28Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2594
+    },
+    {
+      "completion_time": "2026-01-29T19:11:34Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2600
+    },
+    {
+      "completion_time": "2026-01-29T19:11:35Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2601
+    },
+    {
+      "completion_time": "2026-01-29T19:11:35Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2601
+    },
+    {
+      "completion_time": "2026-01-29T19:11:40Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2606
+    },
+    {
+      "completion_time": "2026-01-29T19:11:46Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2612
+    },
+    {
+      "completion_time": "2026-01-29T19:11:47Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2613
+    },
+    {
+      "completion_time": "2026-01-29T19:11:48Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2614
+    },
+    {
+      "completion_time": "2026-01-29T19:11:52Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2618
+    },
+    {
+      "completion_time": "2026-01-29T19:11:55Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2621
+    },
+    {
+      "completion_time": "2026-01-29T19:12:03Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2628
+    },
+    {
+      "completion_time": "2026-01-29T19:12:06Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2631
+    },
+    {
+      "completion_time": "2026-01-29T19:12:12Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2637
+    },
+    {
+      "completion_time": "2026-01-29T19:12:14Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2639
+    },
+    {
+      "completion_time": "2026-01-29T19:12:19Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2644
+    },
+    {
+      "completion_time": "2026-01-29T19:12:22Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2647
+    },
+    {
+      "completion_time": "2026-01-29T19:12:26Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2651
+    },
+    {
+      "completion_time": "2026-01-29T19:12:28Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2653
+    },
+    {
+      "completion_time": "2026-01-29T19:12:33Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2658
+    },
+    {
+      "completion_time": "2026-01-29T19:12:33Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2658
+    },
+    {
+      "completion_time": "2026-01-29T19:12:36Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2661
+    },
+    {
+      "completion_time": "2026-01-29T19:12:39Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2664
+    },
+    {
+      "completion_time": "2026-01-29T19:12:39Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2664
+    },
+    {
+      "completion_time": "2026-01-29T19:12:43Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2668
+    },
+    {
+      "completion_time": "2026-01-29T19:12:45Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2670
+    },
+    {
+      "completion_time": "2026-01-29T19:12:45Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2670
+    },
+    {
+      "completion_time": "2026-01-29T19:12:49Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2674
+    },
+    {
+      "completion_time": "2026-01-29T19:12:51Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2676
+    },
+    {
+      "completion_time": "2026-01-29T19:12:56Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2681
+    },
+    {
+      "completion_time": "2026-01-29T19:12:59Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2684
+    },
+    {
+      "completion_time": "2026-01-29T19:13:02Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2687
+    },
+    {
+      "completion_time": "2026-01-29T19:13:08Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2693
+    },
+    {
+      "completion_time": "2026-01-29T19:13:15Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2700
+    },
+    {
+      "completion_time": "2026-01-29T19:13:17Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2702
+    },
+    {
+      "completion_time": "2026-01-29T19:13:19Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2704
+    },
+    {
+      "completion_time": "2026-01-29T19:13:23Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2708
+    },
+    {
+      "completion_time": "2026-01-29T19:13:24Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2709
+    },
+    {
+      "completion_time": "2026-01-29T19:13:26Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2711
+    },
+    {
+      "completion_time": "2026-01-29T19:13:33Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2718
+    },
+    {
+      "completion_time": "2026-01-29T19:13:36Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2720
+    },
+    {
+      "completion_time": "2026-01-29T19:13:37Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2722
+    },
+    {
+      "completion_time": "2026-01-29T19:13:38Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2723
+    },
+    {
+      "completion_time": "2026-01-29T19:13:47Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2731
+    },
+    {
+      "completion_time": "2026-01-29T19:13:49Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2733
+    },
+    {
+      "completion_time": "2026-01-29T19:13:51Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2735
+    },
+    {
+      "completion_time": "2026-01-29T19:13:52Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2736
+    },
+    {
+      "completion_time": "2026-01-29T19:13:53Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2737
+    },
+    {
+      "completion_time": "2026-01-29T19:13:54Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2738
+    },
+    {
+      "completion_time": "2026-01-29T19:13:58Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2742
+    },
+    {
+      "completion_time": "2026-01-29T19:13:59Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2743
+    },
+    {
+      "completion_time": "2026-01-29T19:14:03Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2747
+    },
+    {
+      "completion_time": "2026-01-29T19:14:05Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2749
+    },
+    {
+      "completion_time": "2026-01-29T19:14:09Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2753
+    },
+    {
+      "completion_time": "2026-01-29T19:14:11Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2755
+    },
+    {
+      "completion_time": "2026-01-29T19:14:13Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2757
+    },
+    {
+      "completion_time": "2026-01-29T19:14:13Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2757
+    },
+    {
+      "completion_time": "2026-01-29T19:14:15Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2759
+    },
+    {
+      "completion_time": "2026-01-29T19:14:17Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2761
+    },
+    {
+      "completion_time": "2026-01-29T19:14:19Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2763
+    },
+    {
+      "completion_time": "2026-01-29T19:14:21Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2765
+    },
+    {
+      "completion_time": "2026-01-29T19:14:21Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2765
+    },
+    {
+      "completion_time": "2026-01-29T19:14:22Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2766
+    },
+    {
+      "completion_time": "2026-01-29T19:14:28Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2772
+    },
+    {
+      "completion_time": "2026-01-29T19:14:29Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2773
+    },
+    {
+      "completion_time": "2026-01-29T19:14:31Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2775
+    },
+    {
+      "completion_time": "2026-01-29T19:14:44Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2788
+    },
+    {
+      "completion_time": "2026-01-29T19:14:47Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2791
+    },
+    {
+      "completion_time": "2026-01-29T19:14:49Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2793
+    },
+    {
+      "completion_time": "2026-01-29T19:14:51Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2795
+    },
+    {
+      "completion_time": "2026-01-29T19:14:56Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2800
+    },
+    {
+      "completion_time": "2026-01-29T19:14:57Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2801
+    },
+    {
+      "completion_time": "2026-01-29T19:15:01Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2805
+    },
+    {
+      "completion_time": "2026-01-29T19:15:02Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2806
+    },
+    {
+      "completion_time": "2026-01-29T19:15:04Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2808
+    },
+    {
+      "completion_time": "2026-01-29T19:15:07Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2811
+    },
+    {
+      "completion_time": "2026-01-29T19:15:11Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2815
+    },
+    {
+      "completion_time": "2026-01-29T19:15:15Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2819
+    },
+    {
+      "completion_time": "2026-01-29T19:15:20Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2824
+    },
+    {
+      "completion_time": "2026-01-29T19:15:31Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2834
+    },
+    {
+      "completion_time": "2026-01-29T19:15:32Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2835
+    },
+    {
+      "completion_time": "2026-01-29T19:15:33Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2836
+    },
+    {
+      "completion_time": "2026-01-29T19:15:40Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2843
+    },
+    {
+      "completion_time": "2026-01-29T19:15:42Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2845
+    },
+    {
+      "completion_time": "2026-01-29T19:15:43Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2846
+    },
+    {
+      "completion_time": "2026-01-29T19:15:45Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2848
+    },
+    {
+      "completion_time": "2026-01-29T19:15:53Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2856
+    },
+    {
+      "completion_time": "2026-01-29T19:15:58Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2861
+    },
+    {
+      "completion_time": "2026-01-29T19:15:58Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2861
+    },
+    {
+      "completion_time": "2026-01-29T19:16:00Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2863
+    },
+    {
+      "completion_time": "2026-01-29T19:16:03Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2866
+    },
+    {
+      "completion_time": "2026-01-29T19:16:03Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2866
+    },
+    {
+      "completion_time": "2026-01-29T19:16:08Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2871
+    },
+    {
+      "completion_time": "2026-01-29T19:16:10Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2873
+    },
+    {
+      "completion_time": "2026-01-29T19:16:11Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2874
+    },
+    {
+      "completion_time": "2026-01-29T19:16:13Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2876
+    },
+    {
+      "completion_time": "2026-01-29T19:16:16Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2879
+    },
+    {
+      "completion_time": "2026-01-29T19:16:21Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2884
+    },
+    {
+      "completion_time": "2026-01-29T19:16:21Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2884
+    },
+    {
+      "completion_time": "2026-01-29T19:16:22Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2885
+    },
+    {
+      "completion_time": "2026-01-29T19:16:24Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2887
+    },
+    {
+      "completion_time": "2026-01-29T19:16:25Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2888
+    },
+    {
+      "completion_time": "2026-01-29T19:16:30Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2893
+    },
+    {
+      "completion_time": "2026-01-29T19:16:38Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2901
+    },
+    {
+      "completion_time": "2026-01-29T19:16:40Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2903
+    },
+    {
+      "completion_time": "2026-01-29T19:16:47Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2910
+    },
+    {
+      "completion_time": "2026-01-29T19:16:47Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2910
+    },
+    {
+      "completion_time": "2026-01-29T19:16:49Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2912
+    },
+    {
+      "completion_time": "2026-01-29T19:16:50Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2913
+    },
+    {
+      "completion_time": "2026-01-29T19:16:52Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2915
+    },
+    {
+      "completion_time": "2026-01-29T19:16:54Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2917
+    },
+    {
+      "completion_time": "2026-01-29T19:16:56Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2919
+    },
+    {
+      "completion_time": "2026-01-29T19:16:59Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2922
+    },
+    {
+      "completion_time": "2026-01-29T19:16:59Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2922
+    },
+    {
+      "completion_time": "2026-01-29T19:17:03Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2926
+    },
+    {
+      "completion_time": "2026-01-29T19:17:07Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2929
+    },
+    {
+      "completion_time": "2026-01-29T19:17:08Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2931
+    },
+    {
+      "completion_time": "2026-01-29T19:17:09Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2932
+    },
+    {
+      "completion_time": "2026-01-29T19:17:10Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2933
+    },
+    {
+      "completion_time": "2026-01-29T19:17:18Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2940
+    },
+    {
+      "completion_time": "2026-01-29T19:17:18Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2940
+    },
+    {
+      "completion_time": "2026-01-29T19:17:19Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2941
+    },
+    {
+      "completion_time": "2026-01-29T19:17:22Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2944
+    },
+    {
+      "completion_time": "2026-01-29T19:17:24Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2946
+    },
+    {
+      "completion_time": "2026-01-29T19:17:24Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2946
+    },
+    {
+      "completion_time": "2026-01-29T19:17:27Z",
+      "task_id": "SEC-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2949
+    },
+    {
+      "completion_time": "2026-01-29T19:17:27Z",
+      "task_id": "SEC-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2949
+    },
+    {
+      "completion_time": "2026-01-29T19:17:28Z",
+      "task_id": "SEC-003",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2950
+    }
+  ]
+}
