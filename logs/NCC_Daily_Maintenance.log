@@ -49,3 +49,60 @@
 [2026-01-30 02:03:18] [MAINTENANCE] [INFO] Backed up: intelligence
 [2026-01-30 02:03:19] [MAINTENANCE] [INFO] Backed up: operations
 [2026-01-30 02:03:19] [MAINTENANCE] [INFO] Backed up: governance
+[2026-01-30 06:47:46] [MAINTENANCE] [INFO] Running comprehensive system audit...
+[2026-01-30 06:47:51] [MAINTENANCE] [ERROR] Organizational audit failed: At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Scripts\NCC.OrganizationalAudit.ps1:717 char:34
++     return $ratings[$Department] ?? 95.0
++                                  ~~
+Unexpected token '??' in expression or statement.
+[2026-01-30 06:47:51] [MAINTENANCE] [ERROR] System audit optimization failed: At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Scripts\NCC.System.Audit.Optimization.ps1:206 char:5
++     }
++     ~
+Unexpected token '}' in expression or statement.
+
+At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Scripts\NCC.System.Audit.Optimization.ps1:302 char:26
++     [Parameter(Mandatory=`$false)]
++                          ~
+Missing statement after '=' in named argument.
+
+At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Scripts\NCC.System.Audit.Optimization.ps1:302 char:26
++     [Parameter(Mandatory=`$false)]
++                          ~
+Missing closing ')' in expression.
+
+At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Scripts\NCC.System.Audit.Optimization.ps1:303 char:13
++     [switch]`$Continuous,
++             ~~~~~~~~~~~~
+Unexpected token '`$Continuous' in expression or statement.
+
+At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Scripts\NCC.System.Audit.Optimization.ps1:303 char:13
++     [switch]`$Continuous,
++             ~
+Missing closing ')' in expression.
+
+At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Scripts\NCC.System.Audit.Optimization.ps1:305 char:10
++     [int]`$IntervalMinutes = 1,
++          ~~~~~~~~~~~~~~~~~
+Unexpected token '`$IntervalMinutes' in expression or statement.
+
+At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Scripts\NCC.System.Audit.Optimization.ps1:307 char:13
++     [switch]`$SingleCycle,
++             ~~~~~~~~~~~~~
+Unexpected token '`$SingleCycle' in expression or statement.
+
+At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Scripts\NCC.System.Audit.Optimization.ps1:307 char:26
++     [switch]`$SingleCycle,
++                          ~
+Missing argument in parameter list.
+
+At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Scripts\NCC.System.Audit.Optimization.ps1:309 char:13
++     [switch]`$StatusReport
++             ~~~~~~~~~~~~~~
+Unexpected token '`$StatusReport' in expression or statement.
+
+At C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Scripts\NCC.System.Audit.Optimization.ps1:242 char:55
++     foreach ($agentName in $auditResults.Agents.Keys) {
++                                                       ~
+Missing closing '}' in statement block or type definition.
+
+Not all parse errors were reported.  Correct the reported errors and try again.
+[2026-01-30 06:47:51] [MAINTENANCE] [SUCCESS] System audit completed
