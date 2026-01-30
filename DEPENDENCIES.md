@@ -19,6 +19,8 @@
 - Replacing with alternative 3D rendering libraries (e.g., PyVista, Trimesh)
 - Converting to web-based visualization
 
+**Status**: Not currently installed - optional for 3D rendering capabilities
+
 ### Python Environment Setup
 **Dependencies File**: `requirements.txt` (created)
 **Installation**: `pip install -r requirements.txt`

@@ -332,17 +332,21 @@ function New-StatusReport {
         }
 
         SystemHealth = @{
-            AllScriptsPresent = Test-Path (Join-Path $ScriptPath "NCC.DirectiveCreation.ps1") -and
-                                Test-Path (Join-Path $ScriptPath "NCC.CEO.DirectiveBreakdown.ps1") -and
-                                Test-Path (Join-Path $ScriptPath "NCC.DeptHead.TaskCreation.ps1") -and
-                                Test-Path (Join-Path $ScriptPath "NCC.Agent.TaskExecution.ps1") -and
-                                Test-Path (Join-Path $ScriptPath "NCC.DeptHead.ReportCompilation.ps1") -and
-                                Test-Path (Join-Path $ScriptPath "NCC.CEO.FeedbackIntegration.ps1")
+            AllScriptsPresent = (
+                (Test-Path (Join-Path $ScriptPath "NCC.DirectiveCreation.ps1")) -and
+                (Test-Path (Join-Path $ScriptPath "NCC.CEO.DirectiveBreakdown.ps1")) -and
+                (Test-Path (Join-Path $ScriptPath "NCC.DeptHead.TaskCreation.ps1")) -and
+                (Test-Path (Join-Path $ScriptPath "NCC.Agent.TaskExecution.ps1")) -and
+                (Test-Path (Join-Path $ScriptPath "NCC.DeptHead.ReportCompilation.ps1")) -and
+                (Test-Path (Join-Path $ScriptPath "NCC.CEO.FeedbackIntegration.ps1"))
+            )
 
-            RequiredDirectories = Test-Path (Join-Path $RootPath "CEO_Messages") -and
-                                Test-Path (Join-Path $RootPath "reports") -and
-                                Test-Path (Join-Path $RootPath "goals") -and
-                                Test-Path (Join-Path $RootPath "AX")
+            RequiredDirectories = (
+                (Test-Path (Join-Path $RootPath "CEO_Messages")) -and
+                (Test-Path (Join-Path $RootPath "reports")) -and
+                (Test-Path (Join-Path $RootPath "goals")) -and
+                (Test-Path (Join-Path $RootPath "AX"))
+            )
         }
     }
 
@@ -481,56 +485,6 @@ if ($Continuous) {
     Write-Host "  4. Agent Task Execution" -ForegroundColor Gray
     Write-Host "  5. Department Head Report Compilation" -ForegroundColor Gray
     Write-Host "  6. CEO Feedback Integration" -ForegroundColor Gray
-}
-            New-Item -ItemType Directory -Path $backupDir -Force | Out-Null
-        }
-
-        # Copy critical data files
-        $dataFiles = @("data", "logs", "Doctrine", "Dashboard")
-        foreach ($dir in $dataFiles) {
-            $sourcePath = Join-Path $sourceDir $dir
-            if (Test-Path $sourcePath) {
-                Copy-Item -Path $sourcePath -Destination $backupDir -Recurse -Force
-            }
-        }
-
-        Write-OperationLog "Local backup completed: $backupDir" "BACKUP"
-
-        # Git backup
-        Write-OperationLog "Performing Git backup operations" "BACKUP"
-
-        # Add all changes
-        $gitAddResult = & git add . 2>&1
-        if ($LASTEXITCODE -eq 0) {
-            Write-OperationLog "Git add completed successfully" "BACKUP"
-        } else {
-            Write-OperationLog "Git add failed: $gitAddResult" "ERROR"
-        }
-
-        # Commit changes
-        $commitMessage = "NCC Automated Backup - Cycle #$CycleCount - $timestamp"
-        $gitCommitResult = & git commit -m $commitMessage 2>&1
-        if ($LASTEXITCODE -eq 0) {
-            Write-OperationLog "Git commit completed: $commitMessage" "BACKUP"
-        } elseif ($gitCommitResult -match "nothing to commit") {
-            Write-OperationLog "Git commit skipped: nothing to commit" "BACKUP"
-        } else {
-            Write-OperationLog "Git commit failed: $gitCommitResult" "ERROR"
-        }
-
-        # Push to remote
-        $gitPushResult = & git push 2>&1
-        if ($LASTEXITCODE -eq 0) {
-            Write-OperationLog "Git push completed successfully" "BACKUP"
-        } else {
-            Write-OperationLog "Git push failed: $gitPushResult" "ERROR"
-        }
-
-        Write-OperationLog "System backup completed successfully (Cycle #$CycleCount)" "BACKUP"
-
-    } catch {
-        Write-OperationLog "Backup failed: $($_.Exception.Message)" "ERROR"
-    }
 }
 
 function Commit-GitChanges {
@@ -2812,9 +2766,9 @@ function Generate-RES-Status-Report {
     $resReport = @"
 # RESONANCE ENERGY CORP (RES) - COMPREHENSIVE STATUS REPORT
 
-**Date:** $(Get-Date -Format "MMMM dd, yyyy")  
-**Classification:** NATRIX COMMAND CORP CONFIDENTIAL  
-**Report Author:** AZ PRIME Intelligence Division  
+**Date:** $(Get-Date -Format "MMMM dd, yyyy")
+**Classification:** NATRIX COMMAND CORP CONFIDENTIAL
+**Report Author:** AZ PRIME Intelligence Division
 **Cycle:** $($CycleNumber.ToString('D4'))
 
 ---
@@ -2973,9 +2927,9 @@ Off-Grid Technologies operates under RES as the decentralized power solutions di
 
 ---
 
-**Report End**  
-**AZ PRIME Intelligence Division**  
-**Date:** $(Get-Date -Format "MMMM dd, yyyy")  
+**Report End**
+**AZ PRIME Intelligence Division**
+**Date:** $(Get-Date -Format "MMMM dd, yyyy")
 **Cycle:** $($CycleNumber.ToString('D4'))
 "@
 
