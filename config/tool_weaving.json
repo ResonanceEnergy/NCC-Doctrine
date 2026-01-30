@@ -1,0 +1,11 @@
+{
+  "CrossAgentAPIs": true,
+  "ToolWeavingEnabled": true,
+  "SemanticInterfaces": true,
+  "ToolDiscovery": "Automatic",
+  "CollaborationProtocols": [
+    "SharedMemory",
+    "APICalls",
+    "EventDriven"
+  ]
+}

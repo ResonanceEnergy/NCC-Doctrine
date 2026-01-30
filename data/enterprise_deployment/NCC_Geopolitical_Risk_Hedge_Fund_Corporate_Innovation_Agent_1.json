@@ -1,0 +1,31 @@
+{
+  "CodeName": "Frost-CORP-Lock-XIII",
+  "DeploymentDate": "2026-01-30T11:09:03.9908785-07:00",
+  "LastActivity": "2026-01-30T11:09:03.9905557-07:00",
+  "SecurityClearance": "TOP_SECRET",
+  "ParentCompany": "NCC",
+  "Metadata": {},
+  "EntityName": "NCC_Geopolitical_Risk_Hedge_Fund",
+  "PerformanceMetrics": {
+    "InnovationVelocity": 0.0,
+    "FeedbackQuality": 0.0,
+    "ImplementationSuccess": 0.0,
+    "BBICIntegration": 0.0
+  },
+  "EntityType": "Company",
+  "Capabilities": [
+    "RealTimeInnovation",
+    "BBICIntegration",
+    "DataFlowRegulation",
+    "FeedbackLoopProcessing",
+    "PerformanceOptimization",
+    "PredictiveAnalytics"
+  ],
+  "AuthorityLevel": "CORPORATE_LEVEL",
+  "FeedbackHistory": {},
+  "Id": "NCC_Geopolitical_Risk_Hedge_Fund_Corporate_Innovation_Agent_1",
+  "ParentDepartment": "",
+  "ParentDivision": "",
+  "Status": "DEPLOYED",
+  "InnovationScore": 8.7
+}

@@ -1,0 +1,7 @@
+{
+  "SelfCompression": true,
+  "ReasoningEfficiency": 0.8,
+  "MultiAgentRL": true,
+  "CoTOptimization": true,
+  "LongFormOptimization": true
+}

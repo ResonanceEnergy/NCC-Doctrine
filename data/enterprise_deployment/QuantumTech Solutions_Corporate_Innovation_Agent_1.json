@@ -1,0 +1,31 @@
+{
+  "EntityName": "QuantumTech Solutions",
+  "SecurityClearance": "TOP_SECRET",
+  "ParentDepartment": "",
+  "ParentCompany": "NCC",
+  "FeedbackHistory": {},
+  "Status": "DEPLOYED",
+  "InnovationScore": 9.2,
+  "EntityType": "Company",
+  "LastActivity": "2026-01-30T11:07:57.2216282-07:00",
+  "DeploymentDate": "2026-01-30T11:07:57.2219648-07:00",
+  "Id": "QuantumTech Solutions_Corporate_Innovation_Agent_1",
+  "AuthorityLevel": "CORPORATE_LEVEL",
+  "PerformanceMetrics": {
+    "FeedbackQuality": 0.0,
+    "ImplementationSuccess": 0.0,
+    "InnovationVelocity": 0.0,
+    "BBICIntegration": 0.0
+  },
+  "CodeName": "Achilles-CORP-Tale-XIII",
+  "ParentDivision": "",
+  "Capabilities": [
+    "RealTimeInnovation",
+    "BBICIntegration",
+    "DataFlowRegulation",
+    "FeedbackLoopProcessing",
+    "PerformanceOptimization",
+    "PredictiveAnalytics"
+  ],
+  "Metadata": {}
+}

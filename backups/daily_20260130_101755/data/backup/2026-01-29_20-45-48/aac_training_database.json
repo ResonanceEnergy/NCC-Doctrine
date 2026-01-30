@@ -1,0 +1,36 @@
+{
+    "last_updated":  "2026-01-29T17:39:58.5160547-07:00",
+    "training_programs":  [
+                              {
+                                  "duration_hours":  40,
+                                  "certification":  "Basic Arbitrage Certification",
+                                  "name":  "Arbitrage Fundamentals",
+                                  "id":  "ARB-101",
+                                  "required_for":  [
+                                                       "All Agents"
+                                                   ]
+                              },
+                              {
+                                  "duration_hours":  60,
+                                  "certification":  "Quantitative Certification",
+                                  "name":  "Quantitative Methods",
+                                  "id":  "QUANT-201",
+                                  "required_for":  [
+                                                       "A-Agents",
+                                                       "B-Agents"
+                                                   ]
+                              },
+                              {
+                                  "duration_hours":  80,
+                                  "certification":  "Advanced Risk Certification",
+                                  "name":  "Advanced Risk Management",
+                                  "id":  "RISK-301",
+                                  "required_for":  [
+                                                       "A-Agents"
+                                                   ]
+                              }
+                          ],
+    "training_records":  [
+
+                         ]
+}

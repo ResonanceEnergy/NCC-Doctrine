@@ -1,0 +1,7 @@
+{
+  "TPU_Integration": true,
+  "LoadBalancing": true,
+  "ONNX_Runtime": true,
+  "CPU_Optimization": true,
+  "GPU_Acceleration": true
+}

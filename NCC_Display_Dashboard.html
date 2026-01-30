@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCC Ultimate Display Monitor - The Greatest Desktop Display</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <style>
+        :root {
+            --ncc-primary: #00ff41;
+            --ncc-secondary: #008f11;
+            --ncc-accent: #00ccff;
+            --ncc-warning: #ffaa00;
+            --ncc-danger: #ff4444;
+            --ncc-background: #0a0a0a;
+            --ncc-surface: #1a1a1a;
+            --ncc-text: #ffffff;
+            --ncc-text-secondary: #cccccc;
+            --ncc-border: #333333;
+            --ncc-grid: #2a2a2a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background: linear-gradient(135deg, var(--ncc-background) 0%, #000000 100%);
+            color: var(--ncc-text);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .ncc-header {
+            background: linear-gradient(90deg, var(--ncc-primary), var(--ncc-accent));
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .ncc-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
+            letter-spacing: 2px;
+        }
+
+        .ncc-status {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .status-indicator {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .status-online {
+            background: var(--ncc-primary);
+            color: #000;
+            box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+        }
+
+        .dashboard-container {
+            margin-top: 80px;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            max-width: 100%;
+        }
+
+        .metric-card {
+            background: var(--ncc-surface);
+            border: 1px solid var(--ncc-border);
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 255, 65, 0.2);
+            border-color: var(--ncc-primary);
+        }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--ncc-primary), var(--ncc-accent));
+        }
+
+        .metric-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--ncc-primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--ncc-text);
+        }
+
+        .metric-unit {
+            font-size: 1rem;
+            color: var(--ncc-text-secondary);
+            margin-left: 0.5rem;
+        }
+
+        .metric-change {
+            font-size: 0.9rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 10px;
+            margin-top: 0.5rem;
+            display: inline-block;
+        }
+
+        .change-positive {
+            background: rgba(0, 255, 65, 0.2);
+            color: var(--ncc-primary);
+        }
+
+        .change-negative {
+            background: rgba(255, 68, 68, 0.2);
+            color: var(--ncc-danger);
+        }
+
+        .chart-container {
+            height: 300px;
+            margin-top: 1rem;
+        }
+
+        .system-overview {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .overview-card {
+            background: var(--ncc-surface);
+            border: 1px solid var(--ncc-border);
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .overview-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--ncc-primary);
+        }
+
+        .overview-label {
+            font-size: 0.9rem;
+            color: var(--ncc-text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        .alerts-panel {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            width: 350px;
+            max-height: 70vh;
+            overflow-y: auto;
+            z-index: 999;
+        }
+
+        .alert-card {
+            background: var(--ncc-surface);
+            border: 1px solid var(--ncc-danger);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 16px rgba(255, 68, 68, 0.3);
+        }
+
+        .alert-title {
+            font-weight: 700;
+            color: var(--ncc-danger);
+            margin-bottom: 0.5rem;
+        }
+
+        .alert-message {
+            font-size: 0.9rem;
+            color: var(--ncc-text-secondary);
+        }
+
+        .performance-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .performance-metric {
+            background: var(--ncc-surface);
+            border: 1px solid var(--ncc-border);
+            border-radius: 10px;
+            padding: 1rem;
+        }
+
+        .performance-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--ncc-accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .performance-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 1.5rem;
+            color: var(--ncc-primary);
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        @media (max-width: 1200px) {
+            .dashboard-container {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .ncc-header {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            .ncc-title {
+                font-size: 2rem;
+            }
+
+            .dashboard-container {
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .alerts-panel {
+                width: 300px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="ncc-header">
+        <div class="ncc-title">
+            <i class="fas fa-server"></i> NCC ULTIMATE DISPLAY MONITOR
+        </div>
+        <div class="ncc-status">
+            <div class="status-indicator status-online">
+                <i class="fas fa-circle"></i> SYSTEMS ONLINE
+            </div>
+            <div id="connection-status" class="status-indicator">
+                <i class="fas fa-wifi"></i> CONNECTED
+            </div>
+        </div>
+    </header>
+
+    <div id="loading" class="loading">
+        <div class="pulse">
+            <i class="fas fa-cog fa-spin"></i> INITIALIZING NCC SYSTEMS...
+        </div>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+        <div class="dashboard-container">
+            <!-- System Overview -->
+            <div class="metric-card system-overview">
+                <div class="overview-card">
+                    <div class="overview-value" id="total-agents">0</div>
+                    <div class="overview-label">ACTIVE AGENTS</div>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-value" id="system-health">0%</div>
+                    <div class="overview-label">SYSTEM HEALTH</div>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-value" id="performance-score">0</div>
+                    <div class="overview-label">PERFORMANCE SCORE</div>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-value" id="active-alerts">0</div>
+                    <div class="overview-label">ACTIVE ALERTS</div>
+                </div>
+            </div>
+
+            <!-- CPU Metrics -->
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="fas fa-microchip"></i> CPU PERFORMANCE
+                </div>
+                <div class="metric-value" id="cpu-usage">0%</div>
+                <div class="metric-change change-positive" id="cpu-change">+0.0%</div>
+                <div class="chart-container">
+                    <canvas id="cpu-chart"></canvas>
+                </div>
+            </div>
+
+            <!-- Memory Metrics -->
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="fas fa-memory"></i> MEMORY USAGE
+                </div>
+                <div class="metric-value" id="memory-usage">0 GB</div>
+                <div class="metric-change change-negative" id="memory-change">-0.0%</div>
+                <div class="chart-container">
+                    <canvas id="memory-chart"></canvas>
+                </div>
+            </div>
+
+            <!-- Disk I/O -->
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="fas fa-hdd"></i> DISK I/O
+                </div>
+                <div class="metric-value" id="disk-io">0 MB/s</div>
+                <div class="metric-change change-positive" id="disk-change">+0.0%</div>
+                <div class="chart-container">
+                    <canvas id="disk-chart"></canvas>
+                </div>
+            </div>
+
+            <!-- Network Traffic -->
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="fas fa-network-wired"></i> NETWORK TRAFFIC
+                </div>
+                <div class="metric-value" id="network-traffic">0 MB/s</div>
+                <div class="metric-change change-positive" id="network-change">+0.0%</div>
+                <div class="chart-container">
+                    <canvas id="network-chart"></canvas>
+                </div>
+            </div>
+
+            <!-- Agent Performance -->
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="fas fa-users-cog"></i> AGENT PERFORMANCE
+                </div>
+                <div class="performance-grid">
+                    <div class="performance-metric">
+                        <div class="performance-title">AZ PRIME</div>
+                        <div class="performance-value" id="az-prime-status">ACTIVE</div>
+                    </div>
+                    <div class="performance-metric">
+                        <div class="performance-title">C-SUITE</div>
+                        <div class="performance-value" id="c-suite-status">ACTIVE</div>
+                    </div>
+                    <div class="performance-metric">
+                        <div class="performance-title">ELITE S15</div>
+                        <div class="performance-value" id="elite-s15-status">ACTIVE</div>
+                    </div>
+                    <div class="performance-metric">
+                        <div class="performance-title">UPI</div>
+                        <div class="performance-value" id="upi-status">ACTIVE</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Financial Metrics -->
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="fas fa-chart-line"></i> FINANCIAL PERFORMANCE
+                </div>
+                <div class="performance-grid">
+                    <div class="performance-metric">
+                        <div class="performance-title">PORTFOLIO VALUE</div>
+                        <div class="performance-value" id="portfolio-value">$0.00</div>
+                    </div>
+                    <div class="performance-metric">
+                        <div class="performance-title">DAILY P&L</div>
+                        <div class="performance-value" id="daily-pnl">$0.00</div>
+                    </div>
+                    <div class="performance-metric">
+                        <div class="performance-title">WIN RATE</div>
+                        <div class="performance-value" id="win-rate">0.0%</div>
+                    </div>
+                    <div class="performance-metric">
+                        <div class="performance-title">SHARPE RATIO</div>
+                        <div class="performance-value" id="sharpe-ratio">0.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Health -->
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="fas fa-heartbeat"></i> SYSTEM HEALTH
+                </div>
+                <div class="performance-grid">
+                    <div class="performance-metric">
+                        <div class="performance-title">UPTIME</div>
+                        <div class="performance-value" id="system-uptime">00:00:00</div>
+                    </div>
+                    <div class="performance-metric">
+                        <div class="performance-title">ERROR RATE</div>
+                        <div class="performance-value" id="error-rate">0.00%</div>
+                    </div>
+                    <div class="performance-metric">
+                        <div class="performance-title">RESPONSE TIME</div>
+                        <div class="performance-value" id="response-time">0ms</div>
+                    </div>
+                    <div class="performance-metric">
+                        <div class="performance-title">THROUGHPUT</div>
+                        <div class="performance-value" id="throughput">0 ops/s</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real-time Trends -->
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="fas fa-chart-area"></i> REAL-TIME TRENDS
+                </div>
+                <div class="chart-container">
+                    <canvas id="trends-chart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alerts Panel -->
+        <div class="alerts-panel" id="alerts-panel">
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="fas fa-exclamation-triangle"></i> SYSTEM ALERTS
+                </div>
+                <div id="alerts-container">
+                    <div class="alert-card">
+                        <div class="alert-title">System Initialized</div>
+                        <div class="alert-message">NCC Ultimate Display Monitor is now online and monitoring all systems.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class NCCDisplayMonitor {
+            constructor() {
+                this.ws = null;
+                this.charts = {};
+                this.metrics = {};
+                this.alerts = [];
+                this.isConnected = false;
+                this.reconnectAttempts = 0;
+                this.maxReconnectAttempts = 5;
+                this.reconnectDelay = 1000;
+
+                this.init();
+            }
+
+            init() {
+                this.setupWebSocket();
+                this.setupCharts();
+                this.setupEventListeners();
+                this.startMetricsPolling();
+            }
+
+            setupWebSocket() {
+                const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+                const wsUrl = `${protocol}//${window.location.host}`;
+
+                try {
+                    this.ws = new WebSocket(wsUrl);
+
+                    this.ws.onopen = (event) => {
+                        console.log('WebSocket connected');
+                        this.isConnected = true;
+                        this.reconnectAttempts = 0;
+                        this.updateConnectionStatus('CONNECTED', 'status-online');
+                        this.hideLoading();
+                    };
+
+                    this.ws.onmessage = (event) => {
+                        try {
+                            const data = JSON.parse(event.data);
+                            this.handleWebSocketMessage(data);
+                        } catch (error) {
+                            console.error('Error parsing WebSocket message:', error);
+                        }
+                    };
+
+                    this.ws.onclose = (event) => {
+                        console.log('WebSocket disconnected');
+                        this.isConnected = false;
+                        this.updateConnectionStatus('DISCONNECTED', '');
+                        this.attemptReconnect();
+                    };
+
+                    this.ws.onerror = (error) => {
+                        console.error('WebSocket error:', error);
+                        this.isConnected = false;
+                        this.updateConnectionStatus('ERROR', '');
+                    };
+                } catch (error) {
+                    console.error('Error creating WebSocket:', error);
+                    this.updateConnectionStatus('ERROR', '');
+                }
+            }
+
+            attemptReconnect() {
+                if (this.reconnectAttempts < this.maxReconnectAttempts) {
+                    this.reconnectAttempts++;
+                    console.log(`Attempting to reconnect (${this.reconnectAttempts}/${this.maxReconnectAttempts})...`);
+
+                    setTimeout(() => {
+                        this.setupWebSocket();
+                    }, this.reconnectDelay * this.reconnectAttempts);
+                } else {
+                    console.error('Max reconnection attempts reached');
+                    this.updateConnectionStatus('FAILED', '');
+                }
+            }
+
+            updateConnectionStatus(status, className) {
+                const statusElement = document.getElementById('connection-status');
+                statusElement.innerHTML = `<i class="fas fa-wifi"></i> ${status}`;
+                statusElement.className = `status-indicator ${className}`;
+            }
+
+            handleWebSocketMessage(data) {
+                if (data.type === 'metrics') {
+                    this.updateMetrics(data.payload);
+                } else if (data.type === 'alert') {
+                    this.addAlert(data.payload);
+                } else if (data.type === 'system-status') {
+                    this.updateSystemStatus(data.payload);
+                }
+            }
+
+            setupCharts() {
+                const chartConfig = {
+                    type: 'line',
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        animation: {
+                            duration: 0
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            x: {
+                                type: 'time',
+                                time: {
+                                    unit: 'second',
+                                    displayFormats: {
+                                        second: 'HH:mm:ss'
+                                    }
+                                },
+                                grid: {
+                                    color: 'rgba(255, 255, 255, 0.1)'
+                                },
+                                ticks: {
+                                    color: 'rgba(255, 255, 255, 0.7)'
+                                }
+                            },
+                            y: {
+                                grid: {
+                                    color: 'rgba(255, 255, 255, 0.1)'
+                                },
+                                ticks: {
+                                    color: 'rgba(255, 255, 255, 0.7)'
+                                }
+                            }
+                        },
+                        elements: {
+                            point: {
+                                radius: 0
+                            },
+                            line: {
+                                borderWidth: 2
+                            }
+                        }
+                    }
+                };
+
+                // CPU Chart
+                this.charts.cpu = new Chart(
+                    document.getElementById('cpu-chart'),
+                    {
+                        ...chartConfig,
+                        data: {
+                            datasets: [{
+                                label: 'CPU Usage %',
+                                data: [],
+                                borderColor: 'rgba(0, 255, 65, 1)',
+                                backgroundColor: 'rgba(0, 255, 65, 0.1)',
+                                fill: true
+                            }]
+                        }
+                    }
+                );
+
+                // Memory Chart
+                this.charts.memory = new Chart(
+                    document.getElementById('memory-chart'),
+                    {
+                        ...chartConfig,
+                        data: {
+                            datasets: [{
+                                label: 'Memory Usage GB',
+                                data: [],
+                                borderColor: 'rgba(0, 204, 255, 1)',
+                                backgroundColor: 'rgba(0, 204, 255, 0.1)',
+                                fill: true
+                            }]
+                        }
+                    }
+                );
+
+                // Disk I/O Chart
+                this.charts.disk = new Chart(
+                    document.getElementById('disk-chart'),
+                    {
+                        ...chartConfig,
+                        data: {
+                            datasets: [{
+                                label: 'Disk I/O MB/s',
+                                data: [],
+                                borderColor: 'rgba(255, 170, 0, 1)',
+                                backgroundColor: 'rgba(255, 170, 0, 0.1)',
+                                fill: true
+                            }]
+                        }
+                    }
+                );
+
+                // Network Chart
+                this.charts.network = new Chart(
+                    document.getElementById('network-chart'),
+                    {
+                        ...chartConfig,
+                        data: {
+                            datasets: [{
+                                label: 'Network Traffic MB/s',
+                                data: [],
+                                borderColor: 'rgba(255, 68, 68, 1)',
+                                backgroundColor: 'rgba(255, 68, 68, 0.1)',
+                                fill: true
+                            }]
+                        }
+                    }
+                );
+
+                // Trends Chart
+                this.charts.trends = new Chart(
+                    document.getElementById('trends-chart'),
+                    {
+                        type: 'line',
+                        data: {
+                            datasets: [
+                                {
+                                    label: 'CPU',
+                                    data: [],
+                                    borderColor: 'rgba(0, 255, 65, 1)',
+                                    backgroundColor: 'rgba(0, 255, 65, 0.1)',
+                                    fill: false,
+                                    tension: 0.4
+                                },
+                                {
+                                    label: 'Memory',
+                                    data: [],
+                                    borderColor: 'rgba(0, 204, 255, 1)',
+                                    backgroundColor: 'rgba(0, 204, 255, 0.1)',
+                                    fill: false,
+                                    tension: 0.4
+                                },
+                                {
+                                    label: 'Disk I/O',
+                                    data: [],
+                                    borderColor: 'rgba(255, 170, 0, 1)',
+                                    backgroundColor: 'rgba(255, 170, 0, 0.1)',
+                                    fill: false,
+                                    tension: 0.4
+                                }
+                            ]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            animation: {
+                                duration: 0
+                            },
+                            plugins: {
+                                legend: {
+                                    display: true,
+                                    labels: {
+                                        color: 'rgba(255, 255, 255, 0.7)'
+                                    }
+                                }
+                            },
+                            scales: {
+                                x: {
+                                    type: 'time',
+                                    time: {
+                                        unit: 'minute',
+                                        displayFormats: {
+                                            minute: 'HH:mm'
+                                        }
+                                    },
+                                    grid: {
+                                        color: 'rgba(255, 255, 255, 0.1)'
+                                    },
+                                    ticks: {
+                                        color: 'rgba(255, 255, 255, 0.7)'
+                                    }
+                                },
+                                y: {
+                                    grid: {
+                                        color: 'rgba(255, 255, 255, 0.1)'
+                                    },
+                                    ticks: {
+                                        color: 'rgba(255, 255, 255, 0.7)'
+                                    }
+                                }
+                            }
+                        }
+                    }
+                );
+            }
+
+            updateMetrics(metrics) {
+                this.metrics = { ...this.metrics, ...metrics };
+                const now = new Date();
+
+                // Update CPU
+                if (metrics.cpu !== undefined) {
+                    document.getElementById('cpu-usage').textContent = `${metrics.cpu.toFixed(1)}%`;
+                    this.updateChartData('cpu', now, metrics.cpu);
+                    this.updateChangeIndicator('cpu-change', metrics.cpu, 'cpu');
+                }
+
+                // Update Memory
+                if (metrics.memory !== undefined) {
+                    const memoryGB = (metrics.memory / (1024 * 1024 * 1024)).toFixed(1);
+                    document.getElementById('memory-usage').textContent = `${memoryGB} GB`;
+                    this.updateChartData('memory', now, parseFloat(memoryGB));
+                    this.updateChangeIndicator('memory-change', parseFloat(memoryGB), 'memory');
+                }
+
+                // Update Disk I/O
+                if (metrics.diskIO !== undefined) {
+                    document.getElementById('disk-io').textContent = `${metrics.diskIO.toFixed(1)} MB/s`;
+                    this.updateChartData('disk', now, metrics.diskIO);
+                    this.updateChangeIndicator('disk-change', metrics.diskIO, 'diskIO');
+                }
+
+                // Update Network
+                if (metrics.network !== undefined) {
+                    document.getElementById('network-traffic').textContent = `${metrics.network.toFixed(1)} MB/s`;
+                    this.updateChartData('network', now, metrics.network);
+                    this.updateChangeIndicator('network-change', metrics.network, 'network');
+                }
+
+                // Update System Overview
+                if (metrics.totalAgents !== undefined) {
+                    document.getElementById('total-agents').textContent = metrics.totalAgents;
+                }
+                if (metrics.systemHealth !== undefined) {
+                    document.getElementById('system-health').textContent = `${metrics.systemHealth.toFixed(1)}%`;
+                }
+                if (metrics.performanceScore !== undefined) {
+                    document.getElementById('performance-score').textContent = metrics.performanceScore.toFixed(0);
+                }
+                if (metrics.activeAlerts !== undefined) {
+                    document.getElementById('active-alerts').textContent = metrics.activeAlerts;
+                }
+
+                // Update Agent Status
+                if (metrics.agentStatus) {
+                    document.getElementById('az-prime-status').textContent = metrics.agentStatus.azPrime || 'UNKNOWN';
+                    document.getElementById('c-suite-status').textContent = metrics.agentStatus.cSuite || 'UNKNOWN';
+                    document.getElementById('elite-s15-status').textContent = metrics.agentStatus.eliteS15 || 'UNKNOWN';
+                    document.getElementById('upi-status').textContent = metrics.agentStatus.upi || 'UNKNOWN';
+                }
+
+                // Update Financial Metrics
+                if (metrics.financial) {
+                    document.getElementById('portfolio-value').textContent = `$${metrics.financial.portfolioValue?.toLocaleString() || '0.00'}`;
+                    document.getElementById('daily-pnl').textContent = `$${metrics.financial.dailyPnL?.toFixed(2) || '0.00'}`;
+                    document.getElementById('win-rate').textContent = `${metrics.financial.winRate?.toFixed(1) || '0.0'}%`;
+                    document.getElementById('sharpe-ratio').textContent = metrics.financial.sharpeRatio?.toFixed(2) || '0.00';
+                }
+
+                // Update System Health
+                if (metrics.systemHealthMetrics) {
+                    document.getElementById('system-uptime').textContent = this.formatUptime(metrics.systemHealthMetrics.uptime || 0);
+                    document.getElementById('error-rate').textContent = `${metrics.systemHealthMetrics.errorRate?.toFixed(2) || '0.00'}%`;
+                    document.getElementById('response-time').textContent = `${metrics.systemHealthMetrics.responseTime || 0}ms`;
+                    document.getElementById('throughput').textContent = `${metrics.systemHealthMetrics.throughput || 0} ops/s`;
+                }
+
+                // Update Trends Chart
+                this.updateTrendsChart(now, metrics);
+            }
+
+            updateChartData(chartName, time, value) {
+                const chart = this.charts[chartName];
+                if (chart) {
+                    chart.data.datasets[0].data.push({ x: time, y: value });
+                    if (chart.data.datasets[0].data.length > 60) {
+                        chart.data.datasets[0].data.shift();
+                    }
+                    chart.update('none');
+                }
+            }
+
+            updateTrendsChart(time, metrics) {
+                const chart = this.charts.trends;
+                if (chart) {
+                    if (metrics.cpu !== undefined) {
+                        chart.data.datasets[0].data.push({ x: time, y: metrics.cpu });
+                        if (chart.data.datasets[0].data.length > 120) {
+                            chart.data.datasets[0].data.shift();
+                        }
+                    }
+                    if (metrics.memory !== undefined) {
+                        const memoryGB = metrics.memory / (1024 * 1024 * 1024);
+                        chart.data.datasets[1].data.push({ x: time, y: memoryGB });
+                        if (chart.data.datasets[1].data.length > 120) {
+                            chart.data.datasets[1].data.shift();
+                        }
+                    }
+                    if (metrics.diskIO !== undefined) {
+                        chart.data.datasets[2].data.push({ x: time, y: metrics.diskIO });
+                        if (chart.data.datasets[2].data.length > 120) {
+                            chart.data.datasets[2].data.shift();
+                        }
+                    }
+                    chart.update('none');
+                }
+            }
+
+            updateChangeIndicator(elementId, currentValue, metricKey) {
+                const element = document.getElementById(elementId);
+                if (!element) return;
+
+                const previousValue = this.metrics[`${metricKey}_previous`] || currentValue;
+                const change = currentValue - previousValue;
+                const changePercent = previousValue !== 0 ? (change / previousValue) * 100 : 0;
+
+                this.metrics[`${metricKey}_previous`] = currentValue;
+
+                if (Math.abs(changePercent) < 0.1) return; // Don't show tiny changes
+
+                const isPositive = change >= 0;
+                element.className = `metric-change ${isPositive ? 'change-positive' : 'change-negative'}`;
+                element.textContent = `${isPositive ? '+' : ''}${changePercent.toFixed(1)}%`;
+            }
+
+            addAlert(alert) {
+                this.alerts.unshift(alert);
+                if (this.alerts.length > 10) {
+                    this.alerts.pop();
+                }
+                this.renderAlerts();
+            }
+
+            renderAlerts() {
+                const container = document.getElementById('alerts-container');
+                container.innerHTML = '';
+
+                this.alerts.forEach(alert => {
+                    const alertElement = document.createElement('div');
+                    alertElement.className = 'alert-card';
+                    alertElement.innerHTML = `
+                        <div class="alert-title">${alert.title || 'System Alert'}</div>
+                        <div class="alert-message">${alert.message || 'No message provided'}</div>
+                    `;
+                    container.appendChild(alertElement);
+                });
+            }
+
+            updateSystemStatus(status) {
+                // Update system status indicators
+                console.log('System status update:', status);
+            }
+
+            setupEventListeners() {
+                window.addEventListener('beforeunload', () => {
+                    if (this.ws) {
+                        this.ws.close();
+                    }
+                });
+            }
+
+            startMetricsPolling() {
+                // Fallback polling if WebSocket fails
+                setInterval(() => {
+                    if (!this.isConnected) {
+                        this.fetchMetricsFallback();
+                    }
+                }, 5000);
+            }
+
+            async fetchMetricsFallback() {
+                try {
+                    const response = await fetch('/api/metrics');
+                    if (response.ok) {
+                        const data = await response.json();
+                        this.updateMetrics(data);
+                    }
+                } catch (error) {
+                    console.error('Error fetching metrics fallback:', error);
+                }
+            }
+
+            formatUptime(seconds) {
+                const hours = Math.floor(seconds / 3600);
+                const minutes = Math.floor((seconds % 3600) / 60);
+                const secs = seconds % 60;
+                return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+            }
+
+            hideLoading() {
+                const loading = document.getElementById('loading');
+                const dashboard = document.getElementById('dashboard');
+
+                if (loading && dashboard) {
+                    loading.style.display = 'none';
+                    dashboard.style.display = 'block';
+                }
+            }
+        }
+
+        // Initialize the monitor when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            window.nccMonitor = new NCCDisplayMonitor();
+        });
+
+        // Handle page visibility changes for performance
+        document.addEventListener('visibilitychange', () => {
+            if (window.nccMonitor) {
+                if (document.hidden) {
+                    // Pause updates when tab is not visible
+                    window.nccMonitor.charts.cpu.options.animation.duration = 0;
+                    window.nccMonitor.charts.memory.options.animation.duration = 0;
+                    window.nccMonitor.charts.disk.options.animation.duration = 0;
+                    window.nccMonitor.charts.network.options.animation.duration = 0;
+                    window.nccMonitor.charts.trends.options.animation.duration = 0;
+                } else {
+                    // Resume updates when tab becomes visible
+                    window.nccMonitor.charts.cpu.options.animation.duration = 0;
+                    window.nccMonitor.charts.memory.options.animation.duration = 0;
+                    window.nccMonitor.charts.disk.options.animation.duration = 0;
+                    window.nccMonitor.charts.network.options.animation.duration = 0;
+                    window.nccMonitor.charts.trends.options.animation.duration = 0;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

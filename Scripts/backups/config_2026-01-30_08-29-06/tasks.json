@@ -1,0 +1,736 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "NCC: Initialize Dashboard Data",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC.Dashboard.ps1",
+        "-Initialize"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "NCC: Build Dashboard HTML",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC.Dashboard.ps1",
+        "-Build"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "NCC: Open Dashboard in Browser",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC.Dashboard.ps1",
+        "-Open"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "NCC: Open Digital Display",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/Launch_Digital_Display.ps1"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Opens the real-time NCC Digital Display with live metrics and activity feed"
+    },
+    {
+      "label": "ASG: Activate Systems Go (Simple)",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "ASG.ps1"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Simple ASG activation script - say 'ASG' to activate all systems"
+    },
+    {
+      "label": "BBIC: YouTube ingest (local)",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["scripts/bbic_youtube_ingest.py"],
+      "options": { "env": { "YT_API_KEY": "YOUR_YT_API_KEY" } }
+    },
+    {
+      "label": "BBIC: Reddit ingest (local)",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["scripts/bbic_reddit_ingest.py"]
+    },
+    {
+      "label": "ASG: Activate Systems Go",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC.ContinuousOperations.ps1",
+        "-Continuous",
+        "-IntervalMinutes",
+        "2"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Activates all NCC agents (AZ PRIME, C-Suite, Elite Unit S15, UPI, all departments) and runs them simultaneously in real-time continuous operations (2-minute intervals)"
+    },
+    {
+      "label": "Master Brain: Full Storage Analysis",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/Master_Brain_Storage_Analysis.ps1"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Runs complete Master Brain Storage Analysis including NAND log insights, storage health monitoring, performance optimization, and Faraday Fortress security assessment"
+    },
+    {
+      "label": "Master Brain: NAND Log Analysis",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/Master_Brain_Storage_Analysis.ps1",
+        "-Analyze"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Extracts 5 critical insights from each NAND log file for storage analysis and future consideration"
+    },
+    {
+      "label": "Master Brain: Storage Health Monitor",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/Master_Brain_Storage_Analysis.ps1",
+        "-Monitor"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Monitors storage health, file integrity, and data file status in real-time"
+    },
+    {
+      "label": "Master Brain: Performance Optimization",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/Master_Brain_Storage_Analysis.ps1",
+        "-Optimize"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Analyzes and optimizes storage performance, identifies bottlenecks, and suggests improvements"
+    },
+    {
+      "label": "Master Brain: Activate Faraday Fortress",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/Master_Brain_Storage_Analysis.ps1",
+        "-Fortress"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Activates Faraday Fortress security protocols, checks data encryption, permissions, and security posture"
+    },
+    {
+      "label": "Agent Tracker: Initialize Database",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "NCC_Agent_Task_Tracker.ps1",
+        "-Initialize"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Initialize the NCC Agent Task Tracker database and logging system"
+    },
+    {
+      "label": "Agent Tracker: Daily Check Protocol",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "NCC_Agent_Task_Tracker.ps1",
+        "-DailyCheck"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Execute comprehensive daily systems check and readiness assessment"
+    },
+    {
+      "label": "Agent Tracker: Performance Report",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "NCC_Agent_Task_Tracker.ps1",
+        "-PerformanceReport"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Generate detailed performance metrics and efficiency analysis"
+    },
+    {
+      "label": "Agent Tracker: Efficiency Analysis",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "NCC_Agent_Task_Tracker.ps1",
+        "-EfficiencyAnalysis"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Analyze efficiency patterns and identify optimization opportunities"
+    },
+    {
+      "label": "Agent Tracker: Cross-Department Sync",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "NCC_Agent_Task_Tracker.ps1",
+        "-CrossDepartmentSync"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Execute enterprise-wide cross-department synchronization protocol"
+    },
+    {
+      "label": "Agent Tracker: AZ Audit Compliance",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "NCC_Agent_Task_Tracker.ps1",
+        "-AZ_AuditCompliance"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Conduct AZ PRIME audit compliance check and certification"
+    },
+    {
+      "label": "Agent Tracker: AX Optimization Check",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "NCC_Agent_Task_Tracker.ps1",
+        "-AX_OptimizationCheck"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Analyze AX intelligence optimization status and performance gains"
+    },
+    {
+      "label": "AX: Deploy Intelligence-Driven Performance Optimization",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "AX_Deployment_System.ps1",
+        "-FullSystem"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Deploy complete AX intelligence-driven performance optimization system across all 3340+ NCC agents to achieve 99.9% efficiency"
+    },
+    {
+      "label": "AX: Deploy Intelligence Modules",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "AX_Deployment_System.ps1",
+        "-Deploy"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Deploy AX intelligence modules to all NCC agents"
+    },
+    {
+      "label": "AX: Activate Performance Systems",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "AX_Deployment_System.ps1",
+        "-Activate"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Activate all AX performance optimization systems"
+    },
+    {
+      "label": "AX: Monitor System Status",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "AX_Deployment_System.ps1",
+        "-Monitor"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Monitor AX performance optimization system health and status"
+    },
+    {
+      "label": "AX: Deployment Status Report",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "AX_Deployment_System.ps1",
+        "-Status"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Generate comprehensive AX deployment and performance status report"
+    },
+
+    // OPTIMIZATION & MAINTENANCE TASKS (ADDED FOR PERFORMANCE)
+    // ========================================================================
+
+    {
+      "label": "NCC: Clean Workspace Bloat",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-Command",
+        "Get-ChildItem 'backups' -Directory | Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-7) } | Remove-Item -Recurse -Force -Confirm:$false"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": [],
+      "detail": "Remove backup directories older than 7 days to reduce workspace bloat"
+    },
+
+    {
+      "label": "NCC: Performance Benchmark",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-Command",
+        "& './scripts/NCC.PerformanceBenchmark.ps1'"
+      ],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": [],
+      "detail": "Run comprehensive performance benchmarks on NCC systems"
+    },
+
+    {
+      "label": "NCC: System Health Check",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-Command",
+        "& './scripts/NCC.SystemHealth.ps1'"
+      ],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": [],
+      "detail": "Comprehensive system health check and diagnostics"
+    },
+
+    {
+      "label": "NCC: Optimize File Structure",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-Command",
+        "& './scripts/NCC.FileOptimizer.ps1'"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": [],
+      "detail": "Optimize file structure for maximum VS Code performance"
+    },
+
+    {
+      "label": "NCC: Clear VS Code Cache",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-Command",
+        "Remove-Item '$env:APPDATA\\Code\\User\\workspaceStorage\\*' -Recurse -Force -Confirm:$false -ErrorAction SilentlyContinue"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": [],
+      "detail": "Clear VS Code workspace cache for improved performance"
+    },
+
+    // NEXT STEPS: TEAM TRAINING & MONITORING TASKS
+    // ========================================================================
+
+    {
+      "label": "Team Training: Distribute Documentation",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Team_Training.ps1",
+        "-Distribute"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Distribute VS Code optimization documentation to all NCC agents"
+    },
+
+    {
+      "label": "Team Training: Verify Distribution",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Team_Training.ps1",
+        "-Verify"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Verify documentation distribution and training completion"
+    },
+
+    {
+      "label": "Team Training: Distribution Report",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Team_Training.ps1",
+        "-Report"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Generate comprehensive team training distribution report"
+    },
+
+    {
+      "label": "Performance: Full Benchmark Suite",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Performance_Monitor.ps1",
+        "-Benchmark"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Run comprehensive VS Code performance benchmark suite"
+    },
+
+    {
+      "label": "Performance: Continuous Monitoring",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Performance_Monitor.ps1",
+        "-Monitor",
+        "-DurationMinutes",
+        "60"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Start continuous performance monitoring for 60 minutes"
+    },
+
+    {
+      "label": "Performance: System Health Check",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Performance_Monitor.ps1",
+        "-Health"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Check VS Code system health and optimization status"
+    },
+
+    {
+      "label": "Performance: Comprehensive Report",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Performance_Monitor.ps1",
+        "-Report"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Generate comprehensive performance monitoring report"
+    },
+
+    {
+      "label": "Extensions: Check Updates",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Extension_Monitor.ps1",
+        "-CheckUpdates"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Check for VS Code extension updates"
+    },
+
+    {
+      "label": "Extensions: Validate Compatibility",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Extension_Monitor.ps1",
+        "-ValidateCompatibility"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Validate extension compatibility with current setup"
+    },
+
+    {
+      "label": "Extensions: Optimize Configuration",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Extension_Monitor.ps1",
+        "-OptimizeExtensions"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Optimize extension configuration for performance"
+    },
+
+    {
+      "label": "Extensions: Status Report",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Extension_Monitor.ps1",
+        "-Report"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Generate comprehensive extension status report"
+    },
+
+    {
+      "label": "Configuration: Check Drift",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Config_Monitor.ps1",
+        "-CheckDrift"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Check for configuration drift from optimal settings"
+    },
+
+    {
+      "label": "Configuration: Detect Optimizations",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Config_Monitor.ps1",
+        "-DetectOptimizations"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Detect potential configuration optimization opportunities"
+    },
+
+    {
+      "label": "Configuration: Auto Remediate",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Config_Monitor.ps1",
+        "-AutoRemediate"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "detail": "Automatically apply safe configuration remediation"
+    },
+
+    {
+      "label": "Configuration: Drift Report",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Config_Monitor.ps1",
+        "-Report"
+      ],
+      "group": "test",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Generate comprehensive configuration drift report"
+    },
+
+    {
+      "label": "Configuration: Create Backup",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "scripts/NCC_Config_Monitor.ps1",
+        "-Backup"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "detail": "Create backup of current VS Code configuration"
+    }
+  ]
+}

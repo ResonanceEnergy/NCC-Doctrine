@@ -1,0 +1,17 @@
+{
+  "active_departments": 9,
+  "lfg_protocol": "ENGAGED",
+  "current_directive": "DIR-20260129-182749",
+  "system_status": "ACTIVE",
+  "directive_completed": false,
+  "operational_mode": "HIERARCHICAL_60_CPM",
+  "cycle_count": 2956,
+  "last_update": "2026-01-29T19:17:34Z",
+  "active_agent_tasks": 19,
+  "performance_metrics": {
+    "hierarchical_efficiency": 96,
+    "average_cycle_time": "1 second",
+    "departments_coordinating": 9,
+    "cycles_per_minute": 60
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // EXISTING CONFIGURATIONS (PRESERVED)
+    // ========================================================================
+
+    {
+      "name": "NCC: Serve Dashboard",
+      "type": "pwa-node",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/NCC.Dashboard.ps1",
+      "args": ["-Serve"],
+      "console": "integratedTerminal",
+      "runtimeExecutable": "pwsh",
+      "cwd": "${workspaceFolder}"
+    },
+
+    {
+      "name": "NCC: Initialize Data",
+      "type": "pwa-node",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/NCC.Dashboard.ps1",
+      "args": ["-Initialize"],
+      "console": "integratedTerminal",
+      "runtimeExecutable": "pwsh",
+      "cwd": "${workspaceFolder}"
+    },
+
+    {
+      "name": "NCC: Build Dashboard",
+      "type": "pwa-node",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/NCC.Dashboard.ps1",
+      "args": ["-Build"],
+      "console": "integratedTerminal",
+      "runtimeExecutable": "pwsh",
+      "cwd": "${workspaceFolder}"
+    },
+
+    // ENHANCED DEBUGGING CONFIGURATIONS
+    // ========================================================================
+
+    // NODE.JS DEBUGGING
+    {
+      "name": "NCC: Debug Server (Node.js)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/server.js",
+      "skipFiles": [
+        "<node_internals>/**",
+        "node_modules/**"
+      ],
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": "3000"
+      },
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "openOnSessionStart",
+      "restart": true,
+      "autoAttachChildProcesses": true
+    },
+
+    {
+      "name": "NCC: Debug Server (Attach)",
+      "type": "node",
+      "request": "attach",
+      "port": 9229,
+      "skipFiles": [
+        "<node_internals>/**",
+        "node_modules/**"
+      ],
+      "restart": true
+    },
+
+    // POWERSHELL DEBUGGING
+    {
+      "name": "NCC: Debug PowerShell Script",
+      "type": "PowerShell",
+      "request": "launch",
+      "script": "${file}",
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+
+    {
+      "name": "NCC: Debug ASG System",
+      "type": "PowerShell",
+      "request": "launch",
+      "script": "${workspaceFolder}/ASG.ps1",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+
+    {
+      "name": "NCC: Debug Agent Tracker",
+      "type": "PowerShell",
+      "request": "launch",
+      "script": "${workspaceFolder}/NCC_Agent_Task_Tracker.ps1",
+      "args": ["-Initialize"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+
+    {
+      "name": "NCC: Debug AX Deployment",
+      "type": "PowerShell",
+      "request": "launch",
+      "script": "${workspaceFolder}/AX_Deployment_System.ps1",
+      "args": ["-FullSystem"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+
+    // PYTHON DEBUGGING
+    {
+      "name": "NCC: Debug Python Script",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+
+    {
+      "name": "NCC: Debug Render Script",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/render_4angles.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe"
+    },
+
+    // BROWSER DEBUGGING
+    {
+      "name": "NCC: Debug Dashboard (Chrome)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      }
+    },
+
+    {
+      "name": "NCC: Debug Dashboard (Edge)",
+      "type": "edge",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    }
+  ],
+
+  // COMPOUND LAUNCH CONFIGURATIONS
+  // ========================================================================
+
+  "compounds": [
+    {
+      "name": "NCC: Launch Full System",
+      "configurations": [
+        "NCC: Debug Server (Node.js)",
+        "NCC: Debug Dashboard (Chrome)"
+      ],
+      "presentation": {
+        "group": "NCC System",
+        "order": 1
+      }
+    },
+
+    {
+      "name": "NCC: Launch with PowerShell",
+      "configurations": [
+        "NCC: Debug Server (Node.js)",
+        "NCC: Debug ASG System"
+      ],
+      "presentation": {
+        "group": "NCC System",
+        "order": 2
+      }
+    }
+  ]
+}

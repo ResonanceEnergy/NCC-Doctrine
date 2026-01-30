@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCC Central Accounting System - AZ PRIME Command</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: #0a0a0a; color: #ffffff; }
+        .header { background: linear-gradient(90deg, #1a1a2e, #16213e); padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        .dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: #1a1a1a; border: 1px solid #333; border-radius: 10px; padding: 20px; }
+        .metric { font-size: 2em; font-weight: bold; color: #00ff88; }
+        .alert { background: #ff4444; color: white; padding: 10px; border-radius: 5px; margin: 10px 0; }
+        .status-good { color: #00ff88; }
+        .status-warning { color: #ffaa00; }
+        .status-critical { color: #ff4444; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔱 NCC Central Accounting System</h1>
+        <p><strong>Authority:</strong> AZ PRIME Command | <strong>Status:</strong> <span class="status-good">OPERATIONAL</span></p>
+        <p><strong>Last Update:</strong> 2026-01-30 08:36:47</p>
+    </div>
+
+    <div class="dashboard-grid">
+        <div class="card">
+            <h3>💰 Financial Overview</h3>
+            <div class="metric">$([math]::Round(FinancialDashboardEngine.SystemHealth.FinancialMetrics.TotalRevenue/1000000, 1))M</div>
+            <p>Total Revenue</p>
+            <div class="metric">$([math]::Round(FinancialDashboardEngine.SystemHealth.FinancialMetrics.NetIncome/1000000, 1))M</div>
+            <p>Net Income</p>
+        </div>
+
+        <div class="card">
+            <h3>🏦 Cash Position</h3>
+            <div class="metric">$([math]::Round(FinancialDashboardEngine.SystemHealth.FinancialMetrics.CashPosition/1000000, 1))M</div>
+            <p>Available Cash</p>
+            <p class="status-good">Optimal Liquidity</p>
+        </div>
+
+        <div class="card">
+            <h3>📈 System Health</h3>
+            <div class="metric">INITIALIZING</div>
+            <p>System Status</p>
+            <p>Transactions: 0</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Active Alerts</h3>
+            <div class="metric">0</div>
+            <p>Critical Alerts</p>
+            <p class='status-good'>No active alerts</p>
+        </div>
+    </div>
+</body>
+</html>

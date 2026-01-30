@@ -1,0 +1,7 @@
+{
+  "MemoryOptimization": true,
+  "CompressionEnabled": true,
+  "SharedCacheEnabled": true,
+  "CacheSizeGB": 100,
+  "MaxModels": 10
+}

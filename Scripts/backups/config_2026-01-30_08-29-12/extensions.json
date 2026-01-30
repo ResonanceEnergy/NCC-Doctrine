@@ -1,0 +1,77 @@
+{
+    // ============================================================================
+    // NCC-DOCTRINE EXTENSION RECOMMENDATIONS
+    // Generated: January 30, 2026 | Authority: AZ PRIME Command
+    // Purpose: Team consistency and optimal NCC development experience
+    // ============================================================================
+
+    "recommendations": [
+        // Core VS Code Extensions
+        "ms-vscode.vscode-typescript-next",
+        "ms-vscode.vscode-json",
+
+        // PowerShell Development (Critical for NCC)
+        "ms-vscode.powershell",
+        "ms-vscode.vscode-powershell",
+
+        // Python Development (for NCC analysis scripts)
+        "ms-python.python",
+        "ms-python.pylance",
+        "ms-python.black-formatter",
+        "ms-python.isort",
+
+        // Web Development (for dashboards and interfaces)
+        "ms-vscode.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+
+        // Git Integration
+        "ms-vscode.vscode-git-graph",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+
+        // Productivity & Navigation
+        "ms-vscode.vscode-icons",
+        "christian-kohler.path-intellisense",
+        "formulahendry.auto-rename-tag",
+        "bradlc.vscode-tailwindcss",
+
+        // Code Quality & Linting
+        "ms-vscode.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-next",
+
+        // Testing & Debugging
+        "ms-vscode.test-adapter-converter",
+        "hbenl.vscode-test-explorer",
+
+        // Documentation
+        "ms-vscode.vscode-markdown",
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+
+        // NCC-Specific Extensions
+        "ms-vscode.vscode-json",  // For NCC_ProjectSchema.json
+        "redhat.vscode-yaml",     // For configuration files
+        "ms-vscode.vscode-docker", // For containerized deployments
+
+        // Performance & Large Workspace
+        "ms-vscode.vscode-perfview",
+        "ms-vscode.vscode-remote-ssh",  // For remote development
+
+        // Security & Compliance (AZ PRIME requirements)
+        "ms-vscode.vscode-json",  // Schema validation
+        "redhat.vscode-yaml",     // Configuration validation
+        "ms-vscode.vscode-docker"  // Secure deployments
+    ],
+
+    "unwantedRecommendations": [
+        // Extensions that may conflict with NCC optimization
+        "ms-vscode.vscode-typescript-baseline",
+        "ms-vscode.vscode-typescript-legacy",
+        "formulahendry.auto-close-tag",  // Conflicts with auto-rename-tag
+        "christian-kohler.path-intellisense",  // May cause performance issues in large workspaces
+        "ms-vscode.vscode-git-graph",  // Redundant with mhutchie.git-graph
+        "donjayamanne.githistory"  // Redundant with mhutchie.git-graph
+    ]
+}

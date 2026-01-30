@@ -1,0 +1,3555 @@
+{
+  "last_updated": "2026-01-29T19:17:34Z",
+  "current_tasks": [],
+  "department": "Resonance",
+  "tasks_completed": 591,
+  "agent_performance": {},
+  "data_repository": [
+    {
+      "completion_time": "2026-01-29T18:31:02Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 192
+    },
+    {
+      "completion_time": "2026-01-29T18:31:04Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 194
+    },
+    {
+      "completion_time": "2026-01-29T18:31:09Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 199
+    },
+    {
+      "completion_time": "2026-01-29T18:31:10Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 200
+    },
+    {
+      "completion_time": "2026-01-29T18:31:14Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 204
+    },
+    {
+      "completion_time": "2026-01-29T18:31:16Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 206
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:18Z",
+      "task_id": "Resonance-002",
+      "cycle": 5
+    },
+    {
+      "completion_time": "2026-01-29T18:31:20Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 210
+    },
+    {
+      "completion_time": "2026-01-29T18:31:21Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 211
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:23Z",
+      "task_id": "Resonance-001",
+      "cycle": 10
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:25Z",
+      "task_id": "Resonance-002",
+      "cycle": 12
+    },
+    {
+      "completion_time": "2026-01-29T18:31:31Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 221
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:39Z",
+      "task_id": "Resonance-002",
+      "cycle": 25
+    },
+    {
+      "completion_time": "2026-01-29T18:31:40Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 230
+    },
+    {
+      "completion_time": "2026-01-29T18:31:42Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 231
+    },
+    {
+      "completion_time": "2026-01-29T18:31:46Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 235
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:46Z",
+      "task_id": "Resonance-002",
+      "cycle": 32
+    },
+    {
+      "completion_time": "2026-01-29T18:31:49Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 238
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:49Z",
+      "task_id": "Resonance-002",
+      "cycle": 35
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:52Z",
+      "task_id": "Resonance-001",
+      "cycle": 38
+    },
+    {
+      "completion_time": "2026-01-29T18:31:54Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 243
+    },
+    {
+      "completion_time": "2026-01-29T18:31:56Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 245
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:58Z",
+      "task_id": "Resonance-001",
+      "cycle": 44
+    },
+    {
+      "completion_time": "2026-01-29T18:32:19Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 268
+    },
+    {
+      "completion_time": "2026-01-29T18:32:22Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 271
+    },
+    {
+      "completion_time": "2026-01-29T18:32:26Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 275
+    },
+    {
+      "completion_time": "2026-01-29T18:32:27Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 276
+    },
+    {
+      "completion_time": "2026-01-29T18:32:38Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 287
+    },
+    {
+      "completion_time": "2026-01-29T18:32:40Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 289
+    },
+    {
+      "completion_time": "2026-01-29T18:32:43Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 292
+    },
+    {
+      "completion_time": "2026-01-29T18:32:44Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 293
+    },
+    {
+      "completion_time": "2026-01-29T18:32:55Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 304
+    },
+    {
+      "completion_time": "2026-01-29T18:33:01Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 310
+    },
+    {
+      "completion_time": "2026-01-29T18:33:03Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 312
+    },
+    {
+      "completion_time": "2026-01-29T18:33:05Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 314
+    },
+    {
+      "completion_time": "2026-01-29T18:33:07Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 316
+    },
+    {
+      "completion_time": "2026-01-29T18:33:11Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 320
+    },
+    {
+      "completion_time": "2026-01-29T18:33:14Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 323
+    },
+    {
+      "completion_time": "2026-01-29T18:33:16Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 325
+    },
+    {
+      "completion_time": "2026-01-29T18:33:17Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 326
+    },
+    {
+      "completion_time": "2026-01-29T18:33:19Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 328
+    },
+    {
+      "completion_time": "2026-01-29T18:33:23Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 332
+    },
+    {
+      "completion_time": "2026-01-29T18:33:28Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 337
+    },
+    {
+      "completion_time": "2026-01-29T18:33:30Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 339
+    },
+    {
+      "completion_time": "2026-01-29T18:33:32Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 341
+    },
+    {
+      "completion_time": "2026-01-29T18:33:34Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 343
+    },
+    {
+      "completion_time": "2026-01-29T18:33:36Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 345
+    },
+    {
+      "completion_time": "2026-01-29T18:33:36Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 345
+    },
+    {
+      "completion_time": "2026-01-29T18:33:38Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 347
+    },
+    {
+      "completion_time": "2026-01-29T18:33:41Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 350
+    },
+    {
+      "completion_time": "2026-01-29T18:33:47Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 355
+    },
+    {
+      "completion_time": "2026-01-29T18:33:49Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 357
+    },
+    {
+      "completion_time": "2026-01-29T18:33:51Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 359
+    },
+    {
+      "completion_time": "2026-01-29T18:34:03Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 371
+    },
+    {
+      "completion_time": "2026-01-29T18:34:04Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 372
+    },
+    {
+      "completion_time": "2026-01-29T18:34:20Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 388
+    },
+    {
+      "completion_time": "2026-01-29T18:34:25Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 393
+    },
+    {
+      "completion_time": "2026-01-29T18:34:27Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 395
+    },
+    {
+      "completion_time": "2026-01-29T18:34:35Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 403
+    },
+    {
+      "completion_time": "2026-01-29T18:34:43Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 411
+    },
+    {
+      "completion_time": "2026-01-29T18:34:43Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 411
+    },
+    {
+      "completion_time": "2026-01-29T18:34:48Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 416
+    },
+    {
+      "completion_time": "2026-01-29T18:34:49Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 417
+    },
+    {
+      "completion_time": "2026-01-29T18:35:01Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 429
+    },
+    {
+      "completion_time": "2026-01-29T18:35:10Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 438
+    },
+    {
+      "completion_time": "2026-01-29T18:35:12Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 440
+    },
+    {
+      "completion_time": "2026-01-29T18:35:16Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 444
+    },
+    {
+      "completion_time": "2026-01-29T18:35:16Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 444
+    },
+    {
+      "completion_time": "2026-01-29T18:35:19Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 447
+    },
+    {
+      "completion_time": "2026-01-29T18:35:20Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 448
+    },
+    {
+      "completion_time": "2026-01-29T18:35:32Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 460
+    },
+    {
+      "completion_time": "2026-01-29T18:35:32Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 460
+    },
+    {
+      "completion_time": "2026-01-29T18:35:54Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 481
+    },
+    {
+      "completion_time": "2026-01-29T18:35:54Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 481
+    },
+    {
+      "completion_time": "2026-01-29T18:36:01Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 488
+    },
+    {
+      "completion_time": "2026-01-29T18:36:03Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 490
+    },
+    {
+      "completion_time": "2026-01-29T18:36:08Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 495
+    },
+    {
+      "completion_time": "2026-01-29T18:36:10Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 497
+    },
+    {
+      "completion_time": "2026-01-29T18:36:11Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 498
+    },
+    {
+      "completion_time": "2026-01-29T18:36:12Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 499
+    },
+    {
+      "completion_time": "2026-01-29T18:36:15Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 502
+    },
+    {
+      "completion_time": "2026-01-29T18:36:19Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 506
+    },
+    {
+      "completion_time": "2026-01-29T18:36:26Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 513
+    },
+    {
+      "completion_time": "2026-01-29T18:36:35Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 522
+    },
+    {
+      "completion_time": "2026-01-29T18:36:35Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 522
+    },
+    {
+      "completion_time": "2026-01-29T18:36:45Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 532
+    },
+    {
+      "completion_time": "2026-01-29T18:36:46Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 533
+    },
+    {
+      "completion_time": "2026-01-29T18:37:02Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 549
+    },
+    {
+      "completion_time": "2026-01-29T18:37:05Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 552
+    },
+    {
+      "completion_time": "2026-01-29T18:37:11Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 558
+    },
+    {
+      "completion_time": "2026-01-29T18:37:12Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 559
+    },
+    {
+      "completion_time": "2026-01-29T18:37:12Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 559
+    },
+    {
+      "completion_time": "2026-01-29T18:37:18Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 565
+    },
+    {
+      "completion_time": "2026-01-29T18:37:20Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 567
+    },
+    {
+      "completion_time": "2026-01-29T18:37:27Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 574
+    },
+    {
+      "completion_time": "2026-01-29T18:37:44Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 590
+    },
+    {
+      "completion_time": "2026-01-29T18:37:45Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 591
+    },
+    {
+      "completion_time": "2026-01-29T18:37:48Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 594
+    },
+    {
+      "completion_time": "2026-01-29T18:37:54Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 600
+    },
+    {
+      "completion_time": "2026-01-29T18:37:54Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 600
+    },
+    {
+      "completion_time": "2026-01-29T18:37:57Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 603
+    },
+    {
+      "completion_time": "2026-01-29T18:37:58Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 604
+    },
+    {
+      "completion_time": "2026-01-29T18:38:00Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 606
+    },
+    {
+      "completion_time": "2026-01-29T18:38:01Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 607
+    },
+    {
+      "completion_time": "2026-01-29T18:38:02Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 608
+    },
+    {
+      "completion_time": "2026-01-29T18:38:08Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 614
+    },
+    {
+      "completion_time": "2026-01-29T18:38:10Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 616
+    },
+    {
+      "completion_time": "2026-01-29T18:38:10Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 616
+    },
+    {
+      "completion_time": "2026-01-29T18:38:11Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 617
+    },
+    {
+      "completion_time": "2026-01-29T18:38:25Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 631
+    },
+    {
+      "completion_time": "2026-01-29T18:38:26Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 632
+    },
+    {
+      "completion_time": "2026-01-29T18:38:31Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 637
+    },
+    {
+      "completion_time": "2026-01-29T18:38:32Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 638
+    },
+    {
+      "completion_time": "2026-01-29T18:38:37Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 643
+    },
+    {
+      "completion_time": "2026-01-29T18:38:44Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 650
+    },
+    {
+      "completion_time": "2026-01-29T18:38:47Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 653
+    },
+    {
+      "completion_time": "2026-01-29T18:38:48Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 654
+    },
+    {
+      "completion_time": "2026-01-29T18:38:55Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 661
+    },
+    {
+      "completion_time": "2026-01-29T18:38:57Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 663
+    },
+    {
+      "completion_time": "2026-01-29T18:39:08Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 674
+    },
+    {
+      "completion_time": "2026-01-29T18:39:09Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 675
+    },
+    {
+      "completion_time": "2026-01-29T18:39:12Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 678
+    },
+    {
+      "completion_time": "2026-01-29T18:39:14Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 680
+    },
+    {
+      "completion_time": "2026-01-29T18:39:15Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 681
+    },
+    {
+      "completion_time": "2026-01-29T18:39:24Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 690
+    },
+    {
+      "completion_time": "2026-01-29T18:39:34Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 699
+    },
+    {
+      "completion_time": "2026-01-29T18:39:37Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 702
+    },
+    {
+      "completion_time": "2026-01-29T18:39:42Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 707
+    },
+    {
+      "completion_time": "2026-01-29T18:39:49Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 714
+    },
+    {
+      "completion_time": "2026-01-29T18:39:52Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 717
+    },
+    {
+      "completion_time": "2026-01-29T18:39:57Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 722
+    },
+    {
+      "completion_time": "2026-01-29T18:40:01Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 726
+    },
+    {
+      "completion_time": "2026-01-29T18:40:03Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 728
+    },
+    {
+      "completion_time": "2026-01-29T18:40:05Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 730
+    },
+    {
+      "completion_time": "2026-01-29T18:40:19Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 744
+    },
+    {
+      "completion_time": "2026-01-29T18:40:34Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 759
+    },
+    {
+      "completion_time": "2026-01-29T18:40:39Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 764
+    },
+    {
+      "completion_time": "2026-01-29T18:40:42Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 767
+    },
+    {
+      "completion_time": "2026-01-29T18:40:46Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 771
+    },
+    {
+      "completion_time": "2026-01-29T18:40:47Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 772
+    },
+    {
+      "completion_time": "2026-01-29T18:40:47Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 772
+    },
+    {
+      "completion_time": "2026-01-29T18:40:56Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 781
+    },
+    {
+      "completion_time": "2026-01-29T18:40:59Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 784
+    },
+    {
+      "completion_time": "2026-01-29T18:41:00Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 785
+    },
+    {
+      "completion_time": "2026-01-29T18:41:04Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 789
+    },
+    {
+      "completion_time": "2026-01-29T18:41:06Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 791
+    },
+    {
+      "completion_time": "2026-01-29T18:41:07Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 792
+    },
+    {
+      "completion_time": "2026-01-29T18:41:10Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 795
+    },
+    {
+      "completion_time": "2026-01-29T18:41:15Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 800
+    },
+    {
+      "completion_time": "2026-01-29T18:41:19Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 804
+    },
+    {
+      "completion_time": "2026-01-29T18:41:22Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 807
+    },
+    {
+      "completion_time": "2026-01-29T18:41:25Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 810
+    },
+    {
+      "completion_time": "2026-01-29T18:41:28Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 813
+    },
+    {
+      "completion_time": "2026-01-29T18:41:32Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 816
+    },
+    {
+      "completion_time": "2026-01-29T18:41:33Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 817
+    },
+    {
+      "completion_time": "2026-01-29T18:41:37Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 821
+    },
+    {
+      "completion_time": "2026-01-29T18:41:41Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 825
+    },
+    {
+      "completion_time": "2026-01-29T18:41:42Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 826
+    },
+    {
+      "completion_time": "2026-01-29T18:41:51Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 835
+    },
+    {
+      "completion_time": "2026-01-29T18:41:54Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 838
+    },
+    {
+      "completion_time": "2026-01-29T18:41:57Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 841
+    },
+    {
+      "completion_time": "2026-01-29T18:42:02Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 846
+    },
+    {
+      "completion_time": "2026-01-29T18:42:06Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 850
+    },
+    {
+      "completion_time": "2026-01-29T18:42:22Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 866
+    },
+    {
+      "completion_time": "2026-01-29T18:42:23Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 867
+    },
+    {
+      "completion_time": "2026-01-29T18:42:23Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 867
+    },
+    {
+      "completion_time": "2026-01-29T18:42:30Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 874
+    },
+    {
+      "completion_time": "2026-01-29T18:42:31Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 875
+    },
+    {
+      "completion_time": "2026-01-29T18:42:33Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 877
+    },
+    {
+      "completion_time": "2026-01-29T18:42:36Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 880
+    },
+    {
+      "completion_time": "2026-01-29T18:42:36Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 880
+    },
+    {
+      "completion_time": "2026-01-29T18:42:40Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 884
+    },
+    {
+      "completion_time": "2026-01-29T18:42:47Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 891
+    },
+    {
+      "completion_time": "2026-01-29T18:42:52Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 896
+    },
+    {
+      "completion_time": "2026-01-29T18:42:54Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 898
+    },
+    {
+      "completion_time": "2026-01-29T18:42:59Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 903
+    },
+    {
+      "completion_time": "2026-01-29T18:43:01Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 905
+    },
+    {
+      "completion_time": "2026-01-29T18:43:16Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 919
+    },
+    {
+      "completion_time": "2026-01-29T18:43:17Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 920
+    },
+    {
+      "completion_time": "2026-01-29T18:43:21Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 924
+    },
+    {
+      "completion_time": "2026-01-29T18:43:25Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 928
+    },
+    {
+      "completion_time": "2026-01-29T18:43:30Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 933
+    },
+    {
+      "completion_time": "2026-01-29T18:43:31Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 934
+    },
+    {
+      "completion_time": "2026-01-29T18:43:40Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 943
+    },
+    {
+      "completion_time": "2026-01-29T18:43:53Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 956
+    },
+    {
+      "completion_time": "2026-01-29T18:43:55Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 958
+    },
+    {
+      "completion_time": "2026-01-29T18:44:15Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 978
+    },
+    {
+      "completion_time": "2026-01-29T18:44:29Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 992
+    },
+    {
+      "completion_time": "2026-01-29T18:44:32Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 995
+    },
+    {
+      "completion_time": "2026-01-29T18:44:37Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1000
+    },
+    {
+      "completion_time": "2026-01-29T18:45:05Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1028
+    },
+    {
+      "completion_time": "2026-01-29T18:45:05Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1028
+    },
+    {
+      "completion_time": "2026-01-29T18:45:09Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1032
+    },
+    {
+      "completion_time": "2026-01-29T18:45:10Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1033
+    },
+    {
+      "completion_time": "2026-01-29T18:45:14Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1037
+    },
+    {
+      "completion_time": "2026-01-29T18:45:16Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1038
+    },
+    {
+      "completion_time": "2026-01-29T18:45:24Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1046
+    },
+    {
+      "completion_time": "2026-01-29T18:45:25Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1047
+    },
+    {
+      "completion_time": "2026-01-29T18:45:32Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1054
+    },
+    {
+      "completion_time": "2026-01-29T18:45:44Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1066
+    },
+    {
+      "completion_time": "2026-01-29T18:45:46Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1068
+    },
+    {
+      "completion_time": "2026-01-29T18:45:48Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1070
+    },
+    {
+      "completion_time": "2026-01-29T18:45:53Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1075
+    },
+    {
+      "completion_time": "2026-01-29T18:46:10Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1092
+    },
+    {
+      "completion_time": "2026-01-29T18:46:19Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1101
+    },
+    {
+      "completion_time": "2026-01-29T18:46:22Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1104
+    },
+    {
+      "completion_time": "2026-01-29T18:46:25Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1107
+    },
+    {
+      "completion_time": "2026-01-29T18:46:26Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1108
+    },
+    {
+      "completion_time": "2026-01-29T18:46:38Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1120
+    },
+    {
+      "completion_time": "2026-01-29T18:46:40Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1122
+    },
+    {
+      "completion_time": "2026-01-29T18:46:42Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1124
+    },
+    {
+      "completion_time": "2026-01-29T18:46:53Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1135
+    },
+    {
+      "completion_time": "2026-01-29T18:47:02Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1144
+    },
+    {
+      "completion_time": "2026-01-29T18:47:05Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1147
+    },
+    {
+      "completion_time": "2026-01-29T18:47:18Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1160
+    },
+    {
+      "completion_time": "2026-01-29T18:47:19Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1161
+    },
+    {
+      "completion_time": "2026-01-29T18:47:23Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1165
+    },
+    {
+      "completion_time": "2026-01-29T18:47:26Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1167
+    },
+    {
+      "completion_time": "2026-01-29T18:47:27Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1168
+    },
+    {
+      "completion_time": "2026-01-29T18:47:38Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1179
+    },
+    {
+      "completion_time": "2026-01-29T18:47:44Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1185
+    },
+    {
+      "completion_time": "2026-01-29T18:47:48Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1189
+    },
+    {
+      "completion_time": "2026-01-29T18:47:48Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1189
+    },
+    {
+      "completion_time": "2026-01-29T18:47:52Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1193
+    },
+    {
+      "completion_time": "2026-01-29T18:47:54Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1195
+    },
+    {
+      "completion_time": "2026-01-29T18:48:08Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1209
+    },
+    {
+      "completion_time": "2026-01-29T18:48:09Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1210
+    },
+    {
+      "completion_time": "2026-01-29T18:48:13Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1214
+    },
+    {
+      "completion_time": "2026-01-29T18:48:14Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1215
+    },
+    {
+      "completion_time": "2026-01-29T18:48:15Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1216
+    },
+    {
+      "completion_time": "2026-01-29T18:48:16Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1217
+    },
+    {
+      "completion_time": "2026-01-29T18:48:22Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1223
+    },
+    {
+      "completion_time": "2026-01-29T18:48:32Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1233
+    },
+    {
+      "completion_time": "2026-01-29T18:48:39Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1240
+    },
+    {
+      "completion_time": "2026-01-29T18:48:50Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1251
+    },
+    {
+      "completion_time": "2026-01-29T18:48:53Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1254
+    },
+    {
+      "completion_time": "2026-01-29T18:48:58Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1259
+    },
+    {
+      "completion_time": "2026-01-29T18:49:00Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1261
+    },
+    {
+      "completion_time": "2026-01-29T18:49:07Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1268
+    },
+    {
+      "completion_time": "2026-01-29T18:49:08Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1269
+    },
+    {
+      "completion_time": "2026-01-29T18:49:14Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1275
+    },
+    {
+      "completion_time": "2026-01-29T18:49:20Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1281
+    },
+    {
+      "completion_time": "2026-01-29T18:49:23Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1284
+    },
+    {
+      "completion_time": "2026-01-29T18:49:24Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1285
+    },
+    {
+      "completion_time": "2026-01-29T18:49:32Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1292
+    },
+    {
+      "completion_time": "2026-01-29T18:49:33Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1293
+    },
+    {
+      "completion_time": "2026-01-29T18:49:37Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1297
+    },
+    {
+      "completion_time": "2026-01-29T18:49:43Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1303
+    },
+    {
+      "completion_time": "2026-01-29T18:49:45Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1305
+    },
+    {
+      "completion_time": "2026-01-29T18:49:47Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1307
+    },
+    {
+      "completion_time": "2026-01-29T18:49:47Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1307
+    },
+    {
+      "completion_time": "2026-01-29T18:49:48Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1308
+    },
+    {
+      "completion_time": "2026-01-29T18:49:49Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1309
+    },
+    {
+      "completion_time": "2026-01-29T18:49:50Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1310
+    },
+    {
+      "completion_time": "2026-01-29T18:49:52Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1312
+    },
+    {
+      "completion_time": "2026-01-29T18:49:59Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1319
+    },
+    {
+      "completion_time": "2026-01-29T18:50:00Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1320
+    },
+    {
+      "completion_time": "2026-01-29T18:50:05Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1324
+    },
+    {
+      "completion_time": "2026-01-29T18:50:07Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1326
+    },
+    {
+      "completion_time": "2026-01-29T18:50:07Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1326
+    },
+    {
+      "completion_time": "2026-01-29T18:50:24Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1342
+    },
+    {
+      "completion_time": "2026-01-29T18:50:25Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1343
+    },
+    {
+      "completion_time": "2026-01-29T18:50:27Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1345
+    },
+    {
+      "completion_time": "2026-01-29T18:50:30Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1348
+    },
+    {
+      "completion_time": "2026-01-29T18:50:33Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1351
+    },
+    {
+      "completion_time": "2026-01-29T18:50:46Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1364
+    },
+    {
+      "completion_time": "2026-01-29T18:50:50Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1368
+    },
+    {
+      "completion_time": "2026-01-29T18:50:56Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1374
+    },
+    {
+      "completion_time": "2026-01-29T18:50:57Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1375
+    },
+    {
+      "completion_time": "2026-01-29T18:51:00Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1378
+    },
+    {
+      "completion_time": "2026-01-29T18:51:07Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1385
+    },
+    {
+      "completion_time": "2026-01-29T18:51:10Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1388
+    },
+    {
+      "completion_time": "2026-01-29T18:51:12Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1390
+    },
+    {
+      "completion_time": "2026-01-29T18:51:18Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1396
+    },
+    {
+      "completion_time": "2026-01-29T18:51:18Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1396
+    },
+    {
+      "completion_time": "2026-01-29T18:51:19Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1397
+    },
+    {
+      "completion_time": "2026-01-29T18:51:22Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1400
+    },
+    {
+      "completion_time": "2026-01-29T18:51:26Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1404
+    },
+    {
+      "completion_time": "2026-01-29T18:51:28Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1406
+    },
+    {
+      "completion_time": "2026-01-29T18:51:36Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1413
+    },
+    {
+      "completion_time": "2026-01-29T18:51:42Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1419
+    },
+    {
+      "completion_time": "2026-01-29T18:51:50Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1427
+    },
+    {
+      "completion_time": "2026-01-29T18:51:52Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1429
+    },
+    {
+      "completion_time": "2026-01-29T18:51:54Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1431
+    },
+    {
+      "completion_time": "2026-01-29T18:52:07Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1444
+    },
+    {
+      "completion_time": "2026-01-29T18:52:15Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1452
+    },
+    {
+      "completion_time": "2026-01-29T18:52:21Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1458
+    },
+    {
+      "completion_time": "2026-01-29T18:52:22Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1459
+    },
+    {
+      "completion_time": "2026-01-29T18:52:24Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1461
+    },
+    {
+      "completion_time": "2026-01-29T18:52:25Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1462
+    },
+    {
+      "completion_time": "2026-01-29T18:52:27Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1464
+    },
+    {
+      "completion_time": "2026-01-29T18:52:29Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1466
+    },
+    {
+      "completion_time": "2026-01-29T18:52:31Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1468
+    },
+    {
+      "completion_time": "2026-01-29T18:52:33Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1470
+    },
+    {
+      "completion_time": "2026-01-29T18:52:41Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1478
+    },
+    {
+      "completion_time": "2026-01-29T18:52:42Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1479
+    },
+    {
+      "completion_time": "2026-01-29T18:52:46Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1483
+    },
+    {
+      "completion_time": "2026-01-29T18:52:54Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1491
+    },
+    {
+      "completion_time": "2026-01-29T18:52:56Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1493
+    },
+    {
+      "completion_time": "2026-01-29T18:52:57Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1494
+    },
+    {
+      "completion_time": "2026-01-29T18:52:59Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1496
+    },
+    {
+      "completion_time": "2026-01-29T18:53:09Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1506
+    },
+    {
+      "completion_time": "2026-01-29T18:53:10Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1507
+    },
+    {
+      "completion_time": "2026-01-29T18:53:11Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1508
+    },
+    {
+      "completion_time": "2026-01-29T18:53:11Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1508
+    },
+    {
+      "completion_time": "2026-01-29T18:53:19Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1515
+    },
+    {
+      "completion_time": "2026-01-29T18:53:20Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1516
+    },
+    {
+      "completion_time": "2026-01-29T18:53:24Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1520
+    },
+    {
+      "completion_time": "2026-01-29T18:53:33Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1529
+    },
+    {
+      "completion_time": "2026-01-29T18:53:54Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1550
+    },
+    {
+      "completion_time": "2026-01-29T18:53:54Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1550
+    },
+    {
+      "completion_time": "2026-01-29T18:53:55Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1551
+    },
+    {
+      "completion_time": "2026-01-29T18:53:58Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1554
+    },
+    {
+      "completion_time": "2026-01-29T18:53:59Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1555
+    },
+    {
+      "completion_time": "2026-01-29T18:54:02Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1558
+    },
+    {
+      "completion_time": "2026-01-29T18:54:16Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1572
+    },
+    {
+      "completion_time": "2026-01-29T18:54:28Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1584
+    },
+    {
+      "completion_time": "2026-01-29T18:54:36Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1592
+    },
+    {
+      "completion_time": "2026-01-29T18:54:45Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1601
+    },
+    {
+      "completion_time": "2026-01-29T18:54:46Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1602
+    },
+    {
+      "completion_time": "2026-01-29T18:55:00Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1616
+    },
+    {
+      "completion_time": "2026-01-29T18:55:05Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1621
+    },
+    {
+      "completion_time": "2026-01-29T18:55:08Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1624
+    },
+    {
+      "completion_time": "2026-01-29T18:55:17Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1632
+    },
+    {
+      "completion_time": "2026-01-29T18:55:21Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1636
+    },
+    {
+      "completion_time": "2026-01-29T18:55:23Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1638
+    },
+    {
+      "completion_time": "2026-01-29T18:55:53Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1668
+    },
+    {
+      "completion_time": "2026-01-29T18:55:59Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1674
+    },
+    {
+      "completion_time": "2026-01-29T18:56:02Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1677
+    },
+    {
+      "completion_time": "2026-01-29T18:56:07Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1682
+    },
+    {
+      "completion_time": "2026-01-29T18:56:11Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1686
+    },
+    {
+      "completion_time": "2026-01-29T18:56:12Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1687
+    },
+    {
+      "completion_time": "2026-01-29T18:56:23Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1698
+    },
+    {
+      "completion_time": "2026-01-29T18:56:28Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1703
+    },
+    {
+      "completion_time": "2026-01-29T18:56:34Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1709
+    },
+    {
+      "completion_time": "2026-01-29T18:56:36Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1711
+    },
+    {
+      "completion_time": "2026-01-29T18:56:37Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1712
+    },
+    {
+      "completion_time": "2026-01-29T18:56:39Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1714
+    },
+    {
+      "completion_time": "2026-01-29T18:56:44Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1719
+    },
+    {
+      "completion_time": "2026-01-29T18:56:54Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1729
+    },
+    {
+      "completion_time": "2026-01-29T18:56:57Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1731
+    },
+    {
+      "completion_time": "2026-01-29T18:57:02Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1736
+    },
+    {
+      "completion_time": "2026-01-29T18:57:02Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1736
+    },
+    {
+      "completion_time": "2026-01-29T18:57:09Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1743
+    },
+    {
+      "completion_time": "2026-01-29T18:57:12Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1746
+    },
+    {
+      "completion_time": "2026-01-29T18:57:15Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1749
+    },
+    {
+      "completion_time": "2026-01-29T18:57:16Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1750
+    },
+    {
+      "completion_time": "2026-01-29T18:57:17Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1751
+    },
+    {
+      "completion_time": "2026-01-29T18:57:19Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1753
+    },
+    {
+      "completion_time": "2026-01-29T18:57:24Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1758
+    },
+    {
+      "completion_time": "2026-01-29T18:57:26Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1760
+    },
+    {
+      "completion_time": "2026-01-29T18:57:29Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1763
+    },
+    {
+      "completion_time": "2026-01-29T18:57:40Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1774
+    },
+    {
+      "completion_time": "2026-01-29T18:57:44Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1778
+    },
+    {
+      "completion_time": "2026-01-29T18:57:57Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1791
+    },
+    {
+      "completion_time": "2026-01-29T18:58:01Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1795
+    },
+    {
+      "completion_time": "2026-01-29T18:58:03Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1797
+    },
+    {
+      "completion_time": "2026-01-29T18:58:08Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1802
+    },
+    {
+      "completion_time": "2026-01-29T18:58:19Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1813
+    },
+    {
+      "completion_time": "2026-01-29T18:58:25Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1819
+    },
+    {
+      "completion_time": "2026-01-29T18:58:32Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1826
+    },
+    {
+      "completion_time": "2026-01-29T18:58:36Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1830
+    },
+    {
+      "completion_time": "2026-01-29T18:58:56Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1849
+    },
+    {
+      "completion_time": "2026-01-29T18:58:58Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1851
+    },
+    {
+      "completion_time": "2026-01-29T18:59:14Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1867
+    },
+    {
+      "completion_time": "2026-01-29T18:59:17Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1870
+    },
+    {
+      "completion_time": "2026-01-29T18:59:17Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1870
+    },
+    {
+      "completion_time": "2026-01-29T18:59:25Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1878
+    },
+    {
+      "completion_time": "2026-01-29T18:59:27Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1880
+    },
+    {
+      "completion_time": "2026-01-29T18:59:31Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1884
+    },
+    {
+      "completion_time": "2026-01-29T18:59:35Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1888
+    },
+    {
+      "completion_time": "2026-01-29T18:59:44Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1897
+    },
+    {
+      "completion_time": "2026-01-29T18:59:52Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1905
+    },
+    {
+      "completion_time": "2026-01-29T18:59:56Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1909
+    },
+    {
+      "completion_time": "2026-01-29T19:00:01Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1914
+    },
+    {
+      "completion_time": "2026-01-29T19:00:13Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1926
+    },
+    {
+      "completion_time": "2026-01-29T19:00:21Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1934
+    },
+    {
+      "completion_time": "2026-01-29T19:00:23Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1935
+    },
+    {
+      "completion_time": "2026-01-29T19:00:39Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1951
+    },
+    {
+      "completion_time": "2026-01-29T19:00:43Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1955
+    },
+    {
+      "completion_time": "2026-01-29T19:00:44Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1956
+    },
+    {
+      "completion_time": "2026-01-29T19:00:50Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1962
+    },
+    {
+      "completion_time": "2026-01-29T19:00:50Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1962
+    },
+    {
+      "completion_time": "2026-01-29T19:00:52Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1964
+    },
+    {
+      "completion_time": "2026-01-29T19:00:52Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1964
+    },
+    {
+      "completion_time": "2026-01-29T19:00:56Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1968
+    },
+    {
+      "completion_time": "2026-01-29T19:01:00Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1972
+    },
+    {
+      "completion_time": "2026-01-29T19:01:03Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1975
+    },
+    {
+      "completion_time": "2026-01-29T19:01:12Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1984
+    },
+    {
+      "completion_time": "2026-01-29T19:01:14Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1986
+    },
+    {
+      "completion_time": "2026-01-29T19:01:18Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1990
+    },
+    {
+      "completion_time": "2026-01-29T19:01:22Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1994
+    },
+    {
+      "completion_time": "2026-01-29T19:01:26Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1998
+    },
+    {
+      "completion_time": "2026-01-29T19:01:32Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2004
+    },
+    {
+      "completion_time": "2026-01-29T19:01:37Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2009
+    },
+    {
+      "completion_time": "2026-01-29T19:01:43Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2015
+    },
+    {
+      "completion_time": "2026-01-29T19:01:49Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2021
+    },
+    {
+      "completion_time": "2026-01-29T19:01:49Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2021
+    },
+    {
+      "completion_time": "2026-01-29T19:01:52Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2024
+    },
+    {
+      "completion_time": "2026-01-29T19:01:58Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2030
+    },
+    {
+      "completion_time": "2026-01-29T19:02:14Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2046
+    },
+    {
+      "completion_time": "2026-01-29T19:02:16Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2048
+    },
+    {
+      "completion_time": "2026-01-29T19:02:17Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2049
+    },
+    {
+      "completion_time": "2026-01-29T19:02:24Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2055
+    },
+    {
+      "completion_time": "2026-01-29T19:02:24Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2055
+    },
+    {
+      "completion_time": "2026-01-29T19:02:31Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2062
+    },
+    {
+      "completion_time": "2026-01-29T19:02:32Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2063
+    },
+    {
+      "completion_time": "2026-01-29T19:02:46Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2077
+    },
+    {
+      "completion_time": "2026-01-29T19:02:53Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2084
+    },
+    {
+      "completion_time": "2026-01-29T19:02:54Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2085
+    },
+    {
+      "completion_time": "2026-01-29T19:03:12Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2103
+    },
+    {
+      "completion_time": "2026-01-29T19:03:14Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2105
+    },
+    {
+      "completion_time": "2026-01-29T19:03:19Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2110
+    },
+    {
+      "completion_time": "2026-01-29T19:03:21Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2112
+    },
+    {
+      "completion_time": "2026-01-29T19:03:36Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2127
+    },
+    {
+      "completion_time": "2026-01-29T19:03:40Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2131
+    },
+    {
+      "completion_time": "2026-01-29T19:03:45Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2136
+    },
+    {
+      "completion_time": "2026-01-29T19:03:47Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2138
+    },
+    {
+      "completion_time": "2026-01-29T19:03:49Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2140
+    },
+    {
+      "completion_time": "2026-01-29T19:03:50Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2141
+    },
+    {
+      "completion_time": "2026-01-29T19:03:54Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2145
+    },
+    {
+      "completion_time": "2026-01-29T19:03:58Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2149
+    },
+    {
+      "completion_time": "2026-01-29T19:04:00Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2151
+    },
+    {
+      "completion_time": "2026-01-29T19:04:08Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2159
+    },
+    {
+      "completion_time": "2026-01-29T19:04:09Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2160
+    },
+    {
+      "completion_time": "2026-01-29T19:04:10Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2161
+    },
+    {
+      "completion_time": "2026-01-29T19:04:33Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2183
+    },
+    {
+      "completion_time": "2026-01-29T19:04:43Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2193
+    },
+    {
+      "completion_time": "2026-01-29T19:04:48Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2198
+    },
+    {
+      "completion_time": "2026-01-29T19:05:01Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2211
+    },
+    {
+      "completion_time": "2026-01-29T19:05:02Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2212
+    },
+    {
+      "completion_time": "2026-01-29T19:05:03Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2213
+    },
+    {
+      "completion_time": "2026-01-29T19:05:07Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2217
+    },
+    {
+      "completion_time": "2026-01-29T19:05:08Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2218
+    },
+    {
+      "completion_time": "2026-01-29T19:05:09Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2219
+    },
+    {
+      "completion_time": "2026-01-29T19:05:20Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2230
+    },
+    {
+      "completion_time": "2026-01-29T19:05:20Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2230
+    },
+    {
+      "completion_time": "2026-01-29T19:05:22Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2232
+    },
+    {
+      "completion_time": "2026-01-29T19:05:41Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2251
+    },
+    {
+      "completion_time": "2026-01-29T19:05:48Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2258
+    },
+    {
+      "completion_time": "2026-01-29T19:05:55Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2265
+    },
+    {
+      "completion_time": "2026-01-29T19:05:59Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2269
+    },
+    {
+      "completion_time": "2026-01-29T19:06:10Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2280
+    },
+    {
+      "completion_time": "2026-01-29T19:06:15Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2285
+    },
+    {
+      "completion_time": "2026-01-29T19:06:16Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2286
+    },
+    {
+      "completion_time": "2026-01-29T19:06:22Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2292
+    },
+    {
+      "completion_time": "2026-01-29T19:06:25Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2295
+    },
+    {
+      "completion_time": "2026-01-29T19:06:26Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2296
+    },
+    {
+      "completion_time": "2026-01-29T19:06:29Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2299
+    },
+    {
+      "completion_time": "2026-01-29T19:06:37Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2306
+    },
+    {
+      "completion_time": "2026-01-29T19:06:42Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2311
+    },
+    {
+      "completion_time": "2026-01-29T19:06:58Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2327
+    },
+    {
+      "completion_time": "2026-01-29T19:06:59Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2328
+    },
+    {
+      "completion_time": "2026-01-29T19:07:07Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2336
+    },
+    {
+      "completion_time": "2026-01-29T19:07:20Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2349
+    },
+    {
+      "completion_time": "2026-01-29T19:07:22Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2351
+    },
+    {
+      "completion_time": "2026-01-29T19:07:25Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2354
+    },
+    {
+      "completion_time": "2026-01-29T19:07:33Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2362
+    },
+    {
+      "completion_time": "2026-01-29T19:07:40Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2369
+    },
+    {
+      "completion_time": "2026-01-29T19:07:41Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2370
+    },
+    {
+      "completion_time": "2026-01-29T19:07:45Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2374
+    },
+    {
+      "completion_time": "2026-01-29T19:07:49Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2378
+    },
+    {
+      "completion_time": "2026-01-29T19:08:03Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2392
+    },
+    {
+      "completion_time": "2026-01-29T19:08:05Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2394
+    },
+    {
+      "completion_time": "2026-01-29T19:08:06Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2395
+    },
+    {
+      "completion_time": "2026-01-29T19:08:09Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2398
+    },
+    {
+      "completion_time": "2026-01-29T19:08:11Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2400
+    },
+    {
+      "completion_time": "2026-01-29T19:08:14Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2403
+    },
+    {
+      "completion_time": "2026-01-29T19:08:20Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2408
+    },
+    {
+      "completion_time": "2026-01-29T19:08:23Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2411
+    },
+    {
+      "completion_time": "2026-01-29T19:08:25Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2413
+    },
+    {
+      "completion_time": "2026-01-29T19:08:39Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2426
+    },
+    {
+      "completion_time": "2026-01-29T19:08:42Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2429
+    },
+    {
+      "completion_time": "2026-01-29T19:08:48Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2435
+    },
+    {
+      "completion_time": "2026-01-29T19:08:54Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2441
+    },
+    {
+      "completion_time": "2026-01-29T19:08:55Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2442
+    },
+    {
+      "completion_time": "2026-01-29T19:08:58Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2445
+    },
+    {
+      "completion_time": "2026-01-29T19:09:00Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2447
+    },
+    {
+      "completion_time": "2026-01-29T19:09:02Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2449
+    },
+    {
+      "completion_time": "2026-01-29T19:09:04Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2451
+    },
+    {
+      "completion_time": "2026-01-29T19:09:05Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2452
+    },
+    {
+      "completion_time": "2026-01-29T19:09:24Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2471
+    },
+    {
+      "completion_time": "2026-01-29T19:09:26Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2473
+    },
+    {
+      "completion_time": "2026-01-29T19:09:27Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2474
+    },
+    {
+      "completion_time": "2026-01-29T19:09:32Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2479
+    },
+    {
+      "completion_time": "2026-01-29T19:09:35Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2482
+    },
+    {
+      "completion_time": "2026-01-29T19:09:38Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2485
+    },
+    {
+      "completion_time": "2026-01-29T19:09:41Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2488
+    },
+    {
+      "completion_time": "2026-01-29T19:09:48Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2495
+    },
+    {
+      "completion_time": "2026-01-29T19:09:49Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2496
+    },
+    {
+      "completion_time": "2026-01-29T19:09:52Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2499
+    },
+    {
+      "completion_time": "2026-01-29T19:09:57Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2504
+    },
+    {
+      "completion_time": "2026-01-29T19:10:09Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2515
+    },
+    {
+      "completion_time": "2026-01-29T19:10:12Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2518
+    },
+    {
+      "completion_time": "2026-01-29T19:10:12Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2518
+    },
+    {
+      "completion_time": "2026-01-29T19:10:18Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2524
+    },
+    {
+      "completion_time": "2026-01-29T19:10:31Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2537
+    },
+    {
+      "completion_time": "2026-01-29T19:10:36Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2542
+    },
+    {
+      "completion_time": "2026-01-29T19:10:39Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2545
+    },
+    {
+      "completion_time": "2026-01-29T19:10:43Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2549
+    },
+    {
+      "completion_time": "2026-01-29T19:10:48Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2554
+    },
+    {
+      "completion_time": "2026-01-29T19:11:05Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2571
+    },
+    {
+      "completion_time": "2026-01-29T19:11:06Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2572
+    },
+    {
+      "completion_time": "2026-01-29T19:11:09Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2575
+    },
+    {
+      "completion_time": "2026-01-29T19:11:10Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2576
+    },
+    {
+      "completion_time": "2026-01-29T19:11:15Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2581
+    },
+    {
+      "completion_time": "2026-01-29T19:11:21Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2587
+    },
+    {
+      "completion_time": "2026-01-29T19:11:22Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2588
+    },
+    {
+      "completion_time": "2026-01-29T19:11:36Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2602
+    },
+    {
+      "completion_time": "2026-01-29T19:11:48Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2614
+    },
+    {
+      "completion_time": "2026-01-29T19:11:49Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2615
+    },
+    {
+      "completion_time": "2026-01-29T19:11:50Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2616
+    },
+    {
+      "completion_time": "2026-01-29T19:11:51Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2617
+    },
+    {
+      "completion_time": "2026-01-29T19:11:58Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2623
+    },
+    {
+      "completion_time": "2026-01-29T19:12:13Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2638
+    },
+    {
+      "completion_time": "2026-01-29T19:12:17Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2642
+    },
+    {
+      "completion_time": "2026-01-29T19:12:21Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2646
+    },
+    {
+      "completion_time": "2026-01-29T19:12:28Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2653
+    },
+    {
+      "completion_time": "2026-01-29T19:12:28Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2653
+    },
+    {
+      "completion_time": "2026-01-29T19:12:30Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2655
+    },
+    {
+      "completion_time": "2026-01-29T19:12:34Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2659
+    },
+    {
+      "completion_time": "2026-01-29T19:12:47Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2672
+    },
+    {
+      "completion_time": "2026-01-29T19:12:48Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2673
+    },
+    {
+      "completion_time": "2026-01-29T19:12:49Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2674
+    },
+    {
+      "completion_time": "2026-01-29T19:12:51Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2676
+    },
+    {
+      "completion_time": "2026-01-29T19:13:03Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2688
+    },
+    {
+      "completion_time": "2026-01-29T19:13:05Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2690
+    },
+    {
+      "completion_time": "2026-01-29T19:13:11Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2696
+    },
+    {
+      "completion_time": "2026-01-29T19:13:16Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2701
+    },
+    {
+      "completion_time": "2026-01-29T19:13:17Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2702
+    },
+    {
+      "completion_time": "2026-01-29T19:13:21Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2706
+    },
+    {
+      "completion_time": "2026-01-29T19:13:25Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2710
+    },
+    {
+      "completion_time": "2026-01-29T19:13:26Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2711
+    },
+    {
+      "completion_time": "2026-01-29T19:13:28Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2713
+    },
+    {
+      "completion_time": "2026-01-29T19:13:29Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2714
+    },
+    {
+      "completion_time": "2026-01-29T19:13:36Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2720
+    },
+    {
+      "completion_time": "2026-01-29T19:13:36Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2721
+    },
+    {
+      "completion_time": "2026-01-29T19:13:45Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2729
+    },
+    {
+      "completion_time": "2026-01-29T19:13:58Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2742
+    },
+    {
+      "completion_time": "2026-01-29T19:14:00Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2744
+    },
+    {
+      "completion_time": "2026-01-29T19:14:01Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2745
+    },
+    {
+      "completion_time": "2026-01-29T19:14:09Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2753
+    },
+    {
+      "completion_time": "2026-01-29T19:14:12Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2756
+    },
+    {
+      "completion_time": "2026-01-29T19:14:16Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2760
+    },
+    {
+      "completion_time": "2026-01-29T19:14:21Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2765
+    },
+    {
+      "completion_time": "2026-01-29T19:14:24Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2768
+    },
+    {
+      "completion_time": "2026-01-29T19:14:26Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2770
+    },
+    {
+      "completion_time": "2026-01-29T19:14:37Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2781
+    },
+    {
+      "completion_time": "2026-01-29T19:14:50Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2794
+    },
+    {
+      "completion_time": "2026-01-29T19:14:53Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2797
+    },
+    {
+      "completion_time": "2026-01-29T19:14:59Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2803
+    },
+    {
+      "completion_time": "2026-01-29T19:15:07Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2811
+    },
+    {
+      "completion_time": "2026-01-29T19:15:09Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2813
+    },
+    {
+      "completion_time": "2026-01-29T19:15:12Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2816
+    },
+    {
+      "completion_time": "2026-01-29T19:15:19Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2823
+    },
+    {
+      "completion_time": "2026-01-29T19:15:26Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2829
+    },
+    {
+      "completion_time": "2026-01-29T19:15:37Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2840
+    },
+    {
+      "completion_time": "2026-01-29T19:15:38Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2841
+    },
+    {
+      "completion_time": "2026-01-29T19:15:40Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2843
+    },
+    {
+      "completion_time": "2026-01-29T19:15:47Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2850
+    },
+    {
+      "completion_time": "2026-01-29T19:15:57Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2860
+    },
+    {
+      "completion_time": "2026-01-29T19:15:58Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2861
+    },
+    {
+      "completion_time": "2026-01-29T19:16:12Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2875
+    },
+    {
+      "completion_time": "2026-01-29T19:16:13Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2876
+    },
+    {
+      "completion_time": "2026-01-29T19:16:15Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2878
+    },
+    {
+      "completion_time": "2026-01-29T19:16:16Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2879
+    },
+    {
+      "completion_time": "2026-01-29T19:16:20Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2883
+    },
+    {
+      "completion_time": "2026-01-29T19:16:24Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2887
+    },
+    {
+      "completion_time": "2026-01-29T19:16:25Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2888
+    },
+    {
+      "completion_time": "2026-01-29T19:16:28Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2891
+    },
+    {
+      "completion_time": "2026-01-29T19:16:33Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2896
+    },
+    {
+      "completion_time": "2026-01-29T19:16:34Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2897
+    },
+    {
+      "completion_time": "2026-01-29T19:16:34Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2897
+    },
+    {
+      "completion_time": "2026-01-29T19:16:36Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2899
+    },
+    {
+      "completion_time": "2026-01-29T19:16:41Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2904
+    },
+    {
+      "completion_time": "2026-01-29T19:16:44Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2907
+    },
+    {
+      "completion_time": "2026-01-29T19:16:46Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2909
+    },
+    {
+      "completion_time": "2026-01-29T19:16:52Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2915
+    },
+    {
+      "completion_time": "2026-01-29T19:16:54Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2917
+    },
+    {
+      "completion_time": "2026-01-29T19:16:57Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2920
+    },
+    {
+      "completion_time": "2026-01-29T19:17:03Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2926
+    },
+    {
+      "completion_time": "2026-01-29T19:17:04Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2927
+    },
+    {
+      "completion_time": "2026-01-29T19:17:12Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2935
+    },
+    {
+      "completion_time": "2026-01-29T19:17:12Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2935
+    },
+    {
+      "completion_time": "2026-01-29T19:17:14Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2937
+    },
+    {
+      "completion_time": "2026-01-29T19:17:15Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2938
+    },
+    {
+      "completion_time": "2026-01-29T19:17:17Z",
+      "task_id": "Resonance-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2939
+    },
+    {
+      "completion_time": "2026-01-29T19:17:26Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2948
+    },
+    {
+      "completion_time": "2026-01-29T19:17:28Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2950
+    },
+    {
+      "completion_time": "2026-01-29T19:17:29Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2951
+    },
+    {
+      "completion_time": "2026-01-29T19:17:34Z",
+      "task_id": "Resonance-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2956
+    }
+  ]
+}

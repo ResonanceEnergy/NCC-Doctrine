@@ -1,0 +1,490 @@
+{
+  "Remediation_Results": {
+    "Applied": [
+      "Added missing setting: editor.largeFileOptimizations",
+      "Added missing setting: extensions.showRecommendationsOnlyOnDemand",
+      "Added missing setting: extensions.ignoreRecommendations",
+      "Added missing setting: search.maxResults",
+      "Added missing setting: workspace.trust.enabled",
+      "Added missing setting: editor.codeActionsOnSave",
+      "Applied optimization: editor.minimap.enabled",
+      "Saved updated configuration"
+    ],
+    "Skipped": [],
+    "RequiresManual": [
+      {
+        "OptimalValue": {
+          "**/.DS_Store": true,
+          "**/.git/objects/**": true,
+          "**/backups/**": true,
+          "**/node_modules/**": true,
+          "**/.git/subtree-cache/**": true
+        },
+        "Impact": "Minor optimization opportunity",
+        "Severity": "Medium",
+        "HasDrift": true,
+        "Setting": "files.watcherExclude",
+        "CurrentValue": {
+          "**/.git/objects/**": true,
+          "**/.git/subtree-cache/**": true,
+          "**/node_modules/**": true,
+          "**/.venv/**": true,
+          "**/backups/**": true,
+          "**/logs/**": true,
+          "**/temp/**": true,
+          "**/cache/**": true,
+          "**/*.log": true
+        }
+      }
+    ],
+    "Errors": []
+  },
+  "Executive_Summary": {
+    "Manual_Review_Required": 1,
+    "Drift_Score": 35,
+    "Auto_Remediation_Applied": 8,
+    "Optimization_Opportunities": 2,
+    "Issues_Found": 7,
+    "Drift_Status": "Critical"
+  },
+  "Optimization_Analysis": {
+    "SecurityImprovements": [],
+    "PerformanceOptimizations": [
+      {
+        "Effort": "Low",
+        "RecommendedValue": true,
+        "Setting": "editor.minimap.enabled",
+        "CurrentValue": false,
+        "Impact": "Better code overview"
+      }
+    ],
+    "MaintenanceTasks": [],
+    "ProductivityEnhancements": [
+      {
+        "Effort": "Low",
+        "RecommendedValue": "explicit",
+        "Setting": "editor.codeActionsOnSave.source.organizeImports",
+        "CurrentValue": "not set",
+        "Impact": "Automatic import organization"
+      }
+    ]
+  },
+  "Generated_Date": "2026-01-30T08:29:37Z",
+  "Script_Version": "1.0.0",
+  "Recommendations": [
+    "Address 7 configuration drift issues",
+    "Review 2 optimization opportunities",
+    "Manually review 1 remediation items"
+  ],
+  "Report_Title": "NCC Configuration Drift Report",
+  "Drift_Analysis": {
+    "SettingsDrift": [],
+    "ExtraSettings": [
+      {
+        "Value": true,
+        "Setting": "breadcrumbs.enabled",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": 5000,
+        "Setting": "chat.agent.maxRequests",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": false,
+        "Setting": "diffEditor.renderSideBySide",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": 5,
+        "Setting": "editor.cursorSurroundingLines",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": false,
+        "Setting": "editor.detectIndentation",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "editor.formatOnPaste",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "editor.insertSpaces",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": false,
+        "Setting": "editor.minimap.enabled",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "editor.parameterHints.enabled",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": {
+          "other": false,
+          "comments": false,
+          "strings": true
+        },
+        "Setting": "editor.quickSuggestions",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "editor.smoothScrolling",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "editor.stickyScroll.enabled",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": "off",
+        "Setting": "editor.wordWrap",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "explorer.fileNesting.enabled",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": false,
+        "Setting": "explorer.fileNesting.expand",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": {
+          "*.ps1": "${capture}.ps1.md,${capture}.tests.ps1",
+          "*.js": "${capture}.js.map,${capture}.min.js,${capture}.d.ts",
+          "*.ts": "${capture}.js,${capture}.d.ts,${capture}.js.map",
+          "package.json": "package-lock.json,yarn.lock,.yarnrc,.npmrc",
+          "*.md": "*.md.html,*.md.pdf"
+        },
+        "Setting": "explorer.fileNesting.patterns",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": {
+          "*.ps1": "powershell",
+          "*.md": "markdown",
+          "*.psm1": "powershell",
+          "*.psd1": "powershell",
+          "*.cmd": "bat",
+          "*.bat": "bat"
+        },
+        "Setting": "files.associations",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": 1000,
+        "Setting": "files.autoSaveDelay",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": "C:\\Temp\\VSCodeBackups",
+        "Setting": "files.backupPath",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": "utf8",
+        "Setting": "files.encoding",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": {
+          "**/.venv": true,
+          "**/node_modules": true,
+          "**/backups": true,
+          "**/.git/objects/**": true,
+          "**/.git/subtree-cache/**": true,
+          "**/logs/*.log": true,
+          "**/temp/**": true,
+          "**/cache/**": true
+        },
+        "Setting": "files.exclude",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": "onExitAndWindowClose",
+        "Setting": "files.hotExit",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "files.insertFinalNewline",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": 524288,
+        "Setting": "files.maxWatchers",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "files.simpleDialog.enable",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": 104857600,
+        "Setting": "files.sizeWarning",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "files.trimTrailingWhitespace",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": false,
+        "Setting": "git.confirmSync",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "git.enableSmartCommit",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "git.ignoreLimitWarning",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": [
+          {
+            "fileMatch": [
+              "NCC_ProjectSchema.json"
+            ],
+            "url": "./NCC_ProjectSchema.json"
+          }
+        ],
+        "Setting": "json.schemas",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "outline.showClasses",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": false,
+        "Setting": "outline.showConstants",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "outline.showEnums",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "outline.showFunctions",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": false,
+        "Setting": "outline.showVariables",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "powershell.codeFormatting.useCorrectCasing",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": false,
+        "Setting": "powershell.enableProfileLoading",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": "./.venv/Scripts/python.exe",
+        "Setting": "python.defaultInterpreterPath",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "python.linting.enabled",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "python.linting.pylintEnabled",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": "view",
+        "Setting": "references.preferredLocation",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": "tree",
+        "Setting": "scm.defaultViewMode",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": false,
+        "Setting": "search.followSymlinks",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": false,
+        "Setting": "search.searchOnType",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": "on",
+        "Setting": "task.autoDetect",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": 10000,
+        "Setting": "terminal.integrated.scrollback",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "Setting": "terminal.integrated.shell.windows",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": [
+          "-NoLogo"
+        ],
+        "Setting": "terminal.integrated.shellArgs.windows",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": 50,
+        "Setting": "timeline.pageSize",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": 4096,
+        "Setting": "typescript.tsserver.maxTsServerMemory",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": "node",
+        "Setting": "typescript.tsserver.nodePath",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": {
+          "titleBar.activeBackground": "#1e3a5f",
+          "titleBar.activeForeground": "#ffffff",
+          "statusBar.background": "#2d5aa0",
+          "statusBar.foreground": "#ffffff"
+        },
+        "Setting": "workbench.colorCustomizations",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "workbench.commandPalette.preserveInput",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": "split",
+        "Setting": "workbench.editor.splitSizing",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": "right",
+        "Setting": "workbench.panel.defaultLocation",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": false,
+        "Setting": "workbench.quickOpen.closeOnFocusLost",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": true,
+        "Setting": "zenMode.centerLayout",
+        "Assessment": "Review if necessary"
+      },
+      {
+        "Value": false,
+        "Setting": "zenMode.fullScreen",
+        "Assessment": "Review if necessary"
+      }
+    ],
+    "IncorrectValues": [
+      {
+        "OptimalValue": {
+          "**/.DS_Store": true,
+          "**/.git/objects/**": true,
+          "**/backups/**": true,
+          "**/node_modules/**": true,
+          "**/.git/subtree-cache/**": true
+        },
+        "Impact": "Minor optimization opportunity",
+        "Severity": "Medium",
+        "HasDrift": true,
+        "Setting": "files.watcherExclude",
+        "CurrentValue": {
+          "**/.git/objects/**": true,
+          "**/.git/subtree-cache/**": true,
+          "**/node_modules/**": true,
+          "**/.venv/**": true,
+          "**/backups/**": true,
+          "**/logs/**": true,
+          "**/temp/**": true,
+          "**/cache/**": true,
+          "**/*.log": true
+        }
+      }
+    ],
+    "Status": "Critical",
+    "OverallScore": 35,
+    "MissingSettings": [
+      {
+        "OptimalValue": true,
+        "Setting": "editor.largeFileOptimizations",
+        "Severity": "High",
+        "Impact": "Performance degradation"
+      },
+      {
+        "OptimalValue": false,
+        "Setting": "extensions.showRecommendationsOnlyOnDemand",
+        "Severity": "High",
+        "Impact": "Performance degradation"
+      },
+      {
+        "OptimalValue": false,
+        "Setting": "extensions.ignoreRecommendations",
+        "Severity": "High",
+        "Impact": "Performance degradation"
+      },
+      {
+        "OptimalValue": 10000,
+        "Setting": "search.maxResults",
+        "Severity": "High",
+        "Impact": "Performance degradation"
+      },
+      {
+        "OptimalValue": false,
+        "Setting": "workspace.trust.enabled",
+        "Severity": "High",
+        "Impact": "Performance degradation"
+      },
+      {
+        "OptimalValue": {
+          "source.organizeImports": "explicit",
+          "source.fixAll.eslint": "explicit"
+        },
+        "Setting": "editor.codeActionsOnSave",
+        "Severity": "High",
+        "Impact": "Performance degradation"
+      }
+    ]
+  },
+  "Generated_By": "AZ PRIME Command"
+}

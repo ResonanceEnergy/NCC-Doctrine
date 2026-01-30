@@ -1,0 +1,31 @@
+{
+  "Id": "NCC__Automated_Expense_Optimization_Department_Department_Innovation_Agent_1",
+  "ParentDivision": "",
+  "ParentDepartment": "",
+  "CodeName": "Thor-DEPT-Legend-VII",
+  "InnovationScore": 9.0,
+  "Status": "DEPLOYED",
+  "FeedbackHistory": {},
+  "LastActivity": "2026-01-30T11:09:23.75815-07:00",
+  "AuthorityLevel": "DEPARTMENT_LEVEL",
+  "ParentCompany": "NCC",
+  "EntityType": "Department",
+  "PerformanceMetrics": {
+    "ImplementationSuccess": 0.0,
+    "BBICIntegration": 0.0,
+    "InnovationVelocity": 0.0,
+    "FeedbackQuality": 0.0
+  },
+  "Capabilities": [
+    "RealTimeInnovation",
+    "BBICIntegration",
+    "DataFlowRegulation",
+    "FeedbackLoopProcessing",
+    "PerformanceOptimization",
+    "PredictiveAnalytics"
+  ],
+  "Metadata": {},
+  "DeploymentDate": "2026-01-30T11:09:23.7583101-07:00",
+  "EntityName": "Automated_Expense_Optimization_Department",
+  "SecurityClearance": "TOP_SECRET"
+}

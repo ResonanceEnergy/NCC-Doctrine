@@ -1,0 +1,483 @@
+
+# Modular Agent Framework Integration
+$AgentModules = @{
+    Perception = "NCC.Agent.Perception.ps1"
+    Reasoning = "NCC.Agent.Reasoning.ps1"
+    Action = "NCC.Agent.Action.ps1"
+}
+
+function Invoke-SubAgentDecomposition {
+    param([string]$Task)
+
+    # Decompose complex tasks into sub-agent operations
+    $subTasks = @{
+        Analysis = "Analyze task requirements"
+        Planning = "Create execution plan"
+        Execution = "Perform task operations"
+        Validation = "Verify results"
+    }
+
+    foreach ($subTask in $subTasks.GetEnumerator()) {
+        Write-AgentLog "Executing sub-task: $($subTask.Key)" -Level "INFO"
+        # Execute sub-agent logic here
+    }
+}
+
+
+# ============================================================================
+# NCC-DOCTRINE TEAM TRAINING & DOCUMENTATION DISTRIBUTION SYSTEM
+# Generated: January 30, 2026 | Authority: AZ PRIME Command
+# Purpose: Automated distribution of VS Code optimization documentation to all NCC agents
+# ============================================================================
+
+<#
+.SYNOPSIS
+    NCC Team Training Documentation Distribution System
+
+.DESCRIPTION
+    Distributes VS Code optimization documentation and training materials
+    to all NCC agents across the enterprise. Ensures consistent knowledge
+    transfer and standardized development practices.
+
+.PARAMETER Distribute
+    Distribute documentation to all agent directories
+
+.PARAMETER Verify
+    Verify documentation distribution and integrity
+
+.PARAMETER Update
+    Update existing documentation with latest versions
+
+.PARAMETER Report
+    Generate distribution and training completion report
+
+.EXAMPLE
+    .\NCC_Team_Training.ps1 -Distribute
+
+.EXAMPLE
+    .\NCC_Team_Training.ps1 -Verify -Report
+#>
+
+param(
+    [switch]$Distribute,
+    [switch]$Verify,
+    [switch]$Update,
+    [switch]$Report
+)
+
+# ============================================================================
+# CONFIGURATION
+# ============================================================================
+
+$ScriptVersion = "1.0.0"
+$Authority = "AZ PRIME Command"
+$Generated = "January 30, 2026"
+
+# Documentation source paths
+$DocumentationSource = Join-Path $PSScriptRoot ".." ".vscode" "README.md"
+$SnippetsSource = Join-Path $PSScriptRoot ".." ".vscode" "snippets"
+
+# Distribution targets
+$AgentDirectories = @(
+    "_enterprise",
+    "_agents",
+    "agents",
+    "ADMIN",
+    "AIEthicsCouncil",
+    "AIGovernanceCouncil"
+)
+
+# ============================================================================
+# LOGGING CONFIGURATION
+# ============================================================================
+
+$LogFile = Join-Path $PSScriptRoot "logs" "NCC_Team_Training_$(Get-Date -Format 'yyyy-MM-dd_HH-mm-ss').log"
+$LogDirectory = Split-Path $LogFile -Parent
+
+if (!(Test-Path $LogDirectory)) {
+    New-Item -ItemType Directory -Path $LogDirectory -Force | Out-Null
+}
+
+function Write-NCCLog {
+    param(
+        [string]$Message,
+        [string]$Level = "INFO"
+    )
+
+    $Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $LogEntry = "[$Timestamp] [$Level] [TEAM-TRAINING] $Message"
+
+    Write-Host $LogEntry
+    Add-Content -Path $LogFile -Value $LogEntry
+}
+
+# ============================================================================
+# CORE FUNCTIONS
+# ============================================================================
+
+function Test-DocumentationSource {
+    <#
+    .SYNOPSIS
+        Verify that source documentation exists and is accessible
+    #>
+
+    Write-NCCLog "Verifying documentation source files..."
+
+    $sourceExists = Test-Path $DocumentationSource
+    $snippetsExist = Test-Path $SnippetsSource
+
+    if (-not $sourceExists) {
+        Write-NCCLog "CRITICAL: Main documentation source not found: $DocumentationSource" "ERROR"
+        return $false
+    }
+
+    if (-not $snippetsExist) {
+        Write-NCCLog "WARNING: Snippets directory not found: $SnippetsSource" "WARNING"
+    }
+
+    Write-NCCLog "Documentation source verification complete"
+    return $true
+}
+
+function Get-AgentDirectories {
+    <#
+    .SYNOPSIS
+        Discover all agent directories that need documentation
+    #>
+
+    Write-NCCLog "Discovering agent directories..."
+
+    $discoveredDirs = @()
+    $workspaceRoot = Split-Path $PSScriptRoot -Parent
+
+    foreach ($dir in $AgentDirectories) {
+        $fullPath = Join-Path $workspaceRoot $dir
+        if (Test-Path $fullPath) {
+            $discoveredDirs += $fullPath
+            Write-NCCLog "Found agent directory: $dir"
+        } else {
+            Write-NCCLog "Agent directory not found: $dir" "WARNING"
+        }
+    }
+
+    # Also scan for any _agent* directories
+    $agentPattern = Join-Path $workspaceRoot "_agent*"
+    $additionalDirs = Get-Item $agentPattern -ErrorAction SilentlyContinue
+    foreach ($dir in $additionalDirs) {
+        if ($dir.PSIsContainer) {
+            $discoveredDirs += $dir.FullName
+            Write-NCCLog "Found additional agent directory: $($dir.Name)"
+        }
+    }
+
+    Write-NCCLog "Discovered $($discoveredDirs.Count) agent directories"
+    return $discoveredDirs
+}
+
+function Copy-DocumentationToAgent {
+    <#
+    .SYNOPSIS
+        Copy documentation to a specific agent directory
+    #>
+
+    param(
+        [string]$AgentDirectory
+    )
+
+    $agentName = Split-Path $AgentDirectory -Leaf
+    Write-NCCLog "Distributing documentation to agent: $agentName"
+
+    try {
+        # Create documentation directory in agent folder
+        $agentDocsDir = Join-Path $AgentDirectory ".vscode"
+        if (!(Test-Path $agentDocsDir)) {
+            New-Item -ItemType Directory -Path $agentDocsDir -Force | Out-Null
+            Write-NCCLog "Created .vscode directory for agent: $agentName"
+        }
+
+        # Copy main documentation
+        $targetDoc = Join-Path $agentDocsDir "README.md"
+        Copy-Item -Path $DocumentationSource -Destination $targetDoc -Force
+        Write-NCCLog "Copied main documentation to: $targetDoc"
+
+        # Copy snippets if they exist
+        if (Test-Path $SnippetsSource) {
+            $targetSnippets = Join-Path $agentDocsDir "snippets"
+            if (!(Test-Path $targetSnippets)) {
+                New-Item -ItemType Directory -Path $targetSnippets -Force | Out-Null
+            }
+
+            Copy-Item -Path "$SnippetsSource\*" -Destination $targetSnippets -Recurse -Force
+            Write-NCCLog "Copied code snippets to agent: $agentName"
+        }
+
+        # Create agent-specific training completion marker
+        $trainingMarker = Join-Path $agentDocsDir "training_complete.json"
+        $trainingData = @{
+            agent = $agentName
+            documentation_version = $ScriptVersion
+            distributed_date = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
+            authority = $Authority
+            training_status = "distributed"
+            next_review_date = (Get-Date).AddDays(30).ToString("yyyy-MM-dd")
+        } | ConvertTo-Json
+
+        $trainingData | Out-File -FilePath $trainingMarker -Encoding UTF8
+        Write-NCCLog "Created training completion marker for agent: $agentName"
+
+        return $true
+    }
+    catch {
+        Write-NCCLog "Failed to distribute documentation to agent ${agentName}: $($_.Exception.Message)" "ERROR"
+        return $false
+    }
+}
+
+function Distribute-Documentation {
+    <#
+    .SYNOPSIS
+        Distribute documentation to all discovered agent directories
+    #>
+
+    Write-NCCLog "Starting documentation distribution process..."
+
+    if (!(Test-DocumentationSource)) {
+        Write-NCCLog "Documentation distribution aborted due to source verification failure" "ERROR"
+        return $false
+    }
+
+    $agentDirs = Get-AgentDirectories
+    $successCount = 0
+    $totalCount = $agentDirs.Count
+
+    foreach ($dir in $agentDirs) {
+        if (Copy-DocumentationToAgent -AgentDirectory $dir) {
+            $successCount++
+        }
+    }
+
+    Write-NCCLog "Documentation distribution complete: $successCount/$totalCount agents successful"
+
+    if ($successCount -eq $totalCount) {
+        Write-NCCLog "SUCCESS: All agents received documentation distribution"
+        return $true
+    } else {
+        Write-NCCLog "WARNING: Some agents failed to receive documentation" "WARNING"
+        return $false
+    }
+}
+
+function Verify-DocumentationDistribution {
+    <#
+    .SYNOPSIS
+        Verify that documentation was properly distributed to all agents
+    #>
+
+    Write-NCCLog "Starting documentation distribution verification..."
+
+    $agentDirs = Get-AgentDirectories
+    $verifiedCount = 0
+    $totalCount = $agentDirs.Count
+    $issues = @()
+
+    foreach ($dir in $agentDirs) {
+        $agentName = Split-Path $dir -Leaf
+        $agentDocsDir = Join-Path $dir ".vscode"
+        $agentReadme = Join-Path $agentDocsDir "README.md"
+        $trainingMarker = Join-Path $agentDocsDir "training_complete.json"
+
+        $docExists = Test-Path $agentReadme
+        $markerExists = Test-Path $trainingMarker
+
+        if ($docExists -and $markerExists) {
+            # Verify training marker content
+            try {
+                $markerContent = Get-Content $trainingMarker -Raw | ConvertFrom-Json
+                if ($markerContent.documentation_version -eq $ScriptVersion) {
+                    $verifiedCount++
+                    Write-NCCLog "Agent ${agentName}: Documentation verified"
+                } else {
+                    $issues += "Agent ${agentName}: Version mismatch (expected: $($ScriptVersion), found: $($markerContent.documentation_version))"
+                }
+            }
+            catch {
+                $issues += "Agent ${agentName}: Invalid training marker format"
+            }
+        } elseif ($docExists) {
+            $issues += "Agent ${agentName}: Documentation exists but no training marker"
+        } else {
+            $issues += "Agent ${agentName}: Documentation missing"
+        }
+    }
+
+    Write-NCCLog "Verification complete: $verifiedCount/$totalCount agents verified"
+
+    if ($issues.Count -gt 0) {
+        Write-NCCLog "ISSUES FOUND:" "WARNING"
+        foreach ($issue in $issues) {
+            Write-NCCLog "  - $issue" "WARNING"
+        }
+    }
+
+    return @{
+        Verified = $verifiedCount
+        Total = $totalCount
+        Issues = $issues
+        Success = ($issues.Count -eq 0)
+    }
+}
+
+function Update-Documentation {
+    <#
+    .SYNOPSIS
+        Update existing documentation with latest versions
+    #>
+
+    Write-NCCLog "Starting documentation update process..."
+
+    # This is essentially the same as distribute but forces overwrite
+    $result = Distribute-Documentation
+
+    if ($result) {
+        Write-NCCLog "Documentation update completed successfully"
+    } else {
+        Write-NCCLog "Documentation update completed with issues" "WARNING"
+    }
+
+    return $result
+}
+
+function New-DistributionReport {
+    <#
+    .SYNOPSIS
+        Generate a comprehensive distribution and training report
+    #>
+
+    Write-NCCLog "Generating distribution and training report..."
+
+    $verification = Verify-DocumentationDistribution
+    $agentDirs = Get-AgentDirectories
+
+    $report = @{
+        report_title = "NCC Team Training Documentation Distribution Report"
+        generated_date = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
+        generated_by = $Authority
+        script_version = $ScriptVersion
+
+        summary = @{
+            total_agents = $agentDirs.Count
+            verified_agents = $verification.Verified
+            success_rate = if ($agentDirs.Count -gt 0) { [math]::Round(($verification.Verified / $agentDirs.Count) * 100, 2) } else { 0 }
+            issues_count = $verification.Issues.Count
+        }
+
+        distribution_details = @()
+        issues = $verification.Issues
+    }
+
+    # Add details for each agent
+    foreach ($dir in $agentDirs) {
+        $agentName = Split-Path $dir -Leaf
+        $agentDocsDir = Join-Path $dir ".vscode"
+        $agentReadme = Join-Path $agentDocsDir "README.md"
+        $trainingMarker = Join-Path $agentDocsDir "training_complete.json"
+
+        $agentDetail = @{
+            agent_name = $agentName
+            directory = $dir
+            documentation_exists = (Test-Path $agentReadme)
+            training_marker_exists = (Test-Path $trainingMarker)
+            status = "unknown"
+        }
+
+        if ((Test-Path $agentReadme) -and (Test-Path $trainingMarker)) {
+            try {
+                $markerContent = Get-Content $trainingMarker -Raw | ConvertFrom-Json
+                $agentDetail.status = "verified"
+                $agentDetail.distributed_date = $markerContent.distributed_date
+                $agentDetail.documentation_version = $markerContent.documentation_version
+            }
+            catch {
+                $agentDetail.status = "marker_corrupted"
+            }
+        } elseif (Test-Path $agentReadme) {
+            $agentDetail.status = "partial"
+        } else {
+            $agentDetail.status = "missing"
+        }
+
+        $report.distribution_details += $agentDetail
+    }
+
+    # Save report
+    $reportFile = Join-Path $PSScriptRoot "reports" "NCC_Training_Distribution_Report_$(Get-Date -Format 'yyyy-MM-dd_HH-mm-ss').json"
+    $reportDirectory = Split-Path $reportFile -Parent
+
+    if (!(Test-Path $reportDirectory)) {
+        New-Item -ItemType Directory -Path $reportDirectory -Force | Out-Null
+    }
+
+    $report | ConvertTo-Json -Depth 10 | Out-File -FilePath $reportFile -Encoding UTF8
+
+    Write-NCCLog "Report saved to: $reportFile"
+
+    # Display summary
+    Write-Host "`n=== NCC TEAM TRAINING DISTRIBUTION REPORT ===" -ForegroundColor Cyan
+    Write-Host "Generated: $($report.generated_date)" -ForegroundColor White
+    Write-Host "Total Agents: $($report.summary.total_agents)" -ForegroundColor White
+    Write-Host "Verified: $($report.summary.verified_agents)" -ForegroundColor Green
+    Write-Host "Success Rate: $($report.summary.success_rate)%" -ForegroundColor $(if ($report.summary.success_rate -eq 100) { "Green" } else { "Yellow" })
+    Write-Host "Issues: $($report.summary.issues_count)" -ForegroundColor $(if ($report.summary.issues_count -eq 0) { "Green" } else { "Red" })
+
+    if ($report.issues.Count -gt 0) {
+        Write-Host "`nISSUES:" -ForegroundColor Red
+        foreach ($issue in $report.issues) {
+            Write-Host "  - $issue" -ForegroundColor Red
+        }
+    }
+
+    Write-Host "`nReport saved: $reportFile" -ForegroundColor Cyan
+
+    return $report
+}
+
+# ============================================================================
+# MAIN EXECUTION
+# ============================================================================
+
+Write-NCCLog "NCC Team Training Documentation Distribution System v$ScriptVersion"
+Write-NCCLog "Authority: $Authority | Generated: $Generated"
+Write-NCCLog "Execution started with parameters: $($PSBoundParameters | ConvertTo-Json -Compress)"
+
+try {
+    $results = @{}
+
+    if ($Distribute) {
+        $results.Distribute = Distribute-Documentation
+    }
+
+    if ($Verify) {
+        $results.Verify = Verify-DocumentationDistribution
+    }
+
+    if ($Update) {
+        $results.Update = Update-Documentation
+    }
+
+    if ($Report -or ($PSBoundParameters.Count -eq 0)) {
+        $results.Report = New-DistributionReport
+    }
+
+    Write-NCCLog "Execution completed successfully"
+    Write-Host "`n✅ NCC Team Training operations completed" -ForegroundColor Green
+
+} catch {
+    Write-NCCLog "CRITICAL ERROR during execution: $($_.Exception.Message)" "ERROR"
+    Write-Host "`n❌ NCC Team Training operations failed" -ForegroundColor Red
+    throw
+}
+
+# ============================================================================
+# END OF SCRIPT
+# ============================================================================
+

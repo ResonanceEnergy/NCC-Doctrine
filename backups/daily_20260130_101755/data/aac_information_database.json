@@ -1,0 +1,25 @@
+{
+    "data_ingestion_log":  [
+
+                           ],
+    "last_updated":  "2026-01-29T17:39:59.0282088-07:00",
+    "system_status":  {
+                          "last_distribution":  null,
+                          "processed_items_today":  0,
+                          "last_analysis":  null,
+                          "last_ingestion":  null,
+                          "active_alerts":  0
+                      },
+    "retention_policies":  {
+                               "analysis_results":  365,
+                               "market_data":  90,
+                               "communication_logs":  730,
+                               "alerts":  180
+                           },
+    "analysis_results":  [
+
+                         ],
+    "distribution_log":  [
+
+                         ]
+}

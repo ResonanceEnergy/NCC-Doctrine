@@ -1,0 +1,55 @@
+
+# Modular Agent Framework Integration
+$AgentModules = @{
+    Perception = "NCC.Agent.Perception.ps1"
+    Reasoning = "NCC.Agent.Reasoning.ps1"
+    Action = "NCC.Agent.Action.ps1"
+}
+
+function Invoke-SubAgentDecomposition {
+    param([string]$Task)
+
+    # Decompose complex tasks into sub-agent operations
+    $subTasks = @{
+        Analysis = "Analyze task requirements"
+        Planning = "Create execution plan"
+        Execution = "Perform task operations"
+        Validation = "Verify results"
+    }
+
+    foreach ($subTask in $subTasks.GetEnumerator()) {
+        Write-AgentLog "Executing sub-task: $($subTask.Key)" -Level "INFO"
+        # Execute sub-agent logic here
+    }
+}
+
+
+#!/usr/bin/env pwsh
+$basedir=Split-Path $MyInvocation.MyCommand.Definition -Parent
+
+$exe=""
+if ($PSVersionTable.PSVersion -lt "6.0" -or $IsWindows) {
+  # Fix case when both the Windows and Linux builds of Node
+  # are installed in the same directory
+  $exe=".exe"
+}
+$ret=0
+if (Test-Path "$basedir/node$exe") {
+  # Support pipeline input
+  if ($MyInvocation.ExpectingInput) {
+    $input | & "$basedir/node$exe"  "$basedir/../@vscode/test-cli/out/bin.mjs" $args
+  } else {
+    & "$basedir/node$exe"  "$basedir/../@vscode/test-cli/out/bin.mjs" $args
+  }
+  $ret=$LASTEXITCODE
+} else {
+  # Support pipeline input
+  if ($MyInvocation.ExpectingInput) {
+    $input | & "node$exe"  "$basedir/../@vscode/test-cli/out/bin.mjs" $args
+  } else {
+    & "node$exe"  "$basedir/../@vscode/test-cli/out/bin.mjs" $args
+  }
+  $ret=$LASTEXITCODE
+}
+exit $ret
+

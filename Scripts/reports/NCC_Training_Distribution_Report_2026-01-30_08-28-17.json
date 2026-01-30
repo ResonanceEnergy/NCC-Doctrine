@@ -1,0 +1,56 @@
+{
+  "generated_date": "2026-01-30T08:28:17Z",
+  "summary": {
+    "issues_count": 5,
+    "verified_agents": 0,
+    "success_rate": 0.0,
+    "total_agents": 5
+  },
+  "report_title": "NCC Team Training Documentation Distribution Report",
+  "generated_by": "AZ PRIME Command",
+  "script_version": "1.0.0",
+  "issues": [
+    "Agent _enterprise: Documentation missing",
+    "Agent agents: Documentation missing",
+    "Agent ADMIN: Documentation missing",
+    "Agent AIEthicsCouncil: Documentation missing",
+    "Agent AIGovernanceCouncil: Documentation missing"
+  ],
+  "distribution_details": [
+    {
+      "agent_name": "_enterprise",
+      "status": "missing",
+      "training_marker_exists": false,
+      "documentation_exists": false,
+      "directory": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\_enterprise"
+    },
+    {
+      "agent_name": "agents",
+      "status": "missing",
+      "training_marker_exists": false,
+      "documentation_exists": false,
+      "directory": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\agents"
+    },
+    {
+      "agent_name": "ADMIN",
+      "status": "missing",
+      "training_marker_exists": false,
+      "documentation_exists": false,
+      "directory": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\ADMIN"
+    },
+    {
+      "agent_name": "AIEthicsCouncil",
+      "status": "missing",
+      "training_marker_exists": false,
+      "documentation_exists": false,
+      "directory": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\AIEthicsCouncil"
+    },
+    {
+      "agent_name": "AIGovernanceCouncil",
+      "status": "missing",
+      "training_marker_exists": false,
+      "documentation_exists": false,
+      "directory": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\AIGovernanceCouncil"
+    }
+  ]
+}

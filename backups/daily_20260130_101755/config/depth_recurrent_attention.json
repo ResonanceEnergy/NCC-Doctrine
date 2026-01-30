@@ -1,0 +1,7 @@
+{
+  "DepthRecurrentAttention": true,
+  "LatentReasoning": true,
+  "ReasoningDepth": "Unlimited",
+  "AttentionMixtures": true,
+  "TransformerLayers": 12
+}

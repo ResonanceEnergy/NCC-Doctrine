@@ -1,0 +1,133 @@
+{
+  "NCC Function Template": {
+    "prefix": "ncc-function",
+    "body": [
+      "# ============================================================================",
+      "# ${1:FunctionName} - ${2:Description}",
+      "# Generated: January 30, 2026 | Authority: AZ PRIME Command",
+      "# Purpose: ${3:Purpose description}",
+      "# ============================================================================",
+      "",
+      "function ${1:FunctionName} {",
+      "    [CmdletBinding()]",
+      "    param(",
+      "        [Parameter(Mandatory = \\$true)]",
+      "        [string]\\$AgentID,",
+      "        ",
+      "        [Parameter(Mandatory = \\$false)]",
+      "        [switch]\\$Verbose,",
+      "        ",
+      "        [Parameter(Mandatory = \\$false)]",
+      "        [string]\\$Division = 'NCC'",
+      "    )",
+      "    ",
+      "    begin {",
+      "        Write-Verbose \"[${1:FunctionName}] Starting execution\"",
+      "        \\$startTime = Get-Date",
+      "    }",
+      "    ",
+      "    process {",
+      "        try {",
+      "            # Function logic here",
+      "            \\$result = @{",
+      "                Status = 'Success'",
+      "                AgentID = \\$AgentID",
+      "                Division = \\$Division",
+      "                Timestamp = Get-Date",
+      "                Data = \\$null",
+      "            }",
+      "            ",
+      "            Write-Verbose \"[${1:FunctionName}] Processing completed\"",
+      "            return \\$result",
+      "        }",
+      "        catch {",
+      "            Write-Error \"[${1:FunctionName}] Error: \\$_.Exception.Message\"",
+      "            throw",
+      "        }",
+      "    }",
+      "    ",
+      "    end {",
+      "        \\$duration = (Get-Date) - \\$startTime",
+      "        Write-Verbose \"[${1:FunctionName}] Completed in \\$duration.TotalSeconds seconds\"",
+      "    }",
+      "}"
+    ],
+    "description": "NCC standard function template with logging and error handling"
+  },
+  "NCC Logging Function": {
+    "prefix": "ncc-log",
+    "body": [
+      "Write-ImprovementLog -Message \"[${1:Component}] ${2:Message}\" -Level ${3:Information} -AgentID \\$AgentID"
+    ],
+    "description": "NCC standard logging call"
+  },
+  "NCC Agent Data Template": {
+    "prefix": "ncc-agent-data",
+    "body": [
+      "\\$AGENT_DATA_TEMPLATE = @{",
+      "    AgentID = '${1:AGENT_ID}'",
+      "    AgentName = '${2:Agent Name}'",
+      "    Division = '${3:Division}'",
+      "    Subsidiary = 'NCC'",
+      "    SecurityClearance = 'Security 10 Directive'",
+      "    AZ_Rank = 'AZ Potential Assessment'",
+      "    AX_OptimizationLevel = 'AX Enhanced'",
+      "    LastUpdate = (Get-Date).ToString('yyyy-MM-dd HH:mm:ss')",
+      "    DailyTasks = @()",
+      "    WeeklyTasks = @()",
+      "    MonthlyTasks = @()",
+      "    PerformanceMetrics = @{",
+      "        EfficiencyRating = 0.0",
+      "        TasksCompleted = 0",
+      "        AZ_ComplianceScore = 0.0",
+      "        AX_OptimizationScore = 0.0",
+      "        CrossDepartmentCoordination = 0.0",
+      "    }",
+      "}"
+    ],
+    "description": "NCC agent data structure template"
+  },
+  "NCC Configuration Block": {
+    "prefix": "ncc-config",
+    "body": [
+      "\\$NCC_CONFIG = @{",
+      "    Version = '2.0.0'",
+      "    DataPath = Join-Path \\$PSScriptRoot '..\\data\\${1:component}.json'",
+      "    LogPath = Join-Path \\$PSScriptRoot '..\\logs\\${1:component}.log'",
+      "    BackupPath = Join-Path \\$PSScriptRoot '..\\backups\\${1:component}'",
+      "    EfficiencyTarget = 99.9",
+      "    AZ_ComplianceTarget = 100.0",
+      "    AX_OptimizationTarget = 95.0",
+      "}"
+    ],
+    "description": "NCC standard configuration block"
+  },
+  "NCC Try-Catch Block": {
+    "prefix": "ncc-try",
+    "body": [
+      "try {",
+      "    ${1:# Code here}",
+      "    Write-Verbose \"[${2:Component}] Operation completed successfully\"",
+      "}",
+      "catch {",
+      "    Write-Error \"[${2:Component}] Critical error: \\$_.Exception.Message\"",
+      "    Write-ImprovementLog -Message \"[${2:Component}] Error: \\$_.Exception.Message\" -Level Error -AgentID \\$AgentID",
+      "    throw",
+      "}"
+    ],
+    "description": "NCC standard error handling block"
+  },
+  "NCC Performance Measurement": {
+    "prefix": "ncc-performance",
+    "body": [
+      "\\$operationStart = Get-Date",
+      "${1:# Operation code here}",
+      "\\$operationDuration = (Get-Date) - \\$operationStart",
+      "Write-ImprovementLog -Message \"[${2:Component}] Operation completed in \\$operationDuration.TotalMilliseconds ms\" -Level Information -AgentID \\$AgentID"
+    ],
+    "description": "NCC performance measurement wrapper"
+  },
+  "OptimizationLevel": "Phase1",
+  "ModularArchitecture": true,
+  "PerformanceMultiplier": 1.5
+}

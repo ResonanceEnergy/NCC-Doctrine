@@ -1,0 +1,246 @@
+{
+    // ============================================================================
+    // NCC-DOCTRINE VS CODE OPTIMIZATION SETTINGS
+    // Generated: January 30, 2026 | Authority: AZ PRIME Command
+    // Purpose: Maximum performance optimization for large enterprise workspace
+    // ============================================================================
+
+    // EXISTING SETTINGS (PRESERVED)
+    "chat.agent.maxRequests": 5000,
+    "git.ignoreLimitWarning": true,
+
+    // 1-10: WORKSPACE CONFIGURATION
+    // ========================================================================
+
+    // Large Workspace Handling - Insight #1
+    "files.maxMemoryForLargeFilesMB": 4096,
+
+    // Exclude Patterns - Insight #2
+    "files.exclude": {
+        "**/.venv": true,
+        "**/node_modules": true,
+        "**/backups": true,
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/logs/*.log": true,
+        "**/temp/**": true,
+        "**/cache/**": true
+    },
+
+    // Search Optimization - Insight #3
+    "search.followSymlinks": false,
+
+    // Watcher Exclusions - Insight #4
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/.venv/**": true,
+        "**/backups/**": true,
+        "**/logs/**": true,
+        "**/temp/**": true,
+        "**/cache/**": true,
+        "**/*.log": true
+    },
+
+    // Memory Management - Insight #5
+    "typescript.tsserver.maxTsServerMemory": 4096,
+
+    // File Associations - Insight #6
+    "files.associations": {
+        "*.ps1": "powershell",
+        "*.md": "markdown",
+        "*.psm1": "powershell",
+        "*.psd1": "powershell",
+        "*.cmd": "bat",
+        "*.bat": "bat"
+    },
+
+    // Trim Trailing Whitespace - Insight #7
+    "files.trimTrailingWhitespace": true,
+
+    // Insert Final Newline - Insight #8
+    "files.insertFinalNewline": true,
+
+    // Hot Exit - Insight #9
+    "files.hotExit": "onExitAndWindowClose",
+
+    // Encoding - Insight #10
+    "files.encoding": "utf8",
+
+    // 11-20: SEARCH & NAVIGATION
+    // ========================================================================
+
+    // Search Exclusions - Insight #11
+    "search.exclude": {
+        "**/*.log": true,
+        "**/backups/**": true,
+        "**/.venv/**": true,
+        "**/node_modules/**": true,
+        "**/logs/**": true,
+        "**/temp/**": true,
+        "**/cache/**": true,
+        "**/.git/**": true,
+        "**/dist/**": true,
+        "**/build/**": true
+    },
+
+    // Quick Open Filters - Insight #12
+    "workbench.quickOpen.closeOnFocusLost": false,
+
+    // Symbol Search - Insight #13
+    "search.searchOnType": false,
+
+    // Breadcrumbs - Insight #14
+    "breadcrumbs.enabled": true,
+
+    // Outline View - Insight #15
+    "outline.showVariables": false,
+    "outline.showConstants": false,
+    "outline.showEnums": true,
+    "outline.showFunctions": true,
+    "outline.showClasses": true,
+
+    // Minimap - Insight #16
+    "editor.minimap.enabled": false,
+
+    // Word Wrap - Insight #17
+    "editor.wordWrap": "off",
+
+    // Cursor Surrounding Lines - Insight #18
+    "editor.cursorSurroundingLines": 5,
+
+    // Smooth Scrolling - Insight #19
+    "editor.smoothScrolling": true,
+
+    // Sticky Scroll - Insight #20
+    "editor.stickyScroll.enabled": true,
+
+    // 21-30: EXTENSION MANAGEMENT
+    // ========================================================================
+
+    // Git Integration - Insight #23
+    "git.autofetch": false,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+
+    // Terminal Optimization - Insight #24
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shellArgs.windows": ["-NoLogo"],
+    "terminal.integrated.scrollback": 10000,
+
+    // IntelliSense Optimization - Insight #29
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": true
+    },
+
+    // Parameter Hints - Insight #30
+    "editor.parameterHints.enabled": true,
+
+    // 31-40: PERFORMANCE OPTIMIZATION
+    // ========================================================================
+
+    // File Watching Limits - Insight #31
+    "files.maxWatchers": 524288,
+
+    // Memory Optimization - Insight #32
+    "typescript.tsserver.nodePath": "node",
+
+    // Workspace Trust - Insight #34
+    "security.workspace.trust.enabled": true,
+
+    // Large File Handling - Insight #35
+    "files.simpleDialog.enable": true,
+
+    // SCM Optimization - Insight #36
+    "scm.defaultViewMode": "tree",
+
+    // Diff Editor - Insight #37
+    "diffEditor.renderSideBySide": false,
+
+    // Timeline - Insight #39
+    "timeline.pageSize": 50,
+
+    // References View - Insight #40
+    "references.preferredLocation": "view",
+
+    // 41-50: ADVANCED OPTIMIZATION
+    // ========================================================================
+
+    // Command Palette - Insight #45
+    "workbench.commandPalette.preserveInput": true,
+
+    // Panel Optimization - Insight #47
+    "workbench.panel.defaultLocation": "right",
+
+    // Zen Mode - Insight #48
+    "zenMode.fullScreen": false,
+    "zenMode.centerLayout": true,
+
+    // Split Editors - Insight #49
+    "workbench.editor.splitSizing": "split",
+
+    // Backup Management - Insight #50
+    "files.backupPath": "C:\\Temp\\VSCodeBackups",
+
+    // ADDITIONAL NCC-SPECIFIC OPTIMIZATIONS
+    // ========================================================================
+
+    // PowerShell Specific
+    "powershell.powerShellDefaultVersion": "Windows PowerShell",
+    "powershell.enableProfileLoading": false,
+    "powershell.codeFormatting.useCorrectCasing": true,
+
+    // Python Specific (for NCC analysis scripts)
+    "python.defaultInterpreterPath": "./.venv/Scripts/python.exe",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+
+    // JSON Schema for NCC Project Schema
+    "json.schemas": [
+        {
+            "fileMatch": ["NCC_ProjectSchema.json"],
+            "url": "./NCC_ProjectSchema.json"
+        }
+    ],
+
+    // Editor Configuration for NCC Files
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+
+    // File Nesting for NCC Structure
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        "*.ps1": "${capture}.ps1.md,${capture}.tests.ps1",
+        "*.js": "${capture}.js.map,${capture}.min.js,${capture}.d.ts",
+        "*.ts": "${capture}.js,${capture}.d.ts,${capture}.js.map",
+        "package.json": "package-lock.json,yarn.lock,.yarnrc,.npmrc",
+        "*.md": "*.md.html,*.md.pdf"
+    },
+
+    // NCC-Specific Color Customizations
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#1e3a5f",
+        "titleBar.activeForeground": "#ffffff",
+        "statusBar.background": "#2d5aa0",
+        "statusBar.foreground": "#ffffff"
+    },
+
+    // Auto Save for NCC Operations
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+
+    // Format on Save for Consistency
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+
+    // NCC Task Integration
+    "task.autoDetect": "on",
+
+    // Large File Size Warning
+    "files.sizeWarning": 104857600  // 100MB warning threshold
+}

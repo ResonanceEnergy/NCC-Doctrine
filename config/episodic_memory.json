@@ -1,0 +1,7 @@
+{
+  "ContextRetention": 0.95,
+  "MemoryCapacity": "Unlimited",
+  "EpisodicMemoryEnabled": true,
+  "ReconstructionAlgorithm": "MultiAgent",
+  "VectorDatabase": "Pinecone"
+}

@@ -1,0 +1,7 @@
+{
+  "JailbreakDetection": true,
+  "ConstitutionalClassifiers": true,
+  "SafetyFilters": true,
+  "RealTimeMonitoring": true,
+  "AnthropicStyleAlignment": true
+}

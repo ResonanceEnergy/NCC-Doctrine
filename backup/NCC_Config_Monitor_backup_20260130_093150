@@ -1,0 +1,728 @@
+# ============================================================================
+# NCC-DOCTRINE CONFIGURATION DRIFT MONITORING SYSTEM
+# Generated: January 30, 2026 | Authority: AZ PRIME Command
+# Purpose: Monitor VS Code configuration for drift and optimization opportunities
+# ============================================================================
+
+<#
+.SYNOPSIS
+    NCC Configuration Drift Monitoring and Optimization System
+
+.DESCRIPTION
+    Monitors VS Code configuration files for drift from optimal settings,
+    detects optimization opportunities, and provides automated remediation.
+    Ensures consistent and performant development environment across all NCC agents.
+
+.PARAMETER CheckDrift
+    Check for configuration drift from optimal settings
+
+.PARAMETER DetectOptimizations
+    Detect potential optimization opportunities
+
+.PARAMETER AutoRemediate
+    Automatically apply safe remediation actions
+
+.PARAMETER Report
+    Generate configuration drift report
+
+.PARAMETER Backup
+    Create backup of current configuration before changes
+
+.EXAMPLE
+    .\NCC_Config_Monitor.ps1 -CheckDrift -Report
+
+.EXAMPLE
+    .\NCC_Config_Monitor.ps1 -DetectOptimizations -AutoRemediate
+
+.EXAMPLE
+    .\NCC_Config_Monitor.ps1 -Backup
+#>
+
+param(
+    [switch]$CheckDrift,
+    [switch]$DetectOptimizations,
+    [switch]$AutoRemediate,
+    [switch]$Report,
+    [switch]$Backup
+)
+
+# ============================================================================
+# CONFIGURATION
+# ============================================================================
+
+$ScriptVersion = "1.0.0"
+$Authority = "AZ PRIME Command"
+$Generated = "January 30, 2026"
+
+# Configuration file paths
+$SettingsPath = Join-Path $PSScriptRoot ".." ".vscode" "settings.json"
+$ExtensionsPath = Join-Path $PSScriptRoot ".." ".vscode" "extensions.json"
+$TasksPath = Join-Path $PSScriptRoot ".." ".vscode" "tasks.json"
+$LaunchPath = Join-Path $PSScriptRoot ".." ".vscode" "launch.json"
+
+# Backup directory
+$BackupDirectory = Join-Path $PSScriptRoot "backups" "config_$(Get-Date -Format 'yyyy-MM-dd_HH-mm-ss')"
+
+# Optimal configuration baselines
+$OptimalSettings = @{
+    # Performance settings
+    "files.maxMemoryForLargeFilesMB" = 4096
+    "search.maxResults" = 10000
+    "files.watcherExclude" = @{
+        "**/.git/objects/**" = $true
+        "**/.git/subtree-cache/**" = $true
+        "**/node_modules/**" = $true
+        "**/backups/**" = $true
+        "**/.DS_Store" = $true
+    }
+    "search.exclude" = @{
+        "**/node_modules/**" = $true
+        "**/backups/**" = $true
+        "**/.git/**" = $true
+        "**/dist/**" = $true
+        "**/build/**" = $true
+    }
+
+    # Editor settings
+    "editor.largeFileOptimizations" = $true
+    "editor.formatOnSave" = $true
+    "editor.codeActionsOnSave" = @{
+        "source.fixAll.eslint" = "explicit"
+        "source.organizeImports" = "explicit"
+    }
+
+    # Workspace settings
+    "workspace.trust.enabled" = $false
+    "security.workspace.trust.enabled" = $true
+
+    # Extension settings
+    "extensions.ignoreRecommendations" = $false
+    "extensions.showRecommendationsOnlyOnDemand" = $false
+}
+
+# ============================================================================
+# LOGGING CONFIGURATION
+# ============================================================================
+
+$LogFile = Join-Path $PSScriptRoot "logs" "NCC_Config_Monitor_$(Get-Date -Format 'yyyy-MM-dd_HH-mm-ss').log"
+$LogDirectory = Split-Path $LogFile -Parent
+
+if (!(Test-Path $LogDirectory)) {
+    New-Item -ItemType Directory -Path $LogDirectory -Force | Out-Null
+}
+
+function Write-NCCLog {
+    param(
+        [string]$Message,
+        [string]$Level = "INFO"
+    )
+
+    $Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $LogEntry = "[$Timestamp] [$Level] [CONFIG-DRIFT] $Message"
+
+    Write-Host $LogEntry
+    Add-Content -Path $LogFile -Value $LogEntry
+}
+
+# ============================================================================
+# CONFIGURATION MANAGEMENT FUNCTIONS
+# ============================================================================
+
+function New-ConfigurationBackup {
+    <#
+    .SYNOPSIS
+        Create backup of current VS Code configuration
+    #>
+
+    Write-NCCLog "Creating configuration backup..."
+
+    try {
+        # Create backup directory
+        if (!(Test-Path $BackupDirectory)) {
+            New-Item -ItemType Directory -Path $BackupDirectory -Force | Out-Null
+        }
+
+        # Backup configuration files
+        $configFiles = @($SettingsPath, $ExtensionsPath, $TasksPath, $LaunchPath)
+        $backedUpFiles = @()
+
+        foreach ($file in $configFiles) {
+            if (Test-Path $file) {
+                $fileName = Split-Path $file -Leaf
+                $backupPath = Join-Path $BackupDirectory $fileName
+                Copy-Item -Path $file -Destination $backupPath -Force
+                $backedUpFiles += $fileName
+                Write-NCCLog "Backed up: $fileName"
+            }
+        }
+
+        # Create backup manifest
+        $manifest = @{
+            Backup_Date = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
+            Script_Version = $ScriptVersion
+            Authority = $Authority
+            Files_Backup = $backedUpFiles
+            Backup_Directory = $BackupDirectory
+        }
+
+        $manifest | ConvertTo-Json | Out-File -FilePath (Join-Path $BackupDirectory "backup_manifest.json") -Encoding UTF8
+
+        Write-NCCLog "Configuration backup completed. Files backed up: $($backedUpFiles.Count)"
+
+        return @{
+            Success = $true
+            BackupDirectory = $BackupDirectory
+            FilesBackedUp = $backedUpFiles
+        }
+
+    }
+    catch {
+        Write-NCCLog "Configuration backup failed: $($_.Exception.Message)" "ERROR"
+        return @{
+            Success = $false
+            Error = $_.Exception.Message
+        }
+    }
+}
+
+function Get-ConfigurationDrift {
+    <#
+    .SYNOPSIS
+        Check for configuration drift from optimal settings
+    #>
+
+    Write-NCCLog "Checking for configuration drift..."
+
+    $drift = @{
+        SettingsDrift = @()
+        MissingSettings = @()
+        IncorrectValues = @()
+        ExtraSettings = @()
+        OverallScore = 100
+    }
+
+    try {
+        # Read current settings
+        if (Test-Path $SettingsPath) {
+            $currentSettings = Get-Content $SettingsPath -Raw | ConvertFrom-Json
+        } else {
+            $drift.SettingsDrift += @{
+                File = "settings.json"
+                Issue = "File not found"
+                Severity = "Critical"
+                Recommendation = "Create settings.json with optimal configuration"
+            }
+            $drift.OverallScore -= 50
+            return $drift
+        }
+
+        # Check each optimal setting
+        foreach ($setting in $OptimalSettings.GetEnumerator()) {
+            $settingName = $setting.Key
+            $optimalValue = $setting.Value
+
+            if (-not (Get-Member -InputObject $currentSettings -Name $settingName -MemberType Properties)) {
+                # Setting is missing
+                $drift.MissingSettings += @{
+                    Setting = $settingName
+                    OptimalValue = $optimalValue
+                    Severity = "High"
+                    Impact = "Performance degradation"
+                }
+                $drift.OverallScore -= 10
+            }
+            else {
+                # Setting exists, check value
+                $currentValue = $currentSettings.$settingName
+
+                if ($optimalValue -is [hashtable] -or $optimalValue -is [pscustomobject]) {
+                    # Complex object comparison
+                    $driftResult = Compare-ComplexSetting -SettingName $settingName -CurrentValue $currentValue -OptimalValue $optimalValue
+                    if ($driftResult.HasDrift) {
+                        $drift.IncorrectValues += $driftResult
+                        $drift.OverallScore -= 5
+                    }
+                }
+                elseif ($currentValue -ne $optimalValue) {
+                    $drift.IncorrectValues += @{
+                        Setting = $settingName
+                        CurrentValue = $currentValue
+                        OptimalValue = $optimalValue
+                        Severity = "Medium"
+                        Impact = "Suboptimal performance"
+                    }
+                    $drift.OverallScore -= 5
+                }
+            }
+        }
+
+        # Check for extra settings that might conflict
+        $optimalSettingNames = $OptimalSettings.Keys
+        foreach ($currentSetting in (Get-Member -InputObject $currentSettings -MemberType Properties)) {
+            $settingName = $currentSetting.Name
+            if ($settingName -notin $optimalSettingNames) {
+                # Check if it's a known good extra setting
+                $knownGoodExtras = @(
+                    "workbench.colorTheme",
+                    "editor.fontSize",
+                    "editor.tabSize",
+                    "files.autoSave",
+                    "git.autofetch",
+                    "powershell.powerShellDefaultVersion"
+                )
+
+                if ($settingName -notin $knownGoodExtras) {
+                    $drift.ExtraSettings += @{
+                        Setting = $settingName
+                        Value = $currentSettings.$settingName
+                        Assessment = "Review if necessary"
+                    }
+                }
+            }
+        }
+
+    }
+    catch {
+        Write-NCCLog "Error checking configuration drift: $($_.Exception.Message)" "ERROR"
+        $drift.SettingsDrift += @{
+            File = "settings.json"
+            Issue = "Parse error: $($_.Exception.Message)"
+            Severity = "Critical"
+            Recommendation = "Fix JSON syntax errors"
+        }
+        $drift.OverallScore -= 30
+    }
+
+    # Calculate drift score
+    if ($drift.OverallScore -ge 90) { $drift.Status = "Excellent" }
+    elseif ($drift.OverallScore -ge 80) { $drift.Status = "Good" }
+    elseif ($drift.OverallScore -ge 70) { $drift.Status = "Fair" }
+    elseif ($drift.OverallScore -ge 60) { $drift.Status = "Poor" }
+    else { $drift.Status = "Critical" }
+
+    Write-NCCLog "Configuration drift check completed. Status: $($drift.Status) ($($drift.OverallScore)%)"
+
+    return $drift
+}
+
+function Compare-ComplexSetting {
+    <#
+    .SYNOPSIS
+        Compare complex settings objects
+    #>
+
+    param(
+        [string]$SettingName,
+        $CurrentValue,
+        $OptimalValue
+    )
+
+    $drift = @{
+        Setting = $SettingName
+        HasDrift = $false
+        CurrentValue = $CurrentValue
+        OptimalValue = $OptimalValue
+        Severity = "Low"
+        Impact = "Minor optimization opportunity"
+    }
+
+    # Convert PSCustomObject to Hashtable for comparison
+    if ($CurrentValue -is [pscustomobject]) {
+        $currentHash = @{}
+        $CurrentValue.PSObject.Properties | ForEach-Object { $currentHash[$_.Name] = $_.Value }
+        $CurrentValue = $currentHash
+    }
+
+    if ($OptimalValue -is [pscustomobject]) {
+        $optimalHash = @{}
+        $OptimalValue.PSObject.Properties | ForEach-Object { $optimalHash[$_.Name] = $_.Value }
+        $OptimalValue = $optimalHash
+    }
+
+    # Check if optimal keys exist in current
+    foreach ($key in $OptimalValue.Keys) {
+        if (-not $CurrentValue.ContainsKey($key) -or $CurrentValue[$key] -ne $OptimalValue[$key]) {
+            $drift.HasDrift = $true
+            $drift.Severity = "Medium"
+            break
+        }
+    }
+
+    return $drift
+}
+
+function Get-OptimizationOpportunities {
+    <#
+    .SYNOPSIS
+        Detect potential optimization opportunities
+    #>
+
+    Write-NCCLog "Detecting optimization opportunities..."
+
+    $opportunities = @{
+        PerformanceOptimizations = @()
+        SecurityImprovements = @()
+        ProductivityEnhancements = @()
+        MaintenanceTasks = @()
+    }
+
+    try {
+        # Read current settings
+        if (Test-Path $SettingsPath) {
+            $settings = Get-Content $SettingsPath -Raw | ConvertFrom-Json
+        } else {
+            $opportunities.MaintenanceTasks += @{
+                Category = "Critical"
+                Task = "Create settings.json"
+                Impact = "High"
+                Effort = "Low"
+            }
+            return $opportunities
+        }
+
+        # Performance optimizations
+        if (-not $settings."editor.stickyScroll.enabled") {
+            $opportunities.PerformanceOptimizations += @{
+                Setting = "editor.stickyScroll.enabled"
+                CurrentValue = $false
+                RecommendedValue = $true
+                Impact = "Improved code navigation"
+                Effort = "Low"
+            }
+        }
+
+        if (-not $settings."editor.minimap.enabled") {
+            $opportunities.PerformanceOptimizations += @{
+                Setting = "editor.minimap.enabled"
+                CurrentValue = $false
+                RecommendedValue = $true
+                Impact = "Better code overview"
+                Effort = "Low"
+            }
+        }
+
+        # Security improvements
+        if (-not $settings."security.workspace.trust.enabled") {
+            $opportunities.SecurityImprovements += @{
+                Setting = "security.workspace.trust.enabled"
+                CurrentValue = $false
+                RecommendedValue = $true
+                Impact = "Enhanced workspace security"
+                Effort = "Low"
+            }
+        }
+
+        # Productivity enhancements
+        if (-not $settings."editor.codeActionsOnSave"."source.organizeImports") {
+            $opportunities.ProductivityEnhancements += @{
+                Setting = "editor.codeActionsOnSave.source.organizeImports"
+                CurrentValue = "not set"
+                RecommendedValue = "explicit"
+                Impact = "Automatic import organization"
+                Effort = "Low"
+            }
+        }
+
+        # Maintenance tasks
+        $workspaceStats = Get-WorkspaceStatistics
+        if ($workspaceStats.Backup_Directories -gt 10) {
+            $opportunities.MaintenanceTasks += @{
+                Category = "Cleanup"
+                Task = "Archive old backups"
+                Impact = "Reduce workspace size by ~$([math]::Round($workspaceStats.Total_Size_MB * 0.1))MB"
+                Effort = "Medium"
+            }
+        }
+
+    }
+    catch {
+        Write-NCCLog "Error detecting optimization opportunities: $($_.Exception.Message)" "ERROR"
+    }
+
+    $totalOpportunities = $opportunities.PerformanceOptimizations.Count +
+                        $opportunities.SecurityImprovements.Count +
+                        $opportunities.ProductivityEnhancements.Count +
+                        $opportunities.MaintenanceTasks.Count
+
+    Write-NCCLog "Optimization detection completed. Found $totalOpportunities opportunities."
+
+    return $opportunities
+}
+
+function Get-WorkspaceStatistics {
+    <#
+    .SYNOPSIS
+        Get basic workspace statistics
+    #>
+
+    $workspaceRoot = Split-Path $PSScriptRoot -Parent
+
+    $stats = Get-ChildItem -Path $workspaceRoot -Recurse -ErrorAction SilentlyContinue |
+             Where-Object { -not $_.PSIsContainer } |
+             Measure-Object -Property Length -Sum
+
+    $backupDirs = Get-ChildItem -Path $workspaceRoot -Directory -Filter "*backup*" -ErrorAction SilentlyContinue |
+                  Measure-Object | Select-Object -ExpandProperty Count
+
+    return @{
+        Total_Size_MB = [math]::Round($stats.Sum / 1MB, 2)
+        Total_Files = $stats.Count
+        Backup_Directories = $backupDirs
+    }
+}
+
+function Invoke-AutoRemediation {
+    <#
+    .SYNOPSIS
+        Apply automatic remediation for safe configuration issues
+    #>
+
+    param($DriftReport, $OptimizationReport)
+
+    Write-NCCLog "Starting automatic remediation..."
+
+    $remediation = @{
+        Applied = @()
+        Skipped = @()
+        Errors = @()
+        RequiresManual = @()
+    }
+
+    try {
+        # Create backup first
+        $backup = New-ConfigurationBackup
+        if (-not $backup.Success) {
+            $remediation.Errors += "Failed to create backup, aborting remediation"
+            return $remediation
+        }
+
+        # Read current settings
+        $settings = Get-Content $SettingsPath -Raw | ConvertFrom-Json
+
+        # Apply safe missing settings
+        foreach ($missing in $DriftReport.MissingSettings) {
+            if ($missing.Severity -eq "High" -and $missing.Impact -eq "Performance degradation") {
+                try {
+                    # Use dot notation to set nested properties
+                    $settingName = $missing.Setting
+                    if ($settingName.Contains(".")) {
+                        # Handle nested settings
+                        $parts = $settingName -split "\."
+                        $current = $settings
+                        for ($i = 0; $i -lt $parts.Count - 1; $i++) {
+                            if (-not (Get-Member -InputObject $current -Name $parts[$i] -MemberType Properties)) {
+                                $current | Add-Member -MemberType NoteProperty -Name $parts[$i] -Value (New-Object PSObject)
+                            }
+                            $current = $current.($parts[$i])
+                        }
+                        $current | Add-Member -MemberType NoteProperty -Name $parts[-1] -Value $missing.OptimalValue
+                    } else {
+                        $settings | Add-Member -MemberType NoteProperty -Name $settingName -Value $missing.OptimalValue
+                    }
+
+                    $remediation.Applied += "Added missing setting: $settingName"
+                    Write-NCCLog "Applied remediation: Added $settingName"
+                }
+                catch {
+                    $remediation.Errors += "Failed to add setting ${settingName}: $($_.Exception.Message)"
+                }
+            } else {
+                $remediation.RequiresManual += $missing
+            }
+        }
+
+        # Apply safe value corrections
+        foreach ($incorrect in $DriftReport.IncorrectValues) {
+            if ($incorrect.Severity -eq "Medium" -and $incorrect.Impact -eq "Suboptimal performance") {
+                try {
+                    $settingName = $incorrect.Setting
+                    if ($settingName.Contains(".")) {
+                        # Handle nested settings
+                        $parts = $settingName -split "\."
+                        $current = $settings
+                        for ($i = 0; $i -lt $parts.Count - 1; $i++) {
+                            $current = $current.($parts[$i])
+                        }
+                        $current.($parts[-1]) = $incorrect.OptimalValue
+                    } else {
+                        $settings.$settingName = $incorrect.OptimalValue
+                    }
+
+                    $remediation.Applied += "Corrected setting: $settingName"
+                    Write-NCCLog "Applied remediation: Corrected $settingName"
+                }
+                catch {
+                    $remediation.Errors += "Failed to correct setting ${settingName}: $($_.Exception.Message)"
+                }
+            } else {
+                $remediation.RequiresManual += $incorrect
+            }
+        }
+
+        # Apply optimization opportunities (only low-effort ones)
+        foreach ($opt in $OptimizationReport.PerformanceOptimizations) {
+            if ($opt.Effort -eq "Low") {
+                try {
+                    $settings.($opt.Setting) = $opt.RecommendedValue
+                    $remediation.Applied += "Applied optimization: $($opt.Setting)"
+                    Write-NCCLog "Applied optimization: $($opt.Setting)"
+                }
+                catch {
+                    $remediation.Skipped += "Failed to apply optimization $($opt.Setting): $($_.Exception.Message)"
+                }
+            }
+        }
+
+        # Save updated settings
+        $settings | ConvertTo-Json -Depth 10 | Set-Content -Path $SettingsPath -Encoding UTF8
+        $remediation.Applied += "Saved updated configuration"
+
+        Write-NCCLog "Automatic remediation completed. Applied $($remediation.Applied.Count) changes."
+
+    }
+    catch {
+        $remediation.Errors += "Critical error during remediation: $($_.Exception.Message)"
+        Write-NCCLog "Remediation failed: $($_.Exception.Message)" "ERROR"
+    }
+
+    return $remediation
+}
+
+function New-ConfigurationReport {
+    <#
+    .SYNOPSIS
+        Generate comprehensive configuration drift report
+    #>
+
+    param($DriftReport, $OptimizationReport, $RemediationReport)
+
+    Write-NCCLog "Generating configuration drift report..."
+
+    $report = @{
+        Report_Title = "NCC Configuration Drift Report"
+        Generated_Date = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
+        Generated_By = $Authority
+        Script_Version = $ScriptVersion
+
+        Executive_Summary = @{
+            Drift_Score = $DriftReport.OverallScore
+            Drift_Status = $DriftReport.Status
+            Issues_Found = $DriftReport.MissingSettings.Count + $DriftReport.IncorrectValues.Count
+            Optimization_Opportunities = ($OptimizationReport.PerformanceOptimizations.Count +
+                                        $OptimizationReport.SecurityImprovements.Count +
+                                        $OptimizationReport.ProductivityEnhancements.Count +
+                                        $OptimizationReport.MaintenanceTasks.Count)
+            Auto_Remediation_Applied = $RemediationReport.Applied.Count
+            Manual_Review_Required = $RemediationReport.RequiresManual.Count
+        }
+
+        Drift_Analysis = $DriftReport
+        Optimization_Analysis = $OptimizationReport
+        Remediation_Results = $RemediationReport
+
+        Recommendations = @()
+    }
+
+    # Generate recommendations
+    if ($report.Executive_Summary.Issues_Found -gt 0) {
+        $report.Recommendations += "Address $($report.Executive_Summary.Issues_Found) configuration drift issues"
+    }
+
+    if ($report.Executive_Summary.Optimization_Opportunities -gt 0) {
+        $report.Recommendations += "Review $($report.Executive_Summary.Optimization_Opportunities) optimization opportunities"
+    }
+
+    if ($report.Executive_Summary.Manual_Review_Required -gt 0) {
+        $report.Recommendations += "Manually review $($report.Executive_Summary.Manual_Review_Required) remediation items"
+    }
+
+    # Save report
+    $reportFile = Join-Path $PSScriptRoot "reports" "NCC_Config_Drift_Report_$(Get-Date -Format 'yyyy-MM-dd_HH-mm-ss').json"
+    $reportDirectory = Split-Path $reportFile -Parent
+
+    if (!(Test-Path $reportDirectory)) {
+        New-Item -ItemType Directory -Path $reportDirectory -Force | Out-Null
+    }
+
+    $report | ConvertTo-Json -Depth 10 | Out-File -FilePath $reportFile -Encoding UTF8
+
+    Write-NCCLog "Configuration report saved to: $reportFile"
+
+    # Display summary
+    Write-Host "`n=== NCC CONFIGURATION DRIFT REPORT ===" -ForegroundColor Cyan
+    Write-Host "Generated: $($report.Generated_Date)" -ForegroundColor White
+    Write-Host "Drift Status: $($report.Executive_Summary.Drift_Status)" -ForegroundColor $(if ($report.Executive_Summary.Drift_Status -eq "Excellent") { "Green" } elseif ($report.Executive_Summary.Drift_Status -eq "Good") { "Green" } else { "Red" })
+    Write-Host "Drift Score: $($report.Executive_Summary.Drift_Score)%" -ForegroundColor $(if ($report.Executive_Summary.Drift_Score -ge 80) { "Green" } elseif ($report.Executive_Summary.Drift_Score -ge 60) { "Yellow" } else { "Red" })
+    Write-Host "Issues Found: $($report.Executive_Summary.Issues_Found)" -ForegroundColor $(if ($report.Executive_Summary.Issues_Found -eq 0) { "Green" } else { "Red" })
+    Write-Host "Optimization Opportunities: $($report.Executive_Summary.Optimization_Opportunities)" -ForegroundColor Yellow
+    Write-Host "Auto-Remediation Applied: $($report.Executive_Summary.Auto_Remediation_Applied)" -ForegroundColor Green
+    Write-Host "Manual Review Required: $($report.Executive_Summary.Manual_Review_Required)" -ForegroundColor $(if ($report.Executive_Summary.Manual_Review_Required -eq 0) { "Green" } else { "Yellow" })
+
+    if ($report.Recommendations.Count -gt 0) {
+        Write-Host "`nRECOMMENDATIONS:" -ForegroundColor Yellow
+        foreach ($rec in $report.Recommendations) {
+            Write-Host "  - $rec" -ForegroundColor Yellow
+        }
+    }
+
+    Write-Host "`nReport saved: $reportFile" -ForegroundColor Cyan
+
+    return $report
+}
+
+# ============================================================================
+# MAIN EXECUTION
+# ============================================================================
+
+Write-NCCLog "NCC Configuration Drift Monitoring System v$ScriptVersion"
+Write-NCCLog "Authority: $Authority | Generated: $Generated"
+Write-NCCLog "Execution started with parameters: $($PSBoundParameters | ConvertTo-Json -Compress)"
+
+try {
+    $results = @{}
+
+    if ($Backup) {
+        $results.Backup = New-ConfigurationBackup
+    }
+
+    if ($CheckDrift) {
+        $results.Drift = Get-ConfigurationDrift
+    }
+
+    if ($DetectOptimizations) {
+        $results.Optimizations = Get-OptimizationOpportunities
+    }
+
+    if ($AutoRemediate) {
+        # Ensure we have current drift analysis
+        if (-not $results.Drift) {
+            $results.Drift = Get-ConfigurationDrift
+        }
+        if (-not $results.Optimizations) {
+            $results.Optimizations = Get-OptimizationOpportunities
+        }
+
+        $results.Remediation = Invoke-AutoRemediation -DriftReport $results.Drift -OptimizationReport $results.Optimizations
+    }
+
+    if ($Report -or ($PSBoundParameters.Count -eq 0)) {
+        # Run all checks for comprehensive report
+        $drift = Get-ConfigurationDrift
+        $optimizations = Get-OptimizationOpportunities
+        $remediation = Invoke-AutoRemediation -DriftReport $drift -OptimizationReport $optimizations
+
+        $results.Report = New-ConfigurationReport -DriftReport $drift -OptimizationReport $optimizations -RemediationReport $remediation
+    }
+
+    Write-NCCLog "Configuration monitoring operations completed successfully"
+    Write-Host "`n✅ NCC Configuration monitoring operations completed" -ForegroundColor Green
+
+} catch {
+    Write-NCCLog "CRITICAL ERROR during execution: $($_.Exception.Message)" "ERROR"
+    Write-Host "`n❌ NCC Configuration monitoring operations failed" -ForegroundColor Red
+    throw
+}
+
+# ============================================================================
+# END OF SCRIPT
+# ============================================================================

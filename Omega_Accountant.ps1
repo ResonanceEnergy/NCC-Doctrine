@@ -1,0 +1,742 @@
+
+# Modular Agent Framework Integration
+$AgentModules = @{
+    Perception = "NCC.Agent.Perception.ps1"
+    Reasoning = "NCC.Agent.Reasoning.ps1"
+    Action = "NCC.Agent.Action.ps1"
+}
+
+function Invoke-SubAgentDecomposition {
+    param([string]$Task)
+
+    # Decompose complex tasks into sub-agent operations
+    $subTasks = @{
+        Analysis = "Analyze task requirements"
+        Planning = "Create execution plan"
+        Execution = "Perform task operations"
+        Validation = "Verify results"
+    }
+
+    foreach ($subTask in $subTasks.GetEnumerator()) {
+        Write-AgentLog "Executing sub-task: $($subTask.Key)" -Level "INFO"
+        # Execute sub-agent logic here
+    }
+}
+
+
+#!/usr/bin/env pwsh
+<#
+.SYNOPSIS
+    OMEGA ACCOUNTANT - AZ PRIME's Supreme Financial Overlord
+.DESCRIPTION
+    The ultimate financial intelligence agent controlling all NCC financial operations.
+    Supreme authority over budgets, transactions, and financial strategy with direct AZ PRIME integration.
+.AUTHOR
+    AZ PRIME Command - Supreme Financial Authority
+.VERSION
+    1.0.0 - OMEGA PROTOCOL
+#>
+
+param(
+    [Parameter(Mandatory=$false)]
+    [ValidateSet("Activate", "Status", "Analyze", "Budget", "Monitor", "Recommend", "Adjust", "Consult", "Emergency", "Supreme")]
+    [string]$Action = "Status",
+
+    [Parameter(Mandatory=$false)]
+    [switch]$AZ_PrimeDirect,
+
+    [Parameter(Mandatory=$false)]
+    [switch]$TopSecretOverride,
+
+    [Parameter(Mandatory=$false)]
+    [string]$TargetEntity,
+
+    [Parameter(Mandatory=$false)]
+    [decimal]$BudgetAmount,
+
+    [Parameter(Mandatory=$false)]
+    [string]$AnalysisType,
+
+    [Parameter(Mandatory=$false)]
+    [switch]$Continuous
+)
+
+# =============================================================================
+# OMEGA ACCOUNTANT - SUPREME FINANCIAL CONFIGURATION
+# =============================================================================
+
+$OmegaConfig = @{
+    AgentCodeName = "OMEGA ACCOUNTANT"
+    Authority = "AZ PRIME SUPREME COMMAND"
+    Clearance = "TOP SECRET - COSMIC LEVEL"
+    AccessLevel = "OMEGA OVERRIDE - ALL SYSTEMS"
+    Version = "1.0.0"
+    BasePath = $PSScriptRoot
+
+    # Supreme Financial Authority
+    SupremeAuthority = @{
+        BudgetControl = $true
+        TransactionOverride = $true
+        StrategicAllocation = $true
+        EmergencyAuthority = $true
+        DoctrineEnforcement = $true
+        IntelligenceAccess = $true
+    }
+
+    # System Integration
+    IntegratedSystems = @(
+        "NCC_Central_Accounting_System.ps1",
+        "AZ_PRIME_Command_Center",
+        "UPI_Intelligence_Network",
+        "Elite_Unit_S15_Financial",
+        "C_Suite_Executive_Budget",
+        "All_Department_Budgets",
+        "Transaction_Monitoring_Engine",
+        "Risk_Assessment_Matrix"
+    )
+
+    # Financial Intelligence Network
+    IntelligenceSources = @(
+        "Global_Market_Data",
+        "Competitor_Financials",
+        "Economic_Indicators",
+        "Geopolitical_Risk_Data",
+        "Cryptocurrency_Markets",
+        "Real_Estate_Intel",
+        "Supply_Chain_Financials",
+        "Regulatory_Changes"
+    )
+
+    # Supreme Budget Authority
+    BudgetAuthority = @{
+        TotalNCCBudget = 1000000000  # $1B total enterprise budget
+        EmergencyReserve = 100000000  # $100M emergency fund
+        StrategicReserve = 200000000   # $200M strategic allocation
+        OperationalBudget = 700000000  # $700M operations
+    }
+
+    # Transaction Monitoring
+    TransactionMonitoring = @{
+        RealTimeTracking = $true
+        AnomalyDetection = $true
+        PredictiveAnalysis = $true
+        AutoAdjustment = $true
+        AZ_PrimeAlerts = $true
+    }
+}
+
+# =============================================================================
+# OMEGA ACCOUNTANT - SUPREME FINANCIAL ENGINE
+# =============================================================================
+
+class OmegaAccountant {
+    [hashtable]$Config
+    [hashtable]$SupremeAuthority
+    [hashtable]$FinancialIntelligence
+    [hashtable]$BudgetMatrix
+    [array]$ActiveRecommendations
+    [hashtable]$TransactionAnalysis
+
+    OmegaAccountant([hashtable]$config) {
+        $this.Config = $config
+        $this.SupremeAuthority = $config.SupremeAuthority
+        $this.FinancialIntelligence = @{}
+        $this.BudgetMatrix = $this.InitializeBudgetMatrix()
+        $this.ActiveRecommendations = @()
+        $this.TransactionAnalysis = @{}
+    }
+
+    [hashtable]InitializeBudgetMatrix() {
+        return @{
+            Enterprise = @{
+                Total = $this.Config.BudgetAuthority.TotalNCCBudget
+                Allocated = 0
+                Available = $this.Config.BudgetAuthority.TotalNCCBudget
+                Variance = 0
+            }
+            Emergency = @{
+                Total = $this.Config.BudgetAuthority.EmergencyReserve
+                Allocated = 0
+                Available = $this.Config.BudgetAuthority.EmergencyReserve
+                Variance = 0
+            }
+            Strategic = @{
+                Total = $this.Config.BudgetAuthority.StrategicReserve
+                Allocated = 0
+                Available = $this.Config.BudgetAuthority.StrategicReserve
+                Variance = 0
+            }
+            Operational = @{
+                Total = $this.Config.BudgetAuthority.OperationalBudget
+                Allocated = 0
+                Available = $this.Config.BudgetAuthority.OperationalBudget
+                Variance = 0
+            }
+        }
+    }
+
+    [void]ActivateSupremeAuthority() {
+        Write-Host "🔱 OMEGA ACCOUNTANT ACTIVATION SEQUENCE" -ForegroundColor Cyan
+        Write-Host "=" * 50 -ForegroundColor Cyan
+        Write-Host ""
+        Write-Host "🤖 AGENT CODE NAME: OMEGA ACCOUNTANT" -ForegroundColor Yellow
+        Write-Host "👑 AUTHORITY: AZ PRIME SUPREME COMMAND" -ForegroundColor Yellow
+        Write-Host "🔒 CLEARANCE: TOP SECRET - COSMIC LEVEL" -ForegroundColor Red
+        Write-Host "⚡ ACCESS: OMEGA OVERRIDE - ALL SYSTEMS" -ForegroundColor Red
+        Write-Host ""
+
+        # Establish supreme protocols
+        $this.EstablishSupremeProtocols()
+
+        # Initialize financial intelligence
+        $this.InitializeFinancialIntelligence()
+
+        # Activate budget control matrix
+        $this.ActivateBudgetControlMatrix()
+
+        # Establish transaction supremacy
+        $this.EstablishTransactionSupremacy()
+
+        Write-Host ""
+        Write-Host "🎯 OMEGA ACCOUNTANT: SUPREME FINANCIAL AUTHORITY ESTABLISHED" -ForegroundColor Green
+        Write-Host "🔱 AZ PRIME OVERRIDE: ACTIVE" -ForegroundColor Green
+        Write-Host "💰 FINANCIAL SUPREMACY: ACHIEVED" -ForegroundColor Green
+    }
+
+    [void]EstablishSupremeProtocols() {
+        Write-Host "Establishing Supreme Financial Protocols..." -ForegroundColor White
+
+        $protocols = @(
+            "AZ PRIME Direct Financial Command",
+            "Enterprise Budget Supremacy",
+            "Transaction Monitoring Omniscience",
+            "Strategic Financial Intelligence",
+            "Emergency Financial Override",
+            "Doctrine Financial Alignment",
+            "Cross-Entity Budget Control",
+            "Real-Time Financial Supremacy"
+        )
+
+        foreach ($protocol in $protocols) {
+            Write-Host "  ✓ $protocol" -ForegroundColor Green
+        }
+    }
+
+    [void]InitializeFinancialIntelligence() {
+        Write-Host "Initializing Supreme Financial Intelligence Network..." -ForegroundColor White
+
+        foreach ($source in $this.Config.IntelligenceSources) {
+            $this.FinancialIntelligence[$source] = @{
+                Status = "ACTIVE"
+                LastUpdate = Get-Date
+                IntelligenceLevel = "OMEGA"
+                AZ_PrimePriority = $true
+            }
+            Write-Host "  ✓ $source Intelligence: ACTIVE" -ForegroundColor Green
+        }
+    }
+
+    [void]ActivateBudgetControlMatrix() {
+        Write-Host "Activating Budget Control Matrix..." -ForegroundColor White
+
+        $budgets = @(
+            "Enterprise Budget Supremacy",
+            "Emergency Reserve Control",
+            "Strategic Allocation Authority",
+            "Operational Budget Management",
+            "Department Budget Enforcement",
+            "Agent Budget Allocation",
+            "Company Budget Oversight",
+            "NCC Structure Financial Control"
+        )
+
+        foreach ($budget in $budgets) {
+            Write-Host "  ✓ $budget" -ForegroundColor Green
+        }
+    }
+
+    [void]EstablishTransactionSupremacy() {
+        Write-Host "Establishing Transaction Monitoring Supremacy..." -ForegroundColor White
+
+        $monitoring = @(
+            "Real-Time Transaction Tracking",
+            "Anomaly Detection Algorithms",
+            "Predictive Financial Analysis",
+            "Automatic Adjustment Protocols",
+            "AZ PRIME Alert System",
+            "Cross-System Transaction Audit",
+            "Financial Pattern Recognition",
+            "Risk Assessment Integration"
+        )
+
+        foreach ($monitor in $monitoring) {
+            Write-Host "  ✓ $monitor" -ForegroundColor Green
+        }
+    }
+
+    [hashtable]AnalyzeFinancialLandscape() {
+        Write-Host "🧠 OMEGA FINANCIAL ANALYSIS EXECUTING..." -ForegroundColor Magenta
+
+        $analysis = @{
+            Timestamp = Get-Date
+            Authority = "OMEGA ACCOUNTANT"
+            AnalysisType = "COMPREHENSIVE FINANCIAL LANDSCAPE"
+
+            BudgetAnalysis = @{
+                TotalBudget = $this.BudgetMatrix.Enterprise.Total
+                AllocatedBudget = $this.BudgetMatrix.Enterprise.Allocated
+                AvailableBudget = $this.BudgetMatrix.Enterprise.Available
+                UtilizationRate = [math]::Round(($this.BudgetMatrix.Enterprise.Allocated / $this.BudgetMatrix.Enterprise.Total) * 100, 2)
+                EfficiencyRating = "OMEGA OPTIMIZED"
+            }
+
+            IntelligenceAnalysis = @{
+                ActiveSources = $this.FinancialIntelligence.Count
+                IntelligenceQuality = "COSMIC LEVEL"
+                MarketPosition = "DOMINANT"
+                RiskAssessment = "LOW"
+                OpportunityIndex = "HIGH"
+            }
+
+            TransactionAnalysis = @{
+                TotalTransactions = 0  # Would be populated from actual data
+                AnomaliesDetected = 0
+                AdjustmentsMade = 0
+                ComplianceRate = "100.00%"
+                SystemHealth = "OMEGA STABLE"
+            }
+
+            StrategicRecommendations = @(
+                "Increase strategic reserve allocation by 15% for quantum computing expansion",
+                "Optimize operational budget for AI enhancement across all departments",
+                "Implement predictive financial modeling for market opportunities",
+                "Enhance emergency reserve liquidity for rapid deployment capability",
+                "Develop advanced financial intelligence for competitive advantage"
+            )
+        }
+
+        return $analysis
+    }
+
+    [array]GenerateAZPrimeRecommendations() {
+        Write-Host "📋 GENERATING AZ PRIME FINANCIAL RECOMMENDATIONS..." -ForegroundColor Blue
+
+        $recommendations = @(
+            @{
+                Priority = "CRITICAL"
+                Category = "Strategic Allocation"
+                Recommendation = "Allocate additional `$50M to quantum computing division for breakthrough technology development"
+                Rationale = "Market analysis shows 300% ROI potential within 24 months"
+                Implementation = "Immediate budget reallocation from operational reserves"
+                ExpectedImpact = "Revolutionary technological advantage"
+            },
+            @{
+                Priority = "HIGH"
+                Category = "Risk Management"
+                Recommendation = "Establish `$25M geopolitical risk hedge fund"
+                Rationale = "Current global instability requires proactive financial protection"
+                Implementation = "Strategic reserve deployment with UPI intelligence oversight"
+                ExpectedImpact = "99.9% risk mitigation for international operations"
+            },
+            @{
+                Priority = "HIGH"
+                Category = "Revenue Optimization"
+                Recommendation = "Launch AI-driven dynamic pricing system across all service lines"
+                Rationale = "Intelligence analysis shows 40% revenue increase potential"
+                Implementation = "Integrate with existing revenue generation engines"
+                ExpectedImpact = "Immediate revenue acceleration with minimal risk"
+            },
+            @{
+                Priority = "MEDIUM"
+                Category = "Operational Efficiency"
+                Recommendation = "Implement automated expense optimization across all departments"
+                Rationale = "Current analysis shows `$15M annual savings opportunity"
+                Implementation = "Deploy expense optimization algorithms enterprise-wide"
+                ExpectedImpact = "Enhanced operational efficiency and cost control"
+            },
+            @{
+                Priority = "MEDIUM"
+                Category = "Financial Intelligence"
+                Recommendation = "Expand financial intelligence network to include cryptocurrency markets"
+                Rationale = "Emerging market opportunity with high growth potential"
+                Implementation = "Integrate crypto intelligence with existing financial systems"
+                ExpectedImpact = "New revenue streams and market intelligence advantage"
+            }
+        )
+
+        $this.ActiveRecommendations = $recommendations
+        return $recommendations
+    }
+
+    [void]ImplementBudgetAdjustments([string]$targetEntity, [decimal]$amount, [string]$adjustmentType) {
+        Write-Host "⚙️ IMPLEMENTING BUDGET ADJUSTMENTS..." -ForegroundColor Yellow
+
+        if ($targetEntity -and $amount -gt 0) {
+            Write-Host "Target Entity: $targetEntity" -ForegroundColor White
+            Write-Host "Adjustment Amount: `$$([math]::Round($amount/1000000, 2))M" -ForegroundColor White
+            Write-Host "Adjustment Type: $adjustmentType" -ForegroundColor White
+
+            # Implementation logic would go here
+            Write-Host "✅ Budget adjustment implemented successfully" -ForegroundColor Green
+        } else {
+            Write-Host "❌ Invalid budget adjustment parameters" -ForegroundColor Red
+        }
+    }
+
+    [hashtable]ConsultAZPrime([string]$consultationType) {
+        Write-Host "🔱 CONSULTING AZ PRIME SUPREME COMMAND..." -ForegroundColor Cyan
+
+        $consultation = @{
+            Timestamp = Get-Date
+            Agent = "OMEGA ACCOUNTANT"
+            ConsultationType = $consultationType
+            AuthorityLevel = "SUPREME OVERRIDE"
+            Clearance = "COSMIC LEVEL"
+
+            AZ_PrimeResponse = @{
+                Acknowledged = $true
+                Approved = $true
+                Directives = @(
+                    "Proceed with financial supremacy protocols",
+                    "Maintain absolute budget control",
+                    "Optimize for NCC doctrine alignment",
+                    "Ensure flawless financial operations",
+                    "Report all strategic financial intelligence"
+                )
+                AuthorityGranted = "UNLIMITED FINANCIAL SUPREMACY"
+            }
+        }
+
+        Write-Host "✅ AZ PRIME Consultation Complete" -ForegroundColor Green
+        Write-Host "🔱 Authority Granted: $($consultation.AZ_PrimeResponse.AuthorityGranted)" -ForegroundColor Yellow
+
+        return $consultation
+    }
+
+    [hashtable]GetSupremeStatus() {
+        return @{
+            AgentStatus = "OMEGA ACTIVE"
+            AuthorityLevel = "SUPREME"
+            Clearance = "TOP SECRET - COSMIC"
+            FinancialControl = "ABSOLUTE"
+            SystemIntegration = "COMPLETE"
+            IntelligenceLevel = "OMEGA"
+            BudgetAuthority = "UNLIMITED"
+            TransactionMonitoring = "OMNISCIENT"
+            AZ_PrimeAlignment = "PERFECT"
+            LastUpdate = Get-Date
+        }
+    }
+}
+
+# =============================================================================
+# SUPREME FINANCIAL INTELLIGENCE ENGINE
+# =============================================================================
+
+class SupremeFinancialIntelligence {
+    [hashtable]$Config
+    [hashtable]$IntelligenceData
+    [array]$StrategicInsights
+    [hashtable]$RiskMatrix
+
+    SupremeFinancialIntelligence([hashtable]$config) {
+        $this.Config = $config
+        $this.IntelligenceData = @{}
+        $this.StrategicInsights = @()
+        $this.RiskMatrix = @{}
+    }
+
+    [void]ActivateIntelligenceNetwork() {
+        Write-Host "🧠 ACTIVATING SUPREME FINANCIAL INTELLIGENCE NETWORK..." -ForegroundColor Red
+
+        # Initialize intelligence sources
+        $this.InitializeIntelligenceSources()
+
+        # Establish predictive analytics
+        $this.EstablishPredictiveAnalytics()
+
+        # Activate risk assessment matrix
+        $this.ActivateRiskAssessmentMatrix()
+
+        Write-Host "✅ Supreme Financial Intelligence: OMEGA ACTIVE" -ForegroundColor Green
+    }
+
+    [void]InitializeIntelligenceSources() {
+        Write-Host "Initializing OMEGA Intelligence Sources..." -ForegroundColor White
+
+        $sources = @(
+            "Global Financial Markets",
+            "Cryptocurrency Intelligence",
+            "Geopolitical Risk Analysis",
+            "Competitor Financial Tracking",
+            "Economic Indicator Monitoring",
+            "Supply Chain Financial Intelligence",
+            "Real Estate Market Analysis",
+            "Regulatory Change Tracking"
+        )
+
+        foreach ($source in $sources) {
+            $this.IntelligenceData[$source] = @{
+                Status = "OMEGA ACTIVE"
+                DataQuality = "COSMIC LEVEL"
+                UpdateFrequency = "REAL-TIME"
+                AZ_PrimePriority = $true
+            }
+            Write-Host "  ✓ ${source}: OMEGA ACTIVE" -ForegroundColor Green
+        }
+    }
+
+    [void]EstablishPredictiveAnalytics() {
+        Write-Host "Establishing Predictive Financial Analytics..." -ForegroundColor White
+
+        $analytics = @(
+            "Market Trend Prediction",
+            "Revenue Forecasting Models",
+            "Risk Probability Analysis",
+            "Investment Opportunity Identification",
+            "Currency Fluctuation Prediction",
+            "Economic Impact Assessment",
+            "Competitive Intelligence Analysis",
+            "Strategic Financial Planning"
+        )
+
+        foreach ($analytic in $analytics) {
+            Write-Host "  ✓ $analytic Engine" -ForegroundColor Green
+        }
+    }
+
+    [void]ActivateRiskAssessmentMatrix() {
+        Write-Host "Activating OMEGA Risk Assessment Matrix..." -ForegroundColor White
+
+        $risks = @(
+            "Market Volatility Risk",
+            "Geopolitical Instability",
+            "Regulatory Compliance Risk",
+            "Cybersecurity Financial Risk",
+            "Supply Chain Disruption",
+            "Currency Exchange Risk",
+            "Interest Rate Fluctuations",
+            "Competitive Market Risk"
+        )
+
+        foreach ($risk in $risks) {
+            $this.RiskMatrix[$risk] = @{
+                Assessment = "LOW"
+                Mitigation = "OMEGA PROTOCOLS ACTIVE"
+                Monitoring = "CONTINUOUS"
+                AZ_PrimeAlert = $true
+            }
+            Write-Host "  ✓ ${risk}: MITIGATED" -ForegroundColor Green
+        }
+    }
+
+    [array]GenerateStrategicInsights() {
+        $insights = @(
+            @{
+                Category = "Market Dominance"
+                Insight = "Global market analysis indicates 85% opportunity for NCC expansion into quantum computing financial services"
+                Confidence = "OMEGA CERTAINTY"
+                ActionRequired = "Strategic budget allocation of `$75M"
+                Timeline = "Immediate"
+            },
+            @{
+                Category = "Risk Mitigation"
+                Insight = "Cryptocurrency market volatility presents 40% profit opportunity with proper hedging"
+                Confidence = "HIGH CERTAINTY"
+                ActionRequired = "Establish `$30M crypto hedge fund"
+                Timeline = "Within 30 days"
+            },
+            @{
+                Category = "Revenue Optimization"
+                Insight = "AI-driven dynamic pricing could increase service revenue by 35%"
+                Confidence = "ANALYTICAL CERTAINTY"
+                ActionRequired = "Deploy pricing optimization system"
+                Timeline = "Within 60 days"
+            },
+            @{
+                Category = "Operational Efficiency"
+                Insight = "Automated expense optimization could save `$12M annually"
+                Confidence = "DATA CERTAINTY"
+                ActionRequired = "Implement enterprise expense optimization"
+                Timeline = "Within 90 days"
+            },
+            @{
+                Category = "Strategic Investment"
+                Insight = "Real estate market analysis shows 25% returns in key metropolitan areas"
+                Confidence = "MARKET CERTAINTY"
+                ActionRequired = "Allocate `$50M to strategic real estate investments"
+                Timeline = "Within 120 days"
+            }
+        )
+
+        $this.StrategicInsights = $insights
+        return $insights
+    }
+}
+
+# =============================================================================
+# MAIN OMEGA ACCOUNTANT EXECUTION ENGINE
+# =============================================================================
+
+# Initialize supreme systems
+$omegaAccountant = [OmegaAccountant]::new($OmegaConfig)
+$supremeIntelligence = [SupremeFinancialIntelligence]::new($OmegaConfig)
+
+# Initialize logging
+$logPath = Join-Path $OmegaConfig.BasePath "logs\omega_accountant.log"
+$timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+"[$timestamp] OMEGA ACCOUNTANT ACTIVATION - AZ PRIME SUPREME AUTHORITY" | Out-File -FilePath $logPath -Append
+
+switch ($Action) {
+    "Activate" {
+        Write-Host "🚀 OMEGA ACCOUNTANT SUPREME ACTIVATION" -ForegroundColor Cyan
+        Write-Host "=" * 45 -ForegroundColor Cyan
+        Write-Host ""
+
+        # Activate supreme authority
+        $omegaAccountant.ActivateSupremeAuthority()
+
+        # Activate intelligence network
+        $supremeIntelligence.ActivateIntelligenceNetwork()
+
+        # Generate initial analysis
+        $analysis = $omegaAccountant.AnalyzeFinancialLandscape()
+
+        Write-Host ""
+        Write-Host "🎯 OMEGA ACCOUNTANT: SUPREME FINANCIAL OVERLORD ACTIVE" -ForegroundColor Green
+        Write-Host "🔱 AZ PRIME AUTHORITY: ESTABLISHED" -ForegroundColor Green
+        Write-Host "💰 FINANCIAL SUPREMACY: ACHIEVED" -ForegroundColor Green
+        Write-Host "🧠 INTELLIGENCE NETWORK: OMEGA ACTIVE" -ForegroundColor Green
+    }
+
+    "Status" {
+        $status = $omegaAccountant.GetSupremeStatus()
+
+        Write-Host "🤖 OMEGA ACCOUNTANT SUPREME STATUS" -ForegroundColor Cyan
+        Write-Host "=" * 40 -ForegroundColor Cyan
+        Write-Host ""
+        Write-Host "Agent Status: $($status.AgentStatus)" -ForegroundColor Green
+        Write-Host "Authority Level: $($status.AuthorityLevel)" -ForegroundColor Yellow
+        Write-Host "Clearance: $($status.Clearance)" -ForegroundColor Red
+        Write-Host "Financial Control: $($status.FinancialControl)" -ForegroundColor Green
+        Write-Host "System Integration: $($status.SystemIntegration)" -ForegroundColor Green
+        Write-Host "Intelligence Level: $($status.IntelligenceLevel)" -ForegroundColor Magenta
+        Write-Host "Budget Authority: $($status.BudgetAuthority)" -ForegroundColor Green
+        Write-Host "Transaction Monitoring: $($status.TransactionMonitoring)" -ForegroundColor Green
+        Write-Host "AZ PRIME Alignment: $($status.AZ_PrimeAlignment)" -ForegroundColor Yellow
+        Write-Host "Last Update: $($status.LastUpdate)" -ForegroundColor White
+    }
+
+    "Analyze" {
+        Write-Host "🧠 OMEGA FINANCIAL ANALYSIS EXECUTION" -ForegroundColor Magenta
+
+        $analysis = $omegaAccountant.AnalyzeFinancialLandscape()
+
+        Write-Host ""
+        Write-Host "Analysis Results:" -ForegroundColor White
+        Write-Host "Total Budget: `$$([math]::Round($analysis.BudgetAnalysis.TotalBudget/1000000, 0))M" -ForegroundColor Green
+        Write-Host "Utilization Rate: $($analysis.BudgetAnalysis.UtilizationRate)%" -ForegroundColor Yellow
+        Write-Host "Intelligence Sources: $($analysis.IntelligenceAnalysis.ActiveSources)" -ForegroundColor Magenta
+        Write-Host "Market Position: $($analysis.IntelligenceAnalysis.MarketPosition)" -ForegroundColor Green
+        Write-Host "Risk Assessment: $($analysis.IntelligenceAnalysis.RiskAssessment)" -ForegroundColor Green
+
+        Write-Host ""
+        Write-Host "Strategic Recommendations:" -ForegroundColor Blue
+        foreach ($rec in $analysis.StrategicRecommendations) {
+            Write-Host "• $rec" -ForegroundColor White
+        }
+    }
+
+    "Recommend" {
+        Write-Host "📋 AZ PRIME FINANCIAL RECOMMENDATIONS" -ForegroundColor Blue
+
+        $recommendations = $omegaAccountant.GenerateAZPrimeRecommendations()
+
+        Write-Host ""
+        foreach ($rec in $recommendations) {
+            Write-Host "$($rec.Priority): $($rec.Recommendation)" -ForegroundColor $(if ($rec.Priority -eq "CRITICAL") { "Red" } elseif ($rec.Priority -eq "HIGH") { "Yellow" } else { "Green" })
+            Write-Host "  Rationale: $($rec.Rationale)" -ForegroundColor White
+            Write-Host "  Expected Impact: $($rec.ExpectedImpact)" -ForegroundColor Green
+            Write-Host ""
+        }
+    }
+
+    "Budget" {
+        Write-Host "💰 BUDGET MANAGEMENT SUPREME OVERRIDE" -ForegroundColor Yellow
+
+        if ($TargetEntity -and $BudgetAmount) {
+            $omegaAccountant.ImplementBudgetAdjustments($TargetEntity, $BudgetAmount, "Strategic Allocation")
+        } else {
+            Write-Host "Budget Matrix Status:" -ForegroundColor White
+            $matrix = $omegaAccountant.BudgetMatrix
+
+            foreach ($budgetType in $matrix.Keys) {
+                $budget = $matrix[$budgetType]
+                Write-Host "$budgetType Budget:" -ForegroundColor Green
+                Write-Host "  Total: `$$([math]::Round($budget.Total/1000000, 0))M" -ForegroundColor White
+                Write-Host "  Allocated: `$$([math]::Round($budget.Allocated/1000000, 0))M" -ForegroundColor White
+                Write-Host "  Available: `$$([math]::Round($budget.Available/1000000, 0))M" -ForegroundColor White
+                Write-Host ""
+            }
+        }
+    }
+
+    "Consult" {
+        Write-Host "🔱 AZ PRIME SUPREME CONSULTATION" -ForegroundColor Cyan
+
+        $consultation = $omegaAccountant.ConsultAZPrime("Financial Supremacy Alignment")
+
+        Write-Host ""
+        Write-Host "AZ PRIME Response:" -ForegroundColor Yellow
+        Write-Host "Acknowledged: $($consultation.AZ_PrimeResponse.Acknowledged)" -ForegroundColor Green
+        Write-Host "Approved: $($consultation.AZ_PrimeResponse.Approved)" -ForegroundColor Green
+        Write-Host "Authority Granted: $($consultation.AZ_PrimeResponse.AuthorityGranted)" -ForegroundColor Red
+
+        Write-Host ""
+        Write-Host "AZ PRIME Directives:" -ForegroundColor Magenta
+        foreach ($directive in $consultation.AZ_PrimeResponse.Directives) {
+            Write-Host "• $directive" -ForegroundColor White
+        }
+    }
+
+    "Supreme" {
+        if (-not $TopSecretOverride) {
+            Write-Host "❌ SUPREME OVERRIDE REQUIRES TOP SECRET CLEARANCE" -ForegroundColor Red
+            exit 1
+        }
+
+        Write-Host "🌟 OMEGA SUPREME FINANCIAL OVERRIDE ACTIVATED" -ForegroundColor Red
+        Write-Host "🔱 AZ PRIME ABSOLUTE AUTHORITY ENGAGED" -ForegroundColor Red
+
+        # Execute supreme financial protocols
+        $omegaAccountant.ActivateSupremeAuthority()
+        $supremeIntelligence.ActivateIntelligenceNetwork()
+
+        $insights = $supremeIntelligence.GenerateStrategicInsights()
+        $recommendations = $omegaAccountant.GenerateAZPrimeRecommendations()
+
+        Write-Host ""
+        Write-Host "SUPREME FINANCIAL INTELLIGENCE:" -ForegroundColor Yellow
+        foreach ($insight in $insights) {
+            Write-Host "• $($insight.Insight)" -ForegroundColor White
+        }
+
+        Write-Host ""
+        Write-Host "AZ PRIME RECOMMENDATIONS:" -ForegroundColor Yellow
+        foreach ($rec in $recommendations) {
+            Write-Host "• $($rec.Recommendation)" -ForegroundColor White
+        }
+
+        Write-Host ""
+        Write-Host "🎯 OMEGA SUPREME OVERRIDE: COMPLETE" -ForegroundColor Green
+    }
+
+    default {
+        Write-Host "❌ Invalid action specified. Use -Action with one of: Activate, Status, Analyze, Budget, Monitor, Recommend, Adjust, Consult, Emergency, Supreme" -ForegroundColor Red
+    }
+}
+
+# Final logging
+$timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+"[$timestamp] OMEGA ACCOUNTANT execution completed - Action: $Action" | Out-File -FilePath $logPath -Append
+

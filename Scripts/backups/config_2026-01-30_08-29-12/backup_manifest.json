@@ -1,0 +1,12 @@
+{
+  "Backup_Date": "2026-01-30T08:29:35Z",
+  "Authority": "AZ PRIME Command",
+  "Files_Backup": [
+    "settings.json",
+    "extensions.json",
+    "tasks.json",
+    "launch.json"
+  ],
+  "Backup_Directory": "C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\scripts\\backups\\config_2026-01-30_08-29-12",
+  "Script_Version": "1.0.0"
+}

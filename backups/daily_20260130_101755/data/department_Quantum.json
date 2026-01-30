@@ -1,0 +1,3609 @@
+{
+  "last_updated": "2026-01-29T19:17:34Z",
+  "current_tasks": [],
+  "department": "Quantum",
+  "tasks_completed": 600,
+  "agent_performance": {},
+  "data_repository": [
+    {
+      "completion_time": "2026-01-29T18:31:07Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 197
+    },
+    {
+      "completion_time": "2026-01-29T18:31:15Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 205
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:17Z",
+      "task_id": "Quantum-001",
+      "cycle": 4
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:20Z",
+      "task_id": "Quantum-001",
+      "cycle": 7
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:21Z",
+      "task_id": "Quantum-001",
+      "cycle": 8
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:22Z",
+      "task_id": "Quantum-002",
+      "cycle": 9
+    },
+    {
+      "completion_time": "2026-01-29T18:31:23Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 213
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:26Z",
+      "task_id": "Quantum-001",
+      "cycle": 13
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:28Z",
+      "task_id": "Quantum-002",
+      "cycle": 14
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:29Z",
+      "task_id": "Quantum-001",
+      "cycle": 15
+    },
+    {
+      "completion_time": "2026-01-29T18:31:31Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 221
+    },
+    {
+      "completion_time": "2026-01-29T18:31:32Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 222
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:34Z",
+      "task_id": "Quantum-002",
+      "cycle": 20
+    },
+    {
+      "completion_time": "2026-01-29T18:31:34Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 224
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:38Z",
+      "task_id": "Quantum-001",
+      "cycle": 24
+    },
+    {
+      "completion_time": "2026-01-29T18:31:44Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 233
+    },
+    {
+      "completion_time": "2026-01-29T18:31:46Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 235
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:46Z",
+      "task_id": "Quantum-002",
+      "cycle": 32
+    },
+    {
+      "completion_time": "2026-01-29T18:31:49Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 238
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:54Z",
+      "task_id": "Quantum-001",
+      "cycle": 40
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:54Z",
+      "task_id": "Quantum-002",
+      "cycle": 40
+    },
+    {
+      "performance_metrics": "System.Collections.Hashtable",
+      "completion_time": "2026-01-29T18:31:58Z",
+      "task_id": "Quantum-001",
+      "cycle": 44
+    },
+    {
+      "completion_time": "2026-01-29T18:32:00Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 249
+    },
+    {
+      "completion_time": "2026-01-29T18:32:13Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 262
+    },
+    {
+      "completion_time": "2026-01-29T18:32:14Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 263
+    },
+    {
+      "completion_time": "2026-01-29T18:32:19Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 268
+    },
+    {
+      "completion_time": "2026-01-29T18:32:22Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 271
+    },
+    {
+      "completion_time": "2026-01-29T18:32:24Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 273
+    },
+    {
+      "completion_time": "2026-01-29T18:32:35Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 284
+    },
+    {
+      "completion_time": "2026-01-29T18:32:55Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 304
+    },
+    {
+      "completion_time": "2026-01-29T18:32:57Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 306
+    },
+    {
+      "completion_time": "2026-01-29T18:32:58Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 307
+    },
+    {
+      "completion_time": "2026-01-29T18:33:06Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 315
+    },
+    {
+      "completion_time": "2026-01-29T18:33:10Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 319
+    },
+    {
+      "completion_time": "2026-01-29T18:33:20Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 329
+    },
+    {
+      "completion_time": "2026-01-29T18:33:32Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 341
+    },
+    {
+      "completion_time": "2026-01-29T18:33:44Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 352
+    },
+    {
+      "completion_time": "2026-01-29T18:33:49Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 357
+    },
+    {
+      "completion_time": "2026-01-29T18:33:54Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 362
+    },
+    {
+      "completion_time": "2026-01-29T18:34:04Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 372
+    },
+    {
+      "completion_time": "2026-01-29T18:34:05Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 373
+    },
+    {
+      "completion_time": "2026-01-29T18:34:05Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 373
+    },
+    {
+      "completion_time": "2026-01-29T18:34:07Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 375
+    },
+    {
+      "completion_time": "2026-01-29T18:34:11Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 379
+    },
+    {
+      "completion_time": "2026-01-29T18:34:19Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 387
+    },
+    {
+      "completion_time": "2026-01-29T18:34:20Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 388
+    },
+    {
+      "completion_time": "2026-01-29T18:34:21Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 389
+    },
+    {
+      "completion_time": "2026-01-29T18:34:24Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 392
+    },
+    {
+      "completion_time": "2026-01-29T18:34:30Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 398
+    },
+    {
+      "completion_time": "2026-01-29T18:34:32Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 400
+    },
+    {
+      "completion_time": "2026-01-29T18:34:33Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 401
+    },
+    {
+      "completion_time": "2026-01-29T18:34:33Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 401
+    },
+    {
+      "completion_time": "2026-01-29T18:34:41Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 409
+    },
+    {
+      "completion_time": "2026-01-29T18:34:46Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 414
+    },
+    {
+      "completion_time": "2026-01-29T18:34:53Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 421
+    },
+    {
+      "completion_time": "2026-01-29T18:34:54Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 422
+    },
+    {
+      "completion_time": "2026-01-29T18:34:55Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 423
+    },
+    {
+      "completion_time": "2026-01-29T18:34:57Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 425
+    },
+    {
+      "completion_time": "2026-01-29T18:35:00Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 428
+    },
+    {
+      "completion_time": "2026-01-29T18:35:08Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 436
+    },
+    {
+      "completion_time": "2026-01-29T18:35:10Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 438
+    },
+    {
+      "completion_time": "2026-01-29T18:35:12Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 440
+    },
+    {
+      "completion_time": "2026-01-29T18:35:14Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 442
+    },
+    {
+      "completion_time": "2026-01-29T18:35:18Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 446
+    },
+    {
+      "completion_time": "2026-01-29T18:35:19Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 447
+    },
+    {
+      "completion_time": "2026-01-29T18:35:21Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 449
+    },
+    {
+      "completion_time": "2026-01-29T18:35:22Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 450
+    },
+    {
+      "completion_time": "2026-01-29T18:35:25Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 453
+    },
+    {
+      "completion_time": "2026-01-29T18:35:26Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 454
+    },
+    {
+      "completion_time": "2026-01-29T18:35:31Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 458
+    },
+    {
+      "completion_time": "2026-01-29T18:35:37Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 464
+    },
+    {
+      "completion_time": "2026-01-29T18:35:43Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 470
+    },
+    {
+      "completion_time": "2026-01-29T18:35:45Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 472
+    },
+    {
+      "completion_time": "2026-01-29T18:35:46Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 473
+    },
+    {
+      "completion_time": "2026-01-29T18:35:50Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 477
+    },
+    {
+      "completion_time": "2026-01-29T18:35:53Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 480
+    },
+    {
+      "completion_time": "2026-01-29T18:35:57Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 484
+    },
+    {
+      "completion_time": "2026-01-29T18:35:59Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 486
+    },
+    {
+      "completion_time": "2026-01-29T18:36:13Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 500
+    },
+    {
+      "completion_time": "2026-01-29T18:36:26Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 513
+    },
+    {
+      "completion_time": "2026-01-29T18:36:37Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 524
+    },
+    {
+      "completion_time": "2026-01-29T18:36:37Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 524
+    },
+    {
+      "completion_time": "2026-01-29T18:36:45Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 532
+    },
+    {
+      "completion_time": "2026-01-29T18:36:48Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 535
+    },
+    {
+      "completion_time": "2026-01-29T18:36:52Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 539
+    },
+    {
+      "completion_time": "2026-01-29T18:36:59Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 546
+    },
+    {
+      "completion_time": "2026-01-29T18:37:05Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 552
+    },
+    {
+      "completion_time": "2026-01-29T18:37:13Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 560
+    },
+    {
+      "completion_time": "2026-01-29T18:37:28Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 575
+    },
+    {
+      "completion_time": "2026-01-29T18:37:30Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 577
+    },
+    {
+      "completion_time": "2026-01-29T18:37:33Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 580
+    },
+    {
+      "completion_time": "2026-01-29T18:37:41Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 587
+    },
+    {
+      "completion_time": "2026-01-29T18:37:48Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 594
+    },
+    {
+      "completion_time": "2026-01-29T18:37:50Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 596
+    },
+    {
+      "completion_time": "2026-01-29T18:37:51Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 597
+    },
+    {
+      "completion_time": "2026-01-29T18:37:52Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 598
+    },
+    {
+      "completion_time": "2026-01-29T18:38:02Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 608
+    },
+    {
+      "completion_time": "2026-01-29T18:38:05Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 611
+    },
+    {
+      "completion_time": "2026-01-29T18:38:11Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 617
+    },
+    {
+      "completion_time": "2026-01-29T18:38:12Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 618
+    },
+    {
+      "completion_time": "2026-01-29T18:38:13Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 619
+    },
+    {
+      "completion_time": "2026-01-29T18:38:15Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 621
+    },
+    {
+      "completion_time": "2026-01-29T18:38:16Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 622
+    },
+    {
+      "completion_time": "2026-01-29T18:38:17Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 623
+    },
+    {
+      "completion_time": "2026-01-29T18:38:20Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 626
+    },
+    {
+      "completion_time": "2026-01-29T18:38:24Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 630
+    },
+    {
+      "completion_time": "2026-01-29T18:38:29Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 635
+    },
+    {
+      "completion_time": "2026-01-29T18:38:32Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 638
+    },
+    {
+      "completion_time": "2026-01-29T18:38:33Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 639
+    },
+    {
+      "completion_time": "2026-01-29T18:38:35Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 641
+    },
+    {
+      "completion_time": "2026-01-29T18:38:37Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 643
+    },
+    {
+      "completion_time": "2026-01-29T18:38:38Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 644
+    },
+    {
+      "completion_time": "2026-01-29T18:38:42Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 648
+    },
+    {
+      "completion_time": "2026-01-29T18:38:50Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 656
+    },
+    {
+      "completion_time": "2026-01-29T18:39:04Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 670
+    },
+    {
+      "completion_time": "2026-01-29T18:39:05Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 671
+    },
+    {
+      "completion_time": "2026-01-29T18:39:15Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 681
+    },
+    {
+      "completion_time": "2026-01-29T18:39:19Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 685
+    },
+    {
+      "completion_time": "2026-01-29T18:39:31Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 696
+    },
+    {
+      "completion_time": "2026-01-29T18:39:33Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 698
+    },
+    {
+      "completion_time": "2026-01-29T18:39:34Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 699
+    },
+    {
+      "completion_time": "2026-01-29T18:39:36Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 701
+    },
+    {
+      "completion_time": "2026-01-29T18:39:38Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 703
+    },
+    {
+      "completion_time": "2026-01-29T18:39:42Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 707
+    },
+    {
+      "completion_time": "2026-01-29T18:39:49Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 714
+    },
+    {
+      "completion_time": "2026-01-29T18:39:50Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 715
+    },
+    {
+      "completion_time": "2026-01-29T18:39:53Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 718
+    },
+    {
+      "completion_time": "2026-01-29T18:39:56Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 721
+    },
+    {
+      "completion_time": "2026-01-29T18:40:03Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 728
+    },
+    {
+      "completion_time": "2026-01-29T18:40:04Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 729
+    },
+    {
+      "completion_time": "2026-01-29T18:40:11Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 736
+    },
+    {
+      "completion_time": "2026-01-29T18:40:20Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 745
+    },
+    {
+      "completion_time": "2026-01-29T18:40:26Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 751
+    },
+    {
+      "completion_time": "2026-01-29T18:40:33Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 758
+    },
+    {
+      "completion_time": "2026-01-29T18:40:36Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 761
+    },
+    {
+      "completion_time": "2026-01-29T18:40:37Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 762
+    },
+    {
+      "completion_time": "2026-01-29T18:40:39Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 764
+    },
+    {
+      "completion_time": "2026-01-29T18:40:40Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 765
+    },
+    {
+      "completion_time": "2026-01-29T18:40:46Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 771
+    },
+    {
+      "completion_time": "2026-01-29T18:40:49Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 774
+    },
+    {
+      "completion_time": "2026-01-29T18:40:50Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 775
+    },
+    {
+      "completion_time": "2026-01-29T18:40:51Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 776
+    },
+    {
+      "completion_time": "2026-01-29T18:40:53Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 778
+    },
+    {
+      "completion_time": "2026-01-29T18:40:57Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 782
+    },
+    {
+      "completion_time": "2026-01-29T18:41:04Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 789
+    },
+    {
+      "completion_time": "2026-01-29T18:41:11Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 796
+    },
+    {
+      "completion_time": "2026-01-29T18:41:12Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 797
+    },
+    {
+      "completion_time": "2026-01-29T18:41:20Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 805
+    },
+    {
+      "completion_time": "2026-01-29T18:41:20Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 805
+    },
+    {
+      "completion_time": "2026-01-29T18:41:32Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 816
+    },
+    {
+      "completion_time": "2026-01-29T18:41:34Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 818
+    },
+    {
+      "completion_time": "2026-01-29T18:41:35Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 819
+    },
+    {
+      "completion_time": "2026-01-29T18:41:39Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 823
+    },
+    {
+      "completion_time": "2026-01-29T18:41:53Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 837
+    },
+    {
+      "completion_time": "2026-01-29T18:42:04Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 848
+    },
+    {
+      "completion_time": "2026-01-29T18:42:20Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 864
+    },
+    {
+      "completion_time": "2026-01-29T18:42:21Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 865
+    },
+    {
+      "completion_time": "2026-01-29T18:42:30Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 874
+    },
+    {
+      "completion_time": "2026-01-29T18:42:31Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 875
+    },
+    {
+      "completion_time": "2026-01-29T18:42:32Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 876
+    },
+    {
+      "completion_time": "2026-01-29T18:42:36Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 880
+    },
+    {
+      "completion_time": "2026-01-29T18:42:46Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 890
+    },
+    {
+      "completion_time": "2026-01-29T18:42:51Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 895
+    },
+    {
+      "completion_time": "2026-01-29T18:42:52Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 896
+    },
+    {
+      "completion_time": "2026-01-29T18:43:00Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 904
+    },
+    {
+      "completion_time": "2026-01-29T18:43:08Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 912
+    },
+    {
+      "completion_time": "2026-01-29T18:43:12Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 916
+    },
+    {
+      "completion_time": "2026-01-29T18:43:14Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 918
+    },
+    {
+      "completion_time": "2026-01-29T18:43:14Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 918
+    },
+    {
+      "completion_time": "2026-01-29T18:43:20Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 923
+    },
+    {
+      "completion_time": "2026-01-29T18:43:27Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 930
+    },
+    {
+      "completion_time": "2026-01-29T18:43:28Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 931
+    },
+    {
+      "completion_time": "2026-01-29T18:43:34Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 937
+    },
+    {
+      "completion_time": "2026-01-29T18:43:37Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 940
+    },
+    {
+      "completion_time": "2026-01-29T18:43:39Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 942
+    },
+    {
+      "completion_time": "2026-01-29T18:43:42Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 945
+    },
+    {
+      "completion_time": "2026-01-29T18:43:49Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 952
+    },
+    {
+      "completion_time": "2026-01-29T18:43:56Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 959
+    },
+    {
+      "completion_time": "2026-01-29T18:43:57Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 960
+    },
+    {
+      "completion_time": "2026-01-29T18:43:59Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 962
+    },
+    {
+      "completion_time": "2026-01-29T18:44:01Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 964
+    },
+    {
+      "completion_time": "2026-01-29T18:44:08Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 971
+    },
+    {
+      "completion_time": "2026-01-29T18:44:09Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 972
+    },
+    {
+      "completion_time": "2026-01-29T18:44:10Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 973
+    },
+    {
+      "completion_time": "2026-01-29T18:44:11Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 974
+    },
+    {
+      "completion_time": "2026-01-29T18:44:13Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 976
+    },
+    {
+      "completion_time": "2026-01-29T18:44:14Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 977
+    },
+    {
+      "completion_time": "2026-01-29T18:44:15Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 978
+    },
+    {
+      "completion_time": "2026-01-29T18:44:29Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 992
+    },
+    {
+      "completion_time": "2026-01-29T18:44:31Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 994
+    },
+    {
+      "completion_time": "2026-01-29T18:44:35Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 998
+    },
+    {
+      "completion_time": "2026-01-29T18:44:36Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 999
+    },
+    {
+      "completion_time": "2026-01-29T18:44:38Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1001
+    },
+    {
+      "completion_time": "2026-01-29T18:44:42Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1005
+    },
+    {
+      "completion_time": "2026-01-29T18:44:47Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1010
+    },
+    {
+      "completion_time": "2026-01-29T18:44:52Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1015
+    },
+    {
+      "completion_time": "2026-01-29T18:44:56Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1019
+    },
+    {
+      "completion_time": "2026-01-29T18:44:59Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1022
+    },
+    {
+      "completion_time": "2026-01-29T18:45:03Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1026
+    },
+    {
+      "completion_time": "2026-01-29T18:45:12Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1035
+    },
+    {
+      "completion_time": "2026-01-29T18:45:17Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1040
+    },
+    {
+      "completion_time": "2026-01-29T18:45:20Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1042
+    },
+    {
+      "completion_time": "2026-01-29T18:45:23Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1045
+    },
+    {
+      "completion_time": "2026-01-29T18:45:24Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1046
+    },
+    {
+      "completion_time": "2026-01-29T18:45:41Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1063
+    },
+    {
+      "completion_time": "2026-01-29T18:45:57Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1079
+    },
+    {
+      "completion_time": "2026-01-29T18:46:10Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1092
+    },
+    {
+      "completion_time": "2026-01-29T18:46:17Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1099
+    },
+    {
+      "completion_time": "2026-01-29T18:46:22Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1104
+    },
+    {
+      "completion_time": "2026-01-29T18:46:25Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1107
+    },
+    {
+      "completion_time": "2026-01-29T18:46:40Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1122
+    },
+    {
+      "completion_time": "2026-01-29T18:46:47Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1129
+    },
+    {
+      "completion_time": "2026-01-29T18:46:51Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1133
+    },
+    {
+      "completion_time": "2026-01-29T18:46:55Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1137
+    },
+    {
+      "completion_time": "2026-01-29T18:47:01Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1143
+    },
+    {
+      "completion_time": "2026-01-29T18:47:01Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1143
+    },
+    {
+      "completion_time": "2026-01-29T18:47:02Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1144
+    },
+    {
+      "completion_time": "2026-01-29T18:47:03Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1145
+    },
+    {
+      "completion_time": "2026-01-29T18:47:08Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1150
+    },
+    {
+      "completion_time": "2026-01-29T18:47:12Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1154
+    },
+    {
+      "completion_time": "2026-01-29T18:47:24Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1166
+    },
+    {
+      "completion_time": "2026-01-29T18:47:27Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1168
+    },
+    {
+      "completion_time": "2026-01-29T18:47:28Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1169
+    },
+    {
+      "completion_time": "2026-01-29T18:47:30Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1171
+    },
+    {
+      "completion_time": "2026-01-29T18:47:31Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1172
+    },
+    {
+      "completion_time": "2026-01-29T18:47:56Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1197
+    },
+    {
+      "completion_time": "2026-01-29T18:47:57Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1198
+    },
+    {
+      "completion_time": "2026-01-29T18:47:58Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1199
+    },
+    {
+      "completion_time": "2026-01-29T18:48:00Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1201
+    },
+    {
+      "completion_time": "2026-01-29T18:48:18Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1219
+    },
+    {
+      "completion_time": "2026-01-29T18:48:20Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1221
+    },
+    {
+      "completion_time": "2026-01-29T18:48:23Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1224
+    },
+    {
+      "completion_time": "2026-01-29T18:48:24Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1225
+    },
+    {
+      "completion_time": "2026-01-29T18:48:29Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1230
+    },
+    {
+      "completion_time": "2026-01-29T18:48:32Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1233
+    },
+    {
+      "completion_time": "2026-01-29T18:48:34Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1235
+    },
+    {
+      "completion_time": "2026-01-29T18:48:41Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1242
+    },
+    {
+      "completion_time": "2026-01-29T18:48:44Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1245
+    },
+    {
+      "completion_time": "2026-01-29T18:48:45Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1246
+    },
+    {
+      "completion_time": "2026-01-29T18:48:49Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1250
+    },
+    {
+      "completion_time": "2026-01-29T18:48:49Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1250
+    },
+    {
+      "completion_time": "2026-01-29T18:48:53Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1254
+    },
+    {
+      "completion_time": "2026-01-29T18:48:57Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1258
+    },
+    {
+      "completion_time": "2026-01-29T18:49:05Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1266
+    },
+    {
+      "completion_time": "2026-01-29T18:49:11Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1272
+    },
+    {
+      "completion_time": "2026-01-29T18:49:12Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1273
+    },
+    {
+      "completion_time": "2026-01-29T18:49:16Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1277
+    },
+    {
+      "completion_time": "2026-01-29T18:49:19Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1280
+    },
+    {
+      "completion_time": "2026-01-29T18:49:29Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1289
+    },
+    {
+      "completion_time": "2026-01-29T18:49:39Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1299
+    },
+    {
+      "completion_time": "2026-01-29T18:49:41Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1301
+    },
+    {
+      "completion_time": "2026-01-29T18:49:50Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1310
+    },
+    {
+      "completion_time": "2026-01-29T18:49:53Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1313
+    },
+    {
+      "completion_time": "2026-01-29T18:50:05Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1324
+    },
+    {
+      "completion_time": "2026-01-29T18:50:13Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1331
+    },
+    {
+      "completion_time": "2026-01-29T18:50:20Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1338
+    },
+    {
+      "completion_time": "2026-01-29T18:50:22Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1340
+    },
+    {
+      "completion_time": "2026-01-29T18:50:27Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1345
+    },
+    {
+      "completion_time": "2026-01-29T18:50:28Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1346
+    },
+    {
+      "completion_time": "2026-01-29T18:50:35Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1353
+    },
+    {
+      "completion_time": "2026-01-29T18:50:51Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1369
+    },
+    {
+      "completion_time": "2026-01-29T18:50:52Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1370
+    },
+    {
+      "completion_time": "2026-01-29T18:50:52Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1370
+    },
+    {
+      "completion_time": "2026-01-29T18:50:53Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1371
+    },
+    {
+      "completion_time": "2026-01-29T18:50:54Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1372
+    },
+    {
+      "completion_time": "2026-01-29T18:50:56Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1374
+    },
+    {
+      "completion_time": "2026-01-29T18:51:11Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1389
+    },
+    {
+      "completion_time": "2026-01-29T18:51:13Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1391
+    },
+    {
+      "completion_time": "2026-01-29T18:51:14Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1392
+    },
+    {
+      "completion_time": "2026-01-29T18:51:25Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1403
+    },
+    {
+      "completion_time": "2026-01-29T18:51:26Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1404
+    },
+    {
+      "completion_time": "2026-01-29T18:51:27Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1405
+    },
+    {
+      "completion_time": "2026-01-29T18:51:32Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1410
+    },
+    {
+      "completion_time": "2026-01-29T18:51:38Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1415
+    },
+    {
+      "completion_time": "2026-01-29T18:51:39Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1416
+    },
+    {
+      "completion_time": "2026-01-29T18:51:42Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1419
+    },
+    {
+      "completion_time": "2026-01-29T18:51:57Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1434
+    },
+    {
+      "completion_time": "2026-01-29T18:51:58Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1435
+    },
+    {
+      "completion_time": "2026-01-29T18:52:03Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1440
+    },
+    {
+      "completion_time": "2026-01-29T18:52:15Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1452
+    },
+    {
+      "completion_time": "2026-01-29T18:52:21Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1458
+    },
+    {
+      "completion_time": "2026-01-29T18:52:22Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1459
+    },
+    {
+      "completion_time": "2026-01-29T18:52:22Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1459
+    },
+    {
+      "completion_time": "2026-01-29T18:52:23Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1460
+    },
+    {
+      "completion_time": "2026-01-29T18:52:27Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1464
+    },
+    {
+      "completion_time": "2026-01-29T18:52:40Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1477
+    },
+    {
+      "completion_time": "2026-01-29T18:52:45Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1482
+    },
+    {
+      "completion_time": "2026-01-29T18:52:46Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1483
+    },
+    {
+      "completion_time": "2026-01-29T18:52:53Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1490
+    },
+    {
+      "completion_time": "2026-01-29T18:53:14Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1511
+    },
+    {
+      "completion_time": "2026-01-29T18:53:21Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1517
+    },
+    {
+      "completion_time": "2026-01-29T18:53:27Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1523
+    },
+    {
+      "completion_time": "2026-01-29T18:53:28Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1524
+    },
+    {
+      "completion_time": "2026-01-29T18:53:32Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1528
+    },
+    {
+      "completion_time": "2026-01-29T18:53:36Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1532
+    },
+    {
+      "completion_time": "2026-01-29T18:53:41Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1537
+    },
+    {
+      "completion_time": "2026-01-29T18:53:46Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1542
+    },
+    {
+      "completion_time": "2026-01-29T18:53:49Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1545
+    },
+    {
+      "completion_time": "2026-01-29T18:53:59Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1555
+    },
+    {
+      "completion_time": "2026-01-29T18:54:05Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1561
+    },
+    {
+      "completion_time": "2026-01-29T18:54:14Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1570
+    },
+    {
+      "completion_time": "2026-01-29T18:54:17Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1573
+    },
+    {
+      "completion_time": "2026-01-29T18:54:22Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1578
+    },
+    {
+      "completion_time": "2026-01-29T18:54:26Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1582
+    },
+    {
+      "completion_time": "2026-01-29T18:54:28Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1584
+    },
+    {
+      "completion_time": "2026-01-29T18:54:31Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1587
+    },
+    {
+      "completion_time": "2026-01-29T18:54:31Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1587
+    },
+    {
+      "completion_time": "2026-01-29T18:54:33Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1589
+    },
+    {
+      "completion_time": "2026-01-29T18:54:34Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1590
+    },
+    {
+      "completion_time": "2026-01-29T18:54:40Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1596
+    },
+    {
+      "completion_time": "2026-01-29T18:54:41Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1597
+    },
+    {
+      "completion_time": "2026-01-29T18:54:57Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1613
+    },
+    {
+      "completion_time": "2026-01-29T18:54:58Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1614
+    },
+    {
+      "completion_time": "2026-01-29T18:55:20Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1635
+    },
+    {
+      "completion_time": "2026-01-29T18:55:21Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1636
+    },
+    {
+      "completion_time": "2026-01-29T18:55:26Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1641
+    },
+    {
+      "completion_time": "2026-01-29T18:55:30Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1645
+    },
+    {
+      "completion_time": "2026-01-29T18:55:32Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1647
+    },
+    {
+      "completion_time": "2026-01-29T18:55:36Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1651
+    },
+    {
+      "completion_time": "2026-01-29T18:55:37Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1652
+    },
+    {
+      "completion_time": "2026-01-29T18:55:38Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1653
+    },
+    {
+      "completion_time": "2026-01-29T18:55:43Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1658
+    },
+    {
+      "completion_time": "2026-01-29T18:55:48Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1663
+    },
+    {
+      "completion_time": "2026-01-29T18:55:50Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1665
+    },
+    {
+      "completion_time": "2026-01-29T18:55:54Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1669
+    },
+    {
+      "completion_time": "2026-01-29T18:56:01Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1676
+    },
+    {
+      "completion_time": "2026-01-29T18:56:02Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1677
+    },
+    {
+      "completion_time": "2026-01-29T18:56:03Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1678
+    },
+    {
+      "completion_time": "2026-01-29T18:56:06Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1681
+    },
+    {
+      "completion_time": "2026-01-29T18:56:22Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1697
+    },
+    {
+      "completion_time": "2026-01-29T18:56:25Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1700
+    },
+    {
+      "completion_time": "2026-01-29T18:56:34Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1709
+    },
+    {
+      "completion_time": "2026-01-29T18:56:40Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1715
+    },
+    {
+      "completion_time": "2026-01-29T18:56:47Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1722
+    },
+    {
+      "completion_time": "2026-01-29T18:56:52Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1727
+    },
+    {
+      "completion_time": "2026-01-29T18:56:53Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1728
+    },
+    {
+      "completion_time": "2026-01-29T18:56:56Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1730
+    },
+    {
+      "completion_time": "2026-01-29T18:56:56Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1730
+    },
+    {
+      "completion_time": "2026-01-29T18:56:59Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1733
+    },
+    {
+      "completion_time": "2026-01-29T18:57:00Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1734
+    },
+    {
+      "completion_time": "2026-01-29T18:57:16Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1750
+    },
+    {
+      "completion_time": "2026-01-29T18:57:27Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1761
+    },
+    {
+      "completion_time": "2026-01-29T18:57:29Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1763
+    },
+    {
+      "completion_time": "2026-01-29T18:57:31Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1765
+    },
+    {
+      "completion_time": "2026-01-29T18:57:32Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1766
+    },
+    {
+      "completion_time": "2026-01-29T18:57:40Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1774
+    },
+    {
+      "completion_time": "2026-01-29T18:57:51Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1785
+    },
+    {
+      "completion_time": "2026-01-29T18:58:03Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1797
+    },
+    {
+      "completion_time": "2026-01-29T18:58:09Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1803
+    },
+    {
+      "completion_time": "2026-01-29T18:58:10Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1804
+    },
+    {
+      "completion_time": "2026-01-29T18:58:21Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1815
+    },
+    {
+      "completion_time": "2026-01-29T18:58:28Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1822
+    },
+    {
+      "completion_time": "2026-01-29T18:58:29Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1823
+    },
+    {
+      "completion_time": "2026-01-29T18:58:33Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1827
+    },
+    {
+      "completion_time": "2026-01-29T18:58:38Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1832
+    },
+    {
+      "completion_time": "2026-01-29T18:58:40Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1833
+    },
+    {
+      "completion_time": "2026-01-29T18:58:42Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1835
+    },
+    {
+      "completion_time": "2026-01-29T18:58:44Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1837
+    },
+    {
+      "completion_time": "2026-01-29T18:58:49Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1842
+    },
+    {
+      "completion_time": "2026-01-29T18:59:00Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1853
+    },
+    {
+      "completion_time": "2026-01-29T18:59:07Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1860
+    },
+    {
+      "completion_time": "2026-01-29T18:59:11Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1864
+    },
+    {
+      "completion_time": "2026-01-29T18:59:26Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1879
+    },
+    {
+      "completion_time": "2026-01-29T18:59:28Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1881
+    },
+    {
+      "completion_time": "2026-01-29T18:59:30Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1883
+    },
+    {
+      "completion_time": "2026-01-29T18:59:32Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1885
+    },
+    {
+      "completion_time": "2026-01-29T18:59:43Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1896
+    },
+    {
+      "completion_time": "2026-01-29T18:59:45Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1898
+    },
+    {
+      "completion_time": "2026-01-29T19:00:13Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1926
+    },
+    {
+      "completion_time": "2026-01-29T19:00:15Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1928
+    },
+    {
+      "completion_time": "2026-01-29T19:00:17Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1930
+    },
+    {
+      "completion_time": "2026-01-29T19:00:18Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1931
+    },
+    {
+      "completion_time": "2026-01-29T19:00:32Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1944
+    },
+    {
+      "completion_time": "2026-01-29T19:00:35Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1947
+    },
+    {
+      "completion_time": "2026-01-29T19:00:40Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1952
+    },
+    {
+      "completion_time": "2026-01-29T19:00:48Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1960
+    },
+    {
+      "completion_time": "2026-01-29T19:00:53Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1965
+    },
+    {
+      "completion_time": "2026-01-29T19:00:56Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1968
+    },
+    {
+      "completion_time": "2026-01-29T19:01:01Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1973
+    },
+    {
+      "completion_time": "2026-01-29T19:01:03Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1975
+    },
+    {
+      "completion_time": "2026-01-29T19:01:05Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1977
+    },
+    {
+      "completion_time": "2026-01-29T19:01:08Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1980
+    },
+    {
+      "completion_time": "2026-01-29T19:01:10Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1982
+    },
+    {
+      "completion_time": "2026-01-29T19:01:12Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1984
+    },
+    {
+      "completion_time": "2026-01-29T19:01:23Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1995
+    },
+    {
+      "completion_time": "2026-01-29T19:01:25Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 1997
+    },
+    {
+      "completion_time": "2026-01-29T19:01:30Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2002
+    },
+    {
+      "completion_time": "2026-01-29T19:01:32Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2004
+    },
+    {
+      "completion_time": "2026-01-29T19:01:43Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2015
+    },
+    {
+      "completion_time": "2026-01-29T19:01:44Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2016
+    },
+    {
+      "completion_time": "2026-01-29T19:01:45Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2017
+    },
+    {
+      "completion_time": "2026-01-29T19:01:53Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2025
+    },
+    {
+      "completion_time": "2026-01-29T19:01:55Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2027
+    },
+    {
+      "completion_time": "2026-01-29T19:01:56Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2028
+    },
+    {
+      "completion_time": "2026-01-29T19:01:57Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2029
+    },
+    {
+      "completion_time": "2026-01-29T19:02:01Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2033
+    },
+    {
+      "completion_time": "2026-01-29T19:02:03Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2035
+    },
+    {
+      "completion_time": "2026-01-29T19:02:07Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2039
+    },
+    {
+      "completion_time": "2026-01-29T19:02:11Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2043
+    },
+    {
+      "completion_time": "2026-01-29T19:02:15Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2047
+    },
+    {
+      "completion_time": "2026-01-29T19:02:15Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2047
+    },
+    {
+      "completion_time": "2026-01-29T19:02:20Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2051
+    },
+    {
+      "completion_time": "2026-01-29T19:02:21Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2052
+    },
+    {
+      "completion_time": "2026-01-29T19:02:23Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2054
+    },
+    {
+      "completion_time": "2026-01-29T19:02:29Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2060
+    },
+    {
+      "completion_time": "2026-01-29T19:02:29Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2060
+    },
+    {
+      "completion_time": "2026-01-29T19:02:36Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2067
+    },
+    {
+      "completion_time": "2026-01-29T19:02:37Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2068
+    },
+    {
+      "completion_time": "2026-01-29T19:02:39Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2070
+    },
+    {
+      "completion_time": "2026-01-29T19:02:43Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2074
+    },
+    {
+      "completion_time": "2026-01-29T19:02:45Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2076
+    },
+    {
+      "completion_time": "2026-01-29T19:02:47Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2078
+    },
+    {
+      "completion_time": "2026-01-29T19:02:50Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2081
+    },
+    {
+      "completion_time": "2026-01-29T19:02:52Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2083
+    },
+    {
+      "completion_time": "2026-01-29T19:03:03Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2094
+    },
+    {
+      "completion_time": "2026-01-29T19:03:05Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2096
+    },
+    {
+      "completion_time": "2026-01-29T19:03:06Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2097
+    },
+    {
+      "completion_time": "2026-01-29T19:03:16Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2107
+    },
+    {
+      "completion_time": "2026-01-29T19:03:17Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2108
+    },
+    {
+      "completion_time": "2026-01-29T19:03:24Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2115
+    },
+    {
+      "completion_time": "2026-01-29T19:03:27Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2118
+    },
+    {
+      "completion_time": "2026-01-29T19:03:28Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2119
+    },
+    {
+      "completion_time": "2026-01-29T19:03:30Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2121
+    },
+    {
+      "completion_time": "2026-01-29T19:03:31Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2122
+    },
+    {
+      "completion_time": "2026-01-29T19:03:43Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2134
+    },
+    {
+      "completion_time": "2026-01-29T19:03:44Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2135
+    },
+    {
+      "completion_time": "2026-01-29T19:03:49Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2140
+    },
+    {
+      "completion_time": "2026-01-29T19:03:55Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2146
+    },
+    {
+      "completion_time": "2026-01-29T19:04:00Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2151
+    },
+    {
+      "completion_time": "2026-01-29T19:04:01Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2152
+    },
+    {
+      "completion_time": "2026-01-29T19:04:21Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2172
+    },
+    {
+      "completion_time": "2026-01-29T19:04:29Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2179
+    },
+    {
+      "completion_time": "2026-01-29T19:04:35Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2185
+    },
+    {
+      "completion_time": "2026-01-29T19:04:45Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2195
+    },
+    {
+      "completion_time": "2026-01-29T19:04:50Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2200
+    },
+    {
+      "completion_time": "2026-01-29T19:04:53Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2203
+    },
+    {
+      "completion_time": "2026-01-29T19:04:55Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2205
+    },
+    {
+      "completion_time": "2026-01-29T19:04:58Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2208
+    },
+    {
+      "completion_time": "2026-01-29T19:05:28Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2238
+    },
+    {
+      "completion_time": "2026-01-29T19:05:37Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2247
+    },
+    {
+      "completion_time": "2026-01-29T19:05:37Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2247
+    },
+    {
+      "completion_time": "2026-01-29T19:05:40Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2250
+    },
+    {
+      "completion_time": "2026-01-29T19:05:42Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2252
+    },
+    {
+      "completion_time": "2026-01-29T19:05:46Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2256
+    },
+    {
+      "completion_time": "2026-01-29T19:05:49Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2259
+    },
+    {
+      "completion_time": "2026-01-29T19:05:51Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2261
+    },
+    {
+      "completion_time": "2026-01-29T19:05:52Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2262
+    },
+    {
+      "completion_time": "2026-01-29T19:05:55Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2265
+    },
+    {
+      "completion_time": "2026-01-29T19:05:57Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2267
+    },
+    {
+      "completion_time": "2026-01-29T19:06:01Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2271
+    },
+    {
+      "completion_time": "2026-01-29T19:06:02Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2272
+    },
+    {
+      "completion_time": "2026-01-29T19:06:03Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2273
+    },
+    {
+      "completion_time": "2026-01-29T19:06:06Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2276
+    },
+    {
+      "completion_time": "2026-01-29T19:06:11Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2281
+    },
+    {
+      "completion_time": "2026-01-29T19:06:13Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2283
+    },
+    {
+      "completion_time": "2026-01-29T19:06:15Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2285
+    },
+    {
+      "completion_time": "2026-01-29T19:06:17Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2287
+    },
+    {
+      "completion_time": "2026-01-29T19:06:19Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2289
+    },
+    {
+      "completion_time": "2026-01-29T19:06:21Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2291
+    },
+    {
+      "completion_time": "2026-01-29T19:06:24Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2294
+    },
+    {
+      "completion_time": "2026-01-29T19:06:24Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2294
+    },
+    {
+      "completion_time": "2026-01-29T19:06:31Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2301
+    },
+    {
+      "completion_time": "2026-01-29T19:06:34Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2303
+    },
+    {
+      "completion_time": "2026-01-29T19:06:37Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2306
+    },
+    {
+      "completion_time": "2026-01-29T19:06:37Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2306
+    },
+    {
+      "completion_time": "2026-01-29T19:06:38Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2307
+    },
+    {
+      "completion_time": "2026-01-29T19:06:42Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2311
+    },
+    {
+      "completion_time": "2026-01-29T19:06:54Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2323
+    },
+    {
+      "completion_time": "2026-01-29T19:07:14Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2343
+    },
+    {
+      "completion_time": "2026-01-29T19:07:24Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2353
+    },
+    {
+      "completion_time": "2026-01-29T19:07:25Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2354
+    },
+    {
+      "completion_time": "2026-01-29T19:07:26Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2355
+    },
+    {
+      "completion_time": "2026-01-29T19:07:30Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2359
+    },
+    {
+      "completion_time": "2026-01-29T19:07:33Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2362
+    },
+    {
+      "completion_time": "2026-01-29T19:07:37Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2366
+    },
+    {
+      "completion_time": "2026-01-29T19:07:40Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2369
+    },
+    {
+      "completion_time": "2026-01-29T19:07:41Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2370
+    },
+    {
+      "completion_time": "2026-01-29T19:07:48Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2377
+    },
+    {
+      "completion_time": "2026-01-29T19:07:50Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2379
+    },
+    {
+      "completion_time": "2026-01-29T19:07:53Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2382
+    },
+    {
+      "completion_time": "2026-01-29T19:07:58Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2387
+    },
+    {
+      "completion_time": "2026-01-29T19:08:15Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2404
+    },
+    {
+      "completion_time": "2026-01-29T19:08:20Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2408
+    },
+    {
+      "completion_time": "2026-01-29T19:08:21Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2409
+    },
+    {
+      "completion_time": "2026-01-29T19:08:23Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2411
+    },
+    {
+      "completion_time": "2026-01-29T19:08:25Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2413
+    },
+    {
+      "completion_time": "2026-01-29T19:08:35Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2422
+    },
+    {
+      "completion_time": "2026-01-29T19:08:36Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2423
+    },
+    {
+      "completion_time": "2026-01-29T19:08:45Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2432
+    },
+    {
+      "completion_time": "2026-01-29T19:09:02Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2449
+    },
+    {
+      "completion_time": "2026-01-29T19:09:06Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2453
+    },
+    {
+      "completion_time": "2026-01-29T19:09:06Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2453
+    },
+    {
+      "completion_time": "2026-01-29T19:09:09Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2456
+    },
+    {
+      "completion_time": "2026-01-29T19:09:13Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2460
+    },
+    {
+      "completion_time": "2026-01-29T19:09:19Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2466
+    },
+    {
+      "completion_time": "2026-01-29T19:09:20Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2467
+    },
+    {
+      "completion_time": "2026-01-29T19:09:22Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2469
+    },
+    {
+      "completion_time": "2026-01-29T19:09:30Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2477
+    },
+    {
+      "completion_time": "2026-01-29T19:09:32Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2479
+    },
+    {
+      "completion_time": "2026-01-29T19:09:33Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2480
+    },
+    {
+      "completion_time": "2026-01-29T19:09:40Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2487
+    },
+    {
+      "completion_time": "2026-01-29T19:09:45Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2492
+    },
+    {
+      "completion_time": "2026-01-29T19:09:48Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2495
+    },
+    {
+      "completion_time": "2026-01-29T19:10:02Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2508
+    },
+    {
+      "completion_time": "2026-01-29T19:10:05Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2511
+    },
+    {
+      "completion_time": "2026-01-29T19:10:09Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2515
+    },
+    {
+      "completion_time": "2026-01-29T19:10:10Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2516
+    },
+    {
+      "completion_time": "2026-01-29T19:10:15Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2521
+    },
+    {
+      "completion_time": "2026-01-29T19:10:22Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2528
+    },
+    {
+      "completion_time": "2026-01-29T19:10:23Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2529
+    },
+    {
+      "completion_time": "2026-01-29T19:10:25Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2531
+    },
+    {
+      "completion_time": "2026-01-29T19:10:27Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2533
+    },
+    {
+      "completion_time": "2026-01-29T19:10:28Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2534
+    },
+    {
+      "completion_time": "2026-01-29T19:10:28Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2534
+    },
+    {
+      "completion_time": "2026-01-29T19:10:32Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2538
+    },
+    {
+      "completion_time": "2026-01-29T19:10:32Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2538
+    },
+    {
+      "completion_time": "2026-01-29T19:10:41Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2547
+    },
+    {
+      "completion_time": "2026-01-29T19:10:46Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2552
+    },
+    {
+      "completion_time": "2026-01-29T19:10:58Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2564
+    },
+    {
+      "completion_time": "2026-01-29T19:11:00Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2566
+    },
+    {
+      "completion_time": "2026-01-29T19:11:15Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2581
+    },
+    {
+      "completion_time": "2026-01-29T19:11:17Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2583
+    },
+    {
+      "completion_time": "2026-01-29T19:11:23Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2589
+    },
+    {
+      "completion_time": "2026-01-29T19:11:24Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2590
+    },
+    {
+      "completion_time": "2026-01-29T19:11:26Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2592
+    },
+    {
+      "completion_time": "2026-01-29T19:11:35Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2601
+    },
+    {
+      "completion_time": "2026-01-29T19:11:36Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2602
+    },
+    {
+      "completion_time": "2026-01-29T19:11:40Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2606
+    },
+    {
+      "completion_time": "2026-01-29T19:11:41Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2607
+    },
+    {
+      "completion_time": "2026-01-29T19:11:45Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2611
+    },
+    {
+      "completion_time": "2026-01-29T19:11:46Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2612
+    },
+    {
+      "completion_time": "2026-01-29T19:11:47Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2613
+    },
+    {
+      "completion_time": "2026-01-29T19:11:53Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2619
+    },
+    {
+      "completion_time": "2026-01-29T19:11:55Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2621
+    },
+    {
+      "completion_time": "2026-01-29T19:12:06Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2631
+    },
+    {
+      "completion_time": "2026-01-29T19:12:11Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2636
+    },
+    {
+      "completion_time": "2026-01-29T19:12:15Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2640
+    },
+    {
+      "completion_time": "2026-01-29T19:12:16Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2641
+    },
+    {
+      "completion_time": "2026-01-29T19:12:21Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2646
+    },
+    {
+      "completion_time": "2026-01-29T19:12:26Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2651
+    },
+    {
+      "completion_time": "2026-01-29T19:12:27Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2652
+    },
+    {
+      "completion_time": "2026-01-29T19:12:31Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2656
+    },
+    {
+      "completion_time": "2026-01-29T19:12:36Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2661
+    },
+    {
+      "completion_time": "2026-01-29T19:12:47Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2672
+    },
+    {
+      "completion_time": "2026-01-29T19:12:55Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2680
+    },
+    {
+      "completion_time": "2026-01-29T19:12:56Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2681
+    },
+    {
+      "completion_time": "2026-01-29T19:12:57Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2682
+    },
+    {
+      "completion_time": "2026-01-29T19:12:58Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2683
+    },
+    {
+      "completion_time": "2026-01-29T19:13:01Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2686
+    },
+    {
+      "completion_time": "2026-01-29T19:13:03Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2688
+    },
+    {
+      "completion_time": "2026-01-29T19:13:03Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2688
+    },
+    {
+      "completion_time": "2026-01-29T19:13:17Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2702
+    },
+    {
+      "completion_time": "2026-01-29T19:13:36Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2720
+    },
+    {
+      "completion_time": "2026-01-29T19:13:37Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2722
+    },
+    {
+      "completion_time": "2026-01-29T19:13:46Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2730
+    },
+    {
+      "completion_time": "2026-01-29T19:13:51Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2735
+    },
+    {
+      "completion_time": "2026-01-29T19:13:56Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2740
+    },
+    {
+      "completion_time": "2026-01-29T19:14:05Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2749
+    },
+    {
+      "completion_time": "2026-01-29T19:14:08Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2752
+    },
+    {
+      "completion_time": "2026-01-29T19:14:09Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2753
+    },
+    {
+      "completion_time": "2026-01-29T19:14:11Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2755
+    },
+    {
+      "completion_time": "2026-01-29T19:14:17Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2761
+    },
+    {
+      "completion_time": "2026-01-29T19:14:20Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2764
+    },
+    {
+      "completion_time": "2026-01-29T19:14:32Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2776
+    },
+    {
+      "completion_time": "2026-01-29T19:14:39Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2783
+    },
+    {
+      "completion_time": "2026-01-29T19:14:42Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2786
+    },
+    {
+      "completion_time": "2026-01-29T19:14:45Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2789
+    },
+    {
+      "completion_time": "2026-01-29T19:14:47Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2791
+    },
+    {
+      "completion_time": "2026-01-29T19:14:48Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2792
+    },
+    {
+      "completion_time": "2026-01-29T19:14:50Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2794
+    },
+    {
+      "completion_time": "2026-01-29T19:14:51Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2795
+    },
+    {
+      "completion_time": "2026-01-29T19:14:53Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2797
+    },
+    {
+      "completion_time": "2026-01-29T19:14:54Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2798
+    },
+    {
+      "completion_time": "2026-01-29T19:15:01Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2805
+    },
+    {
+      "completion_time": "2026-01-29T19:15:08Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2812
+    },
+    {
+      "completion_time": "2026-01-29T19:15:14Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2818
+    },
+    {
+      "completion_time": "2026-01-29T19:15:18Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2822
+    },
+    {
+      "completion_time": "2026-01-29T19:15:21Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2825
+    },
+    {
+      "completion_time": "2026-01-29T19:15:27Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2830
+    },
+    {
+      "completion_time": "2026-01-29T19:15:29Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2832
+    },
+    {
+      "completion_time": "2026-01-29T19:15:49Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2852
+    },
+    {
+      "completion_time": "2026-01-29T19:15:55Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2858
+    },
+    {
+      "completion_time": "2026-01-29T19:16:02Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2865
+    },
+    {
+      "completion_time": "2026-01-29T19:16:19Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2882
+    },
+    {
+      "completion_time": "2026-01-29T19:16:21Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2884
+    },
+    {
+      "completion_time": "2026-01-29T19:16:25Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2888
+    },
+    {
+      "completion_time": "2026-01-29T19:16:29Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2892
+    },
+    {
+      "completion_time": "2026-01-29T19:16:36Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2899
+    },
+    {
+      "completion_time": "2026-01-29T19:16:39Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2902
+    },
+    {
+      "completion_time": "2026-01-29T19:16:43Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2906
+    },
+    {
+      "completion_time": "2026-01-29T19:16:51Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2914
+    },
+    {
+      "completion_time": "2026-01-29T19:16:55Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2918
+    },
+    {
+      "completion_time": "2026-01-29T19:16:56Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2919
+    },
+    {
+      "completion_time": "2026-01-29T19:17:04Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2927
+    },
+    {
+      "completion_time": "2026-01-29T19:17:10Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2933
+    },
+    {
+      "completion_time": "2026-01-29T19:17:12Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2935
+    },
+    {
+      "completion_time": "2026-01-29T19:17:19Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2941
+    },
+    {
+      "completion_time": "2026-01-29T19:17:22Z",
+      "task_id": "Quantum-002",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2944
+    },
+    {
+      "completion_time": "2026-01-29T19:17:27Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2949
+    },
+    {
+      "completion_time": "2026-01-29T19:17:32Z",
+      "task_id": "Quantum-001",
+      "performance_metrics": "System.Collections.Hashtable",
+      "cycle": 2954
+    }
+  ]
+}

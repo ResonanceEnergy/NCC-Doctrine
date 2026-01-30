@@ -1,0 +1,977 @@
+{
+    "AUG-106":  {
+                    "Department":  "Systems",
+                    "Name":  "AUG-106",
+                    "Class":  "B",
+                    "Performance":  95.3,
+                    "Role":  "Systems Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-104":  {
+                    "Department":  "Compliance",
+                    "Name":  "AUG-104",
+                    "Class":  "B",
+                    "Performance":  94.7,
+                    "Role":  "Compliance Officer",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-109":  {
+                    "Department":  "Market",
+                    "Name":  "AUG-109",
+                    "Class":  "B",
+                    "Performance":  95,
+                    "Role":  "Market Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-210":  {
+                    "Department":  "Research",
+                    "Name":  "AUG-210",
+                    "Class":  "C",
+                    "Performance":  91.1,
+                    "Role":  "Research Assistant",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596758)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-113":  {
+                    "Department":  "Risk",
+                    "Name":  "AUG-113",
+                    "Class":  "B",
+                    "Performance":  94.8,
+                    "Role":  "Risk Monitor",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-201":  {
+                    "Department":  "Data",
+                    "Name":  "AUG-201",
+                    "Class":  "C",
+                    "Performance":  91.2,
+                    "Role":  "Data Processor",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-017":  {
+                    "Department":  "Relations",
+                    "Name":  "AUG-017",
+                    "Class":  "A",
+                    "Performance":  97.6,
+                    "Role":  "Client Relations",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-137":  {
+                    "Department":  "Trading",
+                    "Name":  "AUG-137",
+                    "Class":  "B",
+                    "Performance":  94.1,
+                    "Role":  "Trading Coordinator",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-121":  {
+                    "Department":  "Development",
+                    "Name":  "AUG-121",
+                    "Class":  "B",
+                    "Performance":  93.9,
+                    "Role":  "Algorithm Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-118":  {
+                    "Department":  "Operations",
+                    "Name":  "AUG-118",
+                    "Class":  "B",
+                    "Performance":  93.8,
+                    "Role":  "Operations Coordinator",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-022":  {
+                    "Department":  "Crypto",
+                    "Name":  "AUG-022",
+                    "Class":  "A",
+                    "Performance":  98.5,
+                    "Role":  "Crypto Arbitrage Head",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-107":  {
+                    "Department":  "Trading",
+                    "Name":  "AUG-107",
+                    "Class":  "B",
+                    "Performance":  94.4,
+                    "Role":  "Trading Assistant",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-207":  {
+                    "Department":  "Trading",
+                    "Name":  "AUG-207",
+                    "Class":  "C",
+                    "Performance":  91.4,
+                    "Role":  "Trading Support",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-130":  {
+                    "Department":  "Research",
+                    "Name":  "AUG-130",
+                    "Class":  "B",
+                    "Performance":  94.5,
+                    "Role":  "Research Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-214":  {
+                    "Department":  "Compliance",
+                    "Name":  "AUG-214",
+                    "Class":  "C",
+                    "Performance":  90.5,
+                    "Role":  "Compliance Support",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596758)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-003":  {
+                    "Department":  "Statistical",
+                    "Name":  "AUG-003",
+                    "Class":  "A",
+                    "Performance":  96.8,
+                    "Role":  "Head of Statistical Arbitrage",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-127":  {
+                    "Department":  "Trading",
+                    "Name":  "AUG-127",
+                    "Class":  "B",
+                    "Performance":  94.2,
+                    "Role":  "Trading Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-120":  {
+                    "Department":  "Research",
+                    "Name":  "AUG-120",
+                    "Class":  "B",
+                    "Performance":  94.6,
+                    "Role":  "Research Coordinator",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-117":  {
+                    "Department":  "Trading",
+                    "Name":  "AUG-117",
+                    "Class":  "B",
+                    "Performance":  94.3,
+                    "Role":  "Trading Coordinator",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-108":  {
+                    "Department":  "Operations",
+                    "Name":  "AUG-108",
+                    "Class":  "B",
+                    "Performance":  93.6,
+                    "Role":  "Operations Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-103":  {
+                    "Department":  "Risk",
+                    "Name":  "AUG-103",
+                    "Class":  "B",
+                    "Performance":  95.1,
+                    "Role":  "Risk Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-209":  {
+                    "Department":  "Market",
+                    "Name":  "AUG-209",
+                    "Class":  "C",
+                    "Performance":  92,
+                    "Role":  "Market Data Clerk",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596758)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-019":  {
+                    "Department":  "MarketMaking",
+                    "Name":  "AUG-019",
+                    "Class":  "A",
+                    "Performance":  97,
+                    "Role":  "Market Maker",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-004":  {
+                    "Department":  "Structural",
+                    "Name":  "AUG-004",
+                    "Class":  "A",
+                    "Performance":  97.9,
+                    "Role":  "Head of Structural Arbitrage",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-124":  {
+                    "Department":  "Compliance",
+                    "Name":  "AUG-124",
+                    "Class":  "B",
+                    "Performance":  93.4,
+                    "Role":  "Compliance Coordinator",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-204":  {
+                    "Department":  "Compliance",
+                    "Name":  "AUG-204",
+                    "Class":  "C",
+                    "Performance":  91.7,
+                    "Role":  "Compliance Clerk",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-212":  {
+                    "Department":  "Data",
+                    "Name":  "AUG-212",
+                    "Class":  "C",
+                    "Performance":  92.2,
+                    "Role":  "Data Support",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596758)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-111":  {
+                    "Department":  "Development",
+                    "Name":  "AUG-111",
+                    "Class":  "B",
+                    "Performance":  93.7,
+                    "Role":  "Algorithm Tester",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-134":  {
+                    "Department":  "Compliance",
+                    "Name":  "AUG-134",
+                    "Class":  "B",
+                    "Performance":  93.3,
+                    "Role":  "Compliance Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-015":  {
+                    "Department":  "Strategy",
+                    "Name":  "AUG-015",
+                    "Class":  "A",
+                    "Performance":  97.4,
+                    "Role":  "Strategy Lead",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-013":  {
+                    "Department":  "Systems",
+                    "Name":  "AUG-013",
+                    "Class":  "A",
+                    "Performance":  97.8,
+                    "Role":  "Trading Systems Architect",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-128":  {
+                    "Department":  "Operations",
+                    "Name":  "AUG-128",
+                    "Class":  "B",
+                    "Performance":  93.7,
+                    "Role":  "Operations Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-007":  {
+                    "Department":  "Compliance",
+                    "Name":  "AUG-007",
+                    "Class":  "A",
+                    "Performance":  96.9,
+                    "Role":  "Head of Compliance",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-021":  {
+                    "Department":  "FX",
+                    "Name":  "AUG-021",
+                    "Class":  "A",
+                    "Performance":  97.9,
+                    "Role":  "FX Arbitrage Lead",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-138":  {
+                    "Department":  "Operations",
+                    "Name":  "AUG-138",
+                    "Class":  "B",
+                    "Performance":  93.6,
+                    "Role":  "Operations Coordinator",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-001":  {
+                    "Department":  "Executive",
+                    "Name":  "AUG-001",
+                    "Class":  "A",
+                    "Performance":  98.5,
+                    "Role":  "Chief Arbitrage Officer",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-135":  {
+                    "Department":  "Portfolio",
+                    "Name":  "AUG-135",
+                    "Class":  "B",
+                    "Performance":  94.7,
+                    "Role":  "Portfolio Coordinator",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-123":  {
+                    "Department":  "Risk",
+                    "Name":  "AUG-123",
+                    "Class":  "B",
+                    "Performance":  94.7,
+                    "Role":  "Risk Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-115":  {
+                    "Department":  "Portfolio",
+                    "Name":  "AUG-115",
+                    "Class":  "B",
+                    "Performance":  94.9,
+                    "Role":  "Portfolio Assistant",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-132":  {
+                    "Department":  "Data",
+                    "Name":  "AUG-132",
+                    "Class":  "B",
+                    "Performance":  95.2,
+                    "Role":  "Data Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-101":  {
+                    "Department":  "Analysis",
+                    "Name":  "AUG-101",
+                    "Class":  "B",
+                    "Performance":  94.2,
+                    "Role":  "Arbitrage Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-010":  {
+                    "Department":  "Intelligence",
+                    "Name":  "AUG-010",
+                    "Class":  "A",
+                    "Performance":  97.7,
+                    "Role":  "Market Intelligence Lead",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-206":  {
+                    "Department":  "Systems",
+                    "Name":  "AUG-206",
+                    "Class":  "C",
+                    "Performance":  92.3,
+                    "Role":  "Systems Support",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-213":  {
+                    "Department":  "Risk",
+                    "Name":  "AUG-213",
+                    "Class":  "C",
+                    "Performance":  91.8,
+                    "Role":  "Risk Support",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596758)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-119":  {
+                    "Department":  "Market",
+                    "Name":  "AUG-119",
+                    "Class":  "B",
+                    "Performance":  95.1,
+                    "Role":  "Market Monitor",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-215":  {
+                    "Department":  "Admin",
+                    "Name":  "AUG-215",
+                    "Class":  "C",
+                    "Performance":  91.9,
+                    "Role":  "General Support",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596758)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-126":  {
+                    "Department":  "Systems",
+                    "Name":  "AUG-126",
+                    "Class":  "B",
+                    "Performance":  95.5,
+                    "Role":  "Systems Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-112":  {
+                    "Department":  "Data",
+                    "Name":  "AUG-112",
+                    "Class":  "B",
+                    "Performance":  95.2,
+                    "Role":  "Data Engineer",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-011":  {
+                    "Department":  "Development",
+                    "Name":  "AUG-011",
+                    "Class":  "A",
+                    "Performance":  98,
+                    "Role":  "Algorithm Developer",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-016":  {
+                    "Department":  "Operations",
+                    "Name":  "AUG-016",
+                    "Class":  "A",
+                    "Performance":  96.7,
+                    "Role":  "Operations Manager",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-136":  {
+                    "Department":  "Systems",
+                    "Name":  "AUG-136",
+                    "Class":  "B",
+                    "Performance":  95.4,
+                    "Role":  "Systems Coordinator",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-114":  {
+                    "Department":  "Compliance",
+                    "Name":  "AUG-114",
+                    "Class":  "B",
+                    "Performance":  93.5,
+                    "Role":  "Compliance Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-205":  {
+                    "Department":  "Data",
+                    "Name":  "AUG-205",
+                    "Class":  "C",
+                    "Performance":  90.9,
+                    "Role":  "Data Entry Specialist",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-131":  {
+                    "Department":  "Development",
+                    "Name":  "AUG-131",
+                    "Class":  "B",
+                    "Performance":  93.8,
+                    "Role":  "Algorithm Engineer",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-202":  {
+                    "Department":  "Admin",
+                    "Name":  "AUG-202",
+                    "Class":  "C",
+                    "Performance":  90.8,
+                    "Role":  "Administrative Assistant",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-005":  {
+                    "Department":  "Technology",
+                    "Name":  "AUG-005",
+                    "Class":  "A",
+                    "Performance":  98.1,
+                    "Role":  "Head of Technology Arbitrage",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-002":  {
+                    "Department":  "Quantitative",
+                    "Name":  "AUG-002",
+                    "Class":  "A",
+                    "Performance":  97.2,
+                    "Role":  "Head of Quantitative Arbitrage",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-008":  {
+                    "Department":  "Analysis",
+                    "Name":  "AUG-008",
+                    "Class":  "A",
+                    "Performance":  97.3,
+                    "Role":  "Senior Arbitrage Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-116":  {
+                    "Department":  "Systems",
+                    "Name":  "AUG-116",
+                    "Class":  "B",
+                    "Performance":  95.4,
+                    "Role":  "Systems Engineer",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-102":  {
+                    "Department":  "Portfolio",
+                    "Name":  "AUG-102",
+                    "Class":  "B",
+                    "Performance":  93.8,
+                    "Role":  "Portfolio Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-110":  {
+                    "Department":  "Research",
+                    "Name":  "AUG-110",
+                    "Class":  "B",
+                    "Performance":  94.1,
+                    "Role":  "Research Assistant",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-211":  {
+                    "Department":  "Development",
+                    "Name":  "AUG-211",
+                    "Class":  "C",
+                    "Performance":  90.7,
+                    "Role":  "Algorithm Support",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596758)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-009":  {
+                    "Department":  "Portfolio",
+                    "Name":  "AUG-009",
+                    "Class":  "A",
+                    "Performance":  98.2,
+                    "Role":  "Portfolio Manager",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-105":  {
+                    "Department":  "Data",
+                    "Name":  "AUG-105",
+                    "Class":  "B",
+                    "Performance":  93.9,
+                    "Role":  "Data Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-018":  {
+                    "Department":  "Research",
+                    "Name":  "AUG-018",
+                    "Class":  "A",
+                    "Performance":  98.4,
+                    "Role":  "Research Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-208":  {
+                    "Department":  "Operations",
+                    "Name":  "AUG-208",
+                    "Class":  "C",
+                    "Performance":  90.6,
+                    "Role":  "Operations Support",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-122":  {
+                    "Department":  "Data",
+                    "Name":  "AUG-122",
+                    "Class":  "B",
+                    "Performance":  95.3,
+                    "Role":  "Data Scientist Assistant",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-125":  {
+                    "Department":  "Portfolio",
+                    "Name":  "AUG-125",
+                    "Class":  "B",
+                    "Performance":  94.8,
+                    "Role":  "Portfolio Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-203":  {
+                    "Department":  "Risk",
+                    "Name":  "AUG-203",
+                    "Class":  "C",
+                    "Performance":  92.1,
+                    "Role":  "Risk Monitor",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-012":  {
+                    "Department":  "Data",
+                    "Name":  "AUG-012",
+                    "Class":  "A",
+                    "Performance":  97.1,
+                    "Role":  "Data Scientist",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-020":  {
+                    "Department":  "Derivatives",
+                    "Name":  "AUG-020",
+                    "Class":  "A",
+                    "Performance":  98.1,
+                    "Role":  "Derivatives Specialist",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-133":  {
+                    "Department":  "Risk",
+                    "Name":  "AUG-133",
+                    "Class":  "B",
+                    "Performance":  94.6,
+                    "Role":  "Risk Coordinator",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-014":  {
+                    "Department":  "Engineering",
+                    "Name":  "AUG-014",
+                    "Class":  "A",
+                    "Performance":  98.3,
+                    "Role":  "Financial Engineer",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-129":  {
+                    "Department":  "Market",
+                    "Name":  "AUG-129",
+                    "Class":  "B",
+                    "Performance":  95,
+                    "Role":  "Market Analyst",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596756)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                },
+    "AUG-006":  {
+                    "Department":  "Risk",
+                    "Name":  "AUG-006",
+                    "Class":  "A",
+                    "Performance":  97.5,
+                    "Role":  "Chief Risk Officer",
+                    "Status":  "Active",
+                    "LastActivity":  {
+                                         "value":  "\/Date(1769733596754)\/",
+                                         "DisplayHint":  2,
+                                         "DateTime":  "January 29, 2026 5:39:56 PM"
+                                     }
+                }
+}

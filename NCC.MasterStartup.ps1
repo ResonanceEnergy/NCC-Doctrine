@@ -1,3 +1,4 @@
+
 # NCC Master Startup Script v2.0.0
 # Author: NCC Command Center
 # Purpose: Master launcher for all NCC systems and operations
@@ -14,6 +15,30 @@ param(
     [switch]$Update,        # Update all systems
     [switch]$Help           # Show help
 )
+
+# Modular Agent Framework Integration
+$AgentModules = @{
+    Perception = "NCC.Agent.Perception.ps1"
+    Reasoning = "NCC.Agent.Reasoning.ps1"
+    Action = "NCC.Agent.Action.ps1"
+}
+
+function Invoke-SubAgentDecomposition {
+    param([string]$Task)
+
+    # Decompose complex tasks into sub-agent operations
+    $subTasks = @{
+        Analysis = "Analyze task requirements"
+        Planning = "Create execution plan"
+        Execution = "Perform task operations"
+        Validation = "Verify results"
+    }
+
+    foreach ($subTask in $subTasks.GetEnumerator()) {
+        Write-AgentLog "Executing sub-task: $($subTask.Key)" -Level "INFO"
+        # Execute sub-agent logic here
+    }
+}
 
 # Set error action preference
 $ErrorActionPreference = "Stop"
@@ -290,6 +315,34 @@ if ($StartAll) {
     # 3. LFG - Cycle Launch
     if (Test-Path -Path $SystemPaths.SystemIntegration -PathType Leaf) {
         & $SystemPaths.SystemIntegration -LFG
+    }
+
+    # 4. Ultimate Display Monitor - Real-time monitoring
+    Write-MasterLog "Launching NCC Ultimate Display Monitor..." -Level "INFO"
+    try {
+        # Start the display server in background
+        $displayServerPath = Join-Path $RootPath "NCC_Display_Server.js"
+        if (Test-Path $displayServerPath) {
+            Start-Process -FilePath "node" -ArgumentList $displayServerPath -NoNewWindow
+            Write-MasterLog "Display server started successfully" -Level "SUCCESS"
+        }
+
+        # Start the display orchestrator
+        $displayMasterPath = Join-Path $RootPath "NCC_Display_Master.ps1"
+        if (Test-Path $displayMasterPath) {
+            & $displayMasterPath -Start -HighPerformance
+            Write-MasterLog "Display orchestrator started successfully" -Level "SUCCESS"
+        }
+
+        # Open display in browser after a short delay
+        Start-Job -ScriptBlock {
+            Start-Sleep -Seconds 3
+            Start-Process "http://localhost:3000"
+        } | Out-Null
+
+        Write-MasterLog "Ultimate Display Monitor launched at http://localhost:3000" -Level "SUCCESS"
+    } catch {
+        Write-MasterLog "Failed to launch Ultimate Display Monitor: $($_.Exception.Message)" -Level "ERROR"
     }
 
     Write-MasterLog "=== NCC SYSTEM FULLY OPERATIONAL ===" -Level "SUCCESS"

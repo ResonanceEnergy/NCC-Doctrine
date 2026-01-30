@@ -1,0 +1,30 @@
+[2026-01-30 08:28:16] [INFO] [TEAM-TRAINING] NCC Team Training Documentation Distribution System v1.0.0
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Authority: AZ PRIME Command | Generated: January 30, 2026
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Execution started with parameters: {"Report":{"IsPresent":true}}
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Generating distribution and training report...
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Starting documentation distribution verification...
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Discovering agent directories...
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Found agent directory: _enterprise
+[2026-01-30 08:28:17] [WARNING] [TEAM-TRAINING] Agent directory not found: _agents
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Found agent directory: agents
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Found agent directory: ADMIN
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Found agent directory: AIEthicsCouncil
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Found agent directory: AIGovernanceCouncil
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Discovered 5 agent directories
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Verification complete: 0/5 agents verified
+[2026-01-30 08:28:17] [WARNING] [TEAM-TRAINING] ISSUES FOUND:
+[2026-01-30 08:28:17] [WARNING] [TEAM-TRAINING]   - Agent _enterprise: Documentation missing
+[2026-01-30 08:28:17] [WARNING] [TEAM-TRAINING]   - Agent agents: Documentation missing
+[2026-01-30 08:28:17] [WARNING] [TEAM-TRAINING]   - Agent ADMIN: Documentation missing
+[2026-01-30 08:28:17] [WARNING] [TEAM-TRAINING]   - Agent AIEthicsCouncil: Documentation missing
+[2026-01-30 08:28:17] [WARNING] [TEAM-TRAINING]   - Agent AIGovernanceCouncil: Documentation missing
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Discovering agent directories...
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Found agent directory: _enterprise
+[2026-01-30 08:28:17] [WARNING] [TEAM-TRAINING] Agent directory not found: _agents
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Found agent directory: agents
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Found agent directory: ADMIN
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Found agent directory: AIEthicsCouncil
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Found agent directory: AIGovernanceCouncil
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Discovered 5 agent directories
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Report saved to: C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\scripts\reports\NCC_Training_Distribution_Report_2026-01-30_08-28-17.json
+[2026-01-30 08:28:17] [INFO] [TEAM-TRAINING] Execution completed successfully

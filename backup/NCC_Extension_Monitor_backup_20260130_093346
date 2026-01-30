@@ -1,0 +1,560 @@
+
+# Modular Agent Framework Integration
+$AgentModules = @{
+    Perception = "NCC.Agent.Perception.ps1"
+    Reasoning = "NCC.Agent.Reasoning.ps1"
+    Action = "NCC.Agent.Action.ps1"
+}
+
+function Invoke-SubAgentDecomposition {
+    param([string]$Task)
+
+    # Decompose complex tasks into sub-agent operations
+    $subTasks = @{
+        Analysis = "Analyze task requirements"
+        Planning = "Create execution plan"
+        Execution = "Perform task operations"
+        Validation = "Verify results"
+    }
+
+    foreach ($subTask in $subTasks.GetEnumerator()) {
+        Write-AgentLog "Executing sub-task: $($subTask.Key)" -Level "INFO"
+        # Execute sub-agent logic here
+    }
+}
+
+
+# ============================================================================
+# NCC-DOCTRINE EXTENSION UPDATE MONITORING SYSTEM
+# Generated: January 30, 2026 | Authority: AZ PRIME Command
+# Purpose: Monitor VS Code extension updates and compatibility for NCC optimization
+# ============================================================================
+
+<#
+.SYNOPSIS
+    NCC Extension Update Monitoring and Compatibility System
+
+.DESCRIPTION
+    Monitors VS Code extensions for updates, checks compatibility with NCC
+    configurations, and provides recommendations for extension management.
+    Ensures optimal performance and security of the development environment.
+
+.PARAMETER CheckUpdates
+    Check for extension updates
+
+.PARAMETER ValidateCompatibility
+    Validate extension compatibility with current VS Code and NCC setup
+
+.PARAMETER OptimizeExtensions
+    Optimize extension configuration for performance
+
+.PARAMETER Report
+    Generate extension status report
+
+.PARAMETER AutoUpdate
+    Automatically update compatible extensions
+
+.EXAMPLE
+    .\NCC_Extension_Monitor.ps1 -CheckUpdates -Report
+
+.EXAMPLE
+    .\NCC_Extension_Monitor.ps1 -ValidateCompatibility
+
+.EXAMPLE
+    .\NCC_Extension_Monitor.ps1 -OptimizeExtensions
+#>
+
+param(
+    [switch]$CheckUpdates,
+    [switch]$ValidateCompatibility,
+    [switch]$OptimizeExtensions,
+    [switch]$Report,
+    [switch]$AutoUpdate
+)
+
+# ============================================================================
+# CONFIGURATION
+# ============================================================================
+
+$ScriptVersion = "1.0.0"
+$Authority = "AZ PRIME Command"
+$Generated = "January 30, 2026"
+
+# Extension configuration paths
+$ExtensionsConfigPath = Join-Path $PSScriptRoot ".." ".vscode" "extensions.json"
+$SettingsPath = Join-Path $PSScriptRoot ".." ".vscode" "settings.json"
+
+# Extension categories and priorities
+$ExtensionCategories = @{
+    "Essential" = @(
+        "ms-vscode.vscode-json",
+        "ms-vscode.vscode-typescript-next",
+        "esbenp.prettier-vscode",
+        "ms-vscode-remote.remote-ssh"
+    )
+    "PowerShell" = @(
+        "ms-vscode.PowerShell",
+        "TylerLeonhardt.vscode-inline-values-powershell"
+    )
+    "Python" = @(
+        "ms-python.python",
+        "ms-python.debugpy",
+        "ms-python.pylint"
+    )
+    "Productivity" = @(
+        "eamodio.gitlens",
+        "ms-vscode.vscode-markdown-notebook",
+        "redhat.vscode-yaml"
+    )
+    "Performance" = @(
+        "ms-vscode.vscode-js-profile-flame",
+        "ms-vscode.vscode-performance-monitor"
+    )
+}
+
+# Known problematic extensions
+$ProblematicExtensions = @(
+    "ms-vscode.vscode-typescript",  # Old version, use vscode-typescript-next
+    "hookyqr.beautify",            # Conflicts with prettier
+    "christian-kohler.path-intellisense"  # Performance issues
+)
+
+# ============================================================================
+# LOGGING CONFIGURATION
+# ============================================================================
+
+$LogFile = Join-Path $PSScriptRoot "logs" "NCC_Extension_Monitor_$(Get-Date -Format 'yyyy-MM-dd_HH-mm-ss').log"
+$LogDirectory = Split-Path $LogFile -Parent
+
+if (!(Test-Path $LogDirectory)) {
+    New-Item -ItemType Directory -Path $LogDirectory -Force | Out-Null
+}
+
+function Write-NCCLog {
+    param(
+        [string]$Message,
+        [string]$Level = "INFO"
+    )
+
+    $Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $LogEntry = "[$Timestamp] [$Level] [EXTENSIONS] $Message"
+
+    Write-Host $LogEntry
+    Add-Content -Path $LogFile -Value $LogEntry
+}
+
+# ============================================================================
+# EXTENSION MANAGEMENT FUNCTIONS
+# ============================================================================
+
+function Get-InstalledExtensions {
+    <#
+    .SYNOPSIS
+        Get list of currently installed VS Code extensions
+    #>
+
+    try {
+        $extensions = & code --list-extensions 2>$null
+        if ($LASTEXITCODE -eq 0) {
+            return $extensions | Where-Object { $_ -and $_.Trim() }
+        } else {
+            Write-NCCLog "Failed to get installed extensions. VS Code may not be in PATH." "WARNING"
+            return @()
+        }
+    }
+    catch {
+        Write-NCCLog "Error getting installed extensions: $($_.Exception.Message)" "ERROR"
+        return @()
+    }
+}
+
+function Get-ExtensionDetails {
+    <#
+    .SYNOPSIS
+        Get detailed information about an extension
+    #>
+
+    param([string]$ExtensionId)
+
+    try {
+        $details = & code --show-versions --list-extensions 2>$null | Where-Object { $_ -match $ExtensionId }
+        if ($details) {
+            return @{
+                ID = $ExtensionId
+                Version = ($details -split '@')[1]
+                Available = $true
+            }
+        } else {
+            return @{
+                ID = $ExtensionId
+                Version = "Not installed"
+                Available = $false
+            }
+        }
+    }
+    catch {
+        return @{
+            ID = $ExtensionId
+            Version = "Error"
+            Available = $false
+        }
+    }
+}
+
+function Get-ExtensionUpdates {
+    <#
+    .SYNOPSIS
+        Check for available extension updates
+    #>
+
+    Write-NCCLog "Checking for extension updates..."
+
+    $installedExtensions = Get-InstalledExtensions
+    $updates = @()
+
+    foreach ($extension in $installedExtensions) {
+        Write-NCCLog "Checking updates for: $extension"
+
+        # This is a simplified check - in practice, you'd need to query VS Code marketplace
+        $currentVersion = Get-ExtensionDetails -ExtensionId $extension
+
+        # Simulate update check (in real implementation, query marketplace API)
+        $updateInfo = @{
+            Extension = $extension
+            CurrentVersion = $currentVersion.Version
+            LatestVersion = $currentVersion.Version  # Would be fetched from marketplace
+            UpdateAvailable = $false  # Would be determined by version comparison
+            LastChecked = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
+        }
+
+        $updates += $updateInfo
+    }
+
+    Write-NCCLog "Extension update check completed. Found $($updates.Count) extensions."
+
+    return $updates
+}
+
+function Test-ExtensionCompatibility {
+    <#
+    .SYNOPSIS
+        Test extension compatibility with current setup
+    #>
+
+    Write-NCCLog "Testing extension compatibility..."
+
+    $installedExtensions = Get-InstalledExtensions
+    $compatibility = @{
+        Compatible = @()
+        Incompatible = @()
+        Problematic = @()
+        Missing = @()
+        Recommendations = @()
+    }
+
+    # Check for problematic extensions
+    foreach ($extension in $installedExtensions) {
+        if ($extension -in $ProblematicExtensions) {
+            $compatibility.Problematic += @{
+                Extension = $extension
+                Issue = "Known problematic extension"
+                Recommendation = "Consider removing or replacing this extension"
+            }
+        }
+    }
+
+    # Check for missing recommended extensions
+    foreach ($category in $ExtensionCategories.Keys) {
+        foreach ($recommendedExt in $ExtensionCategories[$category]) {
+            if ($recommendedExt -notin $installedExtensions) {
+                $compatibility.Missing += @{
+                    Extension = $recommendedExt
+                    Category = $category
+                    Priority = "Recommended"
+                }
+            } else {
+                $compatibility.Compatible += @{
+                    Extension = $recommendedExt
+                    Category = $category
+                    Status = "Installed"
+                }
+            }
+        }
+    }
+
+    # Check for extension conflicts
+    $conflicts = Get-ExtensionConflicts -InstalledExtensions $installedExtensions
+    $compatibility.Incompatible += $conflicts
+
+    # Generate recommendations
+    if ($compatibility.Problematic.Count -gt 0) {
+        $compatibility.Recommendations += "Remove $($compatibility.Problematic.Count) problematic extensions"
+    }
+
+    if ($compatibility.Missing.Count -gt 0) {
+        $compatibility.Recommendations += "Install $($compatibility.Missing.Count) recommended extensions"
+    }
+
+    if ($compatibility.Incompatible.Count -gt 0) {
+        $compatibility.Recommendations += "Resolve $($compatibility.Incompatible.Count) extension conflicts"
+    }
+
+    Write-NCCLog "Compatibility check completed. Found $($compatibility.Compatible.Count) compatible, $($compatibility.Problematic.Count) problematic extensions."
+
+    return $compatibility
+}
+
+function Get-ExtensionConflicts {
+    <#
+    .SYNOPSIS
+        Check for extension conflicts
+    #>
+
+    param([array]$InstalledExtensions)
+
+    $conflicts = @()
+
+    # Check for known conflicts
+    $conflictRules = @(
+        @{
+            Extensions = @("ms-vscode.vscode-typescript", "ms-vscode.vscode-typescript-next")
+            Issue = "Multiple TypeScript extensions installed"
+            Recommendation = "Keep only vscode-typescript-next"
+        },
+        @{
+            Extensions = @("esbenp.prettier-vscode", "hookyqr.beautify")
+            Issue = "Multiple code formatters may conflict"
+            Recommendation = "Keep only one code formatter (prefer Prettier)"
+        }
+    )
+
+    foreach ($rule in $conflictRules) {
+        $installedConflicts = $InstalledExtensions | Where-Object { $_ -in $rule.Extensions }
+        if ($installedConflicts.Count -gt 1) {
+            $conflicts += @{
+                Extensions = $installedConflicts
+                Issue = $rule.Issue
+                Recommendation = $rule.Recommendation
+            }
+        }
+    }
+
+    return $conflicts
+}
+
+function Optimize-ExtensionConfiguration {
+    <#
+    .SYNOPSIS
+        Optimize extension configuration for performance
+    #>
+
+    Write-NCCLog "Optimizing extension configuration..."
+
+    $optimizations = @{
+        Applied = @()
+        Skipped = @()
+        Errors = @()
+    }
+
+    try {
+        # Read current settings
+        if (Test-Path $SettingsPath) {
+            $settings = Get-Content $SettingsPath -Raw | ConvertFrom-Json
+        } else {
+            $settings = @{}
+        }
+
+        # Optimize extension settings
+        if (-not $settings."extensions.ignoreRecommendations") {
+            $settings."extensions.ignoreRecommendations" = $false
+            $optimizations.Applied += "Enabled extension recommendations"
+        }
+
+        # Disable problematic extensions if found
+        $installedExtensions = Get-InstalledExtensions
+        foreach ($problematic in $ProblematicExtensions) {
+            if ($problematic -in $installedExtensions) {
+                # In a real implementation, you might disable or suggest removal
+                $optimizations.Skipped += "Problematic extension $problematic found - manual review recommended"
+            }
+        }
+
+        # Save optimized settings
+        $settings | ConvertTo-Json -Depth 10 | Set-Content -Path $SettingsPath -Encoding UTF8
+        $optimizations.Applied += "Saved optimized extension settings"
+
+    }
+    catch {
+        $optimizations.Errors += "Failed to optimize extension configuration: $($_.Exception.Message)"
+    }
+
+    Write-NCCLog "Extension optimization completed. Applied $($optimizations.Applied.Count) optimizations."
+
+    return $optimizations
+}
+
+function Update-Extensions {
+    <#
+    .SYNOPSIS
+        Update extensions automatically
+    #>
+
+    Write-NCCLog "Starting automatic extension updates..."
+
+    $updateResults = @{
+        Updated = @()
+        Skipped = @()
+        Errors = @()
+    }
+
+    try {
+        # Update all extensions
+        $updateOutput = & code --update-extensions 2>&1
+        if ($LASTEXITCODE -eq 0) {
+            $updateResults.Updated += "All extensions updated successfully"
+            Write-NCCLog "Extension updates completed successfully"
+        } else {
+            $updateResults.Errors += "Extension update failed: $updateOutput"
+            Write-NCCLog "Extension update failed: $updateOutput" "ERROR"
+        }
+    }
+    catch {
+        $updateResults.Errors += "Failed to update extensions: $($_.Exception.Message)"
+        Write-NCCLog "Extension update error: $($_.Exception.Message)" "ERROR"
+    }
+
+    return $updateResults
+}
+
+function New-ExtensionReport {
+    <#
+    .SYNOPSIS
+        Generate comprehensive extension status report
+    #>
+
+    param($Updates, $Compatibility, $Optimizations)
+
+    Write-NCCLog "Generating extension status report..."
+
+    $report = @{
+        Report_Title = "NCC Extension Status Report"
+        Generated_Date = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
+        Generated_By = $Authority
+        Script_Version = $ScriptVersion
+
+        Summary = @{
+            Total_Installed = (Get-InstalledExtensions).Count
+            Updates_Available = ($Updates | Where-Object { $_.UpdateAvailable }).Count
+            Compatible_Extensions = $Compatibility.Compatible.Count
+            Problematic_Extensions = $Compatibility.Problematic.Count
+            Missing_Recommended = $Compatibility.Missing.Count
+            Conflicts_Found = $Compatibility.Incompatible.Count
+        }
+
+        Updates = $Updates
+        Compatibility = $Compatibility
+        Optimizations = $Optimizations
+
+        Recommendations = @()
+    }
+
+    # Generate recommendations
+    if ($report.Summary.Updates_Available -gt 0) {
+        $report.Recommendations += "Update $($report.Summary.Updates_Available) extensions"
+    }
+
+    if ($report.Summary.Problematic_Extensions -gt 0) {
+        $report.Recommendations += "Review $($report.Summary.Problematic_Extensions) problematic extensions"
+    }
+
+    if ($report.Summary.Missing_Recommended -gt 0) {
+        $report.Recommendations += "Install $($report.Summary.Missing_Recommended) recommended extensions"
+    }
+
+    if ($report.Summary.Conflicts_Found -gt 0) {
+        $report.Recommendations += "Resolve $($report.Summary.Conflicts_Found) extension conflicts"
+    }
+
+    # Save report
+    $reportFile = Join-Path $PSScriptRoot "reports" "NCC_Extension_Report_$(Get-Date -Format 'yyyy-MM-dd_HH-mm-ss').json"
+    $reportDirectory = Split-Path $reportFile -Parent
+
+    if (!(Test-Path $reportDirectory)) {
+        New-Item -ItemType Directory -Path $reportDirectory -Force | Out-Null
+    }
+
+    $report | ConvertTo-Json -Depth 10 | Out-File -FilePath $reportFile -Encoding UTF8
+
+    Write-NCCLog "Extension report saved to: $reportFile"
+
+    # Display summary
+    Write-Host "`n=== NCC EXTENSION STATUS REPORT ===" -ForegroundColor Cyan
+    Write-Host "Generated: $($report.Generated_Date)" -ForegroundColor White
+    Write-Host "Total Installed: $($report.Summary.Total_Installed)" -ForegroundColor White
+    Write-Host "Updates Available: $($report.Summary.Updates_Available)" -ForegroundColor $(if ($report.Summary.Updates_Available -eq 0) { "Green" } else { "Yellow" })
+    Write-Host "Compatible: $($report.Summary.Compatible_Extensions)" -ForegroundColor Green
+    Write-Host "Problematic: $($report.Summary.Problematic_Extensions)" -ForegroundColor $(if ($report.Summary.Problematic_Extensions -eq 0) { "Green" } else { "Red" })
+    Write-Host "Missing Recommended: $($report.Summary.Missing_Recommended)" -ForegroundColor Yellow
+    Write-Host "Conflicts: $($report.Summary.Conflicts_Found)" -ForegroundColor $(if ($report.Summary.Conflicts_Found -eq 0) { "Green" } else { "Red" })
+
+    if ($report.Recommendations.Count -gt 0) {
+        Write-Host "`nRECOMMENDATIONS:" -ForegroundColor Yellow
+        foreach ($rec in $report.Recommendations) {
+            Write-Host "  - $rec" -ForegroundColor Yellow
+        }
+    }
+
+    Write-Host "`nReport saved: $reportFile" -ForegroundColor Cyan
+
+    return $report
+}
+
+# ============================================================================
+# MAIN EXECUTION
+# ============================================================================
+
+Write-NCCLog "NCC Extension Update Monitoring System v$ScriptVersion"
+Write-NCCLog "Authority: $Authority | Generated: $Generated"
+Write-NCCLog "Execution started with parameters: $($PSBoundParameters | ConvertTo-Json -Compress)"
+
+try {
+    $results = @{}
+
+    if ($CheckUpdates) {
+        $results.Updates = Get-ExtensionUpdates
+    }
+
+    if ($ValidateCompatibility) {
+        $results.Compatibility = Test-ExtensionCompatibility
+    }
+
+    if ($OptimizeExtensions) {
+        $results.Optimizations = Optimize-ExtensionConfiguration
+    }
+
+    if ($AutoUpdate) {
+        $results.Updates = Update-Extensions
+    }
+
+    if ($Report -or ($PSBoundParameters.Count -eq 0)) {
+        # Run all checks for comprehensive report
+        $updates = Get-ExtensionUpdates
+        $compatibility = Test-ExtensionCompatibility
+        $optimizations = Optimize-ExtensionConfiguration
+
+        $results.Report = New-ExtensionReport -Updates $updates -Compatibility $compatibility -Optimizations $optimizations
+    }
+
+    Write-NCCLog "Extension monitoring operations completed successfully"
+    Write-Host "`n✅ NCC Extension monitoring operations completed" -ForegroundColor Green
+
+} catch {
+    Write-NCCLog "CRITICAL ERROR during execution: $($_.Exception.Message)" "ERROR"
+    Write-Host "`n❌ NCC Extension monitoring operations failed" -ForegroundColor Red
+    throw
+}
+
+# ============================================================================
+# END OF SCRIPT
+# ============================================================================
+
