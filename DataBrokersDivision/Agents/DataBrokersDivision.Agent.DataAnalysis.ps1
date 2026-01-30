@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # DataBrokersDivision - Data Analysis Agent
+=======
+﻿# DataBrokersDivision - Data Analysis Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 param([switch]$Initialize,[switch]$StartOperations,[switch]$StopOperations,[switch]$Status,[switch]$AnalyzeData,[switch]$GenerateInsights,[switch]$CreateReports,[switch]$PredictTrends])
 $AgentConfig = @{Name = "DataBrokersDivision.Agent.DataAnalysis"; Division = "DataBrokersDivision"; Role = "DataAnalysis"; Status = "Inactive"}
 function Write-AgentLog($Message, $Level = "INFO") { $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"; $logMessage = "[$timestamp] [$($AgentConfig.Name)] [$Level] $Message"; Write-Host $logMessage -ForegroundColor $(switch($Level){"ERROR"{"Red"}"WARNING"{"Yellow"}"SUCCESS"{"Green"}default{"Cyan"}}) }
@@ -64,4 +68,7 @@ function Start-AgentOperations { $AgentConfig.Status = "Active"; Write-AgentLog 
 function Stop-AgentOperations { $AgentConfig.Status = "Inactive"; Write-AgentLog "Data Analysis operations stopped" -Level "SUCCESS" }
 function Get-AgentStatus { return $AgentConfig.Status }
 if ($Initialize) { Initialize-Agent } elseif ($StartOperations) { Start-AgentOperations } elseif ($StopOperations) { Stop-AgentOperations } elseif ($Status) { Get-AgentStatus } elseif ($AnalyzeData) { Write-AgentLog "Analyzing data..." } elseif ($GenerateInsights) { Write-AgentLog "Generating insights..." } elseif ($CreateReports) { Write-AgentLog "Creating reports..." } elseif ($PredictTrends) { Write-AgentLog "Predicting trends..." } else { Write-AgentLog "No valid operation specified" -Level "WARNING" }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

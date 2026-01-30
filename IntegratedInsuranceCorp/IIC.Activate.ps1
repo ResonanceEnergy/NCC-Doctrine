@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # IIC.ACTIVATE.ps1 - Integrated Insurance Corp Launch Protocol
 # Most Efficient Innovation-Driven International Insurance Company
 # Date: January 29, 2026
@@ -411,4 +414,8 @@ Write-Host "  Product Categories: $($IIC_CONFIG.ProductCategories)" -ForegroundC
 
 Write-Host "`n🚀 MISSION ACCOMPLISHED - IIC FULLY OPERATIONAL 🚀" -ForegroundColor Red
 Write-Host "The world's most efficient insurance company is now live!" -ForegroundColor Magenta
+<<<<<<< HEAD
 Write-Host "AZ PRIME Command: Systems Go! LFG Protocol: Engaged!" -ForegroundColor Green
+=======
+Write-Host "AZ PRIME Command: Systems Go! LFG Protocol: Engaged!" -ForegroundColor Green
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

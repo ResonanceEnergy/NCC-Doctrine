@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Post-Incident Analysis and Reporting System
 # Automated Incident Documentation, Root Cause Analysis, and Trend Reporting Framework
 # Version: 2.0.0 | Classification: NATRIX COMMAND CORP INTERNAL TOOL
@@ -827,4 +830,8 @@ switch ($Action) {
 }
 
 # Save system state on exit
+<<<<<<< HEAD
 Write-Host "Post-incident analysis system execution completed." -ForegroundColor Green
+=======
+Write-Host "Post-incident analysis system execution completed." -ForegroundColor Green
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

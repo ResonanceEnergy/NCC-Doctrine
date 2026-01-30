@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Hierarchical Directive System - Department Head Report Compilation Script
 # Version: 1.0.1 | Date: 2026-01-29
 # Purpose: Compile agent reports and submit to CEO
@@ -443,4 +446,8 @@ $ceoMessage = Send-ReportToCEO -DepartmentReport $departmentReport
 
 Write-Host "`n✅ Department head report compilation completed for $DepartmentName" -ForegroundColor Green
 Write-Host "📊 Compiled $($agentReports.Count) agent reports into department summary" -ForegroundColor Cyan
+<<<<<<< HEAD
 Write-Host "👔 Report forwarded to CEO for review and feedback integration" -ForegroundColor Cyan
+=======
+Write-Host "👔 Report forwarded to CEO for review and feedback integration" -ForegroundColor Cyan
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

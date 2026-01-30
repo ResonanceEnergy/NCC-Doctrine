@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Ludwig Law Corp - Legal Analysis Agent
+=======
+﻿# Ludwig Law Corp - Legal Analysis Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced legal document analysis and compliance monitoring
 
 param(
@@ -396,4 +400,7 @@ if ($GenerateReports) { Generate-LegalReports }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $AnalyzeContracts -or $ComplianceCheck -or $RiskAssessment -or $GenerateReports)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Supported Jurisdictions: $($AgentConfig.SupportedJurisdictions.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -64,6 +64,7 @@ th { background: #222; color: #7af; }
 					<div>• Last Activation: <span id='lastActivation'>01/29/2026 01:26:16</span></div>
 				</div>
 			</div>
+<<<<<<< HEAD
 			<div class='panel'>
 				<h3>Quantum Arbitrage Nexus Division (QAND) Status</h3>
 				<div id='qandStatus'>
@@ -159,6 +160,8 @@ th { background: #222; color: #7af; }
 					</div>
 				</div>
 			</div>
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 		</div>
 		<div>
 			<div class='panel'>
@@ -244,8 +247,13 @@ document.getElementById('projectsCount').textContent = projects.length;
 projects.forEach(p => {
 	const row = document.createElement('tr');
 	const progress = p.Progress || 0;
+<<<<<<< HEAD
 	const progressBar = <div style='background: #333; border-radius: 4px; height: 8px; width: 100%;'><div style='background: linear-gradient(90deg, #30c3f2, #7a5cf5); height: 100%; width: %; border-radius: 4px;'></div></div>;
 	row.innerHTML = <td></td><td></td><td></td><td> %</td>;
+=======
+	const progressBar = `<div style='background: #333; border-radius: 4px; height: 8px; width: 100%;'><div style='background: linear-gradient(90deg, #30c3f2, #7a5cf5); height: 100%; width: ${progress}%; border-radius: 4px;'></div></div>`;
+	row.innerHTML = `<td>${p.ProjectName}</td><td>${p.Category}</td><td>${p.Status}</td><td>${progressBar} ${progress}%</td>`;
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 	tbody.appendChild(row);
 });
 
@@ -255,8 +263,13 @@ function generateSyntheticBalance(baseAmount, variance = 0.1) {
 	return Math.round(baseAmount * (1 + variation));
 }
 
+<<<<<<< HEAD
 // Generate FFC (Faraday Financial Corp) balance - FUTURE-FORWARD FINANCIAL MAMMOTH
 const ffcBaseBalance = 25000000000; // $25B base (post-rebuild)
+=======
+// Generate FFC (Faraday Financial Corp) balance - high-value financial entity
+const ffcBaseBalance = 25000000; //  base
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 const ffcBalance = generateSyntheticBalance(ffcBaseBalance, 0.05); // 5% variance
 document.getElementById('ffcBalance').textContent = '$' + ffcBalance.toLocaleString();
 
@@ -282,6 +295,7 @@ if (settings.ncc_operations && settings.ncc_operations.lfg_protocol) {
 	document.getElementById('agentTeams').textContent = Math.ceil(lfg.total_agents / 128) + ' Divisions';
 }
 
+<<<<<<< HEAD
 // Initialize QAND Division Status
 function updateQANDStatus() {
 	const qandMetrics = {
@@ -404,6 +418,8 @@ updatePhase2Progress();
 updatePhase3Progress();
 updatePhase4Progress();
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 // Dynamic metrics
 document.getElementById('opsPackets').textContent = Math.floor(Math.random()*10+5);
 document.getElementById('alerts').textContent = Math.floor(Math.random()*3);
@@ -416,6 +432,7 @@ const priorities = [
 	'Decompartmentalization Initiatives',
 	'Cross-Team Synergy Enhancement'
 ];
+<<<<<<< HEAD
 document.getElementById('priorityList').innerHTML = priorities.map(p => <li></li>).join('');
 
 const activities = [
@@ -444,6 +461,11 @@ const activities = [
 	'Quantum resources initialized - 1000x performance optimization active',
 	'AI networks connected - 95%+ autonomous operations established',
 	'Enterprise integration complete - 3340+ agents coordinated',
+=======
+document.getElementById('priorityList').innerHTML = priorities.map(p => `<li>${p}</li>`).join('');
+
+const activities = [
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 	'LFG! Protocol activated - All 1920 agents engaged',
 	'Board meeting completed - Efficiency protocols approved',
 	'Dashboard team deployed and operational',
@@ -453,7 +475,11 @@ const activities = [
 	'System health: All metrics green',
 	'Board decisions executed successfully'
 ];
+<<<<<<< HEAD
 document.getElementById('activityFeed').innerHTML = activities.map(a => <li></li>).join('');
+=======
+document.getElementById('activityFeed').innerHTML = activities.map(a => `<li>${a}</li>`).join('');
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 
 // Board meeting data - dynamically loaded from operations
 const boardMeetingData = {
@@ -482,9 +508,15 @@ const boardMeetingData = {
 
 // Update board meeting panel
 document.getElementById('boardMeetingStatus').textContent = boardMeetingData.status;
+<<<<<<< HEAD
 document.getElementById('boardMeetingParticipants').innerHTML = boardMeetingData.participants.map(p => <span class="participant"></span>).join('');
 document.getElementById('boardMeetingAgenda').innerHTML = boardMeetingData.agenda.map(a => <li></li>).join('');
 document.getElementById('boardMeetingDecisions').innerHTML = boardMeetingData.decisions.map(d => <li></li>).join('');
+=======
+document.getElementById('boardMeetingParticipants').innerHTML = boardMeetingData.participants.map(p => `<span class="participant">${p}</span>`).join('');
+document.getElementById('boardMeetingAgenda').innerHTML = boardMeetingData.agenda.map(a => `<li>${a}</li>`).join('');
+document.getElementById('boardMeetingDecisions').innerHTML = boardMeetingData.decisions.map(d => `<li>${d}</li>`).join('');
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 document.getElementById('lastBoardMeeting').textContent = boardMeetingData.lastCycle;
 document.getElementById('boardDecisions').textContent = boardMeetingData.totalDecisions;
 
@@ -498,14 +530,22 @@ function addWidget() {
 }
 
 function showSettings() {
+<<<<<<< HEAD
 	const settingsInfo =
+=======
+	const settingsInfo = `
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 Dashboard Settings:
 • Auto-refresh: Enabled (30s intervals)
 • Data source: Live NCC operations
 • Theme: Dark Professional
 • LFG Protocol: Active
 • Team: Dashboard Operations Team
+<<<<<<< HEAD
 	;
+=======
+`;
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 	alert(settingsInfo);
 }
 
@@ -520,11 +560,19 @@ function triggerEmoji() {
 // Hammer action with LFG theme
 document.getElementById('hammerBtn').addEventListener('click', function() {
 	var overlay = document.getElementById('hammerOverlay');
+<<<<<<< HEAD
 	overlay.innerHTML =
 		<span style='font-size:5rem;'>🔨⚡</span>
 		<span>HAMMER ACTION ACTIVATED!</span>
 		<span style='font-size:1.5rem; margin-top: 10px;'>LFG! Protocol Engaged!</span>
 	;
+=======
+	overlay.innerHTML = `
+		<span style='font-size:5rem;'>🔨⚡</span>
+		<span>HAMMER ACTION ACTIVATED!</span>
+		<span style='font-size:1.5rem; margin-top: 10px;'>LFG! Protocol Engaged!</span>
+	`;
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 	overlay.style.display = 'flex';
 	setTimeout(function() {
 		overlay.style.display = 'none';
@@ -548,6 +596,7 @@ setInterval(() => {
     const newAacBalance = Math.round(currentAacBalance * (1 + aacVariation));
     document.getElementById('aacBalance').textContent = '$' + newAacBalance.toLocaleString();
 
+<<<<<<< HEAD
     // Update QAND status with dynamic metrics
     updateQANDStatus();
 
@@ -571,12 +620,17 @@ setInterval(() => {
         'Reality optimization algorithms running',
         'Infinite agent consciousness synchronized',
         'Unlimited quantum revenue streams active',
+=======
+    // Update activity feed with new entries
+    const newActivities = [
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
         'Real-time data updated',
         'Agent status: All systems green',
         'LFG! momentum maintained',
         'Performance metrics optimized',
         'Dashboard sync completed',
         'FFC balance updated',
+<<<<<<< HEAD
         'AAC arbitrage positions adjusted',
         'QAND arbitrage cycle completed',
         'Phase 1 infrastructure deploying',
@@ -584,11 +638,18 @@ setInterval(() => {
         'Quantum resources initializing',
         'AI networks connecting',
         'Enterprise links establishing'
+=======
+        'AAC arbitrage positions adjusted'
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
     ];
     const randomActivity = newActivities[Math.floor(Math.random() * newActivities.length)];
     const activityList = document.getElementById('activityFeed');
     const currentTime = new Date().toLocaleTimeString();
+<<<<<<< HEAD
     activityList.innerHTML = <li>[] </li> + activityList.innerHTML;
+=======
+    activityList.innerHTML = `<li>[${currentTime}] ${randomActivity}</li>` + activityList.innerHTML;
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 
     // Update system health indicators with slight variations
     const currentEfficiency = document.getElementById('opEfficiency').textContent.replace('%', '');
@@ -597,9 +658,12 @@ setInterval(() => {
 
 }, 15000); // 15 seconds - fastest optimal stable rate
 	</script>
+<<<<<<< HEAD
 	setTimeout(function() {
 		 overlay.style.display = 'none';
 	}, 1200);
 });
 	</script>
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 	</body></html>

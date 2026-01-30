@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC AX INTELLIGENCE-DRIVEN PERFORMANCE OPTIMIZATION SYSTEM
 # Version: 3.0.0 | Classification: NATHAN COMMAND CORP TOP SECRET
 # Date: 2026-01-29 | Authority: AZ PRIME Command
@@ -798,4 +801,8 @@ Write-Host "QUANTUM PROCESSING: EFFICIENCY MAXIMIZATION ENGAGED!" -ForegroundCol
 Write-Host "STRATEGIC ALIGNMENT: 99.9% TARGET ACHIEVED!" -ForegroundColor Magenta
 Write-Host ""
 Write-Host "INTELLIGENCE DRIVEN! AUTOMATION ENABLED! EFFICIENCY MAXIMIZED!" -ForegroundColor Cyan</content>
+<<<<<<< HEAD
 <parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\AX_Performance_Optimization_System.ps1
+=======
+<parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\AX_Performance_Optimization_System.ps1
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC RESOURCE ALLOCATION ALGORITHMS MODULE
 # Version: 1.0.0 | Classification: NATHAN COMMAND CORP TOP SECRET
 # Date: 2026-01-29 | Authority: AZ PRIME Command
@@ -660,4 +663,8 @@ Write-Host "QUANTUM PROCESSING: DYNAMIC SCALING ENGAGED!" -ForegroundColor Magen
 Write-Host "STRATEGIC ALIGNMENT: MAXIMUM EFFICIENCY ENABLED!" -ForegroundColor Magenta
 Write-Host ""
 Write-Host "RESOURCES ALLOCATED! WORKLOADS BALANCED! EFFICIENCY MAXIMIZED!" -ForegroundColor Cyan</content>
+<<<<<<< HEAD
 <parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Resource_Allocation_Algorithms.ps1
+=======
+<parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Resource_Allocation_Algorithms.ps1
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

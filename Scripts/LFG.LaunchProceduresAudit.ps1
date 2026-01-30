@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # LFG.LaunchProceduresAudit.ps1 - LFG! Launch Procedures Audit & Compliance System
 param(
     [Parameter(Mandatory=$false)][switch]$Audit,
@@ -529,4 +532,8 @@ if ($Activate -or $MaxEfficiency -or $MaxProduction) {
     Write-Host "Compliance: $($auditResults.overall_compliance)" -ForegroundColor Green
     Write-Host "Active Systems: $(Get-Job | Where-Object { $_.State -eq 'Running' } | Measure-Object | Select-Object -ExpandProperty Count)" -ForegroundColor Green
     Write-Host "LFG! Level: ABSOLUTE DOMINATION" -ForegroundColor Magenta
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC AGENT MEMO DOCTRINE - CYCLE OUTPUT PROTOCOL
 # Version: 1.0.0 | Classification: NATHAN COMMAND CORP CORE DOCTRINE
 # Date: 2026-01-29 | Authority: AZ PRIME Command | Optimization: AX Intelligence
@@ -547,4 +550,8 @@ Write-Host "  .\NCC_Agent_Memo_Doctrine.ps1 -Initialize                    # Ini
 Write-Host "  .\NCC_Agent_Memo_Doctrine.ps1 -GenerateMemo -AgentID <id> -CycleID <id>  # Generate agent memo" -ForegroundColor White
 Write-Host "  .\NCC_Agent_Memo_Doctrine.ps1 -DistributeToAX -AgentID <id> -CycleID <id>  # Distribute to AX" -ForegroundColor White
 Write-Host "  .\NCC_Agent_Memo_Doctrine.ps1 -ArchiveMemos                 # Archive old memos" -ForegroundColor White
+<<<<<<< HEAD
 Write-Host "  .\NCC_Agent_Memo_Doctrine.ps1 -MonitorCompliance            # Check compliance" -ForegroundColor White
+=======
+Write-Host "  .\NCC_Agent_Memo_Doctrine.ps1 -MonitorCompliance            # Check compliance" -ForegroundColor White
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

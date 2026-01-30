@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC AZ/AX/C-Suite Deep Dive - CEO Directive Population Plan
 # Version: 1.0.0 | Date: 2026-01-29
 # Purpose: Comprehensive plan to populate all CEO directives and demonstrate data flow
@@ -436,4 +439,8 @@ if ($ExecutePlan) {
     Write-Host "  .\NCC.AZAXCSuite.DeepDive.ps1 -InnovationKickoff  # Launch innovation initiatives" -ForegroundColor White
     Write-Host "  .\NCC.AZAXCSuite.DeepDive.ps1 -LaunchAutoMode     # Launch continuous auto mode" -ForegroundColor White
     Write-Host ""
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

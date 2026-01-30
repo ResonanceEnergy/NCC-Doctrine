@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 #!/usr/bin/env pwsh
 # TIER2_HASH_ANALYSIS.ps1
 # Tier 2: Find duplicate CAD, spreadsheet, document files
@@ -74,4 +77,7 @@ if ($duplicates.Count -gt 0) {
 
 Write-Host ""
 exit 0
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC REALISTIC REAL-WORLD ACTIVATION SCRIPT
 # Truthful Protocol: Step-by-Step Real World Integration
 # Date: January 29, 2026
@@ -391,4 +394,8 @@ if ($Phase0_GroundTruth) {
 
 Write-Host ""
 Write-Host "✅ REALISTIC ASSESSMENT PROTOCOL COMPLETE" -ForegroundColor Green
+<<<<<<< HEAD
 Write-Host "🎯 NO FALSE CLAIMS - TRUTHFUL EVALUATION ONLY" -ForegroundColor Yellow
+=======
+Write-Host "🎯 NO FALSE CLAIMS - TRUTHFUL EVALUATION ONLY" -ForegroundColor Yellow
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

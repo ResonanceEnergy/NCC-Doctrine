@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Universal Data Repository Framework v3.0.0
 # Standardized Data Architecture for All NCC Divisions
 
@@ -676,4 +679,8 @@ switch ($Operation) {
 # Default status display
 if (-not ($Initialize -or $Validate -or $Backup -or $Restore -or $Optimize -or $Analyze -or $Sync)) {
     Write-DataLog "NCC Universal Data Repository v$($DataConfig.Version) - Division: $DivisionName - Status: $($DataConfig.Status)" -Level "INFO"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

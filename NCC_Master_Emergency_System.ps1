@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Comprehensive Emergency and Crisis Management System - Master Activation
 # Enterprise-Wide Emergency Detection, Response, Recovery, and Analysis Framework
 # Version: 2.0.0 | Classification: NATRIX COMMAND CORP INTERNAL TOOL
@@ -657,4 +660,8 @@ switch ($Action) {
 if ($Action -ne "Status" -and $Action -ne "Test") {
     Write-Host ""
     Write-Host "Emergency management system execution completed." -ForegroundColor Green
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

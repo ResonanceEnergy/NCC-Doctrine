@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Hierarchical Directive System - Directive Creation Script
 # Version: 1.0.1 | Date: 2026-01-29
 # Purpose: AZ/AX/C-Suite intelligence compilation and company directive creation
@@ -290,4 +293,8 @@ if ($AllCompanies) {
     Write-Host "Example: .\NCC.DirectiveCreation.ps1 -AllCompanies" -ForegroundColor Gray
 }
 
+<<<<<<< HEAD
 Write-Host "`n✅ Directive creation process completed" -ForegroundColor Green
+=======
+Write-Host "`n✅ Directive creation process completed" -ForegroundColor Green
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # International Operations Division - Global Operations Agent
+=======
+﻿# International Operations Division - Global Operations Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced international business operations and global expansion management
 
 param(
@@ -577,4 +581,7 @@ if ($CulturalIntegration) { Integrate-Culturally }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $MarketExpansion -or $RegulatoryCompliance -or $SupplyChainManagement -or $CulturalIntegration)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Regions: $($AgentConfig.Regions.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

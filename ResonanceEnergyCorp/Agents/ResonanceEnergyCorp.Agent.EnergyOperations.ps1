@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Resonance Energy Corp - Energy Operations Agent
+=======
+﻿# Resonance Energy Corp - Energy Operations Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced energy technology and operations management
 
 param(
@@ -510,4 +514,7 @@ if ($EnergyTrading) { Trade-EnergyMarkets }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $EnergyProduction -or $GridManagement -or $RenewableEnergy -or $EnergyTrading)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Energy Types: $($AgentConfig.EnergyTypes.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

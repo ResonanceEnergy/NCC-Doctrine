@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Cross-Division Agent Coordination Framework v3.0.0
 # Advanced Inter-Division Agent Communication and Coordination
 
@@ -964,4 +967,8 @@ switch ($Operation) {
 # Default status display
 if (-not ($SendCoordinatedMessage -or $RequestResource -or $ReleaseResource -or $EstablishCoordination -or $MonitorCoordination -or $ResolveConflict -or $OptimizeResources -or $SynchronizeState -or $EmergencyCoordination)) {
     Write-CoordinationLog "NCC Cross-Division Coordination Framework v$($CoordinationConfig.Version) - Status: $($CoordinationConfig.Status) - Active Coordinations: $($CoordinationConfig.CoordinationHub.ActiveCoordinations.Count)" -Level "INFO" -Category "STATUS"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

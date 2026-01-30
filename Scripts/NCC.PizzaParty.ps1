@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Pizza Party Synchronization Protocol
 # Version: 1.0.0 | Date: 2026-01-29
 # Purpose: Synchronize insights across all agents and companies
@@ -70,4 +73,7 @@ foreach ($agentFolder in $agentFolders) {
 }
 
 Write-PizzaLog "✅ Pizza Party completed! $($allInsights.Count) insights shared across $($agentFolders.Count) agents"
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

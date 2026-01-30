@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Desktop Display Integration System v1.0.0
 # Author: NCC Command Center
 # Purpose: Unified console, dashboard, and desktop display system
@@ -211,4 +214,8 @@ if (-not ($StartServer -or $OpenDashboard -or $AuditSystem -or $FullSystem)) {
     Write-Log "  .\NCC.DesktopDisplay.ps1 -StartServer       # Start the dashboard server" -Level "INFO"
     Write-Log "  .\NCC.DesktopDisplay.ps1 -OpenDashboard     # Open dashboard in browser" -Level "INFO"
     Write-Log "  .\NCC.DesktopDisplay.ps1 -AuditSystem        # Audit system for issues" -Level "INFO"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

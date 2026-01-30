@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Hierarchical Directive System - Department Head Task Creation Script
 # Version: 1.0.1 | Date: 2026-01-29
 # Purpose: Department head task decomposition and agent assignment
@@ -365,4 +368,8 @@ for ($i = 0; $i -lt $agents.Count -and $i -lt $taskObjectives.Count; $i++) {
 Update-DepartmentDirective -DeptDirective $directive -AssignedAgents $assignedAgents
 
 Write-Host "`n✅ Department head task creation completed for $DepartmentName" -ForegroundColor Green
+<<<<<<< HEAD
 Write-Host "📊 Created $($assignedAgents.Count) agent tasks" -ForegroundColor Cyan
+=======
+Write-Host "📊 Created $($assignedAgents.Count) agent tasks" -ForegroundColor Cyan
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

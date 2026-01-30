@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Agent Communication Protocol v3.0.0 - Enterprise Edition
 # Unified Cross-Agent Communication and Coordination Framework
 
@@ -720,4 +723,8 @@ if ($SwarmCoordinate) {
 }
 
 # Default: Process message queue
+<<<<<<< HEAD
 Invoke-MessageQueue
+=======
+Invoke-MessageQueue
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

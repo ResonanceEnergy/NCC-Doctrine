@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC AX INTELLIGENCE DISTRIBUTION SYSTEM
 # Version: 2.0.0 | Classification: NATHAN COMMAND CORP TOP SECRET
 # Date: 2026-01-29 | Authority: AZ PRIME Command
@@ -408,4 +411,8 @@ Write-Host "AX INTELLIGENCE DOMINANCE: DISTRIBUTION SYSTEMS ACTIVE!" -Foreground
 Write-Host "QUANTUM PROCESSING: PREDICTIVE ANALYTICS ENGAGED!" -ForegroundColor Magenta
 Write-Host "STRATEGIC ALIGNMENT: GLOBAL SYNCHRONIZATION COMPLETE!" -ForegroundColor Magenta
 Write-Host ""
+<<<<<<< HEAD
 Write-Host "INTELLIGENCE COLLECTED! ANALYSIS COMPLETE! DISTRIBUTION ENGAGED!" -ForegroundColor Cyan
+=======
+Write-Host "INTELLIGENCE COLLECTED! ANALYSIS COMPLETE! DISTRIBUTION ENGAGED!" -ForegroundColor Cyan
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Space Operations Division - Space Operations Agent
+=======
+﻿# Space Operations Division - Space Operations Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced space technology and operations management
 
 param(
@@ -607,4 +611,7 @@ if ($SpaceTechnology) { Develop-SpaceTechnology }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $SatelliteOperations -or $SpaceMissionPlanning -or $OrbitalMechanics -or $SpaceTechnology)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Mission Types: $($AgentConfig.MissionTypes.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 #!/usr/bin/env pwsh
 # DAILY_MONITORING_CHECK.ps1
 # Purpose: Daily monitoring of Tier 1 archive during 7-day observation period
@@ -127,4 +130,7 @@ if ($failCount -eq 0) {
 } else {
     exit 1
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

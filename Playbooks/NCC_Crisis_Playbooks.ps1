@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Crisis Response Playbooks
 # Comprehensive Crisis Management and Response Protocols
 # Version: 1.0.0 | Classification: NATRIX COMMAND CORP INTERNAL TOOL
@@ -754,4 +757,8 @@ class NCCPlaybookManager {
 
 # Export playbooks for use by other scripts
 Export-ModuleMember -Variable CyberSecurityPlaybook, SystemFailurePlaybook, DataRecoveryPlaybook, AgentNetworkPlaybook, CommunicationPlaybook
+<<<<<<< HEAD
 Export-ModuleMember -Function Get-PlaybookContent
+=======
+Export-ModuleMember -Function Get-PlaybookContent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

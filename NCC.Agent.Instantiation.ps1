@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC AGENT INSTANTIATION SYSTEM
 # Version: 1.0.0 | Classification: TOP SECRET
 # Date: 2026-01-29 | Authority: AZ PRIME Command
@@ -706,4 +709,8 @@ switch ($Action) {
     }
 }
 
+<<<<<<< HEAD
 Write-AgentInstantiationLog "Command completed: $Action" -Level "INFO"
+=======
+Write-AgentInstantiationLog "Command completed: $Action" -Level "INFO"
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

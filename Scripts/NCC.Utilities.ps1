@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Utilities Module v1.0.0
 # Author: NCC Command Center
 # Purpose: Common utilities and functions for NCC scripts
@@ -139,4 +142,8 @@ function Get-ConfigValue {
     }
 }
 
+<<<<<<< HEAD
 # Functions are available for use in other scripts
+=======
+# Functions are available for use in other scripts
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

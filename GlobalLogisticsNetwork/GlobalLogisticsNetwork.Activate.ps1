@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # GlobalLogisticsNetwork Activation Script
 # Version: 1.0.0 | Date: 2026-01-29
 # Purpose: Activate all GlobalLogisticsNetwork operations
@@ -67,4 +70,8 @@ if ($FullActivation) {
     }
 
     Write-Host "✅ GlobalLogisticsNetwork fully activated!" -ForegroundColor Green
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

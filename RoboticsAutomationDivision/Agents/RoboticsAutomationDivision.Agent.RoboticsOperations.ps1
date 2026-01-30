@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Robotics Automation Division - Robotics Operations Agent
+=======
+﻿# Robotics Automation Division - Robotics Operations Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced robotics and automation systems management
 
 param(
@@ -545,4 +549,7 @@ if ($AIIntegration) { Integrate-AI }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $RoboticsDevelopment -or $AutomationSystems -or $ManufacturingIntegration -or $AIIntegration)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Robot Types: $($AgentConfig.RobotTypes.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

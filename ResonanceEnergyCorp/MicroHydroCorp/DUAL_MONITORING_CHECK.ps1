@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 #!/usr/bin/env pwsh
 # DUAL_MONITORING_CHECK.ps1
 # Monitor both Tier 1 and Tier 2 simultaneously
@@ -87,4 +90,7 @@ Add-Content -Path $LogFile -Value ""
 
 Write-Host ""
 exit 0
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

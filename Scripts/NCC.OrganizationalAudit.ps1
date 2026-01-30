@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 param(
     [switch]$Comprehensive,
     [switch]$ExecutiveOnly,
@@ -810,4 +813,8 @@ Write-Host "- Strategic Oversights: $(($allResponses | Where-Object { $_.Respons
 Write-Host "- Resource Issues: $(($allResponses | Where-Object { $_.Response -like '*budget*' -or $_.Response -like '*resource*' }).Count)" -ForegroundColor Red
 Write-Host "- Technology Gaps: $(($allResponses | Where-Object { $_.Response -like '*technology*' -or $_.Response -like '*infrastructure*' }).Count)" -ForegroundColor Red
 
+<<<<<<< HEAD
 Write-Host "`nLFG! NCC is now fully aware of all organizational gaps and oversights! 🚀" -ForegroundColor Green
+=======
+Write-Host "`nLFG! NCC is now fully aware of all organizational gaps and oversights! 🚀" -ForegroundColor Green
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

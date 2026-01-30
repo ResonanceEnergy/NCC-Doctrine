@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 # Modular Agent Framework Integration
 $AgentModules = @{
     Perception = "NCC.Agent.Perception.ps1"
@@ -25,6 +26,8 @@ function Invoke-SubAgentDecomposition {
 
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 
 # NCC.Dashboard.ps1 - Minimal, robust dashboard automation script
 param(
@@ -199,4 +202,7 @@ if ($Open) {
 	} else {
 		Write-Host "[ERROR] Dashboard HTML not found: $HtmlOut"
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # NCC Agent Framework Template v2.0.0
+=======
+﻿# NCC Agent Framework Template v2.0.0
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # BigBrainIntelligence Executive Agent
 
 param(
@@ -1208,4 +1212,7 @@ if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

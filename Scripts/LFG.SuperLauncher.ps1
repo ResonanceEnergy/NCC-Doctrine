@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 # Modular Agent Framework Integration
 $AgentModules = @{
     Perception = "NCC.Agent.Perception.ps1"
@@ -25,6 +26,8 @@ function Invoke-SubAgentDecomposition {
 
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # AX OPTIMIZATION - Cycle #1
 # Optimization Type: Performance Boost
 # Efficiency Gain: +31%
@@ -368,4 +371,7 @@ try {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

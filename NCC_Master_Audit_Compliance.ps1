@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Comprehensive Audit and Compliance Automation System
 # Master Orchestration Script
 # Version: 1.0.0 | Classification: NATRIX COMMAND CORP INTERNAL TOOL
@@ -846,4 +849,8 @@ if ($Action -ne "Dashboard" -and $Action -ne "Status") {
 
 Write-Host ""
 Write-Host "NCC Comprehensive Audit and Compliance System operation completed." -ForegroundColor Cyan
+<<<<<<< HEAD
 Write-Host "For help, run: .\NCC_Master_Audit_Compliance.ps1 -Action Status" -ForegroundColor White
+=======
+Write-Host "For help, run: .\NCC_Master_Audit_Compliance.ps1 -Action Status" -ForegroundColor White
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

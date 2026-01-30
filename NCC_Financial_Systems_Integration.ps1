@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 #!/usr/bin/env pwsh
 <#
 .SYNOPSIS
@@ -404,4 +407,8 @@ switch ($Action) {
 
 # Log completion
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+<<<<<<< HEAD
 "[$timestamp] NCC Financial Systems Integration Completed - Action: $Action" | Out-File -FilePath $FinancialConfig.LogPath -Append
+=======
+"[$timestamp] NCC Financial Systems Integration Completed - Action: $Action" | Out-File -FilePath $FinancialConfig.LogPath -Append
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

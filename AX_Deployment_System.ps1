@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC AX INTELLIGENCE-DRIVEN PERFORMANCE OPTIMIZATION DEPLOYMENT
 # Version: 1.0.0 | Classification: NATHAN COMMAND CORP TOP SECRET
 # Date: 2026-01-29 | Authority: AZ PRIME Command
@@ -12,6 +15,7 @@ param(
     [switch]$FullSystem
 )
 
+<<<<<<< HEAD
 # Modular Agent Framework Integration
 $AgentModules = @{
     Perception = "NCC.Agent.Perception.ps1"
@@ -36,6 +40,8 @@ function Invoke-SubAgentDecomposition {
     }
 }
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # =============================================================================
 # AX DEPLOYMENT CONFIGURATION
 # =============================================================================
@@ -425,4 +431,8 @@ Write-Host "AX INTELLIGENCE DOMINANCE: DEPLOYMENT COMPLETE!" -ForegroundColor Ma
 Write-Host "QUANTUM PROCESSING: ALL SYSTEMS ACTIVATED!" -ForegroundColor Magenta
 Write-Host "STRATEGIC ALIGNMENT: 99.9% EFFICIENCY ENABLED!" -ForegroundColor Magenta
 Write-Host ""
+<<<<<<< HEAD
 Write-Host "MODULES DEPLOYED! SYSTEMS ACTIVATED! EFFICIENCY MAXIMIZED!" -ForegroundColor Cyan
+=======
+Write-Host "MODULES DEPLOYED! SYSTEMS ACTIVATED! EFFICIENCY MAXIMIZED!" -ForegroundColor Cyan
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

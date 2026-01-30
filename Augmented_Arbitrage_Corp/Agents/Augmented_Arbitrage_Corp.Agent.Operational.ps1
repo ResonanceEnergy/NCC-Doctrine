@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Augmented Arbitrage Corp - Operational Agent
+=======
+﻿# Augmented Arbitrage Corp - Operational Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Day-to-day trading operations and execution
 
 param(
@@ -344,4 +348,7 @@ if ($GenerateAlerts) { Generate-Alerts }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $MonitorPositions -or $ExecuteOrders -or $RebalancePortfolio -or $GenerateAlerts)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Active Positions: $($AgentConfig.ActivePositions.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

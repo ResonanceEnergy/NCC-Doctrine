@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # AZ PRIME NCL Department Scan & Efficiency Analysis
 # Scanning all NCC departments for redundancies and gaps
 # Date: January 28, 2026
@@ -159,4 +162,8 @@ if ($GenerateReport) {
 }
 
 Write-Host ""
+<<<<<<< HEAD
 Write-Host "✅ AZ PRIME NCL DEPARTMENT SCAN COMPLETED" -ForegroundColor Green
+=======
+Write-Host "✅ AZ PRIME NCL DEPARTMENT SCAN COMPLETED" -ForegroundColor Green
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

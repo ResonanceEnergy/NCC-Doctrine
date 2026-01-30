@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Cybersecurity Command Center - Threat Detection Agent
+=======
+﻿# Cybersecurity Command Center - Threat Detection Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced threat detection and security monitoring operations
 
 param(
@@ -581,4 +585,7 @@ if ($IncidentResponse) { Execute-IncidentResponse }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $ScanThreats -or $MonitorNetwork -or $AnalyzeLogs -or $GenerateAlerts -or $IncidentResponse)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Threat Types: $($AgentConfig.ThreatTypes.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

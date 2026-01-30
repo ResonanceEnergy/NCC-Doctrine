@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC AGENT TASK TRACKER - AUTOMATED EFFICIENCY MONITORING
 # Version: 2.0.0 | Classification: NATRIX COMMAND CORP INTERNAL TOOL
 # Date: 2026-01-29 | Authority: AZ PRIME Command | Optimization: AX Intelligence
@@ -16,6 +19,7 @@ param(
     [string]$Division
 )
 
+<<<<<<< HEAD
 # Modular Agent Framework Integration
 $AgentModules = @{
     Perception = "NCC.Agent.Perception.ps1"
@@ -40,6 +44,8 @@ function Invoke-SubAgentDecomposition {
     }
 }
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # =============================================================================
 # CONFIGURATION & INITIALIZATION
 # =============================================================================
@@ -698,4 +704,8 @@ Write-Host "🚀 LFG! AGENT PERFORMANCE OPTIMIZATION PROTOCOLS ACTIVE" -Foregrou
 
 # =============================================================================
 # END OF AGENT TASK TRACKER
+<<<<<<< HEAD
 # =============================================================================
+=======
+# =============================================================================
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

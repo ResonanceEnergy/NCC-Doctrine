@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Security Framework Deployment Script
 # Implements Security 10 Directive compliance across all agents and systems
 
@@ -366,4 +369,8 @@ else {
     Write-Host "  .\NCC.Security.Framework.ps1 -AuditCompliance      # Audit compliance"
     Write-Host "  .\NCC.Security.Framework.ps1 -EmergencyResponse    # Emergency response"
     Write-Host "  .\NCC.Security.Framework.ps1 -FullSystemScan       # Full system scan"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Automated Testing & Validation Framework v3.0.0
 # Comprehensive Test Suite for Agent and System Validation
 
@@ -934,4 +937,8 @@ if ($GenerateReport -or -not ($AgentTests -or $DataTests -or $SystemTests -or $I
 }
 
 # Display final summary
+<<<<<<< HEAD
 Write-TestLog "Test execution completed - Total: $($TestConfig.Summary.TotalTests), Passed: $($TestConfig.Summary.Passed), Failed: $($TestConfig.Summary.Failed), Warnings: $($TestConfig.Summary.Warnings)" -Level $(if($TestConfig.Summary.Failed -eq 0){"SUCCESS"}else{"WARNING"}) -Category "SUMMARY"
+=======
+Write-TestLog "Test execution completed - Total: $($TestConfig.Summary.TotalTests), Passed: $($TestConfig.Summary.Passed), Failed: $($TestConfig.Summary.Failed), Warnings: $($TestConfig.Summary.Warnings)" -Level $(if($TestConfig.Summary.Failed -eq 0){"SUCCESS"}else{"WARNING"}) -Category "SUMMARY"
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Mammoth Media Corp (MMC) Board Meeting Automation Script
 # NATHAN COMMAND CORP TOP SECRET
 # Version: 1.0.0 | Date: 2026-01-29
@@ -184,4 +187,8 @@ try {
     Write-Host "?? MAMMOTH MEDIA CORP BOARD MEETING AUTOMATION COMPLETE - LFG! ??" -ForegroundColor Yellow
     Write-Host "Total Cycles Executed: $CycleCount" -ForegroundColor Green
     Write-Host "Final Status: OPTIMAL" -ForegroundColor Green
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

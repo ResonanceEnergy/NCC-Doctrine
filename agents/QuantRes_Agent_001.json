@@ -7,8 +7,12 @@
     "Quality assurance"
   ],
   "CreatedDate": "2026-01-29T19:51:50",
+<<<<<<< HEAD
   "Status": "Active",
   "OptimizationLevel": "Phase1",
   "ModularArchitecture": true,
   "PerformanceMultiplier": 1.5
+=======
+  "Status": "Active"
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 }

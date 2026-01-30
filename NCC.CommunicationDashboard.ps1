@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Communication Monitoring Dashboard
 # Real-time Communication Health and Performance Monitoring
 
@@ -275,4 +278,8 @@ if ($ViewMetrics) {
         Write-DashboardLog "Active Agents: $($data.NetworkStats.ActiveAgents)" -Level "INFO"
     }
     return $data
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

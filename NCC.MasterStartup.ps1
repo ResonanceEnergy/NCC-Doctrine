@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Master Startup Script v2.0.0
 # Author: NCC Command Center
 # Purpose: Master launcher for all NCC systems and operations
@@ -16,6 +19,7 @@ param(
     [switch]$Help           # Show help
 )
 
+<<<<<<< HEAD
 # Modular Agent Framework Integration
 $AgentModules = @{
     Perception = "NCC.Agent.Perception.ps1"
@@ -40,6 +44,8 @@ function Invoke-SubAgentDecomposition {
     }
 }
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Set error action preference
 $ErrorActionPreference = "Stop"
 
@@ -317,6 +323,7 @@ if ($StartAll) {
         & $SystemPaths.SystemIntegration -LFG
     }
 
+<<<<<<< HEAD
     # 4. Ultimate Display Monitor - Real-time monitoring
     Write-MasterLog "Launching NCC Ultimate Display Monitor..." -Level "INFO"
     try {
@@ -345,6 +352,8 @@ if ($StartAll) {
         Write-MasterLog "Failed to launch Ultimate Display Monitor: $($_.Exception.Message)" -Level "ERROR"
     }
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
     Write-MasterLog "=== NCC SYSTEM FULLY OPERATIONAL ===" -Level "SUCCESS"
 }
 
@@ -409,4 +418,8 @@ if (-not ($StartAll -or $ASG -or $LFG -or $Maintenance -or $Schedule -or $Status
     Show-SystemStatus
     Write-MasterLog "" -Level "INFO"
     Write-MasterLog "Use -Help for command reference" -Level "INFO"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

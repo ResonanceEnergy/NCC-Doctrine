@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # AZ-AX CYCLE EFFICIENCY AUDIT SYSTEM
 # Version: 3.0.0 | Classification: NATHAN COMMAND CORP TOP SECRET
 # Date: 2026-01-29 | Authority: AZ PRIME Command
@@ -511,4 +514,8 @@ Write-Host "AUDIT DOMINANCE: SYSTEM EFFICIENCY MAXIMIZED!" -ForegroundColor Mage
 Write-Host "COMMAND AUTHORITY: AZ PRIME SUPREME CONTROL!" -ForegroundColor Magenta
 Write-Host "INTELLIGENCE ENGINE: AX OPTIMIZATION ACTIVE!" -ForegroundColor Magenta
 Write-Host ""
+<<<<<<< HEAD
 Write-Host "AUDIT COMPLETE! EFFICIENCY ANALYZED! IMPROVEMENTS APPLIED!" -ForegroundColor Cyan
+=======
+Write-Host "AUDIT COMPLETE! EFFICIENCY ANALYZED! IMPROVEMENTS APPLIED!" -ForegroundColor Cyan
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # GlobalLogisticsNetwork - Transportation Coordination Agent
+=======
+﻿# GlobalLogisticsNetwork - Transportation Coordination Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 param([switch]$Initialize,[switch]$StartOperations,[switch]$StopOperations,[switch]$Status,[switch]$CoordinateTransport,[switch]$ScheduleDeliveries,[switch]$ManageFleets,[switch]$OptimizeCapacity)
 $AgentConfig = @{Name = "GlobalLogisticsNetwork.Agent.TransportationCoordination"; Division = "GlobalLogisticsNetwork"; Role = "TransportationCoordination"; Status = "Inactive"}
 function Write-AgentLog($Message, $Level = "INFO") { $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"; $logMessage = "[$timestamp] [$($AgentConfig.Name)] [$Level] $Message"; Write-Host $logMessage -ForegroundColor $(switch($Level){"ERROR"{"Red"}"WARNING"{"Yellow"}"SUCCESS"{"Green"}default{"Cyan"}}) }
@@ -64,4 +68,7 @@ function Start-AgentOperations { $AgentConfig.Status = "Active"; Write-AgentLog 
 function Stop-AgentOperations { $AgentConfig.Status = "Inactive"; Write-AgentLog "Transportation Coordination operations stopped" -Level "SUCCESS" }
 function Get-AgentStatus { return $AgentConfig.Status }
 if ($Initialize) { Initialize-Agent } elseif ($StartOperations) { Start-AgentOperations } elseif ($StopOperations) { Stop-AgentOperations } elseif ($Status) { Get-AgentStatus } elseif ($CoordinateTransport) { Write-AgentLog "Coordinating transport..." } elseif ($ScheduleDeliveries) { Write-AgentLog "Scheduling deliveries..." } elseif ($ManageFleets) { Write-AgentLog "Managing fleets..." } elseif ($OptimizeCapacity) { Write-AgentLog "Optimizing capacity..." } else { Write-AgentLog "No valid operation specified" -Level "WARNING" }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

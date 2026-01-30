@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # DASHBOARD OPTIMIZATION AGENT DEPLOYMENT
 # Version: 4.0.0 | Classification: NATHAN COMMAND CORP TOP SECRET
 # Date: 2026-01-29 | Authority: AZ PRIME Command
@@ -435,4 +438,8 @@ Write-Host "DASHBOARD DOMINANCE: DISPLAY SYSTEMS MAXIMIZED!" -ForegroundColor Ma
 Write-Host "AVATAR INTELLIGENCE: AZ LIVE EXPRESSIONS ACTIVE!" -ForegroundColor Magenta
 Write-Host "PERFORMANCE TARGETS: 500 OPS/SEC ENGAGED!" -ForegroundColor Magenta
 Write-Host ""
+<<<<<<< HEAD
 Write-Host "OPTIMIZATION COMPLETE! DASHBOARD PERFECTED! TARGETS SET!" -ForegroundColor Cyan
+=======
+Write-Host "OPTIMIZATION COMPLETE! DASHBOARD PERFECTED! TARGETS SET!" -ForegroundColor Cyan
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

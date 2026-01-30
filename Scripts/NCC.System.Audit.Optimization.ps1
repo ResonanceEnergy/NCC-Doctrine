@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC System Audit & Optimization Script
 # Version: 2.0.0 | Date: 2026-01-29
 # Purpose: Comprehensive system audit, structural fixes, and performance optimization
@@ -686,4 +689,7 @@ if ($FullSystemFix) {
 }
 
 Write-Log "✅ NCC System Audit & Optimization completed" "SUCCESS"
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

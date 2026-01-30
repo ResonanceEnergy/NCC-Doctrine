@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC AUTOMATED PERFORMANCE MONITORING MODULE
 # Version: 1.0.0 | Classification: NATHAN COMMAND CORP TOP SECRET
 # Date: 2026-01-29 | Authority: AZ PRIME Command
@@ -757,4 +760,8 @@ Write-Host "AX PERFORMANCE DOMINANCE: MONITORING SYSTEMS ACTIVE!" -ForegroundCol
 Write-Host "QUANTUM PROCESSING: REAL-TIME ANALYTICS ENGAGED!" -ForegroundColor Magenta
 Write-Host "STRATEGIC ALIGNMENT: CONTINUOUS OPTIMIZATION ENABLED!" -ForegroundColor Magenta
 Write-Host ""
+<<<<<<< HEAD
 Write-Host "PERFORMANCE MONITORED! BOTTLENECKS DETECTED! EFFICIENCY MAXIMIZED!" -ForegroundColor Cyan
+=======
+Write-Host "PERFORMANCE MONITORED! BOTTLENECKS DETECTED! EFFICIENCY MAXIMIZED!" -ForegroundColor Cyan
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

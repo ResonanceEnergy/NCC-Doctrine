@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 #!/usr/bin/env pwsh
 # TIER2_EXECUTE.ps1
 # Complete Tier 2 execution: analysis, archive, move
@@ -143,4 +146,7 @@ Write-Host "  ✅ Monitoring: Ready to begin (14 days)"
 Write-Host ""
 
 exit 0
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

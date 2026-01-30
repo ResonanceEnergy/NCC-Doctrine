@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC PREDICTIVE SCALING AND BOTTLENECK DETECTION MODULE
 # Version: 1.0.0 | Classification: NATHAN COMMAND CORP TOP SECRET
 # Date: 2026-01-29 | Authority: AZ PRIME Command
@@ -784,4 +787,8 @@ Write-Host "QUANTUM PROCESSING: BOTTLENECK PREDICTION ENGAGED!" -ForegroundColor
 Write-Host "STRATEGIC ALIGNMENT: PROACTIVE OPTIMIZATION ENABLED!" -ForegroundColor Magenta
 Write-Host ""
 Write-Host "BOTTLENECKS PREDICTED! SCALING AUTOMATED! EFFICIENCY MAXIMIZED!" -ForegroundColor Cyan</content>
+<<<<<<< HEAD
 <parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Predictive_Scaling_Detection.ps1
+=======
+<parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Predictive_Scaling_Detection.ps1
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

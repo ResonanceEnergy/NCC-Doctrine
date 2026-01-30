@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Biotech Corporation - Research Agent
+=======
+﻿# Biotech Corporation - Research Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced biotech research and drug discovery operations
 
 param(
@@ -470,4 +474,7 @@ if ($GenerateInsights) { Generate-ResearchInsights }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $AnalyzeCompounds -or $MonitorTrials -or $ResearchPipeline -or $GenerateInsights)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Research Areas: $($AgentConfig.ResearchAreas.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Continuous Operations Monitor
 # 24/7 Autonomous Execution Framework
 
@@ -237,4 +240,8 @@ if ($Continuous) {
     Execute-StrategicInitiatives
     Update-Dashboard
     Write-OperationLog "Single operation cycle completed" "SINGLE"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

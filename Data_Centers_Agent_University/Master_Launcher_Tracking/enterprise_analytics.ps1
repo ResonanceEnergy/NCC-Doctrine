@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC ENTERPRISE ANALYTICS & METRICS SYSTEM
 # Version: 2.0.0 | Classification: NATHAN COMMAND CORP TOP SECRET
 # Date: 2026-01-29 | Authority: AZ PRIME Command
@@ -459,4 +462,8 @@ Write-Host "ANALYTICS DOMINANCE: DATA-DRIVEN INSIGHTS ACTIVE!" -ForegroundColor 
 Write-Host "METRICS EXCELLENCE: COMPREHENSIVE TRACKING ENGAGED!" -ForegroundColor Magenta
 Write-Host "INSIGHT GENERATION: STRATEGIC ADVANTAGE MAXIMIZED!" -ForegroundColor Magenta
 Write-Host ""
+<<<<<<< HEAD
 Write-Host "ANALYTICS COMPLETE! METRICS GENERATED! INSIGHTS PRODUCED!" -ForegroundColor Cyan
+=======
+Write-Host "ANALYTICS COMPLETE! METRICS GENERATED! INSIGHTS PRODUCED!" -ForegroundColor Cyan
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

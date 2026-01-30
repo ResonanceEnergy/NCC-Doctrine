@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Faraday Financial Corp - Financial Analysis Agent
+=======
+﻿# Faraday Financial Corp - Financial Analysis Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced financial analysis and regulatory compliance operations
 
 param(
@@ -557,4 +561,7 @@ if ($GenerateReports) { Generate-FinancialReports }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $AnalyzeMarkets -or $MonitorCompliance -or $RiskAssessment -or $GenerateReports)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Financial Instruments: $($AgentConfig.FinancialInstruments.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Incident Response Protocols
 # Automated Incident Detection, Response, and Analysis System
 # Version: 1.0.0 | Classification: NATRIX COMMAND CORP INTERNAL TOOL
@@ -1218,4 +1221,8 @@ function Generate-IncidentSummaryReport {
     return $filepath
 }
 
+<<<<<<< HEAD
 Write-Host "NCC Incident Response Protocols operation completed." -ForegroundColor Cyan
+=======
+Write-Host "NCC Incident Response Protocols operation completed." -ForegroundColor Cyan
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

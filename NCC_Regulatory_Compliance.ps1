@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Regulatory Compliance Frameworks
 # Automated Compliance Assessment and Enforcement
 # Version: 1.0.0 | Classification: NATRIX COMMAND CORP INTERNAL TOOL
@@ -1224,4 +1227,8 @@ if ($ScheduleAssessments) {
     }
 }
 
+<<<<<<< HEAD
 Write-Host "NCC Regulatory Compliance Framework operation completed." -ForegroundColor Cyan
+=======
+Write-Host "NCC Regulatory Compliance Framework operation completed." -ForegroundColor Cyan
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

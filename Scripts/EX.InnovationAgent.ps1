@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # EX.InnovationAgent.ps1
 # Executive Innovation Agent for NCC CEOs
 # Continuously generates ideas and analyzes data from internet and BBIC Trends Trackers
@@ -387,4 +390,7 @@ else {
     # Run single cycle
     Start-InnovationCycle
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

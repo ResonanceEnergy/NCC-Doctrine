@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # AIEthicsCouncil - Safety Compliance Agent
+=======
+﻿# AIEthicsCouncil - Safety Compliance Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # AI safety protocols and compliance monitoring
 
 param(
@@ -107,4 +111,7 @@ elseif ($MonitorProtocols) { Write-AgentLog "Monitoring safety protocols..." -Le
 elseif ($ValidateCompliance) { Write-AgentLog "Validating compliance..." -Level "INFO" }
 elseif ($EmergencyShutdown) { Write-AgentLog "Initiating emergency shutdown..." -Level "ERROR" }
 else { Write-AgentLog "No valid operation specified" -Level "WARNING" }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

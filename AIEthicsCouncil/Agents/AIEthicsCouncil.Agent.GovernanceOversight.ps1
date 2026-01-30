@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # AIEthicsCouncil - Governance Oversight Agent
+=======
+﻿# AIEthicsCouncil - Governance Oversight Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # AI governance and regulatory oversight operations
 
 param([switch]$Initialize,[switch]$StartOperations,[switch]$StopOperations,[switch]$Status,[switch]$OversightGovernance,[switch]$MonitorRegulations,[switch]$EnforcePolicies,[switch]$CoordinateStakeholders)
@@ -74,4 +78,7 @@ function Stop-AgentOperations { $AgentConfig.Status = "Inactive"; Write-AgentLog
 function Get-AgentStatus { return $AgentConfig.Status }
 
 if ($Initialize) { Initialize-Agent } elseif ($StartOperations) { Start-AgentOperations } elseif ($StopOperations) { Stop-AgentOperations } elseif ($Status) { Get-AgentStatus } elseif ($OversightGovernance) { Write-AgentLog "Oversighting governance..." } elseif ($MonitorRegulations) { Write-AgentLog "Monitoring regulations..." } elseif ($EnforcePolicies) { Write-AgentLog "Enforcing policies..." } elseif ($CoordinateStakeholders) { Write-AgentLog "Coordinating stakeholders..." } else { Write-AgentLog "No valid operation specified" -Level "WARNING" }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Desktop Display Launcher
 # Windows Forms GUI for launching NCC systems
 
@@ -171,4 +174,8 @@ $exitButton.Add_Click({
 $form.Controls.Add($exitButton)
 
 # Show the form
+<<<<<<< HEAD
 $form.ShowDialog()
+=======
+$form.ShowDialog()
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

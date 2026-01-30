@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # DataBrokersDivision - Market Operations Agent
+=======
+﻿# DataBrokersDivision - Market Operations Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 param([switch]$Initialize,[switch]$StartOperations,[switch]$StopOperations,[switch]$Status,[switch]$OperateMarket,[switch]$FacilitateTrades,[switch]$ManageExchanges,[switch]$EnsureLiquidity])
 $AgentConfig = @{Name = "DataBrokersDivision.Agent.MarketOperations"; Division = "DataBrokersDivision"; Role = "MarketOperations"; Status = "Inactive"}
 function Write-AgentLog($Message, $Level = "INFO") { $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"; $logMessage = "[$timestamp] [$($AgentConfig.Name)] [$Level] $Message"; Write-Host $logMessage -ForegroundColor $(switch($Level){"ERROR"{"Red"}"WARNING"{"Yellow"}"SUCCESS"{"Green"}default{"Cyan"}}) }
@@ -64,4 +68,7 @@ function Start-AgentOperations { $AgentConfig.Status = "Active"; Write-AgentLog 
 function Stop-AgentOperations { $AgentConfig.Status = "Inactive"; Write-AgentLog "Market Operations operations stopped" -Level "SUCCESS" }
 function Get-AgentStatus { return $AgentConfig.Status }
 if ($Initialize) { Initialize-Agent } elseif ($StartOperations) { Start-AgentOperations } elseif ($StopOperations) { Stop-AgentOperations } elseif ($Status) { Get-AgentStatus } elseif ($OperateMarket) { Write-AgentLog "Operating market..." } elseif ($FacilitateTrades) { Write-AgentLog "Facilitating trades..." } elseif ($ManageExchanges) { Write-AgentLog "Managing exchanges..." } elseif ($EnsureLiquidity) { Write-AgentLog "Ensuring liquidity..." } else { Write-AgentLog "No valid operation specified" -Level "WARNING" }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

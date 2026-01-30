@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Critical Agent Deployment Script
 # Deploy agents to missing divisions immediately
 
@@ -221,4 +224,8 @@ Write-Host "  Total Agents: $($employeeData.ncc_employee_database.metadata.total
 Write-Host "  Gap to Target: $(1920 - $employeeData.ncc_employee_database.metadata.total_employees)" -ForegroundColor Red
 Write-Host "  Missing Divisions: 15+" -ForegroundColor Red
 Write-Host ""
+<<<<<<< HEAD
 Write-Host "⚡ LFG! - Let's deploy those agents!" -ForegroundColor Magenta
+=======
+Write-Host "⚡ LFG! - Let's deploy those agents!" -ForegroundColor Magenta
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC System Integration Framework v2.0.0
 # Author: NCC Command Center
 # Purpose: Unified system launcher integrating ASG, LFG, and maintenance systems
@@ -14,6 +17,7 @@ param(
     [int]$CycleIntervalMinutes = 2  # Default 2-minute cycles
 )
 
+<<<<<<< HEAD
 # Modular Agent Framework Integration
 $AgentModules = @{
     Perception = "NCC.Agent.Perception.ps1"
@@ -38,6 +42,8 @@ function Invoke-SubAgentDecomposition {
     }
 }
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Set error action preference
 $ErrorActionPreference = "Stop"
 
@@ -419,4 +425,8 @@ if ($Status) {
 # Show status if no specific action requested
 if (-not ($FullSystem -or $ASG -or $LFG -or $Maintenance -or $CycleMode -or $EmergencyStop -or $Status)) {
     Show-SystemStatus
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

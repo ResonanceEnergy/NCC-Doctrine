@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Hedge Fund - Investment Management Agent
+=======
+﻿# Hedge Fund - Investment Management Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced investment management and alternative strategies
 
 param(
@@ -565,4 +569,7 @@ if ($InvestorRelations) { Manage-InvestorRelations }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $AlternativeInvestments -or $FundManagement -or $PerformanceAnalysis -or $InvestorRelations)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Strategy Types: $($AgentConfig.StrategyTypes.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

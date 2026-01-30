@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Cybersecurity Command Center - Security Monitoring Agent
+=======
+﻿# Cybersecurity Command Center - Security Monitoring Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced security monitoring and compliance operations
 
 param(
@@ -589,4 +593,7 @@ if ($GenerateReports) { Generate-SecurityReports }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $MonitorCompliance -or $AuditSystems -or $VulnerabilityScan -or $AccessControl -or $GenerateReports)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Frameworks: $($AgentConfig.ComplianceFrameworks.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

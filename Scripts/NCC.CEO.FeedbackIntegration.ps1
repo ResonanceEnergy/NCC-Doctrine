@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Hierarchical Directive System - CEO Feedback Integration Script
 # Version: 1.0.1 | Date: 2026-01-29
 # Purpose: CEO review of department reports and future goal adjustment
@@ -412,4 +415,8 @@ Update-MessageStatus -Messages $messages
 Write-Host "`n✅ CEO feedback integration completed for $CompanyName" -ForegroundColor Green
 Write-Host "📊 Reviewed $($reports.Count) department reports" -ForegroundColor Cyan
 Write-Host "🎯 Updated future goals with performance-driven adjustments" -ForegroundColor Cyan
+<<<<<<< HEAD
 Write-Host "🔄 Feedback integrated into organizational learning system" -ForegroundColor Cyan
+=======
+Write-Host "🔄 Feedback integrated into organizational learning system" -ForegroundColor Cyan
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Integrated Insurance Corp - Insurance Operations Agent
+=======
+﻿# Integrated Insurance Corp - Insurance Operations Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced insurance operations and risk management
 
 param(
@@ -511,4 +515,7 @@ if ($PolicyAdministration) { Administer-Policies }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $UnderwritingManagement -or $ClaimsProcessing -or $RiskAssessment -or $PolicyAdministration)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Insurance Types: $($AgentConfig.InsuranceTypes.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # GlobalLogisticsNetwork - Route Optimization Agent
+=======
+﻿# GlobalLogisticsNetwork - Route Optimization Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # AI-driven route optimization and logistics planning
 
 param([switch]$Initialize,[switch]$StartOperations,[switch]$StopOperations,[switch]$Status,[switch]$OptimizeRoutes,[switch]$CalculateEfficiency,[switch]$PredictDelays,[switch]$UpdateRoutes)
@@ -74,4 +78,7 @@ function Stop-AgentOperations { $AgentConfig.Status = "Inactive"; Write-AgentLog
 function Get-AgentStatus { return $AgentConfig.Status }
 
 if ($Initialize) { Initialize-Agent } elseif ($StartOperations) { Start-AgentOperations } elseif ($StopOperations) { Stop-AgentOperations } elseif ($Status) { Get-AgentStatus } elseif ($OptimizeRoutes) { Write-AgentLog "Optimizing routes..." } elseif ($CalculateEfficiency) { Write-AgentLog "Calculating efficiency..." } elseif ($PredictDelays) { Write-AgentLog "Predicting delays..." } elseif ($UpdateRoutes) { Write-AgentLog "Updating routes..." } else { Write-AgentLog "No valid operation specified" -Level "WARNING" }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

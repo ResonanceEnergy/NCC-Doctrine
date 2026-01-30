@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC HR Agent Codenames & Population System v1.0.0
 # Author: NCC Command Center
 # Purpose: Assign cool codenames to all agents and populate agent lists
@@ -337,4 +340,8 @@ if (-not ($PopulateAgents -or $AssignCodenames -or $CreateHRDatabase -or $FullSy
     Write-Log "  -FullSystem        : Run complete HR population system" -Level "INFO"
     Write-Log "" -Level "INFO"
     Write-Log "Example: .\NCC.HR.AgentCodenames.ps1 -FullSystem" -Level "INFO"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

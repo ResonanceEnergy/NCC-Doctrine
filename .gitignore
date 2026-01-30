@@ -31,3 +31,6 @@ backups/*/logs/NCC_Continuous_Operations.log
 AX/Launcher_Distribution/ax_distribution_log.txt
 Data_Centers_Agent_University/master_launcher_log.txt
 backups/full_backup_*/CoreSystems_*.zip
+*.log
+*.txt
+backups/**/*.log

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # EX.InnovationAgent.ps1
 # Executive Innovation Agents (EX Agents) for CEOs
 # Continuously generates new ideas/data from internet and BBIC Trends Trackers Division
@@ -402,4 +405,8 @@ if ($SingleCycle) {
     Write-Host "  .\EX.InnovationAgent.ps1 -SingleCycle          # Run one cycle"
     Write-Host "  .\EX.InnovationAgent.ps1 -Continuous           # Run continuously (default 5 min intervals)"
     Write-Host "  .\EX.InnovationAgent.ps1 -Continuous -IntervalMinutes 10  # Custom interval"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC AGENT MANDATE & KPI ASSIGNMENT SYSTEM v2.0.0
 # Comprehensive Role Definition and Performance Metrics Framework
 
@@ -716,4 +719,8 @@ switch ($Action) {
     }
 }
 
+<<<<<<< HEAD
 Write-MandateLog "Command completed: $Action" -Level "INFO"
+=======
+Write-MandateLog "Command completed: $Action" -Level "INFO"
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

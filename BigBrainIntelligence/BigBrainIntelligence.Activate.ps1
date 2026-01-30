@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # BigBrainIntelligence Activation Script
 # Version: 1.0.0 | Date: 2026-01-29
 # Purpose: Activate all BigBrainIntelligence operations
@@ -68,4 +71,7 @@ if ($FullActivation) {
 
     Write-Host "✅ BigBrainIntelligence fully activated!" -ForegroundColor Green
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

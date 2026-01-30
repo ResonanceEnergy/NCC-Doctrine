@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Framework Loading and Building Protocols
 # Draft protocols for loading and building into the NCC framework
 # Ensures all components are properly integrated and operational
@@ -473,4 +476,7 @@ if ($Verify) {
         Write-Host "  $($compResult.component): $status" -ForegroundColor $color
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

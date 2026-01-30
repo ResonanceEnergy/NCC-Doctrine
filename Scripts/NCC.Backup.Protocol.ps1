@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC COMPREHENSIVE BACKUP PROTOCOL v3.0
 # AZ PRIME COMMAND AUTHORITY - BACKUP EXECUTION PROTOCOL
 # Date: 2026-01-29 | Authority: AZ PRIME COMMAND
@@ -449,4 +452,8 @@ Write-Host "⚡ REDUNDANCY: $($BACKUP_CONFIG.Redundancy)x PROTECTION" -Foregroun
 Write-Host ""
 Write-Host "💪 NCC BACKUP PROTOCOL: MISSION ACCOMPLISHED" -ForegroundColor Red
 Write-Host "🎯 OBJECTIVE: COMPLETE DATA PROTECTION ACHIEVED" -ForegroundColor Yellow</content>
+<<<<<<< HEAD
 <parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\scripts\NCC.Backup.Protocol.ps1
+=======
+<parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\scripts\NCC.Backup.Protocol.ps1
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Daily Maintenance System v2.0.0
 # Author: NCC Command Center
 # Purpose: Automated daily maintenance, system health checks, and cycle management
@@ -15,6 +18,7 @@ param(
     [switch]$ShowStatus
 )
 
+<<<<<<< HEAD
 # Modular Agent Framework Integration
 $AgentModules = @{
     Perception = "NCC.Agent.Perception.ps1"
@@ -39,6 +43,8 @@ function Invoke-SubAgentDecomposition {
     }
 }
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Set error action preference
 $ErrorActionPreference = "Stop"
 
@@ -684,4 +690,8 @@ if ($UnscheduleTasks) {
 # Show status if no specific action requested
 if (-not ($RunAll -or $RunDailyMaintenance -or $RunSystemAudit -or $RunDataBackup -or $RunPerformanceOptimization -or $RunSecurityCheck -or $ScheduleTasks -or $UnscheduleTasks)) {
     Show-MaintenanceStatus
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

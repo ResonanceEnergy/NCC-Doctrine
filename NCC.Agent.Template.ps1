@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Agent Framework Template v2.0.0
 # Universal Agent Architecture for All NCC Divisions
 
@@ -309,4 +312,8 @@ if ($Restore) {
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $Update -or $Backup -or $Restore)) {
     $status = Get-AgentStatus
     Write-AgentLog "Agent: $($status.Name) | Status: $($status.Status) | Role: $($status.Role)" -Level "INFO"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

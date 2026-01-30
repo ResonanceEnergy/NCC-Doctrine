@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Global Talent Acquisition - HR Operations Agent
+=======
+﻿# Global Talent Acquisition - HR Operations Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced human resources and talent acquisition operations
 
 param(
@@ -603,4 +607,7 @@ if ($WorkforcePlanning) { Plan-Workforce }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $TalentScouting -or $EmployeeManagement -or $PerformanceTracking -or $WorkforcePlanning)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Departments: $($AgentConfig.Departments.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

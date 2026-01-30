@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 param(
     [Parameter(Mandatory=$false)]
     [ValidateSet("Connect", "GetBalance", "GetTransactions", "SendPayment", "Monitor", "Status", "Test", "Initialize")]
@@ -563,4 +566,8 @@ switch ($Action) {
     }
 }
 
+<<<<<<< HEAD
 Write-FinancialLog "Command completed: $Action" -Level "INFO"
+=======
+Write-FinancialLog "Command completed: $Action" -Level "INFO"
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

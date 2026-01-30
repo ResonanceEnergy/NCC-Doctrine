@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Elite Trader Desk - Trading Operations Agent
+=======
+﻿# Elite Trader Desk - Trading Operations Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced trading and market analysis operations
 
 param(
@@ -592,4 +596,7 @@ if ($PortfolioManagement) { Manage-Portfolio }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $MarketAnalysis -or $TradingStrategies -or $RiskManagement -or $PortfolioManagement)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Asset Classes: $($AgentConfig.AssetClasses.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

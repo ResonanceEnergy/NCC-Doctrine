@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 #Requires -Version 5.1
 
 <#
@@ -846,4 +849,8 @@ catch {
     Write-QualityLog "Data Quality Monitor failed: $($_.Exception.Message)" "ERROR"
     Write-QualityLog "Stack trace: $($_.ScriptStackTrace)" "ERROR"
     exit 1
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

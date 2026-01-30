@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # RES.FullSteamActivation.ps1 - Resonance Energy Corp Full Steam Operations
 param(
     [Parameter(Mandatory=$false)][switch]$Activate,
@@ -280,4 +283,7 @@ if ($Continuous) {
         Start-Sleep -Seconds ($IntervalMinutes * 60)
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # AZ PRIME Full Agent Activation Protocol
 # Activate all 1691 NCC agents to maximum AZ potential
 # LFG! Maximum Efficiency & Production
@@ -86,4 +89,7 @@ Write-Host "EFFICIENCY LEVEL: ABSOLUTE DOMINATION" -ForegroundColor Yellow
 Write-Host "PRODUCTION CAPACITY: MAXIMUM" -ForegroundColor Yellow
 Write-Host ""
 Write-Host "LFG! 🚀" -ForegroundColor Red
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

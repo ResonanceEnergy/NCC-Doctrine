@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Scheduled Tasks Manager v1.0.0
 # Author: NCC Command Center
 # Purpose: Manage Windows scheduled tasks for NCC system automation
@@ -418,4 +421,8 @@ if (-not ($RegisterAllTasks -or $UnregisterAllTasks -or $ListTasks -or $TestTask
     Write-TaskLog "  .\NCC.ScheduledTasks.ps1 -RegisterSystemIntegration # Register system monitor task" -Level "INFO"
     Write-TaskLog "  .\NCC.ScheduledTasks.ps1 -RegisterBackup       # Register backup task" -Level "INFO"
     Write-TaskLog "  .\NCC.ScheduledTasks.ps1 -RegisterMonitoring   # Register monitoring task" -Level "INFO"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

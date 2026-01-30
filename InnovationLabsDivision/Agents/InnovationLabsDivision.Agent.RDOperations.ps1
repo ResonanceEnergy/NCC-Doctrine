@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Innovation Labs Division - Research & Development Agent
+=======
+﻿# Innovation Labs Division - Research & Development Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced R&D and innovation management operations
 
 param(
@@ -597,4 +601,7 @@ if ($IPManagement) { Manage-IP }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $InnovationScouting -or $ProjectManagement -or $TechnologyAssessment -or $IPManagement)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Research Areas: $($AgentConfig.ResearchAreas.Count)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

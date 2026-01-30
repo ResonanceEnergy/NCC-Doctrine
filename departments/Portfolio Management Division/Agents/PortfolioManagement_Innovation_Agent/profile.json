@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿{
   "Codename": "Quantum Ghost",
   "Department": "Portfolio Management Division",
@@ -94,4 +95,15 @@
   "Authority": "AZ PRIME Command",
   "EffectiveDate": "2026-01-30",
   "Version": "1.0.0"
+=======
+{
+  "Department": "Portfolio Management Division",
+  "Specialization": "Internet Research & Innovation",
+  "Company": "Faraday_Financial_Corp",
+  "Status": "Active",
+  "Created": "2026-01-29T19:57:47",
+  "Role": "Innovation Agent",
+  "CodeName": "Quantum Ghost",
+  "Name": "PortfolioManagement_Innovation_Agent"
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 }

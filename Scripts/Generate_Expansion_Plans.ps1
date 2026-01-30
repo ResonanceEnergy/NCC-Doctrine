@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Generate NCC Company Expansion Plans
 
 $companies = @(
@@ -228,4 +231,8 @@ foreach ($company in $companies) {
     Write-Host "Created expansion plan for $company" -ForegroundColor Green
 }
 
+<<<<<<< HEAD
 Write-Host "✅ All NCC company expansion plans generated successfully!" -ForegroundColor Green
+=======
+Write-Host "✅ All NCC company expansion plans generated successfully!" -ForegroundColor Green
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

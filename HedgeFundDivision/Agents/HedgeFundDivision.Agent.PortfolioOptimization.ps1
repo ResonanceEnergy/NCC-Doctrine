@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # HedgeFundDivision - Portfolio Optimization Agent
+=======
+﻿# HedgeFundDivision - Portfolio Optimization Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 param([switch]$Initialize,[switch]$StartOperations,[switch]$StopOperations,[switch]$Status,[switch]$OptimizePortfolio,[switch]$RebalanceAssets,[switch]$MaximizeReturns,[switch]$MinimizeVolatility])
 $AgentConfig = @{Name = "HedgeFundDivision.Agent.PortfolioOptimization"; Division = "HedgeFundDivision"; Role = "PortfolioOptimization"; Status = "Inactive"}
 function Write-AgentLog($Message, $Level = "INFO") { $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"; $logMessage = "[$timestamp] [$($AgentConfig.Name)] [$Level] $Message"; Write-Host $logMessage -ForegroundColor $(switch($Level){"ERROR"{"Red"}"WARNING"{"Yellow"}"SUCCESS"{"Green"}default{"Cyan"}}) }
@@ -64,4 +68,7 @@ function Start-AgentOperations { $AgentConfig.Status = "Active"; Write-AgentLog 
 function Stop-AgentOperations { $AgentConfig.Status = "Inactive"; Write-AgentLog "Portfolio Optimization operations stopped" -Level "SUCCESS" }
 function Get-AgentStatus { return $AgentConfig.Status }
 if ($Initialize) { Initialize-Agent } elseif ($StartOperations) { Start-AgentOperations } elseif ($StopOperations) { Stop-AgentOperations } elseif ($Status) { Get-AgentStatus } elseif ($OptimizePortfolio) { Write-AgentLog "Optimizing portfolio..." } elseif ($RebalanceAssets) { Write-AgentLog "Rebalancing assets..." } elseif ($MaximizeReturns) { Write-AgentLog "Maximizing returns..." } elseif ($MinimizeVolatility) { Write-AgentLog "Minimizing volatility..." } else { Write-AgentLog "No valid operation specified" -Level "WARNING" }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

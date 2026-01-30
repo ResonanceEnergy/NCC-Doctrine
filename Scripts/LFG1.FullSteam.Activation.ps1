@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # LFG1 Full Steam Activation Script
 # Activate all NCC Corporations to maximum efficiency and production
 # LFG! Protocol Enforcement
@@ -215,4 +218,8 @@ Write-Host "  ✓ LFG1 Protocol: Documented and Active" -ForegroundColor White
 Write-Host "  ✓ All Corporations: Full Steam Status Confirmed" -ForegroundColor White
 Write-Host "  ✓ AZ PRIME Oversight: Maximum Efficiency Engaged" -ForegroundColor White
 Write-Host ""
+<<<<<<< HEAD
 Write-Host "🚀 LFG! ALL NCC CORPORATIONS OPERATING AT FULL STEAM 🚀" -ForegroundColor Red
+=======
+Write-Host "🚀 LFG! ALL NCC CORPORATIONS OPERATING AT FULL STEAM 🚀" -ForegroundColor Red
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

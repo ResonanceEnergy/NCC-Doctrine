@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Hierarchical Directive System - CEO Directive Breakdown Script
 # Version: 1.0.1 | Date: 2026-01-29
 # Purpose: CEO internalization and department directive creation
@@ -331,4 +334,8 @@ foreach ($dept in $departments) {
 }
 
 Write-Host "`n✅ CEO directive breakdown completed for $CompanyName" -ForegroundColor Green
+<<<<<<< HEAD
 Write-Host "📊 Created $($departments.Count) department directives" -ForegroundColor Cyan
+=======
+Write-Host "📊 Created $($departments.Count) department directives" -ForegroundColor Cyan
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

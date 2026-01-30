@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Automated Audit Reporting System
 # Scheduled Audit Report Generation and Distribution
 # Version: 1.0.0 | Classification: NATRIX COMMAND CORP INTERNAL TOOL
@@ -817,4 +820,8 @@ if ($Scheduled) {
     $scheduler.ScheduleReports()
 }
 
+<<<<<<< HEAD
 Write-Host "NCC Automated Audit Reporting System operation completed." -ForegroundColor Cyan
+=======
+Write-Host "NCC Automated Audit Reporting System operation completed." -ForegroundColor Cyan
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

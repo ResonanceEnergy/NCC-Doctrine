@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # AIEthicsCouncil - Transparency Monitoring Agent
+=======
+﻿# AIEthicsCouncil - Transparency Monitoring Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # AI system transparency and explainability monitoring
 
 param([switch]$Initialize,[switch]$StartOperations,[switch]$StopOperations,[switch]$Status,[switch]$MonitorTransparency,[switch]$AnalyzeExplainability,[switch]$AuditDecisions,[switch]$ReportCompliance)
@@ -74,4 +78,7 @@ function Stop-AgentOperations { $AgentConfig.Status = "Inactive"; Write-AgentLog
 function Get-AgentStatus { return $AgentConfig.Status }
 
 if ($Initialize) { Initialize-Agent } elseif ($StartOperations) { Start-AgentOperations } elseif ($StopOperations) { Stop-AgentOperations } elseif ($Status) { Get-AgentStatus } elseif ($MonitorTransparency) { Write-AgentLog "Monitoring transparency..." } elseif ($AnalyzeExplainability) { Write-AgentLog "Analyzing explainability..." } elseif ($AuditDecisions) { Write-AgentLog "Auditing decisions..." } elseif ($ReportCompliance) { Write-AgentLog "Reporting compliance..." } else { Write-AgentLog "No valid operation specified" -Level "WARNING" }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # MMC Avatar Creation & Deployment Script
 # NATHAN COMMAND CORP TOP SECRET
 # Version: 1.0.0 | Date: 2026-01-29
@@ -187,4 +190,8 @@ try {
     Write-Host "ERROR: $($_.Exception.Message)" -ForegroundColor Red
     Write-Host "Avatar creation failed. Check MMC Handbook for troubleshooting." -ForegroundColor Red
     exit 1
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

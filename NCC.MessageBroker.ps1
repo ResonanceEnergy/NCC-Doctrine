@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Enterprise Message Broker
 # Central Message Routing and Management System
 
@@ -261,4 +264,8 @@ if ($Cleanup) {
     # Clean up old messages and logs
     Write-BrokerLog "Cleaning up old messages and logs" -Level "INFO"
     # Implementation would archive old files
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

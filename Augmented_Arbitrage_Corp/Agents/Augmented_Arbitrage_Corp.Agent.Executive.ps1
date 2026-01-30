@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # Augmented Arbitrage Corp - Executive Agent
+=======
+﻿# Augmented Arbitrage Corp - Executive Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Strategic financial decision-making and arbitrage opportunity identification
 
 param(
@@ -349,4 +353,7 @@ if ($PerformanceReport) { Generate-PerformanceReport }
 if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $AnalyzeMarkets -or $ExecuteTrades -or $RiskAssessment -or $PerformanceReport)) {
     Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Role: $($AgentConfig.Role)" -Level "INFO"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

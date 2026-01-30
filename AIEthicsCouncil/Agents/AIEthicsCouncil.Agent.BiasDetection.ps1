@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # AIEthicsCouncil - Bias Detection Agent
+=======
+﻿# AIEthicsCouncil - Bias Detection Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Automated algorithmic bias detection and mitigation
 
 param(
@@ -123,4 +127,7 @@ elseif ($AnalyzeModel) { Write-AgentLog "Analyzing model for bias..." -Level "IN
 elseif ($GenerateReport) { Write-AgentLog "Generating bias report..." -Level "INFO" }
 elseif ($MitigateBias) { Write-AgentLog "Applying bias mitigation..." -Level "INFO" }
 else { Write-AgentLog "No valid operation specified" -Level "WARNING" }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

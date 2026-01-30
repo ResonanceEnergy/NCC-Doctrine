@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 param(
     [Parameter(Mandatory=$false)]
     [ValidateSet("Initialize", "Monitor", "Detect", "Respond", "Recover", "Status", "Test")]
@@ -412,4 +415,8 @@ switch ($Action) {
 }
 
 Write-EmergencyLog "Command completed: $Action" -Level "INFO"</content>
+<<<<<<< HEAD
 <parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\_enterprise\emergency\NCC.Emergency.Crisis.Management.ps1
+=======
+<parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\_enterprise\emergency\NCC.Emergency.Crisis.Management.ps1
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

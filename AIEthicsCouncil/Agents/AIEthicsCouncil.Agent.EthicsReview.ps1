@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -25,6 +26,9 @@ function Invoke-SubAgentDecomposition {
 
 
 # AIEthicsCouncil - Ethics Review Agent
+=======
+﻿# AIEthicsCouncil - Ethics Review Agent
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # Advanced AI ethics review and compliance operations
 
 param(
@@ -155,4 +159,7 @@ elseif ($AuditSystem) {
 else {
     Write-AgentLog "No valid operation specified. Use -Initialize, -StartOperations, -StopOperations, -Status, -ReviewProject, -MonitorCompliance, -GenerateReport, or -AuditSystem" -Level "WARNING"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae

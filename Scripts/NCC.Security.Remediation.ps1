@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Modular Agent Framework Integration
 $AgentModules = @{
@@ -24,6 +25,8 @@ function Invoke-SubAgentDecomposition {
 }
 
 
+=======
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
 # NCC Security Remediation Engine
 # Faraday Fortress Automated Security Hardening
 
@@ -480,4 +483,8 @@ if (-not ($AuditOnly -or $FixPermissions -or $EncryptFiles -or $DesktopDisplay))
     Encrypt-LowEntropyFiles
 }
 
+<<<<<<< HEAD
 Write-SecurityLog "NCC Security Remediation Engine execution complete" "COMPLETE"
+=======
+Write-SecurityLog "NCC Security Remediation Engine execution complete" "COMPLETE"
+>>>>>>> c6b295e0d92d0143018dcdcb5ba8fd1affca0fae
