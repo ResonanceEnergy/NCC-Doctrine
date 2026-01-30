@@ -1,4 +1,17 @@
 
+# NCC AX INTELLIGENCE-DRIVEN PERFORMANCE OPTIMIZATION DEPLOYMENT
+# Version: 1.0.0 | Classification: NATHAN COMMAND CORP TOP SECRET
+# Date: 2026-01-29 | Authority: AZ PRIME Command
+# Purpose: Deploy complete AX performance optimization system across all NCC agents
+
+param(
+    [switch]$Deploy,
+    [switch]$Activate,
+    [switch]$Monitor,
+    [switch]$Status,
+    [switch]$FullSystem
+)
+
 # Modular Agent Framework Integration
 $AgentModules = @{
     Perception = "NCC.Agent.Perception.ps1"
@@ -22,20 +35,6 @@ function Invoke-SubAgentDecomposition {
         # Execute sub-agent logic here
     }
 }
-
-
-# NCC AX INTELLIGENCE-DRIVEN PERFORMANCE OPTIMIZATION DEPLOYMENT
-# Version: 1.0.0 | Classification: NATHAN COMMAND CORP TOP SECRET
-# Date: 2026-01-29 | Authority: AZ PRIME Command
-# Purpose: Deploy complete AX performance optimization system across all NCC agents
-
-param(
-    [switch]$Deploy,
-    [switch]$Activate,
-    [switch]$Monitor,
-    [switch]$Status,
-    [switch]$FullSystem
-)
 
 # =============================================================================
 # AX DEPLOYMENT CONFIGURATION

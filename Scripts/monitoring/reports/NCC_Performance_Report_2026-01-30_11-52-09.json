@@ -1,0 +1,284 @@
+{
+  "Health_Check_Results": {
+    "Search_Exclusions_OK": false,
+    "VSCode_Settings_Valid": false,
+    "Score": 80,
+    "Extensions_Config_Valid": false,
+    "Memory_Configuration_OK": false,
+    "Timestamp": "2026-01-30T11:46:38Z",
+    "Workspace_Size_OK": true,
+    "Recommendations": [
+      "Create .vscode/settings.json with optimization settings",
+      "Create .vscode/extensions.json with recommended extensions"
+    ],
+    "Status": "Good",
+    "Issues": [
+      "VS Code settings.json not found",
+      "VS Code extensions.json not found"
+    ]
+  },
+  "All_Issues": [
+    "High memory usage: 4250.27MB (threshold: 1024MB)",
+    "VS Code settings.json not found",
+    "VS Code extensions.json not found"
+  ],
+  "Generated_By": "AZ PRIME Command",
+  "Executive_Summary": {
+    "System_Health_Score": 80,
+    "Performance_Grade": "B",
+    "System_Health_Status": "Good",
+    "Recommendations_Count": 3,
+    "Overall_Performance_Score": 85,
+    "Issues_Count": 3
+  },
+  "Report_Title": "NCC VS Code Performance Report",
+  "Monitoring_Data": {
+    "Analysis": {
+      "Average_CPU_Usage": 11.47,
+      "Peak_CPU_Usage": 59.25,
+      "Average_Memory_Usage_MB": 9917.53,
+      "Average_VSCode_Memory_MB": 3974.08,
+      "Peak_Memory_Usage_MB": 11021.29,
+      "Samples_Collected": 10,
+      "Monitoring_Duration_Minutes": 5
+    },
+    "Monitoring_Data": [
+      {
+        "Memory_Usage_MB": 11021.29,
+        "Average_Memory_MB": 253.63,
+        "Total_CPU_Percent": 19577.34,
+        "Process_Count": 18,
+        "CPU_Usage_Percent": 59.25,
+        "Memory_Usage_Percent": 70.1,
+        "Timestamp": "2026-01-30T11:46:41Z",
+        "Disk_Writes_Per_Sec": 294.68,
+        "Total_Memory_MB": 4565.36,
+        "Disk_Reads_Per_Sec": 18.99
+      },
+      {
+        "Memory_Usage_MB": 10377.72,
+        "Average_Memory_MB": 237.69,
+        "Total_CPU_Percent": 19607.09,
+        "Process_Count": 18,
+        "CPU_Usage_Percent": 4.95,
+        "Memory_Usage_Percent": 66.0,
+        "Timestamp": "2026-01-30T11:47:14Z",
+        "Disk_Writes_Per_Sec": 0.0,
+        "Total_Memory_MB": 4278.46,
+        "Disk_Reads_Per_Sec": 0.0
+      },
+      {
+        "Memory_Usage_MB": 10375.79,
+        "Average_Memory_MB": 238.27,
+        "Total_CPU_Percent": 19620.53,
+        "Process_Count": 18,
+        "CPU_Usage_Percent": 4.97,
+        "Memory_Usage_Percent": 65.99,
+        "Timestamp": "2026-01-30T11:47:47Z",
+        "Disk_Writes_Per_Sec": 1.98,
+        "Total_Memory_MB": 4288.79,
+        "Disk_Reads_Per_Sec": 0.0
+      },
+      {
+        "Memory_Usage_MB": 9586.51,
+        "Average_Memory_MB": 193.64,
+        "Total_CPU_Percent": 19648.25,
+        "Process_Count": 18,
+        "CPU_Usage_Percent": 6.37,
+        "Memory_Usage_Percent": 60.97,
+        "Timestamp": "2026-01-30T11:48:20Z",
+        "Disk_Writes_Per_Sec": 1.0,
+        "Total_Memory_MB": 3485.55,
+        "Disk_Reads_Per_Sec": 0.0
+      },
+      {
+        "Memory_Usage_MB": 9318.06,
+        "Average_Memory_MB": 188.62,
+        "Total_CPU_Percent": 19661.56,
+        "Process_Count": 18,
+        "CPU_Usage_Percent": 5.36,
+        "Memory_Usage_Percent": 59.26,
+        "Timestamp": "2026-01-30T11:48:53Z",
+        "Disk_Writes_Per_Sec": 0.0,
+        "Total_Memory_MB": 3395.08,
+        "Disk_Reads_Per_Sec": 0.0
+      },
+      {
+        "Memory_Usage_MB": 9712.11,
+        "Average_Memory_MB": 211.08,
+        "Total_CPU_Percent": 19684.75,
+        "Process_Count": 18,
+        "CPU_Usage_Percent": 5.34,
+        "Memory_Usage_Percent": 61.77,
+        "Timestamp": "2026-01-30T11:49:27Z",
+        "Disk_Writes_Per_Sec": 0.0,
+        "Total_Memory_MB": 3799.45,
+        "Disk_Reads_Per_Sec": 0.0
+      },
+      {
+        "Memory_Usage_MB": 9694.96,
+        "Average_Memory_MB": 253.48,
+        "Total_CPU_Percent": 19695.72,
+        "Process_Count": 18,
+        "CPU_Usage_Percent": 6.47,
+        "Memory_Usage_Percent": 61.66,
+        "Timestamp": "2026-01-30T11:50:00Z",
+        "Disk_Writes_Per_Sec": 6.99,
+        "Total_Memory_MB": 4562.65,
+        "Disk_Reads_Per_Sec": 3.94
+      },
+      {
+        "Memory_Usage_MB": 9704.44,
+        "Average_Memory_MB": 210.28,
+        "Total_CPU_Percent": 19719.36,
+        "Process_Count": 18,
+        "CPU_Usage_Percent": 5.06,
+        "Memory_Usage_Percent": 61.72,
+        "Timestamp": "2026-01-30T11:50:33Z",
+        "Disk_Writes_Per_Sec": 1.97,
+        "Total_Memory_MB": 3785.11,
+        "Disk_Reads_Per_Sec": 3.99
+      },
+      {
+        "Memory_Usage_MB": 9693.18,
+        "Average_Memory_MB": 210.37,
+        "Total_CPU_Percent": 19744.98,
+        "Process_Count": 18,
+        "CPU_Usage_Percent": 10.78,
+        "Memory_Usage_Percent": 61.65,
+        "Timestamp": "2026-01-30T11:51:06Z",
+        "Disk_Writes_Per_Sec": 0.0,
+        "Total_Memory_MB": 3786.68,
+        "Disk_Reads_Per_Sec": 0.0
+      },
+      {
+        "Memory_Usage_MB": 9691.22,
+        "Average_Memory_MB": 210.76,
+        "Total_CPU_Percent": 19759.06,
+        "Process_Count": 18,
+        "CPU_Usage_Percent": 6.11,
+        "Memory_Usage_Percent": 61.64,
+        "Timestamp": "2026-01-30T11:51:39Z",
+        "Disk_Writes_Per_Sec": 11.82,
+        "Total_Memory_MB": 3793.65,
+        "Disk_Reads_Per_Sec": 0.0
+      }
+    ]
+  },
+  "All_Recommendations": [
+    "Review memory-intensive extensions and increase memory limits if needed",
+    "Create .vscode/settings.json with optimization settings",
+    "Create .vscode/extensions.json with recommended extensions"
+  ],
+  "Script_Version": "1.0.0",
+  "Benchmark_Results": {
+    "VSCode_Process": {
+      "Total_CPU_Percent": 19559.19,
+      "Total_Memory_MB": 4250.27,
+      "Process_Count": 18,
+      "Average_Memory_MB": 236.13
+    },
+    "System_Info": {
+      "Memory_Usage_MB": 10317.35,
+      "Disk_Reads_Per_Sec": 0.0,
+      "Memory_Usage_Percent": 65.62,
+      "Disk_Writes_Per_Sec": 16.77,
+      "Timestamp": "2026-01-30T11:46:33Z",
+      "CPU_Usage_Percent": 7.12
+    },
+    "Benchmark_ID": "NCC_PERF_BENCH_20260130_114629",
+    "End_Time": "2026-01-30T11:46:38Z",
+    "Duration_Seconds": 25209.13,
+    "Search_Performance": [
+      {
+        "Search_Term": "function",
+        "Matches_Found": 568,
+        "Search_Time_Seconds": 0.0775
+      },
+      {
+        "Search_Term": "class",
+        "Matches_Found": 172,
+        "Search_Time_Seconds": 0.0631
+      },
+      {
+        "Search_Term": "import",
+        "Matches_Found": 182,
+        "Search_Time_Seconds": 0.0511
+      },
+      {
+        "Search_Term": "const",
+        "Matches_Found": 8,
+        "Search_Time_Seconds": 0.0415
+      },
+      {
+        "Search_Term": "def",
+        "Matches_Found": 259,
+        "Search_Time_Seconds": 0.0441
+      }
+    ],
+    "Startup_Time": {
+      "Measured_At": "2026-01-30T11:46:37Z",
+      "Startup_Time_Seconds": 2.14
+    },
+    "File_Open_Performance": {
+      "Size_KB": 1.64,
+      "File": "README.md",
+      "Open_Time_Seconds": 0.0032
+    },
+    "Analysis": {
+      "Recommendations": [
+        "Review memory-intensive extensions and increase memory limits if needed"
+      ],
+      "Overall_Score": 85,
+      "Issues": [
+        "High memory usage: 4250.27MB (threshold: 1024MB)"
+      ],
+      "Performance_Grade": "B"
+    },
+    "Workspace_Stats": {
+      "Total_Files": 118,
+      "Total_Size_MB": 1.44,
+      "File_Type_Breakdown": [
+        {
+          "Extension": ".backup",
+          "Count": 1,
+          "TotalSizeMB": 0.15
+        },
+        {
+          "Extension": ".bat",
+          "Count": 1,
+          "TotalSizeMB": 0.0
+        },
+        {
+          "Extension": ".json",
+          "Count": 13,
+          "TotalSizeMB": 0.08
+        },
+        {
+          "Extension": ".log",
+          "Count": 9,
+          "TotalSizeMB": 0.01
+        },
+        {
+          "Extension": ".md",
+          "Count": 8,
+          "TotalSizeMB": 0.01
+        },
+        {
+          "Extension": ".ps1",
+          "Count": 66,
+          "TotalSizeMB": 1.0
+        },
+        {
+          "Extension": ".py",
+          "Count": 20,
+          "TotalSizeMB": 0.18
+        }
+      ],
+      "Max_Directory_Depth": 5,
+      "Backup_Directories": 1
+    },
+    "Start_Time": "2026-01-30T11:46:29Z"
+  },
+  "Generated_Date": "2026-01-30T11:52:09Z"
+}

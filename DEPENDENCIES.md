@@ -19,7 +19,7 @@
 - Replacing with alternative 3D rendering libraries (e.g., PyVista, Trimesh)
 - Converting to web-based visualization
 
-**Status**: Not currently installed - optional for 3D rendering capabilities
+**Status**: ✅ Installed - Blender 5.0.1 (C:\Program Files\Blender Foundation\Blender 5.0\blender.exe)
 
 ### Python Environment Setup
 **Dependencies File**: `requirements.txt` (created)

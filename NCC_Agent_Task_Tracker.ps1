@@ -1,4 +1,21 @@
 
+# NCC AGENT TASK TRACKER - AUTOMATED EFFICIENCY MONITORING
+# Version: 2.0.0 | Classification: NATRIX COMMAND CORP INTERNAL TOOL
+# Date: 2026-01-29 | Authority: AZ PRIME Command | Optimization: AX Intelligence
+# Purpose: Automated task tracking and efficiency optimization for NCC agents
+
+param(
+    [switch]$Initialize,
+    [switch]$DailyCheck,
+    [switch]$PerformanceReport,
+    [switch]$EfficiencyAnalysis,
+    [switch]$CrossDepartmentSync,
+    [switch]$AZ_AuditCompliance,
+    [switch]$AX_OptimizationCheck,
+    [string]$AgentID,
+    [string]$Division
+)
+
 # Modular Agent Framework Integration
 $AgentModules = @{
     Perception = "NCC.Agent.Perception.ps1"
@@ -22,24 +39,6 @@ function Invoke-SubAgentDecomposition {
         # Execute sub-agent logic here
     }
 }
-
-
-# NCC AGENT TASK TRACKER - AUTOMATED EFFICIENCY MONITORING
-# Version: 2.0.0 | Classification: NATRIX COMMAND CORP INTERNAL TOOL
-# Date: 2026-01-29 | Authority: AZ PRIME Command | Optimization: AX Intelligence
-# Purpose: Automated task tracking and efficiency optimization for NCC agents
-
-param(
-    [switch]$Initialize,
-    [switch]$DailyCheck,
-    [switch]$PerformanceReport,
-    [switch]$EfficiencyAnalysis,
-    [switch]$CrossDepartmentSync,
-    [switch]$AZ_AuditCompliance,
-    [switch]$AX_OptimizationCheck,
-    [string]$AgentID,
-    [string]$Division
-)
 
 # =============================================================================
 # CONFIGURATION & INITIALIZATION
