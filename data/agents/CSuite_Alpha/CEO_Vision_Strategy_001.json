@@ -1,0 +1,49 @@
+﻿{
+    "CreatedDate":  "2026-01-29T22:29:15Z",
+    "ReportingHierarchy":  {
+                               "DivisionHead":  "",
+                               "DirectSupervisor":  "AZ_PRIME_001",
+                               "AZ_PRIME_Liaison":  "",
+                               "ExecutiveSponsor":  ""
+                           },
+    "Supervisor":  "AZ_PRIME_001",
+    "SecurityClearance":  "TOP SECRET",
+    "AgentId":  "CEO_Vision_Strategy_001",
+    "AuthorizedSystems":  [
+
+                          ],
+    "Status":  "Active",
+    "AgentName":  "Chief Executive Officer - Vision \u0026 Strategy",
+    "Division":  "CSuite Alpha",
+    "Role":  "Chief Executive Officer - Vision \u0026 Strategy",
+    "CommunicationChannels":  [
+
+                              ],
+    "PerformanceMetrics":  {
+                               "MandateCompliance":  0,
+                               "ErrorCount":  0,
+                               "TasksCompleted":  0,
+                               "KPIScore":  0,
+                               "ResponseTime":  0,
+                               "LastEvaluation":  "2026-01-29",
+                               "SuccessRate":  0
+                           },
+    "LastUpdate":  "2026-01-29T22:33:57Z",
+    "Mandate":  "Chief Executive Officer overseeing NCC Alpha Division operations and strategic growth initiatives.",
+    "KeyResponsibilities":  [
+                                "Division strategic planning and execution",
+                                "Financial performance and growth optimization",
+                                "Team leadership and development",
+                                "Stakeholder relationship management",
+                                "Innovation and market expansion"
+                            ],
+    "KPIs":  [
+                 "Division revenue growth \u003e25% YoY",
+                 "Operational efficiency \u003e90%",
+                 "Employee satisfaction \u003e85%",
+                 "Market share growth \u003e15%",
+                 "Innovation pipeline strength \u003e80%"
+             ],
+    "AuthorityLevel":  "CEO",
+    "ReportingTo":  "AZ_PRIME"
+}

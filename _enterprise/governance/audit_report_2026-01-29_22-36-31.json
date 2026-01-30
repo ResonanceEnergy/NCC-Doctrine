@@ -1,0 +1,13 @@
+﻿{
+    "recommendations":  [
+                            "Enable access logging for better audit trail"
+                        ],
+    "policy_violations":  0,
+    "access_logs_analyzed":  0,
+    "details":  [
+
+                ],
+    "audit_period_days":  365,
+    "suspicious_activities":  0,
+    "timestamp":  "2026-01-29T22:36:31.8429376-07:00"
+}

@@ -1,0 +1,487 @@
+﻿# Integrated Insurance Corp - Insurance Operations Agent
+# Advanced insurance operations and risk management
+
+param(
+    [switch]$Initialize,
+    [switch]$StartOperations,
+
+
+# NCC Communication Integration
+$AgentCommPath = Join-Path $PSScriptRoot "NCC.Agent.Communication.ps1"
+if (Test-Path $AgentCommPath) {
+    # Register agent with communication system
+    & $AgentCommPath -AgentName "IntegratedInsuranceCorp.Agent.InsuranceOperations" -Division "IntegratedInsuranceCorp" -InitializeNetwork
+
+    # Communication functions for agent use
+    function Send-AgentMessage {
+        param([string]$To, [string]$Type, [string]$Content, [string]$Priority = "Normal")
+        & $AgentCommPath -AgentName "IntegratedInsuranceCorp.Agent.InsuranceOperations" -TargetAgent $To -MessageType $Type -MessageContent $Content -Priority $Priority -SendMessage
+    }
+
+    function Receive-AgentMessages {
+        return & $AgentCommPath -AgentName "IntegratedInsuranceCorp.Agent.InsuranceOperations" -ReceiveMessages
+    }
+
+    function Broadcast-Message {
+        param([string]$Type, [string]$Content, [string]$Priority = "Normal")
+        & $AgentCommPath -AgentName "IntegratedInsuranceCorp.Agent.InsuranceOperations" -MessageType $Type -MessageContent $Content -Priority $Priority -Broadcast
+    }
+
+    function Check-Connectivity {
+        param([string]$TargetAgent)
+        return & $AgentCommPath -TargetAgent $TargetAgent -CheckConnectivity
+    }
+
+    # Initialize communication on agent startup
+    Write-Host "ðŸ”— Agent communication system initialized for IntegratedInsuranceCorp.Agent.InsuranceOperations" -ForegroundColor Cyan
+}
+    [switch]$StopOperations,
+    [switch]$Status,
+    [switch]$UnderwritingManagement,
+    [switch]$ClaimsProcessing,
+    [switch]$RiskAssessment,
+    [switch]$PolicyAdministration
+)
+
+# Agent-specific configuration
+$AgentConfig = @{
+    Name = "IntegratedInsuranceCorp.Agent.InsuranceOperations"
+    Division = "IntegratedInsuranceCorp"
+    Role = "InsuranceOperations"
+    Specialization = "Insurance & Risk Management"
+    Status = "Inactive"
+    InsuranceTypes = @("Property", "Casualty", "Life", "Health", "Auto", "Homeowners", "Commercial", "Professional Liability", "Cyber", "Directors & Officers")
+    RiskCategories = @("Underwriting Risk", "Credit Risk", "Market Risk", "Operational Risk", "Liquidity Risk", "Strategic Risk", "Reputational Risk")
+    PolicyTypes = @("Term Life", "Whole Life", "Universal Life", "Variable Life", "Property Insurance", "Liability Insurance", "Workers Comp", "Auto Insurance")
+}
+
+function Write-AgentLog {
+    param([string]$Message, [string]$Level = "INFO")
+    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $logMessage = "[$timestamp] [$($AgentConfig.Name)] [$Level] $Message"
+    Write-Host $logMessage -ForegroundColor $(switch($Level){"ERROR"{"Red"}"WARNING"{"Yellow"}"SUCCESS"{"Green"}default{"Cyan"}})
+}
+
+function Initialize-Agent {
+    Write-AgentLog "Initializing Integrated Insurance Corp Insurance Operations Agent..." -Level "INFO"
+
+    # Create insurance directories
+    $dirs = @("data", "logs", "config", "underwriting", "claims", "risk", "policies", "reports")
+    foreach ($dir in $dirs) {
+        $path = Join-Path $PSScriptRoot $dir
+        if (-not (Test-Path $path)) { New-Item -ItemType Directory -Path $path -Force | Out-Null }
+    }
+
+    # Initialize insurance databases
+    $underwritingPath = Join-Path $PSScriptRoot "data\underwriting_management.json"
+    @{Underwriting = @(); LastUpdate = Get-Date} | ConvertTo-Json | Out-File $underwritingPath -Encoding UTF8
+
+    $claimsPath = Join-Path $PSScriptRoot "data\claims_processing.json"
+    @{Claims = @(); LastUpdate = Get-Date} | ConvertTo-Json | Out-File $claimsPath -Encoding UTF8
+
+    $riskPath = Join-Path $PSScriptRoot "data\risk_assessment.json"
+    @{Risk = @(); LastUpdate = Get-Date} | ConvertTo-Json | Out-File $riskPath -Encoding UTF8
+
+    $AgentConfig.Status = "Initialized"
+    Write-AgentLog "Insurance operations agent initialization completed" -Level "SUCCESS"
+}
+
+function Start-AgentOperations {
+    Write-AgentLog "Starting insurance operations..." -Level "INFO"
+    $AgentConfig.Status = "Active"
+
+    # Start insurance systems
+    Start-UnderwritingManagement
+    Start-ClaimsProcessing
+    Start-RiskAssessment
+    Start-PolicyAdministration
+
+    Write-AgentLog "Insurance operations started" -Level "SUCCESS"
+}
+
+function Stop-AgentOperations {
+    Write-AgentLog "Stopping insurance operations..." -Level "INFO"
+    $AgentConfig.Status = "Inactive"
+
+    Stop-UnderwritingManagement
+    Stop-ClaimsProcessing
+    Stop-RiskAssessment
+    Stop-PolicyAdministration
+
+    Write-AgentLog "Insurance operations stopped" -Level "SUCCESS"
+}
+
+function Start-UnderwritingManagement {
+    Write-AgentLog "Starting underwriting management..." -Level "INFO"
+}
+
+function Start-ClaimsProcessing {
+    Write-AgentLog "Starting claims processing..." -Level "INFO"
+}
+
+function Start-RiskAssessment {
+    Write-AgentLog "Starting risk assessment..." -Level "INFO"
+}
+
+function Start-PolicyAdministration {
+    Write-AgentLog "Starting policy administration..." -Level "INFO"
+}
+
+function Stop-UnderwritingManagement {
+    Write-AgentLog "Stopping underwriting management..." -Level "INFO"
+}
+
+function Stop-ClaimsProcessing {
+    Write-AgentLog "Stopping claims processing..." -Level "INFO"
+}
+
+function Stop-RiskAssessment {
+    Write-AgentLog "Stopping risk assessment..." -Level "INFO"
+}
+
+function Stop-PolicyAdministration {
+    Write-AgentLog "Stopping policy administration..." -Level "INFO"
+}
+
+function Manage-Underwriting {
+    Write-AgentLog "Managing underwriting operations and risk selection..." -Level "INFO"
+
+    $underwriting = @{
+        Timestamp = Get-Date
+        UnderwritingPortfolio = @()
+        RiskPricing = @()
+        UnderwritingGuidelines = @()
+        CapacityManagement = @()
+        UnderwritingMetrics = @{}
+    }
+
+    # Underwriting portfolio
+    $portfolioCount = Get-Random -Minimum 1000 -Maximum 5000
+    for ($i = 1; $i -le $portfolioCount; $i++) {
+        $policy = @{
+            Id = "POL-$i"
+            Type = $AgentConfig.InsuranceTypes | Get-Random
+            Insured = "Client $i"
+            CoverageAmount = Get-Random -Minimum 100000 -Maximum 10000000
+            Premium = Get-Random -Minimum 1000 -Maximum 50000
+            Deductible = Get-Random -Minimum 500 -Maximum 10000
+            Term = Get-Random -Minimum 1 -Maximum 30
+            RiskRating = @("Preferred", "Standard", "Substandard", "Declined") | Get-Random
+            Underwriter = "Underwriter $(Get-Random -Minimum 1 -Maximum 50)"
+            IssueDate = (Get-Date).AddDays(-(Get-Random -Minimum 1 -Maximum 3650))
+            ExpirationDate = (Get-Date).AddDays((Get-Random -Minimum 1 -Maximum 1095))
+            Status = @("Active", "Expired", "Cancelled", "Claims Pending") | Get-Random
+            LossRatio = [math]::Round((Get-Random -Minimum 0 -Maximum 150), 1)
+            CombinedRatio = [math]::Round((Get-Random -Minimum 80 -Maximum 120), 1)
+        }
+        $underwriting.UnderwritingPortfolio += $policy
+    }
+
+    # Risk pricing models
+    $pricingCount = Get-Random -Minimum 20 -Maximum 50
+    for ($i = 1; $i -le $pricingCount; $i++) {
+        $pricing = @{
+            Id = "PRICE-$i"
+            RiskType = $AgentConfig.InsuranceTypes | Get-Random
+            BaseRate = [math]::Round((Get-Random -Minimum 0.5 -Maximum 5), 2)
+            RiskFactors = @(
+                @{Factor = "Location"; Adjustment = [math]::Round((Get-Random -Minimum -0.5 -Maximum 0.5), 2)},
+                @{Factor = "Age"; Adjustment = [math]::Round((Get-Random -Minimum -0.3 -Maximum 0.3), 2)},
+                @{Factor = "Claims History"; Adjustment = [math]::Round((Get-Random -Minimum -0.8 -Maximum 0.2), 2)},
+                @{Factor = "Credit Score"; Adjustment = [math]::Round((Get-Random -Minimum -0.4 -Maximum 0.4), 2)}
+            )
+            FinalRate = [math]::Round((Get-Random -Minimum 0.8 -Maximum 8), 2)
+            ProfitMargin = [math]::Round((Get-Random -Minimum 5 -Maximum 25), 1)
+            CompetitivePosition = @("Above Market", "At Market", "Below Market") | Get-Random
+            LastUpdate = (Get-Date).AddDays(-(Get-Random -Minimum 1 -Maximum 90))
+        }
+        $underwriting.RiskPricing += $pricing
+    }
+
+    # Underwriting guidelines
+    $underwriting.UnderwritingGuidelines = @(
+        @{Line = "Personal Auto"; MaxLossRatio = 75; MinPremium = 500; MaxCoverage = 500000; RiskAppetite = "Moderate"},
+        @{Line = "Homeowners"; MaxLossRatio = 65; MinPremium = 800; MaxCoverage = 1000000; RiskAppetite = "Conservative"},
+        @{Line = "Commercial Property"; MaxLossRatio = 70; MinPremium = 2500; MaxCoverage = 5000000; RiskAppetite = "Moderate"},
+        @{Line = "Workers Compensation"; MaxLossRatio = 80; MinPremium = 1500; MaxCoverage = 2000000; RiskAppetite = "Moderate"},
+        @{Line = "Professional Liability"; MaxLossRatio = 60; MinPremium = 3000; MaxCoverage = 10000000; RiskAppetite = "Conservative"}
+    )
+
+    # Capacity management
+    $underwriting.CapacityManagement = @(
+        @{Line = "Property"; Capacity = Get-Random -Minimum 50000000 -Maximum 200000000; Utilized = [math]::Round((Get-Random -Minimum 60 -Maximum 85), 1); Reinsurance = [math]::Round((Get-Random -Minimum 20 -Maximum 40), 1)},
+        @{Line = "Casualty"; Capacity = Get-Random -Minimum 75000000 -Maximum 300000000; Utilized = [math]::Round((Get-Random -Minimum 55 -Maximum 80), 1); Reinsurance = [math]::Round((Get-Random -Minimum 25 -Maximum 45), 1)},
+        @{Line = "Life"; Capacity = Get-Random -Minimum 100000000 -Maximum 500000000; Utilized = [math]::Round((Get-Random -Minimum 70 -Maximum 90), 1); Reinsurance = [math]::Round((Get-Random -Minimum 15 -Maximum 30), 1)},
+        @{Line = "Health"; Capacity = Get-Random -Minimum 30000000 -Maximum 100000000; Utilized = [math]::Round((Get-Random -Minimum 65 -Maximum 85), 1); Reinsurance = [math]::Round((Get-Random -Minimum 10 -Maximum 25), 1)}
+    )
+
+    # Underwriting metrics
+    $underwriting.UnderwritingMetrics = @{
+        TotalPolicies = $underwriting.UnderwritingPortfolio.Count
+        ActivePolicies = ($underwriting.UnderwritingPortfolio | Where-Object { $_.Status -eq "Active" }).Count
+        TotalPremium = ($underwriting.UnderwritingPortfolio | Measure-Object -Property Premium -Sum).Sum
+        AveragePremium = [math]::Round(($underwriting.UnderwritingPortfolio | Measure-Object -Property Premium -Average).Average, 0)
+        LossRatio = [math]::Round(($underwriting.UnderwritingPortfolio | Measure-Object -Property LossRatio -Average).Average, 1)
+        CombinedRatio = [math]::Round(($underwriting.UnderwritingPortfolio | Measure-Object -Property CombinedRatio -Average).Average, 1)
+        UnderwritingProfit = Get-Random -Minimum -10000000 -Maximum 50000000
+        NewBusiness = Get-Random -Minimum 500 -Maximum 2000
+        RenewalRate = [math]::Round((Get-Random -Minimum 85 -Maximum 95), 1)
+        PricingAccuracy = [math]::Round((Get-Random -Minimum 80 -Maximum 95), 1)
+    }
+
+    # Save underwriting management
+    $underwritingPath = Join-Path $PSScriptRoot "underwriting\underwriting_management_$(Get-Date -Format 'yyyy-MM-dd').json"
+    $underwritingDir = Split-Path $underwritingPath -Parent
+    if (-not (Test-Path $underwritingDir)) { New-Item -ItemType Directory -Path $underwritingDir -Force | Out-Null }
+    $underwriting | ConvertTo-Json -Depth 10 | Out-File $underwritingPath -Encoding UTF8
+
+    Write-AgentLog "Underwriting management completed - Total policies: $($underwriting.UnderwritingMetrics.TotalPolicies)" -Level "SUCCESS"
+    return $underwriting
+}
+
+function Process-Claims {
+    Write-AgentLog "Processing insurance claims and settlements..." -Level "INFO"
+
+    $claims = @{
+        Timestamp = Get-Date
+        ClaimsInventory = @()
+        ClaimsProcessing = @()
+        FraudDetection = @()
+        SettlementManagement = @()
+        ClaimsMetrics = @{}
+    }
+
+    # Claims inventory
+    $claimsCount = Get-Random -Minimum 5000 -Maximum 20000
+    for ($i = 1; $i -le $claimsCount; $i++) {
+        $claim = @{
+            Id = "CLM-$i"
+            PolicyNumber = "POL-$(Get-Random -Minimum 1 -Maximum 5000)"
+            Type = $AgentConfig.InsuranceTypes | Get-Random
+            Claimant = "Claimant $i"
+            IncidentDate = (Get-Date).AddDays(-(Get-Random -Minimum 1 -Maximum 365))
+            ReportedDate = (Get-Date).AddDays(-(Get-Random -Minimum 1 -Maximum 180))
+            LossAmount = Get-Random -Minimum 1000 -Maximum 1000000
+            CoverageAmount = Get-Random -Minimum 5000 -Maximum 2000000
+            Deductible = Get-Random -Minimum 500 -Maximum 10000
+            Status = @("Open", "Under Review", "Approved", "Denied", "Settled", "Appealed") | Get-Random
+            Adjuster = "Adjuster $(Get-Random -Minimum 1 -Maximum 100)"
+            FraudScore = [math]::Round((Get-Random -Minimum 0 -Maximum 100), 1)
+            SettlementAmount = Get-Random -Minimum 0 -Maximum 800000
+            ProcessingTime = Get-Random -Minimum 1 -Maximum 90
+            CustomerSatisfaction = Get-Random -Minimum 1 -Maximum 5
+        }
+        $claims.ClaimsInventory += $claim
+    }
+
+    # Claims processing workflow
+    $claims.ClaimsProcessing = @(
+        @{Stage = "Intake"; Claims = Get-Random -Minimum 800 -Maximum 1500; AverageTime = [math]::Round((Get-Random -Minimum 1 -Maximum 3), 1); Efficiency = [math]::Round((Get-Random -Minimum 85 -Maximum 95), 1)},
+        @{Stage = "Investigation"; Claims = Get-Random -Minimum 600 -Maximum 1200; AverageTime = [math]::Round((Get-Random -Minimum 5 -Maximum 15), 1); Efficiency = [math]::Round((Get-Random -Minimum 80 -Maximum 90), 1)},
+        @{Stage = "Evaluation"; Claims = Get-Random -Minimum 400 -Maximum 800; AverageTime = [math]::Round((Get-Random -Minimum 3 -Maximum 10), 1); Efficiency = [math]::Round((Get-Random -Minimum 75 -Maximum 85), 1)},
+        @{Stage = "Settlement"; Claims = Get-Random -Minimum 300 -Maximum 600; AverageTime = [math]::Round((Get-Random -Minimum 2 -Maximum 7), 1); Efficiency = [math]::Round((Get-Random -Minimum 85 -Maximum 95), 1)}
+    )
+
+    # Fraud detection systems
+    $claims.FraudDetection = @(
+        @{Method = "Pattern Recognition"; Alerts = Get-Random -Minimum 50 -Maximum 200; Accuracy = [math]::Round((Get-Random -Minimum 85 -Maximum 95), 1); FalsePositives = [math]::Round((Get-Random -Minimum 5 -Maximum 15), 1)},
+        @{Method = "Data Analytics"; Alerts = Get-Random -Minimum 30 -Maximum 150; Accuracy = [math]::Round((Get-Random -Minimum 80 -Maximum 92), 1); FalsePositives = [math]::Round((Get-Random -Minimum 8 -Maximum 20), 1)},
+        @{Method = "AI Models"; Alerts = Get-Random -Minimum 20 -Maximum 100; Accuracy = [math]::Round((Get-Random -Minimum 88 -Maximum 96), 1); FalsePositives = [math]::Round((Get-Random -Minimum 3 -Maximum 10), 1)},
+        @{Method = "Manual Review"; Alerts = Get-Random -Minimum 10 -Maximum 50; Accuracy = [math]::Round((Get-Random -Minimum 90 -Maximum 98), 1); FalsePositives = [math]::Round((Get-Random -Minimum 1 -Maximum 5), 1)}
+    )
+
+    # Settlement management
+    $claims.SettlementManagement = @(
+        @{Type = "Full Settlement"; Claims = Get-Random -Minimum 2000 -Maximum 4000; AverageAmount = Get-Random -Minimum 25000 -Maximum 75000; TimeToSettle = [math]::Round((Get-Random -Minimum 15 -Maximum 45), 1)},
+        @{Type = "Partial Settlement"; Claims = Get-Random -Minimum 800 -Maximum 1600; AverageAmount = Get-Random -Minimum 15000 -Maximum 45000; TimeToSettle = [math]::Round((Get-Random -Minimum 20 -Maximum 50), 1)},
+        @{Type = "Denied Claims"; Claims = Get-Random -Minimum 300 -Maximum 800; AverageAmount = 0; TimeToSettle = [math]::Round((Get-Random -Minimum 10 -Maximum 30), 1)},
+        @{Type = "Appealed Claims"; Claims = Get-Random -Minimum 100 -Maximum 300; AverageAmount = Get-Random -Minimum 20000 -Maximum 60000; TimeToSettle = [math]::Round((Get-Random -Minimum 30 -Maximum 90), 1)}
+    )
+
+    # Claims metrics
+    $claims.ClaimsMetrics = @{
+        TotalClaims = $claims.ClaimsInventory.Count
+        OpenClaims = ($claims.ClaimsInventory | Where-Object { $_.Status -in @("Open", "Under Review") }).Count
+        ClosedClaims = ($claims.ClaimsInventory | Where-Object { $_.Status -in @("Approved", "Denied", "Settled") }).Count
+        TotalLosses = ($claims.ClaimsInventory | Measure-Object -Property LossAmount -Sum).Sum
+        TotalSettlements = ($claims.ClaimsInventory | Measure-Object -Property SettlementAmount -Sum).Sum
+        AverageProcessingTime = [math]::Round(($claims.ClaimsInventory | Measure-Object -Property ProcessingTime -Average).Average, 1)
+        FraudDetectionRate = [math]::Round((Get-Random -Minimum 85 -Maximum 95), 1)
+        CustomerSatisfaction = [math]::Round(($claims.ClaimsInventory | Measure-Object -Property CustomerSatisfaction -Average).Average, 1)
+        LossRatio = [math]::Round((Get-Random -Minimum 60 -Maximum 85), 1)
+        ExpenseRatio = [math]::Round((Get-Random -Minimum 25 -Maximum 35), 1)
+    }
+
+    # Save claims processing
+    $claimsPath = Join-Path $PSScriptRoot "claims\claims_processing_$(Get-Date -Format 'yyyy-MM-dd').json"
+    $claimsDir = Split-Path $claimsPath -Parent
+    if (-not (Test-Path $claimsDir)) { New-Item -ItemType Directory -Path $claimsDir -Force | Out-Null }
+    $claims | ConvertTo-Json -Depth 10 | Out-File $claimsPath -Encoding UTF8
+
+    Write-AgentLog "Claims processing completed - Total claims: $($claims.ClaimsMetrics.TotalClaims)" -Level "SUCCESS"
+    return $claims
+}
+
+function Assess-Risks {
+    Write-AgentLog "Assessing insurance risks and capital adequacy..." -Level "INFO"
+
+    $risk = @{
+        Timestamp = Get-Date
+        RiskModeling = @()
+        CapitalRequirements = @()
+        StressTesting = @()
+        RiskMitigation = @()
+        RiskMetrics = @{}
+    }
+
+    # Risk modeling by category
+    foreach ($category in $AgentConfig.RiskCategories) {
+        $modeling = @{
+            Category = $category
+            RiskExposure = Get-Random -Minimum 10000000 -Maximum 100000000
+            Probability = [math]::Round((Get-Random -Minimum 0.01 -Maximum 0.5), 2)
+            Impact = @("Low", "Medium", "High", "Critical") | Get-Random
+            RiskAppetite = @("Accept", "Monitor", "Mitigate", "Avoid") | Get-Random
+            MitigationStrategy = @(
+                "Diversification",
+                "Hedging",
+                "Insurance",
+                "Risk Transfer",
+                "Capital Allocation"
+            ) | Get-Random -Count (Get-Random -Minimum 1 -Maximum 3)
+            MonitoringFrequency = @("Daily", "Weekly", "Monthly", "Quarterly") | Get-Random
+            ResponsibleParty = "Risk Manager $(Get-Random -Minimum 1 -Maximum 10)"
+        }
+        $risk.RiskModeling += $modeling
+    }
+
+    # Capital requirements
+    $risk.CapitalRequirements = @(
+        @{Requirement = "Solvency II"; Current = Get-Random -Minimum 800000000 -Maximum 2000000000; Required = Get-Random -Minimum 1000000000 -Maximum 2500000000; Surplus = Get-Random -Minimum -200000000 -Maximum 500000000},
+        @{Requirement = "RBC Ratio"; Current = [math]::Round((Get-Random -Minimum 200 -Maximum 400), 1); Required = 200; Surplus = [math]::Round((Get-Random -Minimum -50 -Maximum 150), 1)},
+        @{Requirement = "Economic Capital"; Current = Get-Random -Minimum 1500000000 -Maximum 3000000000; Required = Get-Random -Minimum 1200000000 -Maximum 2800000000; Surplus = Get-Random -Minimum -100000000 -Maximum 400000000},
+        @{Requirement = "Stress Capital"; Current = Get-Random -Minimum 500000000 -Maximum 1500000000; Required = Get-Random -Minimum 600000000 -Maximum 1800000000; Surplus = Get-Random -Minimum -300000000 -Maximum 200000000}
+    )
+
+    # Stress testing scenarios
+    $risk.StressTesting = @(
+        @{Scenario = "Severe Recession"; Probability = [math]::Round((Get-Random -Minimum 5 -Maximum 15), 1); Loss = Get-Random -Minimum 200000000 -Maximum 800000000; CapitalImpact = [math]::Round((Get-Random -Minimum 15 -Maximum 40), 1)},
+        @{Scenario = "Natural Catastrophe"; Probability = [math]::Round((Get-Random -Minimum 10 -Maximum 25), 1); Loss = Get-Random -Minimum 100000000 -Maximum 500000000; CapitalImpact = [math]::Round((Get-Random -Minimum 8 -Maximum 25), 1)},
+        @{Scenario = "Cyber Attack"; Probability = [math]::Round((Get-Random -Minimum 15 -Maximum 30), 1); Loss = Get-Random -Minimum 50000000 -Maximum 200000000; CapitalImpact = [math]::Round((Get-Random -Minimum 5 -Maximum 15), 1)},
+        @{Scenario = "Pandemic Event"; Probability = [math]::Round((Get-Random -Minimum 8 -Maximum 20), 1); Loss = Get-Random -Minimum 150000000 -Maximum 600000000; CapitalImpact = [math]::Round((Get-Random -Minimum 10 -Maximum 30), 1)}
+    )
+
+    # Risk mitigation strategies
+    $risk.RiskMitigation = @(
+        @{Strategy = "Reinsurance Program"; Coverage = [math]::Round((Get-Random -Minimum 60 -Maximum 80), 1); Cost = Get-Random -Minimum 50000000 -Maximum 150000000; Effectiveness = [math]::Round((Get-Random -Minimum 75 -Maximum 90), 1)},
+        @{Strategy = "Diversification"; Coverage = [math]::Round((Get-Random -Minimum 40 -Maximum 60), 1); Cost = Get-Random -Minimum 10000000 -Maximum 50000000; Effectiveness = [math]::Round((Get-Random -Minimum 65 -Maximum 85), 1)},
+        @{Strategy = "Hedging Program"; Coverage = [math]::Round((Get-Random -Minimum 30 -Maximum 50), 1); Cost = Get-Random -Minimum 20000000 -Maximum 80000000; Effectiveness = [math]::Round((Get-Random -Minimum 70 -Maximum 88), 1)},
+        @{Strategy = "Risk Retention"; Coverage = [math]::Round((Get-Random -Minimum 20 -Maximum 40), 1); Cost = Get-Random -Minimum 5000000 -Maximum 25000000; Effectiveness = [math]::Round((Get-Random -Minimum 55 -Maximum 75), 1)}
+    )
+
+    # Risk metrics
+    $risk.RiskMetrics = @{
+        TotalRiskExposure = ($risk.RiskModeling | Measure-Object -Property RiskExposure -Sum).Sum
+        RiskConcentration = [math]::Round((Get-Random -Minimum 60 -Maximum 85), 1)
+        RiskAdjustedReturn = [math]::Round((Get-Random -Minimum 8 -Maximum 15), 1)
+        CapitalAdequacy = [math]::Round((Get-Random -Minimum 150 -Maximum 250), 1)
+        StressTestCoverage = [math]::Round((Get-Random -Minimum 80 -Maximum 95), 1)
+        RiskMitigationEffectiveness = [math]::Round((Get-Random -Minimum 70 -Maximum 90), 1)
+        RegulatoryCompliance = [math]::Round((Get-Random -Minimum 90 -Maximum 98), 1)
+        RiskMonitoring = [math]::Round((Get-Random -Minimum 85 -Maximum 95), 1)
+        ScenarioPlanning = [math]::Round((Get-Random -Minimum 75 -Maximum 90), 1)
+        CrisisManagement = [math]::Round((Get-Random -Minimum 80 -Maximum 95), 1)
+    }
+
+    # Save risk assessment
+    $riskPath = Join-Path $PSScriptRoot "risk\risk_assessment_$(Get-Date -Format 'yyyy-MM-dd').json"
+    $riskDir = Split-Path $riskPath -Parent
+    if (-not (Test-Path $riskDir)) { New-Item -ItemType Directory -Path $riskDir -Force | Out-Null }
+    $risk | ConvertTo-Json -Depth 10 | Out-File $riskPath -Encoding UTF8
+
+    Write-AgentLog "Risk assessment completed - Total exposure: $$($risk.RiskMetrics.TotalRiskExposure.ToString('N0'))" -Level "SUCCESS"
+    return $risk
+}
+
+function Administer-Policies {
+    Write-AgentLog "Administering insurance policies and customer service..." -Level "INFO"
+
+    $policies = @{
+        Timestamp = Get-Date
+        PolicyManagement = @()
+        CustomerService = @()
+        BillingSystems = @()
+        ComplianceMonitoring = @()
+        PolicyMetrics = @{}
+    }
+
+    # Policy management
+    $policies.PolicyManagement = @(
+        @{Function = "New Business Processing"; Policies = Get-Random -Minimum 2000 -Maximum 5000; AverageTime = [math]::Round((Get-Random -Minimum 2 -Maximum 7), 1); Accuracy = [math]::Round((Get-Random -Minimum 95 -Maximum 99), 1)},
+        @{Function = "Policy Changes"; Policies = Get-Random -Minimum 5000 -Maximum 15000; AverageTime = [math]::Round((Get-Random -Minimum 1 -Maximum 3), 1); Accuracy = [math]::Round((Get-Random -Minimum 98 -Maximum 99.5), 1)},
+        @{Function = "Renewals"; Policies = Get-Random -Minimum 8000 -Maximum 20000; AverageTime = [math]::Round((Get-Random -Minimum 5 -Maximum 15), 1); Accuracy = [math]::Round((Get-Random -Minimum 96 -Maximum 99), 1)},
+        @{Function = "Cancellations"; Policies = Get-Random -Minimum 1000 -Maximum 3000; AverageTime = [math]::Round((Get-Random -Minimum 1 -Maximum 5), 1); Accuracy = [math]::Round((Get-Random -Minimum 97 -Maximum 99.5), 1)}
+    )
+
+    # Customer service operations
+    $policies.CustomerService = @(
+        @{Channel = "Phone"; Calls = Get-Random -Minimum 50000 -Maximum 150000; AverageWait = [math]::Round((Get-Random -Minimum 2 -Maximum 8), 1); Satisfaction = [math]::Round((Get-Random -Minimum 85 -Maximum 95), 1)},
+        @{Channel = "Email"; Messages = Get-Random -Minimum 30000 -Maximum 100000; ResponseTime = [math]::Round((Get-Random -Minimum 4 -Maximum 12), 1); Satisfaction = [math]::Round((Get-Random -Minimum 88 -Maximum 96), 1)},
+        @{Channel = "Online Portal"; Sessions = Get-Random -Minimum 100000 -Maximum 300000; CompletionRate = [math]::Round((Get-Random -Minimum 90 -Maximum 98), 1); Satisfaction = [math]::Round((Get-Random -Minimum 92 -Maximum 98), 1)},
+        @{Channel = "Mobile App"; Users = Get-Random -Minimum 50000 -Maximum 150000; Engagement = [math]::Round((Get-Random -Minimum 75 -Maximum 90), 1); Satisfaction = [math]::Round((Get-Random -Minimum 89 -Maximum 95), 1)}
+    )
+
+    # Billing systems
+    $policies.BillingSystems = @(
+        @{Process = "Premium Collection"; Amount = Get-Random -Minimum 2000000000 -Maximum 5000000000; OnTimeRate = [math]::Round((Get-Random -Minimum 92 -Maximum 98), 1); Efficiency = [math]::Round((Get-Random -Minimum 95 -Maximum 99), 1)},
+        @{Process = "Claims Payment"; Amount = Get-Random -Minimum 1500000000 -Maximum 3500000000; ProcessingTime = [math]::Round((Get-Random -Minimum 3 -Maximum 10), 1); Accuracy = [math]::Round((Get-Random -Minimum 98 -Maximum 99.5), 1)},
+        @{Process = "Refunds"; Amount = Get-Random -Minimum 50000000 -Maximum 150000000; ProcessingTime = [math]::Round((Get-Random -Minimum 5 -Maximum 15), 1); Accuracy = [math]::Round((Get-Random -Minimum 97 -Maximum 99), 1)},
+        @{Process = "Adjustments"; Amount = Get-Random -Minimum 100000000 -Maximum 300000000; ProcessingTime = [math]::Round((Get-Random -Minimum 2 -Maximum 8), 1); Accuracy = [math]::Round((Get-Random -Minimum 96 -Maximum 99), 1)}
+    )
+
+    # Compliance monitoring
+    $policies.ComplianceMonitoring = @(
+        @{Regulation = "Insurance Regulatory Framework"; Compliance = [math]::Round((Get-Random -Minimum 95 -Maximum 99), 1); Audits = Get-Random -Minimum 2 -Maximum 6; Findings = Get-Random -Minimum 0 -Maximum 3},
+        @{Regulation = "Consumer Protection Laws"; Compliance = [math]::Round((Get-Random -Minimum 96 -Maximum 99.5), 1); Audits = Get-Random -Minimum 1 -Maximum 4; Findings = Get-Random -Minimum 0 -Maximum 2},
+        @{Regulation = "Anti-Money Laundering"; Compliance = [math]::Round((Get-Random -Minimum 97 -Maximum 99.5), 1); Audits = Get-Random -Minimum 3 -Maximum 8; Findings = Get-Random -Minimum 0 -Maximum 1},
+        @{Regulation = "Data Privacy Laws"; Compliance = [math]::Round((Get-Random -Minimum 94 -Maximum 98), 1); Audits = Get-Random -Minimum 2 -Maximum 5; Findings = Get-Random -Minimum 0 -Maximum 2}
+    )
+
+    # Policy metrics
+    $policies.PolicyMetrics = @{
+        TotalPolicies = Get-Random -Minimum 500000 -Maximum 2000000
+        ActivePolicies = Get-Random -Minimum 450000 -Maximum 1800000
+        NewPolicies = Get-Random -Minimum 50000 -Maximum 200000
+        LapsedPolicies = Get-Random -Minimum 20000 -Maximum 80000
+        RetentionRate = [math]::Round((Get-Random -Minimum 85 -Maximum 95), 1)
+        CustomerSatisfaction = [math]::Round((Get-Random -Minimum 88 -Maximum 94), 1)
+        ProcessingEfficiency = [math]::Round((Get-Random -Minimum 90 -Maximum 96), 1)
+        ComplianceScore = [math]::Round((Get-Random -Minimum 95 -Maximum 99), 1)
+        DigitalAdoption = [math]::Round((Get-Random -Minimum 70 -Maximum 85), 1)
+        ServiceQuality = [math]::Round((Get-Random -Minimum 87 -Maximum 93), 1)
+    }
+
+    # Save policy administration
+    $policiesPath = Join-Path $PSScriptRoot "policies\policy_administration_$(Get-Date -Format 'yyyy-MM-dd').json"
+    $policiesDir = Split-Path $policiesPath -Parent
+    if (-not (Test-Path $policiesDir)) { New-Item -ItemType Directory -Path $policiesDir -Force | Out-Null }
+    $policies | ConvertTo-Json -Depth 10 | Out-File $policiesPath -Encoding UTF8
+
+    Write-AgentLog "Policy administration completed - Total policies: $($policies.PolicyMetrics.TotalPolicies)" -Level "SUCCESS"
+    return $policies
+}
+
+# Main execution logic
+if ($Initialize) { Initialize-Agent }
+if ($StartOperations) { Start-AgentOperations }
+if ($StopOperations) { Stop-AgentOperations }
+if ($Status) { Write-AgentLog "Status: $($AgentConfig.Status)" -Level "INFO" }
+if ($UnderwritingManagement) { Manage-Underwriting }
+if ($ClaimsProcessing) { Process-Claims }
+if ($RiskAssessment) { Assess-Risks }
+if ($PolicyAdministration) { Administer-Policies }
+
+# Default status display
+if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $UnderwritingManagement -or $ClaimsProcessing -or $RiskAssessment -or $PolicyAdministration)) {
+    Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Insurance Types: $($AgentConfig.InsuranceTypes.Count)" -Level "INFO"
+}

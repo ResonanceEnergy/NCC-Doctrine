@@ -1,0 +1,20 @@
+{
+  "specialization": "BiotechCorporation Monitoring Operations",
+  "contact": "agent@biotechcorporation.ncc",
+  "name": "BiotechCorporation.Agent.Monitoring",
+  "version": "2.0.0",
+  "role": "Monitoring",
+  "capabilities": [
+    "Health Monitoring",
+    "Performance Tracking",
+    "Alert Management",
+    "System Diagnostics",
+    "Reporting"
+  ],
+  "description": "Performance tracking and alerting for Biotechnology research and development",
+  "dependencies": [],
+  "status": "Active",
+  "lastModified": "2026-01-29",
+  "created": "2026-01-29",
+  "division": "BiotechCorporation"
+}

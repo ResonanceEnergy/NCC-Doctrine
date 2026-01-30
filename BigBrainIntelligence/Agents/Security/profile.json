@@ -1,0 +1,20 @@
+{
+  "specialization": "BigBrainIntelligence Security Operations",
+  "contact": "agent@bigbrainintelligence.ncc",
+  "name": "BigBrainIntelligence.Agent.Security",
+  "version": "2.0.0",
+  "role": "Security",
+  "capabilities": [
+    "Threat Monitoring",
+    "Compliance Checking",
+    "Risk Assessment",
+    "Security Protocols",
+    "Audit Management"
+  ],
+  "description": "Compliance and risk management for Artificial intelligence and intelligence analysis",
+  "dependencies": [],
+  "status": "Active",
+  "lastModified": "2026-01-29",
+  "created": "2026-01-29",
+  "division": "BigBrainIntelligence"
+}

@@ -20,7 +20,7 @@ AZ PRIME successfully automated all departmental operations for March 2026, achi
 - **Optimizations:** Predictive analytics improved response time by 60%
 - **KPIs:** Zero breaches, risk mitigation at 95%
 
-### Biotech Corporation
+### BUSY BEE BIO TECH
 - **Tasks Automated:** 90% of clinical trial management and data analysis
 - **Performance:** 15 new drug candidates processed
 - **Optimizations:** AI-driven research accelerated development by 30%

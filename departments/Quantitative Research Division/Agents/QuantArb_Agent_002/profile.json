@@ -1,0 +1,15 @@
+{
+  "Codename": "Azure Knight",
+  "Department": "Quantitative Research Division",
+  "Created": "2026-01-29T20:00:17.8721083-07:00",
+  "PerformanceMetrics": {
+    "TasksCompleted": 0,
+    "AverageResponseTime": 0,
+    "SuccessRate": 0
+  },
+  "LastActivity": "2026-01-29T20:00:17.8721683-07:00",
+  "Skills": [],
+  "Specializations": [],
+  "Status": "Active",
+  "AgentName": "QuantArb_Agent_002"
+}

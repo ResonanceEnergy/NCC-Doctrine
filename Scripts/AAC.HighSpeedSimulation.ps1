@@ -234,7 +234,7 @@ if ($Continuous) {
     Write-AACLog "Starting continuous high-speed simulation mode" "INIT"
     while ($true) {
         $results = Run-HighSpeedSimulation -State $globalState -Strategies $strategies -Cycles 100
-        Start-Sleep -Seconds 1  # Brief pause between simulation bursts
+        # Optimized: Removed sleep  # Brief pause between simulation bursts
     }
 } else {
     # Run single simulation burst

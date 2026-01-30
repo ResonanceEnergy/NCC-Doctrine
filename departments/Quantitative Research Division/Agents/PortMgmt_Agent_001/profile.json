@@ -1,0 +1,15 @@
+{
+  "Codename": "Data Oracle",
+  "Department": "Quantitative Research Division",
+  "Created": "2026-01-29T20:00:17.8545905-07:00",
+  "PerformanceMetrics": {
+    "TasksCompleted": 0,
+    "AverageResponseTime": 0,
+    "SuccessRate": 0
+  },
+  "LastActivity": "2026-01-29T20:00:17.8546289-07:00",
+  "Skills": [],
+  "Specializations": [],
+  "Status": "Active",
+  "AgentName": "PortMgmt_Agent_001"
+}

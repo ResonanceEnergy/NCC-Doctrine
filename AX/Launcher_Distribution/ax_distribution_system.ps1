@@ -382,5 +382,4 @@ Write-Host "AX INTELLIGENCE DOMINANCE: DISTRIBUTION SYSTEMS ACTIVE!" -Foreground
 Write-Host "QUANTUM PROCESSING: PREDICTIVE ANALYTICS ENGAGED!" -ForegroundColor Magenta
 Write-Host "STRATEGIC ALIGNMENT: GLOBAL SYNCHRONIZATION COMPLETE!" -ForegroundColor Magenta
 Write-Host ""
-Write-Host "INTELLIGENCE COLLECTED! ANALYSIS COMPLETE! DISTRIBUTION ENGAGED!" -ForegroundColor Cyan</content>
-<parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\AX\Launcher_Distribution\ax_distribution_system.ps1
+Write-Host "INTELLIGENCE COLLECTED! ANALYSIS COMPLETE! DISTRIBUTION ENGAGED!" -ForegroundColor Cyan

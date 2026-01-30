@@ -1,0 +1,540 @@
+param(
+    [Parameter(Mandatory=$false)]
+    [ValidateSet("Connect", "GetBalance", "GetTransactions", "SendPayment", "Monitor", "Status", "Test", "Initialize")]
+    [string]$Action = "Status",
+
+    [Parameter(Mandatory=$false)]
+    [string]$BankName = "",
+
+    [Parameter(Mandatory=$false)]
+    [string]$AccountId = "",
+
+    [Parameter(Mandatory=$false)]
+    [decimal]$Amount = 0,
+
+    [Parameter(Mandatory=$false)]
+    [string]$Recipient = "",
+
+    [Parameter(Mandatory=$false)]
+    [string]$Description = "",
+
+    [Parameter(Mandatory=$false)]
+    [int]$MonitorInterval = 300,  # 5 minutes
+
+    [Parameter(Mandatory=$false)]
+    [string]$LogFile = "$PSScriptRoot\logs\financial_integration.log"
+)
+
+# =============================================================================
+# NCC FINANCIAL SYSTEMS INTEGRATION
+# Version: 1.0.0 | Classification: TOP SECRET
+# Date: 2026-01-29 | Authority: AZ PRIME Command
+# =============================================================================
+
+$ScriptVersion = "1.0.0"
+$SystemName = "NCC Financial Systems Integration"
+
+# Configuration
+$Config = @{
+    Banks = @(
+        @{
+            Name = "NCC_Internal_Bank"
+            APIEndpoint = "https://api.nccbank.internal"
+            APIKey = "ncc-internal-key-2026"
+            Status = "Active"
+            Accounts = @("ACC-001", "ACC-002", "ACC-003")
+        }
+        @{
+            Name = "Commercial_Bank_A"
+            APIEndpoint = "https://api.commercialbanka.com"
+            APIKey = $env:COMMERCIAL_BANK_A_KEY
+            Status = "Active"
+            Accounts = @("CBA-001", "CBA-002")
+        }
+        @{
+            Name = "Investment_Bank_B"
+            APIEndpoint = "https://api.investmentbankb.com"
+            APIKey = $env:INVESTMENT_BANK_B_KEY
+            Status = "Active"
+            Accounts = @("IBB-001", "IBB-002", "IBB-003")
+        }
+    )
+    Security = @{
+        EncryptionKey = "ncc-financial-enc-key-2026"
+        APITimeout = 30
+        RetryAttempts = 3
+        RateLimitDelay = 1
+    }
+    Monitoring = @{
+        BalanceThreshold = 10000  # Alert if balance drops below this
+        TransactionThreshold = 5000  # Alert for transactions above this
+        HealthCheckInterval = 300  # 5 minutes
+    }
+}
+
+# =============================================================================
+# LOGGING FUNCTIONS
+# =============================================================================
+
+function Write-FinancialLog {
+    param(
+        [string]$Message,
+        [ValidateSet("INFO", "WARNING", "ERROR", "CRITICAL", "SUCCESS", "TRANSACTION")]
+        [string]$Level = "INFO",
+        [string]$Component = "FinancialIntegration"
+    )
+
+    $Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $LogEntry = "[$Timestamp] [$Level] [$Component] $Message"
+
+    # Write to console with color coding
+    switch ($Level) {
+        "CRITICAL" { Write-Host $LogEntry -ForegroundColor Red -BackgroundColor White }
+        "ERROR" { Write-Host $LogEntry -ForegroundColor Red }
+        "WARNING" { Write-Host $LogEntry -ForegroundColor Yellow }
+        "SUCCESS" { Write-Host $LogEntry -ForegroundColor Green }
+        "TRANSACTION" { Write-Host $LogEntry -ForegroundColor Magenta }
+        "INFO" { Write-Host $LogEntry -ForegroundColor Cyan }
+    }
+
+    # Write to log file
+    try {
+        $LogEntry | Out-File -FilePath $LogFile -Append -Encoding UTF8
+    } catch {
+        Write-Host "Failed to write to log file: $($_.Exception.Message)" -ForegroundColor Red
+    }
+}
+
+# =============================================================================
+# SECURITY FUNCTIONS
+# =============================================================================
+
+function Protect-APIKey {
+    param([string]$APIKey)
+
+    # In production, this would use proper encryption
+    # For now, we'll use a simple obfuscation
+    $bytes = [System.Text.Encoding]::UTF8.GetBytes($APIKey)
+    $encrypted = [Convert]::ToBase64String($bytes)
+    return $encrypted
+}
+
+function Unprotect-APIKey {
+    param([string]$EncryptedKey)
+
+    # In production, this would use proper decryption
+    # For now, we'll reverse the obfuscation
+    try {
+        $bytes = [Convert]::FromBase64String($EncryptedKey)
+        $decrypted = [System.Text.Encoding]::UTF8.GetString($bytes)
+        return $decrypted
+    } catch {
+        Write-FinancialLog "Failed to decrypt API key: $($_.Exception.Message)" -Level "ERROR"
+        return $null
+    }
+}
+
+# =============================================================================
+# API COMMUNICATION FUNCTIONS
+# =============================================================================
+
+function Invoke-BankAPI {
+    param(
+        [string]$BankName,
+        [string]$Endpoint,
+        [string]$Method = "GET",
+        [hashtable]$Headers = @{},
+        [object]$Body = $null
+    )
+
+    $bank = $Config.Banks | Where-Object { $_.Name -eq $BankName }
+    if (-not $bank) {
+        Write-FinancialLog "Bank not found: $BankName" -Level "ERROR"
+        return $null
+    }
+
+    if ($bank.Status -ne "Active") {
+        Write-FinancialLog "Bank is not active: $BankName" -Level "WARNING"
+        return $null
+    }
+
+    # Prepare API request
+    $apiKey = Unprotect-APIKey -EncryptedKey $bank.APIKey
+    if (-not $apiKey) {
+        Write-FinancialLog "Failed to retrieve API key for $BankName" -Level "ERROR"
+        return $null
+    }
+
+    $url = "$($bank.APIEndpoint)$Endpoint"
+    $headers = @{
+        "Authorization" = "Bearer $apiKey"
+        "Content-Type" = "application/json"
+        "X-API-Key" = $apiKey
+    }
+
+    # Add any additional headers
+    foreach ($key in $Headers.Keys) {
+        $headers[$key] = $Headers[$key]
+    }
+
+    Write-FinancialLog "Making API call to $BankName - $Method $url" -Level "INFO"
+
+    $retryCount = 0
+    do {
+        try {
+            $params = @{
+                Uri = $url
+                Method = $Method
+                Headers = $headers
+                TimeoutSec = $Config.Security.APITimeout
+            }
+
+            if ($Body) {
+                $params.Body = ($Body | ConvertTo-Json)
+            }
+
+            $response = Invoke-RestMethod @params
+
+            Write-FinancialLog "API call successful for $BankName" -Level "SUCCESS"
+            return $response
+
+        } catch {
+            $retryCount++
+            Write-FinancialLog "API call failed for $BankName (attempt $retryCount): $($_.Exception.Message)" -Level "WARNING"
+
+            if ($retryCount -lt $Config.Security.RetryAttempts) {
+                Start-Sleep -Seconds $Config.Security.RateLimitDelay
+            }
+        }
+    } while ($retryCount -lt $Config.Security.RetryAttempts)
+
+    Write-FinancialLog "API call failed after $retryCount attempts for $BankName" -Level "ERROR"
+    return $null
+}
+
+# =============================================================================
+# BANKING OPERATIONS
+# =============================================================================
+
+function Get-AccountBalance {
+    param([string]$BankName, [string]$AccountId)
+
+    Write-FinancialLog "Retrieving balance for account $AccountId from $BankName" -Level "INFO"
+
+    $response = Invoke-BankAPI -BankName $BankName -Endpoint "/accounts/$AccountId/balance" -Method "GET"
+
+    if ($response) {
+        $balance = @{
+            BankName = $BankName
+            AccountId = $AccountId
+            Balance = $response.balance
+            Currency = $response.currency
+            Timestamp = Get-Date
+        }
+
+        Write-FinancialLog "Balance retrieved: $($balance.Balance) $($balance.Currency)" -Level "SUCCESS"
+        return $balance
+    }
+
+    return $null
+}
+
+function Get-AccountTransactions {
+    param([string]$BankName, [string]$AccountId, [int]$Days = 30)
+
+    Write-FinancialLog "Retrieving transactions for account $AccountId from $BankName (last $Days days)" -Level "INFO"
+
+    $startDate = (Get-Date).AddDays(-$Days).ToString("yyyy-MM-dd")
+    $endDate = (Get-Date).ToString("yyyy-MM-dd")
+
+    $response = Invoke-BankAPI -BankName $BankName -Endpoint "/accounts/$AccountId/transactions?start=$startDate&end=$endDate" -Method "GET"
+
+    if ($response) {
+        $transactions = @()
+        foreach ($transaction in $response.transactions) {
+            $transactions += @{
+                BankName = $BankName
+                AccountId = $AccountId
+                TransactionId = $transaction.id
+                Amount = $transaction.amount
+                Currency = $transaction.currency
+                Description = $transaction.description
+                Date = $transaction.date
+                Type = $transaction.type
+                Timestamp = Get-Date
+            }
+        }
+
+        Write-FinancialLog "Retrieved $($transactions.Count) transactions" -Level "SUCCESS"
+        return $transactions
+    }
+
+    return @()
+}
+
+function Send-BankPayment {
+    param([string]$BankName, [string]$FromAccount, [string]$ToAccount, [decimal]$Amount, [string]$Description)
+
+    Write-FinancialLog "Initiating payment from $FromAccount to $ToAccount for $Amount" -Level "TRANSACTION"
+
+    $paymentData = @{
+        fromAccount = $FromAccount
+        toAccount = $ToAccount
+        amount = $Amount
+        currency = "USD"
+        description = $Description
+        timestamp = Get-Date -Format "yyyy-MM-ddTHH:mm:ssZ"
+    }
+
+    $response = Invoke-BankAPI -BankName $BankName -Endpoint "/payments" -Method "POST" -Body $paymentData
+
+    if ($response) {
+        $payment = @{
+            BankName = $BankName
+            PaymentId = $response.paymentId
+            FromAccount = $FromAccount
+            ToAccount = $ToAccount
+            Amount = $Amount
+            Status = $response.status
+            Timestamp = Get-Date
+        }
+
+        Write-FinancialLog "Payment initiated: $($payment.PaymentId) - Status: $($payment.Status)" -Level "SUCCESS"
+        return $payment
+    }
+
+    return $null
+}
+
+# =============================================================================
+# MONITORING FUNCTIONS
+# =============================================================================
+
+function Start-FinancialMonitoring {
+    Write-FinancialLog "Starting financial monitoring (interval: $MonitorInterval seconds)" -Level "INFO"
+
+    while ($true) {
+        try {
+            # Monitor all accounts across all banks
+            foreach ($bank in $Config.Banks) {
+                if ($bank.Status -eq "Active") {
+                    foreach ($accountId in $bank.Accounts) {
+                        # Check balance
+                        $balance = Get-AccountBalance -BankName $bank.Name -AccountId $accountId
+                        if ($balance -and $balance.Balance -lt $Config.Monitoring.BalanceThreshold) {
+                            Write-FinancialLog "Low balance alert: $($balance.Balance) in account $accountId ($($bank.Name))" -Level "WARNING"
+                        }
+
+                        # Check recent transactions
+                        $transactions = Get-AccountTransactions -BankName $bank.Name -AccountId $accountId -Days 1
+                        foreach ($transaction in $transactions) {
+                            if ([Math]::Abs($transaction.Amount) -gt $Config.Monitoring.TransactionThreshold) {
+                                Write-FinancialLog "Large transaction alert: $($transaction.Amount) in account $accountId ($($bank.Name))" -Level "WARNING"
+                            }
+                        }
+                    }
+                }
+            }
+
+            # Health check
+            $healthStatus = Get-FinancialSystemHealth
+            if ($healthStatus.OverallHealth -ne "Healthy") {
+                Write-FinancialLog "System health degraded: $($healthStatus.OverallHealth)" -Level "WARNING"
+            }
+
+        } catch {
+            Write-FinancialLog "Monitoring error: $($_.Exception.Message)" -Level "ERROR"
+        }
+
+        Start-Sleep -Seconds $MonitorInterval
+    }
+}
+
+function Get-FinancialSystemHealth {
+    $health = @{
+        Timestamp = Get-Date
+        Banks = @()
+        OverallHealth = "Healthy"
+        ActiveBanks = 0
+        TotalBanks = $Config.Banks.Count
+    }
+
+    foreach ($bank in $Config.Banks) {
+        $bankHealth = @{
+            Name = $bank.Name
+            Status = $bank.Status
+            APIHealth = "Unknown"
+            LastCheck = Get-Date
+        }
+
+        # Test API connectivity (simplified)
+        try {
+            $testResponse = Invoke-BankAPI -BankName $bank.Name -Endpoint "/health" -Method "GET"
+            if ($testResponse -and $testResponse.status -eq "healthy") {
+                $bankHealth.APIHealth = "Healthy"
+                $health.ActiveBanks++
+            } else {
+                $bankHealth.APIHealth = "Degraded"
+                $health.OverallHealth = "Degraded"
+            }
+        } catch {
+            $bankHealth.APIHealth = "Failed"
+            $health.OverallHealth = "Degraded"
+        }
+
+        $health.Banks += $bankHealth
+    }
+
+    return $health
+}
+
+# =============================================================================
+# MAIN EXECUTION
+# =============================================================================
+
+Write-FinancialLog "=== $SystemName v$ScriptVersion ===" -Level "INFO"
+Write-FinancialLog "Action: $Action" -Level "INFO"
+
+switch ($Action) {
+    "Initialize" {
+        Write-FinancialLog "Initializing financial integration system..." -Level "INFO"
+
+        # Create necessary directories
+        $dirs = @("logs", "config", "reports", "backups", "data\balances", "data\transactions", "data\payments")
+        foreach ($dir in $dirs) {
+            if (-not (Test-Path "$PSScriptRoot\$dir")) {
+                New-Item -ItemType Directory -Path "$PSScriptRoot\$dir" -Force | Out-Null
+            }
+        }
+
+        # Create configuration file
+        $Config | ConvertTo-Json -Depth 10 | Out-File "$PSScriptRoot\config\financial_config.json" -Encoding UTF8
+
+        Write-FinancialLog "Financial integration system initialized successfully" -Level "SUCCESS"
+    }
+
+    "Connect" {
+        if (-not $BankName) {
+            Write-FinancialLog "Bank name is required for connection test" -Level "ERROR"
+            exit 1
+        }
+
+        Write-FinancialLog "Testing connection to $BankName" -Level "INFO"
+        $testResult = Invoke-BankAPI -BankName $BankName -Endpoint "/health" -Method "GET"
+
+        if ($testResult) {
+            Write-FinancialLog "Connection to $BankName successful" -Level "SUCCESS"
+            Write-Host "✓ Connection successful" -ForegroundColor Green
+        } else {
+            Write-FinancialLog "Connection to $BankName failed" -Level "ERROR"
+            Write-Host "✗ Connection failed" -ForegroundColor Red
+        }
+    }
+
+    "GetBalance" {
+        if (-not $BankName -or -not $AccountId) {
+            Write-FinancialLog "Bank name and account ID are required" -Level "ERROR"
+            exit 1
+        }
+
+        $balance = Get-AccountBalance -BankName $BankName -AccountId $AccountId
+        if ($balance) {
+            Write-Host "Balance: $($balance.Balance) $($balance.Currency)" -ForegroundColor Green
+        } else {
+            Write-Host "Failed to retrieve balance" -ForegroundColor Red
+        }
+    }
+
+    "GetTransactions" {
+        if (-not $BankName -or -not $AccountId) {
+            Write-FinancialLog "Bank name and account ID are required" -Level "ERROR"
+            exit 1
+        }
+
+        $transactions = Get-AccountTransactions -BankName $BankName -AccountId $AccountId
+        if ($transactions.Count -gt 0) {
+            Write-Host "Found $($transactions.Count) transactions:" -ForegroundColor Green
+            foreach ($transaction in $transactions | Select-Object -First 5) {
+                Write-Host "  $($transaction.Date): $($transaction.Amount) $($transaction.Currency) - $($transaction.Description)" -ForegroundColor White
+            }
+        } else {
+            Write-Host "No transactions found" -ForegroundColor Yellow
+        }
+    }
+
+    "SendPayment" {
+        if (-not $BankName -or -not $AccountId -or -not $Recipient -or $Amount -le 0) {
+            Write-FinancialLog "Bank name, account ID, recipient, and amount are required" -Level "ERROR"
+            exit 1
+        }
+
+        $payment = Send-BankPayment -BankName $BankName -FromAccount $AccountId -ToAccount $Recipient -Amount $Amount -Description $Description
+        if ($payment) {
+            Write-Host "Payment initiated: $($payment.PaymentId)" -ForegroundColor Green
+        } else {
+            Write-Host "Payment failed" -ForegroundColor Red
+        }
+    }
+
+    "Monitor" {
+        Start-FinancialMonitoring
+    }
+
+    "Test" {
+        Write-FinancialLog "Running financial integration tests" -Level "INFO"
+
+        # Test bank connections
+        $connectionTests = 0
+        $successfulConnections = 0
+
+        foreach ($bank in $Config.Banks) {
+            $connectionTests++
+            $testResult = Invoke-BankAPI -BankName $bank.Name -Endpoint "/health" -Method "GET"
+            if ($testResult) {
+                $successfulConnections++
+                Write-Host "✓ $($bank.Name) connection test passed" -ForegroundColor Green
+            } else {
+                Write-Host "✗ $($bank.Name) connection test failed" -ForegroundColor Red
+            }
+        }
+
+        Write-FinancialLog "Connection tests: $successfulConnections/$connectionTests passed" -Level $(if ($successfulConnections -eq $connectionTests) { "SUCCESS" } else { "WARNING" })
+
+        # Test balance retrieval (for first account of first bank)
+        if ($Config.Banks.Count -gt 0 -and $Config.Banks[0].Accounts.Count -gt 0) {
+            $testBalance = Get-AccountBalance -BankName $Config.Banks[0].Name -AccountId $Config.Banks[0].Accounts[0]
+            if ($testBalance) {
+                Write-Host "✓ Balance retrieval test passed" -ForegroundColor Green
+            } else {
+                Write-Host "✗ Balance retrieval test failed" -ForegroundColor Red
+            }
+        }
+    }
+
+    "Status" {
+        $health = Get-FinancialSystemHealth
+
+        Write-Host "`n=== $SystemName Status ===" -ForegroundColor Cyan
+        Write-Host "Version: $ScriptVersion" -ForegroundColor White
+        Write-Host "Timestamp: $($health.Timestamp)" -ForegroundColor White
+        Write-Host "Overall Health: $($health.OverallHealth)" -ForegroundColor $(if ($health.OverallHealth -eq "Healthy") { "Green" } else { "Red" })
+        Write-Host "Active Banks: $($health.ActiveBanks)/$($health.TotalBanks)" -ForegroundColor $(if ($health.ActiveBanks -eq $health.TotalBanks) { "Green" } else { "Yellow" })
+        Write-Host ""
+
+        Write-Host "Bank Status:" -ForegroundColor Yellow
+        foreach ($bank in $health.Banks) {
+            $color = switch ($bank.APIHealth) {
+                "Healthy" { "Green" }
+                "Degraded" { "Yellow" }
+                "Failed" { "Red" }
+                default { "Gray" }
+            }
+            Write-Host "  $($bank.Name): $($bank.APIHealth) ($($bank.Status))" -ForegroundColor $color
+        }
+
+        Write-Host "`nLog File: $LogFile" -ForegroundColor White
+        Write-Host ""
+    }
+}
+
+Write-FinancialLog "Command completed: $Action" -Level "INFO"

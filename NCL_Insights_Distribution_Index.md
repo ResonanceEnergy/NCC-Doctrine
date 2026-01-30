@@ -60,7 +60,7 @@ This index documents the comprehensive distribution of NCL (NATHAN COMMAND LEADE
    - **Focus:** Space operations, orbital intelligence, aerospace innovation
    - **Status:** Complete
 
-7. **Biotech Corporation** - `BiotechCorporation/NCL_Insights_Biotech_Integration.md`
+7. **BUSY BEE BIO TECH** - `BiotechCorporation/NCL_Insights_Biotech_Integration.md`
    - **Insights:** 143 prioritized insights
    - **Focus:** Biotechnology, medical innovation, healthcare solutions
    - **Status:** Complete

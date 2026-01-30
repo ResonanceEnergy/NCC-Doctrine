@@ -1,0 +1,20 @@
+{
+  "specialization": "MediaCorp Operational Operations",
+  "contact": "agent@mediacorp.ncc",
+  "name": "MediaCorp.Agent.Operational",
+  "version": "2.0.0",
+  "role": "Operational",
+  "capabilities": [
+    "Task Execution",
+    "Workflow Management",
+    "Process Optimization",
+    "Resource Coordination",
+    "Performance Tracking"
+  ],
+  "description": "Day-to-day operations and task execution for Media and communications",
+  "dependencies": [],
+  "status": "Active",
+  "lastModified": "2026-01-29",
+  "created": "2026-01-29",
+  "division": "MediaCorp"
+}

@@ -42,7 +42,7 @@ This document outlines the complete organizational structure of NATHAN COMMAND C
   - Advanced Research Division (ARD)
     - Robotics Automation Division
     - Space Operations Division
-    - Biotech Corporation
+    - BUSY BEE BIO TECH
   - Micro Hydro Project
     - Flow Cube Project
     - Uruguay Project
@@ -126,7 +126,7 @@ Real World Nate (Supreme Commander)
         │   ├── Advanced Research Division (ARD)
         │   │   ├── Robotics Automation Division
         │   │   ├── Space Operations Division
-        │   │   └── Biotech Corporation
+        │   │   └── BUSY BEE BIO TECH
         │   └── Micro Hydro Project
         │       ├── Flow Cube Project
         │       ├── Uruguay Project

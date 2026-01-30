@@ -1,0 +1,20 @@
+{
+  "specialization": "GlobalTalentAcquisition Executive Operations",
+  "contact": "agent@globaltalentacquisition.ncc",
+  "name": "GlobalTalentAcquisition.Agent.Executive",
+  "version": "2.0.0",
+  "role": "Executive",
+  "capabilities": [
+    "Strategic Planning",
+    "Resource Allocation",
+    "Risk Assessment",
+    "Portfolio Management",
+    "Executive Reporting"
+  ],
+  "description": "Strategic planning and decision making for Global talent acquisition and HR",
+  "dependencies": [],
+  "status": "Active",
+  "lastModified": "2026-01-29",
+  "created": "2026-01-29",
+  "division": "GlobalTalentAcquisition"
+}

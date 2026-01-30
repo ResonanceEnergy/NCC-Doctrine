@@ -6,6 +6,7 @@ param(
     [switch]$Monitor,
     [switch]$Optimize,
     [switch]$Fortress,
+    [switch]$Remediate,
     [int]$IntervalMinutes = 5
 )
 
@@ -112,7 +113,7 @@ function Optimize-Storage-Performance {
 
         # Validate data integrity
         $requiredFields = @("compliance_level", "operational_efficiency", "ai_performance", "security_score")
-        $missingFields = $requiredFields | Where-Object { -not $settings.PSObject.Properties[$_] }
+        $missingFields = $requiredFields | Where-Object { -not $settings.ncc_operations.PSObject.Properties[$_] }
 
         if ($missingFields) {
             Write-AnalysisLog "Missing required fields in settings: $($missingFields -join ', ')" "WARNING"
@@ -153,6 +154,17 @@ function Activate-Faraday-Fortress {
             Write-AnalysisLog "Security Check PASSED: $($file.Name) - Proper access restrictions" "FORTRESS"
         } else {
             Write-AnalysisLog "Security Check FAILED: $($file.Name) - Excessive permissions detected" "WARNING"
+            if ($Remediate) {
+                try {
+                    # Use icacls to reset permissions to owner only
+                    $owner = $acl.Owner
+                    $icaclsCmd = "icacls `"$($file.FullName)`" /grant `"$($env:USERNAME):(F)`" /T /C /Q"
+                    Invoke-Expression $icaclsCmd | Out-Null
+                    Write-AnalysisLog "REMEDIATED: Set permissions to owner only for $($file.Name)" "FORTRESS"
+                } catch {
+                    Write-AnalysisLog "FAILED to remediate permissions for $($file.Name): $($_.Exception.Message)" "ERROR"
+                }
+            }
         }
 
         # Check for encryption (basic file entropy check)

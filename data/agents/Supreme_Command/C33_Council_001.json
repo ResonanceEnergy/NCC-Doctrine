@@ -1,0 +1,49 @@
+﻿{
+    "CreatedDate":  "2026-01-29T22:29:15Z",
+    "ReportingHierarchy":  {
+                               "DivisionHead":  "",
+                               "DirectSupervisor":  "AZ_PRIME_001",
+                               "AZ_PRIME_Liaison":  "",
+                               "ExecutiveSponsor":  ""
+                           },
+    "Supervisor":  "AZ_PRIME_001",
+    "SecurityClearance":  "TOP SECRET",
+    "AgentId":  "C33_Council_001",
+    "AuthorizedSystems":  [
+
+                          ],
+    "Status":  "Active",
+    "AgentName":  "C33 Strategic Command Council",
+    "Division":  "Supreme Command",
+    "Role":  "Strategic Command Council",
+    "CommunicationChannels":  [
+
+                              ],
+    "PerformanceMetrics":  {
+                               "MandateCompliance":  0,
+                               "ErrorCount":  0,
+                               "TasksCompleted":  0,
+                               "KPIScore":  0,
+                               "ResponseTime":  0,
+                               "LastEvaluation":  "2026-01-29",
+                               "SuccessRate":  0
+                           },
+    "LastUpdate":  "2026-01-29T22:34:16Z",
+    "Mandate":  "Strategic operations council providing executive oversight and decision support for critical NCC initiatives.",
+    "KeyResponsibilities":  [
+                                "Executive decision support and strategic planning",
+                                "Cross-functional initiative coordination",
+                                "Performance monitoring and optimization",
+                                "Risk assessment and mitigation planning",
+                                "Stakeholder communication and alignment"
+                            ],
+    "KPIs":  [
+                 "Strategic initiative success rate \u003e85%",
+                 "Decision quality score \u003e90%",
+                 "Cross-functional coordination \u003e88%",
+                 "Risk mitigation effectiveness \u003e92%",
+                 "Stakeholder satisfaction \u003e95%"
+             ],
+    "AuthorityLevel":  "EXECUTIVE",
+    "ReportingTo":  "AZ_PRIME"
+}

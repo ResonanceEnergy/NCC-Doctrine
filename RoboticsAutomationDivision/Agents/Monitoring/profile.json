@@ -1,0 +1,20 @@
+{
+  "specialization": "RoboticsAutomationDivision Monitoring Operations",
+  "contact": "agent@roboticsautomationdivision.ncc",
+  "name": "RoboticsAutomationDivision.Agent.Monitoring",
+  "version": "2.0.0",
+  "role": "Monitoring",
+  "capabilities": [
+    "Health Monitoring",
+    "Performance Tracking",
+    "Alert Management",
+    "System Diagnostics",
+    "Reporting"
+  ],
+  "description": "Performance tracking and alerting for Robotics and automation systems",
+  "dependencies": [],
+  "status": "Active",
+  "lastModified": "2026-01-29",
+  "created": "2026-01-29",
+  "division": "RoboticsAutomationDivision"
+}

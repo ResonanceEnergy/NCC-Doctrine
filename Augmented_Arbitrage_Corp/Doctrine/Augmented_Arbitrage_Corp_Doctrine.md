@@ -1,8 +1,8 @@
 # Augmented Arbitrage Corp Doctrine
-**Version:** 1.0.0 | **Classification:** NATHAN COMMAND CORP TOP SECRET | **Date:** 2026-01-28
+**Version:** 1.0.0 | **Classification:** NATRIX COMMAND CORP TOP SECRET | **Date:** 2026-01-28
 
 ## Executive Summary
-Augmented Arbitrage Corp (AAC) serves as NATHAN COMMAND CORP's supreme authority for arbitrage operations, deploying AI-augmented arbitrage strategies across all asset classes. Leveraging a comprehensive catalog of 1000+ historical arbitrage systems, AAC generates risk-free profits through price inefficiencies while maintaining zero directional exposure.
+Augmented Arbitrage Corp (AAC) serves as NATRIX COMMAND CORP's supreme authority for arbitrage operations, deploying AI-augmented arbitrage strategies across all asset classes. Leveraging a comprehensive catalog of 1000+ historical arbitrage systems, AAC generates risk-free profits through price inefficiencies while maintaining zero directional exposure.
 
 ## Core Mission
 - Execute arbitrage strategies with AI augmentation for maximum efficiency

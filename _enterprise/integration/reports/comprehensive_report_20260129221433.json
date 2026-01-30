@@ -1,0 +1,71 @@
+{
+  "ExecutiveSummary": {
+    "TotalRevenue": 0,
+    "OverallHealth": "Poor",
+    "TotalProfit": 0,
+    "AverageEfficiency": 0,
+    "ActiveSystems": 6,
+    "TotalSystems": 6
+  },
+  "Generated": "2026-01-29T22:14:26.963467-07:00",
+  "FinancialSummary": {
+    "TotalRevenue": 0,
+    "AssetsUnderManagement": 0,
+    "TotalProfit": 0,
+    "CashFlow": 0,
+    "TotalExpenses": 0
+  },
+  "Recommendations": [
+    "Improve overall system health - current status: Poor",
+    "Address health issues in AssetManagement",
+    "Resolve issues in AssetManagement: Test execution failed: Collection was modified; enumeration operation may not execute.",
+    "Address health issues in BusinessOperations",
+    "Resolve issues in BusinessOperations: Test execution failed: Unable to find type [TextEncoding].",
+    "Address health issues in Financial",
+    "Resolve issues in Financial: System test failed",
+    "Address health issues in PaymentProcessor",
+    "Resolve issues in PaymentProcessor: Test execution failed: Collection was modified; enumeration operation may not execute.",
+    "Address health issues in Emergency",
+    "Resolve issues in Emergency: Test execution failed: The term 'C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\_enterprise\\integration\\..\\monitoring\\NCC.Emergency.Crisis.Management.ps1' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+    "Address health issues in Communication",
+    "Resolve issues in Communication: Test execution failed: The term 'C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\_enterprise\\integration\\..\\communication\\NCC.Agent.Communication.ps1' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again."
+  ],
+  "PerformanceMetrics": null,
+  "Period": {
+    "EndDate": "2026-01-29T22:14:26.9418483-07:00",
+    "StartDate": "2026-01-22T22:14:26.9355909-07:00"
+  },
+  "ReportType": "comprehensive",
+  "SystemReports": [
+    {
+      "Report": null,
+      "Status": "Error: Cannot validate argument on parameter 'Action'. The argument \"GenerateReport\" does not belong to the set \"GetPortfolio,BuyAsset,SellAsset,GetAssetPrice,GetMarketData,CreatePortfolio,Rebalance,Monitor,Test,Initialize,Status\" specified by the ValidateSet attribute. Supply an argument that is in the set and then try the command again.",
+      "SystemName": "AssetManagement"
+    },
+    {
+      "Report": null,
+      "Status": "Error: Unable to find type [TextEncoding].",
+      "SystemName": "BusinessOperations"
+    },
+    {
+      "Report": null,
+      "Status": "Error: Cannot validate argument on parameter 'Action'. The argument \"GenerateReport\" does not belong to the set \"Connect,GetBalance,GetTransactions,SendPayment,Monitor,Status,Test,Initialize\" specified by the ValidateSet attribute. Supply an argument that is in the set and then try the command again.",
+      "SystemName": "Financial"
+    },
+    {
+      "Report": null,
+      "Status": "Error: Cannot validate argument on parameter 'Action'. The argument \"GenerateReport\" does not belong to the set \"ProcessPayment,Refund,GetPaymentStatus,ListPayments,SetupWebhook,Test,Initialize,Status\" specified by the ValidateSet attribute. Supply an argument that is in the set and then try the command again.",
+      "SystemName": "PaymentProcessor"
+    },
+    {
+      "Report": null,
+      "Status": "Error: The term 'C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\_enterprise\\integration\\..\\monitoring\\NCC.Emergency.Crisis.Management.ps1' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+      "SystemName": "Emergency"
+    },
+    {
+      "Report": null,
+      "Status": "Error: The term 'C:\\Users\\gripa\\OneDrive\\Desktop\\NCC\\NCC-Doctrine\\_enterprise\\integration\\..\\communication\\NCC.Agent.Communication.ps1' is not recognized as a name of a cmdlet, function, script file, or executable program.\r\nCheck the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+      "SystemName": "Communication"
+    }
+  ]
+}

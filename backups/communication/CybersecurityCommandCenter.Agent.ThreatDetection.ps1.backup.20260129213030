@@ -1,0 +1,526 @@
+# Cybersecurity Command Center - Threat Detection Agent
+# Advanced threat detection and security monitoring operations
+
+param(
+    [switch]$Initialize,
+    [switch]$StartOperations,
+    [switch]$StopOperations,
+    [switch]$Status,
+    [switch]$ScanThreats,
+    [switch]$MonitorNetwork,
+    [switch]$AnalyzeLogs,
+    [switch]$GenerateAlerts,
+    [switch]$IncidentResponse
+)
+
+# Agent-specific configuration
+$AgentConfig = @{
+    Name = "CybersecurityCommandCenter.Agent.ThreatDetection"
+    Division = "CybersecurityCommandCenter"
+    Role = "ThreatDetection"
+    Specialization = "Advanced Threat Detection & Response"
+    Status = "Inactive"
+    ThreatTypes = @("Malware", "Phishing", "DDoS", "Ransomware", "APT", "Insider Threats", "Zero-Day Exploits")
+    RiskLevels = @("Low", "Medium", "High", "Critical")
+    DetectionMethods = @("Signature-based", "Behavioral", "Anomaly-based", "AI-driven", "Honeypot")
+}
+
+function Write-AgentLog {
+    param([string]$Message, [string]$Level = "INFO")
+    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $logMessage = "[$timestamp] [$($AgentConfig.Name)] [$Level] $Message"
+    Write-Host $logMessage -ForegroundColor $(switch($Level){"ERROR"{"Red"}"WARNING"{"Yellow"}"SUCCESS"{"Green"}default{"Cyan"}})
+}
+
+function Initialize-Agent {
+    Write-AgentLog "Initializing Cybersecurity Command Center Threat Detection Agent..." -Level "INFO"
+
+    # Create security directories
+    $dirs = @("data", "logs", "config", "threats", "alerts", "incidents", "intelligence", "reports")
+    foreach ($dir in $dirs) {
+        $path = Join-Path $PSScriptRoot $dir
+        if (-not (Test-Path $path)) { New-Item -ItemType Directory -Path $path -Force | Out-Null }
+    }
+
+    # Initialize threat databases
+    $threatsPath = Join-Path $PSScriptRoot "data\threat_database.json"
+    @{Threats = @(); LastUpdate = Get-Date} | ConvertTo-Json | Out-File $threatsPath -Encoding UTF8
+
+    $alertsPath = Join-Path $PSScriptRoot "data\active_alerts.json"
+    @{Alerts = @(); LastUpdate = Get-Date} | ConvertTo-Json | Out-File $alertsPath -Encoding UTF8
+
+    $intelligencePath = Join-Path $PSScriptRoot "data\threat_intelligence.json"
+    @{Intelligence = @(); LastUpdate = Get-Date} | ConvertTo-Json | Out-File $intelligencePath -Encoding UTF8
+
+    $AgentConfig.Status = "Initialized"
+    Write-AgentLog "Threat detection agent initialization completed" -Level "SUCCESS"
+}
+
+function Start-AgentOperations {
+    Write-AgentLog "Starting threat detection operations..." -Level "INFO"
+    $AgentConfig.Status = "Active"
+
+    # Start security monitoring systems
+    Start-ThreatScanning
+    Start-NetworkMonitoring
+    Start-LogAnalysis
+    Start-IntelligenceGathering
+
+    Write-AgentLog "Threat detection operations started" -Level "SUCCESS"
+}
+
+function Stop-AgentOperations {
+    Write-AgentLog "Stopping threat detection operations..." -Level "INFO"
+    $AgentConfig.Status = "Inactive"
+
+    Stop-ThreatScanning
+    Stop-NetworkMonitoring
+    Stop-LogAnalysis
+    Stop-IntelligenceGathering
+
+    Write-AgentLog "Threat detection operations stopped" -Level "SUCCESS"
+}
+
+function Start-ThreatScanning {
+    Write-AgentLog "Starting threat scanning..." -Level "INFO"
+}
+
+function Start-NetworkMonitoring {
+    Write-AgentLog "Starting network monitoring..." -Level "INFO"
+}
+
+function Start-LogAnalysis {
+    Write-AgentLog "Starting log analysis..." -Level "INFO"
+}
+
+function Start-IntelligenceGathering {
+    Write-AgentLog "Starting threat intelligence gathering..." -Level "INFO"
+}
+
+function Stop-ThreatScanning {
+    Write-AgentLog "Stopping threat scanning..." -Level "INFO"
+}
+
+function Stop-NetworkMonitoring {
+    Write-AgentLog "Stopping network monitoring..." -Level "INFO"
+}
+
+function Stop-LogAnalysis {
+    Write-AgentLog "Stopping log analysis..." -Level "INFO"
+}
+
+function Stop-IntelligenceGathering {
+    Write-AgentLog "Stopping intelligence gathering..." -Level "INFO"
+}
+
+function Scan-ForThreats {
+    Write-AgentLog "Scanning for active threats..." -Level "INFO"
+
+    $scan = @{
+        Timestamp = Get-Date
+        ScanResults = @()
+        DetectedThreats = @()
+        FalsePositives = @()
+        ScanCoverage = @{}
+        PerformanceMetrics = @{}
+    }
+
+    # Simulate threat scanning results
+    $threatCount = Get-Random -Minimum 0 -Maximum 8
+    for ($i = 1; $i -le $threatCount; $i++) {
+        $threat = @{
+            Id = [guid]::NewGuid().ToString()
+            Type = $AgentConfig.ThreatTypes | Get-Random
+            Severity = $AgentConfig.RiskLevels | Get-Random
+            Source = @("External IP: $(Get-Random -Minimum 1 -Maximum 255).$(Get-Random -Minimum 0 -Maximum 255).$(Get-Random -Minimum 0 -Maximum 255).$(Get-Random -Minimum 1 -Maximum 254)", "Internal Host: NCC-SRV-$(Get-Random -Minimum 100 -Maximum 999)", "Email Attachment", "USB Device", "Web Request") | Get-Random
+            DetectionMethod = $AgentConfig.DetectionMethods | Get-Random
+            Confidence = [math]::Round((Get-Random -Minimum 60 -Maximum 100), 1)
+            FirstSeen = (Get-Date).AddMinutes(-(Get-Random -Minimum 1 -Maximum 1440))
+            LastSeen = Get-Date
+            Indicators = @(
+                "Suspicious file hash: $([guid]::NewGuid().ToString().Substring(0,8))",
+                "Command and control server: malicious.domain.com",
+                "Registry modification detected",
+                "Unusual network traffic pattern"
+            ) | Get-Random -Count (Get-Random -Minimum 1 -Maximum 4)
+            Status = @("Active", "Contained", "Eradicated") | Get-Random
+        }
+        $scan.DetectedThreats += $threat
+    }
+
+    # Scan coverage metrics
+    $scan.ScanCoverage = @{
+        NetworkSegments = [math]::Round((Get-Random -Minimum 95 -Maximum 100), 1)
+        Endpoints = [math]::Round((Get-Random -Minimum 92 -Maximum 99), 1)
+        CloudServices = [math]::Round((Get-Random -Minimum 88 -Maximum 96), 1)
+        EmailSystems = [math]::Round((Get-Random -Minimum 97 -Maximum 100), 1)
+        OverallCoverage = [math]::Round((Get-Random -Minimum 93 -Maximum 98), 1)
+    }
+
+    # Performance metrics
+    $scan.PerformanceMetrics = @{
+        ScanTime = [math]::Round((Get-Random -Minimum 120 -Maximum 300), 1)
+        CPUUsage = [math]::Round((Get-Random -Minimum 15 -Maximum 45), 1)
+        MemoryUsage = [math]::Round((Get-Random -Minimum 20 -Maximum 60), 1)
+        FalsePositiveRate = [math]::Round((Get-Random -Minimum 0.1 -Maximum 2.5), 2)
+        DetectionAccuracy = [math]::Round((Get-Random -Minimum 95 -Maximum 99.5), 1)
+    }
+
+    # False positives
+    $fpCount = Get-Random -Minimum 0 -Maximum 3
+    for ($i = 1; $i -le $fpCount; $i++) {
+        $fp = @{
+            Id = [guid]::NewGuid().ToString()
+            Type = "False Positive"
+            Description = "Legitimate activity flagged as suspicious"
+            Resolution = "Whitelisted"
+            TimeToResolve = [math]::Round((Get-Random -Minimum 5 -Maximum 60), 1)
+        }
+        $scan.FalsePositives += $fp
+    }
+
+    # Save scan results
+    $scanPath = Join-Path $PSScriptRoot "threats\threat_scan_$(Get-Date -Format 'yyyy-MM-dd_HH-mm').json"
+    $threatsDir = Split-Path $scanPath -Parent
+    if (-not (Test-Path $threatsDir)) { New-Item -ItemType Directory -Path $threatsDir -Force | Out-Null }
+    $scan | ConvertTo-Json -Depth 10 | Out-File $scanPath -Encoding UTF8
+
+    Write-AgentLog "Threat scanning completed - $($scan.DetectedThreats.Count) threats detected, coverage: $($scan.ScanCoverage.OverallCoverage)%" -Level "SUCCESS"
+    return $scan
+}
+
+function Monitor-NetworkTraffic {
+    Write-AgentLog "Monitoring network traffic for anomalies..." -Level "INFO"
+
+    $monitoring = @{
+        Timestamp = Get-Date
+        TrafficAnalysis = @{}
+        Anomalies = @()
+        BandwidthUsage = @{}
+        ConnectionPatterns = @()
+        BlockedConnections = @()
+    }
+
+    # Traffic analysis
+    $monitoring.TrafficAnalysis = @{
+        TotalPackets = Get-Random -Minimum 1000000 -Maximum 50000000
+        SuspiciousPackets = Get-Random -Minimum 100 -Maximum 5000
+        BlockedPackets = Get-Random -Minimum 50 -Maximum 2000
+        DataTransferred = "$(Get-Random -Minimum 10 -Maximum 500) GB"
+        PeakBandwidth = "$(Get-Random -Minimum 100 -Maximum 1000) Mbps"
+        AverageLatency = [math]::Round((Get-Random -Minimum 5 -Maximum 25), 1)
+    }
+
+    # Network anomalies
+    $anomalyCount = Get-Random -Minimum 0 -Maximum 5
+    for ($i = 1; $i -le $anomalyCount; $i++) {
+        $anomaly = @{
+            Id = [guid]::NewGuid().ToString()
+            Type = @("Unusual Traffic Volume", "Suspicious Protocol Usage", "Port Scanning", "Data Exfiltration Attempt", "Command and Control Traffic") | Get-Random
+            Severity = $AgentConfig.RiskLevels | Get-Random
+            Source = "192.168.$(Get-Random -Minimum 1 -Maximum 255).$(Get-Random -Minimum 1 -Maximum 254)"
+            Destination = @("External", "Internal", "Cloud Service") | Get-Random
+            Volume = "$(Get-Random -Minimum 1 -Maximum 100) MB"
+            Duration = "$(Get-Random -Minimum 1 -Maximum 60) minutes"
+            Status = @("Investigating", "Blocked", "Allowed") | Get-Random
+        }
+        $monitoring.Anomalies += $anomaly
+    }
+
+    # Bandwidth usage by department
+    $departments = @("Executive", "Operations", "Research", "Finance", "IT", "HR")
+    foreach ($dept in $departments) {
+        $monitoring.BandwidthUsage[$dept] = @{
+            Usage = [math]::Round((Get-Random -Minimum 10 -Maximum 200), 1)
+            Unit = "Mbps"
+            Trend = @("Increasing", "Stable", "Decreasing") | Get-Random
+        }
+    }
+
+    # Connection patterns
+    $monitoring.ConnectionPatterns = @(
+        "Normal business hours traffic pattern",
+        "Increased VPN connections from remote locations",
+        "Regular backup operations detected",
+        "Automated system updates in progress"
+    )
+
+    # Blocked connections
+    $blockCount = Get-Random -Minimum 5 -Maximum 20
+    for ($i = 1; $i -le $blockCount; $i++) {
+        $blocked = @{
+            Timestamp = (Get-Date).AddMinutes(-(Get-Random -Minimum 1 -Maximum 1440))
+            SourceIP = "$(Get-Random -Minimum 1 -Maximum 255).$(Get-Random -Minimum 0 -Maximum 255).$(Get-Random -Minimum 0 -Maximum 255).$(Get-Random -Minimum 1 -Maximum 254)"
+            Destination = @("malicious-site.com", "suspicious-domain.net", "blocked-ip-address") | Get-Random
+            Reason = @("Known malicious domain", "Port scanning attempt", "Suspicious traffic pattern", "Blacklisted IP") | Get-Random
+            Action = "Blocked"
+        }
+        $monitoring.BlockedConnections += $blocked
+    }
+
+    # Save monitoring results
+    $monitoringPath = Join-Path $PSScriptRoot "threats\network_monitoring_$(Get-Date -Format 'yyyy-MM-dd_HH-mm').json"
+    $threatsDir = Split-Path $monitoringPath -Parent
+    if (-not (Test-Path $threatsDir)) { New-Item -ItemType Directory -Path $threatsDir -Force | Out-Null }
+    $monitoring | ConvertTo-Json -Depth 10 | Out-File $monitoringPath -Encoding UTF8
+
+    Write-AgentLog "Network monitoring completed - $($monitoring.Anomalies.Count) anomalies detected" -Level "SUCCESS"
+    return $monitoring
+}
+
+function Analyze-SecurityLogs {
+    Write-AgentLog "Analyzing security logs for patterns and threats..." -Level "INFO"
+
+    $analysis = @{
+        Timestamp = Get-Date
+        LogSummary = @{}
+        SecurityEvents = @()
+        UserBehavior = @()
+        SystemHealth = @{}
+        ComplianceStatus = @()
+        Recommendations = @()
+    }
+
+    # Log summary
+    $analysis.LogSummary = @{
+        TotalEvents = Get-Random -Minimum 50000 -Maximum 200000
+        SecurityEvents = Get-Random -Minimum 100 -Maximum 1000
+        FailedLogins = Get-Random -Minimum 5 -Maximum 50
+        SuccessfulLogins = Get-Random -Minimum 1000 -Maximum 5000
+        PolicyViolations = Get-Random -Minimum 0 -Maximum 10
+        TimeRange = "Last 24 hours"
+    }
+
+    # Security events
+    $eventCount = Get-Random -Minimum 5 -Maximum 15
+    for ($i = 1; $i -le $eventCount; $i++) {
+        $event = @{
+            Id = [guid]::NewGuid().ToString()
+            Timestamp = (Get-Date).AddHours(-(Get-Random -Minimum 0 -Maximum 24))
+            EventType = @("Failed Login Attempt", "Privilege Escalation", "File Access Violation", "Suspicious Process", "Network Anomaly", "Configuration Change") | Get-Random
+            Severity = $AgentConfig.RiskLevels | Get-Random
+            Source = @("User: john.doe", "System: NCC-SRV-001", "Application: Web Portal", "Network: Firewall") | Get-Random
+            Description = "Security event detected and logged"
+            Status = @("Investigated", "Pending Review", "Resolved", "Escalated") | Get-Random
+        }
+        $analysis.SecurityEvents += $event
+    }
+
+    # User behavior analysis
+    $analysis.UserBehavior = @(
+        "Normal login patterns observed",
+        "Increased after-hours access in research department",
+        "Unusual data access patterns for executive accounts",
+        "Regular security training completion rates: 95%"
+    )
+
+    # System health metrics
+    $analysis.SystemHealth = @{
+        AntivirusStatus = "All systems protected"
+        FirewallStatus = "Active and blocking threats"
+        IDSStatus = "Operational"
+        LogIntegrity = "Verified"
+        BackupStatus = "Current"
+        PatchCompliance = [math]::Round((Get-Random -Minimum 85 -Maximum 98), 1)
+    }
+
+    # Compliance status
+    $analysis.ComplianceStatus = @(
+        @{Standard = "NIST Cybersecurity Framework"; Compliance = [math]::Round((Get-Random -Minimum 85 -Maximum 95), 1); Status = "Compliant"},
+        @{Standard = "ISO 27001"; Compliance = [math]::Round((Get-Random -Minimum 88 -Maximum 96), 1); Status = "Compliant"},
+        @{Standard = "GDPR Data Protection"; Compliance = [math]::Round((Get-Random -Minimum 90 -Maximum 98), 1); Status = "Compliant"},
+        @{Standard = "HIPAA Security"; Compliance = [math]::Round((Get-Random -Minimum 87 -Maximum 94), 1); Status = "Compliant"}
+    )
+
+    # Security recommendations
+    $analysis.Recommendations = @(
+        "Implement multi-factor authentication for all remote access",
+        "Regular security awareness training for all employees",
+        "Deploy endpoint detection and response tools",
+        "Conduct regular penetration testing",
+        "Update incident response procedures"
+    )
+
+    # Save analysis results
+    $analysisPath = Join-Path $PSScriptRoot "logs\security_analysis_$(Get-Date -Format 'yyyy-MM-dd').json"
+    $logsDir = Split-Path $analysisPath -Parent
+    if (-not (Test-Path $logsDir)) { New-Item -ItemType Directory -Path $logsDir -Force | Out-Null }
+    $analysis | ConvertTo-Json -Depth 10 | Out-File $analysisPath -Encoding UTF8
+
+    Write-AgentLog "Security log analysis completed - $($analysis.SecurityEvents.Count) security events analyzed" -Level "SUCCESS"
+    return $analysis
+}
+
+function Generate-SecurityAlerts {
+    Write-AgentLog "Generating security alerts and notifications..." -Level "INFO"
+
+    $alerts = @{
+        Timestamp = Get-Date
+        ActiveAlerts = @()
+        AlertSummary = @{}
+        EscalatedAlerts = @()
+        ResolvedAlerts = @()
+        AlertTrends = @()
+    }
+
+    # Generate active alerts
+    $alertCount = Get-Random -Minimum 3 -Maximum 10
+    for ($i = 1; $i -le $alertCount; $i++) {
+        $alert = @{
+            Id = [guid]::NewGuid().ToString()
+            Title = @("Suspicious Login Attempt Detected", "Malware Signature Match", "Data Exfiltration Alert", "Privilege Escalation Attempt", "Unusual Network Traffic", "Configuration Change Alert") | Get-Random
+            Severity = $AgentConfig.RiskLevels | Get-Random
+            Category = @("Authentication", "Malware", "Network", "System", "Data", "Compliance") | Get-Random
+            Description = "Security alert triggered by automated monitoring system"
+            Source = @("SIEM System", "EDR Agent", "Firewall", "IDS", "DLP System") | Get-Random
+            Timestamp = (Get-Date).AddMinutes(-(Get-Random -Minimum 1 -Maximum 300))
+            Status = @("New", "Investigating", "Escalated", "Resolved") | Get-Random
+            AssignedTo = @("Security Analyst", "Incident Response Team", "SOC Lead", "CISO") | Get-Random
+            SLA = "$(Get-Random -Minimum 1 -Maximum 24) hours"
+        }
+        $alerts.ActiveAlerts += $alert
+    }
+
+    # Alert summary
+    $alerts.AlertSummary = @{
+        TotalActive = $alerts.ActiveAlerts.Count
+        CriticalAlerts = ($alerts.ActiveAlerts | Where-Object { $_.Severity -eq "Critical" }).Count
+        HighAlerts = ($alerts.ActiveAlerts | Where-Object { $_.Severity -eq "High" }).Count
+        MediumAlerts = ($alerts.ActiveAlerts | Where-Object { $_.Severity -eq "Medium" }).Count
+        LowAlerts = ($alerts.ActiveAlerts | Where-Object { $_.Severity -eq "Low" }).Count
+        AverageResponseTime = [math]::Round((Get-Random -Minimum 15 -Maximum 120), 1)
+    }
+
+    # Escalated alerts
+    $escalatedCount = Get-Random -Minimum 0 -Maximum 3
+    for ($i = 1; $i -le $escalatedCount; $i++) {
+        $escalated = @{
+            Id = [guid]::NewGuid().ToString()
+            OriginalSeverity = "Medium"
+            EscalatedSeverity = "High"
+            Reason = "Multiple indicators of compromise detected"
+            EscalatedBy = "SOC Analyst"
+            EscalatedTo = "Incident Response Team"
+            Timestamp = (Get-Date).AddHours(-(Get-Random -Minimum 1 -Maximum 12))
+        }
+        $alerts.EscalatedAlerts += $escalated
+    }
+
+    # Resolved alerts
+    $resolvedCount = Get-Random -Minimum 5 -Maximum 15
+    for ($i = 1; $i -le $resolvedCount; $i++) {
+        $resolved = @{
+            Id = [guid]::NewGuid().ToString()
+            Resolution = @("False positive", "Contained and eradicated", "Blocked at perimeter", "User education provided", "System configuration corrected") | Get-Random
+            TimeToResolve = [math]::Round((Get-Random -Minimum 5 -Maximum 240), 1)
+            ResolvedBy = @("SOC Analyst", "Security Engineer", "Incident Response Team") | Get-Random
+            Timestamp = (Get-Date).AddHours(-(Get-Random -Minimum 1 -Maximum 48))
+        }
+        $alerts.ResolvedAlerts += $resolved
+    }
+
+    # Alert trends
+    $alerts.AlertTrends = @(
+        "15% increase in phishing attempts this week",
+        "Malware detections down 20% after recent updates",
+        "Network-based attacks showing seasonal pattern",
+        "User training effectiveness improving"
+    )
+
+    # Save alerts
+    $alertsPath = Join-Path $PSScriptRoot "alerts\security_alerts_$(Get-Date -Format 'yyyy-MM-dd_HH-mm').json"
+    $alertsDir = Split-Path $alertsPath -Parent
+    if (-not (Test-Path $alertsDir)) { New-Item -ItemType Directory -Path $alertsDir -Force | Out-Null }
+    $alerts | ConvertTo-Json -Depth 10 | Out-File $alertsPath -Encoding UTF8
+
+    Write-AgentLog "Security alerts generated - $($alerts.AlertSummary.TotalActive) active alerts, $($alerts.AlertSummary.CriticalAlerts) critical" -Level "SUCCESS"
+    return $alerts
+}
+
+function Execute-IncidentResponse {
+    Write-AgentLog "Executing incident response procedures..." -Level "INFO"
+
+    $response = @{
+        Timestamp = Get-Date
+        ActiveIncidents = @()
+        ResponseActions = @()
+        ContainmentStatus = @()
+        RecoveryProgress = @()
+        LessonsLearned = @()
+    }
+
+    # Active incidents
+    $incidentCount = Get-Random -Minimum 0 -Maximum 3
+    for ($i = 1; $i -le $incidentCount; $i++) {
+        $incident = @{
+            Id = [guid]::NewGuid().ToString()
+            Title = @("Ransomware Attack Containment", "Data Breach Investigation", "APT Campaign Response", "Insider Threat Mitigation") | Get-Random
+            Severity = $AgentConfig.RiskLevels | Get-Random
+            Status = @("Detection", "Analysis", "Containment", "Eradication", "Recovery", "Lessons Learned") | Get-Random
+            StartTime = (Get-Date).AddHours(-(Get-Random -Minimum 1 -Maximum 72))
+            AssignedTeam = "Cybersecurity Incident Response Team"
+            AffectedSystems = Get-Random -Minimum 1 -Maximum 10
+            EstimatedImpact = @("Low", "Medium", "High", "Critical") | Get-Random
+            CommunicationStatus = "Stakeholders notified"
+        }
+        $response.ActiveIncidents += $incident
+    }
+
+    # Response actions taken
+    $response.ResponseActions = @(
+        "Isolated affected systems from network",
+        "Preserved digital evidence for forensics",
+        "Notified law enforcement authorities",
+        "Activated backup communication channels",
+        "Implemented additional monitoring controls"
+    )
+
+    # Containment status
+    $response.ContainmentStatus = @(
+        @{Action = "Network Segmentation"; Status = "Completed"; Effectiveness = "High"},
+        @{Action = "System Isolation"; Status = "In Progress"; Effectiveness = "Medium"},
+        @{Action = "Access Control Updates"; Status = "Completed"; Effectiveness = "High"},
+        @{Action = "Threat Hunting"; Status = "Active"; Effectiveness = "High"}
+    )
+
+    # Recovery progress
+    $response.RecoveryProgress = @(
+        "System backups verified and ready for restoration",
+        "Clean system images prepared for deployment",
+        "Data integrity checks completed",
+        "Business continuity plans activated"
+    )
+
+    # Lessons learned
+    $response.LessonsLearned = @(
+        "Enhanced endpoint protection required",
+        "Regular backup testing critical",
+        "Incident response procedures need updating",
+        "Security awareness training expanded"
+    )
+
+    # Save incident response
+    $responsePath = Join-Path $PSScriptRoot "incidents\incident_response_$(Get-Date -Format 'yyyy-MM-dd_HH-mm').json"
+    $incidentsDir = Split-Path $responsePath -Parent
+    if (-not (Test-Path $incidentsDir)) { New-Item -ItemType Directory -Path $incidentsDir -Force | Out-Null }
+    $response | ConvertTo-Json -Depth 10 | Out-File $responsePath -Encoding UTF8
+
+    Write-AgentLog "Incident response procedures executed - $($response.ActiveIncidents.Count) active incidents" -Level "SUCCESS"
+    return $response
+}
+
+# Main execution logic
+if ($Initialize) { Initialize-Agent }
+if ($StartOperations) { Start-AgentOperations }
+if ($StopOperations) { Stop-AgentOperations }
+if ($Status) { Write-AgentLog "Status: $($AgentConfig.Status)" -Level "INFO" }
+if ($ScanThreats) { Scan-ForThreats }
+if ($MonitorNetwork) { Monitor-NetworkTraffic }
+if ($AnalyzeLogs) { Analyze-SecurityLogs }
+if ($GenerateAlerts) { Generate-SecurityAlerts }
+if ($IncidentResponse) { Execute-IncidentResponse }
+
+# Default status display
+if (-not ($Initialize -or $StartOperations -or $StopOperations -or $Status -or $ScanThreats -or $MonitorNetwork -or $AnalyzeLogs -or $GenerateAlerts -or $IncidentResponse)) {
+    Write-AgentLog "$($AgentConfig.Name) - Status: $($AgentConfig.Status) - Threat Types: $($AgentConfig.ThreatTypes.Count)" -Level "INFO"
+}

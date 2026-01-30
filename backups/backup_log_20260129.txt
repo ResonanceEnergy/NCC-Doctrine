@@ -1,0 +1,113 @@
+[2026-01-29 12:31:21.653] [CRITICAL] [FULL_BACKUP] INITIATING FULL NCC ECOSYSTEM BACKUP
+[2026-01-29 12:31:21.659] [INFO] [BACKUP] Authority: AZ PRIME COMMAND
+[2026-01-29 12:31:21.661] [INFO] [BACKUP] Version: 3.0.0
+[2026-01-29 12:31:21.663] [INFO] [BACKUP] Encryption: AES-256
+[2026-01-29 12:31:21.666] [INFO] [BACKUP] Retention: 90 days
+[2026-01-29 12:31:21.671] [INFO] [BACKUP] Created backup directory: c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\backups\full_backup_20260129_123121
+[2026-01-29 12:31:21.677] [INFO] [BACKUP] Backing up Dashboard from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Dashboard
+[2026-01-29 12:31:22.399] [SUCCESS] [BACKUP] ✓ Dashboard backup completed: 0.01 MB
+[2026-01-29 12:31:22.402] [INFO] [BACKUP] Backing up Logs from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\logs
+[2026-01-29 12:31:23.372] [SUCCESS] [BACKUP] ✓ Logs backup completed: 4.89 MB
+[2026-01-29 12:31:23.374] [INFO] [BACKUP] Backing up AXLauncher from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\AX\Launcher_Distribution
+[2026-01-29 12:31:29.426] [SUCCESS] [BACKUP] ✓ AXLauncher backup completed: 38.23 MB
+[2026-01-29 12:31:29.430] [INFO] [BACKUP] Backing up Companies from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\companies
+[2026-01-29 12:31:29.985] [SUCCESS] [BACKUP] ✓ Companies backup completed: 1.03 MB
+[2026-01-29 12:31:29.990] [INFO] [BACKUP] Backing up Data from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\data
+[2026-01-29 12:32:00.610] [SUCCESS] [BACKUP] ✓ Data backup completed: 27.71 MB
+[2026-01-29 12:32:00.612] [INFO] [BACKUP] Backing up Operations from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\operations
+[2026-01-29 12:32:00.640] [SUCCESS] [BACKUP] ✓ Operations backup completed: 0.01 MB
+[2026-01-29 12:32:00.643] [INFO] [BACKUP] Backing up Templates from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Templates
+[2026-01-29 12:32:00.675] [SUCCESS] [BACKUP] ✓ Templates backup completed: 0.05 MB
+[2026-01-29 12:32:00.678] [INFO] [BACKUP] Backing up AXSystems from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\AX
+[2026-01-29 12:32:06.182] [SUCCESS] [BACKUP] ✓ AXSystems backup completed: 38.36 MB
+[2026-01-29 12:32:06.185] [INFO] [BACKUP] Backing up Config from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\config
+[2026-01-29 12:32:06.225] [SUCCESS] [BACKUP] ✓ Config backup completed: 0.02 MB
+[2026-01-29 12:32:06.228] [INFO] [BACKUP] Backing up Intelligence from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\intelligence
+[2026-01-29 12:32:06.280] [SUCCESS] [BACKUP] ✓ Intelligence backup completed: 0.04 MB
+[2026-01-29 12:32:06.284] [INFO] [BACKUP] Backing up Playbooks from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Playbooks
+[2026-01-29 12:32:06.311] [SUCCESS] [BACKUP] ✓ Playbooks backup completed: 0.05 MB
+[2026-01-29 12:32:06.315] [INFO] [BACKUP] Backing up Database from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\database
+[2026-01-29 12:32:06.336] [SUCCESS] [BACKUP] ✓ Database backup completed: 0 MB
+[2026-01-29 12:32:06.339] [INFO] [BACKUP] Backing up Agents from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\agents
+[2026-01-29 12:32:06.357] [SUCCESS] [BACKUP] ✓ Agents backup completed: 0 MB
+[2026-01-29 12:32:06.360] [INFO] [BACKUP] Backing up CoreSystems from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine
+[2026-01-29 12:34:18.353] [CRITICAL] [FULL_BACKUP] INITIATING FULL NCC ECOSYSTEM BACKUP
+[2026-01-29 12:34:18.369] [INFO] [BACKUP] Authority: AZ PRIME COMMAND
+[2026-01-29 12:34:18.372] [INFO] [BACKUP] Version: 3.0.0
+[2026-01-29 12:34:18.374] [INFO] [BACKUP] Encryption: AES-256
+[2026-01-29 12:34:18.376] [INFO] [BACKUP] Retention: 90 days
+[2026-01-29 12:34:18.383] [INFO] [BACKUP] Created backup directory: c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\backups\full_backup_20260129_123418
+[2026-01-29 12:34:18.394] [INFO] [BACKUP] Backing up Templates from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Templates
+[2026-01-29 12:34:19.355] [SUCCESS] [BACKUP] ✓ Templates backup completed: 0.05 MB
+[2026-01-29 12:34:19.361] [INFO] [BACKUP] Backing up Scripts from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\scripts
+[2026-01-29 12:34:19.589] [SUCCESS] [BACKUP] ✓ Scripts backup completed: 0.16 MB
+[2026-01-29 12:34:19.595] [INFO] [BACKUP] Backing up AXLauncher from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\AX\Launcher_Distribution
+[2026-01-29 12:34:25.198] [SUCCESS] [BACKUP] ✓ AXLauncher backup completed: 38.81 MB
+[2026-01-29 12:34:25.202] [INFO] [BACKUP] Backing up Playbooks from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Playbooks
+[2026-01-29 12:34:25.220] [SUCCESS] [BACKUP] ✓ Playbooks backup completed: 0.05 MB
+[2026-01-29 12:34:25.222] [INFO] [BACKUP] Backing up AXSystems from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\AX
+[2026-01-29 12:34:31.336] [SUCCESS] [BACKUP] ✓ AXSystems backup completed: 38.82 MB
+[2026-01-29 12:34:31.340] [INFO] [BACKUP] Backing up Config from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\config
+[2026-01-29 12:34:31.382] [SUCCESS] [BACKUP] ✓ Config backup completed: 0.02 MB
+[2026-01-29 12:34:31.385] [INFO] [BACKUP] Backing up Dashboard from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Dashboard
+[2026-01-29 12:34:31.407] [SUCCESS] [BACKUP] ✓ Dashboard backup completed: 0.01 MB
+[2026-01-29 12:34:31.410] [INFO] [BACKUP] Backing up Data from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\data
+[2026-01-29 12:35:05.294] [SUCCESS] [BACKUP] ✓ Data backup completed: 27.88 MB
+[2026-01-29 12:35:05.296] [INFO] [BACKUP] Backing up Database from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\database
+[2026-01-29 12:35:05.311] [SUCCESS] [BACKUP] ✓ Database backup completed: 0 MB
+[2026-01-29 12:35:05.313] [INFO] [BACKUP] Backing up Logs from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\logs
+[2026-01-29 12:35:06.208] [SUCCESS] [BACKUP] ✓ Logs backup completed: 4.93 MB
+[2026-01-29 12:35:06.211] [INFO] [BACKUP] Backing up Doctrine from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Doctrine
+[2026-01-29 12:35:06.343] [SUCCESS] [BACKUP] ✓ Doctrine backup completed: 0.23 MB
+[2026-01-29 12:35:06.346] [INFO] [BACKUP] Backing up Public from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\public
+[2026-01-29 12:35:06.366] [SUCCESS] [BACKUP] ✓ Public backup completed: 0.01 MB
+[2026-01-29 12:35:06.369] [INFO] [BACKUP] Backing up CoreSystems from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine
+[2026-01-29 12:48:17.384] [SUCCESS] [BACKUP] ✓ CoreSystems backup completed: 711.81 MB
+[2026-01-29 12:48:17.400] [INFO] [BACKUP] Backing up Operations from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\operations
+[2026-01-29 12:48:17.435] [SUCCESS] [BACKUP] ✓ Operations backup completed: 0.01 MB
+[2026-01-29 12:48:17.438] [INFO] [BACKUP] Backing up Agents from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\agents
+[2026-01-29 12:48:17.468] [SUCCESS] [BACKUP] ✓ Agents backup completed: 0 MB
+[2026-01-29 12:48:17.471] [INFO] [BACKUP] Backing up Companies from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\companies
+[2026-01-29 12:48:18.475] [SUCCESS] [BACKUP] ✓ Companies backup completed: 1.03 MB
+[2026-01-29 12:48:18.479] [INFO] [BACKUP] Backing up Intelligence from c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\intelligence
+[2026-01-29 12:48:18.563] [SUCCESS] [BACKUP] ✓ Intelligence backup completed: 0.04 MB
+[2026-01-29 12:48:18.602] [SUCCESS] [BACKUP] FULL BACKUP COMPLETE - 17/17 successful
+[2026-01-29 12:48:18.604] [INFO] [BACKUP] Backup location: c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\backups\full_backup_20260129_123418
+[2026-01-29 12:48:18.626] [INFO] [VERIFICATION] INITIATING BACKUP VERIFICATION
+[2026-01-29 12:48:18.786] [ERROR] [BACKUP] Verification failed for: Agents_20260129_124817.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:18.868] [ERROR] [BACKUP] Verification failed for: AXLauncher_20260129_123419.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:18.950] [ERROR] [BACKUP] Verification failed for: AXSystems_20260129_123425.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:19.040] [ERROR] [BACKUP] Verification failed for: Companies_20260129_124817.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:19.144] [ERROR] [BACKUP] Verification failed for: Config_20260129_123431.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:19.273] [ERROR] [BACKUP] Verification failed for: CoreSystems_20260129_123506.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:19.366] [ERROR] [BACKUP] Verification failed for: Dashboard_20260129_123431.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:19.443] [ERROR] [BACKUP] Verification failed for: Data_20260129_123431.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:19.509] [ERROR] [BACKUP] Verification failed for: Database_20260129_123505.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:19.576] [ERROR] [BACKUP] Verification failed for: Doctrine_20260129_123506.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:19.643] [ERROR] [BACKUP] Verification failed for: Intelligence_20260129_124818.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:19.709] [ERROR] [BACKUP] Verification failed for: Logs_20260129_123505.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:19.775] [ERROR] [BACKUP] Verification failed for: Operations_20260129_124817.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:19.855] [ERROR] [BACKUP] Verification failed for: Playbooks_20260129_123425.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:19.951] [ERROR] [BACKUP] Verification failed for: Public_20260129_123506.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:20.013] [ERROR] [BACKUP] Verification failed for: Scripts_20260129_123419.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:20.070] [ERROR] [BACKUP] Verification failed for: Templates_20260129_123418.zip - The term '7z' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-01-29 12:48:20.076] [ERROR] [BACKUP] VERIFICATION COMPLETE - 0/17 archives valid (0 MB)
+[2026-01-29 12:48:20.080] [INFO] [RETENTION] INITIATING BACKUP RETENTION CLEANUP
+[2026-01-29 12:48:20.545] [SUCCESS] [BACKUP] RETENTION CLEANUP COMPLETE - 0 backups removed, 0 MB freed

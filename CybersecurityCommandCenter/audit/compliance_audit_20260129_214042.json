@@ -1,0 +1,15 @@
+﻿{
+    "TotalAgents":  8,
+    "Timestamp":  {
+                      "value":  "\/Date(1769748042776)\/",
+                      "DisplayHint":  2,
+                      "DateTime":  "January 29, 2026 9:40:42 PM"
+                  },
+    "CriticalIssues":  0,
+    "CompliantAgents":  8,
+    "Warnings":  0,
+    "Findings":  [
+
+                 ],
+    "NonCompliantAgents":  0
+}

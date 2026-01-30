@@ -1,0 +1,9 @@
+﻿[2026-01-29 21:30:41] [MESSAGE_BROKER] [INFO] Starting NCC Enterprise Message Broker on port 8080
+[2026-01-29 21:30:43] [MESSAGE_BROKER] [SUCCESS] Message broker started successfully
+[2026-01-29 22:36:52] [MESSAGE_BROKER] [INFO] Broker Status: 
+[2026-01-29 22:39:10] [MESSAGE_BROKER] [INFO] Broker Status: 
+[2026-01-29 22:39:22] [MESSAGE_BROKER] [INFO] Broker Status: 
+[2026-01-29 22:39:30] [MESSAGE_BROKER] [INFO] Broker Status: Running
+[2026-01-29 22:39:30] [MESSAGE_BROKER] [INFO] Started: @{value=01/30/2026 04:30:43; DisplayHint=2; DateTime=January 29, 2026 9:30:43 PM}
+[2026-01-29 22:41:20] [MESSAGE_BROKER] [INFO] Broker Status: Running
+[2026-01-29 22:41:20] [MESSAGE_BROKER] [INFO] Started: @{value=01/30/2026 04:30:43; DisplayHint=2; DateTime=January 29, 2026 9:30:43 PM}

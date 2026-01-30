@@ -1,0 +1,107 @@
+﻿{
+    "users":  [
+                  {
+                      "username":  "NCC_Admin",
+                      "user_id":  "admin",
+                      "active":  true,
+                      "roles":  [
+                                    "administrator",
+                                    "data_steward"
+                                ],
+                      "created_at":  "2026-01-29T22:36:31.8266069-07:00"
+                  },
+                  {
+                      "username":  "Agent_Supervisor",
+                      "user_id":  "agent_supervisor",
+                      "active":  true,
+                      "roles":  [
+                                    "supervisor",
+                                    "analyst"
+                                ],
+                      "created_at":  "2026-01-29T22:36:31.8266069-07:00"
+                  }
+              ],
+    "roles":  [
+                  {
+                      "role_id":  "administrator",
+                      "description":  "Full system access",
+                      "name":  "Administrator",
+                      "permissions":  [
+                                          "read",
+                                          "write",
+                                          "delete",
+                                          "admin"
+                                      ]
+                  },
+                  {
+                      "role_id":  "data_steward",
+                      "description":  "Data governance and management",
+                      "name":  "Data Steward",
+                      "permissions":  [
+                                          "read",
+                                          "write",
+                                          "govern"
+                                      ]
+                  },
+                  {
+                      "role_id":  "supervisor",
+                      "description":  "Supervisory access to agent data",
+                      "name":  "Supervisor",
+                      "permissions":  [
+                                          "read",
+                                          "write"
+                                      ]
+                  },
+                  {
+                      "role_id":  "analyst",
+                      "description":  "Read-only access for analysis",
+                      "name":  "Analyst",
+                      "permissions":  [
+                                          "read"
+                                      ]
+                  }
+              ],
+    "permissions":  [
+                        {
+                            "role_permissions":  {
+                                                     "supervisor":  [
+                                                                        "read",
+                                                                        "write"
+                                                                    ],
+                                                     "administrator":  [
+                                                                           "read",
+                                                                           "write",
+                                                                           "delete"
+                                                                       ],
+                                                     "data_steward":  [
+                                                                          "read",
+                                                                          "write"
+                                                                      ],
+                                                     "analyst":  [
+                                                                     "read"
+                                                                 ]
+                                                 },
+                            "resource":  "_enterprise/data/agent_data"
+                        },
+                        {
+                            "role_permissions":  {
+                                                     "supervisor":  [
+                                                                        "read"
+                                                                    ],
+                                                     "administrator":  [
+                                                                           "read",
+                                                                           "write",
+                                                                           "delete"
+                                                                       ],
+                                                     "data_steward":  [
+                                                                          "read",
+                                                                          "write"
+                                                                      ],
+                                                     "analyst":  [
+                                                                     "read"
+                                                                 ]
+                                                 },
+                            "resource":  "_enterprise/data/division_data"
+                        }
+                    ]
+}

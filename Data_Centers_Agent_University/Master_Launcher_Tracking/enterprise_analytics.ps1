@@ -54,7 +54,7 @@ $DEPARTMENT_MAPPING = @{
     "Cybersecurity Command Center" = "Security"
     "Innovation Labs Division" = "Research & Development"
     "Quantum Computing Division" = "Technology"
-    "Biotech Corporation Command" = "Biotechnology"
+    "BUSY BEE BIO TECH Command" = "Biotechnology"
     "Resonance Energy Corp" = "Energy"
     "Space Operations Division" = "Aerospace"
     "Global Talent Acquisition" = "Human Resources"
@@ -81,7 +81,7 @@ $CORPORATION_MAPPING = @{
     "Cybersecurity Command Center" = "Cybersecurity Command Center"
     "Innovation Labs Division" = "Innovation Labs"
     "Quantum Computing Division" = "Quantum Computing Division"
-    "Biotech Corporation Command" = "Biotech Corporation"
+    "BUSY BEE BIO TECH Command" = "BUSY BEE BIO TECH"
     "Resonance Energy Corp" = "Resonance Energy Corp"
     "Space Operations Division" = "Space Operations Division"
     "Global Talent Acquisition" = "Global Talent Acquisition"
@@ -433,5 +433,4 @@ Write-Host "ANALYTICS DOMINANCE: DATA-DRIVEN INSIGHTS ACTIVE!" -ForegroundColor 
 Write-Host "METRICS EXCELLENCE: COMPREHENSIVE TRACKING ENGAGED!" -ForegroundColor Magenta
 Write-Host "INSIGHT GENERATION: STRATEGIC ADVANTAGE MAXIMIZED!" -ForegroundColor Magenta
 Write-Host ""
-Write-Host "ANALYTICS COMPLETE! METRICS GENERATED! INSIGHTS PRODUCED!" -ForegroundColor Cyan</content>
-<parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Data_Centers_Agent_University\Master_Launcher_Tracking\enterprise_analytics.ps1
+Write-Host "ANALYTICS COMPLETE! METRICS GENERATED! INSIGHTS PRODUCED!" -ForegroundColor Cyan

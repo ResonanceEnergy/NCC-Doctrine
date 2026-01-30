@@ -1,0 +1,20 @@
+{
+  "Issues": [],
+  "HealthStatus": "HEALTHY",
+  "ConflictStatus": {
+    "ActiveConflicts": 0,
+    "ResolvedToday": 0,
+    "Status": "NORMAL",
+    "EscalatedConflicts": 0
+  },
+  "PerformanceMetrics": {
+    "SuccessfulCoordinations": 0,
+    "SuccessRate": 100,
+    "MessageThroughput": 0,
+    "AverageResponseTime": 0,
+    "TotalCoordinations": 0
+  },
+  "ActiveCoordinations": 0,
+  "ResourceUtilization": {},
+  "Timestamp": "2026-01-29T20:41:38.3461479-07:00"
+}

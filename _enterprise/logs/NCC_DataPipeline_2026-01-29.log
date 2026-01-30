@@ -1,0 +1,48 @@
+[2026-01-29 21:37:43] [INFO] === NCC Data Pipeline Started ===
+[2026-01-29 21:37:43] [INFO] Mode: Incremental, Interval: 5 minutes, DryRun: True, Continuous: False
+[2026-01-29 21:37:43] [INFO] Starting incremental data pipeline execution...
+[2026-01-29 21:37:43] [INFO] No existing data found, running full collection
+[2026-01-29 21:37:43] [INFO] Starting full data pipeline execution...
+[2026-01-29 21:37:43] [INFO] Initializing NCC Data Pipeline...
+[2026-01-29 21:37:43] [INFO] Created directory: _enterprise/temp
+[2026-01-29 21:37:43] [INFO] Pipeline initialization completed
+[2026-01-29 21:37:43] [INFO] Collecting agent data...
+[2026-01-29 21:37:44] [INFO] Collected data for 0 agents
+[2026-01-29 21:37:44] [INFO] Collecting division data...
+[2026-01-29 21:37:45] [INFO] Collected data for 15 divisions
+[2026-01-29 21:37:45] [INFO] Validating agent data...
+[2026-01-29 21:37:45] [WARNING] No agent data to validate
+[2026-01-29 21:37:45] [INFO] Validating division data...
+[2026-01-29 21:37:45] [INFO] Validation complete: 15 valid, 0 invalid
+[2026-01-29 21:37:45] [ERROR] Pipeline execution failed: Cannot bind argument to parameter 'Data' because it is an empty collection.
+[2026-01-29 21:37:45] [ERROR] Stack trace: at Invoke-FullPipeline, C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\NCC.DataPipeline.ps1: line 576
+at Invoke-IncrementalPipeline, C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\NCC.DataPipeline.ps1: line 632
+at <ScriptBlock>, C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\NCC.DataPipeline.ps1: line 731
+at <ScriptBlock>, <No file>: line 1
+[2026-01-29 21:37:45] [INFO] === NCC Data Pipeline Completed ===
+[2026-01-29 21:37:45] [INFO] Execution result: FAILED
+[2026-01-29 21:38:02] [INFO] === NCC Data Pipeline Started ===
+[2026-01-29 21:38:02] [INFO] Mode: Incremental, Interval: 5 minutes, DryRun: True, Continuous: False
+[2026-01-29 21:38:02] [INFO] Starting incremental data pipeline execution...
+[2026-01-29 21:38:02] [INFO] No existing data found, running full collection
+[2026-01-29 21:38:02] [INFO] Starting full data pipeline execution...
+[2026-01-29 21:38:02] [INFO] Initializing NCC Data Pipeline...
+[2026-01-29 21:38:02] [INFO] Created directory: _enterprise/temp
+[2026-01-29 21:38:02] [INFO] Pipeline initialization completed
+[2026-01-29 21:38:02] [INFO] Collecting agent data...
+[2026-01-29 21:38:03] [INFO] Collected data for 0 agents
+[2026-01-29 21:38:03] [INFO] Collecting division data...
+[2026-01-29 21:38:03] [INFO] Collected data for 15 divisions
+[2026-01-29 21:38:03] [INFO] Validating agent data...
+[2026-01-29 21:38:03] [WARNING] No agent data to validate
+[2026-01-29 21:38:03] [INFO] Validating division data...
+[2026-01-29 21:38:03] [INFO] Validation complete: 15 valid, 0 invalid
+[2026-01-29 21:38:03] [WARNING] No valid agent data to save
+[2026-01-29 21:38:03] [INFO] DRY RUN: Would save 15 division records
+[2026-01-29 21:38:03] [ERROR] Pipeline execution failed: Cannot bind argument to parameter 'AgentData' because it is an empty collection.
+[2026-01-29 21:38:03] [ERROR] Stack trace: at Invoke-FullPipeline, C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\NCC.DataPipeline.ps1: line 603
+at Invoke-IncrementalPipeline, C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\NCC.DataPipeline.ps1: line 662
+at <ScriptBlock>, C:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\NCC.DataPipeline.ps1: line 761
+at <ScriptBlock>, <No file>: line 1
+[2026-01-29 21:38:03] [INFO] === NCC Data Pipeline Completed ===
+[2026-01-29 21:38:03] [INFO] Execution result: SUCCESS

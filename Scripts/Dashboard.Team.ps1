@@ -174,10 +174,10 @@ function Show-TeamStatus {
     Write-Host "👥 TEAM MEMBERS:" -ForegroundColor Yellow
     foreach ($member in $teamMembers) {
         $statusColor = if ($member.Status -eq "ACTIVE") { "Green" } else { "Red" }
-        Write-Host "  • $($member.Name)" -ForegroundColor White -NoNewline
-        Write-Host " - $($member.Role)" -ForegroundColor Gray -NoNewline
-        Write-Host " - Status: " -NoNewline
-        Write-Host "$($member.Status)" -ForegroundColor $statusColor -NoNewline
+        Write-Host "  • $($member.Name)" -ForegroundColor White
+        Write-Host " - $($member.Role)" -ForegroundColor Gray
+        Write-Host " - Status: "
+        Write-Host "$($member.Status)" -ForegroundColor $statusColor
         Write-Host " - Performance: $($member.Performance)%" -ForegroundColor Cyan
     }
 

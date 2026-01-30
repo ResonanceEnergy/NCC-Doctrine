@@ -178,8 +178,22 @@ function Analyze-InterruptPatterns {
         }
     }
 
-    # Save interrupt analysis
-    $interruptPatterns | ConvertTo-Json | Add-Content -Path $TRACKING_PATHS.InterruptAnalysis
+    # Save interrupt analysis - read existing data first, then append new patterns
+    $existingPatterns = try {
+        $content = Get-Content -Path $TRACKING_PATHS.InterruptAnalysis -Raw
+        if ($content) {
+            $jsonArrays = $content -split '(?=\[)' | Where-Object { $_ -match '\[.*\]' } | ForEach-Object {
+                try { $_ | ConvertFrom-Json } catch { $null }
+            } | Where-Object { $_ }
+            $jsonArrays | ForEach-Object { $_ } | Where-Object { $_ }
+        } else { @() }
+    } catch { @() }
+
+    # Combine existing and new patterns
+    $allPatterns = $existingPatterns + $interruptPatterns
+
+    # Write all patterns as a single JSON array
+    $allPatterns | ConvertTo-Json -Depth 10 | Set-Content -Path $TRACKING_PATHS.InterruptAnalysis
 
     foreach ($pattern in $interruptPatterns) {
         Write-DataCenterLog "Interrupt Detected: $($pattern.type) - Count: $($pattern.count) - Severity: $($pattern.severity)" "WARNING" "INTERRUPT"
@@ -195,9 +209,21 @@ function Distribute-ToAX {
     $analyticsData = @{
         timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
         performanceMetrics = Get-Content -Path $TRACKING_PATHS.PerformanceMetrics | ConvertFrom-Json
-        interruptAnalysis = Get-Content -Path $TRACKING_PATHS.InterruptAnalysis | ConvertFrom-Json
+        interruptAnalysis = try {
+            # Parse all JSON arrays in the file and combine them
+            $content = Get-Content -Path $TRACKING_PATHS.InterruptAnalysis -Raw
+            if ($content) {
+                # Split by array boundaries and parse each valid JSON array
+                $jsonArrays = $content -split '(?=\[)' | Where-Object { $_ -match '\[.*\]' } | ForEach-Object {
+                    try { $_ | ConvertFrom-Json } catch { $null }
+                } | Where-Object { $_ }
+                # Flatten all arrays into a single array
+                $jsonArrays | ForEach-Object { $_ } | Where-Object { $_ }
+            } else { @() }
+        } catch { @() }
         securityStatus = Get-Content -Path $TRACKING_PATHS.SecurityAudit | Select-Object -Last 10
         threatIntelligence = Get-Content -Path $TRACKING_PATHS.ThreatIntelligence | ConvertFrom-Json
+    }
     }
 
     # Format for AX consumption
@@ -356,5 +382,4 @@ Write-Host "DATA CENTER DOMINANCE: TRACKING AND ANALYSIS SYSTEMS ACTIVE!" -Foreg
 Write-Host "AZ PRIME OVERSIGHT: COMPREHENSIVE MONITORING ENGAGED!" -ForegroundColor Magenta
 Write-Host "AX INTELLIGENCE: REAL-TIME DISTRIBUTION OPERATIONAL!" -ForegroundColor Magenta
 Write-Host ""
-Write-Host "TRACKING ACTIVE! ANALYSIS COMPLETE! DISTRIBUTION ENGAGED!" -ForegroundColor Cyan</content>
-<parameter name="filePath">c:\Users\gripa\OneDrive\Desktop\NCC\NCC-Doctrine\Data_Centers_Agent_University\Master_Launcher_Tracking\tracking_system.ps1
+Write-Host "TRACKING ACTIVE! ANALYSIS COMPLETE! DISTRIBUTION ENGAGED!" -ForegroundColor Cyan

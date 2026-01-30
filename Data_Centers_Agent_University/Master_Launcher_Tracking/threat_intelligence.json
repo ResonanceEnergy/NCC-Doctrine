@@ -1,14 +1,14 @@
 {
-    "successfulLogins":  0,
-    "timestamp":  "2026-01-29 03:37:02",
-    "privilegeEscalations":  0,
-    "totalEvents":  0,
-    "threatLevel":  "LOW",
-    "failedLogins":  0,
-    "recommendations":  [
-                            "Monitor privilege escalation attempts",
-                            "Review failed login patterns",
-                            "Update access control policies",
-                            "Enhance real-time monitoring"
-                        ]
+  "totalEvents": 0,
+  "privilegeEscalations": 0,
+  "failedLogins": 0,
+  "threatLevel": "LOW",
+  "successfulLogins": 0,
+  "recommendations": [
+    "Monitor privilege escalation attempts",
+    "Review failed login patterns",
+    "Update access control policies",
+    "Enhance real-time monitoring"
+  ],
+  "timestamp": "2026-01-29 10:07:16"
 }

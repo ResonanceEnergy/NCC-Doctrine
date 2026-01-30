@@ -1,0 +1,20 @@
+{
+  "specialization": "BigBrainIntelligence Executive Operations",
+  "contact": "agent@bigbrainintelligence.ncc",
+  "name": "BigBrainIntelligence.Agent.Executive",
+  "version": "2.0.0",
+  "role": "Executive",
+  "capabilities": [
+    "Strategic Planning",
+    "Resource Allocation",
+    "Risk Assessment",
+    "Portfolio Management",
+    "Executive Reporting"
+  ],
+  "description": "Strategic planning and decision making for Artificial intelligence and intelligence analysis",
+  "dependencies": [],
+  "status": "Active",
+  "lastModified": "2026-01-29",
+  "created": "2026-01-29",
+  "division": "BigBrainIntelligence"
+}

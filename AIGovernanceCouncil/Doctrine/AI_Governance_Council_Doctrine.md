@@ -1,8 +1,8 @@
 # AI Governance Council Doctrine
-**Version:** 1.0.0 | **Classification:** NATHAN COMMAND CORP TOP SECRET | **Date:** 2026-01-28
+**Version:** 1.0.0 | **Classification:** NATRIX COMMAND CORP TOP SECRET | **Date:** 2026-01-28
 
 ## Executive Summary
-The AI Governance Council (AIGC) serves as the supreme authority for all artificial intelligence development, deployment, and oversight within NATHAN COMMAND CORP. As an independent council reporting directly to Real World Nate, AIGC ensures that all AI systems align with NCC's mission of ethical, profitable, and sustainable growth through 2100 and beyond.
+The AI Governance Council (AIGC) serves as the supreme authority for all artificial intelligence development, deployment, and oversight within NATRIX COMMAND CORP. As an independent council reporting directly to Real World Nate, AIGC ensures that all AI systems align with NCC's mission of ethical, profitable, and sustainable growth through 2100 and beyond.
 
 ## Core Mission
 - Establish ethical frameworks for AI development and deployment

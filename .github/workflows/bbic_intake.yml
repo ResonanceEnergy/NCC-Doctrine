@@ -37,13 +37,13 @@ jobs:
           source .venv/bin/activate
           # write a small credentials bridge so config file stays static
           python - <<'PY'
-import os,yaml,sys
-p="config/bbic.reddit.yaml"
-conf=yaml.safe_load(open(p))
-conf["auth"]["client_id"]=os.environ.get("PRAW_CLIENT_ID")
-conf["auth"]["client_secret"]=os.environ.get("PRAW_CLIENT_SECRET")
-yaml.safe_dump(conf,open(p,"w"))
-PY
+          import os,yaml,sys
+          p="config/bbic.reddit.yaml"
+          conf=yaml.safe_load(open(p))
+          conf["auth"]["client_id"]=os.environ.get("PRAW_CLIENT_ID")
+          conf["auth"]["client_secret"]=os.environ.get("PRAW_CLIENT_SECRET")
+          yaml.safe_dump(conf,open(p,"w"))
+          PY
           python scripts/bbic_reddit_ingest.py
       - name: Commit data
         run: |

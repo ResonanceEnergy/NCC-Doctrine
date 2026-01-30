@@ -241,7 +241,7 @@ This document provides the customized NCL (NATHAN COMMAND LEADERSHIP) Digital OS
 - **Industry Associations:** Talent standards development and benchmarking
 
 ### Cross-Department Coordination
-- **Biotech Corporation:** Specialized biotech talent acquisition
+- **BUSY BEE BIO TECH:** Specialized biotech talent acquisition
 - **Quantum Computing Division:** Technical talent recruitment
 - **International Operations:** Global talent mobility and acquisition
 - **Innovation Labs:** Innovation talent development

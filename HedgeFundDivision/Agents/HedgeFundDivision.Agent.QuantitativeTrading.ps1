@@ -1,0 +1,40 @@
+﻿# HedgeFundDivision - Quantitative Trading Agent
+param([switch]$Initialize,[switch]$StartOperations,[switch]$StopOperations,[switch]$Status,[switch]$ExecuteTrades,[switch]$MonitorMarkets,[switch]$OptimizeStrategies,[switch]$ManageRisk])
+$AgentConfig = @{Name = "HedgeFundDivision.Agent.QuantitativeTrading"; Division = "HedgeFundDivision"; Role = "QuantitativeTrading"; Status = "Inactive"}
+function Write-AgentLog($Message, $Level = "INFO") { $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"; $logMessage = "[$timestamp] [$($AgentConfig.Name)] [$Level] $Message"; Write-Host $logMessage -ForegroundColor $(switch($Level){"ERROR"{"Red"}"WARNING"{"Yellow"}"SUCCESS"{"Green"}default{"Cyan"}}) }
+
+
+# NCC Communication Integration
+$AgentCommPath = Join-Path $PSScriptRoot "NCC.Agent.Communication.ps1"
+if (Test-Path $AgentCommPath) {
+    # Register agent with communication system
+    & $AgentCommPath -AgentName "HedgeFundDivision.Agent.QuantitativeTrading" -Division "HedgeFundDivision" -InitializeNetwork
+
+    # Communication functions for agent use
+    function Send-AgentMessage {
+        param([string]$To, [string]$Type, [string]$Content, [string]$Priority = "Normal")
+        & $AgentCommPath -AgentName "HedgeFundDivision.Agent.QuantitativeTrading" -TargetAgent $To -MessageType $Type -MessageContent $Content -Priority $Priority -SendMessage
+    }
+
+    function Receive-AgentMessages {
+        return & $AgentCommPath -AgentName "HedgeFundDivision.Agent.QuantitativeTrading" -ReceiveMessages
+    }
+
+    function Broadcast-Message {
+        param([string]$Type, [string]$Content, [string]$Priority = "Normal")
+        & $AgentCommPath -AgentName "HedgeFundDivision.Agent.QuantitativeTrading" -MessageType $Type -MessageContent $Content -Priority $Priority -Broadcast
+    }
+
+    function Check-Connectivity {
+        param([string]$TargetAgent)
+        return & $AgentCommPath -TargetAgent $TargetAgent -CheckConnectivity
+    }
+
+    # Initialize communication on agent startup
+    Write-Host "ðŸ”— Agent communication system initialized for HedgeFundDivision.Agent.QuantitativeTrading" -ForegroundColor Cyan
+}
+function Initialize-Agent { Write-AgentLog "Initializing Quantitative Trading Agent..."; $AgentConfig.Status = "Initialized"; Write-AgentLog "Quantitative Trading Agent ready" -Level "SUCCESS" }
+function Start-AgentOperations { $AgentConfig.Status = "Active"; Write-AgentLog "Quantitative Trading operations started" -Level "SUCCESS" }
+function Stop-AgentOperations { $AgentConfig.Status = "Inactive"; Write-AgentLog "Quantitative Trading operations stopped" -Level "SUCCESS" }
+function Get-AgentStatus { return $AgentConfig.Status }
+if ($Initialize) { Initialize-Agent } elseif ($StartOperations) { Start-AgentOperations } elseif ($StopOperations) { Stop-AgentOperations } elseif ($Status) { Get-AgentStatus } elseif ($ExecuteTrades) { Write-AgentLog "Executing trades..." } elseif ($MonitorMarkets) { Write-AgentLog "Monitoring markets..." } elseif ($OptimizeStrategies) { Write-AgentLog "Optimizing strategies..." } elseif ($ManageRisk) { Write-AgentLog "Managing risk..." } else { Write-AgentLog "No valid operation specified" -Level "WARNING" }

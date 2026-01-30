@@ -18,7 +18,7 @@ To develop and deploy quantum computing technologies that provide NCC with compu
 
 ### 3. Interdisciplinary Integration
 - Collaborate with AI Governance Council for quantum AI development
-- Partner with Biotech Corporation for quantum chemistry applications
+- Partner with BUSY BEE BIO TECH for quantum chemistry applications
 - Integrate with Robotics Division for quantum control systems
 
 ### 4. Ethical Quantum Development

@@ -1,0 +1,16 @@
+﻿{
+    "AuthProtocol":  "OAuth 2.0 + MFA",
+    "Version":  "1.0",
+    "ComplianceFrameworks":  [
+                                 "NIST",
+                                 "ISO 27001",
+                                 "GDPR",
+                                 "HIPAA",
+                                 "PCI DSS",
+                                 "SOX"
+                             ],
+    "SessionTimeout":  3600,
+    "KeyRotationDays":  90,
+    "Directive":  "Security 10",
+    "EncryptionStandard":  "AES-256"
+}

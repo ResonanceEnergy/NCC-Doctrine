@@ -139,7 +139,7 @@ $AGENT_INSIGHT_DATABASE = @{
         "Quantum technology advancement methods",
         "Quantum computing capability expansion"
     )
-    "Biotech Corporation Command" = @(
+    "BUSY BEE BIO TECH Command" = @(
         "Biotechnology research optimization strategies",
         "Medical technology advancement protocols",
         "Biotech innovation enhancement methods",

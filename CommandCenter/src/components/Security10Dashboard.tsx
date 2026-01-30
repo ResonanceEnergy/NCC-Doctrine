@@ -156,7 +156,7 @@ const Security10Dashboard = () => {
             <option value="augmented-arbitrage-corp">Augmented Arbitrage Corp</option>
             <option value="faraday-financial-corp">Faraday Financial Corp</option>
             <option value="quantum-computing-division">Quantum Computing Division</option>
-            <option value="biotech-corporation">Biotech Corporation</option>
+            <option value="biotech-corporation">BUSY BEE BIO TECH</option>
             <option value="space-operations-division">Space Operations Division</option>
             <option value="robotics-automation-division">Robotics & Automation Division</option>
             <option value="ai-governance-council">AI Governance Council</option>

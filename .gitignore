@@ -7,7 +7,7 @@ Thumbs.db
 # Python/Build/Temp
 __pycache__/
 *.pyc
-dist/
+dist/nb 
 build/
 *.zip
 
@@ -17,5 +17,10 @@ archives/*.zip
 
 # Office temp
 ~$*.docx
+node_modules
+node_modules
+node_modules
+node_modules
+node_modules
 node_modules
 node_modules

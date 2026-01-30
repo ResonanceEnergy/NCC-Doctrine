@@ -1,0 +1,20 @@
+{
+  "specialization": "GlobalTalentAcquisition Integration Operations",
+  "contact": "agent@globaltalentacquisition.ncc",
+  "name": "GlobalTalentAcquisition.Agent.Integration",
+  "version": "2.0.0",
+  "role": "Integration",
+  "capabilities": [
+    "API Management",
+    "Data Synchronization",
+    "System Integration",
+    "Cross-Platform Coordination",
+    "Interface Management"
+  ],
+  "description": "Cross-system coordination for Global talent acquisition and HR",
+  "dependencies": [],
+  "status": "Active",
+  "lastModified": "2026-01-29",
+  "created": "2026-01-29",
+  "division": "GlobalTalentAcquisition"
+}
